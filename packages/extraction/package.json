@@ -1,0 +1,23 @@
+{
+  "name": "@tetoca/extraction",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "extract": "tsx src/scripts/extract.ts"
+  },
+  "dependencies": {
+    "@tetoca/core": "workspace:*",
+    "@tetoca/db": "workspace:*",
+    "@tetoca/llm": "workspace:*",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5"
+  }
+}

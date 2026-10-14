@@ -1,0 +1,27 @@
+name: Daily ingestion
+
+# Ingests new BDNS calls and extracts drafts with Claude. Drafts are never
+# published automatically: review them in /admin.
+on:
+  schedule:
+    - cron: "0 5 * * *" # 06:00/07:00 Madrid
+  workflow_dispatch:
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    if: ${{ vars.INGESTION_ENABLED == 'true' }}
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @tetoca/db db:migrate
+      - run: pnpm --filter @tetoca/ingestion ingest:bdns --limit 100
+      - run: pnpm --filter @tetoca/extraction extract --limit 20

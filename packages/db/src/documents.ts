@@ -1,4 +1,4 @@
-import { and, desc, eq } from "drizzle-orm";
+import { and, desc, eq, isNull } from "drizzle-orm";
 import type { Database } from "./client";
 import { extractions, sourceDocuments } from "./schema";
 
@@ -87,4 +87,15 @@ export async function listExtractionsForDocument(db: Database, documentId: strin
     .from(extractions)
     .where(eq(extractions.documentId, documentId))
     .orderBy(desc(extractions.createdAt));
+}
+
+/** Readable documents that have no extraction yet. */
+export async function listDocumentsWithoutExtraction(db: Database, limit = 50) {
+  const rows = await db
+    .select({ id: sourceDocuments.id, extractionId: extractions.id })
+    .from(sourceDocuments)
+    .leftJoin(extractions, eq(extractions.documentId, sourceDocuments.id))
+    .where(and(eq(sourceDocuments.needsManualReview, false), isNull(extractions.id)))
+    .limit(limit);
+  return rows.map((r) => r.id);
 }
