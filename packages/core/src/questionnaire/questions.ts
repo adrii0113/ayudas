@@ -33,6 +33,11 @@ export type Question = {
   showIf?: (profile: Partial<HouseholdProfile>) => boolean;
   /** If true, the question is asked whenever showIf passes (e.g. region). */
   always?: boolean;
+  /**
+   * Answer implied when `showIf` hides the question (e.g. no children → not a
+   * single-parent family). Without it, a hidden question's fields are cleared.
+   */
+  whenHidden?: Partial<HouseholdProfile>;
 };
 
 const hasChildren = (p: Partial<HouseholdProfile>) => (p.children?.length ?? 0) > 0;
@@ -55,6 +60,7 @@ export const QUESTIONS: Question[] = [
   {
     id: "municipality",
     fields: ["municipality"],
+    whenHidden: { municipality: undefined },
     showIf: (p) => REGIONS.some((r) => r.code === p.region && r.municipalities.length > 0),
     input: {
       type: "choice",
@@ -70,6 +76,7 @@ export const QUESTIONS: Question[] = [
   {
     id: "yearsRegisteredInRegion",
     fields: ["yearsRegisteredInRegion"],
+    whenHidden: { yearsRegisteredInRegion: 0 },
     showIf: (p) => p.region !== OUTSIDE_REGIONS,
     input: {
       type: "choice",
@@ -105,12 +112,14 @@ export const QUESTIONS: Question[] = [
   {
     id: "isSingleParent",
     fields: ["isSingleParent"],
+    whenHidden: { isSingleParent: false },
     showIf: hasChildren,
     input: { type: "yesNo", field: "isSingleParent" },
   },
   {
     id: "isLargeFamily",
     fields: ["isLargeFamily"],
+    whenHidden: { isLargeFamily: false },
     showIf: hasChildren,
     input: { type: "yesNo", field: "isLargeFamily" },
   },
@@ -138,6 +147,7 @@ export const QUESTIONS: Question[] = [
   {
     id: "monthlyRent",
     fields: ["monthlyRent"],
+    whenHidden: { monthlyRent: undefined },
     showIf: (p) => p.housing === "renting",
     input: { type: "number", field: "monthlyRent", min: 0, max: 10000, unit: "euros_month" },
   },

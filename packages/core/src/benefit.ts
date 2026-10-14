@@ -92,3 +92,10 @@ export type BenefitContent = z.infer<typeof benefitContentSchema>;
 export type Benefit = z.infer<typeof benefitSchema>;
 export type BenefitCategory = (typeof BENEFIT_CATEGORIES)[number];
 export type BenefitLevel = (typeof BENEFIT_LEVELS)[number];
+
+/** `reviewedBy` prefix used when an AI assistant curated a benefit that still needs a person. */
+export const PENDING_HUMAN_REVIEW_PREFIX = "claude";
+
+export function needsHumanReview(benefit: Pick<Benefit, "reviewedBy">): boolean {
+  return benefit.reviewedBy?.toLowerCase().startsWith(PENDING_HUMAN_REVIEW_PREFIX) ?? false;
+}

@@ -1,4 +1,5 @@
-import { loadCatalog, needsHumanReview } from "../catalog";
+import { needsHumanReview } from "@tetoca/core";
+import { loadCatalog } from "../catalog";
 
 const { benefits, issues } = loadCatalog();
 for (const issue of issues) console.error(`✗ ${issue.file}: ${issue.message}`);

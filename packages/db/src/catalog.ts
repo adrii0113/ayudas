@@ -5,13 +5,6 @@ import { parse } from "yaml";
 
 export type CatalogIssue = { file: string; message: string };
 
-/** Marker used when a benefit was curated by an AI assistant and still needs a human. */
-export const PENDING_HUMAN_REVIEW_PREFIX = "claude";
-
-export function needsHumanReview(benefit: Benefit): boolean {
-  return benefit.reviewedBy?.toLowerCase().startsWith(PENDING_HUMAN_REVIEW_PREFIX) ?? false;
-}
-
 /** Finds the monorepo root (the folder containing pnpm-workspace.yaml). */
 export function findRepoRoot(start = process.cwd()): string {
   let dir = resolve(start);

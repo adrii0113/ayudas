@@ -54,3 +54,23 @@ export function selectQuestions(
       (q.always || q.fields.some((f) => fields.has(f))) && (q.showIf ? q.showIf(answers) : true),
   );
 }
+
+/**
+ * Completes the answers once the questionnaire ends: follow-up questions that
+ * were skipped because of previous answers get their implied value (or are
+ * cleared, so stale answers never leak into the evaluation).
+ */
+export function finalizeAnswers(
+  answers: Partial<HouseholdProfile>,
+  questions: Question[] = QUESTIONS,
+): Partial<HouseholdProfile> {
+  const result: Partial<HouseholdProfile> = { ...answers };
+  for (const q of questions) {
+    if (!q.showIf || q.showIf(result)) continue;
+    if (q.whenHidden) Object.assign(result, q.whenHidden);
+  }
+  for (const [key, value] of Object.entries(result)) {
+    if (value === undefined) delete result[key as keyof HouseholdProfile];
+  }
+  return result;
+}

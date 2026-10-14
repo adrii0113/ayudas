@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "siteName": "TeToca",
+    "title": "TeToca · Descubre qué ayudas públicas te corresponden",
+    "description": "Responde unas preguntas y descubre qué ayudas públicas te corresponden en Castilla y León y en toda España: natalidad, vivienda, energía, ingresos y más. Gratis y sin registro."
+  },
+  "nav": {
+    "skip": "Saltar al contenido",
+    "benefits": "Ayudas",
+    "start": "Descubre tus ayudas",
+    "alerts": "Alertas",
+    "home": "Inicio"
+  },
+  "footer": {
+    "legal": "Aviso legal",
+    "privacy": "Privacidad",
+    "cookies": "Cookies",
+    "note": "TeToca no es una web oficial ni tramita ayudas. Toda la información es orientativa: consulta siempre las bases oficiales."
+  },
+  "disclaimer": {
+    "title": "Información orientativa",
+    "body": "Este resultado es una orientación basada en tus respuestas y en las bases oficiales. No garantiza la concesión. Consulta siempre la fuente oficial antes de solicitar una ayuda."
+  },
+  "home": {
+    "eyebrow": "Gratis · Sin registro · Sin guardar tus datos",
+    "title": "¿Qué ayudas públicas te tocan?",
+    "lead": "Responde unas pocas preguntas sobre tu hogar y te decimos qué ayudas te corresponden, cuáles casi, cuánto podrías recibir y cómo pedirlas.",
+    "cta": "Descubre tus ayudas",
+    "time": "Unos 3 minutos",
+    "howTitle": "Cómo funciona",
+    "how1Title": "Respondes",
+    "how1": "Preguntas sencillas sobre tu familia, ingresos y vivienda. Solo las que hacen falta.",
+    "how2Title": "Comparamos",
+    "how2": "Revisamos los requisitos oficiales de cada ayuda con reglas claras, no con suposiciones.",
+    "how3Title": "Te explicamos",
+    "how3": "Ves lo que te corresponde, lo que casi, qué documentos necesitas y el enlace oficial.",
+    "privacyTitle": "Tus respuestas no salen de tu navegador",
+    "privacy": "El cálculo se hace en tu dispositivo. No pedimos nombre, DNI ni email, y no guardamos tus respuestas.",
+    "coverage": "Ahora mismo cubrimos ayudas estatales y de Castilla y León para familias y hogares.",
+    "catalogCount": "{count} ayudas revisadas",
+    "browse": "Ver todas las ayudas"
+  },
+  "questionnaire": {
+    "title": "Cuestionario",
+    "progress": "Pregunta {current} de {total}",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "finish": "Ver mis ayudas",
+    "restart": "Empezar de nuevo",
+    "required": "Responde para continuar.",
+    "invalidNumber": "Introduce un número entre {min} y {max}.",
+    "yes": "Sí",
+    "no": "No",
+    "privacy": "Tus respuestas se quedan en este navegador y se borran al cerrarlo.",
+    "units": {
+      "years": "años",
+      "people": "personas",
+      "euros_month": "€ al mes"
+    },
+    "questions": {
+      "region": {
+        "title": "¿Dónde vives?",
+        "help": "Las ayudas de tu comunidad autónoma dependen de dónde estás empadronado.",
+        "options": { "CL": "Castilla y León", "OTHER": "En otra comunidad autónoma" }
+      },
+      "municipality": {
+        "title": "¿En qué municipio estás empadronado?",
+        "options": {
+          "47186": "Valladolid (capital)",
+          "other": "En otro municipio de Castilla y León"
+        }
+      },
+      "yearsRegisteredInRegion": {
+        "title": "¿Cuánto tiempo llevas empadronado en Castilla y León?",
+        "options": {
+          "lt1": "Menos de 1 año",
+          "1to2": "Entre 1 y 2 años",
+          "2to5": "Entre 2 y 5 años",
+          "5plus": "5 años o más"
+        }
+      },
+      "applicantAge": {
+        "title": "¿Cuántos años tienes?",
+        "help": "La edad de la persona que pediría la ayuda."
+      },
+      "children": {
+        "title": "¿Cuántos hijos o menores a tu cargo viven contigo?",
+        "help": "Incluye hijos adoptados o en acogida.",
+        "count": "Número de hijos",
+        "age": "Edad del hijo {n}",
+        "ageHelp": "Pon 0 si tiene menos de un año o va a nacer este año."
+      },
+      "householdSize": {
+        "title": "¿Cuántas personas viven en tu casa, contándote a ti?",
+        "help": "Todas las personas empadronadas en tu vivienda, incluidos los niños.",
+        "tooFew": "Con tus hijos sois al menos {min}."
+      },
+      "childrenDisability": {
+        "title": "¿Alguno de tus hijos tiene una discapacidad reconocida del 33 % o más?",
+        "help": "Marca los que tengan el certificado de discapacidad. Si ninguno, continúa sin marcar.",
+        "child": "Hijo {n} ({age} años)"
+      },
+      "isSingleParent": {
+        "title": "¿Eres familia monoparental?",
+        "help": "Crías a tus hijos sin otro progenitor que conviva contigo."
+      },
+      "isLargeFamily": {
+        "title": "¿Tienes el título de familia numerosa?",
+        "help": "Normalmente, familias con 3 o más hijos (o 2 en algunos casos, como monoparentales o con discapacidad)."
+      },
+      "annualHouseholdIncome": {
+        "title": "¿Cuántos ingresos tiene tu hogar, aproximadamente?",
+        "help": "Suma lo que ganan todas las personas que viven contigo: nóminas, pensiones, prestaciones… Una cifra aproximada es suficiente.",
+        "amount": "Cantidad en euros",
+        "perMonth": "Al mes (neto)",
+        "perYear": "Al año",
+        "monthlyNote": "Calculamos el total anual multiplicando por 12."
+      },
+      "employmentStatus": {
+        "title": "¿Cuál es tu situación laboral?",
+        "options": {
+          "employed": "Trabajo por cuenta ajena",
+          "self_employed": "Soy autónomo",
+          "unemployed": "Estoy en paro",
+          "student": "Estudio",
+          "retired": "Estoy jubilado o pensionista",
+          "other": "Otra situación"
+        }
+      },
+      "housing": {
+        "title": "¿Cómo vives en tu vivienda?",
+        "options": {
+          "renting": "De alquiler",
+          "owner_mortgage": "Es mía y pago hipoteca",
+          "owner_no_mortgage": "Es mía, sin hipoteca",
+          "other": "Otra situación (cedida, con familia…)"
+        }
+      },
+      "monthlyRent": {
+        "title": "¿Cuánto pagas de alquiler al mes?",
+        "help": "Solo el alquiler, sin gastos de luz, agua o comunidad."
+      },
+      "hasDependentPerson": {
+        "title": "¿Vive contigo o cuidas de alguien que necesita ayuda para su día a día?",
+        "help": "Por ejemplo, una persona mayor o con discapacidad que no puede valerse por sí misma. No necesitamos más detalles."
+      },
+      "applicantDisabilityPercent": {
+        "title": "¿Tienes una discapacidad reconocida?",
+        "help": "Solo el grado aproximado que figura en tu certificado.",
+        "options": {
+          "none": "No",
+          "33to64": "Sí, entre el 33 % y el 64 %",
+          "65plus": "Sí, del 65 % o más"
+        }
+      },
+      "yearsLegalResidenceInSpain": {
+        "title": "¿Cuánto tiempo llevas viviendo legalmente en España?",
+        "options": { "lt1": "Menos de 1 año", "1to5": "Entre 1 y 5 años", "5plus": "5 años o más" }
+      },
+      "receivesMinimumIncome": {
+        "title": "¿Tú o alguien de tu hogar cobra ya el Ingreso Mínimo Vital?",
+        "help": "Algunas ayudas se conceden automáticamente si ya lo cobras."
+      }
+    }
+  },
+  "results": {
+    "title": "Tus ayudas",
+    "lead": "Según tus respuestas, esto es lo que te puede corresponder.",
+    "eligibleTitle": "Te corresponden",
+    "eligibleEmpty": "No hemos encontrado ayudas que cumplas por completo.",
+    "almostTitle": "Casi",
+    "almostLead": "Te falta un requisito. A veces cambia con tu situación o en la próxima convocatoria.",
+    "unknownTitle": "Revisa",
+    "unknownLead": "Nos falta algún dato para saberlo.",
+    "missing": "Te falta:",
+    "whyEligible": "Por qué cumples",
+    "unknownReqs": "No sabemos si cumples:",
+    "alsoRequired": "También se exige",
+    "documents": "Documentos",
+    "howToApply": "Cómo pedirla",
+    "official": "Ir a la fuente oficial",
+    "details": "Ver ficha completa",
+    "editAnswers": "Cambiar mis respuestas",
+    "noProfile": "Todavía no has respondido el cuestionario.",
+    "start": "Empezar",
+    "notEligibleCount": "{count, plural, =0 {} one {# ayuda más no encaja con tu situación.} other {# ayudas más no encajan con tu situación.}}",
+    "alertsTitle": "¿Quieres enterarte cuando abra una ayuda para ti?",
+    "alertsBody": "Te avisamos por email (máximo uno a la semana). Puedes borrarte con un clic.",
+    "alertsCta": "Activar alertas",
+    "estimatedTotal": "Calculado el {date}"
+  },
+  "benefit": {
+    "amount": "Importe",
+    "deadline": "Plazo",
+    "requirements": "Requisitos principales",
+    "otherRequirements": "Otros requisitos",
+    "documents": "Documentos que suelen pedir",
+    "steps": "Cómo pedirla",
+    "official": "Ir a la fuente oficial",
+    "sources": "Fuentes oficiales",
+    "lastReview": "Última revisión: {date}",
+    "pendingReview": "Ficha pendiente de revisión por el equipo.",
+    "faq": "Preguntas frecuentes",
+    "check": "Comprueba si te corresponde",
+    "checkBody": "Responde el cuestionario y te decimos si cumples los requisitos.",
+    "agency": "Organismo",
+    "related": "Otras ayudas de {category}",
+    "retrieved": "consultada el {date}"
+  },
+  "window": {
+    "permanent": "Se puede pedir todo el año",
+    "open": "Abierta hasta el {date}",
+    "openNoEnd": "Plazo abierto",
+    "upcoming": "Abre el {date}",
+    "closed": "Plazo cerrado (cerró el {date})",
+    "unknown": "Consulta el plazo en la fuente oficial"
+  },
+  "levels": {
+    "state": "Estatal",
+    "regional": "Autonómica",
+    "municipal": "Municipal"
+  },
+  "categories": {
+    "birth": "Natalidad y crianza",
+    "housing": "Vivienda y alquiler",
+    "energy": "Luz y energía",
+    "income": "Ingresos y prestaciones",
+    "education": "Educación y becas",
+    "dependency": "Dependencia y discapacidad",
+    "employment": "Empleo y conciliación"
+  },
+  "index": {
+    "title": "Ayudas públicas para familias",
+    "lead": "Todas las ayudas que revisamos, ordenadas por tema.",
+    "categoryTitle": "Ayudas de {category} en {region}",
+    "categoryLead": "Ayudas estatales y de {region} sobre {category}, con requisitos, importes y plazos.",
+    "empty": "Todavía no tenemos ayudas en esta categoría."
+  },
+  "glossary": {
+    "iprem": "IPREM: indicador que usa la Administración para fijar límites de ingresos. En 2026 son 600 € al mes (8.400 € al año en 14 pagas)."
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "body": "Puede que la ayuda ya no exista o haya cambiado de dirección.",
+    "back": "Ver todas las ayudas"
+  }
+}

@@ -1,0 +1,1608 @@
+[
+  {
+    "slug": "ayudas-alquiler-vivienda-castilla-y-leon",
+    "title": "Ayudas al alquiler de vivienda de Castilla y León",
+    "summary": "La Junta paga el 50 % del alquiler mensual (60 % si tienes hasta 35 años) a inquilinos con ingresos limitados. La última convocatoria cerró el 30 de enero de 2026; suele abrirse en otoño.",
+    "level": "regional",
+    "region": "CL",
+    "category": "housing",
+    "kind": "call",
+    "agency": "Junta de Castilla y León (Vivienda)",
+    "amount": {
+      "type": "percent",
+      "min": 50,
+      "max": 75,
+      "text": "50 % del alquiler mensual; 60 % si tienes 35 años o menos; hasta 75 % para jóvenes en municipios pequeños (ámbito 2º)."
+    },
+    "window": {
+      "opensAt": "2025-12-01",
+      "closesAt": "2026-01-30"
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "applicantAge",
+          "op": "gte",
+          "value": 18,
+          "label": "Ser mayor de edad"
+        },
+        {
+          "field": "housing",
+          "op": "eq",
+          "value": "renting",
+          "label": "Vivir de alquiler con contrato a tu nombre"
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "gte",
+          "value": {
+            "mul": [
+              0.5,
+              {
+                "ref": "iprem14"
+              }
+            ]
+          },
+          "label": "Ingresos del hogar de al menos 0,5 veces el IPREM (4.200 €/año)",
+          "source": {
+            "excerpt": "sean iguales o superiores a 0,5 veces el IPREM e iguales o inferiores a 3 veces el IPREM"
+          }
+        },
+        {
+          "any": [
+            {
+              "field": "annualHouseholdIncome",
+              "op": "lte",
+              "value": {
+                "mul": [
+                  3,
+                  {
+                    "ref": "iprem14"
+                  }
+                ]
+              },
+              "label": "Ingresos del hogar de hasta 3 veces el IPREM (25.200 €/año)"
+            },
+            {
+              "all": [
+                {
+                  "field": "isLargeFamily",
+                  "op": "eq",
+                  "value": true,
+                  "label": "Familia numerosa"
+                },
+                {
+                  "field": "annualHouseholdIncome",
+                  "op": "lte",
+                  "value": {
+                    "mul": [
+                      4,
+                      {
+                        "ref": "iprem14"
+                      }
+                    ]
+                  },
+                  "label": "Ingresos de hasta 4 veces el IPREM"
+                }
+              ]
+            },
+            {
+              "all": [
+                {
+                  "field": "applicantDisabilityPercent",
+                  "op": "gte",
+                  "value": 33,
+                  "label": "Discapacidad del 33 % o más"
+                },
+                {
+                  "field": "annualHouseholdIncome",
+                  "op": "lte",
+                  "value": {
+                    "mul": [
+                      5,
+                      {
+                        "ref": "iprem14"
+                      }
+                    ]
+                  },
+                  "label": "Ingresos de hasta 5 veces el IPREM"
+                }
+              ]
+            }
+          ],
+          "label": "Ingresos del hogar de hasta 3 veces el IPREM (4 o 5 veces en familias numerosas o con discapacidad)"
+        },
+        {
+          "any": [
+            {
+              "field": "monthlyRent",
+              "op": "lte",
+              "value": 550,
+              "label": "Alquiler de 550 €/mes o menos"
+            },
+            {
+              "all": [
+                {
+                  "field": "isLargeFamily",
+                  "op": "eq",
+                  "value": true,
+                  "label": "Familia numerosa"
+                },
+                {
+                  "field": "monthlyRent",
+                  "op": "lte",
+                  "value": 800,
+                  "label": "Alquiler de 800 €/mes o menos"
+                }
+              ]
+            },
+            {
+              "all": [
+                {
+                  "field": "applicantDisabilityPercent",
+                  "op": "gte",
+                  "value": 33,
+                  "label": "Discapacidad del 33 % o más"
+                },
+                {
+                  "field": "monthlyRent",
+                  "op": "lte",
+                  "value": 800,
+                  "label": "Alquiler de 800 €/mes o menos"
+                }
+              ]
+            }
+          ],
+          "label": "Alquiler mensual dentro del límite (550 € en general; hasta 700-800 € en familias numerosas o con discapacidad)"
+        }
+      ]
+    },
+    "otherRequirements": [
+      "El límite de alquiler es de 550 €/mes en municipios del ámbito 1º (como Valladolid) y 500 € en el ámbito 2º; en habitaciones, 200 € y 175 €.",
+      "La vivienda debe ser tu residencia habitual y estar empadronado en ella.",
+      "Nadie del hogar puede ser propietario o usufructuario de una vivienda en España (salvo excepciones) ni tener parentesco de primer o segundo grado con el arrendador.",
+      "Es una convocatoria en concurrencia competitiva: se conceden hasta agotar el presupuesto."
+    ],
+    "documents": [
+      "Contrato de alquiler",
+      "Justificantes bancarios del pago del alquiler",
+      "Certificado de empadronamiento"
+    ],
+    "steps": [
+      "Espera a la próxima convocatoria (la de 2025 se abrió del 1 de diciembre de 2025 al 30 de enero de 2026).",
+      "Presenta la solicitud en la sede electrónica de la Junta (tramitacastillayleon.jcyl.es) con el código BDNS de la convocatoria."
+    ],
+    "officialUrl": "https://www.tramitacastillayleon.jcyl.es",
+    "sources": [
+      {
+        "url": "https://bocyl.jcyl.es/boletines/2025/10/21/pdf/BOCYL-D-21102025-21.pdf",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "El plazo de presentación de solicitudes comenzará el día 1 de diciembre de 2025 y finalizará el 30 de enero de 2026, ambos incluidos"
+      },
+      {
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/862757",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "La cuantía de la subvención será el resultado de aplicar a la renta o precio mensual [...] el porcentaje del 50 %. En el supuesto de personas jóvenes, el porcentaje será del 60 %"
+      }
+    ],
+    "faq": [
+      {
+        "question": "¿Cuándo se piden las ayudas al alquiler en Castilla y León?",
+        "answer": "La última convocatoria estuvo abierta del 1 de diciembre de 2025 al 30 de enero de 2026. Activa las alertas para saber cuándo abre la siguiente."
+      }
+    ],
+    "id": "ayudas-alquiler-vivienda-castilla-y-leon",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
+    "slug": "bono-nacimiento-castilla-y-leon",
+    "title": "Bono Nacimiento de Castilla y León 2026",
+    "summary": "Entre 500 y 2.500 € por cada hijo nacido o adoptado en 2026, en una tarjeta prepago para alimentación infantil, pañales e higiene. Se duplica si el bebé tiene discapacidad.",
+    "level": "regional",
+    "region": "CL",
+    "category": "birth",
+    "kind": "call",
+    "agency": "Junta de Castilla y León (Consejería de Desregulación, Familia y Ayudas Sociales)",
+    "amount": {
+      "type": "range",
+      "min": 500,
+      "max": 2500,
+      "text": "1º hijo: 1.500 € / 1.000 € / 500 €; 2º hijo: 2.000 € / 1.500 € / 1.000 €; 3º y siguientes: 2.500 € / 2.000 € / 1.500 €, según la renta de los progenitores (hasta 40.000 €, de 40.001 a 60.000 €, o más). Se duplica con discapacidad del 33 % o más."
+    },
+    "window": {
+      "opensAt": "2026-03-03",
+      "closesAt": "2027-03-31",
+      "text": "Tienes 3 meses desde el nacimiento o la adopción para pedirlo."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "youngestChildAge",
+          "op": "eq",
+          "value": 0,
+          "label": "Tener un hijo nacido o adoptado en 2026",
+          "hard": true,
+          "source": {
+            "url": "https://bocyl.jcyl.es/boletines/2026/03/02/pdf/BOCYL-D-02032026-41-19.pdf",
+            "excerpt": "por el nacimiento de hijas o hijos o la adopción de menores entre el 1 de enero y el 31 diciembre de 2026"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Los progenitores deben tener residencia legal en España y estar empadronados en Castilla y León en la fecha del nacimiento; el bebé también debe estar empadronado en Castilla y León.",
+      "Estar al corriente con Hacienda y la Seguridad Social.",
+      "La renta que cuenta es la suma de las bases imponibles del IRPF 2024 de ambos progenitores."
+    ],
+    "documents": [
+      "DNI o TIE de los progenitores",
+      "Libro de familia o certificado de nacimiento / resolución de adopción",
+      "Certificado de discapacidad del bebé (solo para el complemento)"
+    ],
+    "steps": [
+      "Rellena la solicitud en la aplicación web de la sede electrónica de la Junta (tramitacastillayleon.jcyl.es), buscando el código BDNS 889807.",
+      "Presenta una única solicitud por familia dentro de los 3 meses siguientes al nacimiento o la adopción.",
+      "Si te lo conceden, recibirás el importe en la Tarjeta Familia (pago único desde octubre de 2026)."
+    ],
+    "officialUrl": "https://www.tramitacastillayleon.jcyl.es",
+    "sources": [
+      {
+        "url": "https://bocyl.jcyl.es/boletines/2026/03/02/pdf/BOCYL-D-02032026-41-19.pdf",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "El plazo para la presentación de la solicitud será de 3 meses desde la fecha de nacimiento o adopción, o desde la publicación del presente extracto en el B.O.C. y L."
+      },
+      {
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/889807",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "1º hijo 1.500 € 1.000 € 500 € / 2º hijo 2.000 € 1.500 € 1.000 € / 3º hijo y siguientes 2.500 € 2.000 € 1.500 € [...] se duplicará en el caso de que el nacido o adoptado tenga reconocido un grado de discapacidad igual o superior al 33%."
+      }
+    ],
+    "faq": [
+      {
+        "question": "¿Cómo se cobra el Bono Nacimiento de Castilla y León?",
+        "answer": "En la Tarjeta Familia, una tarjeta prepago para productos infantiles. Desde octubre de 2026 se abona en un único pago tras la concesión."
+      }
+    ],
+    "id": "bono-nacimiento-castilla-y-leon",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
+    "slug": "bono-social-electrico",
+    "title": "Bono social eléctrico",
+    "summary": "Descuento en la factura de la luz para hogares vulnerables. En 2026 es del 42,5 % (57,5 % en situación de vulnerabilidad severa) sobre el precio regulado (PVPC).",
+    "level": "state",
+    "category": "energy",
+    "kind": "permanent",
+    "agency": "Ministerio para la Transición Ecológica (MITECO) y comercializadoras de referencia",
+    "amount": {
+      "type": "percent",
+      "min": 42.5,
+      "max": 57.5,
+      "text": "42,5 % de descuento en la factura (57,5 % si eres consumidor vulnerable severo) hasta el 31 de diciembre de 2026. Después, 35 % y 50 %. Se aplica hasta un límite de consumo anual."
+    },
+    "eligibility": {
+      "any": [
+        {
+          "field": "isLargeFamily",
+          "op": "eq",
+          "value": true,
+          "label": "Tener título de familia numerosa en vigor",
+          "source": {
+            "excerpt": "Cuando el consumidor disponga de un título de familia numerosa en vigor, el COR no verificará el nivel de renta"
+          }
+        },
+        {
+          "field": "receivesMinimumIncome",
+          "op": "eq",
+          "value": true,
+          "label": "Cobrar el Ingreso Mínimo Vital (tú o alguien de tu hogar)"
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lte",
+          "value": {
+            "mul": [
+              {
+                "ref": "iprem14"
+              },
+              {
+                "add": [
+                  1.5,
+                  {
+                    "mul": [
+                      0.3,
+                      {
+                        "ref": "extraAdults"
+                      }
+                    ]
+                  },
+                  {
+                    "mul": [
+                      0.5,
+                      {
+                        "ref": "numMinors"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "label": "Ingresos del hogar de hasta 1,5 veces el IPREM, más 0,3 por cada adulto adicional y 0,5 por cada menor",
+          "source": {
+            "excerpt": "12.600 €/año (que equivale a 1,5 veces el IPREM de 14 pagas) cuando no existe unidad de convivencia [...] se añadirá al umbral de renta 0,3 IPREM por cada persona mayor de edad adicional, y 0,5 IPREM por cada menor de edad."
+          }
+        },
+        {
+          "all": [
+            {
+              "any": [
+                {
+                  "field": "isSingleParent",
+                  "op": "eq",
+                  "value": true,
+                  "label": "Familia monoparental"
+                },
+                {
+                  "field": "applicantDisabilityPercent",
+                  "op": "gte",
+                  "value": 33,
+                  "label": "Discapacidad reconocida del 33 % o más"
+                },
+                {
+                  "field": "numChildrenWithDisability",
+                  "op": "gte",
+                  "value": 1,
+                  "label": "Un hijo con discapacidad reconocida del 33 % o más"
+                }
+              ]
+            },
+            {
+              "field": "annualHouseholdIncome",
+              "op": "lte",
+              "value": {
+                "mul": [
+                  {
+                    "ref": "iprem14"
+                  },
+                  {
+                    "add": [
+                      2.5,
+                      {
+                        "mul": [
+                          0.3,
+                          {
+                            "ref": "extraAdults"
+                          }
+                        ]
+                      },
+                      {
+                        "mul": [
+                          0.5,
+                          {
+                            "ref": "numMinors"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "label": "Ingresos del hogar dentro del umbral ampliado (+1 IPREM)"
+            }
+          ],
+          "label": "Situación especial (monoparental o discapacidad) con ingresos dentro del umbral ampliado"
+        }
+      ],
+      "label": "Cumplir alguno de los criterios de vulnerabilidad (renta, familia numerosa o IMV)"
+    },
+    "otherRequirements": [
+      "Ser titular del contrato de luz de tu vivienda habitual.",
+      "Tener contratado el PVPC (precio regulado) con una comercializadora de referencia y una potencia de 10 kW o menos.",
+      "También suman 1 IPREM al umbral la dependencia reconocida de grado II o III, la violencia de género o el terrorismo."
+    ],
+    "documents": [
+      "DNI o NIE de las personas del hogar",
+      "Certificado de empadronamiento colectivo",
+      "Libro de familia (si hay unidad de convivencia)",
+      "Título de familia numerosa, si es tu caso"
+    ],
+    "steps": [
+      "Si no lo tienes, cambia tu contrato al PVPC con una comercializadora de referencia (no cuesta nada).",
+      "Pide el bono social a esa comercializadora por teléfono, web, email u oficina con el formulario oficial.",
+      "La comercializadora comprueba los datos y te responde en 15 días hábiles.",
+      "Se renueva cada 2 años (para familias numerosas, mientras el título siga vigente)."
+    ],
+    "officialUrl": "https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001.html",
+    "sources": [
+      {
+        "url": "https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001/preguntas-frecuentes-bono-social.html",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "El bono social es un descuento en la factura de un 35% sobre el PVPC para el consumidor vulnerable, y de un 50% [...] para el consumidor vulnerable severo. No obstante, excepcionalmente, hasta el 31 de diciembre de 2026, el descuento correspondiente al consumidor vulnerable será del 42,5%. En el caso del consumidor vulnerable severo, el descuento será del 57,5%."
+      }
+    ],
+    "faq": [
+      {
+        "question": "¿Puedo tener el bono social con cualquier compañía de luz?",
+        "answer": "No. Solo lo aplican las comercializadoras de referencia y con la tarifa regulada (PVPC). Cambiarse es gratis."
+      },
+      {
+        "question": "¿Qué ingresos máximos hay para el bono social en 2026?",
+        "answer": "12.600 € al año si vives solo; por ejemplo, 19.320 € para dos adultos y un menor o 23.520 € para dos adultos y dos menores. Las familias numerosas y quienes cobran el IMV no tienen límite de renta."
+      }
+    ],
+    "id": "bono-social-electrico",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
+    "slug": "bono-social-termico",
+    "title": "Bono social térmico",
+    "summary": "Ayuda anual para calefacción, agua caliente o cocina que se paga automáticamente a quienes tienen el bono social eléctrico. En Castilla y León la abona la Junta.",
+    "level": "state",
+    "category": "energy",
+    "kind": "permanent",
+    "agency": "Ministerio para la Transición Ecológica y comunidades autónomas",
+    "amount": {
+      "type": "variable",
+      "text": "Pago único al año. El importe depende de la zona climática de tu vivienda y de si eres consumidor vulnerable o vulnerable severo."
+    },
+    "eligibility": {
+      "any": [
+        {
+          "field": "isLargeFamily",
+          "op": "eq",
+          "value": true,
+          "label": "Tener título de familia numerosa en vigor",
+          "source": {
+            "excerpt": "Cuando el consumidor disponga de un título de familia numerosa en vigor, el COR no verificará el nivel de renta"
+          }
+        },
+        {
+          "field": "receivesMinimumIncome",
+          "op": "eq",
+          "value": true,
+          "label": "Cobrar el Ingreso Mínimo Vital (tú o alguien de tu hogar)"
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lte",
+          "value": {
+            "mul": [
+              {
+                "ref": "iprem14"
+              },
+              {
+                "add": [
+                  1.5,
+                  {
+                    "mul": [
+                      0.3,
+                      {
+                        "ref": "extraAdults"
+                      }
+                    ]
+                  },
+                  {
+                    "mul": [
+                      0.5,
+                      {
+                        "ref": "numMinors"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "label": "Ingresos del hogar de hasta 1,5 veces el IPREM, más 0,3 por cada adulto adicional y 0,5 por cada menor",
+          "source": {
+            "excerpt": "12.600 €/año (que equivale a 1,5 veces el IPREM de 14 pagas) cuando no existe unidad de convivencia [...] se añadirá al umbral de renta 0,3 IPREM por cada persona mayor de edad adicional, y 0,5 IPREM por cada menor de edad."
+          }
+        },
+        {
+          "all": [
+            {
+              "any": [
+                {
+                  "field": "isSingleParent",
+                  "op": "eq",
+                  "value": true,
+                  "label": "Familia monoparental"
+                },
+                {
+                  "field": "applicantDisabilityPercent",
+                  "op": "gte",
+                  "value": 33,
+                  "label": "Discapacidad reconocida del 33 % o más"
+                },
+                {
+                  "field": "numChildrenWithDisability",
+                  "op": "gte",
+                  "value": 1,
+                  "label": "Un hijo con discapacidad reconocida del 33 % o más"
+                }
+              ]
+            },
+            {
+              "field": "annualHouseholdIncome",
+              "op": "lte",
+              "value": {
+                "mul": [
+                  {
+                    "ref": "iprem14"
+                  },
+                  {
+                    "add": [
+                      2.5,
+                      {
+                        "mul": [
+                          0.3,
+                          {
+                            "ref": "extraAdults"
+                          }
+                        ]
+                      },
+                      {
+                        "mul": [
+                          0.5,
+                          {
+                            "ref": "numMinors"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "label": "Ingresos del hogar dentro del umbral ampliado (+1 IPREM)"
+            }
+          ],
+          "label": "Situación especial (monoparental o discapacidad) con ingresos dentro del umbral ampliado"
+        }
+      ],
+      "label": "Cumplir alguno de los criterios de vulnerabilidad (renta, familia numerosa o IMV)"
+    },
+    "otherRequirements": [
+      "Tener concedido el bono social eléctrico a 31 de diciembre del año anterior: el bono térmico se reconoce de oficio y no hay que pedirlo.",
+      "Mantener actualizados tus datos bancarios con la comercializadora de referencia."
+    ],
+    "documents": [],
+    "steps": [
+      "Pide primero el bono social eléctrico (es la puerta de entrada).",
+      "Si lo tienes a 31 de diciembre, recibirás el bono térmico al año siguiente sin hacer ningún trámite."
+    ],
+    "officialUrl": "https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001.html",
+    "sources": [
+      {
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-13593",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "Real Decreto-ley 15/2018, de 5 de octubre, de medidas urgentes para la transición energética y la protección de los consumidores (crea el bono social térmico)."
+      },
+      {
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/895512",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "Bono Social Térmico 2025 (Junta de Castilla y León). Sin plazo de solicitud."
+      }
+    ],
+    "faq": [
+      {
+        "question": "¿Hay que solicitar el bono social térmico?",
+        "answer": "No. Se paga automáticamente a quienes tenían el bono social eléctrico a 31 de diciembre del año anterior."
+      }
+    ],
+    "id": "bono-social-termico",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
+    "slug": "complemento-ayuda-infancia",
+    "title": "Complemento de Ayuda para la Infancia (CAPI)",
+    "summary": "Ayuda mensual por cada hijo menor de 18 años para familias con ingresos bajos o medios-bajos. Se puede cobrar aunque no tengas derecho al Ingreso Mínimo Vital.",
+    "level": "state",
+    "category": "birth",
+    "kind": "permanent",
+    "agency": "Seguridad Social (INSS)",
+    "amount": {
+      "type": "range",
+      "min": 57.5,
+      "max": 115,
+      "text": "Por cada hijo: 115 €/mes si es menor de 3 años, 80,50 €/mes de 3 a 5 años y 57,50 €/mes de 6 a 17 años."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "numMinors",
+          "op": "gte",
+          "value": 1,
+          "label": "Tener al menos un hijo menor de 18 años",
+          "hard": true
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lt",
+          "value": {
+            "mul": [
+              3,
+              {
+                "ref": "imvAnnualBase"
+              },
+              {
+                "min": [
+                  2.2,
+                  {
+                    "add": [
+                      0.7,
+                      {
+                        "mul": [
+                          0.3,
+                          {
+                            "ref": "householdSize"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "label": "Ingresos del hogar inferiores al triple de la renta garantizada del IMV para tu hogar",
+          "source": {
+            "excerpt": "Los ingresos computables del ejercicio anterior deben ser inferiores al 300% de la cuantía garantizada por el ingreso mínimo vital"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Patrimonio neto inferior al 150 % del límite del IMV.",
+      "Es incompatible con la asignación por hijo a cargo sin discapacidad (o con discapacidad inferior al 33 %).",
+      "La edad del hijo se cuenta a 1 de enero del año."
+    ],
+    "documents": [
+      "DNI o NIE / TIE de las personas del hogar",
+      "Libro de familia o certificado de nacimiento",
+      "Certificado de empadronamiento colectivo"
+    ],
+    "steps": [
+      "Solicítalo en la sede electrónica de la Seguridad Social, en el servicio del Ingreso Mínimo Vital (es el mismo trámite).",
+      "Indica que quieres el Complemento de Ayuda para la Infancia."
+    ],
+    "officialUrl": "https://imv.seg-social.es/",
+    "sources": [
+      {
+        "url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/65850d68-8d06-4645-bde7-05374ee42ac7",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "Menores de 3 años: 115 €/mes; de 3 a menos de 6 años: 80,50 €/mes; de 6 a menos de 18 años: 57,50 €/mes."
+      }
+    ],
+    "faq": [
+      {
+        "question": "¿Necesito cobrar el IMV para pedir el complemento por hijos?",
+        "answer": "No. Puedes cobrar solo el complemento si tus ingresos están por debajo del triple de la renta garantizada del IMV para tu hogar."
+      }
+    ],
+    "id": "complemento-ayuda-infancia",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
+    "slug": "conciliacion-reduccion-jornada-excedencia-castilla-y-leon",
+    "title": "Ayudas a la conciliación por reducción de jornada o excedencia (Castilla y León)",
+    "summary": "1.500 € (2.500 € en familias numerosas o monoparentales) para trabajadores por cuenta ajena que reducen su jornada o piden una excedencia para cuidar de hijos menores de 12 años o familiares.",
+    "level": "regional",
+    "region": "CL",
+    "category": "employment",
+    "kind": "call",
+    "agency": "Junta de Castilla y León (Servicios Sociales)",
+    "amount": {
+      "type": "range",
+      "min": 1500,
+      "max": 2500,
+      "text": "1.500 € por reducir la jornada al menos un 40 % durante 6 meses o por una excedencia de 3 meses; 1.000 € más en familias numerosas o monoparentales."
+    },
+    "window": {
+      "opensAt": "2026-03-11",
+      "closesAt": "2026-04-30"
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "employmentStatus",
+          "op": "eq",
+          "value": "employed",
+          "label": "Trabajar por cuenta ajena (los autónomos no pueden pedirla)"
+        },
+        {
+          "field": "yearsRegisteredInRegion",
+          "op": "gte",
+          "value": 1,
+          "label": "Llevar al menos un año empadronado en Castilla y León"
+        },
+        {
+          "any": [
+            {
+              "field": "youngestChildAge",
+              "op": "lt",
+              "value": 12,
+              "label": "Tener un hijo menor de 12 años"
+            },
+            {
+              "field": "hasDependentPerson",
+              "op": "eq",
+              "value": true,
+              "label": "Cuidar de un familiar que no puede valerse por sí mismo"
+            }
+          ],
+          "label": "Cuidar de un hijo menor de 12 años o de un familiar dependiente",
+          "hard": true
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lte",
+          "value": 36540,
+          "label": "Renta de la pareja de 36.540 € o menos (18.270 € si no tienes pareja)",
+          "source": {
+            "excerpt": "no supere los treinta y seis mil quinientos cuarenta euros (36.540€) [...] El límite de renta se reducirá al 50% (18.270 €) en el caso de que no exista cónyuge o pareja"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Haber empezado la reducción de jornada (mínimo 40 %, 6 meses) o la excedencia en el año anterior a la convocatoria (en la de 2026, durante 2025).",
+      "Si no tienes pareja, el límite de renta es 18.270 €."
+    ],
+    "documents": [
+      "DNI o TIE",
+      "Documento de la empresa que acredite la reducción de jornada o la excedencia"
+    ],
+    "steps": [
+      "Espera a la próxima convocatoria (la de 2026 estuvo abierta del 11 de marzo al 30 de abril).",
+      "Presenta la solicitud en la sede electrónica de la Junta con el código BDNS de la convocatoria."
+    ],
+    "officialUrl": "https://www.tramitacastillayleon.jcyl.es",
+    "sources": [
+      {
+        "url": "https://bocyl.jcyl.es/boletines/2026/03/10/pdf/BOCYL-D-10032026-47-9.pdf",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "1.500 € por el ejercicio del derecho de reducción siempre que se realice sobre una jornada a tiempo completo durante un período de seis meses. 1.500 € por el ejercicio del derecho de excedencia durante un período de tres meses."
+      },
+      {
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/891480",
+        "retrievedAt": "2026-10-14"
+      }
+    ],
+    "faq": [],
+    "id": "conciliacion-reduccion-jornada-excedencia-castilla-y-leon",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
+    "slug": "deduccion-ascendiente-dos-hijos",
+    "title": "Deducción para familias monoparentales con dos hijos (IRPF)",
+    "summary": "1.200 € al año para madres o padres separados o sin pareja que viven con dos hijos y no reciben pensión de alimentos por ellos. Se puede cobrar por adelantado.",
+    "level": "state",
+    "category": "income",
+    "kind": "permanent",
+    "agency": "Agencia Tributaria",
+    "amount": {
+      "type": "fixed",
+      "min": 1200,
+      "max": 1200,
+      "text": "Hasta 1.200 € al año (100 €/mes si se pide por adelantado)."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "isSingleParent",
+          "op": "eq",
+          "value": true,
+          "label": "Ser familia monoparental (separado legalmente o sin vínculo matrimonial)",
+          "hard": true
+        },
+        {
+          "field": "numChildren",
+          "op": "gte",
+          "value": 2,
+          "label": "Tener dos hijos a cargo",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deducciones-familia-numerosa-personas-discapacidad-cargo/cuantia-maxima-deducciones.html",
+            "excerpt": "por ser un ascendiente separado legalmente, o sin vínculo matrimonial, con dos hijos sin derecho a percibir anualidades por alimentos y por los que tenga derecho a la totalidad del mínimo por descendientes."
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Los hijos no deben recibir pensión de alimentos y debes tener derecho a la totalidad del mínimo por descendientes (en general, menores de 25 que conviven contigo).",
+      "Estar de alta en la Seguridad Social o mutualidad, o cobrar prestaciones por desempleo o pensiones.",
+      "Si tienes tres o más hijos, mira la deducción por familia numerosa."
+    ],
+    "documents": ["DNI o NIE", "Libro de familia"],
+    "steps": [
+      "Pide el abono anticipado con el modelo 143 o aplícala en la declaración de la renta."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deducciones-familia-numerosa-personas-discapacidad-cargo/cuantia-maxima-deducciones.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deducciones-familia-numerosa-personas-discapacidad-cargo/deducciones-que-incluye.html",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "Deducción por ascendiente, separado legalmente o sin vínculo matrimonial, con dos hijos sin derecho a percibir anualidades por alimentos."
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-ascendiente-dos-hijos",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
+    "slug": "deduccion-descendiente-discapacidad",
+    "title": "Deducción por hijo con discapacidad a cargo (IRPF)",
+    "summary": "Hasta 1.200 € al año por cada hijo con discapacidad reconocida del 33 % o más. Se puede cobrar por adelantado cada mes.",
+    "level": "state",
+    "category": "dependency",
+    "kind": "permanent",
+    "agency": "Agencia Tributaria",
+    "amount": {
+      "type": "fixed",
+      "min": 1200,
+      "max": 1200,
+      "text": "Hasta 1.200 € al año por cada hijo con discapacidad (100 €/mes si se pide por adelantado)."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "numChildrenWithDisability",
+          "op": "gte",
+          "value": 1,
+          "label": "Tener un hijo con discapacidad reconocida del 33 % o más",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deducciones-familia-numerosa-personas-discapacidad-cargo/cuantia-maxima-deducciones.html",
+            "excerpt": "Deducción por descendientes con discapacidad a cargo: por cada descendiente con discapacidad con derecho a la aplicación del mínimo por descendientes"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Estar de alta en la Seguridad Social o mutualidad, o cobrar prestaciones por desempleo o pensiones.",
+      "Tener derecho al mínimo por descendientes por ese hijo."
+    ],
+    "documents": ["Certificado de discapacidad", "DNI o NIE"],
+    "steps": [
+      "Pide el abono anticipado con el modelo 143 o aplícala en la declaración de la renta."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deducciones-familia-numerosa-personas-discapacidad-cargo/cuantia-maxima-deducciones.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deducciones-familia-numerosa-personas-discapacidad-cargo/deducciones-que-incluye.html",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "Deducción por cada descendiente con discapacidad."
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-descendiente-discapacidad",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
+    "slug": "deduccion-familia-numerosa",
+    "title": "Deducción por familia numerosa (IRPF)",
+    "summary": "1.200 € al año para familias numerosas de categoría general y 2.400 € para las de categoría especial, más hasta 600 € por cada hijo por encima del mínimo. Se puede cobrar por adelantado.",
+    "level": "state",
+    "category": "income",
+    "kind": "permanent",
+    "agency": "Agencia Tributaria",
+    "amount": {
+      "type": "range",
+      "min": 1200,
+      "max": 2400,
+      "text": "1.200 €/año (categoría general) o 2.400 €/año (especial), más hasta 600 € por cada hijo que supere el mínimo de la categoría."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "isLargeFamily",
+          "op": "eq",
+          "value": true,
+          "label": "Tener título de familia numerosa en vigor",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deducciones-familia-numerosa-personas-discapacidad-cargo/cuantia-maxima-deducciones.html",
+            "excerpt": "ser un ascendiente, o un hermano huérfano de padre y madre, que forme parte de una familia numerosa de categoría general conforme a la Ley 40/2003"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Estar de alta en la Seguridad Social o mutualidad, o cobrar prestaciones por desempleo o pensiones."
+    ],
+    "documents": ["Título de familia numerosa", "DNI o NIE"],
+    "steps": [
+      "Pide el abono anticipado (100 €/mes en categoría general) con el modelo 143 en la sede de la Agencia Tributaria, o aplícala en la declaración de la renta."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deducciones-familia-numerosa-personas-discapacidad-cargo/cuantia-maxima-deducciones.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deducciones-familia-numerosa-personas-discapacidad-cargo/cuantia-maxima-deducciones.html",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "La cuantía de la deducción (1.200 euros o 2.400 euros), se incrementará hasta en 600 euros anuales adicionales por cada uno de los hijos que formen parte de la familia numerosa que exceda del número mínimo de hijos exigido"
+      }
+    ],
+    "faq": [
+      {
+        "question": "¿Se puede cobrar cada mes la deducción por familia numerosa?",
+        "answer": "Sí, pidiendo el abono anticipado con el modelo 143; o de una vez en la declaración de la renta."
+      }
+    ],
+    "id": "deduccion-familia-numerosa",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
+    "slug": "deduccion-maternidad",
+    "title": "Deducción por maternidad (IRPF)",
+    "summary": "Hasta 1.200 € al año por cada hijo menor de 3 años, que puedes cobrar por adelantado (100 € al mes) o en la declaración de la renta. Se suman hasta 1.000 € más por gastos de guardería.",
+    "level": "state",
+    "category": "birth",
+    "kind": "permanent",
+    "agency": "Agencia Tributaria",
+    "amount": {
+      "type": "range",
+      "max": 2200,
+      "text": "Hasta 1.200 € al año por hijo menor de 3 años (100 €/mes), más hasta 1.000 € por guardería o escuela infantil autorizada."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "youngestChildAge",
+          "op": "lt",
+          "value": 3,
+          "label": "Tener un hijo menor de 3 años",
+          "hard": true
+        },
+        {
+          "field": "employmentStatus",
+          "op": "in",
+          "value": ["employed", "self_employed", "unemployed"],
+          "label": "Estar de alta en la Seguridad Social o cobrar una prestación por desempleo",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deduccion-maternidad-incremento-adicional-gastos-custodia/deduccion-maternidad/beneficiarios-hijos-que-derecho-aplicacion-deduccion.html",
+            "excerpt": "que en el momento del nacimiento del menor perciban prestaciones contributivas o asistenciales del sistema de protección de desempleo, o que estén dadas de alta en el régimen correspondiente de la Seguridad Social o mutualidad"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "La aplica la madre. El padre o tutor solo en casos especiales (fallecimiento de la madre o custodia exclusiva).",
+      "Si estás en paro, debes cobrar prestación o subsidio por desempleo en el momento del nacimiento; estar solo inscrita no basta.",
+      "Si te das de alta después del nacimiento, necesitas al menos 30 días cotizados."
+    ],
+    "documents": ["DNI o NIE", "Datos del hijo (fecha de nacimiento, NIF si lo tiene)"],
+    "steps": [
+      "Pide el abono anticipado (100 €/mes) en la sede de la Agencia Tributaria con el modelo 140, o aplícala en tu próxima declaración de la renta.",
+      "Para el incremento por guardería, la escuela infantil debe presentar el modelo 233; tú lo aplicas en la renta."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ciudadanos-familias-personas-discapacidad/deducciones-relacionadas-hijos-descendientes/deduccion-maternidad/quien-corresponde-deduccion.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deduccion-maternidad-incremento-adicional-gastos-custodia/deduccion-maternidad/beneficiarios-hijos-que-derecho-aplicacion-deduccion.html",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "Las mujeres con hijos menores de tres años con derecho a la aplicación del mínimo por descendientes [...]"
+      }
+    ],
+    "faq": [
+      {
+        "question": "¿Puedo cobrar la deducción por maternidad si estoy en paro?",
+        "answer": "Sí, si en el momento del nacimiento cobrabas una prestación o subsidio por desempleo. Estar solo inscrita como demandante no es suficiente."
+      }
+    ],
+    "id": "deduccion-maternidad",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
+    "slug": "reconocimiento-dependencia-castilla-y-leon",
+    "title": "Reconocimiento de la dependencia y sus prestaciones (Castilla y León)",
+    "summary": "Si alguien de tu familia necesita ayuda para las tareas básicas del día a día, puedes pedir que se reconozca su grado de dependencia y acceder a servicios o prestaciones económicas.",
+    "level": "regional",
+    "region": "CL",
+    "category": "dependency",
+    "kind": "permanent",
+    "agency": "Junta de Castilla y León (Servicios Sociales)",
+    "amount": {
+      "type": "variable",
+      "text": "Según el grado de dependencia y la capacidad económica: servicios (ayuda a domicilio, centro de día, residencia) o prestaciones económicas, por ejemplo para cuidados en el entorno familiar."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "hasDependentPerson",
+          "op": "eq",
+          "value": true,
+          "label": "Convivir con o cuidar de una persona que necesita ayuda para las actividades básicas",
+          "hard": true
+        }
+      ]
+    },
+    "otherRequirements": [
+      "La persona dependiente debe haber residido en España 5 años, 2 de ellos inmediatamente antes de la solicitud.",
+      "La resolución puede tardar hasta 6 meses (30 días para menores de 3 años)."
+    ],
+    "documents": [
+      "Informe de salud en modelo normalizado",
+      "Documentación de los ingresos declarados",
+      "Acreditación de la representación, si la solicitud la presenta otra persona"
+    ],
+    "steps": [
+      "Pide información en tu CEAS (Centro de Acción Social) o servicios sociales municipales.",
+      "Presenta la solicitud en la sede electrónica de la Junta o en el CEAS.",
+      "Tras la valoración, se aprueba un Programa Individual de Atención (PIA) con los servicios o prestaciones."
+    ],
+    "officialUrl": "https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla100Detalle/1251181050732/Tramite/1259395711876/Tramite",
+    "sources": [
+      {
+        "url": "https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla100Detalle/1251181050732/Tramite/1259395711876/Tramite",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "Reconocimiento de la situación de dependencia y del derecho a las prestaciones del sistema [...] haber residido en España cinco años, dos de ellos inmediatamente anteriores a la fecha de presentación de la solicitud."
+      }
+    ],
+    "faq": [],
+    "id": "reconocimiento-dependencia-castilla-y-leon",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
+    "slug": "ingreso-minimo-vital",
+    "title": "Ingreso Mínimo Vital (IMV)",
+    "summary": "Prestación mensual de la Seguridad Social para hogares con ingresos muy bajos. Completa tus ingresos hasta una renta garantizada que depende de cuántas personas viven contigo.",
+    "level": "state",
+    "category": "income",
+    "kind": "permanent",
+    "agency": "Seguridad Social (INSS)",
+    "amount": {
+      "type": "range",
+      "min": 0,
+      "max": 1775.31,
+      "text": "Completa tus ingresos hasta 733,60 €/mes si vives solo, y hasta 1.613,92 €/mes en hogares grandes (1.775,31 € en algunos hogares monoparentales). Lo que cobras es la diferencia entre esa cantidad y tus ingresos."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "any": [
+            {
+              "field": "applicantAge",
+              "op": "gte",
+              "value": 23,
+              "label": "Tener 23 años o más"
+            },
+            {
+              "all": [
+                {
+                  "field": "applicantAge",
+                  "op": "gte",
+                  "value": 18,
+                  "label": "Ser mayor de edad"
+                },
+                {
+                  "field": "numMinors",
+                  "op": "gte",
+                  "value": 1,
+                  "label": "Tener hijos menores a cargo"
+                }
+              ]
+            }
+          ],
+          "label": "Tener 23 años o más (o ser mayor de edad con hijos menores a cargo)"
+        },
+        {
+          "field": "yearsLegalResidenceInSpain",
+          "op": "gte",
+          "value": 1,
+          "label": "Llevar al menos un año viviendo legalmente en España",
+          "source": {
+            "excerpt": "de forma continuada e ininterrumpida durante al menos el año anterior a presentar la solicitud"
+          }
+        },
+        {
+          "any": [
+            {
+              "field": "annualHouseholdIncome",
+              "op": "lt",
+              "value": {
+                "add": [
+                  {
+                    "mul": [
+                      {
+                        "ref": "imvAnnualBase"
+                      },
+                      {
+                        "min": [
+                          2.2,
+                          {
+                            "add": [
+                              0.7,
+                              {
+                                "mul": [
+                                  0.3,
+                                  {
+                                    "ref": "householdSize"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  -120
+                ]
+              },
+              "label": "Ingresos del hogar por debajo de la renta garantizada del IMV para tu hogar"
+            },
+            {
+              "all": [
+                {
+                  "field": "isSingleParent",
+                  "op": "eq",
+                  "value": true,
+                  "label": "Familia monoparental"
+                },
+                {
+                  "field": "annualHouseholdIncome",
+                  "op": "lt",
+                  "value": {
+                    "add": [
+                      {
+                        "mul": [
+                          {
+                            "ref": "imvAnnualBase"
+                          },
+                          {
+                            "add": [
+                              0.22,
+                              {
+                                "min": [
+                                  2.2,
+                                  {
+                                    "add": [
+                                      0.7,
+                                      {
+                                        "mul": [
+                                          0.3,
+                                          {
+                                            "ref": "householdSize"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      -120
+                    ]
+                  },
+                  "label": "Ingresos por debajo de la renta garantizada con complemento monoparental"
+                }
+              ]
+            }
+          ],
+          "label": "Ingresos del hogar por debajo de la renta garantizada del IMV para tu hogar",
+          "hard": true
+        }
+      ]
+    },
+    "otherRequirements": [
+      "No tener patrimonio (sin contar la vivienda habitual) igual o superior a 3 veces la renta garantizada anual (26.409,60 € si vives solo).",
+      "Si tienes entre 23 y 29 años y vives solo, haber vivido de forma independiente al menos 2 años.",
+      "La unidad de convivencia debe existir desde al menos 6 meses antes de pedirlo.",
+      "Se miran los ingresos del año anterior."
+    ],
+    "documents": [
+      "DNI o NIE / TIE de las personas del hogar",
+      "Certificado de empadronamiento colectivo",
+      "Libro de familia o certificado de nacimiento de los hijos"
+    ],
+    "steps": [
+      "Comprueba tu caso con el simulador oficial en imv.seg-social.es.",
+      "Solicítalo en la sede electrónica de la Seguridad Social (servicio \"Ingreso Mínimo Vital\"), con certificado digital, Cl@ve o sin certificado.",
+      "Si tienes dudas, llama al 020.",
+      "Recibirás las notificaciones de forma electrónica; si te lo conceden, cobrarás desde el mes siguiente a la solicitud."
+    ],
+    "officialUrl": "https://imv.seg-social.es/",
+    "sources": [
+      {
+        "url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/65850d68-8d06-4645-bde7-05374ee42ac7",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "Un adulto: 733,60 €/mes, 8.803,20 €/año [...] el promedio mensual de ingresos del ejercicio anterior debe ser inferior al menos en 10 euros a la cuantía mensual garantizada"
+      }
+    ],
+    "faq": [
+      {
+        "question": "¿Cuánto se cobra del Ingreso Mínimo Vital en 2026?",
+        "answer": "La renta garantizada es de 733,60 € al mes para una persona sola y sube un 30 % por cada miembro adicional, hasta 1.613,92 €. Las familias monoparentales reciben un 22 % más. Cobras la diferencia entre esa cantidad y los ingresos de tu hogar."
+      },
+      {
+        "question": "¿Es compatible con trabajar?",
+        "answer": "Sí, si tus ingresos siguen por debajo del límite. Tus ingresos se descuentan de la cuantía."
+      }
+    ],
+    "id": "ingreso-minimo-vital",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
+    "slug": "ayudas-primera-matricula-universitaria-castilla-y-leon",
+    "title": "Ayuda para la primera matrícula universitaria en Castilla y León (curso 2026/2027)",
+    "summary": "La Junta devuelve el importe de la matrícula de primer curso de grado en una universidad pública de Castilla y León a estudiantes empadronados en la comunidad.",
+    "level": "regional",
+    "region": "CL",
+    "category": "education",
+    "kind": "call",
+    "agency": "Junta de Castilla y León (Consejería de Industria, Universidades, Empleo y Comercio)",
+    "amount": {
+      "type": "variable",
+      "text": "Hasta el importe pagado por la matrícula de primer curso (precio público de los créditos)."
+    },
+    "window": {
+      "opensAt": "2026-09-22",
+      "closesAt": "2026-10-21"
+    },
+    "eligibility": {
+      "all": [
+        {
+          "any": [
+            {
+              "field": "employmentStatus",
+              "op": "eq",
+              "value": "student",
+              "label": "Estudiar"
+            },
+            {
+              "all": [
+                {
+                  "field": "oldestChildAge",
+                  "op": "gte",
+                  "value": 17,
+                  "label": "Tener un hijo de 17 años o más"
+                },
+                {
+                  "field": "oldestChildAge",
+                  "op": "lte",
+                  "value": 21,
+                  "label": "Tener un hijo de 21 años o menos"
+                }
+              ]
+            }
+          ],
+          "label": "Empezar tú (o tu hijo) el primer curso de un grado universitario este año",
+          "hard": true
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Matricularse y pagar por primera vez el primer curso de un grado o doble grado en una universidad pública de Castilla y León en 2026/2027.",
+      "Estar empadronado en Castilla y León antes de que acabe el plazo de solicitud.",
+      "Concurrencia competitiva: se ordena por la nota de acceso hasta agotar el presupuesto."
+    ],
+    "documents": [
+      "Justificante de matrícula y de pago",
+      "Certificado de empadronamiento",
+      "Documento con la nota de acceso a la universidad"
+    ],
+    "steps": [
+      "Presenta la solicitud en la sede electrónica de la Junta (tramitacastillayleon.jcyl.es) antes del 21 de octubre de 2026."
+    ],
+    "officialUrl": "https://www.tramitacastillayleon.jcyl.es/",
+    "sources": [
+      {
+        "url": "https://bocyl.jcyl.es/boletines/2026/09/21/pdf/BOCYL-D-21092026-183-17.pdf",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "ayudas al alumnado que realice su primera matrícula de primer curso de grado universitario, en una universidad pública de la Comunidad de Castilla y León, en el curso académico 2026/2027"
+      },
+      {
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/929595",
+        "retrievedAt": "2026-10-14"
+      }
+    ],
+    "faq": [],
+    "id": "ayudas-primera-matricula-universitaria-castilla-y-leon",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
+    "slug": "ayudas-permiso-conducir-jovenes-castilla-y-leon",
+    "title": "Ayudas para sacarse el carné de conducir (jóvenes de Castilla y León)",
+    "summary": "Hasta 900 € para jóvenes de 18 a 30 años que obtengan el permiso B entre octubre y diciembre de 2026 en una autoescuela de Castilla y León. El importe depende de la renta del hogar.",
+    "level": "regional",
+    "region": "CL",
+    "category": "employment",
+    "kind": "call",
+    "agency": "Junta de Castilla y León (Consejería de Movilidad, Transformación Digital e IA)",
+    "amount": {
+      "type": "range",
+      "min": 450,
+      "max": 900,
+      "text": "Hasta 900 € si la renta del hogar es menor de 1,5 IPREM; 750 € entre 1,5 y 2,5; 600 € entre 2,5 y 3,5; y 450 € a partir de 3,5 IPREM. Nunca más que el gasto real."
+    },
+    "window": {
+      "opensAt": "2026-10-01",
+      "closesAt": "2027-01-15"
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "applicantAge",
+          "op": "gte",
+          "value": 18,
+          "label": "Tener 18 años o más"
+        },
+        {
+          "field": "applicantAge",
+          "op": "lte",
+          "value": 30,
+          "label": "Cumplir como máximo 30 años en 2026",
+          "source": {
+            "excerpt": "Tener una edad mínima de 18 años y, como máximo, cumplir 30 años dentro del presente año."
+          }
+        },
+        {
+          "field": "yearsRegisteredInRegion",
+          "op": "gte",
+          "value": 5,
+          "label": "Llevar al menos 5 años empadronado en Castilla y León",
+          "source": {
+            "excerpt": "Residir y estar empadronadas en cualquier municipio del territorio de la Comunidad de Castilla y León con al menos cinco años de antelación al momento de la obtención del permiso de conducción."
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Obtener el permiso B entre el 1 de octubre y el 31 de diciembre de 2026, con la formación hecha en autoescuelas de Castilla y León.",
+      "Seguir empadronado en Castilla y León al menos 3 años tras la solicitud.",
+      "Concurrencia competitiva: se conceden por orden de valoración hasta agotar el presupuesto (4 millones de euros)."
+    ],
+    "documents": [
+      "DNI o NIE",
+      "Facturas y justificantes de pago de la autoescuela y las tasas",
+      "Permiso de conducir obtenido"
+    ],
+    "steps": [
+      "Saca el permiso B entre el 1 de octubre y el 31 de diciembre de 2026.",
+      "Presenta la solicitud en la sede electrónica de la Junta antes del 15 de enero de 2027 con las facturas pagadas."
+    ],
+    "officialUrl": "https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla100Detalle/1251181050732/Ayuda012/1285684640457/Propuesta",
+    "sources": [
+      {
+        "url": "https://bocyl.jcyl.es/boletines/2026/09/30/pdf/BOCYL-D-30092026-190-17.pdf",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "La cuantía máxima de la subvención a conceder será de 900,00 euros [...] El plazo para la presentación de solitudes será desde el 1 de octubre de 2026 hasta el 15 de enero de 2027."
+      },
+      {
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/932041",
+        "retrievedAt": "2026-10-14"
+      }
+    ],
+    "faq": [
+      {
+        "question": "¿Cuánto paga la Junta por el carné de conducir?",
+        "answer": "Hasta 900 €, según la renta del hogar, y nunca más de lo que hayas pagado en la autoescuela y tasas."
+      }
+    ],
+    "id": "ayudas-permiso-conducir-jovenes-castilla-y-leon",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
+    "slug": "prestacion-nacimiento-cuidado-menor",
+    "title": "Prestación por nacimiento y cuidado de menor",
+    "summary": "Lo que cobras de la Seguridad Social durante el permiso por nacimiento, adopción o acogida: el 100 % de tu base reguladora mientras dura el permiso.",
+    "level": "state",
+    "category": "birth",
+    "kind": "permanent",
+    "agency": "Seguridad Social (INSS)",
+    "amount": {
+      "type": "variable",
+      "text": "100 % de tu base reguladora durante el permiso (19 semanas por progenitor desde la reforma de 2025). Si no llegas al periodo mínimo cotizado, hay un subsidio de 600 €/mes (100 % del IPREM) durante las semanas obligatorias."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "youngestChildAge",
+          "op": "lt",
+          "value": 1,
+          "label": "Haber tenido, adoptado o acogido un hijo en el último año",
+          "hard": true
+        },
+        {
+          "field": "employmentStatus",
+          "op": "in",
+          "value": ["employed", "self_employed"],
+          "label": "Trabajar y estar de alta en la Seguridad Social (por cuenta ajena o propia)",
+          "source": {
+            "excerpt": "Menores de 21 años: no se exige período mínimo de cotización. De 21 a 26: 90 días en los 7 años anteriores o 180 en toda la vida laboral. Mayores de 26: 180 días en los 7 años anteriores o 360 en toda la vida laboral."
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Periodo mínimo cotizado: ninguno si tienes menos de 21 años; 90 días en los últimos 7 años (o 180 en total) entre 21 y 26; 180 días en los últimos 7 años (o 360 en total) a partir de 26.",
+      "También tienes derecho si cobras la prestación contributiva por desempleo.",
+      "Hay que pedirlo dentro de los 15 días desde el inicio del permiso para cobrar sin retrasos (puede pedirse después, con límites)."
+    ],
+    "documents": [
+      "DNI o NIE",
+      "Certificado de la empresa (lo envía normalmente la empresa a la Seguridad Social)",
+      "Libro de familia o certificado de nacimiento / resolución de adopción o acogimiento"
+    ],
+    "steps": [
+      "Comunica el permiso a tu empresa.",
+      "Solicita la prestación en la sede electrónica de la Seguridad Social (\"Nacimiento y cuidado de menor\"), con Cl@ve, certificado o sin certificado.",
+      "El INSS te paga directamente en tu cuenta."
+    ],
+    "officialUrl": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/6b96a085-4dc0-47af-b2cb-97e00716791e",
+    "sources": [
+      {
+        "url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/6b96a085-4dc0-47af-b2cb-97e00716791e",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "un subsidio equivalente al 100 por 100 de la base reguladora correspondiente [...] subsidio no contributivo: 100 por 100 del indicador público de renta de efectos múltiples (IPREM) vigente en cada momento"
+      }
+    ],
+    "faq": [
+      {
+        "question": "¿Cuántas semanas dura el permiso por nacimiento en 2026?",
+        "answer": "19 semanas por progenitor tras la ampliación del Real Decreto-ley 9/2025 (32 en familias monoparentales). Consulta la Seguridad Social para tu caso concreto."
+      }
+    ],
+    "id": "prestacion-nacimiento-cuidado-menor",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
+    "slug": "renta-garantizada-ciudadania-castilla-y-leon",
+    "title": "Renta Garantizada de Ciudadanía de Castilla y León",
+    "summary": "Prestación mensual de la Junta para personas y familias sin ingresos suficientes para cubrir sus necesidades básicas, acompañada de un plan de inserción.",
+    "level": "regional",
+    "region": "CL",
+    "category": "income",
+    "kind": "permanent",
+    "agency": "Junta de Castilla y León (Servicios Sociales)",
+    "amount": {
+      "type": "range",
+      "min": 480,
+      "max": 780,
+      "text": "Entre el 80 % y el 130 % del IPREM: de 480 € a 780 € al mes en 2026, según los miembros del hogar."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "yearsRegisteredInRegion",
+          "op": "gte",
+          "value": 1,
+          "label": "Llevar al menos un año empadronado en Castilla y León",
+          "source": {
+            "excerpt": "Tener domicilio, estar empadronado y residir legalmente en algún municipio de Castilla y León con un año de antelación, salvo determinadas excepciones."
+          }
+        },
+        {
+          "any": [
+            {
+              "field": "applicantAge",
+              "op": "gte",
+              "value": 25,
+              "label": "Tener 25 años o más"
+            },
+            {
+              "all": [
+                {
+                  "field": "applicantAge",
+                  "op": "gte",
+                  "value": 18,
+                  "label": "Ser mayor de edad"
+                },
+                {
+                  "field": "numMinors",
+                  "op": "gte",
+                  "value": 1,
+                  "label": "Tener menores a cargo"
+                }
+              ]
+            }
+          ],
+          "label": "Tener 25 años o más (o menos si tienes menores a cargo)"
+        },
+        {
+          "field": "applicantAge",
+          "op": "lt",
+          "value": 65,
+          "label": "Tener menos de 65 años"
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lt",
+          "value": {
+            "mul": [
+              15.6,
+              {
+                "ref": "ipremMonthly"
+              }
+            ]
+          },
+          "label": "Ingresos del hogar inferiores a unos 780 € al mes (cuantía máxima de la prestación)",
+          "hard": true
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Es subsidiaria: antes hay que pedir el resto de prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital.",
+      "Las personas en edad de trabajar deben estar inscritas como demandantes de empleo.",
+      "Firmar un Proyecto Individualizado de Inserción con los servicios sociales.",
+      "No tener patrimonio suficiente para cubrir las necesidades básicas."
+    ],
+    "documents": [
+      "DNI o NIE de todas las personas del hogar",
+      "Certificado de empadronamiento",
+      "Justificantes de ingresos de todos los miembros"
+    ],
+    "steps": [
+      "Pide cita en tu CEAS (Centro de Acción Social) o en los servicios sociales de tu ayuntamiento.",
+      "Presenta la solicitud con la documentación en el CEAS o en la sede electrónica de la Junta."
+    ],
+    "officialUrl": "https://serviciossociales.jcyl.es/web/jcyl/ServiciosSociales/es/Plantilla100Detalle/1246991411473/_/1284657728093/Informe",
+    "sources": [
+      {
+        "url": "https://serviciossociales.jcyl.es/web/jcyl/ServiciosSociales/es/Plantilla100Detalle/1246991411473/_/1284657728093/Informe",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "Prestación económica, cuya cuantía estará comprendida entre una cantidad básica mensual del 80% del IPREM y una cantidad máxima del 130%."
+      }
+    ],
+    "faq": [
+      {
+        "question": "¿Es compatible la Renta Garantizada con el Ingreso Mínimo Vital?",
+        "answer": "Solo si el IMV que cobra tu hogar es menor que la Renta Garantizada que te correspondería; en ese caso se complementa."
+      }
+    ],
+    "id": "renta-garantizada-ciudadania-castilla-y-leon",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  }
+]

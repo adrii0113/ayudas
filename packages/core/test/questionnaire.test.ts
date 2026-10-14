@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { OUTSIDE_REGIONS, relevantFields, selectQuestions } from "../src";
+import { finalizeAnswers, OUTSIDE_REGIONS, relevantFields, selectQuestions } from "../src";
 import { makeBenefit } from "./helpers";
 
 const ids = (qs: { id: string }[]) => qs.map((q) => q.id);
@@ -88,5 +88,35 @@ describe("adaptive questionnaire", () => {
     expect(ids(selectQuestions([municipal], { region: OUTSIDE_REGIONS }))).not.toContain(
       "municipality",
     );
+  });
+
+  it("fills implied answers for skipped follow-ups and clears stale ones", () => {
+    expect(
+      finalizeAnswers({
+        region: OUTSIDE_REGIONS,
+        municipality: "47186",
+        children: [],
+        housing: "owner_mortgage",
+        monthlyRent: 500,
+      }),
+    ).toEqual({
+      region: OUTSIDE_REGIONS,
+      children: [],
+      housing: "owner_mortgage",
+      isSingleParent: false,
+      isLargeFamily: false,
+      yearsRegisteredInRegion: 0,
+    });
+  });
+
+  it("keeps answers of follow-ups that were shown", () => {
+    const answers = {
+      region: "CL",
+      children: [{ age: 1 }],
+      isSingleParent: true,
+      housing: "renting" as const,
+      monthlyRent: 400,
+    };
+    expect(finalizeAnswers(answers)).toEqual(answers);
   });
 });
