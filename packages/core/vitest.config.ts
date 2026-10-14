@@ -11,6 +11,7 @@ export default defineConfig({
         "src/questionnaire/**",
         "src/window.ts",
         "src/review.ts",
+        "src/alerts.ts",
       ],
       thresholds: { lines: 90, functions: 90, branches: 90, statements: 90 },
     },

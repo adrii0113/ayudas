@@ -12,3 +12,4 @@ export * from "./rules/lint";
 export * from "./questionnaire";
 export * from "./rules/describe";
 export * from "./review";
+export * from "./alerts";

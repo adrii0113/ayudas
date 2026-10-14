@@ -317,5 +317,29 @@
       "failed": "Falla:",
       "unknownReqs": "Sin datos:"
     }
+  },
+  "alerts": {
+    "title": "Alertas de ayudas",
+    "lead": "Te avisamos por email cuando se abra una ayuda que encaje con tus respuestas. Máximo un email a la semana.",
+    "needProfile": "Para saber qué ayudas encajan contigo, primero responde el cuestionario.",
+    "startQuestionnaire": "Responder el cuestionario",
+    "email": "Tu email",
+    "consent": "Acepto que TeToca guarde mi email y mis respuestas, cifrados, para enviarme alertas de ayudas. Puedo borrarlos cuando quiera.",
+    "privacyLink": "Política de privacidad",
+    "submit": "Activar alertas",
+    "sent": "Te hemos enviado un email. Abre el enlace para confirmar tus alertas.",
+    "invalidEmail": "Escribe un email válido.",
+    "consentRequired": "Necesitamos tu consentimiento para guardar tus datos.",
+    "unavailable": "Las alertas todavía no están disponibles.",
+    "error": "No hemos podido completar la suscripción. Inténtalo más tarde.",
+    "whatWeStore": "Guardamos solo tu email y tus respuestas al cuestionario, cifrados. Nada más.",
+    "confirmTitle": "Alertas confirmadas",
+    "confirmOk": "¡Listo! Te avisaremos cuando haya ayudas nuevas para ti.",
+    "confirmFail": "El enlace no es válido o ya se ha usado.",
+    "deleteTitle": "Darte de baja",
+    "deleteBody": "Al confirmar borraremos tu email y tus respuestas de forma definitiva.",
+    "deleteButton": "Borrar mis datos",
+    "deleted": "Hemos borrado tus datos. No recibirás más emails.",
+    "deleteFail": "El enlace no es válido o tus datos ya se habían borrado."
   }
 }

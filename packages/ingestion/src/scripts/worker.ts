@@ -6,12 +6,14 @@
  * - "ingest-bdns": daily at 06:00 (Europe/Madrid), stores new calls and
  *   enqueues one "extract-document" job per new readable document.
  * - "extract-document": LLM extraction into a draft (needs ANTHROPIC_API_KEY).
+ * - "send-alerts": daily at 09:00, emails subscribers (needs ALERTS_ENCRYPTION_KEY).
  *
  * In serverless deployments, run `ingest:bdns` + `extract` from a scheduled
  * GitHub Action instead (see .github/workflows/ingest.yml).
  */
+import { createMailer, runAlerts } from "@tetoca/alerts";
 import { REGIONS } from "@tetoca/core";
-import { createDb } from "@tetoca/db";
+import { createDb, encryptionKey } from "@tetoca/db";
 import { extractDocument } from "@tetoca/extraction";
 import { AnthropicProvider } from "@tetoca/llm";
 import { PgBoss } from "pg-boss";
@@ -19,6 +21,7 @@ import { ingestBdns } from "../bdns/ingest";
 
 const INGEST = "ingest-bdns";
 const EXTRACT = "extract-document";
+const ALERTS = "send-alerts";
 
 const url = process.env.DATABASE_URL;
 if (!url) throw new Error("DATABASE_URL is not set");
@@ -56,6 +59,20 @@ if (process.env.ANTHROPIC_API_KEY) {
   });
 } else {
   console.warn("ANTHROPIC_API_KEY not set: extraction jobs will wait in the queue.");
+}
+
+if (process.env.ALERTS_ENCRYPTION_KEY) {
+  await boss.createQueue(ALERTS);
+  await boss.schedule(ALERTS, "0 9 * * *", null, { tz: "Europe/Madrid" });
+  await boss.work(ALERTS, async () => {
+    const result = await runAlerts({
+      db,
+      key: encryptionKey(),
+      mailer: createMailer(),
+      siteUrl: (process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").replace(/\/$/, ""),
+    });
+    console.log("alerts", result);
+  });
 }
 
 console.log("Worker running");

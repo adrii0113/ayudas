@@ -1,0 +1,26 @@
+name: Daily alerts
+
+on:
+  schedule:
+    - cron: "0 8 * * *" # 09:00/10:00 Madrid
+  workflow_dispatch:
+
+jobs:
+  alerts:
+    runs-on: ubuntu-latest
+    if: ${{ vars.ALERTS_ENABLED == 'true' }}
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      ALERTS_ENCRYPTION_KEY: ${{ secrets.ALERTS_ENCRYPTION_KEY }}
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+      EMAIL_FROM: ${{ vars.EMAIL_FROM }}
+      NEXT_PUBLIC_SITE_URL: ${{ vars.SITE_URL }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @tetoca/alerts send
