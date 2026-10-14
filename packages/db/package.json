@@ -15,7 +15,8 @@
     "catalog:validate": "tsx src/scripts/validate-catalog.ts",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "tsx src/scripts/migrate.ts",
-    "db:seed": "tsx src/scripts/seed.ts"
+    "db:seed": "tsx src/scripts/seed.ts",
+    "db:local": "pglite-server --db=../../.pglite --port=5432 --max-connections=10"
   },
   "devDependencies": {
     "@electric-sql/pglite": "^0.5.9",

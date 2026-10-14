@@ -14,3 +14,4 @@ test-results
 src/generated
 next-env.d.ts
 apps/web/playwright-report
+.pglite
