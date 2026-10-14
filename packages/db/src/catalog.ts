@@ -5,6 +5,13 @@ import { parse } from "yaml";
 
 export type CatalogIssue = { file: string; message: string };
 
+/** Marker used when a benefit was curated by an AI assistant and still needs a human. */
+export const PENDING_HUMAN_REVIEW_PREFIX = "claude";
+
+export function needsHumanReview(benefit: Benefit): boolean {
+  return benefit.reviewedBy?.toLowerCase().startsWith(PENDING_HUMAN_REVIEW_PREFIX) ?? false;
+}
+
 /** Finds the monorepo root (the folder containing pnpm-workspace.yaml). */
 export function findRepoRoot(start = process.cwd()): string {
   let dir = resolve(start);
@@ -57,6 +64,12 @@ export function loadCatalog(dir = defaultSeedDir()): {
     }
     const benefit = parsed.data;
     for (const message of lintRules(benefit.eligibility)) issues.push({ file, message });
+    if (benefit.status === "published" && JSON.stringify(benefit).includes("TODO(verify)")) {
+      issues.push({
+        file,
+        message: "Published benefits cannot contain TODO(verify); keep it as draft",
+      });
+    }
     const key = `${benefit.slug}@${benefit.version}`;
     if (seen.has(key)) {
       issues.push({ file, message: `Duplicate slug/version ${key} (also in ${seen.get(key)})` });

@@ -1,0 +1,58 @@
+slug: complemento-ayuda-infancia
+version: 1
+status: published
+reviewedBy: "claude-code (requiere revisión humana)"
+reviewedAt: "2026-10-14"
+title: Complemento de Ayuda para la Infancia (CAPI)
+summary: >-
+  Ayuda mensual por cada hijo menor de 18 años para familias con ingresos bajos o medios-bajos.
+  Se puede cobrar aunque no tengas derecho al Ingreso Mínimo Vital.
+level: state
+category: birth
+kind: permanent
+agency: Seguridad Social (INSS)
+amount:
+  type: range
+  min: 57.5
+  max: 115
+  text: "Por cada hijo: 115 €/mes si es menor de 3 años, 80,50 €/mes de 3 a 5 años y 57,50 €/mes de 6 a 17 años."
+eligibility:
+  all:
+    - field: numMinors
+      op: gte
+      value: 1
+      label: Tener al menos un hijo menor de 18 años
+      hard: true
+    - field: annualHouseholdIncome
+      op: lt
+      value:
+        mul:
+          - 3
+          - ref: imvAnnualBase
+          - min: [2.2, { add: [0.7, { mul: [0.3, { ref: householdSize }] }] }]
+      label: Ingresos del hogar inferiores al triple de la renta garantizada del IMV para tu hogar
+      source:
+        excerpt: >-
+          Los ingresos computables del ejercicio anterior deben ser inferiores al 300% de la cuantía
+          garantizada por el ingreso mínimo vital
+otherRequirements:
+  - "Patrimonio neto inferior al 150 % del límite del IMV."
+  - "Es incompatible con la asignación por hijo a cargo sin discapacidad (o con discapacidad inferior al 33 %)."
+  - "La edad del hijo se cuenta a 1 de enero del año."
+documents:
+  - DNI o NIE / TIE de las personas del hogar
+  - Libro de familia o certificado de nacimiento
+  - Certificado de empadronamiento colectivo
+steps:
+  - Solicítalo en la sede electrónica de la Seguridad Social, en el servicio del Ingreso Mínimo Vital (es el mismo trámite).
+  - Indica que quieres el Complemento de Ayuda para la Infancia.
+officialUrl: https://imv.seg-social.es/
+sources:
+  - url: https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/65850d68-8d06-4645-bde7-05374ee42ac7
+    retrievedAt: "2026-10-14"
+    excerpt: "Menores de 3 años: 115 €/mes; de 3 a menos de 6 años: 80,50 €/mes; de 6 a menos de 18 años: 57,50 €/mes."
+faq:
+  - question: ¿Necesito cobrar el IMV para pedir el complemento por hijos?
+    answer: >-
+      No. Puedes cobrar solo el complemento si tus ingresos están por debajo del triple de la
+      renta garantizada del IMV para tu hogar.

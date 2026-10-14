@@ -1,0 +1,60 @@
+slug: prestacion-nacimiento-cuidado-menor
+version: 1
+status: published
+reviewedBy: "claude-code (requiere revisión humana)"
+reviewedAt: "2026-10-14"
+title: Prestación por nacimiento y cuidado de menor
+summary: >-
+  Lo que cobras de la Seguridad Social durante el permiso por nacimiento, adopción o acogida:
+  el 100 % de tu base reguladora mientras dura el permiso.
+level: state
+category: birth
+kind: permanent
+agency: Seguridad Social (INSS)
+amount:
+  type: variable
+  text: >-
+    100 % de tu base reguladora durante el permiso (19 semanas por progenitor desde la reforma
+    de 2025). Si no llegas al periodo mínimo cotizado, hay un subsidio de 600 €/mes (100 % del
+    IPREM) durante las semanas obligatorias.
+eligibility:
+  all:
+    - field: youngestChildAge
+      op: lt
+      value: 1
+      label: Haber tenido, adoptado o acogido un hijo en el último año
+      hard: true
+    - field: employmentStatus
+      op: in
+      value: [employed, self_employed]
+      label: Trabajar y estar de alta en la Seguridad Social (por cuenta ajena o propia)
+      source:
+        excerpt: >-
+          Menores de 21 años: no se exige período mínimo de cotización. De 21 a 26: 90 días en
+          los 7 años anteriores o 180 en toda la vida laboral. Mayores de 26: 180 días en los 7
+          años anteriores o 360 en toda la vida laboral.
+otherRequirements:
+  - "Periodo mínimo cotizado: ninguno si tienes menos de 21 años; 90 días en los últimos 7 años (o 180 en total) entre 21 y 26; 180 días en los últimos 7 años (o 360 en total) a partir de 26."
+  - "También tienes derecho si cobras la prestación contributiva por desempleo."
+  - "Hay que pedirlo dentro de los 15 días desde el inicio del permiso para cobrar sin retrasos (puede pedirse después, con límites)."
+documents:
+  - DNI o NIE
+  - Certificado de la empresa (lo envía normalmente la empresa a la Seguridad Social)
+  - Libro de familia o certificado de nacimiento / resolución de adopción o acogimiento
+steps:
+  - Comunica el permiso a tu empresa.
+  - Solicita la prestación en la sede electrónica de la Seguridad Social ("Nacimiento y cuidado de menor"), con Cl@ve, certificado o sin certificado.
+  - El INSS te paga directamente en tu cuenta.
+officialUrl: https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/6b96a085-4dc0-47af-b2cb-97e00716791e
+sources:
+  - url: https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/6b96a085-4dc0-47af-b2cb-97e00716791e
+    retrievedAt: "2026-10-14"
+    excerpt: >-
+      un subsidio equivalente al 100 por 100 de la base reguladora correspondiente [...]
+      subsidio no contributivo: 100 por 100 del indicador público de renta de efectos múltiples
+      (IPREM) vigente en cada momento
+faq:
+  - question: ¿Cuántas semanas dura el permiso por nacimiento en 2026?
+    answer: >-
+      19 semanas por progenitor tras la ampliación del Real Decreto-ley 9/2025 (32 en familias
+      monoparentales). Consulta la Seguridad Social para tu caso concreto.

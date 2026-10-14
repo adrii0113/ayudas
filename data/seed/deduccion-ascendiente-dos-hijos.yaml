@@ -1,0 +1,51 @@
+slug: deduccion-ascendiente-dos-hijos
+version: 1
+status: published
+reviewedBy: "claude-code (requiere revisión humana)"
+reviewedAt: "2026-10-14"
+title: Deducción para familias monoparentales con dos hijos (IRPF)
+summary: >-
+  1.200 € al año para madres o padres separados o sin pareja que viven con dos hijos y no
+  reciben pensión de alimentos por ellos. Se puede cobrar por adelantado.
+level: state
+category: income
+kind: permanent
+agency: Agencia Tributaria
+amount:
+  type: fixed
+  min: 1200
+  max: 1200
+  text: "Hasta 1.200 € al año (100 €/mes si se pide por adelantado)."
+eligibility:
+  all:
+    - field: isSingleParent
+      op: eq
+      value: true
+      label: Ser familia monoparental (separado legalmente o sin vínculo matrimonial)
+      hard: true
+    - field: numChildren
+      op: gte
+      value: 2
+      label: Tener dos hijos a cargo
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deducciones-familia-numerosa-personas-discapacidad-cargo/cuantia-maxima-deducciones.html
+        excerpt: >-
+          por ser un ascendiente separado legalmente, o sin vínculo matrimonial, con dos hijos sin
+          derecho a percibir anualidades por alimentos y por los que tenga derecho a la totalidad
+          del mínimo por descendientes.
+      hard: true
+otherRequirements:
+  - "Los hijos no deben recibir pensión de alimentos y debes tener derecho a la totalidad del mínimo por descendientes (en general, menores de 25 que conviven contigo)."
+  - "Estar de alta en la Seguridad Social o mutualidad, o cobrar prestaciones por desempleo o pensiones."
+  - "Si tienes tres o más hijos, mira la deducción por familia numerosa."
+documents:
+  - DNI o NIE
+  - Libro de familia
+steps:
+  - "Pide el abono anticipado con el modelo 143 o aplícala en la declaración de la renta."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deducciones-familia-numerosa-personas-discapacidad-cargo/cuantia-maxima-deducciones.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deducciones-familia-numerosa-personas-discapacidad-cargo/deducciones-que-incluye.html
+    retrievedAt: "2026-10-14"
+    excerpt: "Deducción por ascendiente, separado legalmente o sin vínculo matrimonial, con dos hijos sin derecho a percibir anualidades por alimentos."
+faq: []

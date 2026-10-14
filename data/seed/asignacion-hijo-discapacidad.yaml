@@ -1,0 +1,39 @@
+slug: asignacion-hijo-discapacidad
+version: 1
+status: draft
+title: Asignación por hijo a cargo con discapacidad
+summary: >-
+  Prestación de la Seguridad Social por cada hijo con discapacidad del 33 % o más. Para hijos con
+  discapacidad no hay límite de ingresos.
+level: state
+category: dependency
+kind: permanent
+agency: Seguridad Social (INSS)
+amount:
+  type: variable
+  min: 1000
+  text: >-
+    1.000 € al año por cada hijo menor de 18 años con discapacidad del 33 % o más. Importes
+    mayores para hijos mayores de edad con discapacidad del 65 % o más.
+eligibility:
+  all:
+    - field: numChildrenWithDisability
+      op: gte
+      value: 1
+      label: Tener un hijo con discapacidad reconocida del 33 % o más
+      hard: true
+otherRequirements:
+  - "Residir legalmente en España."
+  - "TODO(verify): confirmar importes 2026 para hijos mayores de edad en la web de la Seguridad Social."
+documents:
+  - DNI o NIE
+  - Libro de familia
+  - Certificado de discapacidad del hijo
+steps:
+  - Solicítala en la sede electrónica de la Seguridad Social ("Prestaciones familiares").
+officialUrl: https://www.seg-social.es/
+sources:
+  - url: https://www.bankinter.com/blog/finanzas-personales/asignacion-hijos-discapacidad
+    retrievedAt: "2026-10-14"
+    excerpt: "Menores de 18 años con discapacidad del 33 % o más: 1.000 €/año."
+faq: []

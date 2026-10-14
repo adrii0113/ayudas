@@ -1,0 +1,122 @@
+slug: ayudas-alquiler-vivienda-castilla-y-leon
+version: 1
+status: published
+reviewedBy: "claude-code (requiere revisión humana)"
+reviewedAt: "2026-10-14"
+title: Ayudas al alquiler de vivienda de Castilla y León
+summary: >-
+  La Junta paga el 50 % del alquiler mensual (60 % si tienes hasta 35 años) a inquilinos con
+  ingresos limitados. La última convocatoria cerró el 30 de enero de 2026; suele abrirse en otoño.
+level: regional
+region: CL
+category: housing
+kind: call
+agency: Junta de Castilla y León (Vivienda)
+amount:
+  type: percent
+  min: 50
+  max: 75
+  text: >-
+    50 % del alquiler mensual; 60 % si tienes 35 años o menos; hasta 75 % para jóvenes en
+    municipios pequeños (ámbito 2º).
+window:
+  opensAt: "2025-12-01"
+  closesAt: "2026-01-30"
+eligibility:
+  all:
+    - field: applicantAge
+      op: gte
+      value: 18
+      label: Ser mayor de edad
+    - field: housing
+      op: eq
+      value: renting
+      label: Vivir de alquiler con contrato a tu nombre
+    - field: annualHouseholdIncome
+      op: gte
+      value:
+        mul: [0.5, { ref: iprem14 }]
+      label: Ingresos del hogar de al menos 0,5 veces el IPREM (4.200 €/año)
+      source:
+        excerpt: >-
+          sean iguales o superiores a 0,5 veces el IPREM e iguales o inferiores a 3 veces el IPREM
+    - any:
+        - field: annualHouseholdIncome
+          op: lte
+          value:
+            mul: [3, { ref: iprem14 }]
+          label: Ingresos del hogar de hasta 3 veces el IPREM (25.200 €/año)
+        - all:
+            - field: isLargeFamily
+              op: eq
+              value: true
+              label: Familia numerosa
+            - field: annualHouseholdIncome
+              op: lte
+              value:
+                mul: [4, { ref: iprem14 }]
+              label: Ingresos de hasta 4 veces el IPREM
+        - all:
+            - field: applicantDisabilityPercent
+              op: gte
+              value: 33
+              label: Discapacidad del 33 % o más
+            - field: annualHouseholdIncome
+              op: lte
+              value:
+                mul: [5, { ref: iprem14 }]
+              label: Ingresos de hasta 5 veces el IPREM
+      label: Ingresos del hogar de hasta 3 veces el IPREM (4 o 5 veces en familias numerosas o con discapacidad)
+    - any:
+        - field: monthlyRent
+          op: lte
+          value: 550
+          label: Alquiler de 550 €/mes o menos
+        - all:
+            - field: isLargeFamily
+              op: eq
+              value: true
+              label: Familia numerosa
+            - field: monthlyRent
+              op: lte
+              value: 800
+              label: Alquiler de 800 €/mes o menos
+        - all:
+            - field: applicantDisabilityPercent
+              op: gte
+              value: 33
+              label: Discapacidad del 33 % o más
+            - field: monthlyRent
+              op: lte
+              value: 800
+              label: Alquiler de 800 €/mes o menos
+      label: Alquiler mensual dentro del límite (550 € en general; hasta 700-800 € en familias numerosas o con discapacidad)
+otherRequirements:
+  - "El límite de alquiler es de 550 €/mes en municipios del ámbito 1º (como Valladolid) y 500 € en el ámbito 2º; en habitaciones, 200 € y 175 €."
+  - "La vivienda debe ser tu residencia habitual y estar empadronado en ella."
+  - "Nadie del hogar puede ser propietario o usufructuario de una vivienda en España (salvo excepciones) ni tener parentesco de primer o segundo grado con el arrendador."
+  - "Es una convocatoria en concurrencia competitiva: se conceden hasta agotar el presupuesto."
+documents:
+  - Contrato de alquiler
+  - Justificantes bancarios del pago del alquiler
+  - Certificado de empadronamiento
+steps:
+  - Espera a la próxima convocatoria (la de 2025 se abrió del 1 de diciembre de 2025 al 30 de enero de 2026).
+  - Presenta la solicitud en la sede electrónica de la Junta (tramitacastillayleon.jcyl.es) con el código BDNS de la convocatoria.
+officialUrl: https://www.tramitacastillayleon.jcyl.es
+sources:
+  - url: https://bocyl.jcyl.es/boletines/2025/10/21/pdf/BOCYL-D-21102025-21.pdf
+    retrievedAt: "2026-10-14"
+    excerpt: >-
+      El plazo de presentación de solicitudes comenzará el día 1 de diciembre de 2025 y finalizará
+      el 30 de enero de 2026, ambos incluidos
+  - url: https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/862757
+    retrievedAt: "2026-10-14"
+    excerpt: >-
+      La cuantía de la subvención será el resultado de aplicar a la renta o precio mensual [...]
+      el porcentaje del 50 %. En el supuesto de personas jóvenes, el porcentaje será del 60 %
+faq:
+  - question: ¿Cuándo se piden las ayudas al alquiler en Castilla y León?
+    answer: >-
+      La última convocatoria estuvo abierta del 1 de diciembre de 2025 al 30 de enero de 2026.
+      Activa las alertas para saber cuándo abre la siguiente.

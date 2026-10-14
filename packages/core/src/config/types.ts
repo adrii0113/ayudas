@@ -10,7 +10,16 @@ export type OfficialConstants = {
   smiMonthly: number;
   /** SMI yearly amount (€). */
   smi: number;
+  /** Ingreso Mínimo Vital: yearly guaranteed income for a single adult (€). */
+  imvAnnualBase: number;
 };
 
-export const CONSTANT_KEYS = ["ipremMonthly", "iprem", "iprem14", "smiMonthly", "smi"] as const;
+export const CONSTANT_KEYS = [
+  "ipremMonthly",
+  "iprem",
+  "iprem14",
+  "smiMonthly",
+  "smi",
+  "imvAnnualBase",
+] as const;
 export type ConstantKey = (typeof CONSTANT_KEYS)[number];

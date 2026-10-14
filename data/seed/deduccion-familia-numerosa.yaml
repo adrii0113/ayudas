@@ -1,0 +1,48 @@
+slug: deduccion-familia-numerosa
+version: 1
+status: published
+reviewedBy: "claude-code (requiere revisión humana)"
+reviewedAt: "2026-10-14"
+title: Deducción por familia numerosa (IRPF)
+summary: >-
+  1.200 € al año para familias numerosas de categoría general y 2.400 € para las de categoría
+  especial, más hasta 600 € por cada hijo por encima del mínimo. Se puede cobrar por adelantado.
+level: state
+category: income
+kind: permanent
+agency: Agencia Tributaria
+amount:
+  type: range
+  min: 1200
+  max: 2400
+  text: "1.200 €/año (categoría general) o 2.400 €/año (especial), más hasta 600 € por cada hijo que supere el mínimo de la categoría."
+eligibility:
+  all:
+    - field: isLargeFamily
+      op: eq
+      value: true
+      label: Tener título de familia numerosa en vigor
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deducciones-familia-numerosa-personas-discapacidad-cargo/cuantia-maxima-deducciones.html
+        excerpt: >-
+          ser un ascendiente, o un hermano huérfano de padre y madre, que forme parte de una
+          familia numerosa de categoría general conforme a la Ley 40/2003
+      hard: true
+otherRequirements:
+  - "Estar de alta en la Seguridad Social o mutualidad, o cobrar prestaciones por desempleo o pensiones."
+documents:
+  - Título de familia numerosa
+  - DNI o NIE
+steps:
+  - "Pide el abono anticipado (100 €/mes en categoría general) con el modelo 143 en la sede de la Agencia Tributaria, o aplícala en la declaración de la renta."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deducciones-familia-numerosa-personas-discapacidad-cargo/cuantia-maxima-deducciones.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deducciones-familia-numerosa-personas-discapacidad-cargo/cuantia-maxima-deducciones.html
+    retrievedAt: "2026-10-14"
+    excerpt: >-
+      La cuantía de la deducción (1.200 euros o 2.400 euros), se incrementará hasta en 600 euros
+      anuales adicionales por cada uno de los hijos que formen parte de la familia numerosa que
+      exceda del número mínimo de hijos exigido
+faq:
+  - question: ¿Se puede cobrar cada mes la deducción por familia numerosa?
+    answer: Sí, pidiendo el abono anticipado con el modelo 143; o de una vez en la declaración de la renta.

@@ -13,7 +13,7 @@ import type {
   Tri,
   ValueExpr,
 } from "./types";
-import { isRuleGroup } from "./types";
+import { compositeParts, isRuleGroup } from "./types";
 
 export type EvaluateOptions = {
   constants: OfficialConstants;
@@ -40,10 +40,13 @@ export function evaluateValueExpr(expr: ValueExpr, ctx: Context): number | undef
     const value = resolveField(ctx.profile, expr.ref as RuleField);
     return typeof value === "number" ? value : undefined;
   }
-  const parts = ("add" in expr ? expr.add : expr.mul).map((e) => evaluateValueExpr(e, ctx));
+  const [op, args] = compositeParts(expr);
+  const parts = args.map((e) => evaluateValueExpr(e, ctx));
   if (parts.some((p) => p === undefined)) return undefined;
   const nums = parts as number[];
-  return "add" in expr ? nums.reduce((a, b) => a + b, 0) : nums.reduce((a, b) => a * b, 1);
+  if (op === "add") return nums.reduce((a, b) => a + b, 0);
+  if (op === "mul") return nums.reduce((a, b) => a * b, 1);
+  return Math.min(...nums);
 }
 
 function isValueExpr(value: RuleValue): value is ValueExpr {

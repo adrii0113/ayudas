@@ -1,0 +1,97 @@
+slug: bono-social-termico
+version: 1
+status: published
+reviewedBy: "claude-code (requiere revisión humana)"
+reviewedAt: "2026-10-14"
+title: Bono social térmico
+summary: >-
+  Ayuda anual para calefacción, agua caliente o cocina que se paga automáticamente a quienes
+  tienen el bono social eléctrico. En Castilla y León la abona la Junta.
+level: state
+category: energy
+kind: permanent
+agency: Ministerio para la Transición Ecológica y comunidades autónomas
+amount:
+  type: variable
+  text: >-
+    Pago único al año. El importe depende de la zona climática de tu vivienda y de si eres
+    consumidor vulnerable o vulnerable severo.
+eligibility:
+  any:
+    - field: isLargeFamily
+      op: eq
+      value: true
+      label: Tener título de familia numerosa en vigor
+      source:
+        excerpt: >-
+          Cuando el consumidor disponga de un título de familia numerosa en vigor, el COR no
+          verificará el nivel de renta
+    - field: receivesMinimumIncome
+      op: eq
+      value: true
+      label: Cobrar el Ingreso Mínimo Vital (tú o alguien de tu hogar)
+    - field: annualHouseholdIncome
+      op: lte
+      value:
+        mul:
+          - ref: iprem14
+          - add:
+              - 1.5
+              - mul: [0.3, { ref: extraAdults }]
+              - mul: [0.5, { ref: numMinors }]
+      label: >-
+        Ingresos del hogar de hasta 1,5 veces el IPREM, más 0,3 por cada adulto adicional y 0,5
+        por cada menor
+      source:
+        excerpt: >-
+          12.600 €/año (que equivale a 1,5 veces el IPREM de 14 pagas) cuando no existe unidad de
+          convivencia [...] se añadirá al umbral de renta 0,3 IPREM por cada persona mayor de edad
+          adicional, y 0,5 IPREM por cada menor de edad.
+    - all:
+        - any:
+            - field: isSingleParent
+              op: eq
+              value: true
+              label: Familia monoparental
+            - field: applicantDisabilityPercent
+              op: gte
+              value: 33
+              label: Discapacidad reconocida del 33 % o más
+            - field: numChildrenWithDisability
+              op: gte
+              value: 1
+              label: Un hijo con discapacidad reconocida del 33 % o más
+        - field: annualHouseholdIncome
+          op: lte
+          value:
+            mul:
+              - ref: iprem14
+              - add:
+                  - 2.5
+                  - mul: [0.3, { ref: extraAdults }]
+                  - mul: [0.5, { ref: numMinors }]
+          label: Ingresos del hogar dentro del umbral ampliado (+1 IPREM)
+      label: Situación especial (monoparental o discapacidad) con ingresos dentro del umbral ampliado
+  label: Cumplir alguno de los criterios de vulnerabilidad (renta, familia numerosa o IMV)
+otherRequirements:
+  - "Tener concedido el bono social eléctrico a 31 de diciembre del año anterior: el bono térmico se reconoce de oficio y no hay que pedirlo."
+  - "Mantener actualizados tus datos bancarios con la comercializadora de referencia."
+documents: []
+steps:
+  - Pide primero el bono social eléctrico (es la puerta de entrada).
+  - "Si lo tienes a 31 de diciembre, recibirás el bono térmico al año siguiente sin hacer ningún trámite."
+officialUrl: https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001.html
+sources:
+  - url: https://www.boe.es/buscar/act.php?id=BOE-A-2018-13593
+    retrievedAt: "2026-10-14"
+    excerpt: >-
+      Real Decreto-ley 15/2018, de 5 de octubre, de medidas urgentes para la transición
+      energética y la protección de los consumidores (crea el bono social térmico).
+  - url: https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/895512
+    retrievedAt: "2026-10-14"
+    excerpt: "Bono Social Térmico 2025 (Junta de Castilla y León). Sin plazo de solicitud."
+faq:
+  - question: ¿Hay que solicitar el bono social térmico?
+    answer: >-
+      No. Se paga automáticamente a quienes tenían el bono social eléctrico a 31 de diciembre del
+      año anterior.

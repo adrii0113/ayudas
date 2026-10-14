@@ -1,0 +1,104 @@
+slug: ingreso-minimo-vital
+version: 1
+status: published
+reviewedBy: "claude-code (requiere revisión humana)"
+reviewedAt: "2026-10-14"
+title: Ingreso Mínimo Vital (IMV)
+summary: >-
+  Prestación mensual de la Seguridad Social para hogares con ingresos muy bajos. Completa
+  tus ingresos hasta una renta garantizada que depende de cuántas personas viven contigo.
+level: state
+category: income
+kind: permanent
+agency: Seguridad Social (INSS)
+amount:
+  type: range
+  min: 0
+  max: 1775.31
+  text: >-
+    Completa tus ingresos hasta 733,60 €/mes si vives solo, y hasta 1.613,92 €/mes en hogares
+    grandes (1.775,31 € en algunos hogares monoparentales). Lo que cobras es la diferencia
+    entre esa cantidad y tus ingresos.
+eligibility:
+  all:
+    - any:
+        - field: applicantAge
+          op: gte
+          value: 23
+          label: Tener 23 años o más
+        - all:
+            - field: applicantAge
+              op: gte
+              value: 18
+              label: Ser mayor de edad
+            - field: numMinors
+              op: gte
+              value: 1
+              label: Tener hijos menores a cargo
+      label: Tener 23 años o más (o ser mayor de edad con hijos menores a cargo)
+    - field: yearsLegalResidenceInSpain
+      op: gte
+      value: 1
+      label: Llevar al menos un año viviendo legalmente en España
+      source:
+        excerpt: >-
+          de forma continuada e ininterrumpida durante al menos el año anterior a presentar la
+          solicitud
+    - any:
+        - field: annualHouseholdIncome
+          op: lt
+          value:
+            add:
+              - mul:
+                  - ref: imvAnnualBase
+                  - min: [2.2, { add: [0.7, { mul: [0.3, { ref: householdSize }] }] }]
+              - -120
+          label: Ingresos del hogar por debajo de la renta garantizada del IMV para tu hogar
+        - all:
+            - field: isSingleParent
+              op: eq
+              value: true
+              label: Familia monoparental
+            - field: annualHouseholdIncome
+              op: lt
+              value:
+                add:
+                  - mul:
+                      - ref: imvAnnualBase
+                      - add:
+                          - 0.22
+                          - min: [2.2, { add: [0.7, { mul: [0.3, { ref: householdSize }] }] }]
+                  - -120
+              label: Ingresos por debajo de la renta garantizada con complemento monoparental
+      label: Ingresos del hogar por debajo de la renta garantizada del IMV para tu hogar
+      hard: true
+otherRequirements:
+  - "No tener patrimonio (sin contar la vivienda habitual) igual o superior a 3 veces la renta garantizada anual (26.409,60 € si vives solo)."
+  - "Si tienes entre 23 y 29 años y vives solo, haber vivido de forma independiente al menos 2 años."
+  - "La unidad de convivencia debe existir desde al menos 6 meses antes de pedirlo."
+  - "Se miran los ingresos del año anterior."
+documents:
+  - DNI o NIE / TIE de las personas del hogar
+  - Certificado de empadronamiento colectivo
+  - Libro de familia o certificado de nacimiento de los hijos
+steps:
+  - Comprueba tu caso con el simulador oficial en imv.seg-social.es.
+  - Solicítalo en la sede electrónica de la Seguridad Social (servicio "Ingreso Mínimo Vital"), con certificado digital, Cl@ve o sin certificado.
+  - Si tienes dudas, llama al 020.
+  - Recibirás las notificaciones de forma electrónica; si te lo conceden, cobrarás desde el mes siguiente a la solicitud.
+officialUrl: https://imv.seg-social.es/
+sources:
+  - url: https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/65850d68-8d06-4645-bde7-05374ee42ac7
+    retrievedAt: "2026-10-14"
+    excerpt: >-
+      Un adulto: 733,60 €/mes, 8.803,20 €/año [...] el promedio mensual de ingresos del
+      ejercicio anterior debe ser inferior al menos en 10 euros a la cuantía mensual garantizada
+faq:
+  - question: ¿Cuánto se cobra del Ingreso Mínimo Vital en 2026?
+    answer: >-
+      La renta garantizada es de 733,60 € al mes para una persona sola y sube un 30 % por cada
+      miembro adicional, hasta 1.613,92 €. Las familias monoparentales reciben un 22 % más. Cobras
+      la diferencia entre esa cantidad y los ingresos de tu hogar.
+  - question: ¿Es compatible con trabajar?
+    answer: >-
+      Sí, si tus ingresos siguen por debajo del límite. Tus ingresos se descuentan de la cuantía.

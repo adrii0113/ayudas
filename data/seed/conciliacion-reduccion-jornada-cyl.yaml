@@ -1,0 +1,73 @@
+slug: conciliacion-reduccion-jornada-excedencia-castilla-y-leon
+version: 1
+status: published
+reviewedBy: "claude-code (requiere revisión humana)"
+reviewedAt: "2026-10-14"
+title: Ayudas a la conciliación por reducción de jornada o excedencia (Castilla y León)
+summary: >-
+  1.500 € (2.500 € en familias numerosas o monoparentales) para trabajadores por cuenta ajena que
+  reducen su jornada o piden una excedencia para cuidar de hijos menores de 12 años o familiares.
+level: regional
+region: CL
+category: employment
+kind: call
+agency: Junta de Castilla y León (Servicios Sociales)
+amount:
+  type: range
+  min: 1500
+  max: 2500
+  text: >-
+    1.500 € por reducir la jornada al menos un 40 % durante 6 meses o por una excedencia de 3
+    meses; 1.000 € más en familias numerosas o monoparentales.
+window:
+  opensAt: "2026-03-11"
+  closesAt: "2026-04-30"
+eligibility:
+  all:
+    - field: employmentStatus
+      op: eq
+      value: employed
+      label: Trabajar por cuenta ajena (los autónomos no pueden pedirla)
+    - field: yearsRegisteredInRegion
+      op: gte
+      value: 1
+      label: Llevar al menos un año empadronado en Castilla y León
+    - any:
+        - field: youngestChildAge
+          op: lt
+          value: 12
+          label: Tener un hijo menor de 12 años
+        - field: hasDependentPerson
+          op: eq
+          value: true
+          label: Cuidar de un familiar que no puede valerse por sí mismo
+      label: Cuidar de un hijo menor de 12 años o de un familiar dependiente
+      hard: true
+    - field: annualHouseholdIncome
+      op: lte
+      value: 36540
+      label: Renta de la pareja de 36.540 € o menos (18.270 € si no tienes pareja)
+      source:
+        excerpt: >-
+          no supere los treinta y seis mil quinientos cuarenta euros (36.540€) [...] El límite de
+          renta se reducirá al 50% (18.270 €) en el caso de que no exista cónyuge o pareja
+otherRequirements:
+  - "Haber empezado la reducción de jornada (mínimo 40 %, 6 meses) o la excedencia en el año anterior a la convocatoria (en la de 2026, durante 2025)."
+  - "Si no tienes pareja, el límite de renta es 18.270 €."
+documents:
+  - DNI o TIE
+  - Documento de la empresa que acredite la reducción de jornada o la excedencia
+steps:
+  - Espera a la próxima convocatoria (la de 2026 estuvo abierta del 11 de marzo al 30 de abril).
+  - Presenta la solicitud en la sede electrónica de la Junta con el código BDNS de la convocatoria.
+officialUrl: https://www.tramitacastillayleon.jcyl.es
+sources:
+  - url: https://bocyl.jcyl.es/boletines/2026/03/10/pdf/BOCYL-D-10032026-47-9.pdf
+    retrievedAt: "2026-10-14"
+    excerpt: >-
+      1.500 € por el ejercicio del derecho de reducción siempre que se realice sobre una jornada a
+      tiempo completo durante un período de seis meses. 1.500 € por el ejercicio del derecho de
+      excedencia durante un período de tres meses.
+  - url: https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/891480
+    retrievedAt: "2026-10-14"
+faq: []

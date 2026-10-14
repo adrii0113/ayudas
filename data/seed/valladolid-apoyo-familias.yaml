@@ -1,0 +1,39 @@
+slug: prestaciones-apoyo-familias-valladolid
+version: 1
+status: draft
+title: Prestaciones económicas de apoyo a familias (Ayuntamiento de Valladolid)
+summary: >-
+  Ayudas municipales para familias con hijos menores: alimentación e higiene infantil durante el
+  primer año, becas de comedor escolar y becas de guardería en periodos vacacionales.
+level: municipal
+region: CL
+municipality: "47186"
+category: birth
+kind: call
+agency: Ayuntamiento de Valladolid (Servicios Sociales)
+amount:
+  type: variable
+  text: "TODO(verify): cuantías de la convocatoria 2026 (dotación total 333.000 €)."
+window:
+  text: "TODO(verify): plazo de la convocatoria 2026."
+eligibility:
+  all:
+    - field: numMinors
+      op: gte
+      value: 1
+      label: Tener hijos menores a cargo
+      hard: true
+otherRequirements:
+  - "TODO(verify): requisitos de renta y empadronamiento en las bases municipales."
+documents: []
+steps:
+  - Pide información en tu CEAS de Valladolid.
+officialUrl: https://www.valladolid.gob.es/es/tablon-oficial/ayuntamiento-valladolid/ayudas-subvenciones
+sources:
+  - url: https://www.valladolid.es/en/actualidad/noticias/aprobada-convocatoria-prestaciones-economicas-apoyo-familia
+    retrievedAt: "2026-10-14"
+    excerpt: >-
+      La Junta de Gobierno ha aprobado la Convocatoria de Prestaciones Económicas de Apoyo a
+      Familias para el año 2026, destinadas a apoyar a unidades familiares con hijos menores a su
+      cargo.
+faq: []

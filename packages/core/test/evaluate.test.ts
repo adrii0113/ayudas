@@ -350,6 +350,12 @@ describe("value expressions", () => {
     expect(value).toBeCloseTo(23520);
   });
 
+  it("supports min() to cap a scale", () => {
+    const scale = { min: [2.2, { add: [0.7, { mul: [0.3, { ref: "householdSize" as const }] }] }] };
+    expect(evaluateValueExpr(scale, ctx({ householdSize: 2 }))).toBeCloseTo(1.3);
+    expect(evaluateValueExpr(scale, ctx({ householdSize: 10 }))).toBe(2.2);
+  });
+
   it("is unknown if a referenced field is unknown", () => {
     expect(evaluateValueExpr({ add: [1, { ref: "numMinors" }] }, ctx({}))).toBeUndefined();
   });

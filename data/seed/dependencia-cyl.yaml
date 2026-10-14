@@ -1,0 +1,46 @@
+slug: reconocimiento-dependencia-castilla-y-leon
+version: 1
+status: published
+reviewedBy: "claude-code (requiere revisión humana)"
+reviewedAt: "2026-10-14"
+title: Reconocimiento de la dependencia y sus prestaciones (Castilla y León)
+summary: >-
+  Si alguien de tu familia necesita ayuda para las tareas básicas del día a día, puedes pedir
+  que se reconozca su grado de dependencia y acceder a servicios o prestaciones económicas.
+level: regional
+region: CL
+category: dependency
+kind: permanent
+agency: Junta de Castilla y León (Servicios Sociales)
+amount:
+  type: variable
+  text: >-
+    Según el grado de dependencia y la capacidad económica: servicios (ayuda a domicilio, centro
+    de día, residencia) o prestaciones económicas, por ejemplo para cuidados en el entorno familiar.
+eligibility:
+  all:
+    - field: hasDependentPerson
+      op: eq
+      value: true
+      label: Convivir con o cuidar de una persona que necesita ayuda para las actividades básicas
+      hard: true
+otherRequirements:
+  - "La persona dependiente debe haber residido en España 5 años, 2 de ellos inmediatamente antes de la solicitud."
+  - "La resolución puede tardar hasta 6 meses (30 días para menores de 3 años)."
+documents:
+  - Informe de salud en modelo normalizado
+  - Documentación de los ingresos declarados
+  - Acreditación de la representación, si la solicitud la presenta otra persona
+steps:
+  - Pide información en tu CEAS (Centro de Acción Social) o servicios sociales municipales.
+  - Presenta la solicitud en la sede electrónica de la Junta o en el CEAS.
+  - Tras la valoración, se aprueba un Programa Individual de Atención (PIA) con los servicios o prestaciones.
+officialUrl: https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla100Detalle/1251181050732/Tramite/1259395711876/Tramite
+sources:
+  - url: https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla100Detalle/1251181050732/Tramite/1259395711876/Tramite
+    retrievedAt: "2026-10-14"
+    excerpt: >-
+      Reconocimiento de la situación de dependencia y del derecho a las prestaciones del sistema
+      [...] haber residido en España cinco años, dos de ellos inmediatamente anteriores a la
+      fecha de presentación de la solicitud.
+faq: []

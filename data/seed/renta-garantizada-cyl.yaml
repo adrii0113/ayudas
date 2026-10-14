@@ -1,0 +1,78 @@
+slug: renta-garantizada-ciudadania-castilla-y-leon
+version: 1
+status: published
+reviewedBy: "claude-code (requiere revisión humana)"
+reviewedAt: "2026-10-14"
+title: Renta Garantizada de Ciudadanía de Castilla y León
+summary: >-
+  Prestación mensual de la Junta para personas y familias sin ingresos suficientes para cubrir
+  sus necesidades básicas, acompañada de un plan de inserción.
+level: regional
+region: CL
+category: income
+kind: permanent
+agency: Junta de Castilla y León (Servicios Sociales)
+amount:
+  type: range
+  min: 480
+  max: 780
+  text: "Entre el 80 % y el 130 % del IPREM: de 480 € a 780 € al mes en 2026, según los miembros del hogar."
+eligibility:
+  all:
+    - field: yearsRegisteredInRegion
+      op: gte
+      value: 1
+      label: Llevar al menos un año empadronado en Castilla y León
+      source:
+        excerpt: >-
+          Tener domicilio, estar empadronado y residir legalmente en algún municipio de Castilla
+          y León con un año de antelación, salvo determinadas excepciones.
+    - any:
+        - field: applicantAge
+          op: gte
+          value: 25
+          label: Tener 25 años o más
+        - all:
+            - field: applicantAge
+              op: gte
+              value: 18
+              label: Ser mayor de edad
+            - field: numMinors
+              op: gte
+              value: 1
+              label: Tener menores a cargo
+      label: Tener 25 años o más (o menos si tienes menores a cargo)
+    - field: applicantAge
+      op: lt
+      value: 65
+      label: Tener menos de 65 años
+    - field: annualHouseholdIncome
+      op: lt
+      value:
+        mul: [15.6, { ref: ipremMonthly }]
+      label: Ingresos del hogar inferiores a unos 780 € al mes (cuantía máxima de la prestación)
+      hard: true
+otherRequirements:
+  - "Es subsidiaria: antes hay que pedir el resto de prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital."
+  - "Las personas en edad de trabajar deben estar inscritas como demandantes de empleo."
+  - "Firmar un Proyecto Individualizado de Inserción con los servicios sociales."
+  - "No tener patrimonio suficiente para cubrir las necesidades básicas."
+documents:
+  - DNI o NIE de todas las personas del hogar
+  - Certificado de empadronamiento
+  - Justificantes de ingresos de todos los miembros
+steps:
+  - Pide cita en tu CEAS (Centro de Acción Social) o en los servicios sociales de tu ayuntamiento.
+  - Presenta la solicitud con la documentación en el CEAS o en la sede electrónica de la Junta.
+officialUrl: https://serviciossociales.jcyl.es/web/jcyl/ServiciosSociales/es/Plantilla100Detalle/1246991411473/_/1284657728093/Informe
+sources:
+  - url: https://serviciossociales.jcyl.es/web/jcyl/ServiciosSociales/es/Plantilla100Detalle/1246991411473/_/1284657728093/Informe
+    retrievedAt: "2026-10-14"
+    excerpt: >-
+      Prestación económica, cuya cuantía estará comprendida entre una cantidad básica mensual del
+      80% del IPREM y una cantidad máxima del 130%.
+faq:
+  - question: ¿Es compatible la Renta Garantizada con el Ingreso Mínimo Vital?
+    answer: >-
+      Solo si el IMV que cobra tu hogar es menor que la Renta Garantizada que te correspondería;
+      en ese caso se complementa.

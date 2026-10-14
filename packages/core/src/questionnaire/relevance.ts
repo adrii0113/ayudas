@@ -4,7 +4,7 @@ import { effectiveRules } from "../matching";
 import type { HouseholdProfile, ProfileField } from "../profile";
 import { DERIVED_FIELD_DEPENDENCIES, isDerivedField } from "../rules/derived";
 import type { RuleField, RuleNode, ValueExpr } from "../rules/types";
-import { isRuleGroup } from "../rules/types";
+import { compositeParts, isRuleGroup } from "../rules/types";
 import { QUESTIONS, type Question } from "./questions";
 
 function addField(field: string, out: Set<ProfileField>) {
@@ -20,7 +20,7 @@ function collectExpr(expr: unknown, out: Set<ProfileField>) {
   const e = expr as Exclude<ValueExpr, number>;
   if ("ref" in e) {
     if (!(CONSTANT_KEYS as readonly string[]).includes(e.ref)) addField(e.ref, out);
-  } else ("add" in e ? e.add : e.mul).forEach((x) => collectExpr(x, out));
+  } else compositeParts(e)[1].forEach((x) => collectExpr(x, out));
 }
 
 function collectNode(node: RuleNode, out: Set<ProfileField>) {

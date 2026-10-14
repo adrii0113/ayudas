@@ -1,0 +1,54 @@
+slug: deduccion-maternidad
+version: 1
+status: published
+reviewedBy: "claude-code (requiere revisión humana)"
+reviewedAt: "2026-10-14"
+title: Deducción por maternidad (IRPF)
+summary: >-
+  Hasta 1.200 € al año por cada hijo menor de 3 años, que puedes cobrar por adelantado (100 € al
+  mes) o en la declaración de la renta. Se suman hasta 1.000 € más por gastos de guardería.
+level: state
+category: birth
+kind: permanent
+agency: Agencia Tributaria
+amount:
+  type: range
+  max: 2200
+  text: "Hasta 1.200 € al año por hijo menor de 3 años (100 €/mes), más hasta 1.000 € por guardería o escuela infantil autorizada."
+eligibility:
+  all:
+    - field: youngestChildAge
+      op: lt
+      value: 3
+      label: Tener un hijo menor de 3 años
+      hard: true
+    - field: employmentStatus
+      op: in
+      value: [employed, self_employed, unemployed]
+      label: Estar de alta en la Seguridad Social o cobrar una prestación por desempleo
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deduccion-maternidad-incremento-adicional-gastos-custodia/deduccion-maternidad/beneficiarios-hijos-que-derecho-aplicacion-deduccion.html
+        excerpt: >-
+          que en el momento del nacimiento del menor perciban prestaciones contributivas o
+          asistenciales del sistema de protección de desempleo, o que estén dadas de alta en el
+          régimen correspondiente de la Seguridad Social o mutualidad
+otherRequirements:
+  - "La aplica la madre. El padre o tutor solo en casos especiales (fallecimiento de la madre o custodia exclusiva)."
+  - "Si estás en paro, debes cobrar prestación o subsidio por desempleo en el momento del nacimiento; estar solo inscrita no basta."
+  - "Si te das de alta después del nacimiento, necesitas al menos 30 días cotizados."
+documents:
+  - DNI o NIE
+  - Datos del hijo (fecha de nacimiento, NIF si lo tiene)
+steps:
+  - "Pide el abono anticipado (100 €/mes) en la sede de la Agencia Tributaria con el modelo 140, o aplícala en tu próxima declaración de la renta."
+  - "Para el incremento por guardería, la escuela infantil debe presentar el modelo 233; tú lo aplicas en la renta."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ciudadanos-familias-personas-discapacidad/deducciones-relacionadas-hijos-descendientes/deduccion-maternidad/quien-corresponde-deduccion.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deduccion-maternidad-incremento-adicional-gastos-custodia/deduccion-maternidad/beneficiarios-hijos-que-derecho-aplicacion-deduccion.html
+    retrievedAt: "2026-10-14"
+    excerpt: "Las mujeres con hijos menores de tres años con derecho a la aplicación del mínimo por descendientes [...]"
+faq:
+  - question: ¿Puedo cobrar la deducción por maternidad si estoy en paro?
+    answer: >-
+      Sí, si en el momento del nacimiento cobrabas una prestación o subsidio por desempleo. Estar
+      solo inscrita como demandante no es suficiente.

@@ -1,0 +1,42 @@
+slug: deduccion-descendiente-discapacidad
+version: 1
+status: published
+reviewedBy: "claude-code (requiere revisión humana)"
+reviewedAt: "2026-10-14"
+title: Deducción por hijo con discapacidad a cargo (IRPF)
+summary: >-
+  Hasta 1.200 € al año por cada hijo con discapacidad reconocida del 33 % o más. Se puede cobrar
+  por adelantado cada mes.
+level: state
+category: dependency
+kind: permanent
+agency: Agencia Tributaria
+amount:
+  type: fixed
+  min: 1200
+  max: 1200
+  text: "Hasta 1.200 € al año por cada hijo con discapacidad (100 €/mes si se pide por adelantado)."
+eligibility:
+  all:
+    - field: numChildrenWithDisability
+      op: gte
+      value: 1
+      label: Tener un hijo con discapacidad reconocida del 33 % o más
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deducciones-familia-numerosa-personas-discapacidad-cargo/cuantia-maxima-deducciones.html
+        excerpt: "Deducción por descendientes con discapacidad a cargo: por cada descendiente con discapacidad con derecho a la aplicación del mínimo por descendientes"
+      hard: true
+otherRequirements:
+  - "Estar de alta en la Seguridad Social o mutualidad, o cobrar prestaciones por desempleo o pensiones."
+  - "Tener derecho al mínimo por descendientes por ese hijo."
+documents:
+  - Certificado de discapacidad
+  - DNI o NIE
+steps:
+  - "Pide el abono anticipado con el modelo 143 o aplícala en la declaración de la renta."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deducciones-familia-numerosa-personas-discapacidad-cargo/cuantia-maxima-deducciones.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deducciones-familia-numerosa-personas-discapacidad-cargo/deducciones-que-incluye.html
+    retrievedAt: "2026-10-14"
+    excerpt: "Deducción por cada descendiente con discapacidad."
+faq: []

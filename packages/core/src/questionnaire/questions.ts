@@ -165,9 +165,8 @@ export const QUESTIONS: Question[] = [
       type: "choice",
       options: [
         { value: "lt1", set: { yearsLegalResidenceInSpain: 0 } },
-        { value: "1to2", set: { yearsLegalResidenceInSpain: 1 } },
-        { value: "2plus", set: { yearsLegalResidenceInSpain: 2 } },
-        { value: "always", set: { yearsLegalResidenceInSpain: 99 } },
+        { value: "1to5", set: { yearsLegalResidenceInSpain: 1 } },
+        { value: "5plus", set: { yearsLegalResidenceInSpain: 5 } },
       ],
     },
   },

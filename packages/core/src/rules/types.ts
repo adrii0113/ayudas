@@ -27,7 +27,11 @@ export type ComparisonOp = (typeof COMPARISON_OPS)[number];
  *   { mul: [{ ref: "iprem14" }, { add: [1.5, { mul: [0.5, { ref: "numMinors" }] }] }] }
  */
 export type ValueExpr =
-  number | { ref: ConstantKey | RuleField } | { add: ValueExpr[] } | { mul: ValueExpr[] };
+  | number
+  | { ref: ConstantKey | RuleField }
+  | { add: ValueExpr[] }
+  | { mul: ValueExpr[] }
+  | { min: ValueExpr[] };
 
 export type RuleValue = string | number | boolean | (string | number)[] | ValueExpr;
 
@@ -82,6 +86,15 @@ export type EligibilityResult = {
   failed: RequirementResult[];
   unknown: RequirementResult[];
 };
+
+export type CompositeExpr = Exclude<ValueExpr, number | { ref: unknown }>;
+
+/** Operator and operands of a composite value expression. */
+export function compositeParts(expr: CompositeExpr): ["add" | "mul" | "min", ValueExpr[]] {
+  if ("add" in expr) return ["add", expr.add];
+  if ("mul" in expr) return ["mul", expr.mul];
+  return ["min", expr.min];
+}
 
 export function isRuleGroup(node: RuleNode): node is RuleGroup {
   return !("op" in node);

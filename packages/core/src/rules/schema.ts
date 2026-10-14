@@ -23,6 +23,7 @@ export const valueExprSchema: z.ZodType<ValueExpr> = z.lazy(() =>
     z.object({ ref: z.enum([...CONSTANT_KEYS, ...RULE_FIELDS]) }).strict(),
     z.object({ add: z.array(valueExprSchema).min(1) }).strict(),
     z.object({ mul: z.array(valueExprSchema).min(1) }).strict(),
+    z.object({ min: z.array(valueExprSchema).min(1) }).strict(),
   ]),
 ) as z.ZodType<ValueExpr>;
 

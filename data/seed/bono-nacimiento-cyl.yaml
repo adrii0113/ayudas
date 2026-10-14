@@ -1,0 +1,68 @@
+slug: bono-nacimiento-castilla-y-leon
+version: 1
+status: published
+reviewedBy: "claude-code (requiere revisión humana)"
+reviewedAt: "2026-10-14"
+title: Bono Nacimiento de Castilla y León 2026
+summary: >-
+  Entre 500 y 2.500 € por cada hijo nacido o adoptado en 2026, en una tarjeta prepago para
+  alimentación infantil, pañales e higiene. Se duplica si el bebé tiene discapacidad.
+level: regional
+region: CL
+category: birth
+kind: call
+agency: Junta de Castilla y León (Consejería de Desregulación, Familia y Ayudas Sociales)
+amount:
+  type: range
+  min: 500
+  max: 2500
+  text: >-
+    1º hijo: 1.500 € / 1.000 € / 500 €; 2º hijo: 2.000 € / 1.500 € / 1.000 €; 3º y siguientes:
+    2.500 € / 2.000 € / 1.500 €, según la renta de los progenitores (hasta 40.000 €, de 40.001 a
+    60.000 €, o más). Se duplica con discapacidad del 33 % o más.
+window:
+  opensAt: "2026-03-03"
+  closesAt: "2027-03-31"
+  text: Tienes 3 meses desde el nacimiento o la adopción para pedirlo.
+eligibility:
+  all:
+    - field: youngestChildAge
+      op: eq
+      value: 0
+      label: Tener un hijo nacido o adoptado en 2026
+      source:
+        url: https://bocyl.jcyl.es/boletines/2026/03/02/pdf/BOCYL-D-02032026-41-19.pdf
+        excerpt: >-
+          por el nacimiento de hijas o hijos o la adopción de menores entre el 1 de enero y el 31
+          diciembre de 2026
+      hard: true
+otherRequirements:
+  - "Los progenitores deben tener residencia legal en España y estar empadronados en Castilla y León en la fecha del nacimiento; el bebé también debe estar empadronado en Castilla y León."
+  - "Estar al corriente con Hacienda y la Seguridad Social."
+  - "La renta que cuenta es la suma de las bases imponibles del IRPF 2024 de ambos progenitores."
+documents:
+  - DNI o TIE de los progenitores
+  - Libro de familia o certificado de nacimiento / resolución de adopción
+  - Certificado de discapacidad del bebé (solo para el complemento)
+steps:
+  - Rellena la solicitud en la aplicación web de la sede electrónica de la Junta (tramitacastillayleon.jcyl.es), buscando el código BDNS 889807.
+  - Presenta una única solicitud por familia dentro de los 3 meses siguientes al nacimiento o la adopción.
+  - Si te lo conceden, recibirás el importe en la Tarjeta Familia (pago único desde octubre de 2026).
+officialUrl: https://www.tramitacastillayleon.jcyl.es
+sources:
+  - url: https://bocyl.jcyl.es/boletines/2026/03/02/pdf/BOCYL-D-02032026-41-19.pdf
+    retrievedAt: "2026-10-14"
+    excerpt: >-
+      El plazo para la presentación de la solicitud será de 3 meses desde la fecha de nacimiento
+      o adopción, o desde la publicación del presente extracto en el B.O.C. y L.
+  - url: https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/889807
+    retrievedAt: "2026-10-14"
+    excerpt: >-
+      1º hijo 1.500 € 1.000 € 500 € / 2º hijo 2.000 € 1.500 € 1.000 € / 3º hijo y siguientes
+      2.500 € 2.000 € 1.500 € [...] se duplicará en el caso de que el nacido o adoptado tenga
+      reconocido un grado de discapacidad igual o superior al 33%.
+faq:
+  - question: ¿Cómo se cobra el Bono Nacimiento de Castilla y León?
+    answer: >-
+      En la Tarjeta Familia, una tarjeta prepago para productos infantiles. Desde octubre de 2026
+      se abona en un único pago tras la concesión.

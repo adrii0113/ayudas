@@ -1,0 +1,24 @@
+{
+  "name": "@tetoca/ingestion",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "ingest:bdns": "tsx src/scripts/ingest-bdns.ts",
+    "pdf:text": "tsx src/scripts/pdf-text.ts"
+  },
+  "dependencies": {
+    "@tetoca/core": "workspace:*",
+    "@tetoca/db": "workspace:*",
+    "unpdf": "^1.8.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5"
+  }
+}

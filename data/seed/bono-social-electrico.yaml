@@ -1,0 +1,111 @@
+slug: bono-social-electrico
+version: 1
+status: published
+reviewedBy: "claude-code (requiere revisión humana)"
+reviewedAt: "2026-10-14"
+title: Bono social eléctrico
+summary: >-
+  Descuento en la factura de la luz para hogares vulnerables. En 2026 es del 42,5 % (57,5 % en
+  situación de vulnerabilidad severa) sobre el precio regulado (PVPC).
+level: state
+category: energy
+kind: permanent
+agency: Ministerio para la Transición Ecológica (MITECO) y comercializadoras de referencia
+amount:
+  type: percent
+  min: 42.5
+  max: 57.5
+  text: >-
+    42,5 % de descuento en la factura (57,5 % si eres consumidor vulnerable severo) hasta el 31
+    de diciembre de 2026. Después, 35 % y 50 %. Se aplica hasta un límite de consumo anual.
+eligibility:
+  any:
+    - field: isLargeFamily
+      op: eq
+      value: true
+      label: Tener título de familia numerosa en vigor
+      source:
+        excerpt: >-
+          Cuando el consumidor disponga de un título de familia numerosa en vigor, el COR no
+          verificará el nivel de renta
+    - field: receivesMinimumIncome
+      op: eq
+      value: true
+      label: Cobrar el Ingreso Mínimo Vital (tú o alguien de tu hogar)
+    - field: annualHouseholdIncome
+      op: lte
+      value:
+        mul:
+          - ref: iprem14
+          - add:
+              - 1.5
+              - mul: [0.3, { ref: extraAdults }]
+              - mul: [0.5, { ref: numMinors }]
+      label: >-
+        Ingresos del hogar de hasta 1,5 veces el IPREM, más 0,3 por cada adulto adicional y 0,5
+        por cada menor
+      source:
+        excerpt: >-
+          12.600 €/año (que equivale a 1,5 veces el IPREM de 14 pagas) cuando no existe unidad de
+          convivencia [...] se añadirá al umbral de renta 0,3 IPREM por cada persona mayor de edad
+          adicional, y 0,5 IPREM por cada menor de edad.
+    - all:
+        - any:
+            - field: isSingleParent
+              op: eq
+              value: true
+              label: Familia monoparental
+            - field: applicantDisabilityPercent
+              op: gte
+              value: 33
+              label: Discapacidad reconocida del 33 % o más
+            - field: numChildrenWithDisability
+              op: gte
+              value: 1
+              label: Un hijo con discapacidad reconocida del 33 % o más
+        - field: annualHouseholdIncome
+          op: lte
+          value:
+            mul:
+              - ref: iprem14
+              - add:
+                  - 2.5
+                  - mul: [0.3, { ref: extraAdults }]
+                  - mul: [0.5, { ref: numMinors }]
+          label: Ingresos del hogar dentro del umbral ampliado (+1 IPREM)
+      label: Situación especial (monoparental o discapacidad) con ingresos dentro del umbral ampliado
+  label: Cumplir alguno de los criterios de vulnerabilidad (renta, familia numerosa o IMV)
+otherRequirements:
+  - "Ser titular del contrato de luz de tu vivienda habitual."
+  - "Tener contratado el PVPC (precio regulado) con una comercializadora de referencia y una potencia de 10 kW o menos."
+  - "También suman 1 IPREM al umbral la dependencia reconocida de grado II o III, la violencia de género o el terrorismo."
+documents:
+  - DNI o NIE de las personas del hogar
+  - Certificado de empadronamiento colectivo
+  - Libro de familia (si hay unidad de convivencia)
+  - Título de familia numerosa, si es tu caso
+steps:
+  - Si no lo tienes, cambia tu contrato al PVPC con una comercializadora de referencia (no cuesta nada).
+  - Pide el bono social a esa comercializadora por teléfono, web, email u oficina con el formulario oficial.
+  - La comercializadora comprueba los datos y te responde en 15 días hábiles.
+  - Se renueva cada 2 años (para familias numerosas, mientras el título siga vigente).
+officialUrl: https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001.html
+sources:
+  - url: https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001/preguntas-frecuentes-bono-social.html
+    retrievedAt: "2026-10-14"
+    excerpt: >-
+      El bono social es un descuento en la factura de un 35% sobre el PVPC para el consumidor
+      vulnerable, y de un 50% [...] para el consumidor vulnerable severo. No obstante,
+      excepcionalmente, hasta el 31 de diciembre de 2026, el descuento correspondiente al
+      consumidor vulnerable será del 42,5%. En el caso del consumidor vulnerable severo, el
+      descuento será del 57,5%.
+faq:
+  - question: ¿Puedo tener el bono social con cualquier compañía de luz?
+    answer: >-
+      No. Solo lo aplican las comercializadoras de referencia y con la tarifa regulada (PVPC).
+      Cambiarse es gratis.
+  - question: ¿Qué ingresos máximos hay para el bono social en 2026?
+    answer: >-
+      12.600 € al año si vives solo; por ejemplo, 19.320 € para dos adultos y un menor o 23.520 €
+      para dos adultos y dos menores. Las familias numerosas y quienes cobran el IMV no tienen
+      límite de renta.
