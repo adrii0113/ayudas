@@ -1,0 +1,48 @@
+slug: ayudas-comedor-escolar-primer-ciclo-infantil-castilla-y-leon
+version: 1
+status: published
+reviewedBy: "claude-code (requiere revisión humana)"
+reviewedAt: "2026-10-14"
+title: Ayudas de comedor para niños de 0 a 3 años en escuelas infantiles gratuitas (Castilla y León)
+summary: >-
+  Ayuda de hasta 786,60 € por curso para el comedor de niños de primer ciclo de infantil (0-3
+  años) en plazas gratuitas de centros privados o municipales de Castilla y León.
+level: regional
+region: CL
+category: education
+kind: call
+agency: Junta de Castilla y León (Consejería de Educación)
+amount:
+  type: range
+  max: 786.6
+  text: "Hasta 786,60 € por curso (100 %, 75 % o 50 % según el caso), sin superar lo pagado por el comedor."
+window:
+  opensAt: "2026-06-17"
+  closesAt: "2026-06-30"
+  text: La convocatoria del curso 2025/2026 se abrió en junio; suele convocarse al final de cada curso.
+eligibility:
+  all:
+    - field: youngestChildAge
+      op: lt
+      value: 3
+      label: Tener un hijo de 0 a 3 años en primer ciclo de educación infantil
+      hard: true
+      source:
+        url: https://bocyl.jcyl.es/boletines/2026/06/10/pdf/BOCYL-D-10062026-110-9.pdf
+        excerpt: El alumnado del primer ciclo de educación infantil que utilice el comedor escolar, en los cursos establecidos como gratuitos
+otherRequirements:
+  - "El niño debe usar el comedor en una plaza gratuita de un centro privado o de titularidad municipal sostenido con fondos públicos."
+  - "No se aplica en escuelas gestionadas directamente por la Consejería de Educación (tienen su propio régimen de comedor)."
+  - "Concurrencia competitiva: se conceden hasta agotar el presupuesto."
+documents:
+  - Justificantes de pago del comedor
+steps:
+  - Presenta la solicitud en la sede electrónica de la Junta (tramitacastillayleon.jcyl.es) cuando se abra la convocatoria.
+officialUrl: https://www.tramitacastillayleon.jcyl.es
+sources:
+  - url: https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/910087
+    retrievedAt: "2026-10-14"
+    excerpt: >-
+      La cuantía máxima de la ayuda es de 786,60 euros, resultado de multiplicar el precio medio
+      diario [...] fijado en el curso escolar de referencia en 4,37 euros, por 180 días
+faq: []

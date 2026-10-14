@@ -1,0 +1,62 @@
+slug: deduccion-contribuyentes-discapacidad-castilla-y-leon
+version: 1
+status: published
+reviewedBy: "claude-code (requiere revisión humana)"
+reviewedAt: "2026-10-14"
+title: Deducción autonómica para personas con discapacidad (Castilla y León)
+summary: >-
+  Deducción de 300 € (656 € en algunos casos) en el IRPF autonómico para contribuyentes con
+  discapacidad y rentas moderadas.
+level: regional
+region: CL
+category: dependency
+kind: permanent
+agency: Junta de Castilla y León / Agencia Tributaria
+amount:
+  type: range
+  min: 300
+  max: 656
+  text: >-
+    300 € con 65 años o más y discapacidad del 33 % o más (656 € si es del 65 % o más); 300 € para
+    menores de 65 años con discapacidad del 65 % o más.
+eligibility:
+  all:
+    - any:
+        - field: applicantDisabilityPercent
+          op: gte
+          value: 65
+          label: Discapacidad del 65 % o más
+        - all:
+            - field: applicantAge
+              op: gte
+              value: 65
+              label: Tener 65 años o más
+            - field: applicantDisabilityPercent
+              op: gte
+              value: 33
+              label: Discapacidad del 33 % o más
+      label: Tener una discapacidad del 65 % o más (o del 33 % si tienes 65 años o más)
+      hard: true
+    - field: annualHouseholdIncome
+      op: lte
+      value: 31500
+      label: Renta de hasta 18.900 € en declaración individual (31.500 € en conjunta)
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/contribuyentes-discapacidad.html
+        excerpt: 18.900 euros en tributación individual.
+otherRequirements:
+  - "El límite de renta se refiere a la base imponible menos el mínimo personal y familiar de la declaración."
+  - "No ser usuario de residencias públicas o concertadas de Castilla y León."
+documents:
+  - Certificado de discapacidad
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Castilla y León)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/contribuyentes-discapacidad.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/contribuyentes-discapacidad.html
+    retrievedAt: "2026-10-14"
+    excerpt: >-
+      300 euros por cada contribuyente, de edad igual o superior a 65 años, afectado por un grado de
+      discapacidad igual o superior al 33 por 100. 656 euros por cada contribuyente, de edad igual o
+      superior a 65 años, afectado por un grado de discapacidad igual o superior al 65 por 100.
+faq: []

@@ -1,4 +1,11 @@
-import { evaluate, type BenefitMatch, type HouseholdProfile } from "@tetoca/core";
+import {
+  evaluate,
+  finalizeAnswers,
+  QUESTIONS,
+  selectQuestions,
+  type BenefitMatch,
+  type HouseholdProfile,
+} from "@tetoca/core";
 import { describe, expect, it } from "vitest";
 import { loadCatalog } from "../src/catalog";
 
@@ -340,5 +347,50 @@ describe("benefit-specific edge cases", () => {
       "renta-garantizada-ciudadania-castilla-y-leon",
     );
     expect(m.status).toBe("eligible");
+  });
+});
+
+describe("questionnaire length with the real catalog", () => {
+  /** Simulates the questionnaire answering from a full profile. */
+  function askedQuestions(full: HouseholdProfile): string[] {
+    const answers: Partial<HouseholdProfile> = {};
+    const asked: string[] = [];
+    for (let guard = 0; guard < 40; guard++) {
+      const next = selectQuestions(published, answers, undefined, { today: TODAY }).find(
+        (q) => !asked.includes(q.id),
+      );
+      if (!next) break;
+      asked.push(next.id);
+      for (const f of next.fields) (answers as Record<string, unknown>)[f] = full[f];
+    }
+    return asked;
+  }
+
+  it.each([
+    ["single mother", singleMotherBaby],
+    ["large family", largeFamily],
+    ["young outside", youngOutside],
+  ])("%s answers at most 13 questions", (_name, profile) => {
+    const asked = askedQuestions(profile);
+    expect(asked.length).toBeLessThanOrEqual(13);
+  });
+
+  it("gets the same results as answering everything", () => {
+    for (const profile of [singleMotherBaby, largeFamily, youngOutside]) {
+      const answers: Partial<HouseholdProfile> = { region: profile.region };
+      for (const id of askedQuestions(profile)) {
+        const q = QUESTIONS.find((x) => x.id === id)!;
+        for (const f of q.fields) (answers as Record<string, unknown>)[f] = profile[f];
+      }
+      const partial = statuses(
+        evaluate(finalizeAnswers(answers) as HouseholdProfile, published, { today: TODAY }),
+      );
+      const complete = statuses(evaluate(profile, published, { today: TODAY }));
+      // Skipped questions can only leave results "unknown" where the full
+      // answers would not have changed the outcome category.
+      for (const [slug, status] of Object.entries(complete)) {
+        if (partial[slug] !== status) expect([slug, partial[slug]]).toEqual([slug, "unknown"]);
+      }
+    }
   });
 });

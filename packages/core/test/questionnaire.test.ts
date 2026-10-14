@@ -26,7 +26,7 @@ describe("adaptive questionnaire", () => {
     slug: "birth",
     eligibility: {
       all: [{ field: "youngestChildAge", op: "lt", value: 3, label: "hijo < 3" }],
-      any: [{ op: "exists", field: "isSingleParent", label: "monoparental" }],
+      any: [{ field: "isSingleParent", op: "eq", value: true, label: "monoparental" }],
     },
   });
   const expr = makeBenefit({
@@ -73,8 +73,7 @@ describe("adaptive questionnaire", () => {
     expect(ids(selectQuestions([birth], { region: "CL", children: [{ age: 1 }] }))).toEqual([
       "region",
       "children",
-      "childrenDisability",
-      "isSingleParent",
+      "familyType",
     ]);
     expect(ids(selectQuestions([birth], { region: "CL", children: [] }))).toEqual([
       "region",
@@ -88,6 +87,35 @@ describe("adaptive questionnaire", () => {
     expect(ids(selectQuestions([municipal], { region: OUTSIDE_REGIONS }))).not.toContain(
       "municipality",
     );
+  });
+
+  it("skips yes/no questions whose answer cannot change any result", () => {
+    const bono = makeBenefit({
+      slug: "bono",
+      eligibility: {
+        any: [
+          { field: "receivesMinimumIncome", op: "eq", value: true, label: "IMV" },
+          { field: "annualHouseholdIncome", op: "lte", value: 12600, label: "renta" },
+        ],
+      },
+    });
+    const q = (answers: object) => ids(selectQuestions([bono], { region: "CL", ...answers }));
+    // Low income already qualifies: asking about the IMV changes nothing.
+    expect(q({ annualHouseholdIncome: 5000 })).not.toContain("receivesMinimumIncome");
+    // High income: the IMV answer decides the result.
+    expect(q({ annualHouseholdIncome: 50000 })).toContain("receivesMinimumIncome");
+    // Already answered questions stay in the list (so "back" works).
+    expect(q({ annualHouseholdIncome: 5000, receivesMinimumIncome: false })).toContain(
+      "receivesMinimumIncome",
+    );
+    // Can be disabled.
+    expect(
+      ids(
+        selectQuestions([bono], { region: "CL", annualHouseholdIncome: 5000 }, undefined, {
+          skipIrrelevant: false,
+        }),
+      ),
+    ).toContain("receivesMinimumIncome");
   });
 
   it("fills implied answers for skipped follow-ups and clears stale ones", () => {

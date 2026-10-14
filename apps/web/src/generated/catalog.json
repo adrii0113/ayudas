@@ -1,5 +1,61 @@
 [
   {
+    "slug": "asignacion-hijo-discapacidad",
+    "title": "Asignación por hijo a cargo con discapacidad",
+    "summary": "Prestación de la Seguridad Social por cada hijo con discapacidad del 33 % o más. Para hijos con discapacidad no hay límite de ingresos.",
+    "level": "state",
+    "category": "dependency",
+    "kind": "permanent",
+    "agency": "Seguridad Social (INSS)",
+    "amount": {
+      "type": "variable",
+      "min": 1000,
+      "text": "1.000 € al año por cada hijo menor de 18 años con discapacidad del 33 % o más; 5.962,80 € al año por hijo mayor de edad con discapacidad del 65 % o más (8.942,40 € si es del 75 % y necesita ayuda de otra persona)."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "numChildrenWithDisability",
+          "op": "gte",
+          "value": 1,
+          "label": "Tener un hijo con discapacidad reconocida del 33 % o más",
+          "hard": true
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Residir legalmente en España.",
+      "Si el hijo es mayor de 18 años, la discapacidad debe ser del 65 % o más.",
+      "Las asignaciones por hijos con discapacidad no tienen límite de ingresos."
+    ],
+    "documents": [
+      "DNI o NIE",
+      "Libro de familia",
+      "Certificado de discapacidad del hijo"
+    ],
+    "steps": [
+      "Solicítala en la sede electrónica de la Seguridad Social (\"Prestaciones familiares\")."
+    ],
+    "officialUrl": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10967/27924",
+    "sources": [
+      {
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-2548",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "en el supuesto de hijo o hija menor de dieciocho años [...] con un grado de discapacidad igual o superior al 33 por ciento, será en cómputo anual de 1.000,00 euros."
+      },
+      {
+        "url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10967/27924",
+        "retrievedAt": "2026-10-14"
+      }
+    ],
+    "faq": [],
+    "id": "asignacion-hijo-discapacidad",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
     "slug": "ayudas-alquiler-vivienda-castilla-y-leon",
     "title": "Ayudas al alquiler de vivienda de Castilla y León",
     "summary": "La Junta paga el 50 % del alquiler mensual (60 % si tienes hasta 35 años) a inquilinos con ingresos limitados. La última convocatoria cerró el 30 de enero de 2026; suele abrirse en otoño.",
@@ -198,6 +254,223 @@
     "reviewedAt": "2026-10-14"
   },
   {
+    "slug": "ayudas-estudio-universitario-castilla-y-leon",
+    "title": "Ayudas al estudio para universitarios de Castilla y León",
+    "summary": "Ayudas de la Junta para estudiantes de grado o máster en universidades de Castilla y León que ya tienen la beca de matrícula del Ministerio, por renta o por buen expediente.",
+    "level": "regional",
+    "region": "CL",
+    "category": "education",
+    "kind": "call",
+    "agency": "Junta de Castilla y León (Consejería de Educación)",
+    "amount": {
+      "type": "variable",
+      "text": "Según la modalidad (renta o aprovechamiento académico) y el crédito disponible."
+    },
+    "window": {
+      "opensAt": "2025-10-21",
+      "closesAt": "2025-11-17",
+      "text": "La última convocatoria (curso 2025-2026) se abrió en octubre."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "any": [
+            {
+              "field": "employmentStatus",
+              "op": "eq",
+              "value": "student",
+              "label": "Estudiar un grado o máster"
+            },
+            {
+              "all": [
+                {
+                  "field": "oldestChildAge",
+                  "op": "gte",
+                  "value": 17,
+                  "label": "Tener un hijo de 17 años o más"
+                },
+                {
+                  "field": "oldestChildAge",
+                  "op": "lte",
+                  "value": 25,
+                  "label": "Tener un hijo de 25 años o menos"
+                }
+              ]
+            }
+          ],
+          "label": "Estudiar tú (o un hijo) un grado o máster en una universidad de Castilla y León",
+          "hard": true
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Haber obtenido la beca de matrícula del Ministerio de Educación para ese curso.",
+      "Estar matriculado en una universidad pública o privada de Castilla y León y empadronado en Castilla y León."
+    ],
+    "documents": [
+      "Justificante de matrícula"
+    ],
+    "steps": [
+      "Presenta la solicitud en la sede electrónica de la Junta (tramitacastillayleon.jcyl.es) cuando se abra la convocatoria."
+    ],
+    "officialUrl": "https://www.tramitacastillayleon.jcyl.es/",
+    "sources": [
+      {
+        "url": "https://bocyl.jcyl.es/boletines/2025/10/20/pdf/BOCYL-D-20102025-7.pdf",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "Haber resultado beneficiario de la beca de matrícula para el curso académico 2025-2026, para estudiantes que cursen estudios postobligatorios"
+      },
+      {
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/862864",
+        "retrievedAt": "2026-10-14"
+      }
+    ],
+    "faq": [],
+    "id": "ayudas-estudio-universitario-castilla-y-leon",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
+    "slug": "becas-formacion-desempleados-castilla-y-leon",
+    "title": "Becas y ayudas para personas en paro que hacen cursos del ECYL",
+    "summary": "Si estás en paro y haces un curso de formación para el empleo en Castilla y León, puedes pedir ayudas para transporte, manutención, alojamiento o conciliación.",
+    "level": "regional",
+    "region": "CL",
+    "category": "employment",
+    "kind": "call",
+    "agency": "Servicio Público de Empleo de Castilla y León (ECYL)",
+    "amount": {
+      "type": "variable",
+      "text": "Ayudas de transporte, manutención, alojamiento y conciliación, según tu caso y el curso."
+    },
+    "window": {
+      "text": "Pídela en los 10 días siguientes a terminar el curso (convocatoria de 2026)."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "employmentStatus",
+          "op": "eq",
+          "value": "unemployed",
+          "label": "Estar en paro e inscrito como demandante de empleo en el ECYL",
+          "source": {
+            "url": "https://bocyl.jcyl.es/boletines/2025/12/30/pdf/BOCYL-D-30122025-12.pdf",
+            "excerpt": "tendrán la condición de personas trabajadoras desempleadas aquellas inscritas como demandantes de empleo en el Servicio Público de Empleo de Castilla y León"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Participar en una acción formativa del ECYL para personas desempleadas.",
+      "Estar inscrito como demandante de empleo el día en que empiezas el curso."
+    ],
+    "documents": [
+      "Solicitud (Anexo I de la convocatoria)"
+    ],
+    "steps": [
+      "Infórmate en tu oficina de empleo sobre los cursos.",
+      "Al terminar el curso, presenta la solicitud en los 10 días siguientes en la sede electrónica de la Junta."
+    ],
+    "officialUrl": "https://www.tramitacastillayleon.jcyl.es",
+    "sources": [
+      {
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/877789",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "becas y ayudas en concepto de transporte, manutención, alojamiento y manutención, y para la conciliación, a que tengan derecho las personas trabajadoras desempleadas"
+      }
+    ],
+    "faq": [],
+    "id": "becas-formacion-desempleados-castilla-y-leon",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
+    "slug": "becas-mec-caracter-general",
+    "title": "Becas del Ministerio de Educación para estudios postobligatorios (curso 2026-2027)",
+    "summary": "Becas para estudiar Bachillerato, FP, enseñanzas artísticas o la universidad: cubren la matrícula y pueden sumar cuantías por renta y por residencia. El plazo 2026-2027 cerró en mayo.",
+    "level": "state",
+    "category": "education",
+    "kind": "call",
+    "agency": "Ministerio de Educación, Formación Profesional y Deportes",
+    "amount": {
+      "type": "variable",
+      "min": 300,
+      "text": "Matrícula gratuita en la universidad; 1.700 € ligados a la renta; 2.700 € si vives fuera del domicilio familiar por estudios; 300 € de beca básica en estudios no universitarios; y entre 50 y 125 € por excelencia académica."
+    },
+    "window": {
+      "opensAt": "2026-04-07",
+      "closesAt": "2026-05-19",
+      "text": "Suele abrirse cada año entre marzo y mayo para el curso siguiente."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "any": [
+            {
+              "field": "employmentStatus",
+              "op": "eq",
+              "value": "student",
+              "label": "Estudiar Bachillerato, FP o en la universidad"
+            },
+            {
+              "all": [
+                {
+                  "field": "oldestChildAge",
+                  "op": "gte",
+                  "value": 16,
+                  "label": "Tener un hijo de 16 años o más"
+                },
+                {
+                  "field": "oldestChildAge",
+                  "op": "lte",
+                  "value": 25,
+                  "label": "Tener un hijo de 25 años o menos"
+                }
+              ]
+            }
+          ],
+          "label": "Estudiar tú (o un hijo) Bachillerato, FP, enseñanzas artísticas o un grado/máster",
+          "hard": true
+        }
+      ]
+    },
+    "otherRequirements": [
+      "No superar los umbrales de renta y patrimonio familiar de la convocatoria (dependen del número de miembros de la familia).",
+      "Cumplir los requisitos académicos (nota media y créditos aprobados) de la convocatoria."
+    ],
+    "documents": [
+      "Datos de la matrícula",
+      "Datos de los miembros de la unidad familiar (la renta se comprueba con Hacienda)"
+    ],
+    "steps": [
+      "Rellena la solicitud en la sede electrónica del Ministerio de Educación (sede.educacion.gob.es) dentro del plazo.",
+      "Fírmala electrónicamente (si eres menor de 18 años, la firma tu representante legal)."
+    ],
+    "officialUrl": "https://sede.educacion.gob.es",
+    "sources": [
+      {
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/894743",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "b) Cuantía fija ligada a la renta del estudiante: 1.700,00 euros tanto para estudiantes universitarios como no universitarios. c) Cuantía fija ligada a la residencia del estudiante durante el curso escolar: 2.700,00 euros"
+      }
+    ],
+    "faq": [
+      {
+        "question": "¿Cuándo se piden las becas del Ministerio?",
+        "answer": "Para el curso 2026-2027 el plazo fue del 7 de abril al 19 de mayo de 2026. Suele abrirse cada primavera; activa las alertas para enterarte."
+      }
+    ],
+    "id": "becas-mec-caracter-general",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
     "slug": "bono-nacimiento-castilla-y-leon",
     "title": "Bono Nacimiento de Castilla y León 2026",
     "summary": "Entre 500 y 2.500 € por cada hijo nacido o adoptado en 2026, en una tarjeta prepago para alimentación infantil, pañales e higiene. Se duplica si el bebé tiene discapacidad.",
@@ -235,7 +508,8 @@
     "otherRequirements": [
       "Los progenitores deben tener residencia legal en España y estar empadronados en Castilla y León en la fecha del nacimiento; el bebé también debe estar empadronado en Castilla y León.",
       "Estar al corriente con Hacienda y la Seguridad Social.",
-      "La renta que cuenta es la suma de las bases imponibles del IRPF 2024 de ambos progenitores."
+      "La renta que cuenta es la suma de las bases imponibles del IRPF 2024 de ambos progenitores.",
+      "La deducción autonómica por nacimiento no se aplica si has pedido ayudas de la Junta de naturaleza análoga por el mismo nacimiento: comprueba si te conviene más una u otra."
     ],
     "documents": [
       "DNI o TIE de los progenitores",
@@ -606,6 +880,66 @@
     "reviewedAt": "2026-10-14"
   },
   {
+    "slug": "ayudas-comedor-escolar-primer-ciclo-infantil-castilla-y-leon",
+    "title": "Ayudas de comedor para niños de 0 a 3 años en escuelas infantiles gratuitas (Castilla y León)",
+    "summary": "Ayuda de hasta 786,60 € por curso para el comedor de niños de primer ciclo de infantil (0-3 años) en plazas gratuitas de centros privados o municipales de Castilla y León.",
+    "level": "regional",
+    "region": "CL",
+    "category": "education",
+    "kind": "call",
+    "agency": "Junta de Castilla y León (Consejería de Educación)",
+    "amount": {
+      "type": "range",
+      "max": 786.6,
+      "text": "Hasta 786,60 € por curso (100 %, 75 % o 50 % según el caso), sin superar lo pagado por el comedor."
+    },
+    "window": {
+      "opensAt": "2026-06-17",
+      "closesAt": "2026-06-30",
+      "text": "La convocatoria del curso 2025/2026 se abrió en junio; suele convocarse al final de cada curso."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "youngestChildAge",
+          "op": "lt",
+          "value": 3,
+          "label": "Tener un hijo de 0 a 3 años en primer ciclo de educación infantil",
+          "hard": true,
+          "source": {
+            "url": "https://bocyl.jcyl.es/boletines/2026/06/10/pdf/BOCYL-D-10062026-110-9.pdf",
+            "excerpt": "El alumnado del primer ciclo de educación infantil que utilice el comedor escolar, en los cursos establecidos como gratuitos"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "El niño debe usar el comedor en una plaza gratuita de un centro privado o de titularidad municipal sostenido con fondos públicos.",
+      "No se aplica en escuelas gestionadas directamente por la Consejería de Educación (tienen su propio régimen de comedor).",
+      "Concurrencia competitiva: se conceden hasta agotar el presupuesto."
+    ],
+    "documents": [
+      "Justificantes de pago del comedor"
+    ],
+    "steps": [
+      "Presenta la solicitud en la sede electrónica de la Junta (tramitacastillayleon.jcyl.es) cuando se abra la convocatoria."
+    ],
+    "officialUrl": "https://www.tramitacastillayleon.jcyl.es",
+    "sources": [
+      {
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/910087",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "La cuantía máxima de la ayuda es de 786,60 euros, resultado de multiplicar el precio medio diario [...] fijado en el curso escolar de referencia en 4,37 euros, por 180 días"
+      }
+    ],
+    "faq": [],
+    "id": "ayudas-comedor-escolar-primer-ciclo-infantil-castilla-y-leon",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
     "slug": "complemento-ayuda-infancia",
     "title": "Complemento de Ayuda para la Infancia (CAPI)",
     "summary": "Ayuda mensual por cada hijo menor de 18 años para familias con ingresos bajos o medios-bajos. Se puede cobrar aunque no tengas derecho al Ingreso Mínimo Vital.",
@@ -792,6 +1126,127 @@
     "reviewedAt": "2026-10-14"
   },
   {
+    "slug": "deduccion-alquiler-jovenes-castilla-y-leon",
+    "title": "Deducción autonómica por alquiler de vivienda para jóvenes (Castilla y León)",
+    "summary": "Si tienes menos de 36 años y vives de alquiler en Castilla y León, puedes deducir el 20 % del alquiler (hasta 459 €) o el 25 % (hasta 612 €) en municipios pequeños.",
+    "level": "regional",
+    "region": "CL",
+    "category": "housing",
+    "kind": "permanent",
+    "agency": "Junta de Castilla y León / Agencia Tributaria",
+    "amount": {
+      "type": "range",
+      "max": 612,
+      "text": "20 % del alquiler pagado en el año, hasta 459 €; 25 %, hasta 612 €, en municipios pequeños."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "applicantAge",
+          "op": "lt",
+          "value": 36,
+          "label": "Tener menos de 36 años a 31 de diciembre",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/arrendamiento-vivienda-habitual-jovenes.html",
+            "excerpt": "Que el contribuyente tenga menos de 36 años a la fecha de devengo del impuesto"
+          }
+        },
+        {
+          "field": "housing",
+          "op": "eq",
+          "value": "renting",
+          "label": "Vivir de alquiler en tu vivienda habitual (contrato a tu nombre)"
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lte",
+          "value": 31500,
+          "label": "Renta de hasta 18.900 € en declaración individual (31.500 € en conjunta)"
+        }
+      ]
+    },
+    "otherRequirements": [
+      "El límite de renta se refiere a la base imponible menos el mínimo personal y familiar de la declaración, no a los ingresos brutos.",
+      "El 25 % se aplica en municipios de hasta 10.000 habitantes (o 3.000 si están a menos de 30 km de la capital de provincia).",
+      "Si recibes ayudas públicas al alquiler, la deducción no puede superar lo que pagas menos esas ayudas."
+    ],
+    "documents": [
+      "Contrato de alquiler",
+      "Justificantes de pago del alquiler"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Castilla y León), indicando el NIF del arrendador."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/arrendamiento-vivienda-habitual-jovenes.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/arrendamiento-vivienda-habitual-jovenes.html",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "El 20 por 100 de las cantidades satisfechas en el período impositivo en concepto de alquiler de la vivienda habitual en Castilla y León, con un límite de 459 euros."
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-alquiler-jovenes-castilla-y-leon",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
+    "slug": "deduccion-ascendiente-discapacidad",
+    "title": "Deducción por ascendiente con discapacidad a cargo (IRPF)",
+    "summary": "Hasta 1.200 € al año si convives con tu padre, madre o abuelo con discapacidad y te corresponde el mínimo por ascendientes. Se puede cobrar por adelantado.",
+    "level": "state",
+    "category": "dependency",
+    "kind": "permanent",
+    "agency": "Agencia Tributaria",
+    "amount": {
+      "type": "fixed",
+      "min": 1200,
+      "max": 1200,
+      "text": "Hasta 1.200 € al año por cada ascendiente con discapacidad (100 €/mes si se pide por adelantado)."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "hasDependentPerson",
+          "op": "eq",
+          "value": true,
+          "label": "Convivir con un ascendiente (padre, madre, abuelo) con discapacidad a tu cargo",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deducciones-familia-numerosa-personas-discapacidad-cargo/cuantia-maxima-deducciones.html",
+            "excerpt": "por cada ascendiente con discapacidad con derecho a la aplicación del mínimo por ascendientes."
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "El ascendiente debe tener una discapacidad reconocida y darte derecho al mínimo por ascendientes (en general, convivir contigo y tener rentas bajas).",
+      "Estar de alta en la Seguridad Social o mutualidad, o cobrar prestaciones por desempleo o pensiones."
+    ],
+    "documents": [
+      "Certificado de discapacidad del ascendiente"
+    ],
+    "steps": [
+      "Pide el abono anticipado con el modelo 143 o aplícala en la declaración de la renta."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deducciones-familia-numerosa-personas-discapacidad-cargo/cuantia-maxima-deducciones.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deducciones-familia-numerosa-personas-discapacidad-cargo/deducciones-que-incluye.html",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "Deducción por cada ascendiente con discapacidad."
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-ascendiente-discapacidad",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
     "slug": "deduccion-ascendiente-dos-hijos",
     "title": "Deducción para familias monoparentales con dos hijos (IRPF)",
     "summary": "1.200 € al año para madres o padres separados o sin pareja que viven con dos hijos y no reciben pensión de alimentos por ellos. Se puede cobrar por adelantado.",
@@ -855,6 +1310,81 @@
     "reviewedAt": "2026-10-14"
   },
   {
+    "slug": "deduccion-cuidado-hijos-menores-castilla-y-leon",
+    "title": "Deducción autonómica por guardería o cuidado de hijos menores de 4 años (Castilla y León)",
+    "summary": "Si trabajáis y lleváis a vuestro hijo menor de 4 años a la guardería o tenéis una persona empleada de hogar, podéis deducir hasta 1.320 € (guardería) o 322 € (empleada de hogar) al año.",
+    "level": "regional",
+    "region": "CL",
+    "category": "birth",
+    "kind": "permanent",
+    "agency": "Junta de Castilla y León / Agencia Tributaria",
+    "amount": {
+      "type": "range",
+      "max": 1320,
+      "text": "100 % de los gastos de guardería o escuela infantil, hasta 1.320 €; o 30 % de lo pagado a una persona empleada de hogar, hasta 322 €."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "youngestChildAge",
+          "op": "lt",
+          "value": 4,
+          "label": "Tener un hijo menor de 4 años",
+          "hard": true
+        },
+        {
+          "field": "employmentStatus",
+          "op": "in",
+          "value": [
+            "employed",
+            "self_employed"
+          ],
+          "label": "Trabajar y estar dado de alta en la Seguridad Social (ambos progenitores)",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/cuidado-hijos-menores.html",
+            "excerpt": "Que ambos padres realicen una actividad por cuenta propia o ajena, por la cual estén dados de alta en el régimen correspondiente de la Seguridad Social o Mutualidad."
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lte",
+          "value": 31500,
+          "label": "Renta de hasta 31.500 € en declaración conjunta (18.900 € en individual)",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/cuidado-hijos-menores.html",
+            "excerpt": "18.900 euros en tributación individual. 31.500 euros en tributación conjunta."
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "El límite de renta se refiere a la base imponible menos el mínimo personal y familiar de la declaración, no a los ingresos brutos: con ingresos algo mayores puedes cumplirlo.",
+      "La guardería debe estar en Castilla y León e inscrita en el Registro de Centros para la conciliación de la vida familiar y laboral.",
+      "Si cobras el incremento de la deducción estatal por maternidad por guardería, se descuenta de esta deducción."
+    ],
+    "documents": [
+      "Facturas de la guardería o justificantes de pago a la persona empleada de hogar",
+      "NIF de la guardería o de la persona empleada de hogar"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Castilla y León), indicando el NIF de la guardería o de la persona empleada."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/cuidado-hijos-menores.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/cuidado-hijos-menores.html",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "El 100 por 100 de los gastos satisfechos de preinscripción y de matrícula [...] con el límite máximo de 1.320 euros, tanto en tributación individual como conjunta."
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-cuidado-hijos-menores-castilla-y-leon",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
     "slug": "deduccion-descendiente-discapacidad",
     "title": "Deducción por hijo con discapacidad a cargo (IRPF)",
     "summary": "Hasta 1.200 € al año por cada hijo con discapacidad reconocida del 33 % o más. Se puede cobrar por adelantado cada mes.",
@@ -904,6 +1434,143 @@
     ],
     "faq": [],
     "id": "deduccion-descendiente-discapacidad",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
+    "slug": "deduccion-contribuyentes-discapacidad-castilla-y-leon",
+    "title": "Deducción autonómica para personas con discapacidad (Castilla y León)",
+    "summary": "Deducción de 300 € (656 € en algunos casos) en el IRPF autonómico para contribuyentes con discapacidad y rentas moderadas.",
+    "level": "regional",
+    "region": "CL",
+    "category": "dependency",
+    "kind": "permanent",
+    "agency": "Junta de Castilla y León / Agencia Tributaria",
+    "amount": {
+      "type": "range",
+      "min": 300,
+      "max": 656,
+      "text": "300 € con 65 años o más y discapacidad del 33 % o más (656 € si es del 65 % o más); 300 € para menores de 65 años con discapacidad del 65 % o más."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "any": [
+            {
+              "field": "applicantDisabilityPercent",
+              "op": "gte",
+              "value": 65,
+              "label": "Discapacidad del 65 % o más"
+            },
+            {
+              "all": [
+                {
+                  "field": "applicantAge",
+                  "op": "gte",
+                  "value": 65,
+                  "label": "Tener 65 años o más"
+                },
+                {
+                  "field": "applicantDisabilityPercent",
+                  "op": "gte",
+                  "value": 33,
+                  "label": "Discapacidad del 33 % o más"
+                }
+              ]
+            }
+          ],
+          "label": "Tener una discapacidad del 65 % o más (o del 33 % si tienes 65 años o más)",
+          "hard": true
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lte",
+          "value": 31500,
+          "label": "Renta de hasta 18.900 € en declaración individual (31.500 € en conjunta)",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/contribuyentes-discapacidad.html",
+            "excerpt": "18.900 euros en tributación individual."
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "El límite de renta se refiere a la base imponible menos el mínimo personal y familiar de la declaración.",
+      "No ser usuario de residencias públicas o concertadas de Castilla y León."
+    ],
+    "documents": [
+      "Certificado de discapacidad"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Castilla y León)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/contribuyentes-discapacidad.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/contribuyentes-discapacidad.html",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "300 euros por cada contribuyente, de edad igual o superior a 65 años, afectado por un grado de discapacidad igual o superior al 33 por 100. 656 euros por cada contribuyente, de edad igual o superior a 65 años, afectado por un grado de discapacidad igual o superior al 65 por 100."
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-contribuyentes-discapacidad-castilla-y-leon",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
+    "slug": "deduccion-familia-numerosa-castilla-y-leon",
+    "title": "Deducción autonómica por familia numerosa (Castilla y León)",
+    "summary": "Las familias numerosas de Castilla y León deducen 600 € en el IRPF autonómico, y más con 4 o 5 hijos o si algún miembro tiene una discapacidad del 65 % o más.",
+    "level": "regional",
+    "region": "CL",
+    "category": "income",
+    "kind": "permanent",
+    "agency": "Junta de Castilla y León / Agencia Tributaria",
+    "amount": {
+      "type": "range",
+      "min": 600,
+      "max": 2500,
+      "text": "600 € en general; 1.500 € con 4 hijos y 2.500 € con 5 (1.000 € más por cada hijo a partir del sexto). 600 € más si el cónyuge o un hijo tiene una discapacidad del 65 % o más."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "isLargeFamily",
+          "op": "eq",
+          "value": true,
+          "label": "Tener título de familia numerosa expedido por Castilla y León",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/familia-numerosa.html",
+            "excerpt": "600 euros, con carácter general, por el hecho de tener la condición de familia numerosa el último día del período impositivo"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Es compatible con la deducción estatal por familia numerosa.",
+      "Si varios miembros declaran por separado, se reparte entre ellos."
+    ],
+    "documents": [
+      "Título de familia numerosa de Castilla y León en vigor a 31 de diciembre"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Castilla y León)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/familia-numerosa.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/familia-numerosa.html",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "1.500 euros, en el caso de que se trate de una familia numerosa con cuatro descendientes [...] 2.500 euros, en el caso de que se trate de una familia numerosa con cinco descendientes"
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-familia-numerosa-castilla-y-leon",
     "status": "published",
     "version": 1,
     "reviewedBy": "claude-code (requiere revisión humana)",
@@ -1034,6 +1701,67 @@
       }
     ],
     "id": "deduccion-maternidad",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
+    "slug": "deduccion-nacimiento-adopcion-castilla-y-leon",
+    "title": "Deducción autonómica por nacimiento o adopción (Castilla y León)",
+    "summary": "Deducción en el tramo autonómico del IRPF por cada hijo nacido o adoptado en el año: desde 1.010 € por el primer hijo, más en municipios pequeños y el doble si tiene discapacidad.",
+    "level": "regional",
+    "region": "CL",
+    "category": "birth",
+    "kind": "permanent",
+    "agency": "Junta de Castilla y León / Agencia Tributaria",
+    "amount": {
+      "type": "range",
+      "min": 1010,
+      "max": 2351,
+      "text": "1.010 € (1º hijo), 1.475 € (2º) y 2.351 € (3º y siguientes). En municipios de hasta 5.000 habitantes: 1.420 €, 2.070 € y 3.300 €. El doble si el bebé tiene una discapacidad del 33 % o más."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "youngestChildAge",
+          "op": "eq",
+          "value": 0,
+          "label": "Haber tenido o adoptado un hijo este año",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/nacimiento-adopcion-hijos.html",
+            "excerpt": "Por cada hijo nacido o adoptado en el período impositivo, que genere derecho a la aplicación del mínimo por descendientes"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "No se puede aplicar si has pedido por el mismo nacimiento ayudas de la Junta de Castilla y León de naturaleza análoga; comprueba si es el caso del Bono Nacimiento antes de elegir.",
+      "Si ambos progenitores tienen derecho y declaran por separado, se reparte a partes iguales.",
+      "Se aplica en la declaración de la renta del año del nacimiento."
+    ],
+    "documents": [
+      "Libro de familia o certificado de nacimiento / resolución de adopción"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (anexo de deducciones autonómicas de Castilla y León)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/nacimiento-adopcion-hijos.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/nacimiento-adopcion-hijos.html",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "1.010 euros si se trata del primer hijo. 1.475 euros si se trata del segundo hijo. 2.351 euros si se trata del tercer hijo o sucesivos."
+      }
+    ],
+    "faq": [
+      {
+        "question": "¿Es compatible con otras ayudas de la Junta por nacimiento?",
+        "answer": "La deducción no se aplica si has optado por pedir ayudas de la Junta de naturaleza análoga por el nacimiento o la adopción. Consulta si es el caso de la ayuda que hayas pedido."
+      }
+    ],
+    "id": "deduccion-nacimiento-adopcion-castilla-y-leon",
     "status": "published",
     "version": 1,
     "reviewedBy": "claude-code (requiere revisión humana)",
@@ -1445,6 +2173,205 @@
     "reviewedAt": "2026-10-14"
   },
   {
+    "slug": "pension-no-contributiva-invalidez",
+    "title": "Pensión no contributiva de invalidez",
+    "summary": "Pensión para personas de 18 a 64 años con una discapacidad del 65 % o más e ingresos bajos, que no tienen derecho a una pensión contributiva.",
+    "level": "state",
+    "category": "dependency",
+    "kind": "permanent",
+    "agency": "IMSERSO y comunidades autónomas (Gerencia de Servicios Sociales en Castilla y León)",
+    "amount": {
+      "type": "range",
+      "min": 2200.8,
+      "max": 8803.2,
+      "text": "Hasta 628,80 € al mes en 14 pagas (8.803,20 € al año), con un complemento de 4.401,60 € al año si necesitas ayuda de otra persona (discapacidad del 75 %)."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "applicantAge",
+          "op": "gte",
+          "value": 18,
+          "label": "Tener 18 años o más"
+        },
+        {
+          "field": "applicantAge",
+          "op": "lt",
+          "value": 65,
+          "label": "Tener menos de 65 años",
+          "hard": true
+        },
+        {
+          "field": "applicantDisabilityPercent",
+          "op": "gte",
+          "value": 65,
+          "label": "Tener una discapacidad del 65 % o más",
+          "hard": true,
+          "source": {
+            "url": "https://imserso.es/documents/20123/1595507/pncresumen2026.pdf/c4b41c80-63fe-942d-7231-f3ee20e28694",
+            "excerpt": "Estar afectados por una discapacidad o enfermedad crónica en un grado igual o superior al 65%."
+          }
+        },
+        {
+          "field": "yearsLegalResidenceInSpain",
+          "op": "gte",
+          "value": 5,
+          "label": "Llevar al menos 5 años residiendo legalmente en España",
+          "source": {
+            "url": "https://imserso.es/documents/20123/1595507/pncresumen2026.pdf/c4b41c80-63fe-942d-7231-f3ee20e28694",
+            "excerpt": "Residir legalmente en territorio español y haberlo hecho durante 5 años"
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lt",
+          "value": {
+            "mul": [
+              {
+                "ref": "pncAnnual"
+              },
+              {
+                "add": [
+                  0.3,
+                  {
+                    "mul": [
+                      0.7,
+                      {
+                        "ref": "householdSize"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "label": "Ingresos del hogar por debajo del límite de la pensión no contributiva para tu hogar",
+          "hard": true
+        }
+      ]
+    },
+    "otherRequirements": [
+      "De los 5 años de residencia, 2 deben ser inmediatamente anteriores a la solicitud.",
+      "Si vives con tus hijos o tus padres, el límite de ingresos del hogar es 2,5 veces mayor.",
+      "Es compatible con trabajar durante 4 años si pensión más salario no superan 16.003,20 € al año."
+    ],
+    "documents": [
+      "DNI o NIE",
+      "Certificado de discapacidad",
+      "Justificantes de ingresos de la unidad de convivencia"
+    ],
+    "steps": [
+      "Presenta la solicitud en la Gerencia Territorial de Servicios Sociales de tu provincia o en la sede electrónica de la Junta de Castilla y León."
+    ],
+    "officialUrl": "https://imserso.es/en/pnc-prestaciones-subvenciones/pnc-invalidez/normativa-requisitos",
+    "sources": [
+      {
+        "url": "https://imserso.es/documents/20123/1595507/pncresumen2026.pdf/c4b41c80-63fe-942d-7231-f3ee20e28694",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "Ser mayor de 18 años y menor de 65 años en la fecha de la solicitud"
+      }
+    ],
+    "faq": [],
+    "id": "pension-no-contributiva-invalidez",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
+    "slug": "pension-no-contributiva-jubilacion",
+    "title": "Pensión no contributiva de jubilación",
+    "summary": "Pensión para personas de 65 años o más que no han cotizado lo suficiente para una pensión contributiva y tienen ingresos bajos. En Castilla y León la gestiona la Junta.",
+    "level": "state",
+    "category": "income",
+    "kind": "permanent",
+    "agency": "IMSERSO y comunidades autónomas (Gerencia de Servicios Sociales en Castilla y León)",
+    "amount": {
+      "type": "range",
+      "min": 2200.8,
+      "max": 8803.2,
+      "text": "Hasta 628,80 € al mes en 14 pagas (8.803,20 € al año); como mínimo 157,20 € al mes."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "applicantAge",
+          "op": "gte",
+          "value": 65,
+          "label": "Tener 65 años o más",
+          "hard": true,
+          "source": {
+            "url": "https://imserso.es/documents/20123/1595507/pncresumen2026.pdf/c4b41c80-63fe-942d-7231-f3ee20e28694",
+            "excerpt": "Ser mayor de 65 años en la fecha de la solicitud"
+          }
+        },
+        {
+          "field": "yearsLegalResidenceInSpain",
+          "op": "gte",
+          "value": 5,
+          "label": "Llevar muchos años residiendo legalmente en España (10 años desde los 16)"
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lt",
+          "value": {
+            "mul": [
+              {
+                "ref": "pncAnnual"
+              },
+              {
+                "add": [
+                  0.3,
+                  {
+                    "mul": [
+                      0.7,
+                      {
+                        "ref": "householdSize"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "label": "Ingresos del hogar por debajo del límite de la pensión no contributiva para tu hogar",
+          "hard": true,
+          "source": {
+            "url": "https://imserso.es/documents/20123/1595507/pncresumen2026.pdf/c4b41c80-63fe-942d-7231-f3ee20e28694",
+            "excerpt": "2 8.803,20 + 6.162,24 14.965,44"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Haber residido legalmente en España 10 años entre los 16 años y la edad de la pensión, 2 de ellos justo antes de pedirla.",
+      "Si vives con tus hijos o tus padres, el límite de ingresos del hogar es 2,5 veces mayor.",
+      "Tus ingresos personales deben ser inferiores a 8.803,20 € al año."
+    ],
+    "documents": [
+      "DNI o NIE",
+      "Certificado de empadronamiento",
+      "Justificantes de ingresos de la unidad de convivencia"
+    ],
+    "steps": [
+      "Presenta la solicitud en la Gerencia Territorial de Servicios Sociales de tu provincia o en la sede electrónica de la Junta de Castilla y León."
+    ],
+    "officialUrl": "https://imserso.es/en/pnc-prestaciones-subvenciones/pnc-invalidez/normativa-requisitos",
+    "sources": [
+      {
+        "url": "https://imserso.es/documents/20123/1595507/pncresumen2026.pdf/c4b41c80-63fe-942d-7231-f3ee20e28694",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "Cuantías Anual Mensual ÍNTEGRA 8.803,20 628,80 MÍNIMO DEL 25% 2.200,80 157,20"
+      }
+    ],
+    "faq": [],
+    "id": "pension-no-contributiva-jubilacion",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
     "slug": "prestacion-nacimiento-cuidado-menor",
     "title": "Prestación por nacimiento y cuidado de menor",
     "summary": "Lo que cobras de la Seguridad Social durante el permiso por nacimiento, adopción o acogida: el 100 % de tu base reguladora mientras dura el permiso.",
@@ -1619,6 +2546,61 @@
       }
     ],
     "id": "renta-garantizada-ciudadania-castilla-y-leon",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (requiere revisión humana)",
+    "reviewedAt": "2026-10-14"
+  },
+  {
+    "slug": "subsidio-por-desempleo",
+    "title": "Subsidio por desempleo (SEPE)",
+    "summary": "Ayuda mensual del SEPE para personas en paro que han agotado la prestación por desempleo o no cotizaron lo suficiente para tenerla, y que tienen pocos ingresos.",
+    "level": "state",
+    "category": "employment",
+    "kind": "permanent",
+    "agency": "Servicio Público de Empleo Estatal (SEPE)",
+    "amount": {
+      "type": "range",
+      "min": 480,
+      "max": 570,
+      "text": "570 €/mes los 6 primeros meses (95 % del IPREM), 540 €/mes los 6 siguientes (90 %) y 480 €/mes después (80 %)."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "employmentStatus",
+          "op": "eq",
+          "value": "unemployed",
+          "label": "Estar en paro e inscrito como demandante de empleo"
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Haber agotado la prestación contributiva por desempleo, o no tener cotizado lo suficiente para ella (subsidio por cotizaciones insuficientes), o ser mayor de 52 años, emigrante retornado o víctima de violencia.",
+      "No tener rentas propias superiores al 75 % del salario mínimo (sin pagas extra). Si se pide por responsabilidades familiares, la renta de la familia dividida entre sus miembros tampoco debe superarlo.",
+      "Pedirlo dentro de los 6 meses siguientes al agotamiento de la prestación o a la situación legal de desempleo.",
+      "Para mayores de 52 años, la cuantía es el 80 % del IPREM durante todo el periodo."
+    ],
+    "documents": [
+      "DNI o NIE / TIE",
+      "Documento bancario con tu número de cuenta",
+      "Declaración de la renta del último ejercicio",
+      "Libro de familia, si alegas responsabilidades familiares"
+    ],
+    "steps": [
+      "Pide cita o solicítalo en la sede electrónica del SEPE (sede.sepe.gob.es).",
+      "Presenta la documentación dentro de los 6 meses siguientes al agotamiento de la prestación o a quedarte en paro."
+    ],
+    "officialUrl": "https://www.sepe.es/HomeSepe/en/prestaciones-desempleo/subsidio-desempleo/subsidio-cotizaciones-insuficientes-he-trabajado-menos-de-un-anyo.html",
+    "sources": [
+      {
+        "url": "https://www.sepe.es/dam/jcr:46ef17e0-480b-46c4-adae-586bcb82e804/hoja_informativa_subsidios.pdf",
+        "retrievedAt": "2026-10-14",
+        "excerpt": "días, el 95 % del IPREM [...] día 360, el 90 % IPREM. Desde el día 361, el 80 % IPREM"
+      }
+    ],
+    "faq": [],
+    "id": "subsidio-por-desempleo",
     "status": "published",
     "version": 1,
     "reviewedBy": "claude-code (requiere revisión humana)",

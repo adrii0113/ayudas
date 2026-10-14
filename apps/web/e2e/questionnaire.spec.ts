@@ -2,7 +2,7 @@ import AxeBuilder from "@axe-core/playwright";
 import { expect, test, type Page } from "@playwright/test";
 
 async function choose(page: Page, name: string | RegExp) {
-  await page.getByRole("radio", { name }).click();
+  await page.getByRole("radio", { name, exact: typeof name === "string" }).click();
 }
 
 async function fill(page: Page, value: string) {
@@ -26,9 +26,7 @@ test("single mother in Castilla y León gets her benefits", async ({ page }) => 
   await page.getByRole("button", { name: "Siguiente" }).click();
 
   await fill(page, "2"); // household size
-  await page.getByRole("button", { name: "Siguiente" }).click(); // no disability
-  await choose(page, "Sí"); // single parent
-  await choose(page, "No"); // large family
+  await choose(page, "Familia monoparental");
 
   await page.getByLabel("Cantidad en euros").fill("750");
   await page.getByRole("button", { name: "Siguiente" }).click();
@@ -39,7 +37,7 @@ test("single mother in Castilla y León gets her benefits", async ({ page }) => 
   await choose(page, "No"); // dependent person
   await choose(page, "No"); // disability
   await choose(page, "5 años o más"); // legal residence
-  await choose(page, "No"); // IMV
+  // No IMV question: with this income the answer would not change any result.
 
   await expect(page).toHaveURL(/\/resultados/);
   await expect(page.getByRole("heading", { name: /Te corresponden/ })).toBeVisible();

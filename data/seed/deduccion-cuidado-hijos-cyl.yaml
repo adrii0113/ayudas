@@ -1,0 +1,58 @@
+slug: deduccion-cuidado-hijos-menores-castilla-y-leon
+version: 1
+status: published
+reviewedBy: "claude-code (requiere revisión humana)"
+reviewedAt: "2026-10-14"
+title: Deducción autonómica por guardería o cuidado de hijos menores de 4 años (Castilla y León)
+summary: >-
+  Si trabajáis y lleváis a vuestro hijo menor de 4 años a la guardería o tenéis una persona
+  empleada de hogar, podéis deducir hasta 1.320 € (guardería) o 322 € (empleada de hogar) al año.
+level: regional
+region: CL
+category: birth
+kind: permanent
+agency: Junta de Castilla y León / Agencia Tributaria
+amount:
+  type: range
+  max: 1320
+  text: >-
+    100 % de los gastos de guardería o escuela infantil, hasta 1.320 €; o 30 % de lo pagado a una
+    persona empleada de hogar, hasta 322 €.
+eligibility:
+  all:
+    - field: youngestChildAge
+      op: lt
+      value: 4
+      label: Tener un hijo menor de 4 años
+      hard: true
+    - field: employmentStatus
+      op: in
+      value: [employed, self_employed]
+      label: Trabajar y estar dado de alta en la Seguridad Social (ambos progenitores)
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/cuidado-hijos-menores.html
+        excerpt: Que ambos padres realicen una actividad por cuenta propia o ajena, por la cual estén dados de alta en el régimen correspondiente de la Seguridad Social o Mutualidad.
+    - field: annualHouseholdIncome
+      op: lte
+      value: 31500
+      label: Renta de hasta 31.500 € en declaración conjunta (18.900 € en individual)
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/cuidado-hijos-menores.html
+        excerpt: 18.900 euros en tributación individual. 31.500 euros en tributación conjunta.
+otherRequirements:
+  - "El límite de renta se refiere a la base imponible menos el mínimo personal y familiar de la declaración, no a los ingresos brutos: con ingresos algo mayores puedes cumplirlo."
+  - "La guardería debe estar en Castilla y León e inscrita en el Registro de Centros para la conciliación de la vida familiar y laboral."
+  - "Si cobras el incremento de la deducción estatal por maternidad por guardería, se descuenta de esta deducción."
+documents:
+  - Facturas de la guardería o justificantes de pago a la persona empleada de hogar
+  - NIF de la guardería o de la persona empleada de hogar
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Castilla y León), indicando el NIF de la guardería o de la persona empleada."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/cuidado-hijos-menores.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/cuidado-hijos-menores.html
+    retrievedAt: "2026-10-14"
+    excerpt: >-
+      El 100 por 100 de los gastos satisfechos de preinscripción y de matrícula [...] con el límite
+      máximo de 1.320 euros, tanto en tributación individual como conjunta.
+faq: []

@@ -1,6 +1,8 @@
 slug: asignacion-hijo-discapacidad
 version: 1
-status: draft
+status: published
+reviewedBy: "claude-code (requiere revisión humana)"
+reviewedAt: "2026-10-14"
 title: Asignación por hijo a cargo con discapacidad
 summary: >-
   Prestación de la Seguridad Social por cada hijo con discapacidad del 33 % o más. Para hijos con
@@ -13,8 +15,9 @@ amount:
   type: variable
   min: 1000
   text: >-
-    1.000 € al año por cada hijo menor de 18 años con discapacidad del 33 % o más. Importes
-    mayores para hijos mayores de edad con discapacidad del 65 % o más.
+    1.000 € al año por cada hijo menor de 18 años con discapacidad del 33 % o más; 5.962,80 € al
+    año por hijo mayor de edad con discapacidad del 65 % o más (8.942,40 € si es del 75 % y necesita
+    ayuda de otra persona).
 eligibility:
   all:
     - field: numChildrenWithDisability
@@ -24,16 +27,21 @@ eligibility:
       hard: true
 otherRequirements:
   - "Residir legalmente en España."
-  - "TODO(verify): confirmar importes 2026 para hijos mayores de edad en la web de la Seguridad Social."
+  - "Si el hijo es mayor de 18 años, la discapacidad debe ser del 65 % o más."
+  - "Las asignaciones por hijos con discapacidad no tienen límite de ingresos."
 documents:
   - DNI o NIE
   - Libro de familia
   - Certificado de discapacidad del hijo
 steps:
   - Solicítala en la sede electrónica de la Seguridad Social ("Prestaciones familiares").
-officialUrl: https://www.seg-social.es/
+officialUrl: https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10967/27924
 sources:
-  - url: https://www.bankinter.com/blog/finanzas-personales/asignacion-hijos-discapacidad
+  - url: https://www.boe.es/buscar/act.php?id=BOE-A-2026-2548
     retrievedAt: "2026-10-14"
-    excerpt: "Menores de 18 años con discapacidad del 33 % o más: 1.000 €/año."
+    excerpt: >-
+      en el supuesto de hijo o hija menor de dieciocho años [...] con un grado de discapacidad igual
+      o superior al 33 por ciento, será en cómputo anual de 1.000,00 euros.
+  - url: https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10967/27924
+    retrievedAt: "2026-10-14"
 faq: []

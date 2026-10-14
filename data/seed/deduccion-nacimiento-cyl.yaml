@@ -1,0 +1,51 @@
+slug: deduccion-nacimiento-adopcion-castilla-y-leon
+version: 1
+status: published
+reviewedBy: "claude-code (requiere revisión humana)"
+reviewedAt: "2026-10-14"
+title: Deducción autonómica por nacimiento o adopción (Castilla y León)
+summary: >-
+  Deducción en el tramo autonómico del IRPF por cada hijo nacido o adoptado en el año: desde
+  1.010 € por el primer hijo, más en municipios pequeños y el doble si tiene discapacidad.
+level: regional
+region: CL
+category: birth
+kind: permanent
+agency: Junta de Castilla y León / Agencia Tributaria
+amount:
+  type: range
+  min: 1010
+  max: 2351
+  text: >-
+    1.010 € (1º hijo), 1.475 € (2º) y 2.351 € (3º y siguientes). En municipios de hasta 5.000
+    habitantes: 1.420 €, 2.070 € y 3.300 €. El doble si el bebé tiene una discapacidad del 33 % o más.
+eligibility:
+  all:
+    - field: youngestChildAge
+      op: eq
+      value: 0
+      label: Haber tenido o adoptado un hijo este año
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/nacimiento-adopcion-hijos.html
+        excerpt: Por cada hijo nacido o adoptado en el período impositivo, que genere derecho a la aplicación del mínimo por descendientes
+otherRequirements:
+  - "No se puede aplicar si has pedido por el mismo nacimiento ayudas de la Junta de Castilla y León de naturaleza análoga; comprueba si es el caso del Bono Nacimiento antes de elegir."
+  - "Si ambos progenitores tienen derecho y declaran por separado, se reparte a partes iguales."
+  - "Se aplica en la declaración de la renta del año del nacimiento."
+documents:
+  - Libro de familia o certificado de nacimiento / resolución de adopción
+steps:
+  - "Aplícala en tu declaración de la renta (anexo de deducciones autonómicas de Castilla y León)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/nacimiento-adopcion-hijos.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/nacimiento-adopcion-hijos.html
+    retrievedAt: "2026-10-14"
+    excerpt: >-
+      1.010 euros si se trata del primer hijo. 1.475 euros si se trata del segundo hijo. 2.351
+      euros si se trata del tercer hijo o sucesivos.
+faq:
+  - question: ¿Es compatible con otras ayudas de la Junta por nacimiento?
+    answer: >-
+      La deducción no se aplica si has optado por pedir ayudas de la Junta de naturaleza análoga
+      por el nacimiento o la adopción. Consulta si es el caso de la ayuda que hayas pedido.

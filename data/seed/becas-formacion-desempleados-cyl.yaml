@@ -1,0 +1,44 @@
+slug: becas-formacion-desempleados-castilla-y-leon
+version: 1
+status: published
+reviewedBy: "claude-code (requiere revisión humana)"
+reviewedAt: "2026-10-14"
+title: Becas y ayudas para personas en paro que hacen cursos del ECYL
+summary: >-
+  Si estás en paro y haces un curso de formación para el empleo en Castilla y León, puedes pedir
+  ayudas para transporte, manutención, alojamiento o conciliación.
+level: regional
+region: CL
+category: employment
+kind: call
+agency: Servicio Público de Empleo de Castilla y León (ECYL)
+amount:
+  type: variable
+  text: "Ayudas de transporte, manutención, alojamiento y conciliación, según tu caso y el curso."
+window:
+  text: Pídela en los 10 días siguientes a terminar el curso (convocatoria de 2026).
+eligibility:
+  all:
+    - field: employmentStatus
+      op: eq
+      value: unemployed
+      label: Estar en paro e inscrito como demandante de empleo en el ECYL
+      source:
+        url: https://bocyl.jcyl.es/boletines/2025/12/30/pdf/BOCYL-D-30122025-12.pdf
+        excerpt: tendrán la condición de personas trabajadoras desempleadas aquellas inscritas como demandantes de empleo en el Servicio Público de Empleo de Castilla y León
+otherRequirements:
+  - "Participar en una acción formativa del ECYL para personas desempleadas."
+  - "Estar inscrito como demandante de empleo el día en que empiezas el curso."
+documents:
+  - Solicitud (Anexo I de la convocatoria)
+steps:
+  - Infórmate en tu oficina de empleo sobre los cursos.
+  - Al terminar el curso, presenta la solicitud en los 10 días siguientes en la sede electrónica de la Junta.
+officialUrl: https://www.tramitacastillayleon.jcyl.es
+sources:
+  - url: https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/877789
+    retrievedAt: "2026-10-14"
+    excerpt: >-
+      becas y ayudas en concepto de transporte, manutención, alojamiento y manutención, y para la
+      conciliación, a que tengan derecho las personas trabajadoras desempleadas
+faq: []

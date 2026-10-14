@@ -239,12 +239,16 @@ export function ChildrenInput({ answers, onSubmit, submitLabel }: InputProps<"ch
   const tq = useTranslations("questionnaire.questions.children");
   const [count, setCount] = useState(answers.children?.length ?? 0);
   const [ages, setAges] = useState<string[]>(answers.children?.map((c) => String(c.age)) ?? []);
+  const [disabled, setDisabled] = useState<boolean[]>(
+    answers.children?.map((c) => (c.disabilityPercent ?? 0) >= 33) ?? [],
+  );
   const [error, setError] = useState<string>();
 
   const setCountClamped = (n: number) => {
     const c = Math.max(0, Math.min(15, n));
     setCount(c);
     setAges((prev) => Array.from({ length: c }, (_, i) => prev[i] ?? ""));
+    setDisabled((prev) => Array.from({ length: c }, (_, i) => prev[i] ?? false));
   };
 
   const submit = (e: React.FormEvent) => {
@@ -254,12 +258,10 @@ export function ChildrenInput({ answers, onSubmit, submitLabel }: InputProps<"ch
       setError(t("invalidNumber", { min: 0, max: 30 }));
       return;
     }
-    const previous = answers.children ?? [];
     const children: ChildInfo[] = (parsed as number[]).map((age, i) => ({
       age: Math.floor(age),
-      ...(previous[i]?.disabilityPercent !== undefined
-        ? { disabilityPercent: previous[i]!.disabilityPercent }
-        : {}),
+      // Generic yes/no only: we never ask for the exact percentage.
+      disabilityPercent: disabled[i] ? 33 : 0,
     }));
     onSubmit({ children });
   };
@@ -296,13 +298,25 @@ export function ChildrenInput({ answers, onSubmit, submitLabel }: InputProps<"ch
         <div className="space-y-3">
           <p className="text-sm text-muted">{tq("ageHelp")}</p>
           {Array.from({ length: count }, (_, i) => (
-            <NumberField
-              key={i}
-              label={tq("age", { n: i + 1 })}
-              value={ages[i] ?? ""}
-              onChange={(v) => setAges((prev) => prev.map((a, j) => (j === i ? v : a)))}
-              unit={t("units.years")}
-            />
+            <div key={i} className="space-y-2 rounded-xl border border-gray-200 bg-white p-3">
+              <NumberField
+                label={tq("age", { n: i + 1 })}
+                value={ages[i] ?? ""}
+                onChange={(v) => setAges((prev) => prev.map((a, j) => (j === i ? v : a)))}
+                unit={t("units.years")}
+              />
+              <label className="flex items-center gap-3">
+                <input
+                  type="checkbox"
+                  checked={disabled[i] ?? false}
+                  onChange={(e) =>
+                    setDisabled((prev) => prev.map((v, j) => (j === i ? e.target.checked : v)))
+                  }
+                  className="size-5 accent-brand-700"
+                />
+                {tq("disability")}
+              </label>
+            </div>
           ))}
         </div>
       ) : null}
@@ -311,50 +325,6 @@ export function ChildrenInput({ answers, onSubmit, submitLabel }: InputProps<"ch
           {error}
         </p>
       ) : null}
-      <Button type="submit">{submitLabel}</Button>
-    </form>
-  );
-}
-
-export function ChildrenDisabilityInput({
-  answers,
-  onSubmit,
-  submitLabel,
-}: InputProps<"childrenDisability">) {
-  const tq = useTranslations("questionnaire.questions.childrenDisability");
-  const children = answers.children ?? [];
-  const [checked, setChecked] = useState<boolean[]>(
-    children.map((c) => (c.disabilityPercent ?? 0) >= 33),
-  );
-
-  const submit = (e: React.FormEvent) => {
-    e.preventDefault();
-    onSubmit({
-      children: children.map((c, i) => ({ ...c, disabilityPercent: checked[i] ? 33 : 0 })),
-    });
-  };
-
-  return (
-    <form onSubmit={submit} className="space-y-4">
-      <fieldset className="space-y-3">
-        <legend className="sr-only">{tq("title")}</legend>
-        {children.map((c, i) => (
-          <label
-            key={i}
-            className="flex min-h-12 items-center gap-3 rounded-xl border-2 border-gray-300 bg-white px-4"
-          >
-            <input
-              type="checkbox"
-              checked={checked[i] ?? false}
-              onChange={(e) =>
-                setChecked((prev) => prev.map((v, j) => (j === i ? e.target.checked : v)))
-              }
-              className="size-5 accent-brand-700"
-            />
-            {tq("child", { n: i + 1, age: c.age })}
-          </label>
-        ))}
-      </fieldset>
       <Button type="submit">{submitLabel}</Button>
     </form>
   );

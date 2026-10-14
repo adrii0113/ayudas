@@ -91,25 +91,23 @@
         "help": "Incluye hijos adoptados o en acogida.",
         "count": "Número de hijos",
         "age": "Edad del hijo {n}",
-        "ageHelp": "Pon 0 si tiene menos de un año o va a nacer este año."
+        "ageHelp": "Pon 0 si tiene menos de un año. Marca la casilla solo si tiene el certificado de discapacidad.",
+        "disability": "Tiene una discapacidad reconocida del 33 % o más"
       },
       "householdSize": {
         "title": "¿Cuántas personas viven en tu casa, contándote a ti?",
         "help": "Todas las personas empadronadas en tu vivienda, incluidos los niños.",
         "tooFew": "Con tus hijos sois al menos {min}."
       },
-      "childrenDisability": {
-        "title": "¿Alguno de tus hijos tiene una discapacidad reconocida del 33 % o más?",
-        "help": "Marca los que tengan el certificado de discapacidad. Si ninguno, continúa sin marcar.",
-        "child": "Hijo {n} ({age} años)"
-      },
-      "isSingleParent": {
-        "title": "¿Eres familia monoparental?",
-        "help": "Crías a tus hijos sin otro progenitor que conviva contigo."
-      },
-      "isLargeFamily": {
-        "title": "¿Tienes el título de familia numerosa?",
-        "help": "Normalmente, familias con 3 o más hijos (o 2 en algunos casos, como monoparentales o con discapacidad)."
+      "familyType": {
+        "title": "¿Cuál es vuestra situación familiar?",
+        "help": "Familia monoparental: crías a tus hijos sin otro progenitor que conviva contigo. Familia numerosa: tienes el título oficial.",
+        "options": {
+          "none": "Ninguna de estas",
+          "singleParent": "Familia monoparental",
+          "largeFamily": "Familia numerosa (con título)",
+          "both": "Monoparental y numerosa"
+        }
       },
       "annualHouseholdIncome": {
         "title": "¿Cuántos ingresos tiene tu hogar, aproximadamente?",

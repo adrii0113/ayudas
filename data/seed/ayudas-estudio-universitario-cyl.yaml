@@ -1,0 +1,56 @@
+slug: ayudas-estudio-universitario-castilla-y-leon
+version: 1
+status: published
+reviewedBy: "claude-code (requiere revisión humana)"
+reviewedAt: "2026-10-14"
+title: Ayudas al estudio para universitarios de Castilla y León
+summary: >-
+  Ayudas de la Junta para estudiantes de grado o máster en universidades de Castilla y León que ya
+  tienen la beca de matrícula del Ministerio, por renta o por buen expediente.
+level: regional
+region: CL
+category: education
+kind: call
+agency: Junta de Castilla y León (Consejería de Educación)
+amount:
+  type: variable
+  text: "Según la modalidad (renta o aprovechamiento académico) y el crédito disponible."
+window:
+  opensAt: "2025-10-21"
+  closesAt: "2025-11-17"
+  text: La última convocatoria (curso 2025-2026) se abrió en octubre.
+eligibility:
+  all:
+    - any:
+        - field: employmentStatus
+          op: eq
+          value: student
+          label: Estudiar un grado o máster
+        - all:
+            - field: oldestChildAge
+              op: gte
+              value: 17
+              label: Tener un hijo de 17 años o más
+            - field: oldestChildAge
+              op: lte
+              value: 25
+              label: Tener un hijo de 25 años o menos
+      label: Estudiar tú (o un hijo) un grado o máster en una universidad de Castilla y León
+      hard: true
+otherRequirements:
+  - "Haber obtenido la beca de matrícula del Ministerio de Educación para ese curso."
+  - "Estar matriculado en una universidad pública o privada de Castilla y León y empadronado en Castilla y León."
+documents:
+  - Justificante de matrícula
+steps:
+  - Presenta la solicitud en la sede electrónica de la Junta (tramitacastillayleon.jcyl.es) cuando se abra la convocatoria.
+officialUrl: https://www.tramitacastillayleon.jcyl.es/
+sources:
+  - url: https://bocyl.jcyl.es/boletines/2025/10/20/pdf/BOCYL-D-20102025-7.pdf
+    retrievedAt: "2026-10-14"
+    excerpt: >-
+      Haber resultado beneficiario de la beca de matrícula para el curso académico 2025-2026, para
+      estudiantes que cursen estudios postobligatorios
+  - url: https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/862864
+    retrievedAt: "2026-10-14"
+faq: []

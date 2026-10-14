@@ -7,9 +7,8 @@ import type { OfficialConstants } from "./types";
  *   600 €/month, 7.200 €/year (12 payments), 8.400 €/year (14 payments).
  *   Set by Ley 31/2022 (PGE 2023), still in force through budget extensions
  *   (prórroga presupuestaria) in 2024, 2025 and 2026.
- *   Checked 2026-10-14 against OCU (https://www.ocu.org/dinero/trabajo-paro/noticias/smi-iprem)
- *   and other secondary sources.
- *   TODO(verify): confirm against a BOE text referencing the 2026 IPREM.
+ *   Confirmed 2026-10-14 in IMSERSO's official "Guía resumen de las pensiones no
+ *   contributivas 2026": "IPREM, que se cifra en 7.200,00 euros".
  *
  * SMI — Salario Mínimo Interprofesional.
  *   1.221 €/month in 14 payments = 17.094 €/year.
@@ -23,6 +22,10 @@ import type { OfficialConstants } from "./types";
  *   single-parent households add 22 %.
  *   Source: Seguridad Social, "Ingreso Mínimo Vital" (checked 2026-10-14)
  *   https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/65850d68-8d06-4645-bde7-05374ee42ac7
+ *
+ * PNC — Pensiones no contributivas de jubilación e invalidez: 8.803,20 €/year.
+ *   Real Decreto-ley 3/2026 and IMSERSO "Guía resumen PNC 2026" (checked 2026-10-14).
+ *   Each additional member of the economic unit adds 70 % (6.162,24 €).
  */
 export const constants2026: OfficialConstants = {
   year: 2026,
@@ -32,4 +35,5 @@ export const constants2026: OfficialConstants = {
   smiMonthly: 1221,
   smi: 17094,
   imvAnnualBase: 8803.2,
+  pncAnnual: 8803.2,
 };

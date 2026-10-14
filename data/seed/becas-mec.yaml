@@ -1,0 +1,64 @@
+slug: becas-mec-caracter-general
+version: 1
+status: published
+reviewedBy: "claude-code (requiere revisión humana)"
+reviewedAt: "2026-10-14"
+title: Becas del Ministerio de Educación para estudios postobligatorios (curso 2026-2027)
+summary: >-
+  Becas para estudiar Bachillerato, FP, enseñanzas artísticas o la universidad: cubren la matrícula
+  y pueden sumar cuantías por renta y por residencia. El plazo 2026-2027 cerró en mayo.
+level: state
+category: education
+kind: call
+agency: Ministerio de Educación, Formación Profesional y Deportes
+amount:
+  type: variable
+  min: 300
+  text: >-
+    Matrícula gratuita en la universidad; 1.700 € ligados a la renta; 2.700 € si vives fuera del
+    domicilio familiar por estudios; 300 € de beca básica en estudios no universitarios; y
+    entre 50 y 125 € por excelencia académica.
+window:
+  opensAt: "2026-04-07"
+  closesAt: "2026-05-19"
+  text: Suele abrirse cada año entre marzo y mayo para el curso siguiente.
+eligibility:
+  all:
+    - any:
+        - field: employmentStatus
+          op: eq
+          value: student
+          label: Estudiar Bachillerato, FP o en la universidad
+        - all:
+            - field: oldestChildAge
+              op: gte
+              value: 16
+              label: Tener un hijo de 16 años o más
+            - field: oldestChildAge
+              op: lte
+              value: 25
+              label: Tener un hijo de 25 años o menos
+      label: Estudiar tú (o un hijo) Bachillerato, FP, enseñanzas artísticas o un grado/máster
+      hard: true
+otherRequirements:
+  - "No superar los umbrales de renta y patrimonio familiar de la convocatoria (dependen del número de miembros de la familia)."
+  - "Cumplir los requisitos académicos (nota media y créditos aprobados) de la convocatoria."
+documents:
+  - Datos de la matrícula
+  - Datos de los miembros de la unidad familiar (la renta se comprueba con Hacienda)
+steps:
+  - Rellena la solicitud en la sede electrónica del Ministerio de Educación (sede.educacion.gob.es) dentro del plazo.
+  - Fírmala electrónicamente (si eres menor de 18 años, la firma tu representante legal).
+officialUrl: https://sede.educacion.gob.es
+sources:
+  - url: https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/894743
+    retrievedAt: "2026-10-14"
+    excerpt: >-
+      b) Cuantía fija ligada a la renta del estudiante: 1.700,00 euros tanto para estudiantes
+      universitarios como no universitarios. c) Cuantía fija ligada a la residencia del estudiante
+      durante el curso escolar: 2.700,00 euros
+faq:
+  - question: ¿Cuándo se piden las becas del Ministerio?
+    answer: >-
+      Para el curso 2026-2027 el plazo fue del 7 de abril al 19 de mayo de 2026. Suele abrirse cada
+      primavera; activa las alertas para enterarte.

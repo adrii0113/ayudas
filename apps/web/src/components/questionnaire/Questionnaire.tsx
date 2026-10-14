@@ -14,7 +14,6 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { track } from "@/lib/analytics";
 import { loadAnswers, saveAnswers } from "@/lib/profile-storage";
 import {
-  ChildrenDisabilityInput,
   ChildrenInput,
   ChoiceInput,
   IncomeInput,
@@ -38,8 +37,6 @@ function QuestionInputView(props: InputProps<Question["input"]["type"]>) {
       return <IncomeInput {...(props as InputProps<"income">)} />;
     case "children":
       return <ChildrenInput {...(props as InputProps<"children">)} />;
-    case "childrenDisability":
-      return <ChildrenDisabilityInput {...(props as InputProps<"childrenDisability">)} />;
   }
 }
 

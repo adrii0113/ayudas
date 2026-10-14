@@ -1,0 +1,57 @@
+slug: pension-no-contributiva-jubilacion
+version: 1
+status: published
+reviewedBy: "claude-code (requiere revisión humana)"
+reviewedAt: "2026-10-14"
+title: Pensión no contributiva de jubilación
+summary: >-
+  Pensión para personas de 65 años o más que no han cotizado lo suficiente para una pensión
+  contributiva y tienen ingresos bajos. En Castilla y León la gestiona la Junta.
+level: state
+category: income
+kind: permanent
+agency: IMSERSO y comunidades autónomas (Gerencia de Servicios Sociales en Castilla y León)
+amount:
+  type: range
+  min: 2200.8
+  max: 8803.2
+  text: "Hasta 628,80 € al mes en 14 pagas (8.803,20 € al año); como mínimo 157,20 € al mes."
+eligibility:
+  all:
+    - field: applicantAge
+      op: gte
+      value: 65
+      label: Tener 65 años o más
+      hard: true
+      source:
+        url: https://imserso.es/documents/20123/1595507/pncresumen2026.pdf/c4b41c80-63fe-942d-7231-f3ee20e28694
+        excerpt: Ser mayor de 65 años en la fecha de la solicitud
+    - field: yearsLegalResidenceInSpain
+      op: gte
+      value: 5
+      label: Llevar muchos años residiendo legalmente en España (10 años desde los 16)
+    - field: annualHouseholdIncome
+      op: lt
+      value:
+        mul: [{ ref: pncAnnual }, { add: [0.3, { mul: [0.7, { ref: householdSize }] }] }]
+      label: Ingresos del hogar por debajo del límite de la pensión no contributiva para tu hogar
+      hard: true
+      source:
+        url: https://imserso.es/documents/20123/1595507/pncresumen2026.pdf/c4b41c80-63fe-942d-7231-f3ee20e28694
+        excerpt: "2 8.803,20 + 6.162,24 14.965,44"
+otherRequirements:
+  - "Haber residido legalmente en España 10 años entre los 16 años y la edad de la pensión, 2 de ellos justo antes de pedirla."
+  - "Si vives con tus hijos o tus padres, el límite de ingresos del hogar es 2,5 veces mayor."
+  - "Tus ingresos personales deben ser inferiores a 8.803,20 € al año."
+documents:
+  - DNI o NIE
+  - Certificado de empadronamiento
+  - Justificantes de ingresos de la unidad de convivencia
+steps:
+  - Presenta la solicitud en la Gerencia Territorial de Servicios Sociales de tu provincia o en la sede electrónica de la Junta de Castilla y León.
+officialUrl: https://imserso.es/en/pnc-prestaciones-subvenciones/pnc-invalidez/normativa-requisitos
+sources:
+  - url: https://imserso.es/documents/20123/1595507/pncresumen2026.pdf/c4b41c80-63fe-942d-7231-f3ee20e28694
+    retrievedAt: "2026-10-14"
+    excerpt: "Cuantías Anual Mensual ÍNTEGRA 8.803,20 628,80 MÍNIMO DEL 25% 2.200,80 157,20"
+faq: []

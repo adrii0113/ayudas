@@ -20,8 +20,8 @@ export type QuestionInput =
       unit?: "years" | "people" | "euros_month";
     }
   | { type: "income" }
+  /** Number of children, their ages and whether each has a disability ≥ 33 %. */
   | { type: "children" }
-  | { type: "childrenDisability" }
   | { type: "yesNo"; field: ProfileField };
 
 export type Question = {
@@ -104,24 +104,19 @@ export const QUESTIONS: Question[] = [
     input: { type: "number", field: "householdSize", min: 1, max: 20, unit: "people" },
   },
   {
-    id: "childrenDisability",
-    fields: ["children"],
+    id: "familyType",
+    fields: ["isSingleParent", "isLargeFamily"],
     showIf: hasChildren,
-    input: { type: "childrenDisability" },
-  },
-  {
-    id: "isSingleParent",
-    fields: ["isSingleParent"],
-    whenHidden: { isSingleParent: false },
-    showIf: hasChildren,
-    input: { type: "yesNo", field: "isSingleParent" },
-  },
-  {
-    id: "isLargeFamily",
-    fields: ["isLargeFamily"],
-    whenHidden: { isLargeFamily: false },
-    showIf: hasChildren,
-    input: { type: "yesNo", field: "isLargeFamily" },
+    whenHidden: { isSingleParent: false, isLargeFamily: false },
+    input: {
+      type: "choice",
+      options: [
+        { value: "none", set: { isSingleParent: false, isLargeFamily: false } },
+        { value: "singleParent", set: { isSingleParent: true, isLargeFamily: false } },
+        { value: "largeFamily", set: { isSingleParent: false, isLargeFamily: true } },
+        { value: "both", set: { isSingleParent: true, isLargeFamily: true } },
+      ],
+    },
   },
   {
     id: "annualHouseholdIncome",

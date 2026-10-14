@@ -12,6 +12,8 @@ export type OfficialConstants = {
   smi: number;
   /** Ingreso Mínimo Vital: yearly guaranteed income for a single adult (€). */
   imvAnnualBase: number;
+  /** Pensión no contributiva (jubilación/invalidez), yearly amount (€). */
+  pncAnnual: number;
 };
 
 export const CONSTANT_KEYS = [
@@ -21,5 +23,6 @@ export const CONSTANT_KEYS = [
   "smiMonthly",
   "smi",
   "imvAnnualBase",
+  "pncAnnual",
 ] as const;
 export type ConstantKey = (typeof CONSTANT_KEYS)[number];

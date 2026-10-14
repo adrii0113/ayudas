@@ -1,0 +1,66 @@
+slug: pension-no-contributiva-invalidez
+version: 1
+status: published
+reviewedBy: "claude-code (requiere revisión humana)"
+reviewedAt: "2026-10-14"
+title: Pensión no contributiva de invalidez
+summary: >-
+  Pensión para personas de 18 a 64 años con una discapacidad del 65 % o más e ingresos bajos, que
+  no tienen derecho a una pensión contributiva.
+level: state
+category: dependency
+kind: permanent
+agency: IMSERSO y comunidades autónomas (Gerencia de Servicios Sociales en Castilla y León)
+amount:
+  type: range
+  min: 2200.8
+  max: 8803.2
+  text: "Hasta 628,80 € al mes en 14 pagas (8.803,20 € al año), con un complemento de 4.401,60 € al año si necesitas ayuda de otra persona (discapacidad del 75 %)."
+eligibility:
+  all:
+    - field: applicantAge
+      op: gte
+      value: 18
+      label: Tener 18 años o más
+    - field: applicantAge
+      op: lt
+      value: 65
+      label: Tener menos de 65 años
+      hard: true
+    - field: applicantDisabilityPercent
+      op: gte
+      value: 65
+      label: Tener una discapacidad del 65 % o más
+      hard: true
+      source:
+        url: https://imserso.es/documents/20123/1595507/pncresumen2026.pdf/c4b41c80-63fe-942d-7231-f3ee20e28694
+        excerpt: Estar afectados por una discapacidad o enfermedad crónica en un grado igual o superior al 65%.
+    - field: yearsLegalResidenceInSpain
+      op: gte
+      value: 5
+      label: Llevar al menos 5 años residiendo legalmente en España
+      source:
+        url: https://imserso.es/documents/20123/1595507/pncresumen2026.pdf/c4b41c80-63fe-942d-7231-f3ee20e28694
+        excerpt: Residir legalmente en territorio español y haberlo hecho durante 5 años
+    - field: annualHouseholdIncome
+      op: lt
+      value:
+        mul: [{ ref: pncAnnual }, { add: [0.3, { mul: [0.7, { ref: householdSize }] }] }]
+      label: Ingresos del hogar por debajo del límite de la pensión no contributiva para tu hogar
+      hard: true
+otherRequirements:
+  - "De los 5 años de residencia, 2 deben ser inmediatamente anteriores a la solicitud."
+  - "Si vives con tus hijos o tus padres, el límite de ingresos del hogar es 2,5 veces mayor."
+  - "Es compatible con trabajar durante 4 años si pensión más salario no superan 16.003,20 € al año."
+documents:
+  - DNI o NIE
+  - Certificado de discapacidad
+  - Justificantes de ingresos de la unidad de convivencia
+steps:
+  - Presenta la solicitud en la Gerencia Territorial de Servicios Sociales de tu provincia o en la sede electrónica de la Junta de Castilla y León.
+officialUrl: https://imserso.es/en/pnc-prestaciones-subvenciones/pnc-invalidez/normativa-requisitos
+sources:
+  - url: https://imserso.es/documents/20123/1595507/pncresumen2026.pdf/c4b41c80-63fe-942d-7231-f3ee20e28694
+    retrievedAt: "2026-10-14"
+    excerpt: "Ser mayor de 18 años y menor de 65 años en la fecha de la solicitud"
+faq: []

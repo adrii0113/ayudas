@@ -1,0 +1,43 @@
+slug: subsidio-por-desempleo
+version: 1
+status: published
+reviewedBy: "claude-code (requiere revisión humana)"
+reviewedAt: "2026-10-14"
+title: Subsidio por desempleo (SEPE)
+summary: >-
+  Ayuda mensual del SEPE para personas en paro que han agotado la prestación por desempleo o no
+  cotizaron lo suficiente para tenerla, y que tienen pocos ingresos.
+level: state
+category: employment
+kind: permanent
+agency: Servicio Público de Empleo Estatal (SEPE)
+amount:
+  type: range
+  min: 480
+  max: 570
+  text: "570 €/mes los 6 primeros meses (95 % del IPREM), 540 €/mes los 6 siguientes (90 %) y 480 €/mes después (80 %)."
+eligibility:
+  all:
+    - field: employmentStatus
+      op: eq
+      value: unemployed
+      label: Estar en paro e inscrito como demandante de empleo
+otherRequirements:
+  - "Haber agotado la prestación contributiva por desempleo, o no tener cotizado lo suficiente para ella (subsidio por cotizaciones insuficientes), o ser mayor de 52 años, emigrante retornado o víctima de violencia."
+  - "No tener rentas propias superiores al 75 % del salario mínimo (sin pagas extra). Si se pide por responsabilidades familiares, la renta de la familia dividida entre sus miembros tampoco debe superarlo."
+  - "Pedirlo dentro de los 6 meses siguientes al agotamiento de la prestación o a la situación legal de desempleo."
+  - "Para mayores de 52 años, la cuantía es el 80 % del IPREM durante todo el periodo."
+documents:
+  - DNI o NIE / TIE
+  - Documento bancario con tu número de cuenta
+  - Declaración de la renta del último ejercicio
+  - Libro de familia, si alegas responsabilidades familiares
+steps:
+  - Pide cita o solicítalo en la sede electrónica del SEPE (sede.sepe.gob.es).
+  - Presenta la documentación dentro de los 6 meses siguientes al agotamiento de la prestación o a quedarte en paro.
+officialUrl: https://www.sepe.es/HomeSepe/en/prestaciones-desempleo/subsidio-desempleo/subsidio-cotizaciones-insuficientes-he-trabajado-menos-de-un-anyo.html
+sources:
+  - url: https://www.sepe.es/dam/jcr:46ef17e0-480b-46c4-adae-586bcb82e804/hoja_informativa_subsidios.pdf
+    retrievedAt: "2026-10-14"
+    excerpt: "días, el 95 % del IPREM [...] día 360, el 90 % IPREM. Desde el día 361, el 80 % IPREM"
+faq: []
