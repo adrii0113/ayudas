@@ -1,8 +1,4 @@
-import { PGlite } from "@electric-sql/pglite";
 import type { Benefit } from "@tetoca/core";
-import { drizzle } from "drizzle-orm/pglite";
-import { migrate } from "drizzle-orm/pglite/migrator";
-import { join } from "node:path";
 import { beforeEach, describe, expect, it } from "vitest";
 import type { Database } from "../src/client";
 import {
@@ -16,7 +12,7 @@ import {
   toContent,
   upsertSeedBenefit,
 } from "../src/repository";
-import * as schema from "../src/schema";
+import { createTestDb } from "../src/testing";
 
 const benefit: Benefit = {
   id: "bono",
@@ -43,11 +39,7 @@ const benefit: Benefit = {
 let db: Database;
 
 beforeEach(async () => {
-  const client = new PGlite();
-  const pg = drizzle(client, { schema });
-  await migrate(pg, { migrationsFolder: join(__dirname, "../drizzle") });
-  // The repository only uses the query builder, shared by both drivers.
-  db = pg as unknown as Database;
+  db = await createTestDb();
 });
 
 describe("benefit repository", () => {

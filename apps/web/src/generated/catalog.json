@@ -832,7 +832,10 @@
       "Estar de alta en la Seguridad Social o mutualidad, o cobrar prestaciones por desempleo o pensiones.",
       "Si tienes tres o más hijos, mira la deducción por familia numerosa."
     ],
-    "documents": ["DNI o NIE", "Libro de familia"],
+    "documents": [
+      "DNI o NIE",
+      "Libro de familia"
+    ],
     "steps": [
       "Pide el abono anticipado con el modelo 143 o aplícala en la declaración de la renta."
     ],
@@ -884,7 +887,10 @@
       "Estar de alta en la Seguridad Social o mutualidad, o cobrar prestaciones por desempleo o pensiones.",
       "Tener derecho al mínimo por descendientes por ese hijo."
     ],
-    "documents": ["Certificado de discapacidad", "DNI o NIE"],
+    "documents": [
+      "Certificado de discapacidad",
+      "DNI o NIE"
+    ],
     "steps": [
       "Pide el abono anticipado con el modelo 143 o aplícala en la declaración de la renta."
     ],
@@ -935,7 +941,10 @@
     "otherRequirements": [
       "Estar de alta en la Seguridad Social o mutualidad, o cobrar prestaciones por desempleo o pensiones."
     ],
-    "documents": ["Título de familia numerosa", "DNI o NIE"],
+    "documents": [
+      "Título de familia numerosa",
+      "DNI o NIE"
+    ],
     "steps": [
       "Pide el abono anticipado (100 €/mes en categoría general) con el modelo 143 en la sede de la Agencia Tributaria, o aplícala en la declaración de la renta."
     ],
@@ -984,7 +993,11 @@
         {
           "field": "employmentStatus",
           "op": "in",
-          "value": ["employed", "self_employed", "unemployed"],
+          "value": [
+            "employed",
+            "self_employed",
+            "unemployed"
+          ],
           "label": "Estar de alta en la Seguridad Social o cobrar una prestación por desempleo",
           "source": {
             "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deduccion-maternidad-incremento-adicional-gastos-custodia/deduccion-maternidad/beneficiarios-hijos-que-derecho-aplicacion-deduccion.html",
@@ -998,7 +1011,10 @@
       "Si estás en paro, debes cobrar prestación o subsidio por desempleo en el momento del nacimiento; estar solo inscrita no basta.",
       "Si te das de alta después del nacimiento, necesitas al menos 30 días cotizados."
     ],
-    "documents": ["DNI o NIE", "Datos del hijo (fecha de nacimiento, NIF si lo tiene)"],
+    "documents": [
+      "DNI o NIE",
+      "Datos del hijo (fecha de nacimiento, NIF si lo tiene)"
+    ],
     "steps": [
       "Pide el abono anticipado (100 €/mes) en la sede de la Agencia Tributaria con el modelo 140, o aplícala en tu próxima declaración de la renta.",
       "Para el incremento por guardería, la escuela infantil debe presentar el modelo 233; tú lo aplicas en la renta."
@@ -1452,7 +1468,10 @@
         {
           "field": "employmentStatus",
           "op": "in",
-          "value": ["employed", "self_employed"],
+          "value": [
+            "employed",
+            "self_employed"
+          ],
           "label": "Trabajar y estar de alta en la Seguridad Social (por cuenta ajena o propia)",
           "source": {
             "excerpt": "Menores de 21 años: no se exige período mínimo de cotización. De 21 a 26: 90 días en los 7 años anteriores o 180 en toda la vida laboral. Mayores de 26: 180 días en los 7 años anteriores o 360 en toda la vida laboral."
