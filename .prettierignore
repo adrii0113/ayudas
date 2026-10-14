@@ -6,3 +6,5 @@ dist
 packages/db/drizzle
 packages/ingestion/test/fixtures
 CLAUDE.md
+apps/web/src/generated
+.pglite
