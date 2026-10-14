@@ -61,7 +61,10 @@
       "region": {
         "title": "¿Dónde vives?",
         "help": "Las ayudas de tu comunidad autónoma dependen de dónde estás empadronado.",
-        "options": { "CL": "Castilla y León", "OTHER": "En otra comunidad autónoma" }
+        "options": {
+          "CL": "Castilla y León",
+          "OTHER": "En otra comunidad autónoma"
+        }
       },
       "municipality": {
         "title": "¿En qué municipio estás empadronado?",
@@ -155,7 +158,11 @@
       },
       "yearsLegalResidenceInSpain": {
         "title": "¿Cuánto tiempo llevas viviendo legalmente en España?",
-        "options": { "lt1": "Menos de 1 año", "1to5": "Entre 1 y 5 años", "5plus": "5 años o más" }
+        "options": {
+          "lt1": "Menos de 1 año",
+          "1to5": "Entre 1 y 5 años",
+          "5plus": "5 años o más"
+        }
       },
       "receivesMinimumIncome": {
         "title": "¿Tú o alguien de tu hogar cobra ya el Ingreso Mínimo Vital?",
@@ -243,5 +250,72 @@
     "title": "Página no encontrada",
     "body": "Puede que la ayuda ya no exista o haya cambiado de dirección.",
     "back": "Ver todas las ayudas"
+  },
+  "admin": {
+    "title": "Panel de administración",
+    "logout": "Cerrar sesión",
+    "login": {
+      "title": "Acceso de administración",
+      "user": "Usuario",
+      "password": "Contraseña",
+      "submit": "Entrar",
+      "error": "Usuario o contraseña incorrectos.",
+      "notConfigured": "Configura ADMIN_USER, ADMIN_PASSWORD y ADMIN_SESSION_SECRET (mín. 32 caracteres) en el entorno."
+    },
+    "noDatabase": "El panel necesita una base de datos. Configura DATABASE_URL, ejecuta las migraciones (pnpm --filter @tetoca/db db:migrate) y carga el catálogo (pnpm --filter @tetoca/db db:seed).",
+    "status": {
+      "draft": "Borradores",
+      "published": "Publicadas",
+      "archived": "Archivadas"
+    },
+    "columns": {
+      "title": "Ayuda",
+      "version": "Versión",
+      "closes": "Cierre",
+      "reviewed": "Revisada",
+      "warnings": "Avisos"
+    },
+    "warnings": {
+      "deadline_passed": "Plazo vencido: proponer archivar",
+      "stale_review": "Sin revisar hace más de 12 meses",
+      "pending_human_review": "Pendiente de revisión humana"
+    },
+    "empty": "No hay ayudas en este estado.",
+    "documentsTitle": "Documentos que requieren revisión manual",
+    "documentsEmpty": "Ningún documento pendiente.",
+    "review": {
+      "back": "Volver al listado",
+      "source": "Texto fuente",
+      "noSource": "Esta ayuda no tiene documento fuente asociado (catálogo manual). Fuentes:",
+      "uncertainties": "Dudas señaladas por la extracción",
+      "extractionError": "Errores de la extracción",
+      "form": "Datos de la ayuda",
+      "fields": {
+        "title": "Título",
+        "summary": "Resumen (máx. 2 frases)",
+        "amountText": "Importe (texto)",
+        "opensAt": "Abre (AAAA-MM-DD)",
+        "closesAt": "Cierra (AAAA-MM-DD)",
+        "officialUrl": "URL oficial",
+        "json": "Contenido completo (JSON: reglas, documentos, pasos…)"
+      },
+      "save": "Guardar borrador",
+      "publish": "Aprobar y publicar",
+      "archive": "Archivar",
+      "saved": "Borrador guardado.",
+      "published": "Publicada.",
+      "archived": "Archivada.",
+      "publishedNote": "Esta versión está publicada. Al guardar se crea un nuevo borrador; la versión publicada no cambia hasta aprobarlo.",
+      "invalid": "Hay errores de validación:",
+      "tester": "Probar con perfiles de ejemplo",
+      "testerStatus": {
+        "eligible": "Cumple",
+        "almost": "Casi",
+        "unknown": "Faltan datos",
+        "not_eligible": "No cumple"
+      },
+      "failed": "Falla:",
+      "unknownReqs": "Sin datos:"
+    }
   }
 }
