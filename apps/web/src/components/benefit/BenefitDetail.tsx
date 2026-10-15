@@ -15,7 +15,7 @@ import { BenefitListItem } from "./BenefitListItem";
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section className="space-y-3">
-      <h2 className="text-2xl font-bold">{title}</h2>
+      <h2 className="condensed text-3xl">{title}</h2>
       {children}
     </section>
   );
@@ -30,42 +30,47 @@ export function BenefitDetail({ benefit, related }: { benefit: Benefit; related:
       {benefitJsonLd(benefit).map((data, i) => (
         <JsonLd key={i} data={data} />
       ))}
-      <header className="rise-in space-y-4">
+      <header className="bleed bleed-band -mt-10 space-y-5 py-10 sm:py-14">
         <div className="flex flex-wrap gap-2">
           <Badge tone="brand">{t(`levels.${benefit.level}`)}</Badge>
           <Badge>{t(`categories.${benefit.category}`)}</Badge>
         </div>
-        <h1 className="text-4xl font-bold sm:text-5xl">{benefit.title}</h1>
-        <p className="text-xl text-muted">{benefit.summary}</p>
+        <h1 className="display text-[clamp(2rem,5vw,3.5rem)]">{benefit.title}</h1>
+        <p className="max-w-3xl text-xl text-muted">{benefit.summary}</p>
       </header>
 
       <Card>
         <dl className="grid gap-4 sm:grid-cols-3">
           <div>
-            <dt className="text-sm font-medium text-muted">{t("benefit.amount")}</dt>
+            <dt className="eyebrow">{t("benefit.amount")}</dt>
             <dd className="text-lg font-semibold">{benefit.amount.text}</dd>
           </div>
           <div>
-            <dt className="text-sm font-medium text-muted">{t("benefit.deadline")}</dt>
+            <dt className="eyebrow">{t("benefit.deadline")}</dt>
             <dd className="text-lg font-semibold">
               <WindowLabel benefit={benefit} />
             </dd>
           </div>
           {benefit.agency ? (
             <div>
-              <dt className="text-sm font-medium text-muted">{t("benefit.agency")}</dt>
+              <dt className="eyebrow">{t("benefit.agency")}</dt>
               <dd className="text-lg font-semibold">{benefit.agency}</dd>
             </div>
           ) : null}
         </dl>
       </Card>
 
-      <div className="flex flex-col gap-4 rounded-3xl bg-brand-50 p-6 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <p className="font-semibold">{t("benefit.check")}</p>
-          <p className="text-muted">{t("benefit.checkBody")}</p>
+      <div className="flex flex-col gap-4 rounded-3xl bg-brand-500 p-6 text-on-footer sm:flex-row sm:items-center sm:justify-between sm:p-8">
+        <div className="space-y-1">
+          <p className="display text-2xl">{t("benefit.check")}</p>
+          <p>{t("benefit.checkBody")}</p>
         </div>
-        <Link href="/cuestionario" className={buttonVariants()}>
+        <Link
+          href="/cuestionario"
+          className={buttonVariants({
+            className: "bg-on-footer text-[#bf282b] hover:bg-on-footer hover:opacity-90",
+          })}
+        >
           {t("nav.start")}
         </Link>
       </div>
@@ -119,7 +124,7 @@ export function BenefitDetail({ benefit, related }: { benefit: Benefit; related:
 
       {benefit.faq.length ? (
         <Section title={t("benefit.faq")}>
-          <div className="divide-y divide-hairline overflow-hidden rounded-3xl bg-surface shadow-card">
+          <div className="callout divide-y divide-hairline overflow-hidden">
             {benefit.faq.map((f) => (
               <details key={f.question} className="px-5 py-4">
                 <summary className="flex cursor-pointer items-center justify-between gap-3 font-medium">

@@ -3,12 +3,12 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 
 const badgeVariants = cva(
-  "inline-flex items-center rounded-full px-2.5 py-0.5 text-sm font-semibold",
+  "condensed inline-flex items-center rounded-full px-2.5 py-0.5 text-[0.8125rem]",
   {
     variants: {
       tone: {
         neutral: "bg-fill text-muted",
-        brand: "bg-brand-100 text-brand-800",
+        brand: "bg-brand-500 text-on-footer",
         warning: "bg-warning-bg text-warning-fg",
         danger: "bg-danger-bg text-danger-fg",
       },

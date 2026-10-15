@@ -3,17 +3,17 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 
 const baseButtonVariants = cva(
-  "pressable inline-flex select-none items-center justify-center gap-2 rounded-full font-semibold disabled:pointer-events-none disabled:opacity-50",
+  "pressable inline-flex select-none items-center justify-center gap-2 rounded-full font-display font-extrabold uppercase tracking-[0.06em] [font-stretch:112%] disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
         primary: "bg-brand-700 text-on-brand hover:bg-brand-800",
-        secondary: "bg-fill text-ink hover:bg-fill-strong",
+        secondary: "border-2 border-ink text-ink hover:bg-fill",
         ghost: "text-brand-700 hover:bg-brand-50",
       },
       size: {
-        md: "min-h-11 px-5 py-2 text-base",
-        lg: "min-h-13 px-7 py-3 text-lg",
+        md: "min-h-11 px-6 py-2 text-[0.8125rem]",
+        lg: "min-h-14 px-9 py-3 text-[0.9375rem]",
       },
     },
     defaultVariants: { variant: "primary", size: "md" },

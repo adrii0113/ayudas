@@ -1,5 +1,6 @@
 import type { Benefit } from "@tetoca/core";
 import { useTranslations } from "next-intl";
+import { SectionBand } from "@/components/SectionBand";
 import { BenefitListItem } from "./BenefitListItem";
 
 export function CategoryIndex({
@@ -14,9 +15,10 @@ export function CategoryIndex({
   const t = useTranslations("index");
   return (
     <div className="space-y-6">
-      <header className="rise-in space-y-3">
-        <h1 className="text-4xl font-bold">{title}</h1>
-        <p className="text-xl text-muted">{lead}</p>
+      <header className="-mt-10">
+        <SectionBand as="h1" eyebrow={t("eyebrow")} title={title}>
+          <p className="max-w-2xl text-lg text-muted">{lead}</p>
+        </SectionBand>
       </header>
       {benefits.length ? (
         <ul className="grid gap-4 md:grid-cols-2">

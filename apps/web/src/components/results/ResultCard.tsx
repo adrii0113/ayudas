@@ -43,23 +43,23 @@ export function ResultCard({ match, today }: { match: BenefitMatch; today: strin
   const t = useTranslations();
   const { benefit } = match;
   return (
-    <li className="space-y-5 rounded-3xl bg-surface p-6 shadow-card">
+    <li className="callout space-y-5 p-6">
       <div className="space-y-2">
         <div className="flex flex-wrap gap-2">
           <Badge tone="brand">{t(`levels.${benefit.level}`)}</Badge>
           <Badge>{t(`categories.${benefit.category}`)}</Badge>
         </div>
-        <h3 className="text-xl font-semibold">{benefit.title}</h3>
+        <h3 className="condensed text-2xl">{benefit.title}</h3>
         <p className="text-muted">{benefit.summary}</p>
       </div>
 
-      <dl className="grid gap-3 rounded-2xl bg-fill p-4 sm:grid-cols-2">
+      <dl className="grid gap-3 border-y border-hairline py-4 sm:grid-cols-2">
         <div>
-          <dt className="text-sm text-muted">{t("benefit.amount")}</dt>
+          <dt className="eyebrow text-[0.6875rem]">{t("benefit.amount")}</dt>
           <dd className="font-medium">{benefit.amount.text}</dd>
         </div>
         <div>
-          <dt className="text-sm text-muted">{t("benefit.deadline")}</dt>
+          <dt className="eyebrow text-[0.6875rem]">{t("benefit.deadline")}</dt>
           <dd className="font-medium">
             <WindowLabel benefit={benefit} today={today} />
           </dd>
@@ -84,7 +84,7 @@ export function ResultCard({ match, today }: { match: BenefitMatch; today: strin
         <details>
           <Summary>{t("results.whyEligible")}</Summary>
           <div className="mt-2 pl-5.5">
-            <ReqList items={match.met} icon={CheckCircle2} className="text-brand-700" />
+            <ReqList items={match.met} icon={CheckCircle2} className="text-success" />
           </div>
         </details>
       ) : null}

@@ -34,8 +34,8 @@ function OptionButton({
       className={cn(
         "pressable flex min-h-14 w-full items-center justify-between gap-3 rounded-2xl px-5 py-3 text-left text-lg font-medium",
         selected
-          ? "bg-brand-50 shadow-[inset_0_0_0_2px_var(--color-brand-700)]"
-          : "bg-surface shadow-card hover:shadow-raised",
+          ? "border-2 border-brand-500 bg-brand-50"
+          : "border-2 border-hairline bg-surface hover:border-brand-500",
       )}
     >
       {children}
@@ -44,7 +44,7 @@ function OptionButton({
         className={cn(
           "flex size-6 shrink-0 items-center justify-center rounded-full transition-[background-color,box-shadow] duration-150",
           selected
-            ? "bg-brand-700 text-on-brand"
+            ? "bg-brand-500 text-on-footer"
             : "shadow-[inset_0_0_0_1.5px_var(--color-separator)]",
         )}
       >
@@ -218,7 +218,7 @@ export function IncomeInput({ answers, onSubmit, submitLabel }: InputProps<"inco
               key={p}
               className={cn(
                 "pressable relative cursor-pointer rounded-full px-5 py-2 font-medium has-[:focus-visible]:outline-3 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-brand-600",
-                period === p ? "bg-surface shadow-card" : "text-muted hover:text-ink",
+                period === p ? "bg-ink text-bg" : "text-muted hover:text-ink",
               )}
             >
               <input
@@ -323,7 +323,7 @@ export function ChildrenInput({ answers, onSubmit, submitLabel }: InputProps<"ch
         <div className="space-y-3">
           <p className="text-sm text-muted">{tq("ageHelp")}</p>
           {Array.from({ length: count }, (_, i) => (
-            <div key={i} className="rise-in space-y-3 rounded-2xl bg-surface p-4 shadow-card">
+            <div key={i} className="rise-in callout space-y-3 p-4">
               <NumberField
                 label={tq("age", { n: i + 1 })}
                 value={ages[i] ?? ""}

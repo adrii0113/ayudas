@@ -11,7 +11,7 @@ export default async function UnsubscribePage({ searchParams }: Props) {
   const { id = "", token = "" } = await searchParams;
   return (
     <div className="mx-auto max-w-xl space-y-4 py-8">
-      <h1 className="text-3xl font-bold">{t("deleteTitle")}</h1>
+      <h1 className="display text-[clamp(2.25rem,6vw,3.5rem)]">{t("deleteTitle")}</h1>
       <p>{t("deleteBody")}</p>
       <DeleteButton id={id} token={token} />
     </div>

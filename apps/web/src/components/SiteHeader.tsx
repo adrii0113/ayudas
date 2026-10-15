@@ -12,22 +12,20 @@ export function SiteHeader() {
       >
         {t("nav.skip")}
       </a>
-      <div className="mx-auto flex h-14 max-w-5xl items-center justify-between gap-4 px-4">
-        <Link href="/" className="text-xl font-bold tracking-tight text-ink">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:h-20">
+        <Link href="/" className="display text-2xl text-brand-700 sm:text-3xl">
           {t("meta.siteName")}
         </Link>
-        <nav aria-label="Principal" className="flex items-center gap-1 sm:gap-2">
+        <nav aria-label="Principal" className="flex items-center gap-2 sm:gap-6">
           <Link
             href="/ayudas"
-            className="pressable rounded-full px-3 py-1.5 text-[0.9375rem] font-medium text-ink hover:bg-fill"
+            className="pressable rounded-full px-3 py-2 font-display text-[0.8125rem] font-extrabold uppercase tracking-[0.08em] text-ink [font-stretch:112%] hover:text-brand-700"
           >
             {t("nav.benefits")}
           </Link>
           <Link
             href="/cuestionario"
-            className={buttonVariants({
-              className: "hidden min-h-9 px-4 py-1.5 text-[0.9375rem] sm:inline-flex",
-            })}
+            className={buttonVariants({ className: "hidden sm:inline-flex" })}
           >
             {t("nav.start")}
           </Link>

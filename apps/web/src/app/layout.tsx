@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Archivo, Open_Sans, Playfair_Display } from "next/font/google";
 import Script from "next/script";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getTranslations } from "next-intl/server";
@@ -17,12 +18,22 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
+// Self-hosted at build time by next/font: no requests to Google from visitors.
+const display = Archivo({ subsets: ["latin"], axes: ["wdth"], variable: "--font-archivo" });
+const body = Open_Sans({ subsets: ["latin"], variable: "--font-open-sans" });
+const serif = Playfair_Display({
+  subsets: ["latin"],
+  style: ["italic"],
+  weight: ["600"],
+  variable: "--font-playfair",
+});
+
 const plausibleDomain = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN;
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const locale = await getLocale();
   return (
-    <html lang={locale}>
+    <html lang={locale} className={`${display.variable} ${body.variable} ${serif.variable}`}>
       <body className="flex min-h-screen flex-col antialiased">
         <NextIntlClientProvider>
           <SiteHeader />

@@ -106,7 +106,7 @@ export function Questionnaire({ benefits }: { benefits: Benefit[] }) {
     <div className="mx-auto max-w-xl space-y-8">
       <div className="space-y-3">
         <div className="flex min-h-9 items-center justify-between text-sm text-muted">
-          <span>{progressLabel}</span>
+          <span className="eyebrow">{progressLabel}</span>
           {index > 0 ? (
             <button
               type="button"
@@ -123,10 +123,10 @@ export function Questionnaire({ benefits }: { benefits: Benefit[] }) {
           aria-valuemin={1}
           aria-valuemax={questions.length}
           aria-valuenow={index + 1}
-          className="h-1.5 w-full overflow-hidden rounded-full bg-fill-strong"
+          className="h-2 w-full overflow-hidden rounded-full bg-fill-strong"
         >
           <div
-            className="h-full origin-left rounded-full bg-brand-700 transition-transform duration-500 ease-spring"
+            className="h-full origin-left rounded-full bg-brand-500 transition-transform duration-500 ease-spring"
             style={{ transform: `scaleX(${(index + 1) / questions.length})` }}
           />
         </div>
@@ -142,7 +142,7 @@ export function Questionnaire({ benefits }: { benefits: Benefit[] }) {
             id="question-title"
             ref={headingRef}
             tabIndex={-1}
-            className="text-3xl font-bold outline-none sm:text-4xl"
+            className="display text-[clamp(2rem,6vw,3.25rem)] outline-none"
           >
             {t(`questions.${question.id}.title`)}
           </h1>

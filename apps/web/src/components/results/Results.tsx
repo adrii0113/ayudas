@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { useEffect, useMemo, useState } from "react";
 import { Disclaimer } from "@/components/Disclaimer";
+import { SectionBand } from "@/components/SectionBand";
 import { buttonVariants } from "@/components/ui/button";
 import { track } from "@/lib/analytics";
 import { formatDate } from "@/lib/format";
@@ -27,15 +28,15 @@ function Group({
 }) {
   if (!matches.length) return null;
   return (
-    <section aria-labelledby={id} className="space-y-4">
+    <section aria-labelledby={id} className="space-y-5">
       <div>
-        <h2 id={id} className="flex items-baseline gap-2 text-2xl font-bold">
+        <h2 id={id} className="display text-[clamp(1.75rem,4vw,2.5rem)]">
           {title}{" "}
-          <span className="rounded-full bg-fill px-2.5 text-base font-semibold text-muted tabular-nums">
+          <span className="condensed ml-1 inline-block rounded-full bg-brand-500 px-3 py-0.5 align-middle text-lg text-on-footer tabular-nums">
             {matches.length}
           </span>
         </h2>
-        {lead ? <p className="text-muted">{lead}</p> : null}
+        {lead ? <p className="mt-2 text-lg text-muted">{lead}</p> : null}
       </div>
       <ul className="grid gap-4">
         {matches.map((m) => (
@@ -92,11 +93,14 @@ export function Results({ benefits }: { benefits: Benefit[] }) {
 
   return (
     <div className="space-y-10">
-      <header className="rise-in space-y-4">
-        <h1 className="text-4xl font-bold">{t("title")}</h1>
-        <p className="text-lg text-muted">{t("lead")}</p>
-        <p className="text-sm text-muted">{t("estimatedTotal", { date: formatDate(today) })}</p>
-        <Disclaimer />
+      <header className="-mt-10">
+        <SectionBand as="h1" eyebrow={t("eyebrow")} title={t("title")}>
+          <p className="max-w-2xl text-lg text-muted">{t("lead")}</p>
+          <p className="text-sm text-muted">{t("estimatedTotal", { date: formatDate(today) })}</p>
+        </SectionBand>
+        <div className="mt-8">
+          <Disclaimer />
+        </div>
       </header>
 
       <Group id="eligible" title={t("eligibleTitle")} matches={eligible} today={today} />
@@ -120,19 +124,17 @@ export function Results({ benefits }: { benefits: Benefit[] }) {
         <p className="text-muted">{t("notEligibleCount", { count: notEligible.length })}</p>
       ) : null}
 
-      <section className="flex flex-col gap-4 rounded-3xl bg-surface p-6 shadow-card sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex gap-4">
-          <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-brand-50">
-            <BellRing aria-hidden className="size-6 text-brand-700" />
-          </span>
-          <div>
-            <h2 className="font-semibold">{t("alertsTitle")}</h2>
-            <p className="text-muted">{t("alertsBody")}</p>
-          </div>
+      <section className="bleed bleed-brand py-12">
+        <div className="space-y-5 rounded-3xl bg-bg p-8 sm:p-12">
+          <p className="eyebrow flex items-center gap-2 text-sm">
+            <BellRing aria-hidden className="size-4" /> {t("alertsEyebrow")}
+          </p>
+          <h2 className="display text-[clamp(1.75rem,4vw,2.75rem)]">{t("alertsTitle")}</h2>
+          <p className="max-w-2xl text-lg text-muted">{t("alertsBody")}</p>
+          <Link href="/alertas" className={buttonVariants({ size: "lg" })}>
+            {t("alertsCta")} <span aria-hidden>→</span>
+          </Link>
         </div>
-        <Link href="/alertas" className={buttonVariants()}>
-          {t("alertsCta")}
-        </Link>
       </section>
 
       <div className="flex flex-wrap gap-3">

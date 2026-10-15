@@ -13,7 +13,7 @@ export default async function ConfirmAlertsPage({ searchParams }: Props) {
   const ok = await confirmAction(token ?? "");
   return (
     <div className="mx-auto max-w-xl space-y-3 py-8">
-      <h1 className="text-3xl font-bold">{t("confirmTitle")}</h1>
+      <h1 className="display text-[clamp(2.25rem,6vw,3.5rem)]">{t("confirmTitle")}</h1>
       <p role="status" className="text-lg">
         {ok ? t("confirmOk") : t("confirmFail")}
       </p>

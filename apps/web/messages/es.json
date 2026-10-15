@@ -15,7 +15,14 @@
     "legal": "Aviso legal",
     "privacy": "Privacidad",
     "cookies": "Cookies",
-    "note": "TeToca no es una web oficial ni tramita ayudas. Toda la información es orientativa: consulta siempre las bases oficiales."
+    "note": "TeToca no es una web oficial ni tramita ayudas. Toda la información es orientativa: consulta siempre las bases oficiales.",
+    "wordmarkStart": "Ayudas",
+    "wordmarkAccent": "que te",
+    "wordmarkEnd": "tocan",
+    "tagline": "Hecho para familias. Con fuentes oficiales.",
+    "exploreTitle": "Explora",
+    "legalTitle": "Legal",
+    "startTitle": "¿Te toca algo?"
   },
   "disclaimer": {
     "title": "Información orientativa",
@@ -38,7 +45,12 @@
     "privacy": "El cálculo se hace en tu dispositivo. No pedimos nombre, DNI ni email, y no guardamos tus respuestas.",
     "coverage": "Ahora mismo cubrimos ayudas estatales y de Castilla y León para familias y hogares.",
     "catalogCount": "{count} ayudas revisadas",
-    "browse": "Ver todas las ayudas"
+    "browse": "Ver todas las ayudas",
+    "heroAccent": "y cómo pedirlas, en unos minutos",
+    "howEyebrow": "Paso a paso",
+    "privacyEyebrow": "Privacidad",
+    "ctaEyebrow": "¿Empezamos?",
+    "ctaTitle": "Descubre lo que te corresponde"
   },
   "questionnaire": {
     "title": "Cuestionario",
@@ -192,7 +204,9 @@
     "alertsTitle": "¿Quieres enterarte cuando abra una ayuda para ti?",
     "alertsBody": "Te avisamos por email (máximo uno a la semana). Puedes borrarte con un clic.",
     "alertsCta": "Activar alertas",
-    "estimatedTotal": "Calculado el {date}"
+    "estimatedTotal": "Calculado el {date}",
+    "eyebrow": "Tu resultado",
+    "alertsEyebrow": "Alertas"
   },
   "benefit": {
     "amount": "Importe",
@@ -210,7 +224,8 @@
     "checkBody": "Responde el cuestionario y te decimos si cumples los requisitos.",
     "agency": "Organismo",
     "related": "Otras ayudas de {category}",
-    "retrieved": "consultada el {date}"
+    "retrieved": "consultada el {date}",
+    "eyebrow": "Ficha de la ayuda"
   },
   "window": {
     "permanent": "Se puede pedir todo el año",
@@ -239,7 +254,8 @@
     "lead": "Todas las ayudas que revisamos, ordenadas por tema.",
     "categoryTitle": "Ayudas de {category} en {region}",
     "categoryLead": "Ayudas estatales y de {region} sobre {category}, con requisitos, importes y plazos.",
-    "empty": "Todavía no tenemos ayudas en esta categoría."
+    "empty": "Todavía no tenemos ayudas en esta categoría.",
+    "eyebrow": "Catálogo"
   },
   "glossary": {
     "iprem": "IPREM: indicador que usa la Administración para fijar límites de ingresos. En 2026 son 600 € al mes (8.400 € al año en 14 pagas)."
