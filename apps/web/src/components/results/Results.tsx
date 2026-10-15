@@ -11,7 +11,9 @@ import { buttonVariants } from "@/components/ui/button";
 import { track } from "@/lib/analytics";
 import { formatDate } from "@/lib/format";
 import { clearAnswers, loadAnswers, toProfile } from "@/lib/profile-storage";
+import { OpenCalls } from "./OpenCalls";
 import { ResultCard } from "./ResultCard";
+import type { OpenCallsData } from "@/lib/open-calls";
 
 function Group({
   id,
@@ -48,7 +50,7 @@ function Group({
 }
 
 /** Evaluates the catalog in the browser: the profile never leaves the device. */
-export function Results({ benefits }: { benefits: Benefit[] }) {
+export function Results({ benefits, openCalls }: { benefits: Benefit[]; openCalls: OpenCallsData }) {
   const t = useTranslations("results");
   const tq = useTranslations("questionnaire");
   const [profile, setProfile] = useState<ReturnType<typeof toProfile>>();
@@ -119,6 +121,8 @@ export function Results({ benefits }: { benefits: Benefit[] }) {
         matches={unknown}
         today={today}
       />
+
+      <OpenCalls data={openCalls} region={profile.region} today={today} />
 
       {notEligible.length ? (
         <p className="text-muted">{t("notEligibleCount", { count: notEligible.length })}</p>

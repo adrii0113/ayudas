@@ -295,6 +295,14 @@ export function programTypeFromTitle(title: string): ProgramType {
   return PRIZE.test(normalizeName(title)) ? "prize" : "grant_call";
 }
 
+/** Application status of a call on `today`, from its dates only. */
+export function editionStatusOf(detail: BdnsDetail, today: string): EditionStatus {
+  return editionStatus(
+    { opensAt: isoDay(detail.fechaInicioSolicitud), closesAt: isoDay(detail.fechaFinSolicitud) },
+    today,
+  );
+}
+
 export type DetectedCall = {
   bdnsCode: string;
   title: string;
@@ -317,8 +325,9 @@ export type DetectedCall = {
   };
 };
 
-const isoDay = (value: string | null | undefined) =>
-  value && /^\d{4}-\d{2}-\d{2}/.test(value) ? value.slice(0, 10) : null;
+function isoDay(value: string | null | undefined) {
+  return value && /^\d{4}-\d{2}-\d{2}/.test(value) ? value.slice(0, 10) : null;
+}
 
 /** From a search result only (cheap: no detail request). */
 export function callFromSearchItem(

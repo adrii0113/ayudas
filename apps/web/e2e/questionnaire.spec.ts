@@ -131,3 +131,35 @@ test("no WCAG A/AA violations on /resultados", async ({ page }) => {
     .analyze();
   expect(results.violations.map((v) => `${v.id}: ${v.nodes.length}`)).toEqual([]);
 });
+
+test("results list open calls of the user's community as unverified", async ({ page }) => {
+  await page.goto("/");
+  await page.evaluate(() =>
+    sessionStorage.setItem(
+      "tetoca.answers.v1",
+      JSON.stringify({
+        region: "AN",
+        applicantAge: 30,
+        householdSize: 1,
+        children: [],
+        annualHouseholdIncome: 15000,
+        employmentStatus: "employed",
+        housing: "renting",
+        monthlyRent: 500,
+      }),
+    ),
+  );
+  await page.goto("/resultados");
+  await expect(page.getByRole("heading", { name: /Te corresponden/ })).toBeVisible();
+  const section = page.locator("section", { has: page.locator("#open-calls") });
+  // The list depends on the daily BDNS snapshot; when present it must be labelled.
+  if (await section.count()) {
+    await expect(section.getByText("Sin verificar").first()).toBeVisible();
+    await expect(
+      section.getByRole("link", { name: /Ver convocatoria oficial/ }).first(),
+    ).toBeVisible();
+  }
+  await expect(
+    page.getByText("Deducción autonómica por alquiler de vivienda habitual (Andalucía)"),
+  ).toBeVisible();
+});

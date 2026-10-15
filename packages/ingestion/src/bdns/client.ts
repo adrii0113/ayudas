@@ -5,6 +5,8 @@ import {
   type BdnsSearchPage,
 } from "./schemas";
 
+export type BdnsRegionNode = { id: number; descripcion: string; children?: BdnsRegionNode[] };
+
 export const BDNS_API_BASE = "https://www.infosubvenciones.es/bdnstrans/api";
 
 export type BdnsSearchParams = {
@@ -107,6 +109,12 @@ export class BdnsClient {
       new URLSearchParams({ vpd: "GE", numConv: code }),
     );
     return bdnsDetailSchema.parse(await res.json());
+  }
+
+  /** Region tree (NUTS) used by the `regiones` search filter. */
+  async getRegions(): Promise<BdnsRegionNode[]> {
+    const res = await this.request("/regiones", new URLSearchParams({ vpd: "GE" }));
+    return (await res.json()) as BdnsRegionNode[];
   }
 
   async getDocument(id: number): Promise<Uint8Array> {

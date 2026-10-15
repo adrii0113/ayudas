@@ -12,7 +12,8 @@
     "ingest:bdns": "tsx src/scripts/ingest-bdns.ts",
     "pdf:text": "tsx src/scripts/pdf-text.ts",
     "worker": "tsx src/scripts/worker.ts",
-    "radar:bdns": "tsx src/scripts/radar-bdns.ts"
+    "radar:bdns": "tsx src/scripts/radar-bdns.ts",
+    "open-calls": "tsx src/scripts/open-calls.ts"
   },
   "dependencies": {
     "@tetoca/alerts": "workspace:*",

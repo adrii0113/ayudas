@@ -1,0 +1,33 @@
+name: Daily open calls
+
+# Refreshes data/open-calls.json (open BDNS calls for individuals of each
+# community's government, shown on the web as "sin verificar").
+on:
+  schedule:
+    - cron: "30 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  open-calls:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @tetoca/ingestion open-calls --per-region 40
+      - name: Commit if changed
+        run: |
+          git add data/open-calls.json
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git config user.name "tetoca-bot"
+          git config user.email "tetoca-bot@users.noreply.github.com"
+          git commit -m "chore(data): open calls $(date -u +%F)"
+          git push

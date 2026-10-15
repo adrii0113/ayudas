@@ -2,7 +2,7 @@
   "meta": {
     "siteName": "TeToca",
     "title": "TeToca · Descubre qué ayudas públicas te corresponden",
-    "description": "Responde unas preguntas y descubre qué ayudas públicas te corresponden en Castilla y León y en toda España: natalidad, vivienda, energía, ingresos y más. Gratis y sin registro."
+    "description": "Responde unas preguntas y descubre qué ayudas públicas te corresponden en tu comunidad autónoma y en toda España: natalidad, vivienda, ingresos, deducciones del IRPF y más. Gratis y sin registro."
   },
   "nav": {
     "skip": "Saltar al contenido",
@@ -43,7 +43,7 @@
     "how3": "Ves lo que te corresponde, lo que casi, qué documentos necesitas y el enlace oficial.",
     "privacyTitle": "Tus respuestas no salen de tu navegador",
     "privacy": "El cálculo se hace en tu dispositivo. No pedimos nombre, DNI ni email, y no guardamos tus respuestas.",
-    "coverage": "Ahora mismo cubrimos ayudas estatales y de Castilla y León para familias y hogares.",
+    "coverage": "Cubrimos las principales ayudas estatales y, en cada comunidad autónoma, sus deducciones del IRPF más usadas y su renta mínima, además de las convocatorias abiertas de su gobierno.",
     "catalogCount": "{count} ayudas revisadas",
     "browse": "Ver todas las ayudas",
     "heroAccent": "y cómo pedirlas, en unos minutos",
@@ -224,7 +224,13 @@
     "alertsCta": "Activar alertas",
     "estimatedTotal": "Calculado el {date}",
     "eyebrow": "Tu resultado",
-    "alertsEyebrow": "Alertas"
+    "alertsEyebrow": "Alertas",
+    "openCallsTitle": "Otras convocatorias abiertas en {region}",
+    "openCallsLead": "Convocatorias para personas publicadas por el gobierno de tu comunidad en la Base de Datos Nacional de Subvenciones. No las hemos revisado ni comprobamos sus requisitos: consulta las bases en el enlace oficial.",
+    "openCallsBadge": "Sin verificar",
+    "openCallsLink": "Ver convocatoria oficial",
+    "openCallsCloses": "Plazo hasta el {date}",
+    "openCallsSource": "Fuente: BDNS, actualizado el {date}."
   },
   "benefit": {
     "amount": "Importe",

@@ -2,9 +2,9 @@
  * Writes the published benefits of the YAML catalog to a JSON file consumed by
  * the web app when no database is configured. Usage: build-catalog <outFile>
  */
-import { mkdirSync, writeFileSync } from "node:fs";
-import { dirname, resolve } from "node:path";
-import { loadCatalog, loadVerificationReport, validVerification } from "../catalog";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { dirname, join, resolve } from "node:path";
+import { findRepoRoot, loadCatalog, loadVerificationReport, validVerification } from "../catalog";
 
 const out = process.argv[2];
 if (!out) throw new Error("Usage: build-catalog <outFile>");
@@ -28,3 +28,11 @@ if (skipped)
 mkdirSync(dirname(resolve(out)), { recursive: true });
 writeFileSync(resolve(out), JSON.stringify(published, null, 2) + "\n");
 console.log(`Wrote ${published.length} published benefits to ${out}`);
+
+// Open BDNS calls per community (data/open-calls.json, refreshed daily), shown
+// on the web as "sin verificar". An empty file keeps the build working.
+const openCallsSrc = join(findRepoRoot(), "data", "open-calls.json");
+const openCalls = existsSync(openCallsSrc)
+  ? readFileSync(openCallsSrc, "utf8")
+  : `${JSON.stringify({ generatedAt: null, source: null, byRegion: {} })}\n`;
+writeFileSync(join(dirname(resolve(out)), "open-calls.json"), openCalls);

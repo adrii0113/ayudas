@@ -9,3 +9,4 @@ CLAUDE.md
 apps/web/src/generated
 .pglite
 data/reference
+data/open-calls.json

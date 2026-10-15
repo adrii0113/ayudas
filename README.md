@@ -43,6 +43,23 @@ data/seed           Catálogo curado a mano en YAML (semilla y fixtures)
 data/reference      Datos de referencia oficiales (8.132 municipios del INE)
 ```
 
+### Cobertura del MVP nacional
+
+- **Toda España** en el cuestionario: las 19 comunidades y ciudades autónomas.
+- **Ayudas estatales** (IMV, prestación por nacimiento, bonos sociales, deducciones del IRPF, PNC…).
+- **Deducciones autonómicas del IRPF** más usadas (nacimiento, familia numerosa, alquiler) en las
+  15 comunidades de régimen común, desde el Manual práctico de Renta de la AEAT.
+- **Renta mínima autonómica** en 12 comunidades (las demás quedan pendientes: su fuente oficial no
+  es legible de forma automática o bloquea el acceso).
+- **Convocatorias abiertas** del gobierno de cada comunidad (BDNS), etiquetadas «sin verificar»,
+  en `data/open-calls.json` (se refresca a diario con `.github/workflows/open-calls.yml`).
+
+**Sin revisión humana** (decisión del propietario): una ficha solo se publica si supera la
+verificación automática (`pnpm --filter @tetoca/verification verify:catalog`): cada requisito con
+cita literal encontrada en la fuente oficial, enlaces vivos y plazo no vencido. El informe está en
+`data/verification/catalog.json`; cualquier cambio en una ficha invalida su verificación y la CI lo
+exige (`REQUIRE_VERIFIED=1`). La web lo indica en cada ficha.
+
 ### Registro nacional de ayudas
 
 Diseño completo en [`docs/sistema-de-datos.md`](docs/sistema-de-datos.md). La base de datos es la
