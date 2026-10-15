@@ -9,6 +9,7 @@ export default defineConfig({
   projects: [
     { name: "mobile", use: { ...devices["Pixel 7"] } },
     { name: "desktop", use: { ...devices["Desktop Chrome"] } },
+    { name: "dark", use: { ...devices["Desktop Chrome"], colorScheme: "dark" } },
   ],
   webServer: {
     command: `pnpm start -p ${PORT}`,

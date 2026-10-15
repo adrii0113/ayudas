@@ -32,14 +32,24 @@ function OptionButton({
       aria-checked={selected}
       onClick={onClick}
       className={cn(
-        "flex min-h-13 w-full items-center justify-between rounded-xl border-2 px-4 py-3 text-left text-lg font-medium transition-colors",
+        "pressable flex min-h-14 w-full items-center justify-between gap-3 rounded-2xl px-5 py-3 text-left text-lg font-medium",
         selected
-          ? "border-brand-700 bg-brand-50"
-          : "border-gray-300 bg-white hover:border-brand-600",
+          ? "bg-brand-50 shadow-[inset_0_0_0_2px_var(--color-brand-700)]"
+          : "bg-surface shadow-card hover:shadow-raised",
       )}
     >
       {children}
-      {selected ? <Check aria-hidden className="size-5 text-brand-700" /> : null}
+      <span
+        aria-hidden
+        className={cn(
+          "flex size-6 shrink-0 items-center justify-center rounded-full transition-[background-color,box-shadow] duration-150",
+          selected
+            ? "bg-brand-700 text-on-brand"
+            : "shadow-[inset_0_0_0_1.5px_var(--color-separator)]",
+        )}
+      >
+        {selected ? <Check className="size-4" strokeWidth={3} /> : null}
+      </span>
     </button>
   );
 }
@@ -123,7 +133,7 @@ function NumberField({
           onChange={(e) => onChange(e.target.value)}
           aria-describedby={describedBy}
           aria-invalid={invalid || undefined}
-          className="min-h-12 w-40 rounded-xl border-2 border-gray-300 px-3 text-lg focus:border-brand-700"
+          className="min-h-13 w-44 rounded-xl border border-separator bg-surface px-4 text-lg tabular-nums transition-[border-color,box-shadow] duration-150 focus:border-brand-700 focus:shadow-[0_0_0_3px_var(--color-brand-100)] focus:outline-none"
         />
         {unit ? <span className="text-muted">{unit}</span> : null}
       </div>
@@ -168,11 +178,13 @@ export function NumberInput({ question, answers, onSubmit, submitLabel }: InputP
         invalid={!!error}
       />
       {error ? (
-        <p id={errorId} role="alert" className="text-red-700">
+        <p id={errorId} role="alert" className="text-danger-fg">
           {error}
         </p>
       ) : null}
-      <Button type="submit">{submitLabel}</Button>
+      <Button type="submit" size="lg" className="w-full sm:w-auto">
+        {submitLabel}
+      </Button>
     </form>
   );
 }
@@ -198,17 +210,23 @@ export function IncomeInput({ answers, onSubmit, submitLabel }: InputProps<"inco
 
   return (
     <form onSubmit={submit} noValidate className="space-y-4">
-      <fieldset className="space-y-2">
+      <fieldset className="space-y-3">
         <legend className="font-medium">{tq("amount")}</legend>
-        <div className="flex gap-4">
+        <div className="inline-flex rounded-full bg-fill p-1">
           {(["month", "year"] as const).map((p) => (
-            <label key={p} className="flex items-center gap-2">
+            <label
+              key={p}
+              className={cn(
+                "pressable relative cursor-pointer rounded-full px-5 py-2 font-medium has-[:focus-visible]:outline-3 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-brand-600",
+                period === p ? "bg-surface shadow-card" : "text-muted hover:text-ink",
+              )}
+            >
               <input
                 type="radio"
                 name="period"
                 checked={period === p}
                 onChange={() => setPeriod(p)}
-                className="size-5 accent-brand-700"
+                className="sr-only"
               />
               {p === "month" ? tq("perMonth") : tq("perYear")}
             </label>
@@ -225,11 +243,13 @@ export function IncomeInput({ answers, onSubmit, submitLabel }: InputProps<"inco
       />
       {period === "month" ? <p className="text-sm text-muted">{tq("monthlyNote")}</p> : null}
       {error ? (
-        <p id={errorId} role="alert" className="text-red-700">
+        <p id={errorId} role="alert" className="text-danger-fg">
           {error}
         </p>
       ) : null}
-      <Button type="submit">{submitLabel}</Button>
+      <Button type="submit" size="lg" className="w-full sm:w-auto">
+        {submitLabel}
+      </Button>
     </form>
   );
 }
@@ -276,17 +296,22 @@ export function ChildrenInput({ answers, onSubmit, submitLabel }: InputProps<"ch
           <Button
             type="button"
             variant="secondary"
+            className="size-12 p-0 text-2xl"
             aria-label="−1"
             onClick={() => setCountClamped(count - 1)}
           >
             −
           </Button>
-          <output aria-live="polite" className="w-10 text-center text-2xl font-semibold">
+          <output
+            aria-live="polite"
+            className="w-10 text-center text-3xl font-semibold tabular-nums"
+          >
             {count}
           </output>
           <Button
             type="button"
             variant="secondary"
+            className="size-12 p-0 text-2xl"
             aria-label="+1"
             onClick={() => setCountClamped(count + 1)}
           >
@@ -298,7 +323,7 @@ export function ChildrenInput({ answers, onSubmit, submitLabel }: InputProps<"ch
         <div className="space-y-3">
           <p className="text-sm text-muted">{tq("ageHelp")}</p>
           {Array.from({ length: count }, (_, i) => (
-            <div key={i} className="space-y-2 rounded-xl border border-gray-200 bg-white p-3">
+            <div key={i} className="rise-in space-y-3 rounded-2xl bg-surface p-4 shadow-card">
               <NumberField
                 label={tq("age", { n: i + 1 })}
                 value={ages[i] ?? ""}
@@ -321,11 +346,13 @@ export function ChildrenInput({ answers, onSubmit, submitLabel }: InputProps<"ch
         </div>
       ) : null}
       {error ? (
-        <p role="alert" className="text-red-700">
+        <p role="alert" className="text-danger-fg">
           {error}
         </p>
       ) : null}
-      <Button type="submit">{submitLabel}</Button>
+      <Button type="submit" size="lg" className="w-full sm:w-auto">
+        {submitLabel}
+      </Button>
     </form>
   );
 }

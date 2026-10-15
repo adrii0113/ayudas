@@ -29,8 +29,11 @@ function Group({
   return (
     <section aria-labelledby={id} className="space-y-4">
       <div>
-        <h2 id={id} className="text-2xl font-bold">
-          {title} <span className="text-muted">({matches.length})</span>
+        <h2 id={id} className="flex items-baseline gap-2 text-2xl font-bold">
+          {title}{" "}
+          <span className="rounded-full bg-fill px-2.5 text-base font-semibold text-muted tabular-nums">
+            {matches.length}
+          </span>
         </h2>
         {lead ? <p className="text-muted">{lead}</p> : null}
       </div>
@@ -89,8 +92,8 @@ export function Results({ benefits }: { benefits: Benefit[] }) {
 
   return (
     <div className="space-y-10">
-      <header className="space-y-3">
-        <h1 className="text-3xl font-bold">{t("title")}</h1>
+      <header className="rise-in space-y-4">
+        <h1 className="text-4xl font-bold">{t("title")}</h1>
         <p className="text-lg text-muted">{t("lead")}</p>
         <p className="text-sm text-muted">{t("estimatedTotal", { date: formatDate(today) })}</p>
         <Disclaimer />
@@ -117,9 +120,11 @@ export function Results({ benefits }: { benefits: Benefit[] }) {
         <p className="text-muted">{t("notEligibleCount", { count: notEligible.length })}</p>
       ) : null}
 
-      <section className="flex flex-col gap-3 rounded-2xl bg-brand-50 p-5 sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex gap-3">
-          <BellRing aria-hidden className="size-6 shrink-0 text-brand-700" />
+      <section className="flex flex-col gap-4 rounded-3xl bg-surface p-6 shadow-card sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex gap-4">
+          <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-brand-50">
+            <BellRing aria-hidden className="size-6 text-brand-700" />
+          </span>
           <div>
             <h2 className="font-semibold">{t("alertsTitle")}</h2>
             <p className="text-muted">{t("alertsBody")}</p>

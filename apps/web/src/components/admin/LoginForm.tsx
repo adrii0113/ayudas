@@ -5,7 +5,7 @@ import { useActionState } from "react";
 import { loginAction } from "@/app/admin/actions";
 import { Button } from "@/components/ui/button";
 
-const input = "min-h-11 w-full rounded-lg border-2 border-gray-300 px-3";
+const input = "min-h-11 w-full rounded-lg border-2 border-separator px-3";
 
 export function LoginForm() {
   const t = useTranslations("admin.login");
@@ -33,7 +33,7 @@ export function LoginForm() {
         />
       </label>
       {state.errors ? (
-        <p role="alert" className="text-red-700">
+        <p role="alert" className="text-danger-fg">
           {t("error")}
         </p>
       ) : null}

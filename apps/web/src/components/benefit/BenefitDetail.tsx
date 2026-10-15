@@ -1,5 +1,5 @@
 import { describeRequirements, effectiveRules, needsHumanReview, type Benefit } from "@tetoca/core";
-import { ExternalLink } from "lucide-react";
+import { ChevronRight, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { Disclaimer } from "@/components/Disclaimer";
@@ -15,7 +15,7 @@ import { BenefitListItem } from "./BenefitListItem";
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section className="space-y-3">
-      <h2 className="text-xl font-semibold">{title}</h2>
+      <h2 className="text-2xl font-bold">{title}</h2>
       {children}
     </section>
   );
@@ -26,41 +26,41 @@ export function BenefitDetail({ benefit, related }: { benefit: Benefit; related:
   const requirements = describeRequirements(effectiveRules(benefit));
   const pendingReview = needsHumanReview(benefit);
   return (
-    <article className="space-y-8">
+    <article className="space-y-10">
       {benefitJsonLd(benefit).map((data, i) => (
         <JsonLd key={i} data={data} />
       ))}
-      <header className="space-y-3">
+      <header className="rise-in space-y-4">
         <div className="flex flex-wrap gap-2">
           <Badge tone="brand">{t(`levels.${benefit.level}`)}</Badge>
           <Badge>{t(`categories.${benefit.category}`)}</Badge>
         </div>
-        <h1 className="text-3xl font-bold sm:text-4xl">{benefit.title}</h1>
-        <p className="text-lg text-muted">{benefit.summary}</p>
+        <h1 className="text-4xl font-bold sm:text-5xl">{benefit.title}</h1>
+        <p className="text-xl text-muted">{benefit.summary}</p>
       </header>
 
       <Card>
         <dl className="grid gap-4 sm:grid-cols-3">
           <div>
             <dt className="text-sm font-medium text-muted">{t("benefit.amount")}</dt>
-            <dd className="font-semibold">{benefit.amount.text}</dd>
+            <dd className="text-lg font-semibold">{benefit.amount.text}</dd>
           </div>
           <div>
             <dt className="text-sm font-medium text-muted">{t("benefit.deadline")}</dt>
-            <dd className="font-semibold">
+            <dd className="text-lg font-semibold">
               <WindowLabel benefit={benefit} />
             </dd>
           </div>
           {benefit.agency ? (
             <div>
               <dt className="text-sm font-medium text-muted">{t("benefit.agency")}</dt>
-              <dd className="font-semibold">{benefit.agency}</dd>
+              <dd className="text-lg font-semibold">{benefit.agency}</dd>
             </div>
           ) : null}
         </dl>
       </Card>
 
-      <div className="flex flex-col gap-3 rounded-2xl bg-brand-50 p-5 sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex flex-col gap-4 rounded-3xl bg-brand-50 p-6 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="font-semibold">{t("benefit.check")}</p>
           <p className="text-muted">{t("benefit.checkBody")}</p>
@@ -71,7 +71,7 @@ export function BenefitDetail({ benefit, related }: { benefit: Benefit; related:
       </div>
 
       <Section title={t("benefit.requirements")}>
-        <ul className="list-disc space-y-1 pl-6">
+        <ul className="list-disc space-y-1.5 pl-6 marker:text-muted">
           {requirements.map((r) => (
             <li key={r}>{r}</li>
           ))}
@@ -83,7 +83,7 @@ export function BenefitDetail({ benefit, related }: { benefit: Benefit; related:
 
       {benefit.otherRequirements.length ? (
         <Section title={t("benefit.otherRequirements")}>
-          <ul className="list-disc space-y-1 pl-6">
+          <ul className="list-disc space-y-1.5 pl-6 marker:text-muted">
             {benefit.otherRequirements.map((r) => (
               <li key={r}>{r}</li>
             ))}
@@ -93,7 +93,7 @@ export function BenefitDetail({ benefit, related }: { benefit: Benefit; related:
 
       {benefit.documents.length ? (
         <Section title={t("benefit.documents")}>
-          <ul className="list-disc space-y-1 pl-6">
+          <ul className="list-disc space-y-1.5 pl-6 marker:text-muted">
             {benefit.documents.map((d) => (
               <li key={d}>{d}</li>
             ))}
@@ -102,7 +102,7 @@ export function BenefitDetail({ benefit, related }: { benefit: Benefit; related:
       ) : null}
 
       <Section title={t("benefit.steps")}>
-        <ol className="list-decimal space-y-1 pl-6">
+        <ol className="list-decimal space-y-1.5 pl-6 marker:font-semibold marker:text-brand-700">
           {benefit.steps.map((s) => (
             <li key={s}>{s}</li>
           ))}
@@ -119,10 +119,16 @@ export function BenefitDetail({ benefit, related }: { benefit: Benefit; related:
 
       {benefit.faq.length ? (
         <Section title={t("benefit.faq")}>
-          <div className="space-y-2">
+          <div className="divide-y divide-hairline overflow-hidden rounded-3xl bg-surface shadow-card">
             {benefit.faq.map((f) => (
-              <details key={f.question} className="rounded-xl border border-gray-200 bg-white p-4">
-                <summary className="cursor-pointer font-medium">{f.question}</summary>
+              <details key={f.question} className="px-5 py-4">
+                <summary className="flex cursor-pointer items-center justify-between gap-3 font-medium">
+                  {f.question}
+                  <ChevronRight
+                    aria-hidden
+                    className="disclosure-chevron size-5 shrink-0 text-muted"
+                  />
+                </summary>
                 <p className="mt-2 text-muted">{f.answer}</p>
               </details>
             ))}

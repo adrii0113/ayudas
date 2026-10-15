@@ -59,7 +59,7 @@ export function SubscribeForm() {
           autoComplete="email"
           required
           defaultValue={state.email}
-          className="min-h-12 w-full max-w-md rounded-xl border-2 border-gray-300 px-3 text-lg"
+          className="min-h-12 w-full max-w-md rounded-xl border-2 border-separator px-3 text-lg"
         />
       </label>
       <label className="flex max-w-xl items-start gap-3">
@@ -74,7 +74,7 @@ export function SubscribeForm() {
       </label>
       <p className="text-sm text-muted">{t("whatWeStore")}</p>
       {error ? (
-        <p role="alert" className="text-red-700">
+        <p role="alert" className="text-danger-fg">
           {error}
         </p>
       ) : null}

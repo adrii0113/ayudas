@@ -36,7 +36,7 @@ export default async function AdminHomePage({ searchParams }: Props) {
               key={s}
               href={`/admin?status=${s}`}
               aria-current={s === status ? "page" : undefined}
-              className={`rounded-lg px-3 py-2 font-medium ${s === status ? "bg-brand-700 text-white" : "bg-gray-100"}`}
+              className={`rounded-lg px-3 py-2 font-medium ${s === status ? "bg-brand-700 text-on-brand" : "bg-fill"}`}
             >
               {t(`status.${s}`)}
             </Link>
@@ -54,7 +54,7 @@ export default async function AdminHomePage({ searchParams }: Props) {
       ) : (
         <div className="overflow-x-auto">
           <table className="w-full text-left text-sm">
-            <thead className="border-b border-gray-200">
+            <thead className="border-b border-hairline">
               <tr>
                 <th className="py-2 pr-3">{t("columns.title")}</th>
                 <th className="py-2 pr-3">{t("columns.version")}</th>
@@ -65,7 +65,7 @@ export default async function AdminHomePage({ searchParams }: Props) {
             </thead>
             <tbody>
               {benefits.map((b) => (
-                <tr key={b.id} className="border-b border-gray-100 align-top">
+                <tr key={b.id} className="border-b border-hairline align-top">
                   <td className="py-2 pr-3">
                     <Link href={`/admin/ayudas/${b.id}`} className="font-medium underline">
                       {b.title}

@@ -1,30 +1,249 @@
 @import "tailwindcss";
 
+/*
+ * Design language: Apple-style restraint (system type, grouped surfaces,
+ * translucent chrome, instant press feedback, critically damped springs).
+ * Every colour is a semantic token so the palette can adapt to dark mode.
+ */
 @theme {
-  --color-brand-50: #effaf6;
-  --color-brand-100: #d7f2e7;
+  --color-bg: #f5f5f7;
+  --color-surface: #ffffff;
+  --color-fill: rgb(118 118 128 / 0.12);
+  --color-fill-strong: rgb(118 118 128 / 0.2);
+  --color-hairline: rgb(0 0 0 / 0.08);
+  /* Input boundaries need 3:1 against their background (WCAG 1.4.11). */
+  --color-separator: #86868b;
+  --color-ink: #1d1d1f;
+  --color-muted: #616166;
+
+  --color-brand-50: #e8f5ef;
+  --color-brand-100: #d3eee2;
   --color-brand-600: #0b7a5a;
   --color-brand-700: #08664b;
   --color-brand-800: #06503b;
-  --color-ink: #1c2430;
-  --color-muted: #4b5563;
-  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --color-on-brand: #ffffff;
+
+  --color-warning-bg: #fff6e0;
+  --color-warning-border: #e8b64c;
+  --color-warning-fg: #4f3200;
+  --color-warning-icon: #935400;
+  --color-danger-bg: #fdecec;
+  --color-danger-fg: #b42318;
+
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.04), 0 6px 20px -8px rgb(0 0 0 / 0.08);
+  --shadow-raised: 0 2px 4px rgb(0 0 0 / 0.04), 0 12px 32px -12px rgb(0 0 0 / 0.16);
+
+  /* Critically damped spring (damping 1.0, response 0.4s) sampled for CSS. */
+  --ease-spring: linear(
+    0,
+    0.06,
+    0.186,
+    0.329,
+    0.466,
+    0.584,
+    0.682,
+    0.76,
+    0.821,
+    0.868,
+    0.903,
+    0.929,
+    0.949,
+    0.963,
+    0.973,
+    0.981,
+    0.986,
+    0.99,
+    0.993,
+    0.995,
+    1
+  );
+  --ease-out-quick: cubic-bezier(0.2, 0, 0, 1);
 }
 
-html {
-  color: var(--color-ink);
-  background: #fbfcfc;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #000000;
+    --color-surface: #1c1c1e;
+    --color-fill: rgb(118 118 128 / 0.24);
+    --color-fill-strong: rgb(118 118 128 / 0.36);
+    --color-hairline: rgb(255 255 255 / 0.1);
+    --color-separator: #8e8e93;
+    --color-ink: #f5f5f7;
+    --color-muted: #a1a1a6;
+
+    --color-brand-50: #0c261d;
+    --color-brand-100: #12392b;
+    --color-brand-600: #4fd1a1;
+    --color-brand-700: #3ccf96;
+    --color-brand-800: #6fdfb2;
+    --color-on-brand: #03140d;
+
+    --color-warning-bg: #2a2008;
+    --color-warning-border: #7a5a12;
+    --color-warning-fg: #ffdf9e;
+    --color-warning-icon: #ffb340;
+    --color-danger-bg: #3a1412;
+    --color-danger-fg: #ff8f85;
+
+    --shadow-card: 0 0 0 1px rgb(255 255 255 / 0.06);
+    --shadow-raised: 0 0 0 1px rgb(255 255 255 / 0.08), 0 12px 32px -12px rgb(0 0 0 / 0.6);
+  }
 }
 
-/* Visible focus for keyboard users (WCAG 2.4.7). */
-:focus-visible {
-  outline: 3px solid var(--color-brand-600);
-  outline-offset: 2px;
+@layer base {
+  html {
+    color-scheme: light dark;
+    color: var(--color-ink);
+    background: var(--color-bg);
+    -webkit-tap-highlight-color: transparent;
+    /* Ease light/dark switches instead of an abrupt brightness jump. */
+    transition: background-color 300ms ease;
+  }
+
+  body {
+    /* 17px body, scaled with the user's font-size setting. */
+    font-size: 1.0625rem;
+    line-height: 1.5;
+    letter-spacing: -0.003em;
+    font-optical-sizing: auto;
+  }
+
+  /* Tracking and leading change with size: tight display, relaxed body. */
+  h1 {
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+    text-wrap: balance;
+  }
+  h2 {
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    text-wrap: balance;
+  }
+  h3 {
+    letter-spacing: -0.012em;
+    line-height: 1.3;
+  }
+  small,
+  .text-sm,
+  .text-xs {
+    letter-spacing: 0.002em;
+  }
+
+  /* Visible focus for keyboard users (WCAG 2.4.7). */
+  :focus-visible {
+    outline: 3px solid var(--color-brand-600);
+    outline-offset: 2px;
+  }
+
+  summary {
+    list-style: none;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
 }
 
+@layer components {
+  /* Translucent chrome: content scrolls underneath, the material keeps structure. */
+  .material-bar {
+    background: color-mix(in srgb, var(--color-bg) 72%, transparent);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    backdrop-filter: blur(20px) saturate(180%);
+  }
+
+  /* Press feedback lives on pointer-down and is instant. */
+  .pressable {
+    transition:
+      transform 100ms ease-out,
+      background-color 150ms ease,
+      border-color 150ms ease,
+      box-shadow 150ms ease,
+      color 150ms ease;
+  }
+  .pressable:active:not(:disabled) {
+    transform: scale(0.97);
+  }
+
+  /* Questionnaire steps enter from the side they came from (spatial consistency). */
+  .step-forward {
+    animation: step-in-forward 450ms var(--ease-spring) both;
+  }
+  .step-back {
+    animation: step-in-back 450ms var(--ease-spring) both;
+  }
+  .rise-in {
+    animation: rise-in 500ms var(--ease-spring) both;
+  }
+
+  .disclosure-chevron {
+    transition: transform 300ms var(--ease-spring);
+  }
+  details[open] > summary .disclosure-chevron {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes step-in-forward {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+}
+@keyframes step-in-back {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+}
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+/* Reduced motion: keep a gentle cross-fade, drop the movement. */
 @media (prefers-reduced-motion: reduce) {
-  * {
-    transition: none !important;
-    animation: none !important;
+  .step-forward,
+  .step-back,
+  .rise-in {
+    animation: fade-in 200ms ease both;
+  }
+  .pressable:active:not(:disabled) {
+    transform: none;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-property: opacity, background-color, border-color, color !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .material-bar {
+    background: var(--color-bg);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --color-hairline: var(--color-separator);
+  }
+  .material-bar {
+    background: var(--color-bg);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    border-bottom: 1px solid var(--color-separator);
   }
 }

@@ -6,7 +6,7 @@ export function Disclaimer() {
   return (
     <aside
       role="note"
-      className="flex gap-3 rounded-xl border border-amber-300 bg-amber-50 p-4 text-amber-950"
+      className="flex gap-3 rounded-2xl border border-warning-border bg-warning-bg p-4 text-warning-fg"
     >
       <Info aria-hidden className="mt-0.5 size-5 shrink-0" />
       <p>

@@ -81,3 +81,31 @@ for (const path of ["/", "/cuestionario", "/ayudas", "/ayudas/bono-social-electr
     expect(results.violations.map((v) => `${v.id}: ${v.nodes.length}`)).toEqual([]);
   });
 }
+
+test("no WCAG A/AA violations on /resultados", async ({ page }) => {
+  await page.goto("/");
+  await page.evaluate(() =>
+    sessionStorage.setItem(
+      "tetoca.answers.v1",
+      JSON.stringify({
+        region: "CL",
+        applicantAge: 30,
+        householdSize: 2,
+        children: [{ age: 0, disabilityPercent: 0 }],
+        annualHouseholdIncome: 9000,
+        employmentStatus: "unemployed",
+        housing: "renting",
+        monthlyRent: 400,
+        isSingleParent: true,
+      }),
+    ),
+  );
+  await page.goto("/resultados");
+  await expect(page.getByRole("heading", { name: /Te corresponden/ })).toBeVisible();
+  // Let entrance animations settle so contrast is measured at full opacity.
+  await page.waitForTimeout(600);
+  const results = await new AxeBuilder({ page })
+    .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
+    .analyze();
+  expect(results.violations.map((v) => `${v.id}: ${v.nodes.length}`)).toEqual([]);
+});

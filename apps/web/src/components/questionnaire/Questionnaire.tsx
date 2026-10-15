@@ -50,6 +50,7 @@ export function Questionnaire({ benefits }: { benefits: Benefit[] }) {
   const [answers, setAnswers] = useState<Answers>({});
   const [currentId, setCurrentId] = useState<string>();
   const [ready, setReady] = useState(false);
+  const [direction, setDirection] = useState<"forward" | "back">("forward");
   const headingRef = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
@@ -80,6 +81,7 @@ export function Questionnaire({ benefits }: { benefits: Benefit[] }) {
     setAnswers(next);
     if (following) {
       saveAnswers(next);
+      setDirection("forward");
       setCurrentId(following.id);
       return;
     }
@@ -90,49 +92,63 @@ export function Questionnaire({ benefits }: { benefits: Benefit[] }) {
 
   const back = () => {
     const previous = questions[index - 1];
-    if (previous) setCurrentId(previous.id);
+    if (!previous) return;
+    setDirection("back");
+    setCurrentId(previous.id);
   };
 
   const isLast = index === questions.length - 1;
   const help = t.has(`questions.${question.id}.help`) ? t(`questions.${question.id}.help`) : null;
 
+  const progressLabel = t("progress", { current: index + 1, total: questions.length });
+
   return (
-    <div className="mx-auto max-w-xl space-y-6">
-      <div className="space-y-2">
-        <div className="flex items-center justify-between text-sm text-muted">
-          <span>{t("progress", { current: index + 1, total: questions.length })}</span>
+    <div className="mx-auto max-w-xl space-y-8">
+      <div className="space-y-3">
+        <div className="flex min-h-9 items-center justify-between text-sm text-muted">
+          <span>{progressLabel}</span>
           {index > 0 ? (
             <button
               type="button"
               onClick={back}
-              className="inline-flex items-center gap-1 rounded-lg px-2 py-1 font-medium text-brand-700 hover:bg-brand-50"
+              className="pressable inline-flex items-center gap-1 rounded-full px-3 py-1.5 font-medium text-brand-700 hover:bg-fill"
             >
               <ArrowLeft aria-hidden className="size-4" /> {t("back")}
             </button>
           ) : null}
         </div>
-        <progress
-          className="h-2 w-full overflow-hidden rounded-full [&::-moz-progress-bar]:bg-brand-700 [&::-webkit-progress-bar]:bg-gray-200 [&::-webkit-progress-value]:bg-brand-700"
-          value={index + 1}
-          max={questions.length}
-          aria-label={t("progress", { current: index + 1, total: questions.length })}
-        />
+        <div
+          role="progressbar"
+          aria-label={progressLabel}
+          aria-valuemin={1}
+          aria-valuemax={questions.length}
+          aria-valuenow={index + 1}
+          className="h-1.5 w-full overflow-hidden rounded-full bg-fill-strong"
+        >
+          <div
+            className="h-full origin-left rounded-full bg-brand-700 transition-transform duration-500 ease-spring"
+            style={{ transform: `scaleX(${(index + 1) / questions.length})` }}
+          />
+        </div>
       </div>
 
-      <section aria-labelledby="question-title" className="space-y-5">
+      <section
+        key={question.id}
+        aria-labelledby="question-title"
+        className={`space-y-6 ${direction === "forward" ? "step-forward" : "step-back"}`}
+      >
         <div className="space-y-2">
           <h1
             id="question-title"
             ref={headingRef}
             tabIndex={-1}
-            className="text-2xl font-bold outline-none sm:text-3xl"
+            className="text-3xl font-bold outline-none sm:text-4xl"
           >
             {t(`questions.${question.id}.title`)}
           </h1>
-          {help ? <p className="text-muted">{help}</p> : null}
+          {help ? <p className="text-lg text-muted">{help}</p> : null}
         </div>
         <QuestionInputView
-          key={question.id}
           question={question}
           answers={answers}
           onSubmit={submit}

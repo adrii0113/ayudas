@@ -9,7 +9,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
   const t = await getTranslations("admin");
   return (
     <div className="space-y-6">
-      <div className="flex items-center justify-between border-b border-gray-200 pb-3">
+      <div className="flex items-center justify-between border-b border-hairline pb-3">
         <Link href="/admin" className="text-lg font-bold">
           {t("title")}
         </Link>

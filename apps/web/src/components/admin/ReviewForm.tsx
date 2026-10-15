@@ -11,7 +11,7 @@ import {
 } from "@/app/admin/actions";
 import { Button } from "@/components/ui/button";
 
-const input = "min-h-10 w-full rounded-lg border-2 border-gray-300 px-3 py-1";
+const input = "min-h-10 w-full rounded-lg border-2 border-separator px-3 py-1";
 
 function Field({ label, children }: { label: string; children: React.ReactNode }) {
   return (
@@ -26,7 +26,7 @@ function Messages({ state }: { state: ActionState }) {
   const t = useTranslations("admin.review");
   if (state.errors?.length) {
     return (
-      <div role="alert" className="rounded-lg bg-red-50 p-3 text-red-900">
+      <div role="alert" className="rounded-lg bg-danger-bg p-3 text-danger-fg">
         <p className="font-semibold">{t("invalid")}</p>
         <ul className="list-disc pl-5">
           {state.errors.map((e) => (
@@ -66,7 +66,7 @@ export function ReviewForm({ benefit, content }: { benefit: Benefit; content: Be
   return (
     <div className="space-y-4">
       {benefit.status === "published" ? (
-        <p className="rounded-lg bg-amber-50 p-3 text-sm">{t("publishedNote")}</p>
+        <p className="rounded-lg bg-warning-bg p-3 text-sm">{t("publishedNote")}</p>
       ) : null}
       <form onSubmit={save} className="space-y-3">
         <Field label={t("fields.title")}>
@@ -107,7 +107,7 @@ export function ReviewForm({ benefit, content }: { benefit: Benefit; content: Be
           {t("save")}
         </Button>
       </form>
-      <div className="flex flex-wrap gap-2 border-t border-gray-200 pt-4">
+      <div className="flex flex-wrap gap-2 border-t border-hairline pt-4">
         {benefit.status === "draft" ? (
           <Button onClick={() => run(publishAction)} disabled={pending}>
             {t("publish")}

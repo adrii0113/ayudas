@@ -14,12 +14,12 @@ export function CategoryIndex({
   const t = useTranslations("index");
   return (
     <div className="space-y-6">
-      <header className="space-y-2">
-        <h1 className="text-3xl font-bold">{title}</h1>
-        <p className="text-lg text-muted">{lead}</p>
+      <header className="rise-in space-y-3">
+        <h1 className="text-4xl font-bold">{title}</h1>
+        <p className="text-xl text-muted">{lead}</p>
       </header>
       {benefits.length ? (
-        <ul className="grid gap-4">
+        <ul className="grid gap-4 md:grid-cols-2">
           {benefits.map((b) => (
             <BenefitListItem key={b.slug} benefit={b} />
           ))}

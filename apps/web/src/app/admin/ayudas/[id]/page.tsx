@@ -44,7 +44,7 @@ export default async function AdminReviewPage({ params }: Props) {
         </span>
       </h1>
       {extraction?.uncertainties?.length ? (
-        <section className="rounded-xl bg-amber-50 p-4">
+        <section className="rounded-xl bg-warning-bg p-4">
           <h2 className="font-semibold">{t("uncertainties")}</h2>
           <ul className="list-disc pl-5">
             {extraction.uncertainties.map((u) => (

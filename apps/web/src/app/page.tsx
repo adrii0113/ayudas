@@ -14,12 +14,14 @@ export default async function HomePage() {
     { icon: Sparkles, title: t("how3Title"), body: t("how3") },
   ];
   return (
-    <div className="space-y-14">
-      <section className="space-y-6 pt-6 text-center sm:pt-12">
-        <p className="font-medium text-brand-700">{t("eyebrow")}</p>
-        <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">{t("title")}</h1>
-        <p className="mx-auto max-w-2xl text-lg text-muted">{t("lead")}</p>
-        <div className="flex flex-col items-center gap-2">
+    <div className="space-y-20">
+      <section className="rise-in space-y-7 pt-8 text-center sm:pt-16">
+        <p className="text-[0.9375rem] font-semibold text-brand-700">{t("eyebrow")}</p>
+        <h1 className="mx-auto max-w-3xl text-[clamp(2.5rem,6vw,4rem)] font-bold leading-[1.05]">
+          {t("title")}
+        </h1>
+        <p className="mx-auto max-w-2xl text-xl text-muted">{t("lead")}</p>
+        <div className="flex flex-col items-center gap-3">
           <Link href="/cuestionario" className={buttonVariants({ size: "lg" })}>
             {t("cta")}
           </Link>
@@ -31,14 +33,16 @@ export default async function HomePage() {
       </section>
 
       <section aria-labelledby="how" className="space-y-6">
-        <h2 id="how" className="text-2xl font-bold">
+        <h2 id="how" className="text-3xl font-bold">
           {t("howTitle")}
         </h2>
         <ol className="grid gap-4 sm:grid-cols-3">
           {steps.map(({ icon: Icon, title, body }) => (
             <li key={title}>
-              <Card className="h-full space-y-2">
-                <Icon aria-hidden className="size-7 text-brand-700" />
+              <Card className="h-full space-y-3">
+                <span className="flex size-11 items-center justify-center rounded-xl bg-brand-50">
+                  <Icon aria-hidden className="size-6 text-brand-700" />
+                </span>
                 <h3 className="text-lg font-semibold">{title}</h3>
                 <p className="text-muted">{body}</p>
               </Card>
@@ -47,17 +51,22 @@ export default async function HomePage() {
         </ol>
       </section>
 
-      <section className="flex flex-col gap-3 rounded-2xl bg-brand-50 p-6 sm:flex-row sm:items-center">
-        <ShieldCheck aria-hidden className="size-10 shrink-0 text-brand-700" />
-        <div>
-          <h2 className="text-lg font-semibold">{t("privacyTitle")}</h2>
+      <section className="flex flex-col gap-4 rounded-3xl bg-surface p-6 shadow-card sm:flex-row sm:items-center sm:p-8">
+        <span className="flex size-14 shrink-0 items-center justify-center rounded-2xl bg-brand-50">
+          <ShieldCheck aria-hidden className="size-8 text-brand-700" />
+        </span>
+        <div className="space-y-1">
+          <h2 className="text-xl font-semibold">{t("privacyTitle")}</h2>
           <p className="text-muted">{t("privacy")}</p>
         </div>
       </section>
 
       <p className="text-center">
-        <Link href="/ayudas" className="font-semibold text-brand-700 underline">
-          {t("browse")}
+        <Link
+          href="/ayudas"
+          className="text-lg font-semibold text-brand-700 underline-offset-4 hover:underline"
+        >
+          {t("browse")} <span aria-hidden>→</span>
         </Link>
       </p>
     </div>

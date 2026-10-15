@@ -20,7 +20,7 @@ export function SourceText({ text, excerpts }: { text: string; excerpts: string[
   }
   parts.push(text.slice(cursor));
   return (
-    <pre className="max-h-[75vh] overflow-auto whitespace-pre-wrap rounded-xl border border-gray-200 bg-white p-4 font-sans text-sm leading-relaxed">
+    <pre className="max-h-[75vh] overflow-auto whitespace-pre-wrap rounded-xl border border-hairline bg-surface p-4 font-sans text-sm leading-relaxed">
       {parts}
     </pre>
   );

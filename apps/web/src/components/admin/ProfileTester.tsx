@@ -20,7 +20,7 @@ export async function ProfileTester({ benefit }: { benefit: Benefit }) {
           const [m] = evaluate(s.profile, [benefit], { includeClosed: true });
           if (!m) return null;
           return (
-            <li key={s.id} className="rounded-lg border border-gray-200 bg-white p-3 text-sm">
+            <li key={s.id} className="rounded-lg border border-hairline bg-surface p-3 text-sm">
               <div className="flex items-start justify-between gap-2">
                 <span>{s.label}</span>
                 <Badge tone={TONES[m.status]}>{t(`testerStatus.${m.status}`)}</Badge>

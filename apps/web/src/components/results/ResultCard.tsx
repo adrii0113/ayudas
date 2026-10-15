@@ -1,7 +1,7 @@
 "use client";
 
 import type { BenefitMatch } from "@tetoca/core";
-import { AlertCircle, CheckCircle2, ExternalLink, HelpCircle } from "lucide-react";
+import { AlertCircle, CheckCircle2, ChevronRight, ExternalLink, HelpCircle } from "lucide-react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { Badge } from "@/components/ui/badge";
@@ -30,11 +30,20 @@ function ReqList({
   );
 }
 
+function Summary({ children }: { children: React.ReactNode }) {
+  return (
+    <summary className="pressable flex cursor-pointer items-center gap-1.5 rounded-lg font-semibold">
+      <ChevronRight aria-hidden className="disclosure-chevron size-4 text-muted" />
+      {children}
+    </summary>
+  );
+}
+
 export function ResultCard({ match, today }: { match: BenefitMatch; today: string }) {
   const t = useTranslations();
   const { benefit } = match;
   return (
-    <li className="space-y-4 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
+    <li className="space-y-5 rounded-3xl bg-surface p-6 shadow-card">
       <div className="space-y-2">
         <div className="flex flex-wrap gap-2">
           <Badge tone="brand">{t(`levels.${benefit.level}`)}</Badge>
@@ -44,7 +53,7 @@ export function ResultCard({ match, today }: { match: BenefitMatch; today: strin
         <p className="text-muted">{benefit.summary}</p>
       </div>
 
-      <dl className="grid gap-3 rounded-xl bg-gray-50 p-3 sm:grid-cols-2">
+      <dl className="grid gap-3 rounded-2xl bg-fill p-4 sm:grid-cols-2">
         <div>
           <dt className="text-sm text-muted">{t("benefit.amount")}</dt>
           <dd className="font-medium">{benefit.amount.text}</dd>
@@ -60,21 +69,21 @@ export function ResultCard({ match, today }: { match: BenefitMatch; today: strin
       {match.status === "almost" && match.failed.length ? (
         <div>
           <p className="font-semibold">{t("results.missing")}</p>
-          <ReqList items={match.failed} icon={AlertCircle} className="text-amber-700" />
+          <ReqList items={match.failed} icon={AlertCircle} className="text-warning-icon" />
         </div>
       ) : null}
 
       {match.unknown.length ? (
         <div>
           <p className="font-semibold">{t("results.unknownReqs")}</p>
-          <ReqList items={match.unknown} icon={HelpCircle} className="text-gray-500" />
+          <ReqList items={match.unknown} icon={HelpCircle} className="text-muted" />
         </div>
       ) : null}
 
       {match.met.length ? (
         <details>
-          <summary className="cursor-pointer font-semibold">{t("results.whyEligible")}</summary>
-          <div className="mt-2">
+          <Summary>{t("results.whyEligible")}</Summary>
+          <div className="mt-2 pl-5.5">
             <ReqList items={match.met} icon={CheckCircle2} className="text-brand-700" />
           </div>
         </details>
@@ -82,8 +91,8 @@ export function ResultCard({ match, today }: { match: BenefitMatch; today: strin
 
       {benefit.otherRequirements.length ? (
         <details>
-          <summary className="cursor-pointer font-semibold">{t("results.alsoRequired")}</summary>
-          <ul className="mt-2 list-disc space-y-1 pl-6">
+          <Summary>{t("results.alsoRequired")}</Summary>
+          <ul className="mt-2 list-disc space-y-1 pl-11 marker:text-muted">
             {benefit.otherRequirements.map((r) => (
               <li key={r}>{r}</li>
             ))}
@@ -93,8 +102,8 @@ export function ResultCard({ match, today }: { match: BenefitMatch; today: strin
 
       {benefit.documents.length ? (
         <details>
-          <summary className="cursor-pointer font-semibold">{t("results.documents")}</summary>
-          <ul className="mt-2 list-disc space-y-1 pl-6">
+          <Summary>{t("results.documents")}</Summary>
+          <ul className="mt-2 list-disc space-y-1 pl-11 marker:text-muted">
             {benefit.documents.map((d) => (
               <li key={d}>{d}</li>
             ))}
@@ -102,7 +111,7 @@ export function ResultCard({ match, today }: { match: BenefitMatch; today: strin
         </details>
       ) : null}
 
-      <div className="flex flex-col gap-2 sm:flex-row">
+      <div className="flex flex-col gap-2 pt-1 sm:flex-row">
         <a
           href={benefit.officialUrl}
           target="_blank"

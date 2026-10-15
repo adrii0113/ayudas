@@ -18,21 +18,21 @@ export default async function BenefitsIndexPage() {
   const benefits = await getPublishedBenefits();
   return (
     <div className="space-y-10">
-      <header className="space-y-2">
-        <h1 className="text-3xl font-bold">{t("index.title")}</h1>
-        <p className="text-lg text-muted">{t("index.lead")}</p>
+      <header className="rise-in space-y-3">
+        <h1 className="text-4xl font-bold">{t("index.title")}</h1>
+        <p className="text-xl text-muted">{t("index.lead")}</p>
       </header>
       {BENEFIT_CATEGORIES.map((category) => {
         const items = benefits.filter((b) => b.category === category);
         if (!items.length) return null;
         return (
           <section key={category} aria-labelledby={`cat-${category}`} className="space-y-4">
-            <h2 id={`cat-${category}`} className="text-2xl font-semibold">
+            <h2 id={`cat-${category}`} className="text-2xl font-bold">
               <Link href={`/ayudas/${CATEGORY_SLUGS[category]}`} className="hover:underline">
                 {t(`categories.${category}`)}
               </Link>
             </h2>
-            <ul className="grid gap-4">
+            <ul className="grid gap-4 md:grid-cols-2">
               {items.map((b) => (
                 <BenefitListItem key={b.slug} benefit={b} />
               ))}
