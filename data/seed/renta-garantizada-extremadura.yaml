@@ -1,0 +1,72 @@
+slug: renta-extremena-garantizada
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Renta Extremeña Garantizada"
+summary: >-
+  Prestación de la Junta de Extremadura para hogares sin ingresos suficientes para cubrir sus
+  necesidades básicas.
+level: regional
+region: EX
+category: income
+kind: permanent
+programType: cash_benefit
+agency: "Junta de Extremadura"
+amount:
+  type: variable
+  text: >-
+    Cantidad mensual que completa los ingresos del hogar hasta el mínimo que fija la comunidad;
+    depende del número de miembros.
+eligibility:
+  all:
+    - field: applicantAge
+      op: gte
+      value: 25
+      label: "Tener 25 años o más"
+      hard: true
+      source:
+        url: https://www.juntaex.es/w/5369
+        excerpt: >-
+          Tener cumplidos los 25 años de edad antes de la presentación de la solicitud de la
+          ayuda
+    - field: yearsRegisteredInRegion
+      op: gte
+      value: 1
+      label: "Llevar al menos seis meses empadronado en Extremadura"
+      source:
+        url: https://www.juntaex.es/w/5369
+        excerpt: >-
+          Estar empadronados y tener la residencia efectiva durante una suma mínima de seis
+          meses, de manera continuada, en cualquier municipio de la Comunidad Autónoma de
+          Extremadura
+    - field: annualHouseholdIncome
+      op: lt
+      value: {"mul": [{"ref": "imvAnnualBase"}, {"min": [2.2, {"add": [0.7, {"mul": [0.3, {"ref": "householdSize"}]}]}]}]}
+      label: "Ingresos del hogar muy bajos (referencia orientativa: renta garantizada del IMV para tu hogar)"
+      hard: true
+      source:
+        url: https://www.juntaex.es/w/5369
+        excerpt: >-
+          No disponer de una cantidad de ingresos, rentas o recursos económicos considerada
+          mínima para atender las necesidades básicas de una vida digna
+otherRequirements:
+  - "El umbral exacto de ingresos lo fija la normativa autonómica según los miembros del hogar; como referencia orientativa usamos la renta garantizada del Ingreso Mínimo Vital."
+  - "Es subsidiaria: antes hay que pedir las pensiones y prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital."
+  - "Implica acordar un itinerario o proyecto de inclusión con los servicios sociales."
+  - "Basta con ser mayor de 18 años en algunos supuestos (consulta la ficha oficial)."
+  - "Si llevas menos de un año empadronado, comprueba en la ficha oficial si cumples los seis meses."
+documents:
+  - "DNI o NIE de las personas del hogar"
+  - "Certificado de empadronamiento"
+  - "Justificantes de ingresos"
+steps:
+  - "Solicítala en los servicios sociales de atención social básica de tu municipio."
+officialUrl: https://www.juntaex.es/w/5369
+sources:
+  - url: https://www.juntaex.es/w/5369
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      No disponer de una cantidad de ingresos, rentas o recursos económicos considerada mínima
+      para atender las necesidades básicas de una vida digna
+faq: []

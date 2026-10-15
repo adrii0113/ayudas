@@ -1,0 +1,82 @@
+slug: renta-inclusion-social-galicia-risga
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Renta de inclusión social de Galicia (RISGA)"
+summary: >-
+  Prestación de la Xunta de Galicia para garantizar recursos de subsistencia a personas que
+  carecen de ellos y favorecer su inclusión social y laboral.
+level: regional
+region: GA
+category: income
+kind: permanent
+programType: cash_benefit
+agency: "Xunta de Galicia"
+amount:
+  type: variable
+  text: >-
+    Cantidad mensual que completa los ingresos del hogar hasta el mínimo que fija la comunidad;
+    depende del número de miembros.
+eligibility:
+  all:
+    - field: applicantAge
+      op: gt
+      value: 25
+      label: "Tener más de 25 años"
+      hard: true
+      source:
+        url: https://politicasocial.xunta.gal/es/areas/inclusion-social/ayudas-y-prestaciones/renta-de-inclusion-social-de-galicia-risga
+        excerpt: >-
+          Tener más de 25 años
+    - field: applicantAge
+      op: lt
+      value: 65
+      label: "Tener menos de 65 años"
+      hard: true
+      source:
+        url: https://politicasocial.xunta.gal/es/areas/inclusion-social/ayudas-y-prestaciones/renta-de-inclusion-social-de-galicia-risga
+        excerpt: >-
+          Tampoco podrán acceder a la Risga aquellas personas que tengan la edad mínima
+          establecida para que puedan solicitar una pensión no contributiva de jubilación (65
+          años cumplidos o más)
+    - field: yearsRegisteredInRegion
+      op: gte
+      value: 1
+      label: "Llevar al menos seis meses empadronado en Galicia"
+      source:
+        url: https://politicasocial.xunta.gal/es/areas/inclusion-social/ayudas-y-prestaciones/renta-de-inclusion-social-de-galicia-risga
+        excerpt: >-
+          estar empadronada en cualquiera de los ayuntamientos de la Comunidad Autónoma gallega,
+          por lo menos durante los 6 meses anteriores a la presentación de la solicitud de
+          valoración
+    - field: annualHouseholdIncome
+      op: lt
+      value: {"mul": [{"ref": "imvAnnualBase"}, {"min": [2.2, {"add": [0.7, {"mul": [0.3, {"ref": "householdSize"}]}]}]}]}
+      label: "Ingresos del hogar muy bajos (referencia orientativa: renta garantizada del IMV para tu hogar)"
+      hard: true
+      source:
+        url: https://politicasocial.xunta.gal/es/areas/inclusion-social/ayudas-y-prestaciones/renta-de-inclusion-social-de-galicia-risga
+        excerpt: >-
+          destinada a garantizar recursos económicos de subsistencia a aquellas personas que
+          carezcan de ellos
+otherRequirements:
+  - "El umbral exacto de ingresos lo fija la normativa autonómica según los miembros del hogar; como referencia orientativa usamos la renta garantizada del Ingreso Mínimo Vital."
+  - "Es subsidiaria: antes hay que pedir las pensiones y prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital."
+  - "Implica acordar un itinerario o proyecto de inclusión con los servicios sociales."
+  - "Requiere una valoración de los servicios sociales sobre la situación de exclusión."
+  - "Si llevas menos de un año empadronado, comprueba en la ficha oficial si cumples los seis meses."
+documents:
+  - "DNI o NIE de las personas del hogar"
+  - "Certificado de empadronamiento"
+  - "Justificantes de ingresos"
+steps:
+  - "Solicítala a través de los servicios sociales comunitarios de tu ayuntamiento."
+officialUrl: https://politicasocial.xunta.gal/es/areas/inclusion-social/ayudas-y-prestaciones/renta-de-inclusion-social-de-galicia-risga
+sources:
+  - url: https://politicasocial.xunta.gal/es/areas/inclusion-social/ayudas-y-prestaciones/renta-de-inclusion-social-de-galicia-risga
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      destinada a garantizar recursos económicos de subsistencia a aquellas personas que
+      carezcan de ellos
+faq: []

@@ -1,0 +1,68 @@
+slug: renta-garantizada-ciudadania-cataluna
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Renta garantizada de ciudadanía (Cataluña)"
+summary: >-
+  Prestación de la Generalitat de Catalunya para personas y hogares sin ingresos suficientes,
+  complementaria al Ingreso Mínimo Vital.
+level: regional
+region: CT
+category: income
+kind: permanent
+programType: cash_benefit
+agency: "Generalitat de Catalunya"
+amount:
+  type: variable
+  text: >-
+    Cantidad mensual que completa los ingresos del hogar hasta el mínimo que fija la comunidad;
+    depende del número de miembros.
+eligibility:
+  all:
+    - field: applicantAge
+      op: gt
+      value: 23
+      label: "Tener más de 23 años"
+      hard: true
+      source:
+        url: https://tramits.gencat.cat/es/tramits/tramits-temes/rgc-i-complement-activables
+        excerpt: >-
+          Tener más de 23 años
+    - field: yearsRegisteredInRegion
+      op: gte
+      value: 2
+      label: "Llevar al menos dos años viviendo en Cataluña"
+      source:
+        url: https://tramits.gencat.cat/es/tramits/tramits-temes/rgc-i-complement-activables
+        excerpt: >-
+          Haber residido de manera continuada y efectiva en Catalunya durante los 2 años
+          anteriores a la solicitud
+    - field: annualHouseholdIncome
+      op: lt
+      value: {"mul": [{"ref": "imvAnnualBase"}, {"min": [2.2, {"add": [0.7, {"mul": [0.3, {"ref": "householdSize"}]}]}]}]}
+      label: "Ingresos del hogar muy bajos (referencia orientativa: renta garantizada del IMV para tu hogar)"
+      hard: true
+      source:
+        url: https://tramits.gencat.cat/es/tramits/tramits-temes/rgc-i-complement-activables
+        excerpt: >-
+          Estar empadronado en Catalunya en el momento de presentar la solicitud
+otherRequirements:
+  - "El umbral exacto de ingresos lo fija la normativa autonómica según los miembros del hogar; como referencia orientativa usamos la renta garantizada del Ingreso Mínimo Vital."
+  - "Es subsidiaria: antes hay que pedir las pensiones y prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital."
+  - "Implica acordar un itinerario o proyecto de inclusión con los servicios sociales."
+  - "Entre 18 y 22 años también se puede pedir en algunos casos (por ejemplo, con menores o personas con discapacidad a cargo)."
+  - "Hay que haber pedido antes el Ingreso Mínimo Vital."
+documents:
+  - "DNI o NIE de las personas del hogar"
+  - "Certificado de empadronamiento"
+  - "Justificantes de ingresos"
+steps:
+  - "Solicítala en el portal de trámites de la Generalitat (tramits.gencat.cat)."
+officialUrl: https://tramits.gencat.cat/es/tramits/tramits-temes/rgc-i-complement-activables
+sources:
+  - url: https://tramits.gencat.cat/es/tramits/tramits-temes/rgc-i-complement-activables
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      Estar empadronado en Catalunya en el momento de presentar la solicitud
+faq: []

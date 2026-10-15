@@ -1023,9 +1023,51 @@
     "findings": [],
     "models": []
   },
+  "renta-extremena-garantizada": {
+    "version": 1,
+    "contentHash": "4de030a6c119a69b87610799d9b86d5f9844a8b38a45d8ebdf201a7f77b258e1",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "pass"
+    },
+    "findings": [],
+    "models": []
+  },
   "renta-garantizada-ciudadania-castilla-y-leon": {
     "version": 2,
     "contentHash": "f33e5e1d0aafa4fa880b843bf52cead7a357a6c964b0ab3e2f1d38c490aace46",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "pass"
+    },
+    "findings": [],
+    "models": []
+  },
+  "renta-garantizada-ciudadania-cataluna": {
+    "version": 1,
+    "contentHash": "ae174d642334245e576de5c7d58776176a97faeab1d660820d71ce877bdc2dba",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "pass"
+    },
+    "findings": [],
+    "models": []
+  },
+  "renta-inclusion-social-galicia-risga": {
+    "version": 1,
+    "contentHash": "fdf6738fcf41920a44d9784d8225f693d75e987ba62351e7531960db3a8589ed",
     "passed": true,
     "checkedAt": "2026-10-15",
     "agents": {
