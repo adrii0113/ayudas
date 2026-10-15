@@ -6,18 +6,21 @@ import {
   deriveProgramType,
   editionStatus,
   needsHumanReview,
+  territoryAncestors,
   territoryId,
   todayInSpain,
   type AdminLevel,
   type Benefit,
   type TrustLevel,
 } from "@tetoca/core";
-import { and, eq, inArray, sql } from "drizzle-orm";
+import { and, asc, desc, eq, inArray, isNotNull, isNull, lt, sql } from "drizzle-orm";
+import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { findRepoRoot } from "./catalog";
 import type { Database } from "./client";
-import { benefits, editions, parameters, programs, territories } from "./schema";
+import { stableStringify } from "./stable";
+import { benefits, editions, organisms, parameters, programs, territories } from "./schema";
 
 type NewTerritory = typeof territories.$inferInsert;
 
@@ -209,4 +212,194 @@ export async function countByTrustLevel(db: Database) {
 export async function getTerritories(db: Database, ids: string[]) {
   if (!ids.length) return [];
   return db.select().from(territories).where(inArray(territories.id, ids));
+}
+
+export type DetectedEditionInput = {
+  /** BDNS code; unique per edition. */
+  bdnsCode: string;
+  title: string;
+  publishedAt: string | null;
+  programType: (typeof programs.$inferInsert)["type"];
+  /** Territory the program applies to (narrowest known). */
+  territoryId: string;
+  organism: {
+    adminLevel: AdminLevel;
+    sourceKey: string;
+    name: string;
+    parentName: string | null;
+    territoryId: string;
+  };
+  detail?: {
+    territoryIds: string[];
+    beneficiaryTypes: string[];
+    status: (typeof editions.$inferInsert)["status"];
+    opensAt: string | null;
+    closesAt: string | null;
+    windowText: string | null;
+    budgetTotal: number | null;
+    officialUrl: string | null;
+    regulatoryBasesUrl: string | null;
+    raw: Record<string, unknown>;
+  };
+};
+
+/** Closest ancestor of a territory id that exists in the table. */
+async function existingTerritory(db: Database, id: string): Promise<string> {
+  const chain = territoryAncestors(id);
+  const rows = await db
+    .select({ id: territories.id })
+    .from(territories)
+    .where(inArray(territories.id, chain));
+  const present = new Set(rows.map((r) => r.id));
+  return chain.find((t) => present.has(t)) ?? "es";
+}
+
+export async function upsertOrganism(db: Database, o: DetectedEditionInput["organism"]) {
+  const territory = await existingTerritory(db, o.territoryId);
+  const [row] = await db
+    .insert(organisms)
+    .values({ ...o, territoryId: territory })
+    .onConflictDoUpdate({
+      target: organisms.sourceKey,
+      set: { name: o.name, parentName: o.parentName, territoryId: territory },
+    })
+    .returning({ id: organisms.id });
+  return row!.id;
+}
+
+/**
+ * Registers a call detected in an official source. New calls create a
+ * `detected` program; known ones refresh their metadata. Programs above
+ * `detected` (curated or verified) are never overwritten by raw source data,
+ * but a change in the source is reported so verification can re-run.
+ */
+export async function upsertDetectedEdition(
+  db: Database,
+  input: DetectedEditionInput,
+): Promise<{ programId: string; editionId: string; created: boolean; sourceChanged: boolean }> {
+  const organismId = await upsertOrganism(db, input.organism);
+  const territory = await existingTerritory(db, input.territoryId);
+  const d = input.detail;
+  const sourceHash = d ? createHash("sha256").update(stableStringify(d.raw)).digest("hex") : null;
+  const detailFields = d
+    ? {
+        status: d.status,
+        opensAt: d.opensAt,
+        closesAt: d.closesAt,
+        windowText: d.windowText,
+        budgetTotal: d.budgetTotal === null ? null : String(d.budgetTotal),
+        officialUrl: d.officialUrl,
+        regulatoryBasesUrl: d.regulatoryBasesUrl,
+        beneficiaryTypes: d.beneficiaryTypes,
+        territoryIds: d.territoryIds,
+        sourceMetadata: d.raw,
+        sourceHash,
+      }
+    : {};
+
+  const [existing] = await db.select().from(editions).where(eq(editions.bdnsCode, input.bdnsCode));
+  if (existing) {
+    const sourceChanged =
+      !!sourceHash && !!existing.sourceHash && existing.sourceHash !== sourceHash;
+    await db
+      .update(editions)
+      .set({
+        title: input.title,
+        publishedAt: input.publishedAt,
+        lastSeenAt: new Date(),
+        ...detailFields,
+      })
+      .where(eq(editions.id, existing.id));
+    await db
+      .update(programs)
+      .set({
+        title: input.title,
+        type: input.programType,
+        territoryId: territory,
+        organismId,
+        ...(d ? { beneficiaryTypes: d.beneficiaryTypes } : {}),
+        updatedAt: new Date(),
+      })
+      .where(and(eq(programs.id, existing.programId), eq(programs.trustLevel, "detected")));
+    return { programId: existing.programId, editionId: existing.id, created: false, sourceChanged };
+  }
+
+  return db.transaction(async (tx) => {
+    const [program] = await tx
+      .insert(programs)
+      .values({
+        slug: `bdns-${input.bdnsCode}`,
+        title: input.title,
+        type: input.programType,
+        beneficiaryTypes: d?.beneficiaryTypes ?? [],
+        adminLevel: input.organism.adminLevel,
+        territoryId: territory,
+        organismId,
+        trustLevel: "detected",
+      })
+      .onConflictDoUpdate({ target: programs.slug, set: { updatedAt: new Date() } })
+      .returning({ id: programs.id });
+    const [edition] = await tx
+      .insert(editions)
+      .values({
+        programId: program!.id,
+        title: input.title,
+        bdnsCode: input.bdnsCode,
+        period: input.publishedAt?.slice(0, 4) ?? null,
+        publishedAt: input.publishedAt,
+        ...detailFields,
+      })
+      .returning({ id: editions.id });
+    return { programId: program!.id, editionId: edition!.id, created: true, sourceChanged: false };
+  });
+}
+
+/** Editions known only from search results (no detail fetched yet). */
+export async function listEditionsWithoutDetail(db: Database, limit = 500) {
+  return db
+    .select({ bdnsCode: editions.bdnsCode })
+    .from(editions)
+    .where(and(isNull(editions.sourceMetadata), isNotNull(editions.bdnsCode)))
+    .orderBy(desc(editions.publishedAt))
+    .limit(limit)
+    .then((rows) => rows.map((r) => r.bdnsCode!));
+}
+
+/** Open or undated editions not refreshed since `before` (deadlines move). */
+export async function listEditionsToRefresh(db: Database, before: Date, limit = 500) {
+  return db
+    .select({ bdnsCode: editions.bdnsCode })
+    .from(editions)
+    .where(
+      and(
+        isNotNull(editions.bdnsCode),
+        inArray(editions.status, ["open", "announced", "unknown"]),
+        lt(editions.lastSeenAt, before),
+      ),
+    )
+    .orderBy(asc(editions.lastSeenAt))
+    .limit(limit)
+    .then((rows) => rows.map((r) => r.bdnsCode!));
+}
+
+export async function registryStats(db: Database) {
+  const [counts] = await db
+    .select({
+      programs: sql<number>`(select count(*)::int from programs)`,
+      editions: sql<number>`(select count(*)::int from editions)`,
+      organisms: sql<number>`(select count(*)::int from organisms)`,
+      withoutDetail: sql<number>`(select count(*)::int from editions where source_metadata is null and bdns_code is not null)`,
+    })
+    .from(sql`(select 1) as one`);
+  return counts!;
+}
+
+export async function getProgramBySlug(db: Database, slug: string) {
+  const [row] = await db.select().from(programs).where(eq(programs.slug, slug));
+  return row;
+}
+
+export async function getEditionByBdnsCode(db: Database, bdnsCode: string) {
+  const [row] = await db.select().from(editions).where(eq(editions.bdnsCode, bdnsCode));
+  return row;
 }

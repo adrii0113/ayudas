@@ -2,6 +2,9 @@ import { benefitContentSchema, type Benefit, type BenefitContent } from "@tetoca
 import { and, asc, desc, eq, max } from "drizzle-orm";
 import type { Database } from "./client";
 import { linkBenefitToRegistry } from "./registry";
+import { stableStringify } from "./stable";
+
+export { stableStringify };
 import { benefits } from "./schema";
 
 type BenefitRow = typeof benefits.$inferSelect;
@@ -131,15 +134,6 @@ export async function archiveBenefit(db: Database, id: string): Promise<void> {
     .update(benefits)
     .set({ status: "archived", updatedAt: new Date() })
     .where(eq(benefits.id, id));
-}
-
-/** JSON with sorted keys (Postgres jsonb does not preserve key order). */
-export function stableStringify(value: unknown): string {
-  return JSON.stringify(value, (_key, v: unknown) =>
-    v && typeof v === "object" && !Array.isArray(v)
-      ? Object.fromEntries(Object.entries(v).sort(([a], [b]) => a.localeCompare(b)))
-      : v,
-  );
 }
 
 export type SeedOutcome = "inserted" | "unchanged" | "conflict";

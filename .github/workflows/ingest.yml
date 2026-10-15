@@ -23,5 +23,9 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm --filter @tetoca/db db:migrate
+      # National radar: every new call in Spain as a `detected` record (~200/day),
+      # plus a slice of the historical backfill and open calls whose data may change.
+      - run: pnpm --filter @tetoca/ingestion radar:bdns --details 3000
+        timeout-minutes: 180
       - run: pnpm --filter @tetoca/ingestion ingest:bdns --limit 100
       - run: pnpm --filter @tetoca/extraction extract --limit 20

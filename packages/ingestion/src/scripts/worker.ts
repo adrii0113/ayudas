@@ -3,6 +3,8 @@
  *
  *   pnpm --filter @tetoca/ingestion worker
  *
+ * - "radar-bdns": daily at 05:00, registers every new BDNS call in Spain
+ *   (all administrations and beneficiaries) as `detected`, and refreshes open calls.
  * - "ingest-bdns": daily at 06:00 (Europe/Madrid), stores new calls and
  *   enqueues one "extract-document" job per new readable document.
  * - "extract-document": LLM extraction into a draft (needs ANTHROPIC_API_KEY).
@@ -12,13 +14,17 @@
  * GitHub Action instead (see .github/workflows/ingest.yml).
  */
 import { createMailer, runAlerts } from "@tetoca/alerts";
-import { REGIONS } from "@tetoca/core";
-import { createDb, encryptionKey } from "@tetoca/db";
+import { REGIONS, todayInSpain } from "@tetoca/core";
+import { createDb, encryptionKey, loadMunicipalities, seedTerritories } from "@tetoca/db";
 import { extractDocument } from "@tetoca/extraction";
 import { AnthropicProvider } from "@tetoca/llm";
 import { PgBoss } from "pg-boss";
+import { BdnsClient } from "../bdns/client";
 import { ingestBdns } from "../bdns/ingest";
+import { buildMunicipalityIndex } from "../bdns/normalize";
+import { runBdnsRadar } from "../bdns/radar";
 
+const RADAR = "radar-bdns";
 const INGEST = "ingest-bdns";
 const EXTRACT = "extract-document";
 const ALERTS = "send-alerts";
@@ -30,9 +36,26 @@ const db = createDb(url);
 const boss = new PgBoss(url);
 boss.on("error", (err) => console.error("pg-boss error", err));
 await boss.start();
+await boss.createQueue(RADAR);
 await boss.createQueue(INGEST);
 await boss.createQueue(EXTRACT);
+await boss.schedule(RADAR, "0 5 * * *", null, { tz: "Europe/Madrid" });
 await boss.schedule(INGEST, "0 6 * * *", null, { tz: "Europe/Madrid" });
+
+const municipalityIndex = buildMunicipalityIndex(loadMunicipalities());
+await boss.work<null>(RADAR, async () => {
+  await seedTerritories(db);
+  await runBdnsRadar({
+    db,
+    client: new BdnsClient(),
+    municipalities: municipalityIndex,
+    from: new Date(Date.now() - 3 * 86_400_000).toISOString().slice(0, 10),
+    maxDetails: 3000,
+    refreshBefore: new Date(Date.now() - 7 * 86_400_000),
+    today: todayInSpain(),
+    log: console.log,
+  });
+});
 
 await boss.work<null>(INGEST, async () => {
   const since = new Date(Date.now() - 14 * 24 * 3600 * 1000).toISOString().slice(0, 10);
