@@ -1,0 +1,54 @@
+slug: deduccion-nacimiento-adopcion-region-de-murcia
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por nacimiento o adopción (Región de Murcia)"
+summary: >-
+  Deducción en el tramo autonómico del IRPF por cada hijo nacido o adoptado en el año: 100 € por
+  el primero, 200 € por el segundo y 300 € a partir del tercero.
+level: regional
+region: MC
+category: birth
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Región de Murcia"
+amount:
+  type: range
+  min: 100
+  max: 300
+  text: >-
+    100 € (1.º hijo), 200 € (2.º) y 300 € (3.º y siguientes).
+eligibility:
+  all:
+    - field: youngestChildAge
+      op: eq
+      value: 0
+      label: "Haber tenido o adoptado un hijo este año"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/nacimiento-adopcion.html
+        excerpt: >-
+          por cada hijo nacido o adoptado en el período impositivo en el que se produzca el
+          nacimiento o la adopción
+    - field: annualHouseholdIncome
+      op: lte
+      value: 50000
+      label: "Renta de hasta 30.000 € en declaración individual (50.000 € en conjunta)"
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/nacimiento-adopcion.html
+        excerpt: >-
+          30.000 euros en declaración individual. [...] 50.000 euros en declaración conjunta.
+otherRequirements: []
+documents:
+  - "Libro de familia o certificado de nacimiento / resolución de adopción"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Región de Murcia)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/nacimiento-adopcion.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/nacimiento-adopcion.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      100 euros si se trata del primer hijo. 200 euros si se trata del segundo hijo. 300 euros
+      si se trata del tercer hijo o sucesivos.
+faq: []

@@ -407,6 +407,20 @@
     "findings": [],
     "models": []
   },
+  "deduccion-alquiler-jovenes-la-rioja": {
+    "version": 1,
+    "contentHash": "45570a469c01f1e14ee7749cddc22e815a8ea57dac3a888376dd109e21cae2dc",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
   "deduccion-alquiler-vivienda-habitual-andalucia": {
     "version": 1,
     "contentHash": "43e928e0fae6694494c48e160e8250ddd0ad83870aecc9f690e6df97cd14ae44",
@@ -477,6 +491,20 @@
     "findings": [],
     "models": []
   },
+  "deduccion-alquiler-vivienda-habitual-extremadura": {
+    "version": 1,
+    "contentHash": "0ca45fda146beae21afbd781cb970dead1424265ab80706e5b39c79b21a5b181",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
   "deduccion-alquiler-vivienda-habitual-illes-balears": {
     "version": 1,
     "contentHash": "2ab6255b39e7d8b1a625074988920799ded4079d226bb70aadd635c63b71564c",
@@ -494,6 +522,20 @@
   "deduccion-alquiler-vivienda-habitual-madrid": {
     "version": 1,
     "contentHash": "456df6defadf99773ecdae3c538526a83721f3df19962cb11e5924370d76ec66",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-alquiler-vivienda-habitual-region-de-murcia": {
+    "version": 1,
+    "contentHash": "4ff68229e6fc55fdadf77b25dfbd2a84c10470c7fb7ee416dd4f55f15f394215",
     "passed": true,
     "checkedAt": "2026-10-15",
     "agents": {
@@ -673,6 +715,20 @@
     "findings": [],
     "models": []
   },
+  "deduccion-familia-numerosa-monoparental-comunitat-valenciana": {
+    "version": 1,
+    "contentHash": "fdfb5821aec040c23369ece9001c435ee9d2116a7605bc1af553f9d4416976b5",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
   "deduccion-maternidad": {
     "version": 2,
     "contentHash": "e1013260e696064a9cce598b7ae2a88d7592b5bafc51a906dfaa866d12209ee9",
@@ -771,6 +827,20 @@
     "findings": [],
     "models": []
   },
+  "deduccion-nacimiento-adopcion-comunitat-valenciana": {
+    "version": 1,
+    "contentHash": "9b4cab7482fc67dfed94c9915279e020c07ca14257d5cdbb3bce7af41b08f507",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
   "deduccion-nacimiento-adopcion-galicia": {
     "version": 1,
     "contentHash": "1d014521154ae231a5e7ab348f5cd61c60cc8bb90c2f21fde5ea8c9d3cdb0c14",
@@ -785,9 +855,37 @@
     "findings": [],
     "models": []
   },
+  "deduccion-nacimiento-adopcion-la-rioja": {
+    "version": 1,
+    "contentHash": "117454256f8e01c3f2ecf9e9dee70fcf8beed2071ff9861958d31550b494c096",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
   "deduccion-nacimiento-adopcion-madrid": {
     "version": 1,
     "contentHash": "bba0056a7b70942369a2d43a20b87ef58f59e5949f9ef4d60cc6b351ba75fd8f",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-nacimiento-adopcion-region-de-murcia": {
+    "version": 1,
+    "contentHash": "11d958b21e66dbacce99ef75d6d85a1725e72d7f3af48dade7fa8b11e21f3eb4",
     "passed": true,
     "checkedAt": "2026-10-15",
     "agents": {

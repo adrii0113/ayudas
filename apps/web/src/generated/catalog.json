@@ -674,6 +674,840 @@
     "verifiedAt": "2026-10-15"
   },
   {
+    "slug": "deduccion-alquiler-vivienda-habitual-andalucia",
+    "title": "Deducción autonómica por alquiler de vivienda habitual (Andalucía)",
+    "summary": "Deducción del 15 % del alquiler de tu vivienda habitual, hasta 1.200 € al año (1.500 € con discapacidad), para menores de 35 años, mayores de 65 o personas con discapacidad.",
+    "level": "regional",
+    "region": "AN",
+    "category": "housing",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Andalucía",
+    "amount": {
+      "type": "range",
+      "max": 1500,
+      "text": "15 % de lo que pagas de alquiler, con un máximo de 1.200 € al año (1.500 € si tienes discapacidad)."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "housing",
+          "op": "eq",
+          "value": "renting",
+          "label": "Vivir de alquiler en tu vivienda habitual",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/cantidades-invertidas-alquiler-vivienda-habitual.html",
+            "excerpt": "El 15 por 100 de las cantidades satisfechas en el período impositivo por el alquiler de la vivienda habitual del contribuyente"
+          }
+        },
+        {
+          "any": [
+            {
+              "field": "applicantAge",
+              "op": "lt",
+              "value": 35,
+              "label": "Tener menos de 35 años",
+              "source": {
+                "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/cantidades-invertidas-alquiler-vivienda-habitual.html",
+                "excerpt": "Contribuyentes que, a la fecha de devengo del impuesto, no hayan cumplido los 35 años de edad"
+              }
+            },
+            {
+              "field": "applicantAge",
+              "op": "gt",
+              "value": 65,
+              "label": "Tener más de 65 años",
+              "source": {
+                "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/cantidades-invertidas-alquiler-vivienda-habitual.html",
+                "excerpt": "Contribuyentes que, a la fecha de devengo del impuesto, sean mayores de 65 años"
+              }
+            },
+            {
+              "field": "applicantDisabilityPercent",
+              "op": "gte",
+              "value": 33,
+              "label": "Tener una discapacidad reconocida",
+              "source": {
+                "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/cantidades-invertidas-alquiler-vivienda-habitual.html",
+                "excerpt": "Contribuyentes que, a la fecha de devengo del impuesto, tenga la consideración de personas con discapacidad"
+              }
+            }
+          ],
+          "label": "Tener menos de 35 años, más de 65 o una discapacidad reconocida",
+          "hard": true
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lte",
+          "value": 30000,
+          "label": "Renta de hasta 25.000 € en declaración individual (30.000 € en conjunta)",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/cantidades-invertidas-alquiler-vivienda-habitual.html",
+            "excerpt": "25.000 euros en tributación individual. [...] 30.000 euros en tributación conjunta."
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "También pueden aplicarla las víctimas de violencia doméstica o de terrorismo.",
+      "Tienes que identificar al arrendador con su NIF en la declaración."
+    ],
+    "documents": [
+      "Contrato de alquiler",
+      "Justificantes de pago del alquiler"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Andalucía)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/cantidades-invertidas-alquiler-vivienda-habitual.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/cantidades-invertidas-alquiler-vivienda-habitual.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "El 15 por 100 de las cantidades satisfechas en el período impositivo por el alquiler de la vivienda habitual del contribuyente"
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-alquiler-vivienda-habitual-andalucia",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-alquiler-vivienda-habitual-asturias",
+    "title": "Deducción autonómica por alquiler de vivienda habitual (Asturias)",
+    "summary": "Deducción del 10 % del alquiler de tu vivienda habitual (hasta 500 €), o del 30 % (hasta 1.500 €) para jóvenes de hasta 35 años, familias numerosas o monoparentales.",
+    "level": "regional",
+    "region": "AS",
+    "category": "housing",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Principado de Asturias",
+    "amount": {
+      "type": "range",
+      "max": 1500,
+      "text": "10 % del alquiler, hasta 500 € al año. 30 %, hasta 1.500 €, para jóvenes de hasta 35 años, familias numerosas, familias monoparentales y víctimas de violencia de género."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "housing",
+          "op": "eq",
+          "value": "renting",
+          "label": "Vivir de alquiler en tu vivienda habitual",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-principado-asturias/arrendamiento-vivienda-habitual.html",
+            "excerpt": "El 10 por 100 de las cantidades satisfechas en el período impositivo por alquiler de la vivienda habitual del contribuyente"
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lte",
+          "value": 45000,
+          "label": "Renta de hasta 35.000 € en declaración individual (45.000 € en conjunta)",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-principado-asturias/arrendamiento-vivienda-habitual.html",
+            "excerpt": "35.000 euros en tributación individual. [...] 45.000 euros en tributación conjunta."
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "El límite de renta se refiere a la suma de las bases imponibles general y del ahorro."
+    ],
+    "documents": [
+      "Contrato de alquiler",
+      "Justificantes de pago del alquiler"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Principado de Asturias)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-principado-asturias/arrendamiento-vivienda-habitual.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-principado-asturias/arrendamiento-vivienda-habitual.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "El 10 por 100 de las cantidades satisfechas en el período impositivo por alquiler de la vivienda habitual del contribuyente, con un máximo de 500 euros"
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-alquiler-vivienda-habitual-asturias",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-alquiler-vivienda-habitual-illes-balears",
+    "title": "Deducción autonómica por alquiler de vivienda habitual (Illes Balears)",
+    "summary": "Deducción del 15 % del alquiler de tu vivienda habitual, hasta 530 € al año, si tienes menos de 36 años o más de 65 sin actividad laboral.",
+    "level": "regional",
+    "region": "IB",
+    "category": "housing",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Illes Balears",
+    "amount": {
+      "type": "range",
+      "max": 530,
+      "text": "15 % del alquiler, con un máximo de 530 € al año (hay importes mayores en otros supuestos, consulta la ficha oficial)."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "housing",
+          "op": "eq",
+          "value": "renting",
+          "label": "Vivir de alquiler en tu vivienda habitual",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/arrendamiento-vivienda-habitual.html",
+            "excerpt": "El 15 por 100 de los importes satisfechos en el período impositivo por el arrendamiento de una vivienda habitual en el territorio de las Illes Balears"
+          }
+        },
+        {
+          "any": [
+            {
+              "field": "applicantAge",
+              "op": "lt",
+              "value": 36,
+              "label": "Tener menos de 36 años",
+              "source": {
+                "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/arrendamiento-vivienda-habitual.html",
+                "excerpt": "Sean menores de 36 años"
+              }
+            },
+            {
+              "field": "applicantAge",
+              "op": "gt",
+              "value": 65,
+              "label": "Tener más de 65 años (sin actividad laboral)",
+              "source": {
+                "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/arrendamiento-vivienda-habitual.html",
+                "excerpt": "Sean mayores de 65 años y no ejerzan ninguna actividad laboral o profesional"
+              }
+            }
+          ],
+          "label": "Tener menos de 36 años o más de 65 sin trabajar",
+          "hard": true
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lte",
+          "value": 52800,
+          "label": "Renta de hasta 33.000 € en declaración individual (52.800 € en conjunta)",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/arrendamiento-vivienda-habitual.html",
+            "excerpt": "33.000 euros en tributación individual. [...] 52.800 euros en tributación conjunta"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Las personas mayores de 65 años no pueden ejercer actividad laboral o profesional.",
+      "Para familias numerosas o monoparentales con dos o más hijos, los límites de renta son mayores."
+    ],
+    "documents": [
+      "Contrato de alquiler",
+      "Justificantes de pago del alquiler"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Illes Balears)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/arrendamiento-vivienda-habitual.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/arrendamiento-vivienda-habitual.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "El 15 por 100 de los importes satisfechos en el período impositivo por el arrendamiento de una vivienda habitual en el territorio de las Illes Balears"
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-alquiler-vivienda-habitual-illes-balears",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-alquiler-vivienda-habitual-canarias",
+    "title": "Deducción autonómica por alquiler de vivienda habitual (Canarias)",
+    "summary": "Deducción del 24 % del alquiler de tu vivienda habitual, hasta 740 € al año (760 € si tienes menos de 40 años o 75 o más).",
+    "level": "regional",
+    "region": "CN",
+    "category": "housing",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Canarias",
+    "amount": {
+      "type": "range",
+      "max": 760,
+      "text": "24 % de lo que pagas de alquiler, hasta 740 € al año (760 € si tienes menos de 40 años o 75 o más)."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "housing",
+          "op": "eq",
+          "value": "renting",
+          "label": "Vivir de alquiler en tu vivienda habitual",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/alquiler-vivienda-habitual.html",
+            "excerpt": "El 24 por 100 de las cantidades satisfechas en el período impositivo por el alquiler de la vivienda habitual."
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lte",
+          "value": 61770,
+          "label": "Renta de hasta 46.455 € en declaración individual (61.770 € en conjunta)",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/alquiler-vivienda-habitual.html",
+            "excerpt": "46.455 euros anuales en tributación individual. [...] 61.770 euros anuales en tributación conjunta."
+          }
+        },
+        {
+          "field": "monthlyRent",
+          "op": "gt",
+          "value": {
+            "mul": [
+              0.0083333,
+              {
+                "ref": "annualHouseholdIncome"
+              }
+            ]
+          },
+          "label": "Pagar de alquiler más del 10 % de tus ingresos",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/alquiler-vivienda-habitual.html",
+            "excerpt": "excedan del 10 por 100 de la suma de la base imponible general y la base imponible del ahorro"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "El contrato debe ser de tu vivienda habitual y durar al menos un año."
+    ],
+    "documents": [
+      "Contrato de alquiler",
+      "Justificantes de pago del alquiler"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Canarias)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/alquiler-vivienda-habitual.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/alquiler-vivienda-habitual.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "El 24 por 100 de las cantidades satisfechas en el período impositivo por el alquiler de la vivienda habitual. El importe máximo de la deducción será de 740 euros anuales por contribuyente."
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-alquiler-vivienda-habitual-canarias",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-alquiler-vivienda-habitual-cantabria",
+    "title": "Deducción autonómica por alquiler de vivienda habitual de jóvenes, mayores y personas con discapacidad (Cantabria)",
+    "summary": "Deducción del 10 % del alquiler de tu vivienda habitual (hasta 300 € al año) si tienes menos de 36 años, 65 o más, o una discapacidad del 65 % o más.",
+    "level": "regional",
+    "region": "CB",
+    "category": "housing",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Cantabria",
+    "amount": {
+      "type": "range",
+      "max": 600,
+      "text": "10 % del alquiler, hasta 300 € al año en declaración individual (600 € en conjunta)."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "housing",
+          "op": "eq",
+          "value": "renting",
+          "label": "Vivir de alquiler en tu vivienda habitual",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/arrendamiento-vivienda-habitual-jovenes-mayores-discapacidad.html",
+            "excerpt": "El 10 por 100 de las cantidades satisfechas en el período impositivo por el arrendamiento de la vivienda habitual"
+          }
+        },
+        {
+          "any": [
+            {
+              "field": "applicantAge",
+              "op": "lt",
+              "value": 36,
+              "label": "Tener menos de 36 años",
+              "source": {
+                "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/arrendamiento-vivienda-habitual-jovenes-mayores-discapacidad.html",
+                "excerpt": "Tener menos de 36 años cumplidos; 65 o más, o ser persona con discapacidad física, psíquica o sensorial con un grado de discapacidad igual o superior al 65 por 100"
+              }
+            },
+            {
+              "field": "applicantAge",
+              "op": "gte",
+              "value": 65,
+              "label": "Tener 65 años o más",
+              "source": {
+                "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/arrendamiento-vivienda-habitual-jovenes-mayores-discapacidad.html",
+                "excerpt": "Tener menos de 36 años cumplidos; 65 o más, o ser persona con discapacidad física, psíquica o sensorial con un grado de discapacidad igual o superior al 65 por 100"
+              }
+            },
+            {
+              "field": "applicantDisabilityPercent",
+              "op": "gte",
+              "value": 65,
+              "label": "Tener una discapacidad del 65 % o más",
+              "source": {
+                "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/arrendamiento-vivienda-habitual-jovenes-mayores-discapacidad.html",
+                "excerpt": "Tener menos de 36 años cumplidos; 65 o más, o ser persona con discapacidad física, psíquica o sensorial con un grado de discapacidad igual o superior al 65 por 100"
+              }
+            }
+          ],
+          "label": "Tener menos de 36 años, 65 o más, o una discapacidad del 65 % o más",
+          "hard": true
+        },
+        {
+          "field": "monthlyRent",
+          "op": "gt",
+          "value": {
+            "mul": [
+              0.0083333,
+              {
+                "ref": "annualHouseholdIncome"
+              }
+            ]
+          },
+          "label": "Pagar de alquiler más del 10 % de tus ingresos",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/arrendamiento-vivienda-habitual-jovenes-mayores-discapacidad.html",
+            "excerpt": "Que las cantidades satisfechas en concepto de alquiler excedan del 10 por 100 de la renta del contribuyente."
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "El pago del alquiler debe hacerse por medios bancarios, no en efectivo."
+    ],
+    "documents": [
+      "Contrato de alquiler",
+      "Justificantes bancarios del pago del alquiler"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Cantabria)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/arrendamiento-vivienda-habitual-jovenes-mayores-discapacidad.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/arrendamiento-vivienda-habitual-jovenes-mayores-discapacidad.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "El 10 por 100 de las cantidades satisfechas en el período impositivo por el arrendamiento de la vivienda habitual"
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-alquiler-vivienda-habitual-cantabria",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-alquiler-jovenes-castilla-la-mancha",
+    "title": "Deducción autonómica por alquiler de vivienda habitual para menores de 36 años (Castilla-La Mancha)",
+    "summary": "Deducción del 15 % del alquiler de tu vivienda habitual (hasta 500 €; 20 % y hasta 612 € en municipios pequeños) si tienes menos de 36 años.",
+    "level": "regional",
+    "region": "CM",
+    "category": "housing",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Castilla-La Mancha",
+    "amount": {
+      "type": "range",
+      "max": 612,
+      "text": "15 % del alquiler, hasta 500 € al año; 20 %, hasta 612 €, si vives en un municipio pequeño de Castilla-La Mancha."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "housing",
+          "op": "eq",
+          "value": "renting",
+          "label": "Vivir de alquiler en tu vivienda habitual",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/arrendamiento-vivienda-habitual-menores-36-anos.html",
+            "excerpt": "El 15 por 100 de las cantidades satisfechas por el arrendamiento de la vivienda que constituya o vaya a constituir su residencia habitual en Castilla-La Mancha"
+          }
+        },
+        {
+          "field": "applicantAge",
+          "op": "lt",
+          "value": 36,
+          "label": "Tener menos de 36 años",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/arrendamiento-vivienda-habitual-menores-36-anos.html",
+            "excerpt": "el contribuyente tenga su residencia habitual en Castilla-La Mancha y sea menor de treinta y seis años"
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lte",
+          "value": 25000,
+          "label": "Renta de hasta 12.500 € en declaración individual (25.000 € en conjunta)",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/arrendamiento-vivienda-habitual-menores-36-anos.html",
+            "excerpt": "12.500 euros en tributación individual. [...] 25.000 euros en tributación conjunta."
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Tienes que indicar el NIF del arrendador en la declaración."
+    ],
+    "documents": [
+      "Contrato de alquiler",
+      "Justificantes de pago del alquiler"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Castilla-La Mancha)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/arrendamiento-vivienda-habitual-menores-36-anos.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/arrendamiento-vivienda-habitual-menores-36-anos.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "El 15 por 100 de las cantidades satisfechas por el arrendamiento de la vivienda que constituya o vaya a constituir su residencia habitual en Castilla-La Mancha durante el período impositivo, con un máximo de 500 euros"
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-alquiler-jovenes-castilla-la-mancha",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-alquiler-vivienda-habitual-cataluna",
+    "title": "Deducción autonómica por alquiler de vivienda habitual (Cataluña)",
+    "summary": "Deducción del 10 % del alquiler de tu vivienda habitual (hasta 500 €, o 1.000 € en familias numerosas o monoparentales) si tienes 35 años o menos, has estado en paro, tienes discapacidad o formas parte de una familia numerosa o monoparental.",
+    "level": "regional",
+    "region": "CT",
+    "category": "housing",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Cataluña",
+    "amount": {
+      "type": "range",
+      "max": 1000,
+      "text": "10 % del alquiler, hasta 500 € al año (1.000 € en declaración conjunta o para familias numerosas y monoparentales)."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "housing",
+          "op": "eq",
+          "value": "renting",
+          "label": "Vivir de alquiler en tu vivienda habitual",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual.html",
+            "excerpt": "El 10 por 100 de las cantidades satisfechas en el período impositivo en concepto de alquiler de la vivienda habitual"
+          }
+        },
+        {
+          "any": [
+            {
+              "field": "applicantAge",
+              "op": "lte",
+              "value": 35,
+              "label": "Tener 35 años o menos",
+              "source": {
+                "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual.html",
+                "excerpt": "Tener 35 años o menos a la fecha de devengo del impuesto"
+              }
+            },
+            {
+              "field": "employmentStatus",
+              "op": "eq",
+              "value": "unemployed",
+              "label": "Haber estado en paro 183 días o más en el año",
+              "source": {
+                "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual.html",
+                "excerpt": "Haber estado en paro durante 183 días o más durante el ejercicio."
+              }
+            },
+            {
+              "field": "applicantDisabilityPercent",
+              "op": "gte",
+              "value": 65,
+              "label": "Tener una discapacidad del 65 % o más",
+              "source": {
+                "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual.html",
+                "excerpt": "Tener un grado de discapacidad igual o superior al 65 por 100"
+              }
+            },
+            {
+              "field": "isLargeFamily",
+              "op": "eq",
+              "value": true,
+              "label": "Familia numerosa",
+              "source": {
+                "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual.html",
+                "excerpt": "el contribuyente pertenezca a una familia numerosa o monoparental"
+              }
+            },
+            {
+              "field": "isSingleParent",
+              "op": "eq",
+              "value": true,
+              "label": "Familia monoparental",
+              "source": {
+                "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual.html",
+                "excerpt": "el contribuyente pertenezca a una familia numerosa o monoparental"
+              }
+            }
+          ],
+          "label": "Tener 35 años o menos, haber estado en paro, tener discapacidad o ser familia numerosa o monoparental",
+          "hard": true
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lte",
+          "value": 45000,
+          "label": "Renta de hasta 30.000 € en declaración individual (45.000 € en conjunta)",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual.html",
+            "excerpt": "30.000 euros, en tributación individual. 45.000 euros, en tributación conjunta."
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Si estás en paro, debe haber sido durante 183 días o más en el año.",
+      "También pueden aplicarla las personas viudas de 65 años o más."
+    ],
+    "documents": [
+      "Contrato de alquiler",
+      "Justificantes de pago del alquiler"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Cataluña)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "El 10 por 100 de las cantidades satisfechas en el período impositivo en concepto de alquiler de la vivienda habitual"
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-alquiler-vivienda-habitual-cataluna",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-alquiler-vivienda-habitual-extremadura",
+    "title": "Deducción autonómica por alquiler de vivienda habitual (Extremadura)",
+    "summary": "Deducción del 30 % del alquiler de tu vivienda habitual, hasta 1.000 € al año (1.500 € en el medio rural), para menores de 36 años, familias numerosas o personas con discapacidad del 65 % o más.",
+    "level": "regional",
+    "region": "EX",
+    "category": "housing",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Extremadura",
+    "amount": {
+      "type": "range",
+      "max": 1500,
+      "text": "30 % del alquiler, hasta 1.000 € al año; hasta 1.500 € si la vivienda está en un municipio de menos de 3.000 habitantes."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "housing",
+          "op": "eq",
+          "value": "renting",
+          "label": "Vivir de alquiler en tu vivienda habitual",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-extremadura/arrendamiento-vivienda-habitual.html",
+            "excerpt": "El 30 por 100 de las cantidades satisfechas por el contribuyente en el período impositivo en concepto de alquiler de su vivienda habitual"
+          }
+        },
+        {
+          "any": [
+            {
+              "field": "applicantAge",
+              "op": "lt",
+              "value": 36,
+              "label": "Tener menos de 36 años",
+              "source": {
+                "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-extremadura/arrendamiento-vivienda-habitual.html",
+                "excerpt": "Que tenga en la fecha del devengo del impuesto menos de 36 años cumplidos"
+              }
+            },
+            {
+              "field": "isLargeFamily",
+              "op": "eq",
+              "value": true,
+              "label": "Familia numerosa",
+              "source": {
+                "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-extremadura/arrendamiento-vivienda-habitual.html",
+                "excerpt": "Que forme parte de una familia que tenga la consideración legal de numerosa"
+              }
+            },
+            {
+              "field": "applicantDisabilityPercent",
+              "op": "gte",
+              "value": 65,
+              "label": "Tener una discapacidad del 65 % o más",
+              "source": {
+                "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-extremadura/arrendamiento-vivienda-habitual.html",
+                "excerpt": "Que padezca una discapacidad con un grado reconocido igual o superior al 65 por 100"
+              }
+            }
+          ],
+          "label": "Tener menos de 36 años, ser familia numerosa o tener una discapacidad del 65 % o más",
+          "hard": true
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lte",
+          "value": 45000,
+          "label": "Renta de hasta 28.000 € en declaración individual (45.000 € en conjunta)",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-extremadura/arrendamiento-vivienda-habitual.html",
+            "excerpt": "28.000 euros en tributación individual. [...] 45.000 euros en tributación conjunta."
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "También pueden aplicarla progenitores separados o sin vínculo matrimonial con dos hijos, en los términos de la ficha oficial."
+    ],
+    "documents": [
+      "Contrato de alquiler",
+      "Justificantes de pago del alquiler"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Extremadura)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-extremadura/arrendamiento-vivienda-habitual.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-extremadura/arrendamiento-vivienda-habitual.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "El 30 por 100 de las cantidades satisfechas por el contribuyente en el período impositivo en concepto de alquiler de su vivienda habitual , con el límite de 1.000 euros anuales"
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-alquiler-vivienda-habitual-extremadura",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-alquiler-jovenes-galicia",
+    "title": "Deducción autonómica por alquiler de vivienda habitual para jóvenes (Galicia)",
+    "summary": "Deducción del 10 % del alquiler de tu vivienda habitual (hasta 300 € al año; 20 % y 600 € con dos o más hijos menores) si tienes 35 años o menos.",
+    "level": "regional",
+    "region": "GA",
+    "category": "housing",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Galicia",
+    "amount": {
+      "type": "range",
+      "max": 1200,
+      "text": "10 % del alquiler, hasta 300 € al año; 20 % y hasta 600 € con dos o más hijos menores. El doble si tienes una discapacidad del 33 % o más."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "housing",
+          "op": "eq",
+          "value": "renting",
+          "label": "Vivir de alquiler en tu vivienda habitual",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/alquiler-vivienda-habitual.html",
+            "excerpt": "El 10 por 100 de las cantidades satisfechas durante el período impositivo en concepto de alquiler de la vivienda habitual."
+          }
+        },
+        {
+          "field": "applicantAge",
+          "op": "lte",
+          "value": 35,
+          "label": "Tener 35 años o menos",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/alquiler-vivienda-habitual.html",
+            "excerpt": "Que la edad del contribuyente sea igual o inferior a 35 años en la fecha de devengo del impuesto"
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lte",
+          "value": 22000,
+          "label": "Renta de hasta 22.000 €",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/alquiler-vivienda-habitual.html",
+            "excerpt": "no supere el importe de 22.000 euros , tanto en tributación individual como en conjunta"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Haber depositado la fianza en el Instituto Gallego de la Vivienda y Suelo (IGVS).",
+      "El contrato debe ser posterior al 1 de enero de 2003."
+    ],
+    "documents": [
+      "Contrato de alquiler",
+      "Justificante del depósito de la fianza en el IGVS"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Galicia)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/alquiler-vivienda-habitual.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/alquiler-vivienda-habitual.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "El 10 por 100 de las cantidades satisfechas durante el período impositivo en concepto de alquiler de la vivienda habitual. Límite máximo de la deducción : 300 euros por contrato y año"
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-alquiler-jovenes-galicia",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
     "slug": "deduccion-alquiler-jovenes-castilla-y-leon",
     "title": "Deducción autonómica por alquiler de vivienda para jóvenes (Castilla y León)",
     "summary": "Si tienes menos de 36 años y vives de alquiler en Castilla y León, puedes deducir el 20 % del alquiler (hasta 459 €) o el 25 % (hasta 612 €) en municipios pequeños.",
@@ -747,6 +1581,264 @@
     "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-alquiler-jovenes-la-rioja",
+    "title": "Deducción autonómica por alquiler de vivienda habitual para menores de 36 años (La Rioja)",
+    "summary": "Deducción del 10 % del alquiler de tu vivienda habitual (hasta 300 €; 20 % y 400 € en pequeños municipios) si tienes menos de 36 años.",
+    "level": "regional",
+    "region": "RI",
+    "category": "housing",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / La Rioja",
+    "amount": {
+      "type": "range",
+      "max": 400,
+      "text": "10 % del alquiler, hasta 300 € al año; 20 %, hasta 400 €, en los pequeños municipios de La Rioja."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "housing",
+          "op": "eq",
+          "value": "renting",
+          "label": "Vivir de alquiler en tu vivienda habitual",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-rioja/arrendamiento-vivienda-habitual-menores-36-anos.html",
+            "excerpt": "El 10 por 100 de las cantidades no subvencionadas satisfechas en el ejercicio para el alquiler de la vivienda habitual."
+          }
+        },
+        {
+          "field": "applicantAge",
+          "op": "lt",
+          "value": 36,
+          "label": "Tener menos de 36 años",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-rioja/arrendamiento-vivienda-habitual-menores-36-anos.html",
+            "excerpt": "Que el contribuyente no haya cumplido los 36 años de edad a la fecha de devengo del impuesto."
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lte",
+          "value": 30050,
+          "label": "Renta de hasta 18.030 € en declaración individual (30.050 € en conjunta)",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-rioja/arrendamiento-vivienda-habitual-menores-36-anos.html",
+            "excerpt": "18.030 euros en declaración individual. [...] 30.050 euros en declaración conjunta."
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "La base liquidable del ahorro no puede superar 1.800 €."
+    ],
+    "documents": [
+      "Contrato de alquiler",
+      "Justificantes de pago del alquiler"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de La Rioja)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-rioja/arrendamiento-vivienda-habitual-menores-36-anos.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-rioja/arrendamiento-vivienda-habitual-menores-36-anos.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "El 10 por 100 de las cantidades no subvencionadas satisfechas en el ejercicio para el alquiler de la vivienda habitual. El importe máximo anual será de 300 euros por contrato de arrendamiento"
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-alquiler-jovenes-la-rioja",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-alquiler-vivienda-habitual-madrid",
+    "title": "Deducción autonómica por alquiler de vivienda habitual (Comunidad de Madrid)",
+    "summary": "Deducción del 30 % del alquiler de tu vivienda habitual, hasta 1.237,20 € al año, si tienes menos de 40 años.",
+    "level": "regional",
+    "region": "MD",
+    "category": "housing",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Comunidad de Madrid",
+    "amount": {
+      "type": "range",
+      "max": 1237.2,
+      "text": "30 % de lo que pagas de alquiler, con un máximo de 1.237,20 € al año."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "housing",
+          "op": "eq",
+          "value": "renting",
+          "label": "Vivir de alquiler en tu vivienda habitual",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-madrid/arrendamiento-vivienda-habitual.html",
+            "excerpt": "El 30 por 100 de las cantidades satisfechas por el arrendamiento de la vivienda habitual en el período impositivo."
+          }
+        },
+        {
+          "field": "applicantAge",
+          "op": "lt",
+          "value": 40,
+          "label": "Tener menos de 40 años",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-madrid/arrendamiento-vivienda-habitual.html",
+            "excerpt": "El contribuyente debe tener menos de 40 años de edad a la fecha de devengo del impuesto"
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lte",
+          "value": 37322.2,
+          "label": "Renta de hasta 26.414,22 € en declaración individual (37.322,20 € en conjunta)",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-madrid/arrendamiento-vivienda-habitual.html",
+            "excerpt": "26.414,22 euros en tributación individual. [...] 37.322,20 euros en tributación conjunta."
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "La renta de toda la unidad familiar no puede superar 61.860 €.",
+      "Hay requisitos adicionales sobre el contrato y la fianza: consulta la ficha oficial."
+    ],
+    "documents": [
+      "Contrato de alquiler",
+      "Justificantes de pago del alquiler"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Comunidad de Madrid)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-madrid/arrendamiento-vivienda-habitual.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-madrid/arrendamiento-vivienda-habitual.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "El 30 por 100 de las cantidades satisfechas por el arrendamiento de la vivienda habitual en el período impositivo."
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-alquiler-vivienda-habitual-madrid",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-alquiler-vivienda-habitual-region-de-murcia",
+    "title": "Deducción autonómica por alquiler de vivienda habitual (Región de Murcia)",
+    "summary": "Deducción del 10 % del alquiler de tu vivienda habitual, hasta 300 € al año, si tienes 40 años o menos, eres familia numerosa o tienes una discapacidad del 65 % o más.",
+    "level": "regional",
+    "region": "MC",
+    "category": "housing",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Región de Murcia",
+    "amount": {
+      "type": "range",
+      "max": 300,
+      "text": "10 % del alquiler no subvencionado, hasta 300 € al año por contrato."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "housing",
+          "op": "eq",
+          "value": "renting",
+          "label": "Vivir de alquiler en tu vivienda habitual",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/arrendamiento-vivienda-habitual.html",
+            "excerpt": "por alquiler de la vivienda habitual del contribuyente"
+          }
+        },
+        {
+          "any": [
+            {
+              "field": "applicantAge",
+              "op": "lte",
+              "value": 40,
+              "label": "Tener 40 años o menos",
+              "source": {
+                "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/arrendamiento-vivienda-habitual.html",
+                "excerpt": "Que tenga 40 años o menos a la fecha de devengo del impuesto"
+              }
+            },
+            {
+              "field": "isLargeFamily",
+              "op": "eq",
+              "value": true,
+              "label": "Familia numerosa",
+              "source": {
+                "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/arrendamiento-vivienda-habitual.html",
+                "excerpt": "Que forme parte de una familia que tenga la consideración legal de numerosa"
+              }
+            },
+            {
+              "field": "applicantDisabilityPercent",
+              "op": "gte",
+              "value": 65,
+              "label": "Tener una discapacidad del 65 % o más",
+              "source": {
+                "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/arrendamiento-vivienda-habitual.html",
+                "excerpt": "Que padezca una discapacidad con un grado reconocido igual o superior al 65 por 100"
+              }
+            }
+          ],
+          "label": "Tener 40 años o menos, ser familia numerosa o tener una discapacidad del 65 % o más",
+          "hard": true
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lt",
+          "value": 40000,
+          "label": "Renta (menos el mínimo personal y familiar) inferior a 40.000 €",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/arrendamiento-vivienda-habitual.html",
+            "excerpt": "sea inferior a 40.000 euros"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "El pago del alquiler debe hacerse por medios bancarios, no en efectivo.",
+      "No puedes tener derecho en el mismo año a deducciones por inversión en vivienda."
+    ],
+    "documents": [
+      "Contrato de alquiler",
+      "Justificantes bancarios del pago del alquiler"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Región de Murcia)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/arrendamiento-vivienda-habitual.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/arrendamiento-vivienda-habitual.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "El 10 por 100 de las cantidades no subvencionadas satisfechas en el ejercicio, en el período impositivo por alquiler de la vivienda habitual del contribuyente. El importe máximo de deducción será de 300 euros anuales por contrato"
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-alquiler-vivienda-habitual-region-de-murcia",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
     "verifiedAt": "2026-10-15"
   },
   {
@@ -1104,6 +2196,329 @@
     "verifiedAt": "2026-10-15"
   },
   {
+    "slug": "deduccion-familia-numerosa-andalucia",
+    "title": "Deducción autonómica por familia numerosa (Andalucía)",
+    "summary": "Deducción en el tramo autonómico del IRPF para familias numerosas: 200 € en categoría general y 400 € en categoría especial.",
+    "level": "regional",
+    "region": "AN",
+    "category": "income",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Andalucía",
+    "amount": {
+      "type": "range",
+      "min": 200,
+      "max": 400,
+      "text": "200 € (familia numerosa general) o 400 € (especial)."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "isLargeFamily",
+          "op": "eq",
+          "value": true,
+          "label": "Tener título de familia numerosa",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/familia-numerosa.html",
+            "excerpt": "Los contribuyentes deberán ostentar, a la fecha del devengo del impuesto, el título de familia numerosa que acredita dicha condición y categoría."
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lte",
+          "value": 30000,
+          "label": "Renta de hasta 25.000 € en declaración individual (30.000 € en conjunta)",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/familia-numerosa.html",
+            "excerpt": "25.000 euros en tributación individual [...] 30.000 euros en tributación conjunta"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "El límite de renta se refiere a la suma de las bases imponibles general y del ahorro de la declaración.",
+      "Si varias personas tienen derecho y declaran por separado, se reparte a partes iguales."
+    ],
+    "documents": [
+      "Título de familia numerosa en vigor"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Andalucía)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/familia-numerosa.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/familia-numerosa.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "En el caso de familias numerosas de categoría general: 200 euros"
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-familia-numerosa-andalucia",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-familia-numerosa-asturias",
+    "title": "Deducción autonómica por familia numerosa (Asturias)",
+    "summary": "Deducción en el tramo autonómico del IRPF de 1.000 € para familias numerosas de categoría general y 2.000 € de categoría especial.",
+    "level": "regional",
+    "region": "AS",
+    "category": "income",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Principado de Asturias",
+    "amount": {
+      "type": "range",
+      "min": 1000,
+      "max": 2000,
+      "text": "1.000 € (familia numerosa general) o 2.000 € (especial)."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "isLargeFamily",
+          "op": "eq",
+          "value": true,
+          "label": "Tener título de familia numerosa",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-principado-asturias/familias-numerosas.html",
+            "excerpt": "ostente el título de familia numerosa expedido por la autoridad competente en materia de servicios sociales"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Se equiparan a familia numerosa general las familias con uno o dos progenitores y dos hijos, con renta de hasta 35.000 € (individual) o 45.000 € (conjunta)."
+    ],
+    "documents": [
+      "Título de familia numerosa en vigor"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Principado de Asturias)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-principado-asturias/familias-numerosas.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-principado-asturias/familias-numerosas.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "1.000 euros , cuando se trate de familia numerosa de categoría general. 2.000 euros , cuando se trate de familia numerosa de categoría especial"
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-familia-numerosa-asturias",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-familia-numerosa-canarias",
+    "title": "Deducción autonómica por familia numerosa (Canarias)",
+    "summary": "Deducción en el tramo autonómico del IRPF de 597 € para familias numerosas de categoría general y 796 € de categoría especial (más si hay discapacidad del 65 % o más).",
+    "level": "regional",
+    "region": "CN",
+    "category": "income",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Canarias",
+    "amount": {
+      "type": "range",
+      "min": 597,
+      "max": 1326,
+      "text": "597 € (general) o 796 € (especial); importes mayores si algún miembro tiene una discapacidad del 65 % o más."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "isLargeFamily",
+          "op": "eq",
+          "value": true,
+          "label": "Tener título de familia numerosa",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/familia-numerosa.html",
+            "excerpt": "el contribuyente que posea, a la fecha de devengo del impuesto (normalmente, el 31 de diciembre), el título de familia numerosa"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [],
+    "documents": [
+      "Título de familia numerosa en vigor"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Canarias)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/familia-numerosa.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/familia-numerosa.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "597 euros , cuando se trate de familia numerosa de categoría general . 796 euros , cuando se trate de familia numerosa de categoría especial"
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-familia-numerosa-canarias",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-familia-numerosa-castilla-la-mancha",
+    "title": "Deducción autonómica por familia numerosa (Castilla-La Mancha)",
+    "summary": "Deducción en el tramo autonómico del IRPF de 200 € para familias numerosas de categoría general y 400 € de categoría especial (más con discapacidad).",
+    "level": "regional",
+    "region": "CM",
+    "category": "income",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Castilla-La Mancha",
+    "amount": {
+      "type": "range",
+      "min": 200,
+      "max": 900,
+      "text": "200 € (general) o 400 € (especial); 300 € y 900 € si algún miembro tiene una discapacidad del 65 % o más."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "isLargeFamily",
+          "op": "eq",
+          "value": true,
+          "label": "Tener título de familia numerosa",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/familia-numerosa.html",
+            "excerpt": "El contribuyente debe tener reconocida la condición de familia numerosa"
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lte",
+          "value": 36000,
+          "label": "Renta de hasta 27.000 € en declaración individual (36.000 € en conjunta)",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/familia-numerosa.html",
+            "excerpt": "27.000 euros en tributación individual. [...] 36.000 euros en tributación conjunta."
+          }
+        }
+      ]
+    },
+    "otherRequirements": [],
+    "documents": [
+      "Título de familia numerosa en vigor"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Castilla-La Mancha)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/familia-numerosa.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/familia-numerosa.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "200 euros , cuando se trate de familia numerosa de categoría general . - 400 euros , cuando se trate de familia numerosa de categoría especial"
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-familia-numerosa-castilla-la-mancha",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-familia-numerosa-monoparental-comunitat-valenciana",
+    "title": "Deducción autonómica por familia numerosa o monoparental (Comunitat Valenciana)",
+    "summary": "Deducción en el tramo autonómico del IRPF de 330 € para familias numerosas o monoparentales de categoría general y 660 € de categoría especial.",
+    "level": "regional",
+    "region": "VC",
+    "category": "income",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Comunitat Valenciana",
+    "amount": {
+      "type": "range",
+      "min": 330,
+      "max": 660,
+      "text": "330 € (categoría general) o 660 € (categoría especial)."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "any": [
+            {
+              "field": "isLargeFamily",
+              "op": "eq",
+              "value": true,
+              "label": "Familia numerosa",
+              "source": {
+                "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/familia-numerosa-monoparental.html",
+                "excerpt": "El contribuyente debe ostentar la condición de familia numerosa en la fecha de devengo del impuesto"
+              }
+            },
+            {
+              "field": "isSingleParent",
+              "op": "eq",
+              "value": true,
+              "label": "Familia monoparental",
+              "source": {
+                "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/familia-numerosa-monoparental.html",
+                "excerpt": "El contribuyente debe ostentar la condición de familia monoparental en la fecha de devengo del impuesto"
+              }
+            }
+          ],
+          "label": "Ser familia numerosa o monoparental (con título)",
+          "hard": true
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lte",
+          "value": 47000,
+          "label": "Renta de hasta 30.000 € en declaración individual (47.000 € en conjunta), categoría general",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/familia-numerosa-monoparental.html",
+            "excerpt": "30.000 euros en declaración individual. [...] 47.000 euros en declaración conjunta."
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "La condición de familia monoparental se reconoce con el título expedido por la Generalitat.",
+      "En categoría especial los límites de renta suben a 35.000 € (individual) y 58.000 € (conjunta)."
+    ],
+    "documents": [
+      "Título de familia numerosa o monoparental en vigor"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Comunitat Valenciana)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/familia-numerosa-monoparental.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/familia-numerosa-monoparental.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "330 euros , cuando se trate de familia numerosa o monoparental de categoría general . 660 euros , cuando se trate de familia numerosa o monoparental de categoría especial"
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-familia-numerosa-monoparental-comunitat-valenciana",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
     "slug": "deduccion-familia-numerosa-castilla-y-leon",
     "title": "Deducción autonómica por familia numerosa (Castilla y León)",
     "summary": "Las familias numerosas de Castilla y León deducen 600 € en el IRPF autonómico, y más con 4 o 5 hijos o si algún miembro tiene una discapacidad del 65 % o más.",
@@ -1157,6 +2572,59 @@
     "version": 1,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-familia-numerosa-galicia",
+    "title": "Deducción autonómica por familia numerosa (Galicia)",
+    "summary": "Deducción en el tramo autonómico del IRPF para familias numerosas: 250 € (400 € en categoría especial) con hasta dos hijos, más 250 € por cada hijo adicional; el doble con discapacidad del 65 % o más.",
+    "level": "regional",
+    "region": "GA",
+    "category": "income",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Galicia",
+    "amount": {
+      "type": "variable",
+      "min": 250,
+      "text": "250 € con hasta dos hijos (400 € en categoría especial), más 250 € por cada hijo adicional. Se duplica si hay una discapacidad del 65 % o más."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "isLargeFamily",
+          "op": "eq",
+          "value": true,
+          "label": "Tener título de familia numerosa",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/familia-numerosa.html",
+            "excerpt": "El contribuyente debe poseer el título de familia numerosa en la fecha de devengo del impuesto"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [],
+    "documents": [
+      "Título de familia numerosa en vigor"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Galicia)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/familia-numerosa.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/familia-numerosa.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "250 euros , en caso de que se trate de familias de hasta dos hijos/as"
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-familia-numerosa-galicia",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
     "verifiedAt": "2026-10-15"
   },
   {
@@ -1296,6 +2764,511 @@
     "verifiedAt": "2026-10-15"
   },
   {
+    "slug": "deduccion-nacimiento-adopcion-andalucia",
+    "title": "Deducción autonómica por nacimiento, adopción o acogimiento (Andalucía)",
+    "summary": "Deducción en el tramo autonómico del IRPF de 200 € por cada hijo nacido, adoptado o acogido en el año (400 € en municipios con problemas de despoblación).",
+    "level": "regional",
+    "region": "AN",
+    "category": "birth",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Andalucía",
+    "amount": {
+      "type": "range",
+      "min": 200,
+      "max": 400,
+      "text": "200 € por hijo; 400 € si vives en un municipio andaluz con problemas de despoblación (menos de 3.000 habitantes). Partos múltiples: 200 € más por hijo."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "youngestChildAge",
+          "op": "eq",
+          "value": 0,
+          "label": "Haber tenido, adoptado o acogido un hijo este año",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/nacimiento-adopcion-acogimiento.html",
+            "excerpt": "200 euros, con carácter general, por cada hijo nacido o adoptado o por cada menor en régimen de acogimiento familiar simple, permanente o preadoptivo, administrativo o judicial"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Si dos personas tienen derecho a la deducción, se reparte a partes iguales.",
+      "En acogimientos, el menor debe convivir contigo al menos 90 días en el año."
+    ],
+    "documents": [
+      "Libro de familia o certificado de nacimiento / resolución de adopción o acogimiento"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Andalucía)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/nacimiento-adopcion-acogimiento.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/nacimiento-adopcion-acogimiento.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "200 euros, con carácter general, por cada hijo nacido o adoptado o por cada menor en régimen de acogimiento familiar simple, permanente o preadoptivo, administrativo o judicial"
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-nacimiento-adopcion-andalucia",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-nacimiento-tercer-hijo-aragon",
+    "title": "Deducción autonómica por nacimiento o adopción del tercer hijo o sucesivos (Aragón)",
+    "summary": "Deducción en el tramo autonómico del IRPF de 500 € (600 € con rentas más bajas) por cada hijo nacido o adoptado en el año que sea el tercero o siguientes.",
+    "level": "regional",
+    "region": "AR",
+    "category": "birth",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Aragón",
+    "amount": {
+      "type": "range",
+      "min": 500,
+      "max": 600,
+      "text": "500 € por cada hijo a partir del tercero; 600 € si la renta (menos mínimos personal y por descendientes) no supera 21.000 € en individual o 35.000 € en conjunta."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "youngestChildAge",
+          "op": "eq",
+          "value": 0,
+          "label": "Haber tenido o adoptado un hijo este año",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-aragon/nacimiento-adopcion-tercer-hijo-sucesivos.html",
+            "excerpt": "por cada hijo nacido o adoptado durante el período impositivo que sea el tercer hijo o sucesivos del contribuyente"
+          }
+        },
+        {
+          "field": "numChildren",
+          "op": "gte",
+          "value": 3,
+          "label": "Que sea tu tercer hijo o siguientes",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-aragon/nacimiento-adopcion-tercer-hijo-sucesivos.html",
+            "excerpt": "por cada hijo nacido o adoptado durante el período impositivo que sea el tercer hijo o sucesivos del contribuyente"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Solo se aplica en la declaración del año del nacimiento o la adopción.",
+      "Corresponde a quien conviva con el hijo a 31 de diciembre."
+    ],
+    "documents": [
+      "Libro de familia o certificado de nacimiento / resolución de adopción"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Aragón)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-aragon/nacimiento-adopcion-tercer-hijo-sucesivos.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-aragon/nacimiento-adopcion-tercer-hijo-sucesivos.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "500 euros , con carácter general, por cada hijo nacido o adoptado durante el período impositivo que sea el tercer hijo o sucesivos del contribuyente"
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-nacimiento-tercer-hijo-aragon",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-nacimiento-illes-balears",
+    "title": "Deducción autonómica por nacimiento de hijos (Illes Balears)",
+    "summary": "Deducción en el tramo autonómico del IRPF por cada hijo nacido en el año: 800 € por el primero, 1.000 € por el segundo, 1.200 € por el tercero y 1.400 € a partir del cuarto.",
+    "level": "regional",
+    "region": "IB",
+    "category": "birth",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Illes Balears",
+    "amount": {
+      "type": "range",
+      "min": 800,
+      "max": 1400,
+      "text": "800 € (1.º hijo), 1.000 € (2.º), 1.200 € (3.º) y 1.400 € (4.º y siguientes)."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "youngestChildAge",
+          "op": "eq",
+          "value": 0,
+          "label": "Haber tenido un hijo este año",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/nacimiento.html",
+            "excerpt": "Que el hijo o hija nacido en el periodo impositivo genere el derecho a la aplicación del mínimo por descendientes"
+          }
+        },
+        {
+          "field": "yearsRegisteredInRegion",
+          "op": "gte",
+          "value": 1,
+          "label": "Haber residido en Illes Balears el año anterior",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/nacimiento.html",
+            "excerpt": "Que el contribuyente haya sido residente fiscal en las Illes Balears en el ejercicio anterior al del nacimiento."
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lte",
+          "value": 84480,
+          "label": "Renta de hasta 52.800 € en declaración individual (84.480 € en conjunta)",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/nacimiento.html",
+            "excerpt": "52.800 euros en tributación individual. [...] 84.480 euros en tributación conjunta"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Para familias numerosas o monoparentales con dos o más hijos, el límite de renta sube a 63.360 € (individual) y 101.376 € (conjunta)."
+    ],
+    "documents": [
+      "Libro de familia o certificado de nacimiento"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Illes Balears)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/nacimiento.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/nacimiento.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "800 euros por el primer hijo o hija.. 1.000 euros por el segundo hijo o hija. 1.200 euros por el tercer hijo o hija. 1.400 euros por el cuarto hijo o hija y siguientes"
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-nacimiento-illes-balears",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-nacimiento-adopcion-canarias",
+    "title": "Deducción autonómica por nacimiento o adopción de hijos (Canarias)",
+    "summary": "Deducción en el tramo autonómico del IRPF por cada hijo nacido o adoptado en el año: de 265 € (1.º o 2.º hijo) a 928 € (5.º y siguientes), y más si tiene discapacidad.",
+    "level": "regional",
+    "region": "CN",
+    "category": "birth",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Canarias",
+    "amount": {
+      "type": "range",
+      "min": 265,
+      "max": 928,
+      "text": "265 € (1.º o 2.º hijo), 530 € (3.º), 796 € (4.º) y 928 € (5.º y siguientes). Importes adicionales si el hijo tiene una discapacidad del 65 % o más."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "youngestChildAge",
+          "op": "eq",
+          "value": 0,
+          "label": "Haber tenido o adoptado un hijo este año",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/nacimiento-adopcion-hijos.html",
+            "excerpt": "Por cada hijo nacido o adoptado en el período impositivo, que conviva con el contribuyente"
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lte",
+          "value": 61770,
+          "label": "Renta de hasta 46.455 € en declaración individual (61.770 € en conjunta)",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/nacimiento-adopcion-hijos.html",
+            "excerpt": "46.455 euros en tributación individual. [...] 61.770 euros en tributación conjunta"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Si ambos progenitores tienen derecho y declaran por separado, se reparte a partes iguales.",
+      "Es compatible con la deducción autonómica por familia numerosa."
+    ],
+    "documents": [
+      "Libro de familia o certificado de nacimiento / resolución de adopción"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Canarias)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/nacimiento-adopcion-hijos.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/nacimiento-adopcion-hijos.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "Por cada hijo nacido o adoptado en el período impositivo, que conviva con el contribuyente: - 265 euros , cuando se trate del primero o segundo hijo"
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-nacimiento-adopcion-canarias",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-nacimiento-adopcion-cantabria",
+    "title": "Deducción autonómica por nacimiento o adopción de hijos (Cantabria)",
+    "summary": "Deducción en el tramo autonómico del IRPF de 1.400 € por cada hijo nacido o adoptado desde 2024, aplicable el año del nacimiento y los dos siguientes.",
+    "level": "regional",
+    "region": "CB",
+    "category": "birth",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Cantabria",
+    "amount": {
+      "type": "fixed",
+      "min": 1400,
+      "text": "1.400 € al año por hijo, durante el año del nacimiento o adopción y los dos siguientes."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "youngestChildAge",
+          "op": "lte",
+          "value": 2,
+          "label": "Tener un hijo nacido o adoptado en los últimos tres años (desde 2024)",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/nacimiento-adopcion-hijos.html",
+            "excerpt": "1.400 euros por nacimiento o adopción de hijos, aplicables en el ejercicio en que se hayan producido y en los dos ejercicios siguientes"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Solo para nacimientos o adopciones desde el 1 de enero de 2024.",
+      "Si declaráis por separado, se reparte a partes iguales entre los progenitores."
+    ],
+    "documents": [
+      "Libro de familia o certificado de nacimiento / resolución de adopción"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Cantabria)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/nacimiento-adopcion-hijos.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/nacimiento-adopcion-hijos.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "1.400 euros por nacimiento o adopción de hijos, aplicables en el ejercicio en que se hayan producido y en los dos ejercicios siguientes"
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-nacimiento-adopcion-cantabria",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-nacimiento-adopcion-castilla-la-mancha",
+    "title": "Deducción autonómica por nacimiento o adopción de hijos (Castilla-La Mancha)",
+    "summary": "Deducción en el tramo autonómico del IRPF por cada parto o adopción del año: 100 € si es de un hijo, 500 € si son dos y 900 € si son tres o más.",
+    "level": "regional",
+    "region": "CM",
+    "category": "birth",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Castilla-La Mancha",
+    "amount": {
+      "type": "range",
+      "min": 100,
+      "max": 900,
+      "text": "100 € por parto o adopción de un hijo, 500 € de dos hijos y 900 € de tres o más."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "youngestChildAge",
+          "op": "eq",
+          "value": 0,
+          "label": "Haber tenido o adoptado un hijo este año",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/nacimiento-adopcion-hijos.html",
+            "excerpt": "Por cada hijo nacido o adoptado en el período impositivo, que genere el derecho a la aplicación del mínimo por descendientes"
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lte",
+          "value": 36000,
+          "label": "Renta de hasta 27.000 € en declaración individual (36.000 € en conjunta)",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/nacimiento-adopcion-hijos.html",
+            "excerpt": "27.000 euros en tributación individual. [...] 36.000 euros en tributación conjunta."
+          }
+        }
+      ]
+    },
+    "otherRequirements": [],
+    "documents": [
+      "Libro de familia o certificado de nacimiento / resolución de adopción"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Castilla-La Mancha)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/nacimiento-adopcion-hijos.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/nacimiento-adopcion-hijos.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "100 euros en el caso de partos o adopciones de un hijo . 500 euros en el caso de partos o adopciones de dos hijos . 900 euros en el caso de partos o adopciones de tres o más hijos"
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-nacimiento-adopcion-castilla-la-mancha",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-nacimiento-adopcion-cataluna",
+    "title": "Deducción autonómica por nacimiento, adopción o acogimiento (Cataluña)",
+    "summary": "Deducción en el tramo autonómico del IRPF por el nacimiento, la adopción o el acogimiento de un hijo en el año: 150 € por progenitor en declaración individual o 300 € en conjunta o familia monoparental.",
+    "level": "regional",
+    "region": "CT",
+    "category": "birth",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Cataluña",
+    "amount": {
+      "type": "range",
+      "min": 150,
+      "max": 300,
+      "text": "150 € en la declaración individual de cada progenitor; 300 € en declaración conjunta o en familia monoparental."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "youngestChildAge",
+          "op": "eq",
+          "value": 0,
+          "label": "Haber tenido, adoptado o acogido un hijo este año",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/nacimiento-adopcion-hijo-hija-acogimiento-familiar.html",
+            "excerpt": "Por el nacimiento o adopción de un hijo o de una hija o por el acogimiento familiar de personas menores de edad durante el período impositivo"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [],
+    "documents": [
+      "Libro de familia o certificado de nacimiento / resolución de adopción o acogimiento"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Cataluña)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/nacimiento-adopcion-hijo-hija-acogimiento-familiar.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/nacimiento-adopcion-hijo-hija-acogimiento-familiar.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "150 euros en la declaración individual de cada uno de los progenitores. 300 euros en caso de declaración conjunta de ambos progenitores."
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-nacimiento-adopcion-cataluna",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-nacimiento-adopcion-comunitat-valenciana",
+    "title": "Deducción autonómica por nacimiento, adopción o acogimiento (Comunitat Valenciana)",
+    "summary": "Deducción en el tramo autonómico del IRPF de 300 € por cada hijo nacido, adoptado o acogido en el año.",
+    "level": "regional",
+    "region": "VC",
+    "category": "birth",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Comunitat Valenciana",
+    "amount": {
+      "type": "fixed",
+      "min": 300,
+      "text": "300 € por cada hijo nacido, adoptado o acogido en el año."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "youngestChildAge",
+          "op": "eq",
+          "value": 0,
+          "label": "Haber tenido, adoptado o acogido un hijo este año",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/nacimiento-adopcion-delegacion-guarda-acogimiento-familiar.html",
+            "excerpt": "300 euros por cada hijo o hija nacido o adoptado durante el período impositivo."
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lte",
+          "value": 47000,
+          "label": "Renta de hasta 30.000 € en declaración individual (47.000 € en conjunta)",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/nacimiento-adopcion-delegacion-guarda-acogimiento-familiar.html",
+            "excerpt": "30.000 euros en declaración individual. [...] 47.000 euros en declaración conjunta."
+          }
+        }
+      ]
+    },
+    "otherRequirements": [],
+    "documents": [
+      "Libro de familia o certificado de nacimiento / resolución de adopción o acogimiento"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Comunitat Valenciana)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/nacimiento-adopcion-delegacion-guarda-acogimiento-familiar.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/nacimiento-adopcion-delegacion-guarda-acogimiento-familiar.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "300 euros por cada hijo o hija nacido o adoptado durante el período impositivo."
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-nacimiento-adopcion-comunitat-valenciana",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
     "slug": "deduccion-nacimiento-adopcion-castilla-y-leon",
     "title": "Deducción autonómica por nacimiento o adopción (Castilla y León)",
     "summary": "Deducción en el tramo autonómico del IRPF por cada hijo nacido o adoptado en el año: desde 1.010 € por el primer hijo, más en municipios pequeños y el doble si tiene discapacidad.",
@@ -1355,6 +3328,244 @@
     "version": 1,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-nacimiento-adopcion-galicia",
+    "title": "Deducción autonómica por nacimiento o adopción de hijos (Galicia)",
+    "summary": "Deducción en el tramo autonómico del IRPF por cada hijo nacido o adoptado en el año: de 300 € a 2.400 € según tu renta y el número de hijos (20 % más en municipios pequeños).",
+    "level": "regional",
+    "region": "GA",
+    "category": "birth",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Galicia",
+    "amount": {
+      "type": "range",
+      "min": 300,
+      "max": 2400,
+      "text": "Con renta (menos mínimos) de hasta 22.000 €: 360 € el 1.º hijo, 1.200 € el 2.º y 2.400 € el 3.º y siguientes. Por encima: 300 € por hijo. Un 20 % más en municipios de menos de 5.000 habitantes."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "youngestChildAge",
+          "op": "eq",
+          "value": 0,
+          "label": "Haber tenido o adoptado un hijo este año",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/nacimiento-adopcion-hijos.html",
+            "excerpt": "Por cada hijo nacido o adoptado en el período impositivo que conviva con el contribuyente a la fecha de devengo del impuesto"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [],
+    "documents": [
+      "Libro de familia o certificado de nacimiento / resolución de adopción"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Galicia)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/nacimiento-adopcion-hijos.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/nacimiento-adopcion-hijos.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "Menor o igual a 22.000 euros 360 euros el 1 er hijo 1.200 euros el 2 do hijo 2.400 euros el 3 er hijo y ss"
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-nacimiento-adopcion-galicia",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-nacimiento-adopcion-la-rioja",
+    "title": "Deducción autonómica por nacimiento o adopción de hijos (La Rioja)",
+    "summary": "Deducción en el tramo autonómico del IRPF por cada hijo nacido o adoptado en el año: 600 € por el primero, 750 € por el segundo y 900 € a partir del tercero.",
+    "level": "regional",
+    "region": "RI",
+    "category": "birth",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / La Rioja",
+    "amount": {
+      "type": "range",
+      "min": 600,
+      "max": 900,
+      "text": "600 € (1.º hijo), 750 € (2.º) y 900 € (3.º y siguientes), más 60 € por hijo en partos múltiples."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "youngestChildAge",
+          "op": "eq",
+          "value": 0,
+          "label": "Haber tenido o adoptado un hijo este año",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-rioja/nacimiento-adopcion-hijos.html",
+            "excerpt": "Que el hijo haya nacido o haya sido adoptado durante el periodo impositivo y conviva con el contribuyente a la fecha de devengo del impuesto"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [],
+    "documents": [
+      "Libro de familia o certificado de nacimiento / resolución de adopción"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de La Rioja)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-rioja/nacimiento-adopcion-hijos.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-rioja/nacimiento-adopcion-hijos.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "600 euros , cuando se trate del primer hijo . 750 euros , cuando se trate del segundo hijo . 900 euros , cuando se trate del tercero y sucesivos"
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-nacimiento-adopcion-la-rioja",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-nacimiento-adopcion-madrid",
+    "title": "Deducción autonómica por nacimiento o adopción de hijos (Comunidad de Madrid)",
+    "summary": "Deducción en el tramo autonómico del IRPF de 721,70 € por cada hijo nacido o adoptado, durante el año del nacimiento y los dos siguientes.",
+    "level": "regional",
+    "region": "MD",
+    "category": "birth",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Comunidad de Madrid",
+    "amount": {
+      "type": "fixed",
+      "min": 721.7,
+      "text": "721,70 € al año por hijo, durante el año del nacimiento o adopción y los dos siguientes (más en partos múltiples)."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "youngestChildAge",
+          "op": "lte",
+          "value": 2,
+          "label": "Tener un hijo nacido o adoptado en los últimos tres años",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-madrid/nacimiento-adopcion-hijos.html",
+            "excerpt": "La deducción se aplica tanto en el período impositivo en el que se produzca el nacimiento o la adopción como en cada uno de los dos períodos impositivos siguientes."
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lte",
+          "value": 37322.2,
+          "label": "Renta de hasta 30.930 € en declaración individual (37.322,20 € en conjunta)",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-madrid/nacimiento-adopcion-hijos.html",
+            "excerpt": "30.930 euros en tributación individual. [...] 37.322,20 euros en tributación conjunta."
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "Solo pueden aplicarla los padres que convivan con los hijos.",
+      "La unidad familiar también tiene un límite de renta conjunto (consúltalo en la ficha oficial)."
+    ],
+    "documents": [
+      "Libro de familia o certificado de nacimiento / resolución de adopción"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Comunidad de Madrid)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-madrid/nacimiento-adopcion-hijos.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-madrid/nacimiento-adopcion-hijos.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "721,70 euros por cada hijo nacido o adoptado."
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-nacimiento-adopcion-madrid",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "deduccion-nacimiento-adopcion-region-de-murcia",
+    "title": "Deducción autonómica por nacimiento o adopción (Región de Murcia)",
+    "summary": "Deducción en el tramo autonómico del IRPF por cada hijo nacido o adoptado en el año: 100 € por el primero, 200 € por el segundo y 300 € a partir del tercero.",
+    "level": "regional",
+    "region": "MC",
+    "category": "birth",
+    "kind": "permanent",
+    "programType": "tax_deduction",
+    "agency": "Agencia Tributaria / Región de Murcia",
+    "amount": {
+      "type": "range",
+      "min": 100,
+      "max": 300,
+      "text": "100 € (1.º hijo), 200 € (2.º) y 300 € (3.º y siguientes)."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "youngestChildAge",
+          "op": "eq",
+          "value": 0,
+          "label": "Haber tenido o adoptado un hijo este año",
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/nacimiento-adopcion.html",
+            "excerpt": "por cada hijo nacido o adoptado en el período impositivo en el que se produzca el nacimiento o la adopción"
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lte",
+          "value": 50000,
+          "label": "Renta de hasta 30.000 € en declaración individual (50.000 € en conjunta)",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/nacimiento-adopcion.html",
+            "excerpt": "30.000 euros en declaración individual. [...] 50.000 euros en declaración conjunta."
+          }
+        }
+      ]
+    },
+    "otherRequirements": [],
+    "documents": [
+      "Libro de familia o certificado de nacimiento / resolución de adopción"
+    ],
+    "steps": [
+      "Aplícala en tu declaración de la renta (deducciones autonómicas de Región de Murcia)."
+    ],
+    "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/nacimiento-adopcion.html",
+    "sources": [
+      {
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/nacimiento-adopcion.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "100 euros si se trata del primer hijo. 200 euros si se trata del segundo hijo. 300 euros si se trata del tercer hijo o sucesivos."
+      }
+    ],
+    "faq": [],
+    "id": "deduccion-nacimiento-adopcion-region-de-murcia",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
     "verifiedAt": "2026-10-15"
   },
   {

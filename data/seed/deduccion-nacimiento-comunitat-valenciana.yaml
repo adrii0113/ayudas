@@ -1,0 +1,51 @@
+slug: deduccion-nacimiento-adopcion-comunitat-valenciana
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por nacimiento, adopción o acogimiento (Comunitat Valenciana)"
+summary: >-
+  Deducción en el tramo autonómico del IRPF de 300 € por cada hijo nacido, adoptado o acogido en
+  el año.
+level: regional
+region: VC
+category: birth
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Comunitat Valenciana"
+amount:
+  type: fixed
+  min: 300
+  text: >-
+    300 € por cada hijo nacido, adoptado o acogido en el año.
+eligibility:
+  all:
+    - field: youngestChildAge
+      op: eq
+      value: 0
+      label: "Haber tenido, adoptado o acogido un hijo este año"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/nacimiento-adopcion-delegacion-guarda-acogimiento-familiar.html
+        excerpt: >-
+          300 euros por cada hijo o hija nacido o adoptado durante el período impositivo.
+    - field: annualHouseholdIncome
+      op: lte
+      value: 47000
+      label: "Renta de hasta 30.000 € en declaración individual (47.000 € en conjunta)"
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/nacimiento-adopcion-delegacion-guarda-acogimiento-familiar.html
+        excerpt: >-
+          30.000 euros en declaración individual. [...] 47.000 euros en declaración conjunta.
+otherRequirements: []
+documents:
+  - "Libro de familia o certificado de nacimiento / resolución de adopción o acogimiento"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Comunitat Valenciana)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/nacimiento-adopcion-delegacion-guarda-acogimiento-familiar.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/nacimiento-adopcion-delegacion-guarda-acogimiento-familiar.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      300 euros por cada hijo o hija nacido o adoptado durante el período impositivo.
+faq: []

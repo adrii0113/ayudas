@@ -1,0 +1,84 @@
+slug: deduccion-alquiler-vivienda-habitual-region-de-murcia
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por alquiler de vivienda habitual (Región de Murcia)"
+summary: >-
+  Deducción del 10 % del alquiler de tu vivienda habitual, hasta 300 € al año, si tienes 40 años
+  o menos, eres familia numerosa o tienes una discapacidad del 65 % o más.
+level: regional
+region: MC
+category: housing
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Región de Murcia"
+amount:
+  type: range
+  max: 300
+  text: >-
+    10 % del alquiler no subvencionado, hasta 300 € al año por contrato.
+eligibility:
+  all:
+    - field: housing
+      op: eq
+      value: "renting"
+      label: "Vivir de alquiler en tu vivienda habitual"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/arrendamiento-vivienda-habitual.html
+        excerpt: >-
+          por alquiler de la vivienda habitual del contribuyente
+    - any:
+        - field: applicantAge
+          op: lte
+          value: 40
+          label: "Tener 40 años o menos"
+          source:
+            url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/arrendamiento-vivienda-habitual.html
+            excerpt: >-
+              Que tenga 40 años o menos a la fecha de devengo del impuesto
+        - field: isLargeFamily
+          op: eq
+          value: true
+          label: "Familia numerosa"
+          source:
+            url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/arrendamiento-vivienda-habitual.html
+            excerpt: >-
+              Que forme parte de una familia que tenga la consideración legal de numerosa
+        - field: applicantDisabilityPercent
+          op: gte
+          value: 65
+          label: "Tener una discapacidad del 65 % o más"
+          source:
+            url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/arrendamiento-vivienda-habitual.html
+            excerpt: >-
+              Que padezca una discapacidad con un grado reconocido igual o superior al 65 por
+              100
+      label: "Tener 40 años o menos, ser familia numerosa o tener una discapacidad del 65 % o más"
+      hard: true
+    - field: annualHouseholdIncome
+      op: lt
+      value: 40000
+      label: "Renta (menos el mínimo personal y familiar) inferior a 40.000 €"
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/arrendamiento-vivienda-habitual.html
+        excerpt: >-
+          sea inferior a 40.000 euros
+otherRequirements:
+  - "El pago del alquiler debe hacerse por medios bancarios, no en efectivo."
+  - "No puedes tener derecho en el mismo año a deducciones por inversión en vivienda."
+documents:
+  - "Contrato de alquiler"
+  - "Justificantes bancarios del pago del alquiler"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Región de Murcia)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/arrendamiento-vivienda-habitual.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/arrendamiento-vivienda-habitual.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      El 10 por 100 de las cantidades no subvencionadas satisfechas en el ejercicio, en el
+      período impositivo por alquiler de la vivienda habitual del contribuyente. El importe
+      máximo de deducción será de 300 euros anuales por contrato
+faq: []

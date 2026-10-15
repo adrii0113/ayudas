@@ -1,0 +1,67 @@
+slug: deduccion-alquiler-jovenes-la-rioja
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por alquiler de vivienda habitual para menores de 36 años (La Rioja)"
+summary: >-
+  Deducción del 10 % del alquiler de tu vivienda habitual (hasta 300 €; 20 % y 400 € en pequeños
+  municipios) si tienes menos de 36 años.
+level: regional
+region: RI
+category: housing
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / La Rioja"
+amount:
+  type: range
+  max: 400
+  text: >-
+    10 % del alquiler, hasta 300 € al año; 20 %, hasta 400 €, en los pequeños municipios de La
+    Rioja.
+eligibility:
+  all:
+    - field: housing
+      op: eq
+      value: "renting"
+      label: "Vivir de alquiler en tu vivienda habitual"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-rioja/arrendamiento-vivienda-habitual-menores-36-anos.html
+        excerpt: >-
+          El 10 por 100 de las cantidades no subvencionadas satisfechas en el ejercicio para el
+          alquiler de la vivienda habitual.
+    - field: applicantAge
+      op: lt
+      value: 36
+      label: "Tener menos de 36 años"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-rioja/arrendamiento-vivienda-habitual-menores-36-anos.html
+        excerpt: >-
+          Que el contribuyente no haya cumplido los 36 años de edad a la fecha de devengo del
+          impuesto.
+    - field: annualHouseholdIncome
+      op: lte
+      value: 30050
+      label: "Renta de hasta 18.030 € en declaración individual (30.050 € en conjunta)"
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-rioja/arrendamiento-vivienda-habitual-menores-36-anos.html
+        excerpt: >-
+          18.030 euros en declaración individual. [...] 30.050 euros en declaración conjunta.
+otherRequirements:
+  - "La base liquidable del ahorro no puede superar 1.800 €."
+documents:
+  - "Contrato de alquiler"
+  - "Justificantes de pago del alquiler"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de La Rioja)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-rioja/arrendamiento-vivienda-habitual-menores-36-anos.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-rioja/arrendamiento-vivienda-habitual-menores-36-anos.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      El 10 por 100 de las cantidades no subvencionadas satisfechas en el ejercicio para el
+      alquiler de la vivienda habitual. El importe máximo anual será de 300 euros por contrato
+      de arrendamiento
+faq: []

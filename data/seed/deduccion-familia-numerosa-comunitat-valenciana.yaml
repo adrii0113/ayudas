@@ -1,0 +1,67 @@
+slug: deduccion-familia-numerosa-monoparental-comunitat-valenciana
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por familia numerosa o monoparental (Comunitat Valenciana)"
+summary: >-
+  Deducción en el tramo autonómico del IRPF de 330 € para familias numerosas o monoparentales de
+  categoría general y 660 € de categoría especial.
+level: regional
+region: VC
+category: income
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Comunitat Valenciana"
+amount:
+  type: range
+  min: 330
+  max: 660
+  text: >-
+    330 € (categoría general) o 660 € (categoría especial).
+eligibility:
+  all:
+    - any:
+        - field: isLargeFamily
+          op: eq
+          value: true
+          label: "Familia numerosa"
+          source:
+            url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/familia-numerosa-monoparental.html
+            excerpt: >-
+              El contribuyente debe ostentar la condición de familia numerosa en la fecha de
+              devengo del impuesto
+        - field: isSingleParent
+          op: eq
+          value: true
+          label: "Familia monoparental"
+          source:
+            url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/familia-numerosa-monoparental.html
+            excerpt: >-
+              El contribuyente debe ostentar la condición de familia monoparental en la fecha de
+              devengo del impuesto
+      label: "Ser familia numerosa o monoparental (con título)"
+      hard: true
+    - field: annualHouseholdIncome
+      op: lte
+      value: 47000
+      label: "Renta de hasta 30.000 € en declaración individual (47.000 € en conjunta), categoría general"
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/familia-numerosa-monoparental.html
+        excerpt: >-
+          30.000 euros en declaración individual. [...] 47.000 euros en declaración conjunta.
+otherRequirements:
+  - "La condición de familia monoparental se reconoce con el título expedido por la Generalitat."
+  - "En categoría especial los límites de renta suben a 35.000 € (individual) y 58.000 € (conjunta)."
+documents:
+  - "Título de familia numerosa o monoparental en vigor"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Comunitat Valenciana)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/familia-numerosa-monoparental.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/familia-numerosa-monoparental.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      330 euros , cuando se trate de familia numerosa o monoparental de categoría general . 660
+      euros , cuando se trate de familia numerosa o monoparental de categoría especial
+faq: []

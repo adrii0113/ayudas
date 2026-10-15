@@ -1,0 +1,85 @@
+slug: deduccion-alquiler-vivienda-habitual-extremadura
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por alquiler de vivienda habitual (Extremadura)"
+summary: >-
+  Deducción del 30 % del alquiler de tu vivienda habitual, hasta 1.000 € al año (1.500 € en el
+  medio rural), para menores de 36 años, familias numerosas o personas con discapacidad del 65 %
+  o más.
+level: regional
+region: EX
+category: housing
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Extremadura"
+amount:
+  type: range
+  max: 1500
+  text: >-
+    30 % del alquiler, hasta 1.000 € al año; hasta 1.500 € si la vivienda está en un municipio
+    de menos de 3.000 habitantes.
+eligibility:
+  all:
+    - field: housing
+      op: eq
+      value: "renting"
+      label: "Vivir de alquiler en tu vivienda habitual"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-extremadura/arrendamiento-vivienda-habitual.html
+        excerpt: >-
+          El 30 por 100 de las cantidades satisfechas por el contribuyente en el período
+          impositivo en concepto de alquiler de su vivienda habitual
+    - any:
+        - field: applicantAge
+          op: lt
+          value: 36
+          label: "Tener menos de 36 años"
+          source:
+            url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-extremadura/arrendamiento-vivienda-habitual.html
+            excerpt: >-
+              Que tenga en la fecha del devengo del impuesto menos de 36 años cumplidos
+        - field: isLargeFamily
+          op: eq
+          value: true
+          label: "Familia numerosa"
+          source:
+            url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-extremadura/arrendamiento-vivienda-habitual.html
+            excerpt: >-
+              Que forme parte de una familia que tenga la consideración legal de numerosa
+        - field: applicantDisabilityPercent
+          op: gte
+          value: 65
+          label: "Tener una discapacidad del 65 % o más"
+          source:
+            url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-extremadura/arrendamiento-vivienda-habitual.html
+            excerpt: >-
+              Que padezca una discapacidad con un grado reconocido igual o superior al 65 por
+              100
+      label: "Tener menos de 36 años, ser familia numerosa o tener una discapacidad del 65 % o más"
+      hard: true
+    - field: annualHouseholdIncome
+      op: lte
+      value: 45000
+      label: "Renta de hasta 28.000 € en declaración individual (45.000 € en conjunta)"
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-extremadura/arrendamiento-vivienda-habitual.html
+        excerpt: >-
+          28.000 euros en tributación individual. [...] 45.000 euros en tributación conjunta.
+otherRequirements:
+  - "También pueden aplicarla progenitores separados o sin vínculo matrimonial con dos hijos, en los términos de la ficha oficial."
+documents:
+  - "Contrato de alquiler"
+  - "Justificantes de pago del alquiler"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Extremadura)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-extremadura/arrendamiento-vivienda-habitual.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-extremadura/arrendamiento-vivienda-habitual.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      El 30 por 100 de las cantidades satisfechas por el contribuyente en el período impositivo
+      en concepto de alquiler de su vivienda habitual , con el límite de 1.000 euros anuales
+faq: []

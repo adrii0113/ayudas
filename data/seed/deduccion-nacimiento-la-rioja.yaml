@@ -1,0 +1,47 @@
+slug: deduccion-nacimiento-adopcion-la-rioja
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por nacimiento o adopción de hijos (La Rioja)"
+summary: >-
+  Deducción en el tramo autonómico del IRPF por cada hijo nacido o adoptado en el año: 600 € por
+  el primero, 750 € por el segundo y 900 € a partir del tercero.
+level: regional
+region: RI
+category: birth
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / La Rioja"
+amount:
+  type: range
+  min: 600
+  max: 900
+  text: >-
+    600 € (1.º hijo), 750 € (2.º) y 900 € (3.º y siguientes), más 60 € por hijo en partos
+    múltiples.
+eligibility:
+  all:
+    - field: youngestChildAge
+      op: eq
+      value: 0
+      label: "Haber tenido o adoptado un hijo este año"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-rioja/nacimiento-adopcion-hijos.html
+        excerpt: >-
+          Que el hijo haya nacido o haya sido adoptado durante el periodo impositivo y conviva
+          con el contribuyente a la fecha de devengo del impuesto
+otherRequirements: []
+documents:
+  - "Libro de familia o certificado de nacimiento / resolución de adopción"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de La Rioja)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-rioja/nacimiento-adopcion-hijos.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-rioja/nacimiento-adopcion-hijos.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      600 euros , cuando se trate del primer hijo . 750 euros , cuando se trate del segundo hijo
+      . 900 euros , cuando se trate del tercero y sucesivos
+faq: []

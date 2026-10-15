@@ -396,3 +396,47 @@ describe("questionnaire length with the real catalog", () => {
     }
   });
 });
+
+describe("nationwide coverage", () => {
+  const youngRenterMadrid: HouseholdProfile = {
+    region: "MD",
+    applicantAge: 30,
+    householdSize: 1,
+    children: [],
+    annualHouseholdIncome: 20000,
+    employmentStatus: "employed",
+    housing: "renting",
+    monthlyRent: 700,
+    yearsRegisteredInRegion: 5,
+  };
+
+  it("every autonomous community with common tax regime has published regional benefits", () => {
+    const regions = new Set(published.filter((b) => b.level === "regional").map((b) => b.region));
+    for (const code of [
+      "AN",
+      "AR",
+      "AS",
+      "IB",
+      "CN",
+      "CB",
+      "CL",
+      "CM",
+      "CT",
+      "EX",
+      "GA",
+      "MD",
+      "MC",
+      "RI",
+      "VC",
+    ]) {
+      expect(regions, code).toContain(code);
+    }
+  });
+
+  it("a young renter in Madrid gets the Madrid rent deduction and nothing from other regions", () => {
+    const matches = evaluate(youngRenterMadrid, published, { today: TODAY });
+    const eligible = matches.filter((m) => m.status === "eligible").map((m) => m.benefit);
+    expect(eligible.map((b) => b.slug)).toContain("deduccion-alquiler-vivienda-habitual-madrid");
+    expect(eligible.every((b) => b.level === "state" || b.region === "MD")).toBe(true);
+  });
+});
