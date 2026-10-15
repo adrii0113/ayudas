@@ -1,0 +1,67 @@
+slug: deduccion-alquiler-jovenes-castilla-la-mancha
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por alquiler de vivienda habitual para menores de 36 años (Castilla-La Mancha)"
+summary: >-
+  Deducción del 15 % del alquiler de tu vivienda habitual (hasta 500 €; 20 % y hasta 612 € en
+  municipios pequeños) si tienes menos de 36 años.
+level: regional
+region: CM
+category: housing
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Castilla-La Mancha"
+amount:
+  type: range
+  max: 612
+  text: >-
+    15 % del alquiler, hasta 500 € al año; 20 %, hasta 612 €, si vives en un municipio pequeño
+    de Castilla-La Mancha.
+eligibility:
+  all:
+    - field: housing
+      op: eq
+      value: "renting"
+      label: "Vivir de alquiler en tu vivienda habitual"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/arrendamiento-vivienda-habitual-menores-36-anos.html
+        excerpt: >-
+          El 15 por 100 de las cantidades satisfechas por el arrendamiento de la vivienda que
+          constituya o vaya a constituir su residencia habitual en Castilla-La Mancha
+    - field: applicantAge
+      op: lt
+      value: 36
+      label: "Tener menos de 36 años"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/arrendamiento-vivienda-habitual-menores-36-anos.html
+        excerpt: >-
+          el contribuyente tenga su residencia habitual en Castilla-La Mancha y sea menor de
+          treinta y seis años
+    - field: annualHouseholdIncome
+      op: lte
+      value: 25000
+      label: "Renta de hasta 12.500 € en declaración individual (25.000 € en conjunta)"
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/arrendamiento-vivienda-habitual-menores-36-anos.html
+        excerpt: >-
+          12.500 euros en tributación individual. [...] 25.000 euros en tributación conjunta.
+otherRequirements:
+  - "Tienes que indicar el NIF del arrendador en la declaración."
+documents:
+  - "Contrato de alquiler"
+  - "Justificantes de pago del alquiler"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Castilla-La Mancha)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/arrendamiento-vivienda-habitual-menores-36-anos.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/arrendamiento-vivienda-habitual-menores-36-anos.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      El 15 por 100 de las cantidades satisfechas por el arrendamiento de la vivienda que
+      constituya o vaya a constituir su residencia habitual en Castilla-La Mancha durante el
+      período impositivo, con un máximo de 500 euros
+faq: []

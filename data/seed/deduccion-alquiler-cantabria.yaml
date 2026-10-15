@@ -1,0 +1,86 @@
+slug: deduccion-alquiler-vivienda-habitual-cantabria
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por alquiler de vivienda habitual de jóvenes, mayores y personas con discapacidad (Cantabria)"
+summary: >-
+  Deducción del 10 % del alquiler de tu vivienda habitual (hasta 300 € al año) si tienes menos
+  de 36 años, 65 o más, o una discapacidad del 65 % o más.
+level: regional
+region: CB
+category: housing
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Cantabria"
+amount:
+  type: range
+  max: 600
+  text: >-
+    10 % del alquiler, hasta 300 € al año en declaración individual (600 € en conjunta).
+eligibility:
+  all:
+    - field: housing
+      op: eq
+      value: "renting"
+      label: "Vivir de alquiler en tu vivienda habitual"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/arrendamiento-vivienda-habitual-jovenes-mayores-discapacidad.html
+        excerpt: >-
+          El 10 por 100 de las cantidades satisfechas en el período impositivo por el
+          arrendamiento de la vivienda habitual
+    - any:
+        - field: applicantAge
+          op: lt
+          value: 36
+          label: "Tener menos de 36 años"
+          source:
+            url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/arrendamiento-vivienda-habitual-jovenes-mayores-discapacidad.html
+            excerpt: >-
+              Tener menos de 36 años cumplidos; 65 o más, o ser persona con discapacidad física,
+              psíquica o sensorial con un grado de discapacidad igual o superior al 65 por 100
+        - field: applicantAge
+          op: gte
+          value: 65
+          label: "Tener 65 años o más"
+          source:
+            url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/arrendamiento-vivienda-habitual-jovenes-mayores-discapacidad.html
+            excerpt: >-
+              Tener menos de 36 años cumplidos; 65 o más, o ser persona con discapacidad física,
+              psíquica o sensorial con un grado de discapacidad igual o superior al 65 por 100
+        - field: applicantDisabilityPercent
+          op: gte
+          value: 65
+          label: "Tener una discapacidad del 65 % o más"
+          source:
+            url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/arrendamiento-vivienda-habitual-jovenes-mayores-discapacidad.html
+            excerpt: >-
+              Tener menos de 36 años cumplidos; 65 o más, o ser persona con discapacidad física,
+              psíquica o sensorial con un grado de discapacidad igual o superior al 65 por 100
+      label: "Tener menos de 36 años, 65 o más, o una discapacidad del 65 % o más"
+      hard: true
+    - field: monthlyRent
+      op: gt
+      value: {"mul": [0.0083333, {"ref": "annualHouseholdIncome"}]}
+      label: "Pagar de alquiler más del 10 % de tus ingresos"
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/arrendamiento-vivienda-habitual-jovenes-mayores-discapacidad.html
+        excerpt: >-
+          Que las cantidades satisfechas en concepto de alquiler excedan del 10 por 100 de la
+          renta del contribuyente.
+otherRequirements:
+  - "El pago del alquiler debe hacerse por medios bancarios, no en efectivo."
+documents:
+  - "Contrato de alquiler"
+  - "Justificantes bancarios del pago del alquiler"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Cantabria)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/arrendamiento-vivienda-habitual-jovenes-mayores-discapacidad.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/arrendamiento-vivienda-habitual-jovenes-mayores-discapacidad.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      El 10 por 100 de las cantidades satisfechas en el período impositivo por el arrendamiento
+      de la vivienda habitual
+faq: []

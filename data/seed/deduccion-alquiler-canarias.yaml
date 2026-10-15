@@ -1,0 +1,67 @@
+slug: deduccion-alquiler-vivienda-habitual-canarias
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por alquiler de vivienda habitual (Canarias)"
+summary: >-
+  Deducción del 24 % del alquiler de tu vivienda habitual, hasta 740 € al año (760 € si tienes
+  menos de 40 años o 75 o más).
+level: regional
+region: CN
+category: housing
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Canarias"
+amount:
+  type: range
+  max: 760
+  text: >-
+    24 % de lo que pagas de alquiler, hasta 740 € al año (760 € si tienes menos de 40 años o 75
+    o más).
+eligibility:
+  all:
+    - field: housing
+      op: eq
+      value: "renting"
+      label: "Vivir de alquiler en tu vivienda habitual"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/alquiler-vivienda-habitual.html
+        excerpt: >-
+          El 24 por 100 de las cantidades satisfechas en el período impositivo por el alquiler
+          de la vivienda habitual.
+    - field: annualHouseholdIncome
+      op: lte
+      value: 61770
+      label: "Renta de hasta 46.455 € en declaración individual (61.770 € en conjunta)"
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/alquiler-vivienda-habitual.html
+        excerpt: >-
+          46.455 euros anuales en tributación individual. [...] 61.770 euros anuales en
+          tributación conjunta.
+    - field: monthlyRent
+      op: gt
+      value: {"mul": [0.0083333, {"ref": "annualHouseholdIncome"}]}
+      label: "Pagar de alquiler más del 10 % de tus ingresos"
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/alquiler-vivienda-habitual.html
+        excerpt: >-
+          excedan del 10 por 100 de la suma de la base imponible general y la base imponible del
+          ahorro
+otherRequirements:
+  - "El contrato debe ser de tu vivienda habitual y durar al menos un año."
+documents:
+  - "Contrato de alquiler"
+  - "Justificantes de pago del alquiler"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Canarias)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/alquiler-vivienda-habitual.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/alquiler-vivienda-habitual.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      El 24 por 100 de las cantidades satisfechas en el período impositivo por el alquiler de la
+      vivienda habitual. El importe máximo de la deducción será de 740 euros anuales por
+      contribuyente.
+faq: []

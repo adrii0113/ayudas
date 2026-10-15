@@ -1,0 +1,54 @@
+slug: deduccion-nacimiento-adopcion-castilla-la-mancha
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por nacimiento o adopción de hijos (Castilla-La Mancha)"
+summary: >-
+  Deducción en el tramo autonómico del IRPF por cada parto o adopción del año: 100 € si es de un
+  hijo, 500 € si son dos y 900 € si son tres o más.
+level: regional
+region: CM
+category: birth
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Castilla-La Mancha"
+amount:
+  type: range
+  min: 100
+  max: 900
+  text: >-
+    100 € por parto o adopción de un hijo, 500 € de dos hijos y 900 € de tres o más.
+eligibility:
+  all:
+    - field: youngestChildAge
+      op: eq
+      value: 0
+      label: "Haber tenido o adoptado un hijo este año"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/nacimiento-adopcion-hijos.html
+        excerpt: >-
+          Por cada hijo nacido o adoptado en el período impositivo, que genere el derecho a la
+          aplicación del mínimo por descendientes
+    - field: annualHouseholdIncome
+      op: lte
+      value: 36000
+      label: "Renta de hasta 27.000 € en declaración individual (36.000 € en conjunta)"
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/nacimiento-adopcion-hijos.html
+        excerpt: >-
+          27.000 euros en tributación individual. [...] 36.000 euros en tributación conjunta.
+otherRequirements: []
+documents:
+  - "Libro de familia o certificado de nacimiento / resolución de adopción"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Castilla-La Mancha)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/nacimiento-adopcion-hijos.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/nacimiento-adopcion-hijos.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      100 euros en el caso de partos o adopciones de un hijo . 500 euros en el caso de partos o
+      adopciones de dos hijos . 900 euros en el caso de partos o adopciones de tres o más hijos
+faq: []

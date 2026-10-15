@@ -1,0 +1,47 @@
+slug: deduccion-nacimiento-adopcion-cantabria
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por nacimiento o adopción de hijos (Cantabria)"
+summary: >-
+  Deducción en el tramo autonómico del IRPF de 1.400 € por cada hijo nacido o adoptado desde
+  2024, aplicable el año del nacimiento y los dos siguientes.
+level: regional
+region: CB
+category: birth
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Cantabria"
+amount:
+  type: fixed
+  min: 1400
+  text: >-
+    1.400 € al año por hijo, durante el año del nacimiento o adopción y los dos siguientes.
+eligibility:
+  all:
+    - field: youngestChildAge
+      op: lte
+      value: 2
+      label: "Tener un hijo nacido o adoptado en los últimos tres años (desde 2024)"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/nacimiento-adopcion-hijos.html
+        excerpt: >-
+          1.400 euros por nacimiento o adopción de hijos, aplicables en el ejercicio en que se
+          hayan producido y en los dos ejercicios siguientes
+otherRequirements:
+  - "Solo para nacimientos o adopciones desde el 1 de enero de 2024."
+  - "Si declaráis por separado, se reparte a partes iguales entre los progenitores."
+documents:
+  - "Libro de familia o certificado de nacimiento / resolución de adopción"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Cantabria)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/nacimiento-adopcion-hijos.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/nacimiento-adopcion-hijos.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      1.400 euros por nacimiento o adopción de hijos, aplicables en el ejercicio en que se hayan
+      producido y en los dos ejercicios siguientes
+faq: []

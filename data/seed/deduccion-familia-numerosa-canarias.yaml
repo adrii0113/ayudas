@@ -1,0 +1,47 @@
+slug: deduccion-familia-numerosa-canarias
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por familia numerosa (Canarias)"
+summary: >-
+  Deducción en el tramo autonómico del IRPF de 597 € para familias numerosas de categoría
+  general y 796 € de categoría especial (más si hay discapacidad del 65 % o más).
+level: regional
+region: CN
+category: income
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Canarias"
+amount:
+  type: range
+  min: 597
+  max: 1326
+  text: >-
+    597 € (general) o 796 € (especial); importes mayores si algún miembro tiene una discapacidad
+    del 65 % o más.
+eligibility:
+  all:
+    - field: isLargeFamily
+      op: eq
+      value: true
+      label: "Tener título de familia numerosa"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/familia-numerosa.html
+        excerpt: >-
+          el contribuyente que posea, a la fecha de devengo del impuesto (normalmente, el 31 de
+          diciembre), el título de familia numerosa
+otherRequirements: []
+documents:
+  - "Título de familia numerosa en vigor"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Canarias)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/familia-numerosa.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/familia-numerosa.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      597 euros , cuando se trate de familia numerosa de categoría general . 796 euros , cuando
+      se trate de familia numerosa de categoría especial
+faq: []

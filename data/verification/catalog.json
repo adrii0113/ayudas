@@ -365,6 +365,20 @@
     ],
     "models": []
   },
+  "deduccion-alquiler-jovenes-castilla-la-mancha": {
+    "version": 1,
+    "contentHash": "645809bc06f5d2d2e812af665ef6ae20ca4f34265aa6b2d457b6db07d87a91ca",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
   "deduccion-alquiler-jovenes-castilla-y-leon": {
     "version": 2,
     "contentHash": "8ca3a5bb0cdcdfcb3935215f563f4891a4c36b75ae05b893f5c61acfa8a92f40",
@@ -403,6 +417,34 @@
       "links": "pass",
       "deadlines": "skipped",
       "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-alquiler-vivienda-habitual-canarias": {
+    "version": 1,
+    "contentHash": "8c5875d0a14e2a87853d9f8dee155064c8dee65c01bb02063636cb47b061e224",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "pass"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-alquiler-vivienda-habitual-cantabria": {
+    "version": 1,
+    "contentHash": "ff2ccfe57039175d2677b09a8cf50881b51fa007e3bf505abde47cac1ff4ed52",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "pass"
     },
     "findings": [],
     "models": []
@@ -533,6 +575,34 @@
     "findings": [],
     "models": []
   },
+  "deduccion-familia-numerosa-canarias": {
+    "version": 1,
+    "contentHash": "8551e1fdd4fb67c71342282d423a2dd4f85f9787c668f14f48de1e3a78fcde0d",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-familia-numerosa-castilla-la-mancha": {
+    "version": 1,
+    "contentHash": "4d5ae1214aaf31f27cc4b93df9d5f19d96f863ba229eb4ed8b6e732a0812380a",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
   "deduccion-familia-numerosa-castilla-y-leon": {
     "version": 1,
     "contentHash": "3537b7ae65f8418f14579054b8dc19310d78132c4f5ae972278df555b910f674",
@@ -564,6 +634,48 @@
   "deduccion-nacimiento-adopcion-andalucia": {
     "version": 1,
     "contentHash": "2084488e8c47d0a4ce87fa8bc64c48ace6d55dc06cd89d166981be7eddfde5eb",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-nacimiento-adopcion-canarias": {
+    "version": 1,
+    "contentHash": "8871a1ebf8eda5a5287301730c3916edcba338da97d185a8a9124464e1ecd198",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-nacimiento-adopcion-cantabria": {
+    "version": 1,
+    "contentHash": "aefd0bd115d80d8f689b5687094cda8d1a34c911a43410fb237409ce21ee38fc",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-nacimiento-adopcion-castilla-la-mancha": {
+    "version": 1,
+    "contentHash": "bddbb3e1b0af362605b79826b2fe4f07b4c4e1dba8b27464ec6b09eb05a0ff79",
     "passed": true,
     "checkedAt": "2026-10-15",
     "agents": {

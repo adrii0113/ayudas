@@ -1,0 +1,54 @@
+slug: deduccion-familia-numerosa-castilla-la-mancha
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por familia numerosa (Castilla-La Mancha)"
+summary: >-
+  Deducción en el tramo autonómico del IRPF de 200 € para familias numerosas de categoría
+  general y 400 € de categoría especial (más con discapacidad).
+level: regional
+region: CM
+category: income
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Castilla-La Mancha"
+amount:
+  type: range
+  min: 200
+  max: 900
+  text: >-
+    200 € (general) o 400 € (especial); 300 € y 900 € si algún miembro tiene una discapacidad
+    del 65 % o más.
+eligibility:
+  all:
+    - field: isLargeFamily
+      op: eq
+      value: true
+      label: "Tener título de familia numerosa"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/familia-numerosa.html
+        excerpt: >-
+          El contribuyente debe tener reconocida la condición de familia numerosa
+    - field: annualHouseholdIncome
+      op: lte
+      value: 36000
+      label: "Renta de hasta 27.000 € en declaración individual (36.000 € en conjunta)"
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/familia-numerosa.html
+        excerpt: >-
+          27.000 euros en tributación individual. [...] 36.000 euros en tributación conjunta.
+otherRequirements: []
+documents:
+  - "Título de familia numerosa en vigor"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Castilla-La Mancha)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/familia-numerosa.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/familia-numerosa.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      200 euros , cuando se trate de familia numerosa de categoría general . - 400 euros ,
+      cuando se trate de familia numerosa de categoría especial
+faq: []

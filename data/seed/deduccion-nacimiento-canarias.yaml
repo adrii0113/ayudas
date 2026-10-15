@@ -1,0 +1,57 @@
+slug: deduccion-nacimiento-adopcion-canarias
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por nacimiento o adopción de hijos (Canarias)"
+summary: >-
+  Deducción en el tramo autonómico del IRPF por cada hijo nacido o adoptado en el año: de 265 €
+  (1.º o 2.º hijo) a 928 € (5.º y siguientes), y más si tiene discapacidad.
+level: regional
+region: CN
+category: birth
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Canarias"
+amount:
+  type: range
+  min: 265
+  max: 928
+  text: >-
+    265 € (1.º o 2.º hijo), 530 € (3.º), 796 € (4.º) y 928 € (5.º y siguientes). Importes
+    adicionales si el hijo tiene una discapacidad del 65 % o más.
+eligibility:
+  all:
+    - field: youngestChildAge
+      op: eq
+      value: 0
+      label: "Haber tenido o adoptado un hijo este año"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/nacimiento-adopcion-hijos.html
+        excerpt: >-
+          Por cada hijo nacido o adoptado en el período impositivo, que conviva con el
+          contribuyente
+    - field: annualHouseholdIncome
+      op: lte
+      value: 61770
+      label: "Renta de hasta 46.455 € en declaración individual (61.770 € en conjunta)"
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/nacimiento-adopcion-hijos.html
+        excerpt: >-
+          46.455 euros en tributación individual. [...] 61.770 euros en tributación conjunta
+otherRequirements:
+  - "Si ambos progenitores tienen derecho y declaran por separado, se reparte a partes iguales."
+  - "Es compatible con la deducción autonómica por familia numerosa."
+documents:
+  - "Libro de familia o certificado de nacimiento / resolución de adopción"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Canarias)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/nacimiento-adopcion-hijos.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/nacimiento-adopcion-hijos.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      Por cada hijo nacido o adoptado en el período impositivo, que conviva con el
+      contribuyente: - 265 euros , cuando se trate del primero o segundo hijo
+faq: []
