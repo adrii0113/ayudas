@@ -260,3 +260,23 @@ En cada hito: tests en verde, `tsc` sin errores y un README actualizado.
 - ¿Castilla y León o Cataluña como primera comunidad? (por defecto CL).
 - ¿Ofrecer resultados en tramos de ingresos en vez de cifra exacta para reducir fricción?
 - Frecuencia de revisión del catálogo manual (propuesta: trimestral + al inicio de cada año por cambios de IPREM/presupuestos).
+
+---
+
+## 14. Decisiones del propietario posteriores al MVP (15/10/2026)
+
+Prevalecen sobre lo anterior donde haya conflicto. Diseño completo en `docs/sistema-de-datos.md`.
+
+- **El producto principal son los datos**: registro de *todas* las ayudas de cualquier
+  administración española (estatal, autonómica, provincial, municipal, otros organismos) y para
+  *cualquier* beneficiario (personas, autónomos, empresas, entidades). «Ayudas a empresas» deja
+  de estar fuera de alcance **en la base de datos**; la web B2C sigue centrada en hogares mediante filtros.
+- **Toda España**, incluidos los territorios forales (País Vasco y Navarra).
+- **La base de datos es la fuente de verdad**, con exportación diaria a Git. Los YAML de
+  `data/seed` quedan como semilla y fixtures.
+- **Niveles de confianza** `detected` → `extracted` → `agent_verified` → `human_verified`. Lo no
+  revisado por personas se puede mostrar, siempre etiquetado y con enlace oficial.
+- **Agentes de verificación** comprueban la veracidad contra las fuentes oficiales y dejan
+  registro auditable. No deciden la elegibilidad de los usuarios (el principio 1 sigue igual).
+- **Pendiente de decisión**: si las reglas `agent_verified` (sin revisión humana) pueden usarse
+  en el cuestionario. Hasta entonces, el cuestionario solo usa `human_verified` (principio 2).

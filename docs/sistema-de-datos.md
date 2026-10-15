@@ -1,6 +1,6 @@
 # Sistema de datos de ayudas públicas (diseño v1)
 
-> Estado: **propuesta, pendiente de aprobación**. No hay nada implementado de lo que describe
+> Estado: **aprobado con cambios del propietario (15/10/2026), en implementación**. No hay nada implementado de lo que describe
 > este documento salvo lo marcado como «ya existe».
 > Fecha: 15 de octubre de 2026.
 
@@ -30,6 +30,10 @@ Convocatorias con beneficiario «personas físicas», consultadas en la API ofic
 | Local (ayuntamientos, diputaciones, cabildos…) | 10.784            |
 | Otros organismos                               | 1.879             |
 | **Total**                                      | **14.625**        |
+
+Con **todos** los tipos de beneficiario (empresas, autónomos, asociaciones, personas) son
+**70.769 convocatorias al año** (estatal 2.208, autonómica 14.932, local 51.216, otros 2.413), y
+el histórico de la BDNS acumula **658.077**. España tiene **8.132 municipios** (INE, 1/1/2026).
 
 Una muestra de 75 títulos enseña tres cosas que condicionan todo el diseño:
 
@@ -313,17 +317,20 @@ Medirlo de verdad es el objetivo de la fase 2.
 Lo que **no** cambia: el motor de reglas, `evaluate()`, el DSL, la extracción con verificación
 de citas, el cuestionario adaptativo y los principios de privacidad.
 
-## 10. Decisiones que necesito del propietario
+## 10. Decisiones del propietario (15/10/2026)
 
-1. **Fuente de verdad**: ¿base de datos con exportación a Git (recomendado para escalar) o
-   seguir con YAML para todo?
-2. **Lo detectado pero no revisado** (sobre todo N4): ¿no mostrarlo (recomendado al principio)
-   o mostrarlo como «convocatoria detectada, sin verificar», solo con enlace oficial y sin
-   evaluar requisitos?
-3. **Territorios forales**: ¿al final (recomendado) o a la vez que N2?
-4. **Quién revisa** y cuántas horas a la semana. Esto marca el ritmo real de cobertura.
-5. **Orden de las CCAA en N2**: ¿todas a la vez solo con deducciones IRPF y después por
-   categorías (recomendado), o comunidad por comunidad?
+1. **Se almacena todo**: cualquier ayuda de cualquier administración (estatal, autonómica,
+   provincial, municipal y otros organismos) y para **cualquier beneficiario** (personas,
+   familias, autónomos, empresas, entidades). El alcance de cada producto (p. ej. la web B2C para
+   hogares) es un **filtro**, no un límite de la base de datos.
+2. **Fuente de verdad**: la base de datos, con **exportación diaria a Git**.
+3. **Lo no revisado se muestra**, etiquetado claramente con su nivel de confianza (§12).
+4. **Territorios forales** (País Vasco y Navarra) incluidos desde el principio; se distinguen
+   por filtros de territorio y régimen fiscal.
+5. **Agentes de verificación** dedicados a comprobar la veracidad de cada ayuda (§13).
+
+Pendiente de confirmar: si las reglas verificadas solo por agentes pueden usarse en el
+cuestionario para decir «te corresponde» (ver §12, porque afecta al principio 2 del proyecto).
 
 ## 11. Fases
 
@@ -339,3 +346,42 @@ de citas, el cuestionario adaptativo y los principios de privacidad.
 
 La web pública podrá ampliarse a otras comunidades a partir de F4. Añadir una región ya es solo
 configuración.
+
+## 12. Niveles de confianza
+
+Cada programa y cada revisión tienen un nivel, visible en la web, la API y la exportación:
+
+| Nivel            | Qué significa                                                                                                         | Qué se puede mostrar                                                                                        |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `detected`       | Detectada en una fuente oficial. Solo metadatos de origen (título, organismo, territorio, plazo, presupuesto, enlace) | Listado y buscador, con aviso «sin verificar» y enlace oficial. **No** se evalúan requisitos                |
+| `extracted`      | Un LLM ha estructurado requisitos e importes con citas                                                                | Igual que `detected` más «requisitos según las bases (sin verificar)» en texto                              |
+| `agent_verified` | Todos los agentes de verificación coinciden y no hay incidencias abiertas                                             | Ficha completa con etiqueta «verificada automáticamente». Uso en el cuestionario: **pendiente de decisión** |
+| `human_verified` | Revisada y aprobada por una persona                                                                                   | Ficha completa y cuestionario (lo que existe hoy)                                                           |
+
+Si cualquier agente detecta un problema, la ayuda **baja** de nivel y entra en la cola humana.
+
+## 13. Agentes de verificación
+
+Cada agente es independiente, se identifica con nombre y versión, y deja un registro auditable
+(`verification_runs`): qué comprobó, contra qué fuente, veredicto (`pass`, `fail`, `uncertain`) y
+hallazgos. Ningún agente decide la elegibilidad de un usuario: verifican que **los datos y las
+reglas coinciden con las fuentes oficiales**.
+
+| Agente                      | Tipo               | Qué comprueba                                                                                                                                                 |
+| --------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Citas**                   | Determinista       | Cada cita existe literalmente en el documento guardado y cada regla tiene al menos una                                                                        |
+| **Contraste con la fuente** | Determinista       | Plazos, presupuesto, organismo y territorio coinciden con los metadatos oficiales de la BDNS o del boletín                                                    |
+| **Parámetros**              | Determinista       | Las reglas usan parámetros vigentes (p. ej. IPREM del año correcto)                                                                                           |
+| **Enlaces**                 | Determinista       | Enlace oficial vivo; detecta redirecciones y páginas cambiadas desde la última verificación                                                                   |
+| **Plazos**                  | Determinista       | Archiva lo cerrado; detecta incoherencias (cierre antes que apertura, años imposibles)                                                                        |
+| **Segunda extracción**      | LLM                | Extrae de nuevo desde cero, con otro prompt (y si se quiere otro modelo), y compara campo a campo con la extracción original. Cualquier discrepancia se marca |
+| **Lectura de citas**        | LLM                | Para cada regla, ¿la cita la justifica de verdad? (p. ej. la cita dice «inferior a 2 veces el IPREM» y la regla dice ≤ 2,5)                                   |
+| **Perfiles límite**         | Determinista + LLM | Genera perfiles justo en los umbrales, ejecuta el motor y pide a un LLM que contraste el resultado con el texto oficial                                       |
+| **Correcciones**            | LLM                | Busca en la BDNS y el boletín correcciones de errores, ampliaciones de plazo o modificaciones posteriores                                                     |
+
+Agregación: `agent_verified` exige `pass` en todos los agentes aplicables. Un `fail` baja el
+nivel y abre incidencia; un `uncertain` manda a revisión humana. Se repiten periódicamente
+(enlaces y plazos a diario; el resto cuando cambia la fuente o el parámetro).
+
+Calidad de los agentes: se miden contra las fichas `human_verified` (si una persona encuentra
+un error que los agentes no vieron, cuenta como fallo del agente) y se publica su tasa de acierto.
