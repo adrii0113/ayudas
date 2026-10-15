@@ -1,6 +1,17 @@
-import { REGIONS, territoryAncestors, territoryFromNuts, ccaaByIso, territoryId } from "@tetoca/core";
+import {
+  REGIONS,
+  territoryAncestors,
+  territoryFromNuts,
+  ccaaByIso,
+  territoryId,
+} from "@tetoca/core";
 import { BdnsClient } from "./client";
-import { beneficiaryTypesFrom, editionStatusOf, programTypeFromTitle } from "./normalize";
+import {
+  beneficiaryTypesFrom,
+  editionStatusOf,
+  normalizeName,
+  programTypeFromTitle,
+} from "./normalize";
 import type { BdnsDetail } from "./schemas";
 
 /**
@@ -26,7 +37,9 @@ export type OpenCallsFile = {
 };
 
 /** BDNS region ids (NUTS2 and its NUTS3 units) for each community, from GET /regiones. */
-export async function bdnsRegionIdsByCommunity(client: BdnsClient): Promise<Record<string, number[]>> {
+export async function bdnsRegionIdsByCommunity(
+  client: BdnsClient,
+): Promise<Record<string, number[]>> {
   const tree = await client.getRegions();
   const out: Record<string, number[]> = {};
   const walk = (nodes: { id: number; descripcion: string; children?: unknown[] }[]) => {
@@ -48,9 +61,26 @@ export async function bdnsRegionIdsByCommunity(client: BdnsClient): Promise<Reco
 const isoDay = (v: string | null | undefined) =>
   v && /^\d{4}-\d{2}-\d{2}/.test(v) ? v.slice(0, 10) : null;
 
+/**
+ * BDNS spending purposes (GET /finalidades) relevant to households. Others
+ * (agriculture and fishing, trade, industry, R&D…) are open to individuals
+ * only as professionals and would be noise for families.
+ */
+export const HOUSEHOLD_PURPOSES = [
+  "acceso a la vivienda y fomento de la edificacion",
+  "desempleo",
+  "fomento del empleo",
+  "educacion",
+  "sanidad",
+  "servicios sociales y promocion social",
+  "otras prestaciones economicas",
+  "subvenciones al transporte",
+];
+
 /** Whether a call should be listed as open on `today`. */
 export function isListable(detail: BdnsDetail, today: string, recentSince: string): boolean {
   if (programTypeFromTitle(detail.descripcion) === "prize") return false;
+  if (!HOUSEHOLD_PURPOSES.includes(normalizeName(detail.descripcionFinalidad ?? ""))) return false;
   if (!beneficiaryTypesFrom(detail.tiposBeneficiarios).includes("individuals")) return false;
   const status = editionStatusOf(detail, today);
   if (status === "open" || status === "announced") return true;
