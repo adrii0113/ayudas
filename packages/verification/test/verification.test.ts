@@ -14,6 +14,7 @@ import { describe, expect, it } from "vitest";
 import {
   citationsAgent,
   compareContents,
+  decodeHtml,
   findQuote,
   deadlinesAgent,
   decide,
@@ -176,6 +177,16 @@ describe("quote matching", () => {
     expect(omitted!.end).toBeGreaterThan(omitted!.start);
     expect(findQuote(text, "1.500 euros [...] 600 euros")).toBeUndefined();
     expect(findQuote(text, "600 € con carácter general")).toBeUndefined();
+  });
+});
+
+describe("html decoding", () => {
+  it("honours the declared charset", () => {
+    const latin1 = new Uint8Array([0x61, 0xf1, 0x6f, 0x73]); // "años" in ISO-8859-1
+    expect(decodeHtml(latin1, "text/html; charset=ISO-8859-1")).toBe("años");
+    const meta = new TextEncoder().encode('<meta charset="iso-8859-1">');
+    expect(decodeHtml(new Uint8Array([...meta, 0xf1]), "text/html")).toContain("ñ");
+    expect(decodeHtml(new TextEncoder().encode("años"), "text/html; charset=utf-8")).toBe("años");
   });
 });
 

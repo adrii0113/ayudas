@@ -3627,6 +3627,112 @@
     "verifiedAt": "2026-10-15"
   },
   {
+    "slug": "ingreso-minimo-de-solidaridad-castilla-la-mancha",
+    "title": "Ingreso Mínimo de Solidaridad (Castilla-La Mancha)",
+    "summary": "Prestación periódica y temporal de la Junta de Castilla-La Mancha para personas y familias que no tienen recursos suficientes para sus necesidades básicas.",
+    "level": "regional",
+    "region": "CM",
+    "category": "income",
+    "kind": "permanent",
+    "programType": "cash_benefit",
+    "agency": "Junta de Comunidades de Castilla-La Mancha",
+    "amount": {
+      "type": "variable",
+      "text": "Cantidad mensual que completa los ingresos del hogar hasta el mínimo que fija la comunidad; depende del número de miembros."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "applicantAge",
+          "op": "gte",
+          "value": 25,
+          "label": "Tener 25 años o más",
+          "hard": true,
+          "source": {
+            "url": "https://bienestarsocial.castillalamancha.es/actuaciones/ingreso-minimo-de-solidaridad",
+            "excerpt": "Tener una edad comprendida entre 25 y 64 años de edad, ambos inclusive"
+          }
+        },
+        {
+          "field": "applicantAge",
+          "op": "lte",
+          "value": 64,
+          "label": "Tener 64 años o menos",
+          "hard": true,
+          "source": {
+            "url": "https://bienestarsocial.castillalamancha.es/actuaciones/ingreso-minimo-de-solidaridad",
+            "excerpt": "Tener una edad comprendida entre 25 y 64 años de edad, ambos inclusive"
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lt",
+          "value": {
+            "mul": [
+              {
+                "ref": "imvAnnualBase"
+              },
+              {
+                "min": [
+                  2.2,
+                  {
+                    "add": [
+                      0.7,
+                      {
+                        "mul": [
+                          0.3,
+                          {
+                            "ref": "householdSize"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "label": "Ingresos del hogar muy bajos (referencia orientativa: renta garantizada del IMV para tu hogar)",
+          "hard": true,
+          "source": {
+            "url": "https://bienestarsocial.castillalamancha.es/actuaciones/ingreso-minimo-de-solidaridad",
+            "excerpt": "Carecer de medios económicos equivalentes en su cuantía a la señalada para el Ingreso Mínimo de Solidaridad"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "El umbral exacto de ingresos lo fija la normativa autonómica según los miembros del hogar; como referencia orientativa usamos la renta garantizada del Ingreso Mínimo Vital.",
+      "Es subsidiaria: antes hay que pedir las pensiones y prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital.",
+      "Implica acordar un itinerario o proyecto de inclusión con los servicios sociales.",
+      "Hay excepciones a la edad para quienes tienen menores o personas con discapacidad a cargo.",
+      "La unidad familiar debe ser independiente desde al menos un año antes, salvo excepciones."
+    ],
+    "documents": [
+      "DNI o NIE de las personas del hogar",
+      "Certificado de empadronamiento",
+      "Justificantes de ingresos"
+    ],
+    "steps": [
+      "Solicítalo a través de los servicios sociales de atención primaria de tu municipio."
+    ],
+    "officialUrl": "https://bienestarsocial.castillalamancha.es/actuaciones/ingreso-minimo-de-solidaridad",
+    "sources": [
+      {
+        "url": "https://bienestarsocial.castillalamancha.es/actuaciones/ingreso-minimo-de-solidaridad",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "Carecer de medios económicos equivalentes en su cuantía a la señalada para el Ingreso Mínimo de Solidaridad"
+      }
+    ],
+    "faq": [],
+    "id": "ingreso-minimo-de-solidaridad-castilla-la-mancha",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
     "slug": "ingreso-minimo-vital",
     "title": "Ingreso Mínimo Vital (IMV)",
     "summary": "Prestación mensual de la Seguridad Social para hogares con ingresos muy bajos. Completa tus ingresos hasta una renta garantizada que depende de cuántas personas viven contigo.",
@@ -4315,6 +4421,310 @@
     "verifiedAt": "2026-10-15"
   },
   {
+    "slug": "renta-canaria-de-ciudadania",
+    "title": "Renta Canaria de Ciudadanía",
+    "summary": "Prestación del Gobierno de Canarias para familias en situación de vulnerabilidad económica y social, acompañada de apoyos de los servicios sociales.",
+    "level": "regional",
+    "region": "CN",
+    "category": "income",
+    "kind": "permanent",
+    "programType": "cash_benefit",
+    "agency": "Gobierno de Canarias",
+    "amount": {
+      "type": "variable",
+      "text": "Cantidad mensual que completa los ingresos del hogar hasta el mínimo que fija la comunidad; depende del número de miembros."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "yearsRegisteredInRegion",
+          "op": "gte",
+          "value": 1,
+          "label": "Llevar al menos 12 meses residiendo en Canarias",
+          "source": {
+            "url": "https://sede.gobiernodecanarias.org/sede/movil/tramites/7441",
+            "excerpt": "Igualmente es necesario tener un tiempo mínimo de 12 meses de residencia efectiva en Canarias, salvo excepciones"
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lt",
+          "value": {
+            "mul": [
+              {
+                "ref": "imvAnnualBase"
+              },
+              {
+                "min": [
+                  2.2,
+                  {
+                    "add": [
+                      0.7,
+                      {
+                        "mul": [
+                          0.3,
+                          {
+                            "ref": "householdSize"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "label": "Ingresos del hogar muy bajos (referencia orientativa: renta garantizada del IMV para tu hogar)",
+          "hard": true,
+          "source": {
+            "url": "https://sede.gobiernodecanarias.org/sede/movil/tramites/7441",
+            "excerpt": "dirigida a aquellas familias en situación de vulnerabilidad económica y social que residan en Canarias"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "El umbral exacto de ingresos lo fija la normativa autonómica según los miembros del hogar; como referencia orientativa usamos la renta garantizada del Ingreso Mínimo Vital.",
+      "Es subsidiaria: antes hay que pedir las pensiones y prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital.",
+      "Implica acordar un itinerario o proyecto de inclusión con los servicios sociales.",
+      "Hay que haber solicitado antes el Ingreso Mínimo Vital (no hace falta que esté resuelto).",
+      "Consulta en la ficha oficial los requisitos de edad y sus excepciones."
+    ],
+    "documents": [
+      "DNI o NIE de las personas del hogar",
+      "Certificado de empadronamiento",
+      "Justificantes de ingresos"
+    ],
+    "steps": [
+      "Solicítala en la sede electrónica del Gobierno de Canarias o en los servicios sociales de tu municipio."
+    ],
+    "officialUrl": "https://sede.gobiernodecanarias.org/sede/movil/tramites/7441",
+    "sources": [
+      {
+        "url": "https://sede.gobiernodecanarias.org/sede/movil/tramites/7441",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "dirigida a aquellas familias en situación de vulnerabilidad económica y social que residan en Canarias"
+      }
+    ],
+    "faq": [],
+    "id": "renta-canaria-de-ciudadania",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "renta-ciudadania-la-rioja",
+    "title": "Renta de Ciudadanía (La Rioja)",
+    "summary": "Prestación del Gobierno de La Rioja para hogares sin recursos suficientes para cubrir sus necesidades básicas.",
+    "level": "regional",
+    "region": "RI",
+    "category": "income",
+    "kind": "permanent",
+    "programType": "cash_benefit",
+    "agency": "Gobierno de La Rioja",
+    "amount": {
+      "type": "variable",
+      "text": "Cantidad mensual que completa los ingresos del hogar hasta el mínimo que fija la comunidad; depende del número de miembros."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "applicantAge",
+          "op": "gt",
+          "value": 23,
+          "label": "Tener más de 23 años",
+          "hard": true,
+          "source": {
+            "url": "https://web.larioja.org/oficina-electronica/tramite?n=24327",
+            "excerpt": "Ser mayor de veintitrés años."
+          }
+        },
+        {
+          "field": "yearsRegisteredInRegion",
+          "op": "gte",
+          "value": 1,
+          "label": "Llevar al menos un año residiendo en La Rioja",
+          "source": {
+            "url": "https://web.larioja.org/oficina-electronica/tramite?n=24327",
+            "excerpt": "Tener la residencia efectiva en cualquier municipio de La Rioja, de forma ininterrumpida y al menos con un año de antelación a la solicitud"
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lt",
+          "value": {
+            "mul": [
+              {
+                "ref": "imvAnnualBase"
+              },
+              {
+                "min": [
+                  2.2,
+                  {
+                    "add": [
+                      0.7,
+                      {
+                        "mul": [
+                          0.3,
+                          {
+                            "ref": "householdSize"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "label": "Ingresos del hogar muy bajos (referencia orientativa: renta garantizada del IMV para tu hogar)",
+          "hard": true,
+          "source": {
+            "url": "https://web.larioja.org/oficina-electronica/tramite?n=24327",
+            "excerpt": "No encontrarse su unidad familiar o de convivencia en el supuesto de recursos suficientes establecido en el artículo 8"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "El umbral exacto de ingresos lo fija la normativa autonómica según los miembros del hogar; como referencia orientativa usamos la renta garantizada del Ingreso Mínimo Vital.",
+      "Es subsidiaria: antes hay que pedir las pensiones y prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital.",
+      "Implica acordar un itinerario o proyecto de inclusión con los servicios sociales.",
+      "Pueden pedirla personas de 16 a 23 años con cargas familiares u otras situaciones previstas.",
+      "La unidad familiar o de convivencia debe existir desde al menos un año antes."
+    ],
+    "documents": [
+      "DNI o NIE de las personas del hogar",
+      "Certificado de empadronamiento",
+      "Justificantes de ingresos"
+    ],
+    "steps": [
+      "Solicítala en la oficina electrónica del Gobierno de La Rioja o en los servicios sociales."
+    ],
+    "officialUrl": "https://web.larioja.org/oficina-electronica/tramite?n=24327",
+    "sources": [
+      {
+        "url": "https://web.larioja.org/oficina-electronica/tramite?n=24327",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "No encontrarse su unidad familiar o de convivencia en el supuesto de recursos suficientes establecido en el artículo 8"
+      }
+    ],
+    "faq": [],
+    "id": "renta-ciudadania-la-rioja",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "renta-garantizada-ciudadania-cataluna",
+    "title": "Renta garantizada de ciudadanía (Cataluña)",
+    "summary": "Prestación de la Generalitat de Catalunya para personas y hogares sin ingresos suficientes, complementaria al Ingreso Mínimo Vital.",
+    "level": "regional",
+    "region": "CT",
+    "category": "income",
+    "kind": "permanent",
+    "programType": "cash_benefit",
+    "agency": "Generalitat de Catalunya",
+    "amount": {
+      "type": "variable",
+      "text": "Cantidad mensual que completa los ingresos del hogar hasta el mínimo que fija la comunidad; depende del número de miembros."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "applicantAge",
+          "op": "gt",
+          "value": 23,
+          "label": "Tener más de 23 años",
+          "hard": true,
+          "source": {
+            "url": "https://tramits.gencat.cat/es/tramits/tramits-temes/rgc-i-complement-activables",
+            "excerpt": "Tener más de 23 años"
+          }
+        },
+        {
+          "field": "yearsRegisteredInRegion",
+          "op": "gte",
+          "value": 2,
+          "label": "Llevar al menos dos años viviendo en Cataluña",
+          "source": {
+            "url": "https://tramits.gencat.cat/es/tramits/tramits-temes/rgc-i-complement-activables",
+            "excerpt": "Haber residido de manera continuada y efectiva en Catalunya durante los 2 años anteriores a la solicitud"
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lt",
+          "value": {
+            "mul": [
+              {
+                "ref": "imvAnnualBase"
+              },
+              {
+                "min": [
+                  2.2,
+                  {
+                    "add": [
+                      0.7,
+                      {
+                        "mul": [
+                          0.3,
+                          {
+                            "ref": "householdSize"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "label": "Ingresos del hogar muy bajos (referencia orientativa: renta garantizada del IMV para tu hogar)",
+          "hard": true,
+          "source": {
+            "url": "https://tramits.gencat.cat/es/tramits/tramits-temes/rgc-i-complement-activables",
+            "excerpt": "Estar empadronado en Catalunya en el momento de presentar la solicitud"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "El umbral exacto de ingresos lo fija la normativa autonómica según los miembros del hogar; como referencia orientativa usamos la renta garantizada del Ingreso Mínimo Vital.",
+      "Es subsidiaria: antes hay que pedir las pensiones y prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital.",
+      "Implica acordar un itinerario o proyecto de inclusión con los servicios sociales.",
+      "Entre 18 y 22 años también se puede pedir en algunos casos (por ejemplo, con menores o personas con discapacidad a cargo).",
+      "Hay que haber pedido antes el Ingreso Mínimo Vital."
+    ],
+    "documents": [
+      "DNI o NIE de las personas del hogar",
+      "Certificado de empadronamiento",
+      "Justificantes de ingresos"
+    ],
+    "steps": [
+      "Solicítala en el portal de trámites de la Generalitat (tramits.gencat.cat)."
+    ],
+    "officialUrl": "https://tramits.gencat.cat/es/tramits/tramits-temes/rgc-i-complement-activables",
+    "sources": [
+      {
+        "url": "https://tramits.gencat.cat/es/tramits/tramits-temes/rgc-i-complement-activables",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "Estar empadronado en Catalunya en el momento de presentar la solicitud"
+      }
+    ],
+    "faq": [],
+    "id": "renta-garantizada-ciudadania-cataluna",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
     "slug": "renta-garantizada-ciudadania-castilla-y-leon",
     "title": "Renta Garantizada de Ciudadanía de Castilla y León",
     "summary": "Prestación mensual de la Junta para personas y familias sin ingresos suficientes para cubrir sus necesidades básicas, acompañada de un plan de inserción.",
@@ -4415,6 +4825,858 @@
     "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "renta-extremena-garantizada",
+    "title": "Renta Extremeña Garantizada",
+    "summary": "Prestación de la Junta de Extremadura para hogares sin ingresos suficientes para cubrir sus necesidades básicas.",
+    "level": "regional",
+    "region": "EX",
+    "category": "income",
+    "kind": "permanent",
+    "programType": "cash_benefit",
+    "agency": "Junta de Extremadura",
+    "amount": {
+      "type": "variable",
+      "text": "Cantidad mensual que completa los ingresos del hogar hasta el mínimo que fija la comunidad; depende del número de miembros."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "applicantAge",
+          "op": "gte",
+          "value": 25,
+          "label": "Tener 25 años o más",
+          "hard": true,
+          "source": {
+            "url": "https://www.juntaex.es/w/5369",
+            "excerpt": "Tener cumplidos los 25 años de edad antes de la presentación de la solicitud de la ayuda"
+          }
+        },
+        {
+          "field": "yearsRegisteredInRegion",
+          "op": "gte",
+          "value": 1,
+          "label": "Llevar al menos seis meses empadronado en Extremadura",
+          "source": {
+            "url": "https://www.juntaex.es/w/5369",
+            "excerpt": "Estar empadronados y tener la residencia efectiva durante una suma mínima de seis meses, de manera continuada, en cualquier municipio de la Comunidad Autónoma de Extremadura"
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lt",
+          "value": {
+            "mul": [
+              {
+                "ref": "imvAnnualBase"
+              },
+              {
+                "min": [
+                  2.2,
+                  {
+                    "add": [
+                      0.7,
+                      {
+                        "mul": [
+                          0.3,
+                          {
+                            "ref": "householdSize"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "label": "Ingresos del hogar muy bajos (referencia orientativa: renta garantizada del IMV para tu hogar)",
+          "hard": true,
+          "source": {
+            "url": "https://www.juntaex.es/w/5369",
+            "excerpt": "No disponer de una cantidad de ingresos, rentas o recursos económicos considerada mínima para atender las necesidades básicas de una vida digna"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "El umbral exacto de ingresos lo fija la normativa autonómica según los miembros del hogar; como referencia orientativa usamos la renta garantizada del Ingreso Mínimo Vital.",
+      "Es subsidiaria: antes hay que pedir las pensiones y prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital.",
+      "Implica acordar un itinerario o proyecto de inclusión con los servicios sociales.",
+      "Basta con ser mayor de 18 años en algunos supuestos (consulta la ficha oficial).",
+      "Si llevas menos de un año empadronado, comprueba en la ficha oficial si cumples los seis meses."
+    ],
+    "documents": [
+      "DNI o NIE de las personas del hogar",
+      "Certificado de empadronamiento",
+      "Justificantes de ingresos"
+    ],
+    "steps": [
+      "Solicítala en los servicios sociales de atención social básica de tu municipio."
+    ],
+    "officialUrl": "https://www.juntaex.es/w/5369",
+    "sources": [
+      {
+        "url": "https://www.juntaex.es/w/5369",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "No disponer de una cantidad de ingresos, rentas o recursos económicos considerada mínima para atender las necesidades básicas de una vida digna"
+      }
+    ],
+    "faq": [],
+    "id": "renta-extremena-garantizada",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "renta-garantizada-navarra",
+    "title": "Renta Garantizada (Navarra)",
+    "summary": "Prestación del Gobierno de Navarra para personas y hogares que carecen de medios suficientes para cubrir sus necesidades básicas.",
+    "level": "regional",
+    "region": "NC",
+    "category": "income",
+    "kind": "permanent",
+    "programType": "cash_benefit",
+    "agency": "Gobierno de Navarra",
+    "amount": {
+      "type": "variable",
+      "text": "Cantidad mensual que completa los ingresos del hogar hasta el mínimo que fija la comunidad; depende del número de miembros."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "applicantAge",
+          "op": "gte",
+          "value": 18,
+          "label": "Ser mayor de edad",
+          "hard": true,
+          "source": {
+            "url": "https://www.navarra.es/es/derechos-sociales/pobreza-e-inclusion/renta-garantizada",
+            "excerpt": "Personas mayores de 18 años o menores emancipados"
+          }
+        },
+        {
+          "field": "yearsRegisteredInRegion",
+          "op": "gte",
+          "value": 2,
+          "label": "Llevar al menos dos años residiendo en Navarra (uno si hay menores o personas dependientes)",
+          "source": {
+            "url": "https://www.navarra.es/es/derechos-sociales/pobreza-e-inclusion/renta-garantizada",
+            "excerpt": "Personas que residen en Navarra desde al menos dos años antes de presentar la solicitud, o un año antes en los casos en los que en la unidad familiar haya menores"
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lt",
+          "value": {
+            "mul": [
+              {
+                "ref": "imvAnnualBase"
+              },
+              {
+                "min": [
+                  2.2,
+                  {
+                    "add": [
+                      0.7,
+                      {
+                        "mul": [
+                          0.3,
+                          {
+                            "ref": "householdSize"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "label": "Ingresos del hogar muy bajos (referencia orientativa: renta garantizada del IMV para tu hogar)",
+          "hard": true,
+          "source": {
+            "url": "https://www.navarra.es/es/derechos-sociales/pobreza-e-inclusion/renta-garantizada",
+            "excerpt": "Personas que carecen de medios suficientes para cubrir sus necesidades básicas"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "El umbral exacto de ingresos lo fija la normativa autonómica según los miembros del hogar; como referencia orientativa usamos la renta garantizada del Ingreso Mínimo Vital.",
+      "Es subsidiaria: antes hay que pedir las pensiones y prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital.",
+      "Implica acordar un itinerario o proyecto de inclusión con los servicios sociales.",
+      "Si hay menores, personas dependientes o con discapacidad superior al 65 % en el hogar, basta con un año de residencia.",
+      "Entre 18 y 24 años sin menores a cargo hay que acreditar dos años de vida independiente."
+    ],
+    "documents": [
+      "DNI o NIE de las personas del hogar",
+      "Certificado de empadronamiento",
+      "Justificantes de ingresos"
+    ],
+    "steps": [
+      "Solicítala en el Servicio Social de Base o Unidad de Barrio que te corresponda por empadronamiento."
+    ],
+    "officialUrl": "https://www.navarra.es/es/derechos-sociales/pobreza-e-inclusion/renta-garantizada",
+    "sources": [
+      {
+        "url": "https://www.navarra.es/es/derechos-sociales/pobreza-e-inclusion/renta-garantizada",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "Personas que carecen de medios suficientes para cubrir sus necesidades básicas"
+      }
+    ],
+    "faq": [],
+    "id": "renta-garantizada-navarra",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "renta-minima-insercion-social-andalucia",
+    "title": "Renta Mínima de Inserción Social (Andalucía)",
+    "summary": "Prestación mensual de la Junta de Andalucía para hogares en situación de pobreza o exclusión social, con un plan de inclusión sociolaboral.",
+    "level": "regional",
+    "region": "AN",
+    "category": "income",
+    "kind": "permanent",
+    "programType": "cash_benefit",
+    "agency": "Junta de Andalucía",
+    "amount": {
+      "type": "variable",
+      "text": "Cantidad mensual que completa los ingresos del hogar hasta el mínimo que fija la comunidad; depende del número de miembros."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "applicantAge",
+          "op": "gte",
+          "value": 25,
+          "label": "Tener 25 años o más",
+          "hard": true,
+          "source": {
+            "url": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/Triptico_RMISA_2026.pdf",
+            "excerpt": "Solicitante entre 25 y 64 años inclusive"
+          }
+        },
+        {
+          "field": "applicantAge",
+          "op": "lte",
+          "value": 64,
+          "label": "Tener 64 años o menos",
+          "hard": true,
+          "source": {
+            "url": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/Triptico_RMISA_2026.pdf",
+            "excerpt": "Solicitante entre 25 y 64 años inclusive"
+          }
+        },
+        {
+          "field": "yearsRegisteredInRegion",
+          "op": "gte",
+          "value": 1,
+          "label": "Llevar al menos un año empadronado",
+          "source": {
+            "url": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/Triptico_RMISA_2026.pdf",
+            "excerpt": "Estar la unidad familiar empadronada, con un año de antelación a la fecha de presentación de la solicitud."
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lt",
+          "value": {
+            "mul": [
+              {
+                "ref": "imvAnnualBase"
+              },
+              {
+                "min": [
+                  2.2,
+                  {
+                    "add": [
+                      0.7,
+                      {
+                        "mul": [
+                          0.3,
+                          {
+                            "ref": "householdSize"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "label": "Ingresos del hogar muy bajos (referencia orientativa: renta garantizada del IMV para tu hogar)",
+          "hard": true,
+          "source": {
+            "url": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/Triptico_RMISA_2026.pdf",
+            "excerpt": "Recursos mensuales inferiores a la cuantía que les correspondiera de la Renta Mínima de Inserción Social en Andalucía."
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "El umbral exacto de ingresos lo fija la normativa autonómica según los miembros del hogar; como referencia orientativa usamos la renta garantizada del Ingreso Mínimo Vital.",
+      "Es subsidiaria: antes hay que pedir las pensiones y prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital.",
+      "Implica acordar un itinerario o proyecto de inclusión con los servicios sociales.",
+      "Hay excepciones a la edad (por ejemplo, con menores o personas con discapacidad a cargo).",
+      "Inscribirse como demandante de empleo en el Servicio Andaluz de Empleo."
+    ],
+    "documents": [
+      "DNI o NIE de las personas del hogar",
+      "Certificado de empadronamiento",
+      "Justificantes de ingresos"
+    ],
+    "steps": [
+      "Solicítala en los servicios sociales comunitarios de tu municipio."
+    ],
+    "officialUrl": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/Triptico_RMISA_2026.pdf",
+    "sources": [
+      {
+        "url": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/Triptico_RMISA_2026.pdf",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "Recursos mensuales inferiores a la cuantía que les correspondiera de la Renta Mínima de Inserción Social en Andalucía."
+      }
+    ],
+    "faq": [],
+    "id": "renta-minima-insercion-social-andalucia",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "renta-social-basica-cantabria",
+    "title": "Renta Social Básica (Cantabria)",
+    "summary": "Prestación mensual del Gobierno de Cantabria para personas en riesgo o situación de exclusión por falta de recursos económicos.",
+    "level": "regional",
+    "region": "CB",
+    "category": "income",
+    "kind": "permanent",
+    "programType": "cash_benefit",
+    "agency": "Gobierno de Cantabria",
+    "amount": {
+      "type": "variable",
+      "text": "Cantidad mensual que completa los ingresos del hogar hasta el mínimo que fija la comunidad; depende del número de miembros."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "applicantAge",
+          "op": "gt",
+          "value": 23,
+          "label": "Tener más de 23 años",
+          "hard": true,
+          "source": {
+            "url": "https://www.serviciossocialescantabria.org/index.php?page=renta-social-basica",
+            "excerpt": "Ser mayor de 23 años y menor de 65"
+          }
+        },
+        {
+          "field": "applicantAge",
+          "op": "lt",
+          "value": 65,
+          "label": "Tener menos de 65 años",
+          "hard": true,
+          "source": {
+            "url": "https://www.serviciossocialescantabria.org/index.php?page=renta-social-basica",
+            "excerpt": "Ser mayor de 23 años y menor de 65"
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lt",
+          "value": {
+            "mul": [
+              {
+                "ref": "imvAnnualBase"
+              },
+              {
+                "min": [
+                  2.2,
+                  {
+                    "add": [
+                      0.7,
+                      {
+                        "mul": [
+                          0.3,
+                          {
+                            "ref": "householdSize"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "label": "Ingresos del hogar muy bajos (referencia orientativa: renta garantizada del IMV para tu hogar)",
+          "hard": true,
+          "source": {
+            "url": "https://www.serviciossocialescantabria.org/index.php?page=renta-social-basica",
+            "excerpt": "Carecer la unidad perceptora de recursos económicos suficientes para hacer frente a las necesidades básicas"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "El umbral exacto de ingresos lo fija la normativa autonómica según los miembros del hogar; como referencia orientativa usamos la renta garantizada del Ingreso Mínimo Vital.",
+      "Es subsidiaria: antes hay que pedir las pensiones y prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital.",
+      "Implica acordar un itinerario o proyecto de inclusión con los servicios sociales.",
+      "Tener residencia legal en España y estar empadronado en Cantabria.",
+      "Hay excepciones a la edad (por ejemplo, con menores o personas dependientes a cargo)."
+    ],
+    "documents": [
+      "DNI o NIE de las personas del hogar",
+      "Certificado de empadronamiento",
+      "Justificantes de ingresos"
+    ],
+    "steps": [
+      "Solicítala en los servicios sociales de atención primaria de tu municipio."
+    ],
+    "officialUrl": "https://www.serviciossocialescantabria.org/index.php?page=renta-social-basica",
+    "sources": [
+      {
+        "url": "https://www.serviciossocialescantabria.org/index.php?page=renta-social-basica",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "Carecer la unidad perceptora de recursos económicos suficientes para hacer frente a las necesidades básicas"
+      }
+    ],
+    "faq": [],
+    "id": "renta-social-basica-cantabria",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "renta-social-garantizada-illes-balears",
+    "title": "Renta Social Garantizada (Illes Balears)",
+    "summary": "Prestación del Govern de les Illes Balears para hogares en situación de vulnerabilidad económica que no tienen derecho al Ingreso Mínimo Vital.",
+    "level": "regional",
+    "region": "IB",
+    "category": "income",
+    "kind": "permanent",
+    "programType": "cash_benefit",
+    "agency": "Govern de les Illes Balears",
+    "amount": {
+      "type": "variable",
+      "text": "Cantidad mensual que completa los ingresos del hogar hasta el mínimo que fija la comunidad; depende del número de miembros."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "yearsRegisteredInRegion",
+          "op": "gte",
+          "value": 3,
+          "label": "Llevar al menos tres años residiendo legalmente en Illes Balears",
+          "source": {
+            "url": "https://www.caib.es/sites/rendasocialgarantida/es/requisitos_para_acceder_a_la_prestacion/",
+            "excerpt": "Que acrediten una residencia legal ininterrumpida en las Illes Balears con un mínimo de tres años de antelación a la fecha de presentación de la solicitud"
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lt",
+          "value": {
+            "mul": [
+              {
+                "ref": "imvAnnualBase"
+              },
+              {
+                "min": [
+                  2.2,
+                  {
+                    "add": [
+                      0.7,
+                      {
+                        "mul": [
+                          0.3,
+                          {
+                            "ref": "householdSize"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "label": "Ingresos del hogar muy bajos (referencia orientativa: renta garantizada del IMV para tu hogar)",
+          "hard": true,
+          "source": {
+            "url": "https://www.caib.es/sites/rendasocialgarantida/es/requisitos_para_acceder_a_la_prestacion/",
+            "excerpt": "Que estén en situación de vulnerabilidad económica."
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "El umbral exacto de ingresos lo fija la normativa autonómica según los miembros del hogar; como referencia orientativa usamos la renta garantizada del Ingreso Mínimo Vital.",
+      "Es subsidiaria: antes hay que pedir las pensiones y prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital.",
+      "Implica acordar un itinerario o proyecto de inclusión con los servicios sociales.",
+      "Hay que haber solicitado antes el Ingreso Mínimo Vital, salvo que no cumplas sus requisitos.",
+      "Hay excepciones al tiempo de residencia (consulta la ficha oficial)."
+    ],
+    "documents": [
+      "DNI o NIE de las personas del hogar",
+      "Certificado de empadronamiento",
+      "Justificantes de ingresos"
+    ],
+    "steps": [
+      "Solicítala en la sede electrónica del Govern o en los servicios sociales de tu municipio."
+    ],
+    "officialUrl": "https://www.caib.es/sites/rendasocialgarantida/es/requisitos_para_acceder_a_la_prestacion/",
+    "sources": [
+      {
+        "url": "https://www.caib.es/sites/rendasocialgarantida/es/requisitos_para_acceder_a_la_prestacion/",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "Que estén en situación de vulnerabilidad económica."
+      }
+    ],
+    "faq": [],
+    "id": "renta-social-garantizada-illes-balears",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "renta-garantia-ingresos-pais-vasco",
+    "title": "Renta de Garantía de Ingresos (País Vasco)",
+    "summary": "Prestación de Lanbide para hogares sin recursos suficientes para sus necesidades básicas, que además ayuda a encontrar una salida laboral.",
+    "level": "regional",
+    "region": "PV",
+    "category": "income",
+    "kind": "permanent",
+    "programType": "cash_benefit",
+    "agency": "Gobierno Vasco – Lanbide",
+    "amount": {
+      "type": "variable",
+      "text": "Cantidad mensual que completa los ingresos del hogar hasta el mínimo que fija la comunidad; depende del número de miembros."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "applicantAge",
+          "op": "gte",
+          "value": 18,
+          "label": "Ser mayor de edad",
+          "hard": true,
+          "source": {
+            "url": "https://www.euskadi.eus/ayuda_subvencion/2016/renta-de-garantia-de-ingresos-rgi/web01-tramite/es/",
+            "excerpt": "Ser mayores de 18 años (a salvo de la excepción prevista en caso de determinados colectivos para los menores emancipados)"
+          }
+        },
+        {
+          "field": "yearsRegisteredInRegion",
+          "op": "gte",
+          "value": 3,
+          "label": "Llevar al menos tres años empadronado en Euskadi",
+          "source": {
+            "url": "https://www.euskadi.eus/ayuda_subvencion/2016/renta-de-garantia-de-ingresos-rgi/web01-tramite/es/",
+            "excerpt": "Estar empadronado y tener la residencia efectiva en algún municipio de la Comunidad Autónoma de Euskadi de forma continuada durante, al menos, 3 años inmediatos anteriores a la fecha de la solicitud"
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lt",
+          "value": {
+            "mul": [
+              {
+                "ref": "imvAnnualBase"
+              },
+              {
+                "min": [
+                  2.2,
+                  {
+                    "add": [
+                      0.7,
+                      {
+                        "mul": [
+                          0.3,
+                          {
+                            "ref": "householdSize"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "label": "Ingresos del hogar muy bajos (referencia orientativa: renta garantizada del IMV para tu hogar)",
+          "hard": true,
+          "source": {
+            "url": "https://www.euskadi.eus/ayuda_subvencion/2016/renta-de-garantia-de-ingresos-rgi/web01-tramite/es/",
+            "excerpt": "que no disponen de recursos suficientes para hacer frente a los gastos asociados a las necesidades básicas"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "El umbral exacto de ingresos lo fija la normativa autonómica según los miembros del hogar; como referencia orientativa usamos la renta garantizada del Ingreso Mínimo Vital.",
+      "Es subsidiaria: antes hay que pedir las pensiones y prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital.",
+      "Implica acordar un itinerario o proyecto de inclusión con los servicios sociales.",
+      "Hay excepciones al tiempo de empadronamiento (por ejemplo, cinco años de los últimos diez, o un año con menores a cargo).",
+      "Entre 18 y 29 años hay que haber vivido al menos un año fuera del domicilio familiar."
+    ],
+    "documents": [
+      "DNI o NIE de las personas del hogar",
+      "Certificado de empadronamiento",
+      "Justificantes de ingresos"
+    ],
+    "steps": [
+      "Solicítala en Lanbide (Servicio Vasco de Empleo), en línea o en tu oficina."
+    ],
+    "officialUrl": "https://www.euskadi.eus/ayuda_subvencion/2016/renta-de-garantia-de-ingresos-rgi/web01-tramite/es/",
+    "sources": [
+      {
+        "url": "https://www.euskadi.eus/ayuda_subvencion/2016/renta-de-garantia-de-ingresos-rgi/web01-tramite/es/",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "que no disponen de recursos suficientes para hacer frente a los gastos asociados a las necesidades básicas"
+      }
+    ],
+    "faq": [],
+    "id": "renta-garantia-ingresos-pais-vasco",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "renta-inclusion-social-galicia-risga",
+    "title": "Renta de inclusión social de Galicia (RISGA)",
+    "summary": "Prestación de la Xunta de Galicia para garantizar recursos de subsistencia a personas que carecen de ellos y favorecer su inclusión social y laboral.",
+    "level": "regional",
+    "region": "GA",
+    "category": "income",
+    "kind": "permanent",
+    "programType": "cash_benefit",
+    "agency": "Xunta de Galicia",
+    "amount": {
+      "type": "variable",
+      "text": "Cantidad mensual que completa los ingresos del hogar hasta el mínimo que fija la comunidad; depende del número de miembros."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "applicantAge",
+          "op": "gt",
+          "value": 25,
+          "label": "Tener más de 25 años",
+          "hard": true,
+          "source": {
+            "url": "https://politicasocial.xunta.gal/es/areas/inclusion-social/ayudas-y-prestaciones/renta-de-inclusion-social-de-galicia-risga",
+            "excerpt": "Tener más de 25 años"
+          }
+        },
+        {
+          "field": "applicantAge",
+          "op": "lt",
+          "value": 65,
+          "label": "Tener menos de 65 años",
+          "hard": true,
+          "source": {
+            "url": "https://politicasocial.xunta.gal/es/areas/inclusion-social/ayudas-y-prestaciones/renta-de-inclusion-social-de-galicia-risga",
+            "excerpt": "Tampoco podrán acceder a la Risga aquellas personas que tengan la edad mínima establecida para que puedan solicitar una pensión no contributiva de jubilación (65 años cumplidos o más)"
+          }
+        },
+        {
+          "field": "yearsRegisteredInRegion",
+          "op": "gte",
+          "value": 1,
+          "label": "Llevar al menos seis meses empadronado en Galicia",
+          "source": {
+            "url": "https://politicasocial.xunta.gal/es/areas/inclusion-social/ayudas-y-prestaciones/renta-de-inclusion-social-de-galicia-risga",
+            "excerpt": "estar empadronada en cualquiera de los ayuntamientos de la Comunidad Autónoma gallega, por lo menos durante los 6 meses anteriores a la presentación de la solicitud de valoración"
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lt",
+          "value": {
+            "mul": [
+              {
+                "ref": "imvAnnualBase"
+              },
+              {
+                "min": [
+                  2.2,
+                  {
+                    "add": [
+                      0.7,
+                      {
+                        "mul": [
+                          0.3,
+                          {
+                            "ref": "householdSize"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "label": "Ingresos del hogar muy bajos (referencia orientativa: renta garantizada del IMV para tu hogar)",
+          "hard": true,
+          "source": {
+            "url": "https://politicasocial.xunta.gal/es/areas/inclusion-social/ayudas-y-prestaciones/renta-de-inclusion-social-de-galicia-risga",
+            "excerpt": "destinada a garantizar recursos económicos de subsistencia a aquellas personas que carezcan de ellos"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "El umbral exacto de ingresos lo fija la normativa autonómica según los miembros del hogar; como referencia orientativa usamos la renta garantizada del Ingreso Mínimo Vital.",
+      "Es subsidiaria: antes hay que pedir las pensiones y prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital.",
+      "Implica acordar un itinerario o proyecto de inclusión con los servicios sociales.",
+      "Requiere una valoración de los servicios sociales sobre la situación de exclusión.",
+      "Si llevas menos de un año empadronado, comprueba en la ficha oficial si cumples los seis meses."
+    ],
+    "documents": [
+      "DNI o NIE de las personas del hogar",
+      "Certificado de empadronamiento",
+      "Justificantes de ingresos"
+    ],
+    "steps": [
+      "Solicítala a través de los servicios sociales comunitarios de tu ayuntamiento."
+    ],
+    "officialUrl": "https://politicasocial.xunta.gal/es/areas/inclusion-social/ayudas-y-prestaciones/renta-de-inclusion-social-de-galicia-risga",
+    "sources": [
+      {
+        "url": "https://politicasocial.xunta.gal/es/areas/inclusion-social/ayudas-y-prestaciones/renta-de-inclusion-social-de-galicia-risga",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "destinada a garantizar recursos económicos de subsistencia a aquellas personas que carezcan de ellos"
+      }
+    ],
+    "faq": [],
+    "id": "renta-inclusion-social-galicia-risga",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
+    "verifiedAt": "2026-10-15"
+  },
+  {
+    "slug": "salario-social-basico-asturias",
+    "title": "Salario Social Básico (Asturias)",
+    "summary": "Prestación mensual del Principado de Asturias para personas y hogares en riesgo de pobreza o exclusión social por falta de ingresos.",
+    "level": "regional",
+    "region": "AS",
+    "category": "income",
+    "kind": "permanent",
+    "programType": "cash_benefit",
+    "agency": "Principado de Asturias",
+    "amount": {
+      "type": "variable",
+      "text": "Cantidad mensual que completa los ingresos del hogar hasta el mínimo que fija la comunidad; depende del número de miembros."
+    },
+    "eligibility": {
+      "all": [
+        {
+          "field": "applicantAge",
+          "op": "gt",
+          "value": 25,
+          "label": "Tener más de 25 años",
+          "hard": true,
+          "source": {
+            "url": "https://socialasturias.asturias.es/salario_social_basico",
+            "excerpt": "Ser mayor de veinticinco años"
+          }
+        },
+        {
+          "field": "yearsRegisteredInRegion",
+          "op": "gte",
+          "value": 2,
+          "label": "Llevar al menos dos años residiendo en Asturias",
+          "source": {
+            "url": "https://socialasturias.asturias.es/salario_social_basico",
+            "excerpt": "Residencia efectiva e ininterrumpida por un tiempo no inferior a dos años inmediatamente anterior a la formulación de la solicitud"
+          }
+        },
+        {
+          "field": "annualHouseholdIncome",
+          "op": "lt",
+          "value": {
+            "mul": [
+              {
+                "ref": "imvAnnualBase"
+              },
+              {
+                "min": [
+                  2.2,
+                  {
+                    "add": [
+                      0.7,
+                      {
+                        "mul": [
+                          0.3,
+                          {
+                            "ref": "householdSize"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "label": "Ingresos del hogar muy bajos (referencia orientativa: renta garantizada del IMV para tu hogar)",
+          "hard": true,
+          "source": {
+            "url": "https://socialasturias.asturias.es/salario_social_basico",
+            "excerpt": "Carecer de recursos económicos superiores a los módulos establecidos"
+          }
+        }
+      ]
+    },
+    "otherRequirements": [
+      "El umbral exacto de ingresos lo fija la normativa autonómica según los miembros del hogar; como referencia orientativa usamos la renta garantizada del Ingreso Mínimo Vital.",
+      "Es subsidiaria: antes hay que pedir las pensiones y prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital.",
+      "Implica acordar un itinerario o proyecto de inclusión con los servicios sociales.",
+      "Hay excepciones a la edad (orfandad, discapacidad, menores o personas dependientes a cargo).",
+      "La unidad de convivencia debe existir desde al menos seis meses antes."
+    ],
+    "documents": [
+      "DNI o NIE de las personas del hogar",
+      "Certificado de empadronamiento",
+      "Justificantes de ingresos"
+    ],
+    "steps": [
+      "Solicítalo en los servicios sociales de tu ayuntamiento o en la sede electrónica del Principado."
+    ],
+    "officialUrl": "https://socialasturias.asturias.es/salario_social_basico",
+    "sources": [
+      {
+        "url": "https://socialasturias.asturias.es/salario_social_basico",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "Carecer de recursos económicos superiores a los módulos establecidos"
+      }
+    ],
+    "faq": [],
+    "id": "salario-social-basico-asturias",
+    "status": "published",
+    "version": 1,
+    "reviewedBy": "claude-code (verificación automática)",
+    "reviewedAt": "2026-10-15",
     "verifiedAt": "2026-10-15"
   },
   {

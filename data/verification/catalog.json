@@ -1023,9 +1023,37 @@
     "findings": [],
     "models": []
   },
+  "renta-ciudadania-la-rioja": {
+    "version": 1,
+    "contentHash": "3db8fe71e7dc6653a67808b986e61e4eb1f1a5be8904d9649befb0d8f38ea55e",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "pass"
+    },
+    "findings": [],
+    "models": []
+  },
   "renta-extremena-garantizada": {
     "version": 1,
     "contentHash": "4de030a6c119a69b87610799d9b86d5f9844a8b38a45d8ebdf201a7f77b258e1",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "pass"
+    },
+    "findings": [],
+    "models": []
+  },
+  "renta-garantia-ingresos-pais-vasco": {
+    "version": 1,
+    "contentHash": "d8284c65d2b46250e09f8ff00a102acf48e33ad67204ab83ea556b69e67e0a1c",
     "passed": true,
     "checkedAt": "2026-10-15",
     "agents": {
@@ -1054,6 +1082,20 @@
   "renta-garantizada-ciudadania-cataluna": {
     "version": 1,
     "contentHash": "ae174d642334245e576de5c7d58776176a97faeab1d660820d71ce877bdc2dba",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "pass"
+    },
+    "findings": [],
+    "models": []
+  },
+  "renta-garantizada-navarra": {
+    "version": 1,
+    "contentHash": "f258d0c33c76c4708b530a7c16ccca48b9a65523befb73588e06bc650d5aeacc",
     "passed": true,
     "checkedAt": "2026-10-15",
     "agents": {
@@ -1096,6 +1138,20 @@
   "renta-social-basica-cantabria": {
     "version": 1,
     "contentHash": "127e669bee0ea6a80813f30e0cb7dea46549448f9e9d83d5c59a192a66b06725",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "pass"
+    },
+    "findings": [],
+    "models": []
+  },
+  "renta-social-garantizada-illes-balears": {
+    "version": 1,
+    "contentHash": "ce1f018e321f81f5a55de094bda08f0b5dca5c244e472c231db59b8cbf8e41b6",
     "passed": true,
     "checkedAt": "2026-10-15",
     "agents": {

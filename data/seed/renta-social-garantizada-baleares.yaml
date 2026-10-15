@@ -1,0 +1,59 @@
+slug: renta-social-garantizada-illes-balears
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Renta Social Garantizada (Illes Balears)"
+summary: >-
+  Prestación del Govern de les Illes Balears para hogares en situación de vulnerabilidad
+  económica que no tienen derecho al Ingreso Mínimo Vital.
+level: regional
+region: IB
+category: income
+kind: permanent
+programType: cash_benefit
+agency: "Govern de les Illes Balears"
+amount:
+  type: variable
+  text: >-
+    Cantidad mensual que completa los ingresos del hogar hasta el mínimo que fija la comunidad;
+    depende del número de miembros.
+eligibility:
+  all:
+    - field: yearsRegisteredInRegion
+      op: gte
+      value: 3
+      label: "Llevar al menos tres años residiendo legalmente en Illes Balears"
+      source:
+        url: https://www.caib.es/sites/rendasocialgarantida/es/requisitos_para_acceder_a_la_prestacion/
+        excerpt: >-
+          Que acrediten una residencia legal ininterrumpida en las Illes Balears con un mínimo
+          de tres años de antelación a la fecha de presentación de la solicitud
+    - field: annualHouseholdIncome
+      op: lt
+      value: {"mul": [{"ref": "imvAnnualBase"}, {"min": [2.2, {"add": [0.7, {"mul": [0.3, {"ref": "householdSize"}]}]}]}]}
+      label: "Ingresos del hogar muy bajos (referencia orientativa: renta garantizada del IMV para tu hogar)"
+      hard: true
+      source:
+        url: https://www.caib.es/sites/rendasocialgarantida/es/requisitos_para_acceder_a_la_prestacion/
+        excerpt: >-
+          Que estén en situación de vulnerabilidad económica.
+otherRequirements:
+  - "El umbral exacto de ingresos lo fija la normativa autonómica según los miembros del hogar; como referencia orientativa usamos la renta garantizada del Ingreso Mínimo Vital."
+  - "Es subsidiaria: antes hay que pedir las pensiones y prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital."
+  - "Implica acordar un itinerario o proyecto de inclusión con los servicios sociales."
+  - "Hay que haber solicitado antes el Ingreso Mínimo Vital, salvo que no cumplas sus requisitos."
+  - "Hay excepciones al tiempo de residencia (consulta la ficha oficial)."
+documents:
+  - "DNI o NIE de las personas del hogar"
+  - "Certificado de empadronamiento"
+  - "Justificantes de ingresos"
+steps:
+  - "Solicítala en la sede electrónica del Govern o en los servicios sociales de tu municipio."
+officialUrl: https://www.caib.es/sites/rendasocialgarantida/es/requisitos_para_acceder_a_la_prestacion/
+sources:
+  - url: https://www.caib.es/sites/rendasocialgarantida/es/requisitos_para_acceder_a_la_prestacion/
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      Que estén en situación de vulnerabilidad económica.
+faq: []

@@ -1,0 +1,70 @@
+slug: renta-ciudadania-la-rioja
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Renta de Ciudadanía (La Rioja)"
+summary: >-
+  Prestación del Gobierno de La Rioja para hogares sin recursos suficientes para cubrir sus
+  necesidades básicas.
+level: regional
+region: RI
+category: income
+kind: permanent
+programType: cash_benefit
+agency: "Gobierno de La Rioja"
+amount:
+  type: variable
+  text: >-
+    Cantidad mensual que completa los ingresos del hogar hasta el mínimo que fija la comunidad;
+    depende del número de miembros.
+eligibility:
+  all:
+    - field: applicantAge
+      op: gt
+      value: 23
+      label: "Tener más de 23 años"
+      hard: true
+      source:
+        url: https://web.larioja.org/oficina-electronica/tramite?n=24327
+        excerpt: >-
+          Ser mayor de veintitrés años.
+    - field: yearsRegisteredInRegion
+      op: gte
+      value: 1
+      label: "Llevar al menos un año residiendo en La Rioja"
+      source:
+        url: https://web.larioja.org/oficina-electronica/tramite?n=24327
+        excerpt: >-
+          Tener la residencia efectiva en cualquier municipio de La Rioja, de forma
+          ininterrumpida y al menos con un año de antelación a la solicitud
+    - field: annualHouseholdIncome
+      op: lt
+      value: {"mul": [{"ref": "imvAnnualBase"}, {"min": [2.2, {"add": [0.7, {"mul": [0.3, {"ref": "householdSize"}]}]}]}]}
+      label: "Ingresos del hogar muy bajos (referencia orientativa: renta garantizada del IMV para tu hogar)"
+      hard: true
+      source:
+        url: https://web.larioja.org/oficina-electronica/tramite?n=24327
+        excerpt: >-
+          No encontrarse su unidad familiar o de convivencia en el supuesto de recursos
+          suficientes establecido en el artículo 8
+otherRequirements:
+  - "El umbral exacto de ingresos lo fija la normativa autonómica según los miembros del hogar; como referencia orientativa usamos la renta garantizada del Ingreso Mínimo Vital."
+  - "Es subsidiaria: antes hay que pedir las pensiones y prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital."
+  - "Implica acordar un itinerario o proyecto de inclusión con los servicios sociales."
+  - "Pueden pedirla personas de 16 a 23 años con cargas familiares u otras situaciones previstas."
+  - "La unidad familiar o de convivencia debe existir desde al menos un año antes."
+documents:
+  - "DNI o NIE de las personas del hogar"
+  - "Certificado de empadronamiento"
+  - "Justificantes de ingresos"
+steps:
+  - "Solicítala en la oficina electrónica del Gobierno de La Rioja o en los servicios sociales."
+officialUrl: https://web.larioja.org/oficina-electronica/tramite?n=24327
+sources:
+  - url: https://web.larioja.org/oficina-electronica/tramite?n=24327
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      No encontrarse su unidad familiar o de convivencia en el supuesto de recursos suficientes
+      establecido en el artículo 8
+faq: []

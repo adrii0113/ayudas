@@ -1,0 +1,72 @@
+slug: renta-garantia-ingresos-pais-vasco
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Renta de Garantía de Ingresos (País Vasco)"
+summary: >-
+  Prestación de Lanbide para hogares sin recursos suficientes para sus necesidades básicas, que
+  además ayuda a encontrar una salida laboral.
+level: regional
+region: PV
+category: income
+kind: permanent
+programType: cash_benefit
+agency: "Gobierno Vasco – Lanbide"
+amount:
+  type: variable
+  text: >-
+    Cantidad mensual que completa los ingresos del hogar hasta el mínimo que fija la comunidad;
+    depende del número de miembros.
+eligibility:
+  all:
+    - field: applicantAge
+      op: gte
+      value: 18
+      label: "Ser mayor de edad"
+      hard: true
+      source:
+        url: https://www.euskadi.eus/ayuda_subvencion/2016/renta-de-garantia-de-ingresos-rgi/web01-tramite/es/
+        excerpt: >-
+          Ser mayores de 18 años (a salvo de la excepción prevista en caso de determinados
+          colectivos para los menores emancipados)
+    - field: yearsRegisteredInRegion
+      op: gte
+      value: 3
+      label: "Llevar al menos tres años empadronado en Euskadi"
+      source:
+        url: https://www.euskadi.eus/ayuda_subvencion/2016/renta-de-garantia-de-ingresos-rgi/web01-tramite/es/
+        excerpt: >-
+          Estar empadronado y tener la residencia efectiva en algún municipio de la Comunidad
+          Autónoma de Euskadi de forma continuada durante, al menos, 3 años inmediatos
+          anteriores a la fecha de la solicitud
+    - field: annualHouseholdIncome
+      op: lt
+      value: {"mul": [{"ref": "imvAnnualBase"}, {"min": [2.2, {"add": [0.7, {"mul": [0.3, {"ref": "householdSize"}]}]}]}]}
+      label: "Ingresos del hogar muy bajos (referencia orientativa: renta garantizada del IMV para tu hogar)"
+      hard: true
+      source:
+        url: https://www.euskadi.eus/ayuda_subvencion/2016/renta-de-garantia-de-ingresos-rgi/web01-tramite/es/
+        excerpt: >-
+          que no disponen de recursos suficientes para hacer frente a los gastos asociados a las
+          necesidades básicas
+otherRequirements:
+  - "El umbral exacto de ingresos lo fija la normativa autonómica según los miembros del hogar; como referencia orientativa usamos la renta garantizada del Ingreso Mínimo Vital."
+  - "Es subsidiaria: antes hay que pedir las pensiones y prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital."
+  - "Implica acordar un itinerario o proyecto de inclusión con los servicios sociales."
+  - "Hay excepciones al tiempo de empadronamiento (por ejemplo, cinco años de los últimos diez, o un año con menores a cargo)."
+  - "Entre 18 y 29 años hay que haber vivido al menos un año fuera del domicilio familiar."
+documents:
+  - "DNI o NIE de las personas del hogar"
+  - "Certificado de empadronamiento"
+  - "Justificantes de ingresos"
+steps:
+  - "Solicítala en Lanbide (Servicio Vasco de Empleo), en línea o en tu oficina."
+officialUrl: https://www.euskadi.eus/ayuda_subvencion/2016/renta-de-garantia-de-ingresos-rgi/web01-tramite/es/
+sources:
+  - url: https://www.euskadi.eus/ayuda_subvencion/2016/renta-de-garantia-de-ingresos-rgi/web01-tramite/es/
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      que no disponen de recursos suficientes para hacer frente a los gastos asociados a las
+      necesidades básicas
+faq: []

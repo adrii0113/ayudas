@@ -1,0 +1,68 @@
+slug: renta-garantizada-navarra
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Renta Garantizada (Navarra)"
+summary: >-
+  Prestación del Gobierno de Navarra para personas y hogares que carecen de medios suficientes
+  para cubrir sus necesidades básicas.
+level: regional
+region: NC
+category: income
+kind: permanent
+programType: cash_benefit
+agency: "Gobierno de Navarra"
+amount:
+  type: variable
+  text: >-
+    Cantidad mensual que completa los ingresos del hogar hasta el mínimo que fija la comunidad;
+    depende del número de miembros.
+eligibility:
+  all:
+    - field: applicantAge
+      op: gte
+      value: 18
+      label: "Ser mayor de edad"
+      hard: true
+      source:
+        url: https://www.navarra.es/es/derechos-sociales/pobreza-e-inclusion/renta-garantizada
+        excerpt: >-
+          Personas mayores de 18 años o menores emancipados
+    - field: yearsRegisteredInRegion
+      op: gte
+      value: 2
+      label: "Llevar al menos dos años residiendo en Navarra (uno si hay menores o personas dependientes)"
+      source:
+        url: https://www.navarra.es/es/derechos-sociales/pobreza-e-inclusion/renta-garantizada
+        excerpt: >-
+          Personas que residen en Navarra desde al menos dos años antes de presentar la
+          solicitud, o un año antes en los casos en los que en la unidad familiar haya menores
+    - field: annualHouseholdIncome
+      op: lt
+      value: {"mul": [{"ref": "imvAnnualBase"}, {"min": [2.2, {"add": [0.7, {"mul": [0.3, {"ref": "householdSize"}]}]}]}]}
+      label: "Ingresos del hogar muy bajos (referencia orientativa: renta garantizada del IMV para tu hogar)"
+      hard: true
+      source:
+        url: https://www.navarra.es/es/derechos-sociales/pobreza-e-inclusion/renta-garantizada
+        excerpt: >-
+          Personas que carecen de medios suficientes para cubrir sus necesidades básicas
+otherRequirements:
+  - "El umbral exacto de ingresos lo fija la normativa autonómica según los miembros del hogar; como referencia orientativa usamos la renta garantizada del Ingreso Mínimo Vital."
+  - "Es subsidiaria: antes hay que pedir las pensiones y prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital."
+  - "Implica acordar un itinerario o proyecto de inclusión con los servicios sociales."
+  - "Si hay menores, personas dependientes o con discapacidad superior al 65 % en el hogar, basta con un año de residencia."
+  - "Entre 18 y 24 años sin menores a cargo hay que acreditar dos años de vida independiente."
+documents:
+  - "DNI o NIE de las personas del hogar"
+  - "Certificado de empadronamiento"
+  - "Justificantes de ingresos"
+steps:
+  - "Solicítala en el Servicio Social de Base o Unidad de Barrio que te corresponda por empadronamiento."
+officialUrl: https://www.navarra.es/es/derechos-sociales/pobreza-e-inclusion/renta-garantizada
+sources:
+  - url: https://www.navarra.es/es/derechos-sociales/pobreza-e-inclusion/renta-garantizada
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      Personas que carecen de medios suficientes para cubrir sus necesidades básicas
+faq: []

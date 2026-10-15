@@ -20,9 +20,25 @@ export async function fetchSourceText(
       ? { url, text: pdf.text, mimeType: "application/pdf", title: url }
       : undefined;
   }
-  const html = new TextDecoder().decode(bytes);
+  const html = decodeHtml(bytes, res.headers.get("content-type"));
   const title = /<title[^>]*>([^<]*)<\/title>/i.exec(html)?.[1]?.trim() || url;
   return { url, text: htmlToText(html), mimeType: mimeType || "text/html", title };
+}
+
+/**
+ * Decodes an HTML page with its declared charset (HTTP header first, then
+ * <meta>); many official sites still serve ISO-8859-1 / windows-1252.
+ */
+export function decodeHtml(bytes: Uint8Array, contentType: string | null): string {
+  const fromHeader = /charset=([\w-]+)/i.exec(contentType ?? "")?.[1];
+  const head = new TextDecoder("latin1").decode(bytes.slice(0, 4096));
+  const fromMeta = /<meta[^>]+charset=["']?([\w-]+)/i.exec(head)?.[1];
+  const label = (fromHeader ?? fromMeta ?? "utf-8").toLowerCase();
+  try {
+    return new TextDecoder(label).decode(bytes);
+  } catch {
+    return new TextDecoder("utf-8").decode(bytes);
+  }
 }
 
 export { sha256 };
