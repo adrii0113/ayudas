@@ -17,7 +17,8 @@
     "db:migrate": "tsx src/scripts/migrate.ts",
     "db:seed": "tsx src/scripts/seed.ts",
     "db:local": "pglite-server --db=../../.pglite --port=5432 --max-connections=10",
-    "territories:build": "tsx src/scripts/build-territories.ts"
+    "territories:build": "tsx src/scripts/build-territories.ts",
+    "export:git": "tsx src/scripts/export-git.ts"
   },
   "devDependencies": {
     "@electric-sql/pglite": "^0.5.9",

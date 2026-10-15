@@ -1,0 +1,41 @@
+name: Daily registry export
+
+# Commits a deterministic export of the registry (one NDJSON per autonomous
+# community + manifest) to a separate data repository, only when it changed.
+# Setup: create the data repository, set the variable DATA_REPO (owner/name)
+# and the secret DATA_REPO_TOKEN (fine-grained token with contents:write on
+# that repository only), and EXPORT_ENABLED=true.
+on:
+  schedule:
+    - cron: "30 7 * * *" # after ingestion and verification
+  workflow_dispatch:
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    if: ${{ vars.EXPORT_ENABLED == 'true' }}
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ vars.DATA_REPO }}
+          token: ${{ secrets.DATA_REPO_TOKEN }}
+          path: data-repo
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @tetoca/db export:git --out "$GITHUB_WORKSPACE/data-repo"
+      - name: Commit if changed
+        working-directory: data-repo
+        run: |
+          git add -A
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git config user.name "tetoca-bot"
+          git config user.email "tetoca-bot@users.noreply.github.com"
+          git commit -m "data: registry export $(date -u +%F)"
+          git push

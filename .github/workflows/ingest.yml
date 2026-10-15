@@ -29,3 +29,5 @@ jobs:
         timeout-minutes: 180
       - run: pnpm --filter @tetoca/ingestion ingest:bdns --limit 100
       - run: pnpm --filter @tetoca/extraction extract --limit 20
+      # Verification agents: audit published revisions against official sources.
+      - run: pnpm --filter @tetoca/verification verify --limit 100

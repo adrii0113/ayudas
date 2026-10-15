@@ -15,3 +15,6 @@ src/generated
 next-env.d.ts
 apps/web/playwright-report
 .pglite
+
+# Local registry export (the daily export goes to a separate data repository)
+data/export

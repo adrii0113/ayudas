@@ -157,7 +157,9 @@ export async function linkBenefitToRegistry(
     territoryId: await existingTerritory(db, benefitTerritoryId(benefit)),
     recurrence: benefit.kind === "permanent" ? ("permanent" as const) : ("annual" as const),
     trustLevel: trust,
-    lastVerifiedAt: benefit.reviewedAt ? new Date(benefit.reviewedAt) : null,
+    // Only a real sign-off counts as a verification date.
+    lastVerifiedAt:
+      trust === "human_verified" && benefit.reviewedAt ? new Date(benefit.reviewedAt) : null,
     updatedAt: new Date(),
   };
   const [program] = await db

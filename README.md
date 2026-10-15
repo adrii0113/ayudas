@@ -38,8 +38,31 @@ packages/ingestion  Conector BDNS, extracción de texto de PDF, worker de colas 
 packages/llm        Proveedor LLM (Claude vía @anthropic-ai/sdk) y prompts versionados
 packages/extraction Texto oficial → borrador estructurado (validado, trazable, nunca publicado solo)
 packages/alerts     Plantillas, envío (Resend) y job de alertas
-data/seed           Catálogo curado a mano: una ayuda por fichero YAML (fuente de verdad del MVP)
+packages/verification Agentes de verificación contra fuentes oficiales y niveles de confianza
+data/seed           Catálogo curado a mano en YAML (semilla y fixtures)
+data/reference      Datos de referencia oficiales (8.132 municipios del INE)
 ```
+
+### Registro nacional de ayudas
+
+Diseño completo en [`docs/sistema-de-datos.md`](docs/sistema-de-datos.md). La base de datos es la
+fuente de verdad y guarda **todas** las ayudas de cualquier administración española y para cualquier
+beneficiario:
+
+- **Territorios**: 19 comunidades y ciudades autónomas, 52 provincias y 8.132 municipios (INE),
+  con régimen fiscal foral y mapeo NUTS de la BDNS.
+- **Programa → Edición → Revisión**: la ayuda estable, cada convocatoria o ejercicio, y cada
+  instantánea revisable (la tabla `benefits`).
+- **Niveles de confianza**: `detected` (solo metadatos oficiales) → `extracted` (estructurada por
+  LLM) → `agent_verified` (todos los agentes de acuerdo) → `human_verified` (firmada por una
+  persona).
+- **Radar BDNS**: registra a diario cada convocatoria nueva de España (~70.000 al año) como
+  `detected` y refresca las abiertas.
+- **Agentes de verificación**: citas literales, coherencia con el registro oficial, parámetros,
+  plazos, enlaces, lectura de citas con LLM y segunda extracción independiente. Cada ejecución
+  queda registrada en `verification_runs`. Ningún agente decide la elegibilidad de un usuario.
+- **Exportación diaria a Git**: un NDJSON por comunidad autónoma, determinista, en un repositorio
+  de datos aparte (`.github/workflows/export.yml`).
 
 Principios aplicados (ver `CLAUDE.md` §2):
 
@@ -124,6 +147,10 @@ Con Docker o un Postgres real (Neon/Supabase) basta con su `DATABASE_URL`.
 | `pnpm --filter @tetoca/alerts send`                                                    | Job de alertas                                                  |
 | `pnpm --filter @tetoca/ingestion worker`                                               | Worker pg-boss (ingesta diaria, extracción y alertas)           |
 | `pnpm --filter @tetoca/db db:generate`                                                 | Genera una migración tras cambiar `schema.ts`                   |
+| `pnpm --filter @tetoca/ingestion radar:bdns [--from F] [--details N] [--memory]`       | Radar nacional de la BDNS (todas las convocatorias de España)   |
+| `pnpm --filter @tetoca/verification verify [--limit N] [--no-llm] [--memory]`          | Agentes de verificación sobre las revisiones publicadas         |
+| `pnpm --filter @tetoca/db export:git [--out DIR] [--memory]`                           | Exportación determinista del registro                           |
+| `pnpm --filter @tetoca/db territories:build [26]`                                      | Regenera los municipios desde el diccionario del INE            |
 
 ### Variables de entorno
 
