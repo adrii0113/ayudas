@@ -20,7 +20,17 @@ import { join } from "node:path";
 import { findRepoRoot } from "./catalog";
 import type { Database } from "./client";
 import { stableStringify } from "./stable";
-import { benefits, editions, organisms, parameters, programs, territories } from "./schema";
+import {
+  benefits,
+  editions,
+  evidence,
+  organisms,
+  parameters,
+  programs,
+  sourceDocuments,
+  territories,
+  verificationRuns,
+} from "./schema";
 
 type NewTerritory = typeof territories.$inferInsert;
 
@@ -144,7 +154,7 @@ export async function linkBenefitToRegistry(
     category: benefit.category,
     beneficiaryTypes: ["individuals"],
     adminLevel: LEVEL_TO_ADMIN[benefit.level],
-    territoryId: benefitTerritoryId(benefit),
+    territoryId: await existingTerritory(db, benefitTerritoryId(benefit)),
     recurrence: benefit.kind === "permanent" ? ("permanent" as const) : ("annual" as const),
     trustLevel: trust,
     lastVerifiedAt: benefit.reviewedAt ? new Date(benefit.reviewedAt) : null,
@@ -402,4 +412,83 @@ export async function getProgramBySlug(db: Database, slug: string) {
 export async function getEditionByBdnsCode(db: Database, bdnsCode: string) {
   const [row] = await db.select().from(editions).where(eq(editions.bdnsCode, bdnsCode));
   return row;
+}
+
+/** A revision with what verification needs: edition metadata and stored source text. */
+export async function getRevisionForVerification(db: Database, benefitId: string) {
+  const [row] = await db.select().from(benefits).where(eq(benefits.id, benefitId));
+  if (!row) return undefined;
+  const [edition] = row.editionId
+    ? await db.select().from(editions).where(eq(editions.id, row.editionId))
+    : [];
+  const [document] = row.sourceDocumentId
+    ? await db.select().from(sourceDocuments).where(eq(sourceDocuments.id, row.sourceDocumentId))
+    : [];
+  return { row, edition, document };
+}
+
+export type NewVerificationRun = typeof verificationRuns.$inferInsert;
+
+export async function recordVerificationRun(db: Database, run: NewVerificationRun) {
+  const [row] = await db.insert(verificationRuns).values(run).returning();
+  return row!;
+}
+
+export async function listVerificationRuns(db: Database, subjectId: string) {
+  return db
+    .select()
+    .from(verificationRuns)
+    .where(eq(verificationRuns.subjectId, subjectId))
+    .orderBy(desc(verificationRuns.createdAt));
+}
+
+/**
+ * Applies a verification decision to a revision and, if it is the published
+ * one, to its program.
+ */
+export async function setRevisionTrust(db: Database, benefitId: string, trust: TrustLevel) {
+  const [row] = await db
+    .update(benefits)
+    .set({ trustLevel: trust, updatedAt: new Date() })
+    .where(eq(benefits.id, benefitId))
+    .returning();
+  if (row?.status === "published" && row.programId) {
+    await db
+      .update(programs)
+      .set({
+        trustLevel: trust,
+        ...(trust === "agent_verified" || trust === "human_verified"
+          ? { lastVerifiedAt: new Date() }
+          : {}),
+        updatedAt: new Date(),
+      })
+      .where(eq(programs.id, row.programId));
+  }
+  return row;
+}
+
+/** Replaces the located quotes of a revision. */
+export async function replaceEvidence(
+  db: Database,
+  benefitId: string,
+  rows: Omit<typeof evidence.$inferInsert, "benefitId">[],
+) {
+  await db.delete(evidence).where(eq(evidence.benefitId, benefitId));
+  if (rows.length) await db.insert(evidence).values(rows.map((r) => ({ ...r, benefitId })));
+}
+
+export async function listEvidence(db: Database, benefitId: string) {
+  return db.select().from(evidence).where(eq(evidence.benefitId, benefitId));
+}
+
+/** Published revisions to (re)verify, least recently verified first. */
+export async function listRevisionsToVerify(db: Database, limit = 50) {
+  const rows = await db
+    .select({ id: benefits.id })
+    .from(benefits)
+    .leftJoin(programs, eq(programs.id, benefits.programId))
+    .where(eq(benefits.status, "published"))
+    .orderBy(sql`${programs.lastVerifiedAt} asc nulls first`)
+    .limit(limit);
+  return rows.map((r) => r.id);
 }

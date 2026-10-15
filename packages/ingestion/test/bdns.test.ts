@@ -150,6 +150,9 @@ describe("document text", () => {
 
   it("converts HTML and strips signature boilerplate", () => {
     expect(htmlToText("<p>Hola&nbsp;<b>mundo</b></p><p>A &amp; B</p>")).toBe("Hola mundo\nA & B");
+    expect(htmlToText("<p>categor&iacute;a 1&ordf; &euro; &#233;&#xF1; &bogus;</p>")).toBe(
+      "categoría 1ª € éñ &bogus;",
+    );
     expect(stripBoilerplate("Texto\nFecha Firma: 20/02/2026\nFirmado: X\nMás texto")).toBe(
       "Texto\nMás texto",
     );
