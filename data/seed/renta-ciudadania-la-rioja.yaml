@@ -40,7 +40,14 @@ eligibility:
           ininterrumpida y al menos con un año de antelación a la solicitud
     - field: annualHouseholdIncome
       op: lt
-      value: {"mul": [{"ref": "imvAnnualBase"}, {"min": [2.2, {"add": [0.7, {"mul": [0.3, {"ref": "householdSize"}]}]}]}]}
+      value:
+        {
+          "mul":
+            [
+              { "ref": "imvAnnualBase" },
+              { "min": [2.2, { "add": [0.7, { "mul": [0.3, { "ref": "householdSize" }] }] }] },
+            ],
+        }
       label: "Ingresos del hogar muy bajos (referencia orientativa: renta garantizada del IMV para tu hogar)"
       hard: true
       source:

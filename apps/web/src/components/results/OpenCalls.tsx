@@ -10,7 +10,15 @@ import type { OpenCallsData } from "@/lib/open-calls";
 const MAX = 10;
 
 /** Detected calls of the user's community: listed with a link, never evaluated. */
-export function OpenCalls({ data, region, today }: { data: OpenCallsData; region?: string; today: string }) {
+export function OpenCalls({
+  data,
+  region,
+  today,
+}: {
+  data: OpenCallsData;
+  region?: string;
+  today: string;
+}) {
   const t = useTranslations("results");
   const calls = (region ? (data.byRegion[region] ?? []) : []).filter(
     (c) => !c.closesAt || c.closesAt >= today,
@@ -27,7 +35,10 @@ export function OpenCalls({ data, region, today }: { data: OpenCallsData; region
       </div>
       <ul className="grid gap-3 md:grid-cols-2">
         {calls.slice(0, MAX).map((c) => (
-          <li key={c.bdnsCode} className="space-y-2 rounded-2xl border border-hairline bg-surface p-5">
+          <li
+            key={c.bdnsCode}
+            className="space-y-2 rounded-2xl border border-hairline bg-surface p-5"
+          >
             <Badge tone="warning">{t("openCallsBadge")}</Badge>
             <h3 className="font-semibold leading-snug">{c.title}</h3>
             <p className="text-sm text-muted">{c.organism}</p>
@@ -46,7 +57,9 @@ export function OpenCalls({ data, region, today }: { data: OpenCallsData; region
         ))}
       </ul>
       {data.generatedAt ? (
-        <p className="text-sm text-muted">{t("openCallsSource", { date: formatDate(data.generatedAt) })}</p>
+        <p className="text-sm text-muted">
+          {t("openCallsSource", { date: formatDate(data.generatedAt) })}
+        </p>
       ) : null}
     </section>
   );

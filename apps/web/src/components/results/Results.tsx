@@ -50,7 +50,13 @@ function Group({
 }
 
 /** Evaluates the catalog in the browser: the profile never leaves the device. */
-export function Results({ benefits, openCalls }: { benefits: Benefit[]; openCalls: OpenCallsData }) {
+export function Results({
+  benefits,
+  openCalls,
+}: {
+  benefits: Benefit[];
+  openCalls: OpenCallsData;
+}) {
   const t = useTranslations("results");
   const tq = useTranslations("questionnaire");
   const [profile, setProfile] = useState<ReturnType<typeof toProfile>>();

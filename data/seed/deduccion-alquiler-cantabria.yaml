@@ -62,7 +62,7 @@ eligibility:
       hard: true
     - field: monthlyRent
       op: gt
-      value: {"mul": [0.0083333, {"ref": "annualHouseholdIncome"}]}
+      value: { "mul": [0.0083333, { "ref": "annualHouseholdIncome" }] }
       label: "Pagar de alquiler más del 10 % de tus ingresos"
       source:
         url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/arrendamiento-vivienda-habitual-jovenes-mayores-discapacidad.html
