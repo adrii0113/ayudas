@@ -1,5 +1,5 @@
 slug: bono-social-electrico
-version: 1
+version: 2
 status: published
 reviewedBy: "claude-code (requiere revisión humana)"
 reviewedAt: "2026-10-14"
@@ -32,6 +32,11 @@ eligibility:
       op: eq
       value: true
       label: Cobrar el Ingreso Mínimo Vital (tú o alguien de tu hogar)
+      source:
+        url: https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001/preguntas-frecuentes-bono-social.html
+        excerpt: >-
+          Cuando el titular del punto de suministro o algún miembro de la unidad de convivencia
+          sea perceptor del Ingreso Mínimo Vital
     - field: annualHouseholdIncome
       op: lte
       value:
@@ -55,14 +60,32 @@ eligibility:
               op: eq
               value: true
               label: Familia monoparental
+              source:
+                url: https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001/preguntas-frecuentes-bono-social.html
+                excerpt: >-
+                  Si el titular o algún miembro de la unidad de convivencia tiene una
+                  discapacidad reconocida igual o superior al 33%, es víctima de violencia de
+                  género, víctima de terrorismo, forma parte de una familia monoparental
             - field: applicantDisabilityPercent
               op: gte
               value: 33
               label: Discapacidad reconocida del 33 % o más
+              source:
+                url: https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001/preguntas-frecuentes-bono-social.html
+                excerpt: >-
+                  Si el titular o algún miembro de la unidad de convivencia tiene una
+                  discapacidad reconocida igual o superior al 33%, es víctima de violencia de
+                  género, víctima de terrorismo, forma parte de una familia monoparental
             - field: numChildrenWithDisability
               op: gte
               value: 1
               label: Un hijo con discapacidad reconocida del 33 % o más
+              source:
+                url: https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001/preguntas-frecuentes-bono-social.html
+                excerpt: >-
+                  Si el titular o algún miembro de la unidad de convivencia tiene una
+                  discapacidad reconocida igual o superior al 33%, es víctima de violencia de
+                  género, víctima de terrorismo, forma parte de una familia monoparental
         - field: annualHouseholdIncome
           op: lte
           value:
@@ -73,6 +96,10 @@ eligibility:
                   - mul: [0.3, { ref: extraAdults }]
                   - mul: [0.5, { ref: numMinors }]
           label: Ingresos del hogar dentro del umbral ampliado (+1 IPREM)
+          source:
+            url: https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001/preguntas-frecuentes-bono-social.html
+            excerpt: >-
+              sumará 1 IPREM al umbra de renta
       label: Situación especial (monoparental o discapacidad) con ingresos dentro del umbral ampliado
   label: Cumplir alguno de los criterios de vulnerabilidad (renta, familia numerosa o IMV)
 otherRequirements:

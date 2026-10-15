@@ -1,5 +1,5 @@
 slug: ingreso-minimo-vital
-version: 1
+version: 2
 status: published
 reviewedBy: "claude-code (requiere revisión humana)"
 reviewedAt: "2026-10-14"
@@ -26,15 +26,28 @@ eligibility:
           op: gte
           value: 23
           label: Tener 23 años o más
+          source:
+            url: https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/65850d68-8d06-4645-bde7-05374ee42ac7
+            excerpt: >-
+              deberán tener capacidad jurídica y una edad mínima de 23 años
         - all:
             - field: applicantAge
               op: gte
               value: 18
               label: Ser mayor de edad
+              source:
+                url: https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/65850d68-8d06-4645-bde7-05374ee42ac7
+                excerpt: >-
+                  las personas mayores de edad o menores emancipados, cuando tengan hijos
             - field: numMinors
               op: gte
               value: 1
               label: Tener hijos menores a cargo
+              source:
+                url: https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/65850d68-8d06-4645-bde7-05374ee42ac7
+                excerpt: >-
+                  cuando tengan hijos o menores en régimen de guarda con fines de adopción o
+                  acogimiento familiar permanente
       label: Tener 23 años o más (o ser mayor de edad con hijos menores a cargo)
     - field: yearsLegalResidenceInSpain
       op: gte
@@ -53,12 +66,22 @@ eligibility:
                   - ref: imvAnnualBase
                   - min: [2.2, { add: [0.7, { mul: [0.3, { ref: householdSize }] }] }]
               - -120
-          label: Ingresos del hogar por debajo de la renta garantizada del IMV para tu hogar
+          label: Ingresos del hogar inferiores a la renta garantizada del IMV
+          source:
+            url: https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/65850d68-8d06-4645-bde7-05374ee42ac7
+            excerpt: >-
+              será la diferencia entre la renta garantizada y el conjunto de rentas e ingresos
+              de tales personas
         - all:
             - field: isSingleParent
               op: eq
               value: true
               label: Familia monoparental
+              source:
+                url: https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/65850d68-8d06-4645-bde7-05374ee42ac7
+                excerpt: >-
+                  se incrementa con un complemento del 22 por 100, cuando se trate de unidad de
+                  convivencia monoparental
             - field: annualHouseholdIncome
               op: lt
               value:
@@ -70,6 +93,11 @@ eligibility:
                           - min: [2.2, { add: [0.7, { mul: [0.3, { ref: householdSize }] }] }]
                   - -120
               label: Ingresos por debajo de la renta garantizada con complemento monoparental
+              source:
+                url: https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/65850d68-8d06-4645-bde7-05374ee42ac7
+                excerpt: >-
+                  se incrementa con un complemento del 22 por 100, cuando se trate de unidad de
+                  convivencia monoparental
       label: Ingresos del hogar por debajo de la renta garantizada del IMV para tu hogar
       hard: true
 otherRequirements:

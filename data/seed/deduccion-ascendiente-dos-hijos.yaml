@@ -1,5 +1,5 @@
 slug: deduccion-ascendiente-dos-hijos
-version: 1
+version: 2
 status: published
 reviewedBy: "claude-code (requiere revisión humana)"
 reviewedAt: "2026-10-14"
@@ -22,6 +22,11 @@ eligibility:
       op: eq
       value: true
       label: Ser familia monoparental (separado legalmente o sin vínculo matrimonial)
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deducciones-familia-numerosa-personas-discapacidad-cargo/cuantia-maxima-deducciones.html
+        excerpt: >-
+          por ser un ascendiente separado legalmente, o sin vínculo matrimonial, con dos hijos
+          sin derecho a percibir anualidades por alimentos
       hard: true
     - field: numChildren
       op: gte

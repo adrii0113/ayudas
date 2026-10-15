@@ -1,5 +1,5 @@
 slug: deduccion-contribuyentes-discapacidad-castilla-y-leon
-version: 1
+version: 2
 status: published
 reviewedBy: "claude-code (requiere revisión humana)"
 reviewedAt: "2026-10-14"
@@ -26,15 +26,30 @@ eligibility:
           op: gte
           value: 65
           label: Discapacidad del 65 % o más
+          source:
+            url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/contribuyentes-discapacidad.html
+            excerpt: >-
+              300 euros por cada contribuyente menor de 65 años afectado por un grado de
+              discapacidad igual o superior al 65 por 100
         - all:
             - field: applicantAge
               op: gte
               value: 65
               label: Tener 65 años o más
+              source:
+                url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/contribuyentes-discapacidad.html
+                excerpt: >-
+                  300 euros por cada contribuyente, de edad igual o superior a 65 años, afectado
+                  por un grado de discapacidad igual o superior al 33 por 100
             - field: applicantDisabilityPercent
               op: gte
               value: 33
               label: Discapacidad del 33 % o más
+              source:
+                url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/contribuyentes-discapacidad.html
+                excerpt: >-
+                  300 euros por cada contribuyente, de edad igual o superior a 65 años, afectado
+                  por un grado de discapacidad igual o superior al 33 por 100
       label: Tener una discapacidad del 65 % o más (o del 33 % si tienes 65 años o más)
       hard: true
     - field: annualHouseholdIncome

@@ -1,5 +1,5 @@
 slug: subsidio-por-desempleo
-version: 1
+version: 2
 status: published
 reviewedBy: "claude-code (requiere revisión humana)"
 reviewedAt: "2026-10-14"
@@ -21,7 +21,12 @@ eligibility:
     - field: employmentStatus
       op: eq
       value: unemployed
-      label: Estar en paro e inscrito como demandante de empleo
+      label: Estar en paro (desempleado)
+      source:
+        url: https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724
+        excerpt: >-
+          Serán beneficiarios del subsidio los desempleados que, cumpliendo los requisitos
+          establecidos en el apartado 2, se encuentren en alguna de las siguientes situaciones
 otherRequirements:
   - "Haber agotado la prestación contributiva por desempleo, o no tener cotizado lo suficiente para ella (subsidio por cotizaciones insuficientes), o ser mayor de 52 años, emigrante retornado o víctima de violencia."
   - "No tener rentas propias superiores al 75 % del salario mínimo (sin pagas extra). Si se pide por responsabilidades familiares, la renta de la familia dividida entre sus miembros tampoco debe superarlo."

@@ -1,5 +1,5 @@
 slug: deduccion-maternidad
-version: 1
+version: 2
 status: published
 reviewedBy: "claude-code (requiere revisión humana)"
 reviewedAt: "2026-10-14"
@@ -21,6 +21,11 @@ eligibility:
       op: lt
       value: 3
       label: Tener un hijo menor de 3 años
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deduccion-maternidad-incremento-adicional-gastos-custodia/deduccion-maternidad/beneficiarios-hijos-que-derecho-aplicacion-deduccion.html
+        excerpt: >-
+          Las mujeres con hijos menores de tres años con derecho a la aplicación del mínimo por
+          descendientes
       hard: true
     - field: employmentStatus
       op: in

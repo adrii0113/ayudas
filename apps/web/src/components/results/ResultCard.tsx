@@ -48,6 +48,7 @@ export function ResultCard({ match, today }: { match: BenefitMatch; today: strin
         <div className="flex flex-wrap gap-2">
           <Badge tone="brand">{t(`levels.${benefit.level}`)}</Badge>
           <Badge>{t(`categories.${benefit.category}`)}</Badge>
+          {benefit.verifiedAt ? <Badge>{t("benefit.autoVerifiedBadge")}</Badge> : null}
         </div>
         <h3 className="condensed text-2xl">{benefit.title}</h3>
         <p className="text-muted">{benefit.summary}</p>

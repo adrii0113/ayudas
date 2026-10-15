@@ -1,5 +1,5 @@
 slug: prestacion-nacimiento-cuidado-menor
-version: 1
+version: 2
 status: published
 reviewedBy: "claude-code (requiere revisión humana)"
 reviewedAt: "2026-10-14"
@@ -23,16 +23,21 @@ eligibility:
       op: lt
       value: 1
       label: Haber tenido, adoptado o acogido un hijo en el último año
+      source:
+        url: https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/6b96a085-4dc0-47af-b2cb-97e00716791e
+        excerpt: >-
+          disfruten de los periodos de suspensión del contrato de trabajo/permiso por nacimiento
+          y cuidado de menor
       hard: true
     - field: employmentStatus
       op: in
       value: [employed, self_employed]
       label: Trabajar y estar de alta en la Seguridad Social (por cuenta ajena o propia)
       source:
+        url: https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/6b96a085-4dc0-47af-b2cb-97e00716791e
         excerpt: >-
-          Menores de 21 años: no se exige período mínimo de cotización. De 21 a 26: 90 días en
-          los 7 años anteriores o 180 en toda la vida laboral. Mayores de 26: 180 días en los 7
-          años anteriores o 360 en toda la vida laboral.
+          Serán beneficiarias las personas trabajadoras por cuenta ajena o propia, cualquiera
+          que sea su sexo, siempre que, se encuentren en situación de alta o asimilada al alta
 otherRequirements:
   - "Periodo mínimo cotizado: ninguno si tienes menos de 21 años; 90 días en los últimos 7 años (o 180 en total) entre 21 y 26; 180 días en los últimos 7 años (o 360 en total) a partir de 26."
   - "También tienes derecho si cobras la prestación contributiva por desempleo."

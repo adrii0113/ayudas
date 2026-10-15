@@ -71,6 +71,8 @@ export const benefitSchema = benefitContentSchema
     status: z.enum(BENEFIT_STATUSES),
     version: z.number().int().min(1),
     reviewedBy: z.string().optional(),
+    /** Date the automatic verification gate last passed (YYYY-MM-DD). */
+    verifiedAt: z.string().optional(),
     reviewedAt: isoDate.optional(),
   })
   .superRefine((b, ctx) => {

@@ -1,5 +1,5 @@
 slug: asignacion-hijo-discapacidad
-version: 1
+version: 2
 status: published
 reviewedBy: "claude-code (requiere revisión humana)"
 reviewedAt: "2026-10-14"
@@ -24,6 +24,11 @@ eligibility:
       op: gte
       value: 1
       label: Tener un hijo con discapacidad reconocida del 33 % o más
+      source:
+        url: https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10967/27924
+        excerpt: >-
+          Asignación económica por cada menor de 18 años con una discapacidad igual o superior
+          al 33 %
       hard: true
 otherRequirements:
   - "Residir legalmente en España."

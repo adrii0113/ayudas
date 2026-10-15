@@ -1,0 +1,36 @@
+name: Daily catalog verification
+
+# Re-runs the publication gate over the curated catalog against the official
+# sources (links, quotes, deadlines) and commits the updated report. A benefit
+# that stops passing (e.g. its call closed or its page changed) disappears from
+# the web on the next deploy.
+on:
+  schedule:
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @tetoca/verification verify:catalog
+      - name: Commit report if changed
+        run: |
+          git add data/verification
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git config user.name "tetoca-bot"
+          git config user.email "tetoca-bot@users.noreply.github.com"
+          git commit -m "chore(data): daily catalog verification $(date -u +%F)"
+          git push

@@ -1,5 +1,5 @@
 slug: deduccion-alquiler-jovenes-castilla-y-leon
-version: 1
+version: 2
 status: published
 reviewedBy: "claude-code (requiere revisión humana)"
 reviewedAt: "2026-10-14"
@@ -29,10 +29,19 @@ eligibility:
       op: eq
       value: renting
       label: Vivir de alquiler en tu vivienda habitual (contrato a tu nombre)
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/arrendamiento-vivienda-habitual-jovenes.html
+        excerpt: >-
+          El 20 por 100 de las cantidades satisfechas en el período impositivo en concepto de
+          alquiler de la vivienda habitual en Castilla y León
     - field: annualHouseholdIncome
       op: lte
       value: 31500
       label: Renta de hasta 18.900 € en declaración individual (31.500 € en conjunta)
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/arrendamiento-vivienda-habitual-jovenes.html
+        excerpt: >-
+          18.900 euros en tributación individual. [...] 31.500 euros en tributación conjunta.
 otherRequirements:
   - "El límite de renta se refiere a la base imponible menos el mínimo personal y familiar de la declaración, no a los ingresos brutos."
   - "El 25 % se aplica en municipios de hasta 10.000 habitantes (o 3.000 si están a menos de 30 km de la capital de provincia)."

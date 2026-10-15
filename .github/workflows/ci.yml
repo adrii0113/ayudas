@@ -21,7 +21,11 @@ jobs:
       - run: pnpm typecheck
       - run: pnpm test:coverage
       - run: pnpm test
+      # Published benefits must have passed the automatic verification gate with
+      # their current content (run `pnpm --filter @tetoca/verification verify:catalog`).
       - run: pnpm catalog:validate
+        env:
+          REQUIRE_VERIFIED: "1"
       - run: pnpm --filter @tetoca/web build
 
   e2e:

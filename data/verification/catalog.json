@@ -1,0 +1,606 @@
+{
+  "asignacion-hijo-discapacidad": {
+    "version": 2,
+    "contentHash": "c3d0cd8142cbdbbab6d4d3e5352b74c55bdba5d9b7296199e74ecef39eecb7b9",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "ayudas-alquiler-vivienda-castilla-y-leon": {
+    "version": 1,
+    "contentHash": "c62132017403e82934bb5168235ca5cc18cbe5d08fcd324b976d874eaf313555",
+    "passed": false,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "fail",
+      "links": "pass",
+      "deadlines": "fail",
+      "parameters": "uncertain"
+    },
+    "findings": [
+      {
+        "agent": "citations",
+        "severity": "warning",
+        "message": "\"Ser mayor de edad\" has no quote",
+        "field": "all.0"
+      },
+      {
+        "agent": "citations",
+        "severity": "warning",
+        "message": "\"Vivir de alquiler con contrato a tu nombre\" has no quote",
+        "field": "all.1"
+      },
+      {
+        "agent": "citations",
+        "severity": "error",
+        "message": "Quote for \"Ingresos del hogar de al menos 0,5 veces el IPREM (4.200 €/año)\" not found in the official text",
+        "field": "all.2"
+      },
+      {
+        "agent": "citations",
+        "severity": "warning",
+        "message": "\"Ingresos del hogar de hasta 3 veces el IPREM (25.200 €/año)\" has no quote",
+        "field": "all.3.any.0"
+      },
+      {
+        "agent": "citations",
+        "severity": "warning",
+        "message": "\"Familia numerosa\" has no quote",
+        "field": "all.3.any.1.all.0"
+      },
+      {
+        "agent": "citations",
+        "severity": "warning",
+        "message": "\"Ingresos de hasta 4 veces el IPREM\" has no quote",
+        "field": "all.3.any.1.all.1"
+      },
+      {
+        "agent": "citations",
+        "severity": "warning",
+        "message": "\"Discapacidad del 33 % o más\" has no quote",
+        "field": "all.3.any.2.all.0"
+      },
+      {
+        "agent": "citations",
+        "severity": "warning",
+        "message": "\"Ingresos de hasta 5 veces el IPREM\" has no quote",
+        "field": "all.3.any.2.all.1"
+      },
+      {
+        "agent": "citations",
+        "severity": "warning",
+        "message": "\"Alquiler de 550 €/mes o menos\" has no quote",
+        "field": "all.4.any.0"
+      },
+      {
+        "agent": "citations",
+        "severity": "warning",
+        "message": "\"Familia numerosa\" has no quote",
+        "field": "all.4.any.1.all.0"
+      },
+      {
+        "agent": "citations",
+        "severity": "warning",
+        "message": "\"Alquiler de 800 €/mes o menos\" has no quote",
+        "field": "all.4.any.1.all.1"
+      },
+      {
+        "agent": "citations",
+        "severity": "warning",
+        "message": "\"Discapacidad del 33 % o más\" has no quote",
+        "field": "all.4.any.2.all.0"
+      },
+      {
+        "agent": "citations",
+        "severity": "warning",
+        "message": "\"Alquiler de 800 €/mes o menos\" has no quote",
+        "field": "all.4.any.2.all.1"
+      },
+      {
+        "agent": "deadlines",
+        "severity": "error",
+        "message": "Application window closed: archive it or add the new edition",
+        "field": "window.closesAt"
+      },
+      {
+        "agent": "parameters",
+        "severity": "warning",
+        "message": "No official parameters registered for 2025; using 2026 values"
+      }
+    ],
+    "models": []
+  },
+  "ayudas-comedor-escolar-primer-ciclo-infantil-castilla-y-leon": {
+    "version": 1,
+    "contentHash": "bd8203336c2bf4f0264a007778200a7e405d2f4d7348eb6ddd6312aeb2d86120",
+    "passed": false,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "fail",
+      "parameters": "skipped"
+    },
+    "findings": [
+      {
+        "agent": "deadlines",
+        "severity": "error",
+        "message": "Application window closed: archive it or add the new edition",
+        "field": "window.closesAt"
+      }
+    ],
+    "models": []
+  },
+  "ayudas-estudio-universitario-castilla-y-leon": {
+    "version": 1,
+    "contentHash": "ea03057641f7361ebf47a418e8cf3e917e4bf79d431039b2c45b2d2910162eae",
+    "passed": false,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "uncertain",
+      "links": "pass",
+      "deadlines": "fail",
+      "parameters": "skipped"
+    },
+    "findings": [
+      {
+        "agent": "citations",
+        "severity": "warning",
+        "message": "\"Estudiar un grado o máster\" has no quote",
+        "field": "all.0.any.0"
+      },
+      {
+        "agent": "citations",
+        "severity": "warning",
+        "message": "\"Tener un hijo de 17 años o más\" has no quote",
+        "field": "all.0.any.1.all.0"
+      },
+      {
+        "agent": "citations",
+        "severity": "warning",
+        "message": "\"Tener un hijo de 25 años o menos\" has no quote",
+        "field": "all.0.any.1.all.1"
+      },
+      {
+        "agent": "deadlines",
+        "severity": "error",
+        "message": "Application window closed: archive it or add the new edition",
+        "field": "window.closesAt"
+      }
+    ],
+    "models": []
+  },
+  "ayudas-permiso-conducir-jovenes-castilla-y-leon": {
+    "version": 2,
+    "contentHash": "cff32a1b08b72537bea0bd8f18fbbcd9d907e0a352e974d1b2555eb971238048",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "pass",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "ayudas-primera-matricula-universitaria-castilla-y-leon": {
+    "version": 2,
+    "contentHash": "2cdf254a71d027539fe104e30abaf0935aa88cdac7d22c95bcec569fd3e0dd35",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "pass",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "becas-formacion-desempleados-castilla-y-leon": {
+    "version": 1,
+    "contentHash": "374edbb2822e035805e7aa810bfc92e37f7ff6fcce4a79524e81e25f76667851",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "becas-mec-caracter-general": {
+    "version": 1,
+    "contentHash": "369c0abe0d5d0edcdfb27aced899aa520b87d6f52a7fa3e1d100ca0bffcd6e36",
+    "passed": false,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "uncertain",
+      "links": "pass",
+      "deadlines": "fail",
+      "parameters": "skipped"
+    },
+    "findings": [
+      {
+        "agent": "citations",
+        "severity": "warning",
+        "message": "\"Estudiar Bachillerato, FP o en la universidad\" has no quote",
+        "field": "all.0.any.0"
+      },
+      {
+        "agent": "citations",
+        "severity": "warning",
+        "message": "\"Tener un hijo de 16 años o más\" has no quote",
+        "field": "all.0.any.1.all.0"
+      },
+      {
+        "agent": "citations",
+        "severity": "warning",
+        "message": "\"Tener un hijo de 25 años o menos\" has no quote",
+        "field": "all.0.any.1.all.1"
+      },
+      {
+        "agent": "deadlines",
+        "severity": "error",
+        "message": "Application window closed: archive it or add the new edition",
+        "field": "window.closesAt"
+      }
+    ],
+    "models": []
+  },
+  "bono-nacimiento-castilla-y-leon": {
+    "version": 1,
+    "contentHash": "d347bb6276fe1fbc12522ec624e2737122867170d01f99362ea5be1f546c33ab",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "pass",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "bono-social-electrico": {
+    "version": 2,
+    "contentHash": "7719217864bd531523b64ebb1c4acbbac7f88d3f8a2805d70d3656953254b2ce",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "pass"
+    },
+    "findings": [],
+    "models": []
+  },
+  "bono-social-termico": {
+    "version": 2,
+    "contentHash": "37868922dca525876c67db016bdb7638db9029322811a7b9170da5be56373ef5",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "pass"
+    },
+    "findings": [],
+    "models": []
+  },
+  "complemento-ayuda-infancia": {
+    "version": 2,
+    "contentHash": "4660d9c752227dfd833a6acc23d4cd0c39d646f611caf340ea63f36f070d538b",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "pass"
+    },
+    "findings": [],
+    "models": []
+  },
+  "conciliacion-reduccion-jornada-excedencia-castilla-y-leon": {
+    "version": 1,
+    "contentHash": "af5bd6c9aa1cea33d54e9936b56d038fc1ddac8300cc69f636f87ef28735e266",
+    "passed": false,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "fail",
+      "links": "pass",
+      "deadlines": "fail",
+      "parameters": "skipped"
+    },
+    "findings": [
+      {
+        "agent": "citations",
+        "severity": "warning",
+        "message": "\"Trabajar por cuenta ajena (los autónomos no pueden pedirla)\" has no quote",
+        "field": "all.0"
+      },
+      {
+        "agent": "citations",
+        "severity": "warning",
+        "message": "\"Llevar al menos un año empadronado en Castilla y León\" has no quote",
+        "field": "all.1"
+      },
+      {
+        "agent": "citations",
+        "severity": "warning",
+        "message": "\"Tener un hijo menor de 12 años\" has no quote",
+        "field": "all.2.any.0"
+      },
+      {
+        "agent": "citations",
+        "severity": "warning",
+        "message": "\"Cuidar de un familiar que no puede valerse por sí mismo\" has no quote",
+        "field": "all.2.any.1"
+      },
+      {
+        "agent": "citations",
+        "severity": "error",
+        "message": "Quote for \"Renta de la pareja de 36.540 € o menos (18.270 € si no tienes pareja)\" not found in the official text",
+        "field": "all.3"
+      },
+      {
+        "agent": "deadlines",
+        "severity": "error",
+        "message": "Application window closed: archive it or add the new edition",
+        "field": "window.closesAt"
+      }
+    ],
+    "models": []
+  },
+  "deduccion-alquiler-jovenes-castilla-y-leon": {
+    "version": 2,
+    "contentHash": "8ca3a5bb0cdcdfcb3935215f563f4891a4c36b75ae05b893f5c61acfa8a92f40",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-ascendiente-discapacidad": {
+    "version": 1,
+    "contentHash": "265727d621276657e1cb16b0adb9395eceddde7586723f6967f6c7d10c59595f",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-ascendiente-dos-hijos": {
+    "version": 2,
+    "contentHash": "b574b81f972b96fd3aa44fd94061b72ac5cb52ba16d3765ac59b55aff9877146",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-contribuyentes-discapacidad-castilla-y-leon": {
+    "version": 2,
+    "contentHash": "3be7b1341517c59e604b202948280d104170e37a5b283ead4b254fe46f028411",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-cuidado-hijos-menores-castilla-y-leon": {
+    "version": 2,
+    "contentHash": "b035c90027dcbce28cd759a7c1e8aa116d297755373509fc2135f4e97e8d8966",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-descendiente-discapacidad": {
+    "version": 2,
+    "contentHash": "66989d116620c5e7f8e8bd8f224563b840b7ab20b8d5d0a24bcae2cb927805aa",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-familia-numerosa": {
+    "version": 1,
+    "contentHash": "7728864d4ac90b05c790fe6d922ea1f9fbc2dfa114b7e5f7cce29217440ff7e6",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-familia-numerosa-castilla-y-leon": {
+    "version": 1,
+    "contentHash": "3537b7ae65f8418f14579054b8dc19310d78132c4f5ae972278df555b910f674",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-maternidad": {
+    "version": 2,
+    "contentHash": "e1013260e696064a9cce598b7ae2a88d7592b5bafc51a906dfaa866d12209ee9",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-nacimiento-adopcion-castilla-y-leon": {
+    "version": 1,
+    "contentHash": "f8aaaad9f2ce2f385bb7307ab6de8948bf41f6e4e641dc9da9d244efbe8da607",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "ingreso-minimo-vital": {
+    "version": 2,
+    "contentHash": "ea61024c56bc1ba49e5eaa194b5ca5deb42a4c0659926016a2fcd663c6974913",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "pass"
+    },
+    "findings": [],
+    "models": []
+  },
+  "pension-no-contributiva-invalidez": {
+    "version": 2,
+    "contentHash": "fa4a5f2df1dbbb2b5f96b63dda81b5088bc1a52fd3e4ef288c387f763da31ed0",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "pass"
+    },
+    "findings": [],
+    "models": []
+  },
+  "pension-no-contributiva-jubilacion": {
+    "version": 2,
+    "contentHash": "01405e68920ba9eb0ac96c5874eae62e855a05be665e973101909a3552a0cc23",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "pass"
+    },
+    "findings": [],
+    "models": []
+  },
+  "prestacion-nacimiento-cuidado-menor": {
+    "version": 2,
+    "contentHash": "7f7c260d92f253bfdd6be580b53dca0a9a5fcfb253126f2f5eec99d6cb8eef3a",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "reconocimiento-dependencia-castilla-y-leon": {
+    "version": 2,
+    "contentHash": "e1b9270f18d294125430f6739a6e10a1bdf541b71386dee25bf3f9cc23c64758",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "renta-garantizada-ciudadania-castilla-y-leon": {
+    "version": 2,
+    "contentHash": "f33e5e1d0aafa4fa880b843bf52cead7a357a6c964b0ab3e2f1d38c490aace46",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "pass"
+    },
+    "findings": [],
+    "models": []
+  },
+  "subsidio-por-desempleo": {
+    "version": 2,
+    "contentHash": "57a267994073106b54a606959e78cee4e3de615662c829d2fb78adf4a7c40ad7",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  }
+}

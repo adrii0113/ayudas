@@ -1,22 +1,25 @@
-import { needsHumanReview } from "@tetoca/core";
-import { loadCatalog } from "../catalog";
+import { loadCatalog, loadVerificationReport, validVerification } from "../catalog";
 
 const { benefits, issues } = loadCatalog();
 for (const issue of issues) console.error(`✗ ${issue.file}: ${issue.message}`);
 
 const drafts = benefits.filter((b) => b.status === "draft");
-for (const b of drafts) console.warn(`· ${b.slug}: draft (not public)`);
+const archived = benefits.filter((b) => b.status === "archived");
+const published = benefits.filter((b) => b.status === "published");
 
-// Benefits curated by an AI assistant must be reviewed by a person before going
-// public. Set REQUIRE_HUMAN_REVIEW=1 in production builds to enforce it.
-const pending = benefits.filter((b) => b.status === "published" && needsHumanReview(b));
-const strict = process.env.REQUIRE_HUMAN_REVIEW === "1";
-for (const b of pending) {
-  (strict ? console.error : console.warn)(`! ${b.slug}: published but pending human review`);
+// Owner decision (2026-10-15): no human review; a published benefit is shown only
+// if it passed the automatic verification gate with its current content
+// (pnpm --filter @tetoca/verification verify:catalog). REQUIRE_VERIFIED=1 makes
+// unverified published benefits an error (CI).
+const report = loadVerificationReport();
+const unverified = published.filter((b) => !validVerification(b, report));
+const strict = process.env.REQUIRE_VERIFIED === "1";
+for (const b of unverified) {
+  (strict ? console.error : console.warn)(`! ${b.slug}: published but not verified (hidden)`);
 }
 
 console.log(
-  `${benefits.length} benefits loaded (${benefits.length - drafts.length} published, ${drafts.length} drafts), ` +
-    `${issues.length} issues, ${pending.length} pending human review.`,
+  `${benefits.length} benefits loaded (${published.length} published, ${archived.length} archived, ` +
+    `${drafts.length} drafts), ${issues.length} issues, ${unverified.length} not verified.`,
 );
-process.exit(issues.length || (strict && pending.length) ? 1 : 0);
+process.exit(issues.length || (strict && unverified.length) ? 1 : 0);

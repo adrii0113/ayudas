@@ -1,5 +1,5 @@
 slug: pension-no-contributiva-jubilacion
-version: 1
+version: 2
 status: published
 reviewedBy: "claude-code (requiere revisión humana)"
 reviewedAt: "2026-10-14"
@@ -30,6 +30,11 @@ eligibility:
       op: gte
       value: 5
       label: Llevar muchos años residiendo legalmente en España (10 años desde los 16)
+      source:
+        url: https://imserso.es/documents/20123/1595507/pncresumen2026.pdf/c4b41c80-63fe-942d-7231-f3ee20e28694
+        excerpt: >-
+          Residir legalmente en territorio español y haberlo hecho durante 10 años, entre la
+          edad de 16 años y la de devengo de la pensión
     - field: annualHouseholdIncome
       op: lt
       value:

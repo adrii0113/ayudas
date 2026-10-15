@@ -11,12 +11,14 @@ import { loadCatalog } from "../src/catalog";
 
 const { benefits, issues } = loadCatalog();
 const published = benefits.filter((b) => b.status === "published");
+/** Published plus archived editions: their rules are still real-world fixtures. */
+const curated = benefits.filter((b) => b.status !== "draft");
 
 /** Fixed date so results don't depend on when the tests run. */
 const TODAY = "2026-10-14";
 
 function statusOf(profile: HouseholdProfile, slug: string, today = TODAY) {
-  const match = evaluate(profile, published, { today, includeClosed: true }).find(
+  const match = evaluate(profile, curated, { today, includeClosed: true }).find(
     (m) => m.benefit.slug === slug,
   );
   if (!match) throw new Error(`Benefit ${slug} not found`);

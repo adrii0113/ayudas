@@ -1,5 +1,5 @@
 slug: deduccion-descendiente-discapacidad
-version: 1
+version: 2
 status: published
 reviewedBy: "claude-code (requiere revisión humana)"
 reviewedAt: "2026-10-14"
@@ -24,7 +24,9 @@ eligibility:
       label: Tener un hijo con discapacidad reconocida del 33 % o más
       source:
         url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deducciones-familia-numerosa-personas-discapacidad-cargo/cuantia-maxima-deducciones.html
-        excerpt: "Deducción por descendientes con discapacidad a cargo: por cada descendiente con discapacidad con derecho a la aplicación del mínimo por descendientes"
+        excerpt: >-
+          Hasta 1.200 euros anuales por cada descendiente con discapacidad con derecho a la
+          aplicación del mínimo por descendientes
       hard: true
 otherRequirements:
   - "Estar de alta en la Seguridad Social o mutualidad, o cobrar prestaciones por desempleo o pensiones."

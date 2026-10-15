@@ -161,10 +161,13 @@ export function BenefitDetail({ benefit, related }: { benefit: Benefit; related:
             </li>
           ))}
         </ul>
-        {benefit.reviewedAt ? (
+        {!pendingReview && benefit.reviewedAt ? (
           <p className="text-sm text-muted">
-            {t("benefit.lastReview", { date: formatDate(benefit.reviewedAt) })}
-            {pendingReview ? ` · ${t("benefit.pendingReview")}` : null}
+            {t("benefit.humanReviewed", { date: formatDate(benefit.reviewedAt) })}
+          </p>
+        ) : benefit.verifiedAt ? (
+          <p className="text-sm text-muted">
+            {t("benefit.autoVerified", { date: formatDate(benefit.verifiedAt) })}
           </p>
         ) : null}
       </Section>

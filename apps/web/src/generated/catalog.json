@@ -19,7 +19,11 @@
           "op": "gte",
           "value": 1,
           "label": "Tener un hijo con discapacidad reconocida del 33 % o más",
-          "hard": true
+          "hard": true,
+          "source": {
+            "url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10967/27924",
+            "excerpt": "Asignación económica por cada menor de 18 años con una discapacidad igual o superior al 33 %"
+          }
         }
       ]
     },
@@ -51,286 +55,10 @@
     "faq": [],
     "id": "asignacion-hijo-discapacidad",
     "status": "published",
-    "version": 1,
+    "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
-  },
-  {
-    "slug": "ayudas-alquiler-vivienda-castilla-y-leon",
-    "title": "Ayudas al alquiler de vivienda de Castilla y León",
-    "summary": "La Junta paga el 50 % del alquiler mensual (60 % si tienes hasta 35 años) a inquilinos con ingresos limitados. La última convocatoria cerró el 30 de enero de 2026; suele abrirse en otoño.",
-    "level": "regional",
-    "region": "CL",
-    "category": "housing",
-    "kind": "call",
-    "agency": "Junta de Castilla y León (Vivienda)",
-    "amount": {
-      "type": "percent",
-      "min": 50,
-      "max": 75,
-      "text": "50 % del alquiler mensual; 60 % si tienes 35 años o menos; hasta 75 % para jóvenes en municipios pequeños (ámbito 2º)."
-    },
-    "window": {
-      "opensAt": "2025-12-01",
-      "closesAt": "2026-01-30"
-    },
-    "eligibility": {
-      "all": [
-        {
-          "field": "applicantAge",
-          "op": "gte",
-          "value": 18,
-          "label": "Ser mayor de edad"
-        },
-        {
-          "field": "housing",
-          "op": "eq",
-          "value": "renting",
-          "label": "Vivir de alquiler con contrato a tu nombre"
-        },
-        {
-          "field": "annualHouseholdIncome",
-          "op": "gte",
-          "value": {
-            "mul": [
-              0.5,
-              {
-                "ref": "iprem14"
-              }
-            ]
-          },
-          "label": "Ingresos del hogar de al menos 0,5 veces el IPREM (4.200 €/año)",
-          "source": {
-            "excerpt": "sean iguales o superiores a 0,5 veces el IPREM e iguales o inferiores a 3 veces el IPREM"
-          }
-        },
-        {
-          "any": [
-            {
-              "field": "annualHouseholdIncome",
-              "op": "lte",
-              "value": {
-                "mul": [
-                  3,
-                  {
-                    "ref": "iprem14"
-                  }
-                ]
-              },
-              "label": "Ingresos del hogar de hasta 3 veces el IPREM (25.200 €/año)"
-            },
-            {
-              "all": [
-                {
-                  "field": "isLargeFamily",
-                  "op": "eq",
-                  "value": true,
-                  "label": "Familia numerosa"
-                },
-                {
-                  "field": "annualHouseholdIncome",
-                  "op": "lte",
-                  "value": {
-                    "mul": [
-                      4,
-                      {
-                        "ref": "iprem14"
-                      }
-                    ]
-                  },
-                  "label": "Ingresos de hasta 4 veces el IPREM"
-                }
-              ]
-            },
-            {
-              "all": [
-                {
-                  "field": "applicantDisabilityPercent",
-                  "op": "gte",
-                  "value": 33,
-                  "label": "Discapacidad del 33 % o más"
-                },
-                {
-                  "field": "annualHouseholdIncome",
-                  "op": "lte",
-                  "value": {
-                    "mul": [
-                      5,
-                      {
-                        "ref": "iprem14"
-                      }
-                    ]
-                  },
-                  "label": "Ingresos de hasta 5 veces el IPREM"
-                }
-              ]
-            }
-          ],
-          "label": "Ingresos del hogar de hasta 3 veces el IPREM (4 o 5 veces en familias numerosas o con discapacidad)"
-        },
-        {
-          "any": [
-            {
-              "field": "monthlyRent",
-              "op": "lte",
-              "value": 550,
-              "label": "Alquiler de 550 €/mes o menos"
-            },
-            {
-              "all": [
-                {
-                  "field": "isLargeFamily",
-                  "op": "eq",
-                  "value": true,
-                  "label": "Familia numerosa"
-                },
-                {
-                  "field": "monthlyRent",
-                  "op": "lte",
-                  "value": 800,
-                  "label": "Alquiler de 800 €/mes o menos"
-                }
-              ]
-            },
-            {
-              "all": [
-                {
-                  "field": "applicantDisabilityPercent",
-                  "op": "gte",
-                  "value": 33,
-                  "label": "Discapacidad del 33 % o más"
-                },
-                {
-                  "field": "monthlyRent",
-                  "op": "lte",
-                  "value": 800,
-                  "label": "Alquiler de 800 €/mes o menos"
-                }
-              ]
-            }
-          ],
-          "label": "Alquiler mensual dentro del límite (550 € en general; hasta 700-800 € en familias numerosas o con discapacidad)"
-        }
-      ]
-    },
-    "otherRequirements": [
-      "El límite de alquiler es de 550 €/mes en municipios del ámbito 1º (como Valladolid) y 500 € en el ámbito 2º; en habitaciones, 200 € y 175 €.",
-      "La vivienda debe ser tu residencia habitual y estar empadronado en ella.",
-      "Nadie del hogar puede ser propietario o usufructuario de una vivienda en España (salvo excepciones) ni tener parentesco de primer o segundo grado con el arrendador.",
-      "Es una convocatoria en concurrencia competitiva: se conceden hasta agotar el presupuesto."
-    ],
-    "documents": [
-      "Contrato de alquiler",
-      "Justificantes bancarios del pago del alquiler",
-      "Certificado de empadronamiento"
-    ],
-    "steps": [
-      "Espera a la próxima convocatoria (la de 2025 se abrió del 1 de diciembre de 2025 al 30 de enero de 2026).",
-      "Presenta la solicitud en la sede electrónica de la Junta (tramitacastillayleon.jcyl.es) con el código BDNS de la convocatoria."
-    ],
-    "officialUrl": "https://www.tramitacastillayleon.jcyl.es",
-    "sources": [
-      {
-        "url": "https://bocyl.jcyl.es/boletines/2025/10/21/pdf/BOCYL-D-21102025-21.pdf",
-        "retrievedAt": "2026-10-14",
-        "excerpt": "El plazo de presentación de solicitudes comenzará el día 1 de diciembre de 2025 y finalizará el 30 de enero de 2026, ambos incluidos"
-      },
-      {
-        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/862757",
-        "retrievedAt": "2026-10-14",
-        "excerpt": "La cuantía de la subvención será el resultado de aplicar a la renta o precio mensual [...] el porcentaje del 50 %. En el supuesto de personas jóvenes, el porcentaje será del 60 %"
-      }
-    ],
-    "faq": [
-      {
-        "question": "¿Cuándo se piden las ayudas al alquiler en Castilla y León?",
-        "answer": "La última convocatoria estuvo abierta del 1 de diciembre de 2025 al 30 de enero de 2026. Activa las alertas para saber cuándo abre la siguiente."
-      }
-    ],
-    "id": "ayudas-alquiler-vivienda-castilla-y-leon",
-    "status": "published",
-    "version": 1,
-    "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
-  },
-  {
-    "slug": "ayudas-estudio-universitario-castilla-y-leon",
-    "title": "Ayudas al estudio para universitarios de Castilla y León",
-    "summary": "Ayudas de la Junta para estudiantes de grado o máster en universidades de Castilla y León que ya tienen la beca de matrícula del Ministerio, por renta o por buen expediente.",
-    "level": "regional",
-    "region": "CL",
-    "category": "education",
-    "kind": "call",
-    "agency": "Junta de Castilla y León (Consejería de Educación)",
-    "amount": {
-      "type": "variable",
-      "text": "Según la modalidad (renta o aprovechamiento académico) y el crédito disponible."
-    },
-    "window": {
-      "opensAt": "2025-10-21",
-      "closesAt": "2025-11-17",
-      "text": "La última convocatoria (curso 2025-2026) se abrió en octubre."
-    },
-    "eligibility": {
-      "all": [
-        {
-          "any": [
-            {
-              "field": "employmentStatus",
-              "op": "eq",
-              "value": "student",
-              "label": "Estudiar un grado o máster"
-            },
-            {
-              "all": [
-                {
-                  "field": "oldestChildAge",
-                  "op": "gte",
-                  "value": 17,
-                  "label": "Tener un hijo de 17 años o más"
-                },
-                {
-                  "field": "oldestChildAge",
-                  "op": "lte",
-                  "value": 25,
-                  "label": "Tener un hijo de 25 años o menos"
-                }
-              ]
-            }
-          ],
-          "label": "Estudiar tú (o un hijo) un grado o máster en una universidad de Castilla y León",
-          "hard": true
-        }
-      ]
-    },
-    "otherRequirements": [
-      "Haber obtenido la beca de matrícula del Ministerio de Educación para ese curso.",
-      "Estar matriculado en una universidad pública o privada de Castilla y León y empadronado en Castilla y León."
-    ],
-    "documents": [
-      "Justificante de matrícula"
-    ],
-    "steps": [
-      "Presenta la solicitud en la sede electrónica de la Junta (tramitacastillayleon.jcyl.es) cuando se abra la convocatoria."
-    ],
-    "officialUrl": "https://www.tramitacastillayleon.jcyl.es/",
-    "sources": [
-      {
-        "url": "https://bocyl.jcyl.es/boletines/2025/10/20/pdf/BOCYL-D-20102025-7.pdf",
-        "retrievedAt": "2026-10-14",
-        "excerpt": "Haber resultado beneficiario de la beca de matrícula para el curso académico 2025-2026, para estudiantes que cursen estudios postobligatorios"
-      },
-      {
-        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/862864",
-        "retrievedAt": "2026-10-14"
-      }
-    ],
-    "faq": [],
-    "id": "ayudas-estudio-universitario-castilla-y-leon",
-    "status": "published",
-    "version": 1,
-    "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
+    "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
   },
   {
     "slug": "becas-formacion-desempleados-castilla-y-leon",
@@ -386,89 +114,8 @@
     "status": "published",
     "version": 1,
     "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
-  },
-  {
-    "slug": "becas-mec-caracter-general",
-    "title": "Becas del Ministerio de Educación para estudios postobligatorios (curso 2026-2027)",
-    "summary": "Becas para estudiar Bachillerato, FP, enseñanzas artísticas o la universidad: cubren la matrícula y pueden sumar cuantías por renta y por residencia. El plazo 2026-2027 cerró en mayo.",
-    "level": "state",
-    "category": "education",
-    "kind": "call",
-    "agency": "Ministerio de Educación, Formación Profesional y Deportes",
-    "amount": {
-      "type": "variable",
-      "min": 300,
-      "text": "Matrícula gratuita en la universidad; 1.700 € ligados a la renta; 2.700 € si vives fuera del domicilio familiar por estudios; 300 € de beca básica en estudios no universitarios; y entre 50 y 125 € por excelencia académica."
-    },
-    "window": {
-      "opensAt": "2026-04-07",
-      "closesAt": "2026-05-19",
-      "text": "Suele abrirse cada año entre marzo y mayo para el curso siguiente."
-    },
-    "eligibility": {
-      "all": [
-        {
-          "any": [
-            {
-              "field": "employmentStatus",
-              "op": "eq",
-              "value": "student",
-              "label": "Estudiar Bachillerato, FP o en la universidad"
-            },
-            {
-              "all": [
-                {
-                  "field": "oldestChildAge",
-                  "op": "gte",
-                  "value": 16,
-                  "label": "Tener un hijo de 16 años o más"
-                },
-                {
-                  "field": "oldestChildAge",
-                  "op": "lte",
-                  "value": 25,
-                  "label": "Tener un hijo de 25 años o menos"
-                }
-              ]
-            }
-          ],
-          "label": "Estudiar tú (o un hijo) Bachillerato, FP, enseñanzas artísticas o un grado/máster",
-          "hard": true
-        }
-      ]
-    },
-    "otherRequirements": [
-      "No superar los umbrales de renta y patrimonio familiar de la convocatoria (dependen del número de miembros de la familia).",
-      "Cumplir los requisitos académicos (nota media y créditos aprobados) de la convocatoria."
-    ],
-    "documents": [
-      "Datos de la matrícula",
-      "Datos de los miembros de la unidad familiar (la renta se comprueba con Hacienda)"
-    ],
-    "steps": [
-      "Rellena la solicitud en la sede electrónica del Ministerio de Educación (sede.educacion.gob.es) dentro del plazo.",
-      "Fírmala electrónicamente (si eres menor de 18 años, la firma tu representante legal)."
-    ],
-    "officialUrl": "https://sede.educacion.gob.es",
-    "sources": [
-      {
-        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/894743",
-        "retrievedAt": "2026-10-14",
-        "excerpt": "b) Cuantía fija ligada a la renta del estudiante: 1.700,00 euros tanto para estudiantes universitarios como no universitarios. c) Cuantía fija ligada a la residencia del estudiante durante el curso escolar: 2.700,00 euros"
-      }
-    ],
-    "faq": [
-      {
-        "question": "¿Cuándo se piden las becas del Ministerio?",
-        "answer": "Para el curso 2026-2027 el plazo fue del 7 de abril al 19 de mayo de 2026. Suele abrirse cada primavera; activa las alertas para enterarte."
-      }
-    ],
-    "id": "becas-mec-caracter-general",
-    "status": "published",
-    "version": 1,
-    "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
+    "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
   },
   {
     "slug": "bono-nacimiento-castilla-y-leon",
@@ -544,7 +191,8 @@
     "status": "published",
     "version": 1,
     "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
+    "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
   },
   {
     "slug": "bono-social-electrico",
@@ -575,7 +223,11 @@
           "field": "receivesMinimumIncome",
           "op": "eq",
           "value": true,
-          "label": "Cobrar el Ingreso Mínimo Vital (tú o alguien de tu hogar)"
+          "label": "Cobrar el Ingreso Mínimo Vital (tú o alguien de tu hogar)",
+          "source": {
+            "url": "https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001/preguntas-frecuentes-bono-social.html",
+            "excerpt": "Cuando el titular del punto de suministro o algún miembro de la unidad de convivencia sea perceptor del Ingreso Mínimo Vital"
+          }
         },
         {
           "field": "annualHouseholdIncome",
@@ -621,19 +273,31 @@
                   "field": "isSingleParent",
                   "op": "eq",
                   "value": true,
-                  "label": "Familia monoparental"
+                  "label": "Familia monoparental",
+                  "source": {
+                    "url": "https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001/preguntas-frecuentes-bono-social.html",
+                    "excerpt": "Si el titular o algún miembro de la unidad de convivencia tiene una discapacidad reconocida igual o superior al 33%, es víctima de violencia de género, víctima de terrorismo, forma parte de una familia monoparental"
+                  }
                 },
                 {
                   "field": "applicantDisabilityPercent",
                   "op": "gte",
                   "value": 33,
-                  "label": "Discapacidad reconocida del 33 % o más"
+                  "label": "Discapacidad reconocida del 33 % o más",
+                  "source": {
+                    "url": "https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001/preguntas-frecuentes-bono-social.html",
+                    "excerpt": "Si el titular o algún miembro de la unidad de convivencia tiene una discapacidad reconocida igual o superior al 33%, es víctima de violencia de género, víctima de terrorismo, forma parte de una familia monoparental"
+                  }
                 },
                 {
                   "field": "numChildrenWithDisability",
                   "op": "gte",
                   "value": 1,
-                  "label": "Un hijo con discapacidad reconocida del 33 % o más"
+                  "label": "Un hijo con discapacidad reconocida del 33 % o más",
+                  "source": {
+                    "url": "https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001/preguntas-frecuentes-bono-social.html",
+                    "excerpt": "Si el titular o algún miembro de la unidad de convivencia tiene una discapacidad reconocida igual o superior al 33%, es víctima de violencia de género, víctima de terrorismo, forma parte de una familia monoparental"
+                  }
                 }
               ]
             },
@@ -668,7 +332,11 @@
                   }
                 ]
               },
-              "label": "Ingresos del hogar dentro del umbral ampliado (+1 IPREM)"
+              "label": "Ingresos del hogar dentro del umbral ampliado (+1 IPREM)",
+              "source": {
+                "url": "https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001/preguntas-frecuentes-bono-social.html",
+                "excerpt": "sumará 1 IPREM al umbra de renta"
+              }
             }
           ],
           "label": "Situación especial (monoparental o discapacidad) con ingresos dentro del umbral ampliado"
@@ -713,9 +381,10 @@
     ],
     "id": "bono-social-electrico",
     "status": "published",
-    "version": 1,
+    "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
+    "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
   },
   {
     "slug": "bono-social-termico",
@@ -744,7 +413,11 @@
           "field": "receivesMinimumIncome",
           "op": "eq",
           "value": true,
-          "label": "Cobrar el Ingreso Mínimo Vital (tú o alguien de tu hogar)"
+          "label": "Cobrar el Ingreso Mínimo Vital (tú o alguien de tu hogar)",
+          "source": {
+            "url": "https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001/preguntas-frecuentes-bono-social.html",
+            "excerpt": "Cuando el titular del punto de suministro o algún miembro de la unidad de convivencia sea perceptor del Ingreso Mínimo Vital"
+          }
         },
         {
           "field": "annualHouseholdIncome",
@@ -790,19 +463,31 @@
                   "field": "isSingleParent",
                   "op": "eq",
                   "value": true,
-                  "label": "Familia monoparental"
+                  "label": "Familia monoparental",
+                  "source": {
+                    "url": "https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001/preguntas-frecuentes-bono-social.html",
+                    "excerpt": "Si el titular o algún miembro de la unidad de convivencia tiene una discapacidad reconocida igual o superior al 33%, es víctima de violencia de género, víctima de terrorismo, forma parte de una familia monoparental"
+                  }
                 },
                 {
                   "field": "applicantDisabilityPercent",
                   "op": "gte",
                   "value": 33,
-                  "label": "Discapacidad reconocida del 33 % o más"
+                  "label": "Discapacidad reconocida del 33 % o más",
+                  "source": {
+                    "url": "https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001/preguntas-frecuentes-bono-social.html",
+                    "excerpt": "Si el titular o algún miembro de la unidad de convivencia tiene una discapacidad reconocida igual o superior al 33%, es víctima de violencia de género, víctima de terrorismo, forma parte de una familia monoparental"
+                  }
                 },
                 {
                   "field": "numChildrenWithDisability",
                   "op": "gte",
                   "value": 1,
-                  "label": "Un hijo con discapacidad reconocida del 33 % o más"
+                  "label": "Un hijo con discapacidad reconocida del 33 % o más",
+                  "source": {
+                    "url": "https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001/preguntas-frecuentes-bono-social.html",
+                    "excerpt": "Si el titular o algún miembro de la unidad de convivencia tiene una discapacidad reconocida igual o superior al 33%, es víctima de violencia de género, víctima de terrorismo, forma parte de una familia monoparental"
+                  }
                 }
               ]
             },
@@ -837,7 +522,11 @@
                   }
                 ]
               },
-              "label": "Ingresos del hogar dentro del umbral ampliado (+1 IPREM)"
+              "label": "Ingresos del hogar dentro del umbral ampliado (+1 IPREM)",
+              "source": {
+                "url": "https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001/preguntas-frecuentes-bono-social.html",
+                "excerpt": "sumará 1 IPREM al umbra de renta"
+              }
             }
           ],
           "label": "Situación especial (monoparental o discapacidad) con ingresos dentro del umbral ampliado"
@@ -857,6 +546,11 @@
     "officialUrl": "https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001.html",
     "sources": [
       {
+        "url": "https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001/preguntas-frecuentes-bono-social.html",
+        "retrievedAt": "2026-10-15",
+        "excerpt": "Cuando el titular del punto de suministro o algún miembro de la unidad de convivencia sea perceptor del Ingreso Mínimo Vital, el COR no verificará el nivel de renta"
+      },
+      {
         "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-13593",
         "retrievedAt": "2026-10-14",
         "excerpt": "Real Decreto-ley 15/2018, de 5 de octubre, de medidas urgentes para la transición energética y la protección de los consumidores (crea el bono social térmico)."
@@ -875,69 +569,10 @@
     ],
     "id": "bono-social-termico",
     "status": "published",
-    "version": 1,
+    "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
-  },
-  {
-    "slug": "ayudas-comedor-escolar-primer-ciclo-infantil-castilla-y-leon",
-    "title": "Ayudas de comedor para niños de 0 a 3 años en escuelas infantiles gratuitas (Castilla y León)",
-    "summary": "Ayuda de hasta 786,60 € por curso para el comedor de niños de primer ciclo de infantil (0-3 años) en plazas gratuitas de centros privados o municipales de Castilla y León.",
-    "level": "regional",
-    "region": "CL",
-    "category": "education",
-    "kind": "call",
-    "agency": "Junta de Castilla y León (Consejería de Educación)",
-    "amount": {
-      "type": "range",
-      "max": 786.6,
-      "text": "Hasta 786,60 € por curso (100 %, 75 % o 50 % según el caso), sin superar lo pagado por el comedor."
-    },
-    "window": {
-      "opensAt": "2026-06-17",
-      "closesAt": "2026-06-30",
-      "text": "La convocatoria del curso 2025/2026 se abrió en junio; suele convocarse al final de cada curso."
-    },
-    "eligibility": {
-      "all": [
-        {
-          "field": "youngestChildAge",
-          "op": "lt",
-          "value": 3,
-          "label": "Tener un hijo de 0 a 3 años en primer ciclo de educación infantil",
-          "hard": true,
-          "source": {
-            "url": "https://bocyl.jcyl.es/boletines/2026/06/10/pdf/BOCYL-D-10062026-110-9.pdf",
-            "excerpt": "El alumnado del primer ciclo de educación infantil que utilice el comedor escolar, en los cursos establecidos como gratuitos"
-          }
-        }
-      ]
-    },
-    "otherRequirements": [
-      "El niño debe usar el comedor en una plaza gratuita de un centro privado o de titularidad municipal sostenido con fondos públicos.",
-      "No se aplica en escuelas gestionadas directamente por la Consejería de Educación (tienen su propio régimen de comedor).",
-      "Concurrencia competitiva: se conceden hasta agotar el presupuesto."
-    ],
-    "documents": [
-      "Justificantes de pago del comedor"
-    ],
-    "steps": [
-      "Presenta la solicitud en la sede electrónica de la Junta (tramitacastillayleon.jcyl.es) cuando se abra la convocatoria."
-    ],
-    "officialUrl": "https://www.tramitacastillayleon.jcyl.es",
-    "sources": [
-      {
-        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/910087",
-        "retrievedAt": "2026-10-14",
-        "excerpt": "La cuantía máxima de la ayuda es de 786,60 euros, resultado de multiplicar el precio medio diario [...] fijado en el curso escolar de referencia en 4,37 euros, por 180 días"
-      }
-    ],
-    "faq": [],
-    "id": "ayudas-comedor-escolar-primer-ciclo-infantil-castilla-y-leon",
-    "status": "published",
-    "version": 1,
-    "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
+    "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
   },
   {
     "slug": "complemento-ayuda-infancia",
@@ -960,7 +595,11 @@
           "op": "gte",
           "value": 1,
           "label": "Tener al menos un hijo menor de 18 años",
-          "hard": true
+          "hard": true,
+          "source": {
+            "url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/65850d68-8d06-4645-bde7-05374ee42ac7",
+            "excerpt": "Se establece un complemento de ayuda para la infancia para aquellas unidades de convivencia que incluyan menores de edad entre sus miembros."
+          }
         },
         {
           "field": "annualHouseholdIncome",
@@ -993,7 +632,8 @@
           },
           "label": "Ingresos del hogar inferiores al triple de la renta garantizada del IMV para tu hogar",
           "source": {
-            "excerpt": "Los ingresos computables del ejercicio anterior deben ser inferiores al 300% de la cuantía garantizada por el ingreso mínimo vital"
+            "url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/65850d68-8d06-4645-bde7-05374ee42ac7",
+            "excerpt": "los ingresos computables sean inferiores al 300% de la cuantía garantizada por el ingreso mínimo vital"
           }
         }
       ]
@@ -1028,102 +668,10 @@
     ],
     "id": "complemento-ayuda-infancia",
     "status": "published",
-    "version": 1,
+    "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
-  },
-  {
-    "slug": "conciliacion-reduccion-jornada-excedencia-castilla-y-leon",
-    "title": "Ayudas a la conciliación por reducción de jornada o excedencia (Castilla y León)",
-    "summary": "1.500 € (2.500 € en familias numerosas o monoparentales) para trabajadores por cuenta ajena que reducen su jornada o piden una excedencia para cuidar de hijos menores de 12 años o familiares.",
-    "level": "regional",
-    "region": "CL",
-    "category": "employment",
-    "kind": "call",
-    "agency": "Junta de Castilla y León (Servicios Sociales)",
-    "amount": {
-      "type": "range",
-      "min": 1500,
-      "max": 2500,
-      "text": "1.500 € por reducir la jornada al menos un 40 % durante 6 meses o por una excedencia de 3 meses; 1.000 € más en familias numerosas o monoparentales."
-    },
-    "window": {
-      "opensAt": "2026-03-11",
-      "closesAt": "2026-04-30"
-    },
-    "eligibility": {
-      "all": [
-        {
-          "field": "employmentStatus",
-          "op": "eq",
-          "value": "employed",
-          "label": "Trabajar por cuenta ajena (los autónomos no pueden pedirla)"
-        },
-        {
-          "field": "yearsRegisteredInRegion",
-          "op": "gte",
-          "value": 1,
-          "label": "Llevar al menos un año empadronado en Castilla y León"
-        },
-        {
-          "any": [
-            {
-              "field": "youngestChildAge",
-              "op": "lt",
-              "value": 12,
-              "label": "Tener un hijo menor de 12 años"
-            },
-            {
-              "field": "hasDependentPerson",
-              "op": "eq",
-              "value": true,
-              "label": "Cuidar de un familiar que no puede valerse por sí mismo"
-            }
-          ],
-          "label": "Cuidar de un hijo menor de 12 años o de un familiar dependiente",
-          "hard": true
-        },
-        {
-          "field": "annualHouseholdIncome",
-          "op": "lte",
-          "value": 36540,
-          "label": "Renta de la pareja de 36.540 € o menos (18.270 € si no tienes pareja)",
-          "source": {
-            "excerpt": "no supere los treinta y seis mil quinientos cuarenta euros (36.540€) [...] El límite de renta se reducirá al 50% (18.270 €) en el caso de que no exista cónyuge o pareja"
-          }
-        }
-      ]
-    },
-    "otherRequirements": [
-      "Haber empezado la reducción de jornada (mínimo 40 %, 6 meses) o la excedencia en el año anterior a la convocatoria (en la de 2026, durante 2025).",
-      "Si no tienes pareja, el límite de renta es 18.270 €."
-    ],
-    "documents": [
-      "DNI o TIE",
-      "Documento de la empresa que acredite la reducción de jornada o la excedencia"
-    ],
-    "steps": [
-      "Espera a la próxima convocatoria (la de 2026 estuvo abierta del 11 de marzo al 30 de abril).",
-      "Presenta la solicitud en la sede electrónica de la Junta con el código BDNS de la convocatoria."
-    ],
-    "officialUrl": "https://www.tramitacastillayleon.jcyl.es",
-    "sources": [
-      {
-        "url": "https://bocyl.jcyl.es/boletines/2026/03/10/pdf/BOCYL-D-10032026-47-9.pdf",
-        "retrievedAt": "2026-10-14",
-        "excerpt": "1.500 € por el ejercicio del derecho de reducción siempre que se realice sobre una jornada a tiempo completo durante un período de seis meses. 1.500 € por el ejercicio del derecho de excedencia durante un período de tres meses."
-      },
-      {
-        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/891480",
-        "retrievedAt": "2026-10-14"
-      }
-    ],
-    "faq": [],
-    "id": "conciliacion-reduccion-jornada-excedencia-castilla-y-leon",
-    "status": "published",
-    "version": 1,
-    "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
+    "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
   },
   {
     "slug": "deduccion-alquiler-jovenes-castilla-y-leon",
@@ -1155,13 +703,21 @@
           "field": "housing",
           "op": "eq",
           "value": "renting",
-          "label": "Vivir de alquiler en tu vivienda habitual (contrato a tu nombre)"
+          "label": "Vivir de alquiler en tu vivienda habitual (contrato a tu nombre)",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/arrendamiento-vivienda-habitual-jovenes.html",
+            "excerpt": "El 20 por 100 de las cantidades satisfechas en el período impositivo en concepto de alquiler de la vivienda habitual en Castilla y León"
+          }
         },
         {
           "field": "annualHouseholdIncome",
           "op": "lte",
           "value": 31500,
-          "label": "Renta de hasta 18.900 € en declaración individual (31.500 € en conjunta)"
+          "label": "Renta de hasta 18.900 € en declaración individual (31.500 € en conjunta)",
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/arrendamiento-vivienda-habitual-jovenes.html",
+            "excerpt": "18.900 euros en tributación individual. [...] 31.500 euros en tributación conjunta."
+          }
         }
       ]
     },
@@ -1188,9 +744,10 @@
     "faq": [],
     "id": "deduccion-alquiler-jovenes-castilla-y-leon",
     "status": "published",
-    "version": 1,
+    "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
+    "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
   },
   {
     "slug": "deduccion-ascendiente-discapacidad",
@@ -1244,7 +801,8 @@
     "status": "published",
     "version": 1,
     "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
+    "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
   },
   {
     "slug": "deduccion-ascendiente-dos-hijos",
@@ -1267,7 +825,11 @@
           "op": "eq",
           "value": true,
           "label": "Ser familia monoparental (separado legalmente o sin vínculo matrimonial)",
-          "hard": true
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deducciones-familia-numerosa-personas-discapacidad-cargo/cuantia-maxima-deducciones.html",
+            "excerpt": "por ser un ascendiente separado legalmente, o sin vínculo matrimonial, con dos hijos sin derecho a percibir anualidades por alimentos"
+          }
         },
         {
           "field": "numChildren",
@@ -1305,9 +867,10 @@
     "faq": [],
     "id": "deduccion-ascendiente-dos-hijos",
     "status": "published",
-    "version": 1,
+    "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
+    "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
   },
   {
     "slug": "deduccion-cuidado-hijos-menores-castilla-y-leon",
@@ -1330,7 +893,11 @@
           "op": "lt",
           "value": 4,
           "label": "Tener un hijo menor de 4 años",
-          "hard": true
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/cuidado-hijos-menores.html",
+            "excerpt": "los hijos a los que sea de aplicación el mínimo por descendientes tuvieran menos de 4 años de edad"
+          }
         },
         {
           "field": "employmentStatus",
@@ -1352,7 +919,7 @@
           "label": "Renta de hasta 31.500 € en declaración conjunta (18.900 € en individual)",
           "source": {
             "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/cuidado-hijos-menores.html",
-            "excerpt": "18.900 euros en tributación individual. 31.500 euros en tributación conjunta."
+            "excerpt": "18.900 euros en tributación individual. [...] 31.500 euros en tributación conjunta."
           }
         }
       ]
@@ -1380,9 +947,10 @@
     "faq": [],
     "id": "deduccion-cuidado-hijos-menores-castilla-y-leon",
     "status": "published",
-    "version": 1,
+    "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
+    "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
   },
   {
     "slug": "deduccion-descendiente-discapacidad",
@@ -1408,7 +976,7 @@
           "hard": true,
           "source": {
             "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deducciones-familia-numerosa-personas-discapacidad-cargo/cuantia-maxima-deducciones.html",
-            "excerpt": "Deducción por descendientes con discapacidad a cargo: por cada descendiente con discapacidad con derecho a la aplicación del mínimo por descendientes"
+            "excerpt": "Hasta 1.200 euros anuales por cada descendiente con discapacidad con derecho a la aplicación del mínimo por descendientes"
           }
         }
       ]
@@ -1435,9 +1003,10 @@
     "faq": [],
     "id": "deduccion-descendiente-discapacidad",
     "status": "published",
-    "version": 1,
+    "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
+    "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
   },
   {
     "slug": "deduccion-contribuyentes-discapacidad-castilla-y-leon",
@@ -1462,7 +1031,11 @@
               "field": "applicantDisabilityPercent",
               "op": "gte",
               "value": 65,
-              "label": "Discapacidad del 65 % o más"
+              "label": "Discapacidad del 65 % o más",
+              "source": {
+                "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/contribuyentes-discapacidad.html",
+                "excerpt": "300 euros por cada contribuyente menor de 65 años afectado por un grado de discapacidad igual o superior al 65 por 100"
+              }
             },
             {
               "all": [
@@ -1470,13 +1043,21 @@
                   "field": "applicantAge",
                   "op": "gte",
                   "value": 65,
-                  "label": "Tener 65 años o más"
+                  "label": "Tener 65 años o más",
+                  "source": {
+                    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/contribuyentes-discapacidad.html",
+                    "excerpt": "300 euros por cada contribuyente, de edad igual o superior a 65 años, afectado por un grado de discapacidad igual o superior al 33 por 100"
+                  }
                 },
                 {
                   "field": "applicantDisabilityPercent",
                   "op": "gte",
                   "value": 33,
-                  "label": "Discapacidad del 33 % o más"
+                  "label": "Discapacidad del 33 % o más",
+                  "source": {
+                    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/contribuyentes-discapacidad.html",
+                    "excerpt": "300 euros por cada contribuyente, de edad igual o superior a 65 años, afectado por un grado de discapacidad igual o superior al 33 por 100"
+                  }
                 }
               ]
             }
@@ -1517,9 +1098,10 @@
     "faq": [],
     "id": "deduccion-contribuyentes-discapacidad-castilla-y-leon",
     "status": "published",
-    "version": 1,
+    "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
+    "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
   },
   {
     "slug": "deduccion-familia-numerosa-castilla-y-leon",
@@ -1574,7 +1156,8 @@
     "status": "published",
     "version": 1,
     "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
+    "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
   },
   {
     "slug": "deduccion-familia-numerosa",
@@ -1633,7 +1216,8 @@
     "status": "published",
     "version": 1,
     "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
+    "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
   },
   {
     "slug": "deduccion-maternidad",
@@ -1655,7 +1239,11 @@
           "op": "lt",
           "value": 3,
           "label": "Tener un hijo menor de 3 años",
-          "hard": true
+          "hard": true,
+          "source": {
+            "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deduccion-maternidad-incremento-adicional-gastos-custodia/deduccion-maternidad/beneficiarios-hijos-que-derecho-aplicacion-deduccion.html",
+            "excerpt": "Las mujeres con hijos menores de tres años con derecho a la aplicación del mínimo por descendientes"
+          }
         },
         {
           "field": "employmentStatus",
@@ -1702,9 +1290,10 @@
     ],
     "id": "deduccion-maternidad",
     "status": "published",
-    "version": 1,
+    "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
+    "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
   },
   {
     "slug": "deduccion-nacimiento-adopcion-castilla-y-leon",
@@ -1765,7 +1354,8 @@
     "status": "published",
     "version": 1,
     "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
+    "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
   },
   {
     "slug": "reconocimiento-dependencia-castilla-y-leon",
@@ -1787,7 +1377,11 @@
           "op": "eq",
           "value": true,
           "label": "Convivir con o cuidar de una persona que necesita ayuda para las actividades básicas",
-          "hard": true
+          "hard": true,
+          "source": {
+            "url": "https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla100Detalle/1251181050732/Tramite/1259395711876/Tramite",
+            "excerpt": "Cualquier persona física que se encuentre en una situación de dependencia."
+          }
         }
       ]
     },
@@ -1816,9 +1410,10 @@
     "faq": [],
     "id": "reconocimiento-dependencia-castilla-y-leon",
     "status": "published",
-    "version": 1,
+    "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
+    "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
   },
   {
     "slug": "ingreso-minimo-vital",
@@ -1842,7 +1437,11 @@
               "field": "applicantAge",
               "op": "gte",
               "value": 23,
-              "label": "Tener 23 años o más"
+              "label": "Tener 23 años o más",
+              "source": {
+                "url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/65850d68-8d06-4645-bde7-05374ee42ac7",
+                "excerpt": "deberán tener capacidad jurídica y una edad mínima de 23 años"
+              }
             },
             {
               "all": [
@@ -1850,13 +1449,21 @@
                   "field": "applicantAge",
                   "op": "gte",
                   "value": 18,
-                  "label": "Ser mayor de edad"
+                  "label": "Ser mayor de edad",
+                  "source": {
+                    "url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/65850d68-8d06-4645-bde7-05374ee42ac7",
+                    "excerpt": "las personas mayores de edad o menores emancipados, cuando tengan hijos"
+                  }
                 },
                 {
                   "field": "numMinors",
                   "op": "gte",
                   "value": 1,
-                  "label": "Tener hijos menores a cargo"
+                  "label": "Tener hijos menores a cargo",
+                  "source": {
+                    "url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/65850d68-8d06-4645-bde7-05374ee42ac7",
+                    "excerpt": "cuando tengan hijos o menores en régimen de guarda con fines de adopción o acogimiento familiar permanente"
+                  }
                 }
               ]
             }
@@ -1907,7 +1514,11 @@
                   -120
                 ]
               },
-              "label": "Ingresos del hogar por debajo de la renta garantizada del IMV para tu hogar"
+              "label": "Ingresos del hogar inferiores a la renta garantizada del IMV",
+              "source": {
+                "url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/65850d68-8d06-4645-bde7-05374ee42ac7",
+                "excerpt": "será la diferencia entre la renta garantizada y el conjunto de rentas e ingresos de tales personas"
+              }
             },
             {
               "all": [
@@ -1915,7 +1526,11 @@
                   "field": "isSingleParent",
                   "op": "eq",
                   "value": true,
-                  "label": "Familia monoparental"
+                  "label": "Familia monoparental",
+                  "source": {
+                    "url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/65850d68-8d06-4645-bde7-05374ee42ac7",
+                    "excerpt": "se incrementa con un complemento del 22 por 100, cuando se trate de unidad de convivencia monoparental"
+                  }
                 },
                 {
                   "field": "annualHouseholdIncome",
@@ -1955,7 +1570,11 @@
                       -120
                     ]
                   },
-                  "label": "Ingresos por debajo de la renta garantizada con complemento monoparental"
+                  "label": "Ingresos por debajo de la renta garantizada con complemento monoparental",
+                  "source": {
+                    "url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/65850d68-8d06-4645-bde7-05374ee42ac7",
+                    "excerpt": "se incrementa con un complemento del 22 por 100, cuando se trate de unidad de convivencia monoparental"
+                  }
                 }
               ]
             }
@@ -2002,9 +1621,10 @@
     ],
     "id": "ingreso-minimo-vital",
     "status": "published",
-    "version": 1,
+    "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
+    "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
   },
   {
     "slug": "ayudas-primera-matricula-universitaria-castilla-y-leon",
@@ -2031,7 +1651,11 @@
               "field": "employmentStatus",
               "op": "eq",
               "value": "student",
-              "label": "Estudiar"
+              "label": "Estudiar",
+              "source": {
+                "url": "https://bocyl.jcyl.es/boletines/2026/09/21/pdf/BOCYL-D-21092026-183-17.pdf",
+                "excerpt": "ayudas al alumnado que realice su primera matrícula de primer curso de grado universitario, en una universidad pública de la Comunidad de Castilla y León"
+              }
             },
             {
               "all": [
@@ -2039,13 +1663,21 @@
                   "field": "oldestChildAge",
                   "op": "gte",
                   "value": 17,
-                  "label": "Tener un hijo de 17 años o más"
+                  "label": "Tener un hijo en edad de empezar la universidad (17 años o más, orientativo)",
+                  "source": {
+                    "url": "https://bocyl.jcyl.es/boletines/2026/09/21/pdf/BOCYL-D-21092026-183-17.pdf",
+                    "excerpt": "ayudas al alumnado que realice su primera matrícula de primer curso de grado universitario, en una universidad pública de la Comunidad de Castilla y León"
+                  }
                 },
                 {
                   "field": "oldestChildAge",
                   "op": "lte",
                   "value": 21,
-                  "label": "Tener un hijo de 21 años o menos"
+                  "label": "Tener un hijo en edad de empezar la universidad (21 años o menos, orientativo)",
+                  "source": {
+                    "url": "https://bocyl.jcyl.es/boletines/2026/09/21/pdf/BOCYL-D-21092026-183-17.pdf",
+                    "excerpt": "ayudas al alumnado que realice su primera matrícula de primer curso de grado universitario, en una universidad pública de la Comunidad de Castilla y León"
+                  }
                 }
               ]
             }
@@ -2083,9 +1715,10 @@
     "faq": [],
     "id": "ayudas-primera-matricula-universitaria-castilla-y-leon",
     "status": "published",
-    "version": 1,
+    "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
+    "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
   },
   {
     "slug": "ayudas-permiso-conducir-jovenes-castilla-y-leon",
@@ -2112,7 +1745,11 @@
           "field": "applicantAge",
           "op": "gte",
           "value": 18,
-          "label": "Tener 18 años o más"
+          "label": "Tener 18 años o más",
+          "source": {
+            "url": "https://bocyl.jcyl.es/boletines/2026/09/30/pdf/BOCYL-D-30092026-190-17.pdf",
+            "excerpt": "Tener una edad mínima de 18 años"
+          }
         },
         {
           "field": "applicantAge",
@@ -2168,9 +1805,10 @@
     ],
     "id": "ayudas-permiso-conducir-jovenes-castilla-y-leon",
     "status": "published",
-    "version": 1,
+    "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
+    "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
   },
   {
     "slug": "pension-no-contributiva-invalidez",
@@ -2192,14 +1830,22 @@
           "field": "applicantAge",
           "op": "gte",
           "value": 18,
-          "label": "Tener 18 años o más"
+          "label": "Tener 18 años o más",
+          "source": {
+            "url": "https://imserso.es/documents/20123/1595507/pncresumen2026.pdf/c4b41c80-63fe-942d-7231-f3ee20e28694",
+            "excerpt": "Ser mayor de 18 años y menor de 65 años en la fecha de la solicitud"
+          }
         },
         {
           "field": "applicantAge",
           "op": "lt",
           "value": 65,
           "label": "Tener menos de 65 años",
-          "hard": true
+          "hard": true,
+          "source": {
+            "url": "https://imserso.es/documents/20123/1595507/pncresumen2026.pdf/c4b41c80-63fe-942d-7231-f3ee20e28694",
+            "excerpt": "Ser mayor de 18 años y menor de 65 años en la fecha de la solicitud"
+          }
         },
         {
           "field": "applicantDisabilityPercent",
@@ -2246,7 +1892,11 @@
             ]
           },
           "label": "Ingresos del hogar por debajo del límite de la pensión no contributiva para tu hogar",
-          "hard": true
+          "hard": true,
+          "source": {
+            "url": "https://imserso.es/documents/20123/1595507/pncresumen2026.pdf/c4b41c80-63fe-942d-7231-f3ee20e28694",
+            "excerpt": "Carecer de rentas o ingresos suficientes"
+          }
         }
       ]
     },
@@ -2274,9 +1924,10 @@
     "faq": [],
     "id": "pension-no-contributiva-invalidez",
     "status": "published",
-    "version": 1,
+    "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
+    "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
   },
   {
     "slug": "pension-no-contributiva-jubilacion",
@@ -2309,7 +1960,11 @@
           "field": "yearsLegalResidenceInSpain",
           "op": "gte",
           "value": 5,
-          "label": "Llevar muchos años residiendo legalmente en España (10 años desde los 16)"
+          "label": "Llevar muchos años residiendo legalmente en España (10 años desde los 16)",
+          "source": {
+            "url": "https://imserso.es/documents/20123/1595507/pncresumen2026.pdf/c4b41c80-63fe-942d-7231-f3ee20e28694",
+            "excerpt": "Residir legalmente en territorio español y haberlo hecho durante 10 años, entre la edad de 16 años y la de devengo de la pensión"
+          }
         },
         {
           "field": "annualHouseholdIncome",
@@ -2367,9 +2022,10 @@
     "faq": [],
     "id": "pension-no-contributiva-jubilacion",
     "status": "published",
-    "version": 1,
+    "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
+    "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
   },
   {
     "slug": "prestacion-nacimiento-cuidado-menor",
@@ -2390,7 +2046,11 @@
           "op": "lt",
           "value": 1,
           "label": "Haber tenido, adoptado o acogido un hijo en el último año",
-          "hard": true
+          "hard": true,
+          "source": {
+            "url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/6b96a085-4dc0-47af-b2cb-97e00716791e",
+            "excerpt": "disfruten de los periodos de suspensión del contrato de trabajo/permiso por nacimiento y cuidado de menor"
+          }
         },
         {
           "field": "employmentStatus",
@@ -2401,7 +2061,8 @@
           ],
           "label": "Trabajar y estar de alta en la Seguridad Social (por cuenta ajena o propia)",
           "source": {
-            "excerpt": "Menores de 21 años: no se exige período mínimo de cotización. De 21 a 26: 90 días en los 7 años anteriores o 180 en toda la vida laboral. Mayores de 26: 180 días en los 7 años anteriores o 360 en toda la vida laboral."
+            "url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/6b96a085-4dc0-47af-b2cb-97e00716791e",
+            "excerpt": "Serán beneficiarias las personas trabajadoras por cuenta ajena o propia, cualquiera que sea su sexo, siempre que, se encuentren en situación de alta o asimilada al alta"
           }
         }
       ]
@@ -2437,9 +2098,10 @@
     ],
     "id": "prestacion-nacimiento-cuidado-menor",
     "status": "published",
-    "version": 1,
+    "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
+    "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
   },
   {
     "slug": "renta-garantizada-ciudadania-castilla-y-leon",
@@ -2468,37 +2130,24 @@
           }
         },
         {
-          "any": [
-            {
-              "field": "applicantAge",
-              "op": "gte",
-              "value": 25,
-              "label": "Tener 25 años o más"
-            },
-            {
-              "all": [
-                {
-                  "field": "applicantAge",
-                  "op": "gte",
-                  "value": 18,
-                  "label": "Ser mayor de edad"
-                },
-                {
-                  "field": "numMinors",
-                  "op": "gte",
-                  "value": 1,
-                  "label": "Tener menores a cargo"
-                }
-              ]
-            }
-          ],
-          "label": "Tener 25 años o más (o menos si tienes menores a cargo)"
+          "field": "applicantAge",
+          "op": "gte",
+          "value": 25,
+          "label": "Tener 25 años o más",
+          "source": {
+            "url": "https://serviciossociales.jcyl.es/web/jcyl/ServiciosSociales/es/Plantilla100Detalle/1246991411473/_/1284657728093/Informe",
+            "excerpt": "Edad comprendida entre 25 y la que permita acceso a prestaciones contributivas o no contributivas, salvo excepciones."
+          }
         },
         {
           "field": "applicantAge",
           "op": "lt",
           "value": 65,
-          "label": "Tener menos de 65 años"
+          "label": "Tener menos de 65 años",
+          "source": {
+            "url": "https://serviciossociales.jcyl.es/web/jcyl/ServiciosSociales/es/Plantilla100Detalle/1246991411473/_/1284657728093/Informe",
+            "excerpt": "Edad comprendida entre 25 y la que permita acceso a prestaciones contributivas o no contributivas, salvo excepciones."
+          }
         },
         {
           "field": "annualHouseholdIncome",
@@ -2512,11 +2161,16 @@
             ]
           },
           "label": "Ingresos del hogar inferiores a unos 780 € al mes (cuantía máxima de la prestación)",
-          "hard": true
+          "hard": true,
+          "source": {
+            "url": "https://serviciossociales.jcyl.es/web/jcyl/ServiciosSociales/es/Plantilla100Detalle/1246991411473/_/1284657728093/Informe",
+            "excerpt": "Prestación económica, cuya cuantía estará comprendida entre una cantidad básica mensual del 80% del IPREM y una cantidad máxima del 130%."
+          }
         }
       ]
     },
     "otherRequirements": [
+      "La edad mínima de 25 años tiene excepciones: consúltalas en la ficha oficial.",
       "Es subsidiaria: antes hay que pedir el resto de prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital.",
       "Las personas en edad de trabajar deben estar inscritas como demandantes de empleo.",
       "Firmar un Proyecto Individualizado de Inserción con los servicios sociales.",
@@ -2547,9 +2201,10 @@
     ],
     "id": "renta-garantizada-ciudadania-castilla-y-leon",
     "status": "published",
-    "version": 1,
+    "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
+    "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
   },
   {
     "slug": "subsidio-por-desempleo",
@@ -2571,7 +2226,11 @@
           "field": "employmentStatus",
           "op": "eq",
           "value": "unemployed",
-          "label": "Estar en paro e inscrito como demandante de empleo"
+          "label": "Estar en paro (desempleado)",
+          "source": {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724",
+            "excerpt": "Serán beneficiarios del subsidio los desempleados que, cumpliendo los requisitos establecidos en el apartado 2, se encuentren en alguna de las siguientes situaciones"
+          }
         }
       ]
     },
@@ -2602,8 +2261,9 @@
     "faq": [],
     "id": "subsidio-por-desempleo",
     "status": "published",
-    "version": 1,
+    "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
-    "reviewedAt": "2026-10-14"
+    "reviewedAt": "2026-10-14",
+    "verifiedAt": "2026-10-15"
   }
 ]

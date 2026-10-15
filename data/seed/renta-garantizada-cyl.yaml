@@ -1,5 +1,5 @@
 slug: renta-garantizada-ciudadania-castilla-y-leon
-version: 1
+version: 2
 status: published
 reviewedBy: "claude-code (requiere revisión humana)"
 reviewedAt: "2026-10-14"
@@ -27,32 +27,37 @@ eligibility:
         excerpt: >-
           Tener domicilio, estar empadronado y residir legalmente en algún municipio de Castilla
           y León con un año de antelación, salvo determinadas excepciones.
-    - any:
-        - field: applicantAge
-          op: gte
-          value: 25
-          label: Tener 25 años o más
-        - all:
-            - field: applicantAge
-              op: gte
-              value: 18
-              label: Ser mayor de edad
-            - field: numMinors
-              op: gte
-              value: 1
-              label: Tener menores a cargo
-      label: Tener 25 años o más (o menos si tienes menores a cargo)
+    - field: applicantAge
+      op: gte
+      value: 25
+      label: Tener 25 años o más
+      source:
+        url: https://serviciossociales.jcyl.es/web/jcyl/ServiciosSociales/es/Plantilla100Detalle/1246991411473/_/1284657728093/Informe
+        excerpt: >-
+          Edad comprendida entre 25 y la que permita acceso a prestaciones contributivas o no
+          contributivas, salvo excepciones.
     - field: applicantAge
       op: lt
       value: 65
       label: Tener menos de 65 años
+      source:
+        url: https://serviciossociales.jcyl.es/web/jcyl/ServiciosSociales/es/Plantilla100Detalle/1246991411473/_/1284657728093/Informe
+        excerpt: >-
+          Edad comprendida entre 25 y la que permita acceso a prestaciones contributivas o no
+          contributivas, salvo excepciones.
     - field: annualHouseholdIncome
       op: lt
       value:
         mul: [15.6, { ref: ipremMonthly }]
       label: Ingresos del hogar inferiores a unos 780 € al mes (cuantía máxima de la prestación)
+      source:
+        url: https://serviciossociales.jcyl.es/web/jcyl/ServiciosSociales/es/Plantilla100Detalle/1246991411473/_/1284657728093/Informe
+        excerpt: >-
+          Prestación económica, cuya cuantía estará comprendida entre una cantidad básica
+          mensual del 80% del IPREM y una cantidad máxima del 130%.
       hard: true
 otherRequirements:
+  - "La edad mínima de 25 años tiene excepciones: consúltalas en la ficha oficial."
   - "Es subsidiaria: antes hay que pedir el resto de prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital."
   - "Las personas en edad de trabajar deben estar inscritas como demandantes de empleo."
   - "Firmar un Proyecto Individualizado de Inserción con los servicios sociales."

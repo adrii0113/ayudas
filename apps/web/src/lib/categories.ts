@@ -11,9 +11,18 @@ export const CATEGORY_SLUGS: Record<BenefitCategory, string> = {
   employment: "empleo",
 };
 
-export const REGION_SLUGS: Record<string, string> = {
-  CL: "castilla-y-leon",
-};
+const slugify = (s: string) =>
+  s
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+
+/** SEO slug per autonomous community, e.g. CL → "castilla-y-leon". */
+export const REGION_SLUGS: Record<string, string> = Object.fromEntries(
+  REGIONS.map((r) => [r.code, slugify(r.name)]),
+);
 
 export function categoryFromSlug(slug: string): BenefitCategory | undefined {
   return (Object.entries(CATEGORY_SLUGS) as [BenefitCategory, string][]).find(

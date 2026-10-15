@@ -1,4 +1,4 @@
-import { todayInSpain } from "@tetoca/core";
+import { todayInSpain, type Benefit } from "@tetoca/core";
 import {
   getRevisionForVerification,
   recordVerificationRun,
@@ -43,6 +43,35 @@ export type VerificationReport = {
   decision: Decision;
 };
 
+/** Every official URL a benefit relies on: general sources plus each rule's page. */
+export function sourceUrlsFor(content: Pick<Benefit, "sources" | "eligibility">): string[] {
+  return [
+    ...new Set([
+      ...content.sources.map((s) => s.url),
+      ...leaves(content.eligibility).flatMap(({ rule }) =>
+        rule.source?.url ? [rule.source.url] : [],
+      ),
+    ]),
+  ];
+}
+
+/** Downloads official texts; unreachable ones are skipped (the links agent reports them). */
+export async function fetchSources(
+  urls: string[],
+  fetchFn?: typeof fetch,
+): Promise<(SourceText & { title: string; mimeType: string })[]> {
+  const out: (SourceText & { title: string; mimeType: string })[] = [];
+  for (const url of urls) {
+    try {
+      const fetched = await fetchSourceText(url, fetchFn);
+      if (fetched?.text.trim()) out.push(fetched);
+    } catch {
+      // Reported by the links agent.
+    }
+  }
+  return out;
+}
+
 /**
  * Official texts for a revision: its stored source document, or else the
  * pages/PDFs it cites, downloaded and archived in source_documents so every
@@ -56,32 +85,17 @@ async function collectSources(
   if (data.document && !data.document.needsManualReview) {
     return [{ url: data.document.url, text: data.document.text, documentId: data.document.id }];
   }
-  // General sources plus the page each rule cites (they are often different).
-  const urls = [
-    ...new Set([
-      ...data.row.content.sources.map((s) => s.url),
-      ...leaves(data.row.content.eligibility).flatMap(({ rule }) =>
-        rule.source?.url ? [rule.source.url] : [],
-      ),
-    ]),
-  ];
   const out: SourceText[] = [];
-  for (const url of urls) {
-    try {
-      const fetched = await fetchSourceText(url, deps.fetch);
-      if (!fetched?.text.trim()) continue;
-      const { document } = await saveSourceDocument(db, {
-        source: "manual",
-        url,
-        title: fetched.title,
-        text: fetched.text,
-        contentHash: sha256(fetched.text),
-        mimeType: fetched.mimeType,
-      });
-      out.push({ url, text: fetched.text, documentId: document.id });
-    } catch {
-      // Unreachable sources are reported by the links agent.
-    }
+  for (const fetched of await fetchSources(sourceUrlsFor(data.row.content), deps.fetch)) {
+    const { document } = await saveSourceDocument(db, {
+      source: "manual",
+      url: fetched.url,
+      title: fetched.title,
+      text: fetched.text,
+      contentHash: sha256(fetched.text),
+      mimeType: fetched.mimeType,
+    });
+    out.push({ url: fetched.url, text: fetched.text, documentId: document.id });
   }
   return out;
 }

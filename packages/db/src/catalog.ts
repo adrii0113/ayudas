@@ -1,7 +1,9 @@
-import { benefitSchema, lintRules, type Benefit } from "@tetoca/core";
+import { benefitContentSchema, benefitSchema, lintRules, type Benefit } from "@tetoca/core";
+import { createHash } from "node:crypto";
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { parse } from "yaml";
+import { stableStringify } from "./stable";
 
 export type CatalogIssue = { file: string; message: string };
 
@@ -72,4 +74,49 @@ export function loadCatalog(dir = defaultSeedDir()): {
     benefits.push(benefit);
   }
   return { benefits, issues };
+}
+
+/** Result of the automatic publication gate for one catalog entry. */
+export type CatalogVerification = {
+  version: number;
+  /** Hash of the verified content: any later edit invalidates the verification. */
+  contentHash: string;
+  passed: boolean;
+  checkedAt: string;
+  agents: Record<string, string>;
+  findings: {
+    agent: string;
+    severity: string;
+    message: string;
+    field?: string;
+    sourceUrl?: string;
+  }[];
+  models: string[];
+};
+
+export type VerificationReport = Record<string, CatalogVerification>;
+
+export function verificationReportPath(dir = defaultSeedDir()): string {
+  return join(dir, "..", "verification", "catalog.json");
+}
+
+export function loadVerificationReport(path = verificationReportPath()): VerificationReport {
+  return existsSync(path) ? (JSON.parse(readFileSync(path, "utf8")) as VerificationReport) : {};
+}
+
+/** Stable hash of a benefit's content and version. */
+export function catalogContentHash(benefit: Benefit): string {
+  const content = benefitContentSchema.parse(benefit);
+  return createHash("sha256")
+    .update(`${benefit.version}:${stableStringify(content)}`)
+    .digest("hex");
+}
+
+/** The verification of `benefit` if it is still valid for its current content. */
+export function validVerification(
+  benefit: Benefit,
+  report: VerificationReport,
+): CatalogVerification | undefined {
+  const v = report[benefit.slug];
+  return v && v.passed && v.contentHash === catalogContentHash(benefit) ? v : undefined;
 }

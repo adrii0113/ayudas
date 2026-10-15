@@ -1,5 +1,5 @@
 slug: complemento-ayuda-infancia
-version: 1
+version: 2
 status: published
 reviewedBy: "claude-code (requiere revisión humana)"
 reviewedAt: "2026-10-14"
@@ -22,6 +22,11 @@ eligibility:
       op: gte
       value: 1
       label: Tener al menos un hijo menor de 18 años
+      source:
+        url: https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/65850d68-8d06-4645-bde7-05374ee42ac7
+        excerpt: >-
+          Se establece un complemento de ayuda para la infancia para aquellas unidades de
+          convivencia que incluyan menores de edad entre sus miembros.
       hard: true
     - field: annualHouseholdIncome
       op: lt
@@ -32,9 +37,10 @@ eligibility:
           - min: [2.2, { add: [0.7, { mul: [0.3, { ref: householdSize }] }] }]
       label: Ingresos del hogar inferiores al triple de la renta garantizada del IMV para tu hogar
       source:
+        url: https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/65850d68-8d06-4645-bde7-05374ee42ac7
         excerpt: >-
-          Los ingresos computables del ejercicio anterior deben ser inferiores al 300% de la cuantía
-          garantizada por el ingreso mínimo vital
+          los ingresos computables sean inferiores al 300% de la cuantía garantizada por el
+          ingreso mínimo vital
 otherRequirements:
   - "Patrimonio neto inferior al 150 % del límite del IMV."
   - "Es incompatible con la asignación por hijo a cargo sin discapacidad (o con discapacidad inferior al 33 %)."

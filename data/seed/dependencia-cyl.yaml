@@ -1,5 +1,5 @@
 slug: reconocimiento-dependencia-castilla-y-leon
-version: 1
+version: 2
 status: published
 reviewedBy: "claude-code (requiere revisión humana)"
 reviewedAt: "2026-10-14"
@@ -23,6 +23,10 @@ eligibility:
       op: eq
       value: true
       label: Convivir con o cuidar de una persona que necesita ayuda para las actividades básicas
+      source:
+        url: https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla100Detalle/1251181050732/Tramite/1259395711876/Tramite
+        excerpt: >-
+          Cualquier persona física que se encuentre en una situación de dependencia.
       hard: true
 otherRequirements:
   - "La persona dependiente debe haber residido en España 5 años, 2 de ellos inmediatamente antes de la solicitud."

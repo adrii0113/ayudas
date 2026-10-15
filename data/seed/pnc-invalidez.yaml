@@ -1,5 +1,5 @@
 slug: pension-no-contributiva-invalidez
-version: 1
+version: 2
 status: published
 reviewedBy: "claude-code (requiere revisión humana)"
 reviewedAt: "2026-10-14"
@@ -22,10 +22,18 @@ eligibility:
       op: gte
       value: 18
       label: Tener 18 años o más
+      source:
+        url: https://imserso.es/documents/20123/1595507/pncresumen2026.pdf/c4b41c80-63fe-942d-7231-f3ee20e28694
+        excerpt: >-
+          Ser mayor de 18 años y menor de 65 años en la fecha de la solicitud
     - field: applicantAge
       op: lt
       value: 65
       label: Tener menos de 65 años
+      source:
+        url: https://imserso.es/documents/20123/1595507/pncresumen2026.pdf/c4b41c80-63fe-942d-7231-f3ee20e28694
+        excerpt: >-
+          Ser mayor de 18 años y menor de 65 años en la fecha de la solicitud
       hard: true
     - field: applicantDisabilityPercent
       op: gte
@@ -47,6 +55,10 @@ eligibility:
       value:
         mul: [{ ref: pncAnnual }, { add: [0.3, { mul: [0.7, { ref: householdSize }] }] }]
       label: Ingresos del hogar por debajo del límite de la pensión no contributiva para tu hogar
+      source:
+        url: https://imserso.es/documents/20123/1595507/pncresumen2026.pdf/c4b41c80-63fe-942d-7231-f3ee20e28694
+        excerpt: >-
+          Carecer de rentas o ingresos suficientes
       hard: true
 otherRequirements:
   - "De los 5 años de residencia, 2 deben ser inmediatamente anteriores a la solicitud."

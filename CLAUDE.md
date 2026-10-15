@@ -278,7 +278,11 @@ Prevalecen sobre lo anterior donde haya conflicto. Diseño completo en `docs/sis
   revisado por personas se puede mostrar, siempre etiquetado y con enlace oficial.
 - **Agentes de verificación** comprueban la veracidad contra las fuentes oficiales y dejan
   registro auditable. No deciden la elegibilidad de los usuarios (el principio 1 sigue igual).
-- **Pendiente de decisión**: si las reglas `agent_verified` (sin revisión humana) pueden usarse
-  en el cuestionario. Hasta entonces, el cuestionario sigue usando solo fichas `published` del flujo
-  de revisión del panel (principio 2); las 30 fichas actuales constan como `extracted` hasta que el
-  propietario las revise.
+- **Sin revisión humana obligatoria (decisión del 15/10/2026)**: el propietario no revisará fichas.
+  Sustituye al principio 2: una ficha entra en el cuestionario si **pasa la verificación automática**
+  contra la fuente oficial (como mínimo: cada requisito con cita literal encontrada en el documento
+  oficial, enlaces vivos y plazo no vencido), y la web lo indica con una etiqueta visible
+  («comprobada automáticamente contra la fuente oficial el …»). Lo que no pase no se evalúa.
+- **Prioridad del MVP nacional**: cubrir todas las comunidades con las ayudas más solicitadas
+  (renta mínima autonómica, deducciones autonómicas del IRPF más usadas, alquiler) más la lista de
+  convocatorias abiertas de la BDNS de cada comunidad, etiquetada «sin verificar».

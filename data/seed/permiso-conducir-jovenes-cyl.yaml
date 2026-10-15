@@ -1,5 +1,5 @@
 slug: ayudas-permiso-conducir-jovenes-castilla-y-leon
-version: 1
+version: 2
 status: published
 reviewedBy: "claude-code (requiere revisión humana)"
 reviewedAt: "2026-10-14"
@@ -28,6 +28,10 @@ eligibility:
       op: gte
       value: 18
       label: Tener 18 años o más
+      source:
+        url: https://bocyl.jcyl.es/boletines/2026/09/30/pdf/BOCYL-D-30092026-190-17.pdf
+        excerpt: >-
+          Tener una edad mínima de 18 años
     - field: applicantAge
       op: lte
       value: 30

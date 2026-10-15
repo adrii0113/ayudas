@@ -9,7 +9,8 @@
   "scripts": {
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "verify": "tsx src/scripts/verify.ts"
+    "verify": "tsx src/scripts/verify.ts",
+    "verify:catalog": "tsx src/scripts/verify-catalog.ts"
   },
   "dependencies": {
     "@tetoca/core": "workspace:*",

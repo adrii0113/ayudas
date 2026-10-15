@@ -71,11 +71,29 @@
     },
     "questions": {
       "region": {
-        "title": "¿Dónde vives?",
+        "title": "¿En qué comunidad autónoma vives?",
         "help": "Las ayudas de tu comunidad autónoma dependen de dónde estás empadronado.",
         "options": {
+          "AN": "Andalucía",
+          "AR": "Aragón",
+          "AS": "Asturias",
+          "IB": "Illes Balears",
+          "CN": "Canarias",
+          "CB": "Cantabria",
           "CL": "Castilla y León",
-          "OTHER": "En otra comunidad autónoma"
+          "CM": "Castilla-La Mancha",
+          "CT": "Cataluña",
+          "VC": "Comunitat Valenciana",
+          "EX": "Extremadura",
+          "GA": "Galicia",
+          "MD": "Comunidad de Madrid",
+          "MC": "Región de Murcia",
+          "NC": "Navarra",
+          "PV": "País Vasco",
+          "RI": "La Rioja",
+          "CE": "Ceuta",
+          "ML": "Melilla",
+          "OTHER": "No vivo en España"
         }
       },
       "municipality": {
@@ -86,7 +104,7 @@
         }
       },
       "yearsRegisteredInRegion": {
-        "title": "¿Cuánto tiempo llevas empadronado en Castilla y León?",
+        "title": "¿Cuánto tiempo llevas empadronado en tu comunidad autónoma?",
         "options": {
           "lt1": "Menos de 1 año",
           "1to2": "Entre 1 y 2 años",
@@ -217,15 +235,16 @@
     "steps": "Cómo pedirla",
     "official": "Ir a la fuente oficial",
     "sources": "Fuentes oficiales",
-    "lastReview": "Última revisión: {date}",
-    "pendingReview": "Ficha pendiente de revisión por el equipo.",
     "faq": "Preguntas frecuentes",
     "check": "Comprueba si te corresponde",
     "checkBody": "Responde el cuestionario y te decimos si cumples los requisitos.",
     "agency": "Organismo",
     "related": "Otras ayudas de {category}",
     "retrieved": "consultada el {date}",
-    "eyebrow": "Ficha de la ayuda"
+    "eyebrow": "Ficha de la ayuda",
+    "autoVerified": "Requisitos comprobados automáticamente contra la fuente oficial el {date}. Esta ficha no ha sido revisada por una persona.",
+    "humanReviewed": "Revisada por el equipo el {date}.",
+    "autoVerifiedBadge": "Comprobada automáticamente"
   },
   "window": {
     "permanent": "Se puede pedir todo el año",

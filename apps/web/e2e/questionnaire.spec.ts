@@ -10,34 +10,56 @@ async function fill(page: Page, value: string) {
   await page.getByRole("button", { name: /Siguiente|Ver mis ayudas/ }).click();
 }
 
+/** Answers whatever question is on screen; the adaptive order depends on the catalog. */
+async function answerUntilResults(
+  page: Page,
+  answers: Record<string, (page: Page) => Promise<void>>,
+) {
+  for (let step = 0; step < 20; step++) {
+    if (page.url().includes("/resultados")) return;
+    const heading = page.getByRole("heading", { level: 1 });
+    await expect(heading).toBeVisible();
+    const title = (await heading.textContent())?.trim() ?? "";
+    const answer = answers[title];
+    if (!answer) throw new Error(`Unexpected question: ${title}`);
+    await answer(page);
+    await expect(heading)
+      .not.toHaveText(title, { timeout: 5000 })
+      .catch(() => {});
+  }
+}
+
 test("single mother in Castilla y León gets her benefits", async ({ page }) => {
   await page.goto("/");
   await page.getByRole("link", { name: "Descubre tus ayudas" }).first().click();
 
-  await expect(page.getByRole("heading", { name: "¿Dónde vives?" })).toBeVisible();
-  await choose(page, "Castilla y León");
-  // No municipality question: no published municipal benefit needs it yet.
-  await choose(page, "5 años o más");
-  await fill(page, "29"); // age
-
-  // Children: one baby
-  await page.getByRole("button", { name: "+1" }).click();
-  await page.getByLabel("Edad del hijo 1").fill("0");
-  await page.getByRole("button", { name: "Siguiente" }).click();
-
-  await fill(page, "2"); // household size
-  await choose(page, "Familia monoparental");
-
-  await page.getByLabel("Cantidad en euros").fill("750");
-  await page.getByRole("button", { name: "Siguiente" }).click();
-
-  await choose(page, "Trabajo por cuenta ajena");
-  await choose(page, "De alquiler");
-  await fill(page, "500"); // rent
-  await choose(page, "No"); // dependent person
-  await choose(page, "No"); // disability
-  await choose(page, "5 años o más"); // legal residence
-  // No IMV question: with this income the answer would not change any result.
+  await expect(
+    page.getByRole("heading", { name: "¿En qué comunidad autónoma vives?" }),
+  ).toBeVisible();
+  await answerUntilResults(page, {
+    "¿En qué comunidad autónoma vives?": (p) => choose(p, "Castilla y León"),
+    "¿Cuánto tiempo llevas empadronado en tu comunidad autónoma?": (p) => choose(p, "5 años o más"),
+    "¿Cuántos años tienes?": (p) => fill(p, "29"),
+    "¿Cuántos hijos o menores a tu cargo viven contigo?": async (p) => {
+      await p.getByRole("button", { name: "+1" }).click();
+      await p.getByLabel("Edad del hijo 1").fill("0");
+      await p.getByRole("button", { name: /Siguiente|Ver mis ayudas/ }).click();
+    },
+    "¿Cuántas personas viven en tu casa, contándote a ti?": (p) => fill(p, "2"),
+    "¿Cuál es vuestra situación familiar?": (p) => choose(p, "Familia monoparental"),
+    "¿Cuántos ingresos tiene tu hogar, aproximadamente?": async (p) => {
+      await p.getByLabel("Cantidad en euros").fill("750");
+      await p.getByRole("button", { name: /Siguiente|Ver mis ayudas/ }).click();
+    },
+    "¿Cuál es tu situación laboral?": (p) => choose(p, "Trabajo por cuenta ajena"),
+    "¿Cómo vives en tu vivienda?": (p) => choose(p, "De alquiler"),
+    "¿Cuánto pagas de alquiler al mes?": (p) => fill(p, "500"),
+    "¿Vive contigo o cuidas de alguien que necesita ayuda para su día a día?": (p) =>
+      choose(p, "No"),
+    "¿Tienes una discapacidad reconocida?": (p) => choose(p, "No"),
+    "¿Cuánto tiempo llevas viviendo legalmente en España?": (p) => choose(p, "5 años o más"),
+    "¿Tú o alguien de tu hogar cobra ya el Ingreso Mínimo Vital?": (p) => choose(p, "No"),
+  });
 
   await expect(page).toHaveURL(/\/resultados/);
   await expect(page.getByRole("heading", { name: /Te corresponden/ })).toBeVisible();
@@ -51,8 +73,8 @@ test("single mother in Castilla y León gets her benefits", async ({ page }) => 
 
 test("the questionnaire skips questions no benefit needs", async ({ page }) => {
   await page.goto("/cuestionario");
-  await choose(page, "En otra comunidad autónoma");
-  // No municipality / years registered questions outside Castilla y León.
+  await choose(page, "No vivo en España");
+  // No municipality / years registered questions outside Spain.
   await expect(page.getByRole("heading", { name: "¿Cuántos años tienes?" })).toBeVisible();
 });
 

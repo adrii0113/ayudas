@@ -1,5 +1,5 @@
 slug: deduccion-cuidado-hijos-menores-castilla-y-leon
-version: 1
+version: 2
 status: published
 reviewedBy: "claude-code (requiere revisión humana)"
 reviewedAt: "2026-10-14"
@@ -24,6 +24,11 @@ eligibility:
       op: lt
       value: 4
       label: Tener un hijo menor de 4 años
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/cuidado-hijos-menores.html
+        excerpt: >-
+          los hijos a los que sea de aplicación el mínimo por descendientes tuvieran menos de 4
+          años de edad
       hard: true
     - field: employmentStatus
       op: in
@@ -38,7 +43,8 @@ eligibility:
       label: Renta de hasta 31.500 € en declaración conjunta (18.900 € en individual)
       source:
         url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/cuidado-hijos-menores.html
-        excerpt: 18.900 euros en tributación individual. 31.500 euros en tributación conjunta.
+        excerpt: >-
+          18.900 euros en tributación individual. [...] 31.500 euros en tributación conjunta.
 otherRequirements:
   - "El límite de renta se refiere a la base imponible menos el mínimo personal y familiar de la declaración, no a los ingresos brutos: con ingresos algo mayores puedes cumplirlo."
   - "La guardería debe estar en Castilla y León e inscrita en el Registro de Centros para la conciliación de la vida familiar y laboral."
