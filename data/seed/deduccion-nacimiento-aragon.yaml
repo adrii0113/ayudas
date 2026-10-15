@@ -1,0 +1,59 @@
+slug: deduccion-nacimiento-tercer-hijo-aragon
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por nacimiento o adopción del tercer hijo o sucesivos (Aragón)"
+summary: >-
+  Deducción en el tramo autonómico del IRPF de 500 € (600 € con rentas más bajas) por cada hijo
+  nacido o adoptado en el año que sea el tercero o siguientes.
+level: regional
+region: AR
+category: birth
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Aragón"
+amount:
+  type: range
+  min: 500
+  max: 600
+  text: >-
+    500 € por cada hijo a partir del tercero; 600 € si la renta (menos mínimos personal y por
+    descendientes) no supera 21.000 € en individual o 35.000 € en conjunta.
+eligibility:
+  all:
+    - field: youngestChildAge
+      op: eq
+      value: 0
+      label: "Haber tenido o adoptado un hijo este año"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-aragon/nacimiento-adopcion-tercer-hijo-sucesivos.html
+        excerpt: >-
+          por cada hijo nacido o adoptado durante el período impositivo que sea el tercer hijo o
+          sucesivos del contribuyente
+    - field: numChildren
+      op: gte
+      value: 3
+      label: "Que sea tu tercer hijo o siguientes"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-aragon/nacimiento-adopcion-tercer-hijo-sucesivos.html
+        excerpt: >-
+          por cada hijo nacido o adoptado durante el período impositivo que sea el tercer hijo o
+          sucesivos del contribuyente
+otherRequirements:
+  - "Solo se aplica en la declaración del año del nacimiento o la adopción."
+  - "Corresponde a quien conviva con el hijo a 31 de diciembre."
+documents:
+  - "Libro de familia o certificado de nacimiento / resolución de adopción"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Aragón)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-aragon/nacimiento-adopcion-tercer-hijo-sucesivos.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-aragon/nacimiento-adopcion-tercer-hijo-sucesivos.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      500 euros , con carácter general, por cada hijo nacido o adoptado durante el período
+      impositivo que sea el tercer hijo o sucesivos del contribuyente
+faq: []

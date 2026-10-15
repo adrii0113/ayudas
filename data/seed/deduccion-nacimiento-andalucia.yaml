@@ -1,0 +1,51 @@
+slug: deduccion-nacimiento-adopcion-andalucia
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por nacimiento, adopción o acogimiento (Andalucía)"
+summary: >-
+  Deducción en el tramo autonómico del IRPF de 200 € por cada hijo nacido, adoptado o acogido en
+  el año (400 € en municipios con problemas de despoblación).
+level: regional
+region: AN
+category: birth
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Andalucía"
+amount:
+  type: range
+  min: 200
+  max: 400
+  text: >-
+    200 € por hijo; 400 € si vives en un municipio andaluz con problemas de despoblación (menos
+    de 3.000 habitantes). Partos múltiples: 200 € más por hijo.
+eligibility:
+  all:
+    - field: youngestChildAge
+      op: eq
+      value: 0
+      label: "Haber tenido, adoptado o acogido un hijo este año"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/nacimiento-adopcion-acogimiento.html
+        excerpt: >-
+          200 euros, con carácter general, por cada hijo nacido o adoptado o por cada menor en
+          régimen de acogimiento familiar simple, permanente o preadoptivo, administrativo o
+          judicial
+otherRequirements:
+  - "Si dos personas tienen derecho a la deducción, se reparte a partes iguales."
+  - "En acogimientos, el menor debe convivir contigo al menos 90 días en el año."
+documents:
+  - "Libro de familia o certificado de nacimiento / resolución de adopción o acogimiento"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Andalucía)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/nacimiento-adopcion-acogimiento.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/nacimiento-adopcion-acogimiento.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      200 euros, con carácter general, por cada hijo nacido o adoptado o por cada menor en
+      régimen de acogimiento familiar simple, permanente o preadoptivo, administrativo o
+      judicial
+faq: []

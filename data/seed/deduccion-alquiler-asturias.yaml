@@ -1,0 +1,56 @@
+slug: deduccion-alquiler-vivienda-habitual-asturias
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por alquiler de vivienda habitual (Asturias)"
+summary: >-
+  Deducción del 10 % del alquiler de tu vivienda habitual (hasta 500 €), o del 30 % (hasta 1.500
+  €) para jóvenes de hasta 35 años, familias numerosas o monoparentales.
+level: regional
+region: AS
+category: housing
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Principado de Asturias"
+amount:
+  type: range
+  max: 1500
+  text: >-
+    10 % del alquiler, hasta 500 € al año. 30 %, hasta 1.500 €, para jóvenes de hasta 35 años,
+    familias numerosas, familias monoparentales y víctimas de violencia de género.
+eligibility:
+  all:
+    - field: housing
+      op: eq
+      value: "renting"
+      label: "Vivir de alquiler en tu vivienda habitual"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-principado-asturias/arrendamiento-vivienda-habitual.html
+        excerpt: >-
+          El 10 por 100 de las cantidades satisfechas en el período impositivo por alquiler de
+          la vivienda habitual del contribuyente
+    - field: annualHouseholdIncome
+      op: lte
+      value: 45000
+      label: "Renta de hasta 35.000 € en declaración individual (45.000 € en conjunta)"
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-principado-asturias/arrendamiento-vivienda-habitual.html
+        excerpt: >-
+          35.000 euros en tributación individual. [...] 45.000 euros en tributación conjunta.
+otherRequirements:
+  - "El límite de renta se refiere a la suma de las bases imponibles general y del ahorro."
+documents:
+  - "Contrato de alquiler"
+  - "Justificantes de pago del alquiler"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Principado de Asturias)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-principado-asturias/arrendamiento-vivienda-habitual.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-principado-asturias/arrendamiento-vivienda-habitual.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      El 10 por 100 de las cantidades satisfechas en el período impositivo por alquiler de la
+      vivienda habitual del contribuyente, con un máximo de 500 euros
+faq: []

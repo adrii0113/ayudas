@@ -1,0 +1,55 @@
+slug: deduccion-familia-numerosa-andalucia
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por familia numerosa (Andalucía)"
+summary: >-
+  Deducción en el tramo autonómico del IRPF para familias numerosas: 200 € en categoría general
+  y 400 € en categoría especial.
+level: regional
+region: AN
+category: income
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Andalucía"
+amount:
+  type: range
+  min: 200
+  max: 400
+  text: >-
+    200 € (familia numerosa general) o 400 € (especial).
+eligibility:
+  all:
+    - field: isLargeFamily
+      op: eq
+      value: true
+      label: "Tener título de familia numerosa"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/familia-numerosa.html
+        excerpt: >-
+          Los contribuyentes deberán ostentar, a la fecha del devengo del impuesto, el título de
+          familia numerosa que acredita dicha condición y categoría.
+    - field: annualHouseholdIncome
+      op: lte
+      value: 30000
+      label: "Renta de hasta 25.000 € en declaración individual (30.000 € en conjunta)"
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/familia-numerosa.html
+        excerpt: >-
+          25.000 euros en tributación individual [...] 30.000 euros en tributación conjunta
+otherRequirements:
+  - "El límite de renta se refiere a la suma de las bases imponibles general y del ahorro de la declaración."
+  - "Si varias personas tienen derecho y declaran por separado, se reparte a partes iguales."
+documents:
+  - "Título de familia numerosa en vigor"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Andalucía)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/familia-numerosa.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/familia-numerosa.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      En el caso de familias numerosas de categoría general: 200 euros
+faq: []

@@ -379,6 +379,48 @@
     "findings": [],
     "models": []
   },
+  "deduccion-alquiler-vivienda-habitual-andalucia": {
+    "version": 1,
+    "contentHash": "43e928e0fae6694494c48e160e8250ddd0ad83870aecc9f690e6df97cd14ae44",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-alquiler-vivienda-habitual-asturias": {
+    "version": 1,
+    "contentHash": "893bd69c29703de64e460bf2e465f1fe7434a1545d44cc23e5ed81cc909a06d2",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-alquiler-vivienda-habitual-illes-balears": {
+    "version": 1,
+    "contentHash": "2ab6255b39e7d8b1a625074988920799ded4079d226bb70aadd635c63b71564c",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
   "deduccion-ascendiente-discapacidad": {
     "version": 1,
     "contentHash": "265727d621276657e1cb16b0adb9395eceddde7586723f6967f6c7d10c59595f",
@@ -463,6 +505,34 @@
     "findings": [],
     "models": []
   },
+  "deduccion-familia-numerosa-andalucia": {
+    "version": 1,
+    "contentHash": "3d23386a203f222df1401a33a1054f39256326b8d78c8f104cc1f185f3c84c42",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-familia-numerosa-asturias": {
+    "version": 1,
+    "contentHash": "86dece2aa34bd8939cb430ba02735fe4a078fbc280edd22539a7a80977038c73",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
   "deduccion-familia-numerosa-castilla-y-leon": {
     "version": 1,
     "contentHash": "3537b7ae65f8418f14579054b8dc19310d78132c4f5ae972278df555b910f674",
@@ -491,9 +561,51 @@
     "findings": [],
     "models": []
   },
+  "deduccion-nacimiento-adopcion-andalucia": {
+    "version": 1,
+    "contentHash": "2084488e8c47d0a4ce87fa8bc64c48ace6d55dc06cd89d166981be7eddfde5eb",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
   "deduccion-nacimiento-adopcion-castilla-y-leon": {
     "version": 1,
     "contentHash": "f8aaaad9f2ce2f385bb7307ab6de8948bf41f6e4e641dc9da9d244efbe8da607",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-nacimiento-illes-balears": {
+    "version": 1,
+    "contentHash": "b0cd7cf9ace2d6939ce9561df9910d134cd94807e9553efc19c8d0b2f3ebc08e",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-nacimiento-tercer-hijo-aragon": {
+    "version": 1,
+    "contentHash": "8c0e8dff6a2d983fc4811bb3073c8c04b52f78d027fcc59557df934d9b797997",
     "passed": true,
     "checkedAt": "2026-10-15",
     "agents": {

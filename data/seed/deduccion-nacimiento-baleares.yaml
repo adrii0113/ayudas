@@ -1,0 +1,64 @@
+slug: deduccion-nacimiento-illes-balears
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por nacimiento de hijos (Illes Balears)"
+summary: >-
+  Deducción en el tramo autonómico del IRPF por cada hijo nacido en el año: 800 € por el
+  primero, 1.000 € por el segundo, 1.200 € por el tercero y 1.400 € a partir del cuarto.
+level: regional
+region: IB
+category: birth
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Illes Balears"
+amount:
+  type: range
+  min: 800
+  max: 1400
+  text: >-
+    800 € (1.º hijo), 1.000 € (2.º), 1.200 € (3.º) y 1.400 € (4.º y siguientes).
+eligibility:
+  all:
+    - field: youngestChildAge
+      op: eq
+      value: 0
+      label: "Haber tenido un hijo este año"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/nacimiento.html
+        excerpt: >-
+          Que el hijo o hija nacido en el periodo impositivo genere el derecho a la aplicación
+          del mínimo por descendientes
+    - field: yearsRegisteredInRegion
+      op: gte
+      value: 1
+      label: "Haber residido en Illes Balears el año anterior"
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/nacimiento.html
+        excerpt: >-
+          Que el contribuyente haya sido residente fiscal en las Illes Balears en el ejercicio
+          anterior al del nacimiento.
+    - field: annualHouseholdIncome
+      op: lte
+      value: 84480
+      label: "Renta de hasta 52.800 € en declaración individual (84.480 € en conjunta)"
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/nacimiento.html
+        excerpt: >-
+          52.800 euros en tributación individual. [...] 84.480 euros en tributación conjunta
+otherRequirements:
+  - "Para familias numerosas o monoparentales con dos o más hijos, el límite de renta sube a 63.360 € (individual) y 101.376 € (conjunta)."
+documents:
+  - "Libro de familia o certificado de nacimiento"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Illes Balears)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/nacimiento.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/nacimiento.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      800 euros por el primer hijo o hija.. 1.000 euros por el segundo hijo o hija. 1.200 euros
+      por el tercer hijo o hija. 1.400 euros por el cuarto hijo o hija y siguientes
+faq: []

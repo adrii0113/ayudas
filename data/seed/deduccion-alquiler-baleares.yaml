@@ -1,0 +1,76 @@
+slug: deduccion-alquiler-vivienda-habitual-illes-balears
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por alquiler de vivienda habitual (Illes Balears)"
+summary: >-
+  Deducción del 15 % del alquiler de tu vivienda habitual, hasta 530 € al año, si tienes menos
+  de 36 años o más de 65 sin actividad laboral.
+level: regional
+region: IB
+category: housing
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Illes Balears"
+amount:
+  type: range
+  max: 530
+  text: >-
+    15 % del alquiler, con un máximo de 530 € al año (hay importes mayores en otros supuestos,
+    consulta la ficha oficial).
+eligibility:
+  all:
+    - field: housing
+      op: eq
+      value: "renting"
+      label: "Vivir de alquiler en tu vivienda habitual"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/arrendamiento-vivienda-habitual.html
+        excerpt: >-
+          El 15 por 100 de los importes satisfechos en el período impositivo por el
+          arrendamiento de una vivienda habitual en el territorio de las Illes Balears
+    - any:
+        - field: applicantAge
+          op: lt
+          value: 36
+          label: "Tener menos de 36 años"
+          source:
+            url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/arrendamiento-vivienda-habitual.html
+            excerpt: >-
+              Sean menores de 36 años
+        - field: applicantAge
+          op: gt
+          value: 65
+          label: "Tener más de 65 años (sin actividad laboral)"
+          source:
+            url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/arrendamiento-vivienda-habitual.html
+            excerpt: >-
+              Sean mayores de 65 años y no ejerzan ninguna actividad laboral o profesional
+      label: "Tener menos de 36 años o más de 65 sin trabajar"
+      hard: true
+    - field: annualHouseholdIncome
+      op: lte
+      value: 52800
+      label: "Renta de hasta 33.000 € en declaración individual (52.800 € en conjunta)"
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/arrendamiento-vivienda-habitual.html
+        excerpt: >-
+          33.000 euros en tributación individual. [...] 52.800 euros en tributación conjunta
+otherRequirements:
+  - "Las personas mayores de 65 años no pueden ejercer actividad laboral o profesional."
+  - "Para familias numerosas o monoparentales con dos o más hijos, los límites de renta son mayores."
+documents:
+  - "Contrato de alquiler"
+  - "Justificantes de pago del alquiler"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Illes Balears)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/arrendamiento-vivienda-habitual.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/arrendamiento-vivienda-habitual.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      El 15 por 100 de los importes satisfechos en el período impositivo por el arrendamiento de
+      una vivienda habitual en el territorio de las Illes Balears
+faq: []

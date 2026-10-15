@@ -1,0 +1,86 @@
+slug: deduccion-alquiler-vivienda-habitual-andalucia
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por alquiler de vivienda habitual (Andalucía)"
+summary: >-
+  Deducción del 15 % del alquiler de tu vivienda habitual, hasta 1.200 € al año (1.500 € con
+  discapacidad), para menores de 35 años, mayores de 65 o personas con discapacidad.
+level: regional
+region: AN
+category: housing
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Andalucía"
+amount:
+  type: range
+  max: 1500
+  text: >-
+    15 % de lo que pagas de alquiler, con un máximo de 1.200 € al año (1.500 € si tienes
+    discapacidad).
+eligibility:
+  all:
+    - field: housing
+      op: eq
+      value: "renting"
+      label: "Vivir de alquiler en tu vivienda habitual"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/cantidades-invertidas-alquiler-vivienda-habitual.html
+        excerpt: >-
+          El 15 por 100 de las cantidades satisfechas en el período impositivo por el alquiler
+          de la vivienda habitual del contribuyente
+    - any:
+        - field: applicantAge
+          op: lt
+          value: 35
+          label: "Tener menos de 35 años"
+          source:
+            url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/cantidades-invertidas-alquiler-vivienda-habitual.html
+            excerpt: >-
+              Contribuyentes que, a la fecha de devengo del impuesto, no hayan cumplido los 35
+              años de edad
+        - field: applicantAge
+          op: gt
+          value: 65
+          label: "Tener más de 65 años"
+          source:
+            url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/cantidades-invertidas-alquiler-vivienda-habitual.html
+            excerpt: >-
+              Contribuyentes que, a la fecha de devengo del impuesto, sean mayores de 65 años
+        - field: applicantDisabilityPercent
+          op: gte
+          value: 33
+          label: "Tener una discapacidad reconocida"
+          source:
+            url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/cantidades-invertidas-alquiler-vivienda-habitual.html
+            excerpt: >-
+              Contribuyentes que, a la fecha de devengo del impuesto, tenga la consideración de
+              personas con discapacidad
+      label: "Tener menos de 35 años, más de 65 o una discapacidad reconocida"
+      hard: true
+    - field: annualHouseholdIncome
+      op: lte
+      value: 30000
+      label: "Renta de hasta 25.000 € en declaración individual (30.000 € en conjunta)"
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/cantidades-invertidas-alquiler-vivienda-habitual.html
+        excerpt: >-
+          25.000 euros en tributación individual. [...] 30.000 euros en tributación conjunta.
+otherRequirements:
+  - "También pueden aplicarla las víctimas de violencia doméstica o de terrorismo."
+  - "Tienes que identificar al arrendador con su NIF en la declaración."
+documents:
+  - "Contrato de alquiler"
+  - "Justificantes de pago del alquiler"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Andalucía)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/cantidades-invertidas-alquiler-vivienda-habitual.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/cantidades-invertidas-alquiler-vivienda-habitual.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      El 15 por 100 de las cantidades satisfechas en el período impositivo por el alquiler de la
+      vivienda habitual del contribuyente
+faq: []
