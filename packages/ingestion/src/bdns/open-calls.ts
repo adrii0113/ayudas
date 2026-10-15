@@ -77,9 +77,14 @@ export const HOUSEHOLD_PURPOSES = [
   "subvenciones al transporte",
 ];
 
+/** Productive-sector calls that slip through with a household purpose. */
+const SECTOR_TITLE =
+  /\b(montes?|forestal(es)?|selvicolas?|agrari[oa]s?|ganader[oa]s?|pesca|pesquer[oa]s?|explotaciones)\b/;
+
 /** Whether a call should be listed as open on `today`. */
 export function isListable(detail: BdnsDetail, today: string, recentSince: string): boolean {
   if (programTypeFromTitle(detail.descripcion) === "prize") return false;
+  if (SECTOR_TITLE.test(normalizeName(detail.descripcion))) return false;
   if (!HOUSEHOLD_PURPOSES.includes(normalizeName(detail.descripcionFinalidad ?? ""))) return false;
   if (!beneficiaryTypesFrom(detail.tiposBeneficiarios).includes("individuals")) return false;
   const status = editionStatusOf(detail, today);

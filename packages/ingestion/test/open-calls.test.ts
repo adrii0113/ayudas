@@ -51,6 +51,12 @@ describe("open calls", () => {
       descripcionFinalidad: "Agricultura, pesca y alimentación",
     };
     expect(isListable(fishing, "2026-10-15", "2026-09-01")).toBe(false);
+    const forestry = {
+      ...fishing,
+      descripcionFinalidad: "Fomento del empleo",
+      descripcion: "SUBVENCIÓN MONTES TITULARIDAD PRIVADA FEADER 2026-27",
+    };
+    expect(isListable(forestry, "2026-10-15", "2026-09-01")).toBe(false);
   });
 
   it("keeps undated calls only while recent", () => {
