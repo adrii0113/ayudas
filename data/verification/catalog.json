@@ -393,6 +393,20 @@
     "findings": [],
     "models": []
   },
+  "deduccion-alquiler-jovenes-galicia": {
+    "version": 1,
+    "contentHash": "b9eef08853ac75013a20527d4a2647526d4ca4ebabaa4be594ed00a8c3032aeb",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
   "deduccion-alquiler-vivienda-habitual-andalucia": {
     "version": 1,
     "contentHash": "43e928e0fae6694494c48e160e8250ddd0ad83870aecc9f690e6df97cd14ae44",
@@ -449,9 +463,37 @@
     "findings": [],
     "models": []
   },
+  "deduccion-alquiler-vivienda-habitual-cataluna": {
+    "version": 1,
+    "contentHash": "bc5a93655bd399222edfdf04b833fd02a9835b82f0cb659e04fa1558f54a2396",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
   "deduccion-alquiler-vivienda-habitual-illes-balears": {
     "version": 1,
     "contentHash": "2ab6255b39e7d8b1a625074988920799ded4079d226bb70aadd635c63b71564c",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-alquiler-vivienda-habitual-madrid": {
+    "version": 1,
+    "contentHash": "456df6defadf99773ecdae3c538526a83721f3df19962cb11e5924370d76ec66",
     "passed": true,
     "checkedAt": "2026-10-15",
     "agents": {
@@ -617,6 +659,20 @@
     "findings": [],
     "models": []
   },
+  "deduccion-familia-numerosa-galicia": {
+    "version": 1,
+    "contentHash": "2bd512694ed336b0b23c7ca700abbf3eef591da86b46a67fd668fff94975d87d",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
   "deduccion-maternidad": {
     "version": 2,
     "contentHash": "e1013260e696064a9cce598b7ae2a88d7592b5bafc51a906dfaa866d12209ee9",
@@ -690,6 +746,48 @@
   "deduccion-nacimiento-adopcion-castilla-y-leon": {
     "version": 1,
     "contentHash": "f8aaaad9f2ce2f385bb7307ab6de8948bf41f6e4e641dc9da9d244efbe8da607",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-nacimiento-adopcion-cataluna": {
+    "version": 1,
+    "contentHash": "4b74920f9db827a12a5868a5a1442ca0781256865f1f9f3b9796cbebee1fb009",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-nacimiento-adopcion-galicia": {
+    "version": 1,
+    "contentHash": "1d014521154ae231a5e7ab348f5cd61c60cc8bb90c2f21fde5ea8c9d3cdb0c14",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "skipped"
+    },
+    "findings": [],
+    "models": []
+  },
+  "deduccion-nacimiento-adopcion-madrid": {
+    "version": 1,
+    "contentHash": "bba0056a7b70942369a2d43a20b87ef58f59e5949f9ef4d60cc6b351ba75fd8f",
     "passed": true,
     "checkedAt": "2026-10-15",
     "agents": {

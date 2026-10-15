@@ -1,0 +1,55 @@
+slug: deduccion-nacimiento-adopcion-madrid
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por nacimiento o adopción de hijos (Comunidad de Madrid)"
+summary: >-
+  Deducción en el tramo autonómico del IRPF de 721,70 € por cada hijo nacido o adoptado, durante
+  el año del nacimiento y los dos siguientes.
+level: regional
+region: MD
+category: birth
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Comunidad de Madrid"
+amount:
+  type: fixed
+  min: 721.7
+  text: >-
+    721,70 € al año por hijo, durante el año del nacimiento o adopción y los dos siguientes (más
+    en partos múltiples).
+eligibility:
+  all:
+    - field: youngestChildAge
+      op: lte
+      value: 2
+      label: "Tener un hijo nacido o adoptado en los últimos tres años"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-madrid/nacimiento-adopcion-hijos.html
+        excerpt: >-
+          La deducción se aplica tanto en el período impositivo en el que se produzca el
+          nacimiento o la adopción como en cada uno de los dos períodos impositivos siguientes.
+    - field: annualHouseholdIncome
+      op: lte
+      value: 37322.2
+      label: "Renta de hasta 30.930 € en declaración individual (37.322,20 € en conjunta)"
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-madrid/nacimiento-adopcion-hijos.html
+        excerpt: >-
+          30.930 euros en tributación individual. [...] 37.322,20 euros en tributación conjunta.
+otherRequirements:
+  - "Solo pueden aplicarla los padres que convivan con los hijos."
+  - "La unidad familiar también tiene un límite de renta conjunto (consúltalo en la ficha oficial)."
+documents:
+  - "Libro de familia o certificado de nacimiento / resolución de adopción"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Comunidad de Madrid)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-madrid/nacimiento-adopcion-hijos.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-madrid/nacimiento-adopcion-hijos.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      721,70 euros por cada hijo nacido o adoptado.
+faq: []

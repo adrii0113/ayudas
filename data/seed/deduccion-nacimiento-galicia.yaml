@@ -1,0 +1,48 @@
+slug: deduccion-nacimiento-adopcion-galicia
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por nacimiento o adopción de hijos (Galicia)"
+summary: >-
+  Deducción en el tramo autonómico del IRPF por cada hijo nacido o adoptado en el año: de 300 €
+  a 2.400 € según tu renta y el número de hijos (20 % más en municipios pequeños).
+level: regional
+region: GA
+category: birth
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Galicia"
+amount:
+  type: range
+  min: 300
+  max: 2400
+  text: >-
+    Con renta (menos mínimos) de hasta 22.000 €: 360 € el 1.º hijo, 1.200 € el 2.º y 2.400 € el
+    3.º y siguientes. Por encima: 300 € por hijo. Un 20 % más en municipios de menos de 5.000
+    habitantes.
+eligibility:
+  all:
+    - field: youngestChildAge
+      op: eq
+      value: 0
+      label: "Haber tenido o adoptado un hijo este año"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/nacimiento-adopcion-hijos.html
+        excerpt: >-
+          Por cada hijo nacido o adoptado en el período impositivo que conviva con el
+          contribuyente a la fecha de devengo del impuesto
+otherRequirements: []
+documents:
+  - "Libro de familia o certificado de nacimiento / resolución de adopción"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Galicia)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/nacimiento-adopcion-hijos.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/nacimiento-adopcion-hijos.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      Menor o igual a 22.000 euros 360 euros el 1 er hijo 1.200 euros el 2 do hijo 2.400 euros
+      el 3 er hijo y ss
+faq: []

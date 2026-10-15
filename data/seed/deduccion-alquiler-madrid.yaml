@@ -1,0 +1,67 @@
+slug: deduccion-alquiler-vivienda-habitual-madrid
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por alquiler de vivienda habitual (Comunidad de Madrid)"
+summary: >-
+  Deducción del 30 % del alquiler de tu vivienda habitual, hasta 1.237,20 € al año, si tienes
+  menos de 40 años.
+level: regional
+region: MD
+category: housing
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Comunidad de Madrid"
+amount:
+  type: range
+  max: 1237.2
+  text: >-
+    30 % de lo que pagas de alquiler, con un máximo de 1.237,20 € al año.
+eligibility:
+  all:
+    - field: housing
+      op: eq
+      value: "renting"
+      label: "Vivir de alquiler en tu vivienda habitual"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-madrid/arrendamiento-vivienda-habitual.html
+        excerpt: >-
+          El 30 por 100 de las cantidades satisfechas por el arrendamiento de la vivienda
+          habitual en el período impositivo.
+    - field: applicantAge
+      op: lt
+      value: 40
+      label: "Tener menos de 40 años"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-madrid/arrendamiento-vivienda-habitual.html
+        excerpt: >-
+          El contribuyente debe tener menos de 40 años de edad a la fecha de devengo del
+          impuesto
+    - field: annualHouseholdIncome
+      op: lte
+      value: 37322.2
+      label: "Renta de hasta 26.414,22 € en declaración individual (37.322,20 € en conjunta)"
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-madrid/arrendamiento-vivienda-habitual.html
+        excerpt: >-
+          26.414,22 euros en tributación individual. [...] 37.322,20 euros en tributación
+          conjunta.
+otherRequirements:
+  - "La renta de toda la unidad familiar no puede superar 61.860 €."
+  - "Hay requisitos adicionales sobre el contrato y la fianza: consulta la ficha oficial."
+documents:
+  - "Contrato de alquiler"
+  - "Justificantes de pago del alquiler"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Comunidad de Madrid)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-madrid/arrendamiento-vivienda-habitual.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-madrid/arrendamiento-vivienda-habitual.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      El 30 por 100 de las cantidades satisfechas por el arrendamiento de la vivienda habitual
+      en el período impositivo.
+faq: []

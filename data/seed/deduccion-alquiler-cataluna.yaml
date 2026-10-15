@@ -1,0 +1,101 @@
+slug: deduccion-alquiler-vivienda-habitual-cataluna
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por alquiler de vivienda habitual (Cataluña)"
+summary: >-
+  Deducción del 10 % del alquiler de tu vivienda habitual (hasta 500 €, o 1.000 € en familias
+  numerosas o monoparentales) si tienes 35 años o menos, has estado en paro, tienes discapacidad
+  o formas parte de una familia numerosa o monoparental.
+level: regional
+region: CT
+category: housing
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Cataluña"
+amount:
+  type: range
+  max: 1000
+  text: >-
+    10 % del alquiler, hasta 500 € al año (1.000 € en declaración conjunta o para familias
+    numerosas y monoparentales).
+eligibility:
+  all:
+    - field: housing
+      op: eq
+      value: "renting"
+      label: "Vivir de alquiler en tu vivienda habitual"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual.html
+        excerpt: >-
+          El 10 por 100 de las cantidades satisfechas en el período impositivo en concepto de
+          alquiler de la vivienda habitual
+    - any:
+        - field: applicantAge
+          op: lte
+          value: 35
+          label: "Tener 35 años o menos"
+          source:
+            url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual.html
+            excerpt: >-
+              Tener 35 años o menos a la fecha de devengo del impuesto
+        - field: employmentStatus
+          op: eq
+          value: "unemployed"
+          label: "Haber estado en paro 183 días o más en el año"
+          source:
+            url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual.html
+            excerpt: >-
+              Haber estado en paro durante 183 días o más durante el ejercicio.
+        - field: applicantDisabilityPercent
+          op: gte
+          value: 65
+          label: "Tener una discapacidad del 65 % o más"
+          source:
+            url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual.html
+            excerpt: >-
+              Tener un grado de discapacidad igual o superior al 65 por 100
+        - field: isLargeFamily
+          op: eq
+          value: true
+          label: "Familia numerosa"
+          source:
+            url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual.html
+            excerpt: >-
+              el contribuyente pertenezca a una familia numerosa o monoparental
+        - field: isSingleParent
+          op: eq
+          value: true
+          label: "Familia monoparental"
+          source:
+            url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual.html
+            excerpt: >-
+              el contribuyente pertenezca a una familia numerosa o monoparental
+      label: "Tener 35 años o menos, haber estado en paro, tener discapacidad o ser familia numerosa o monoparental"
+      hard: true
+    - field: annualHouseholdIncome
+      op: lte
+      value: 45000
+      label: "Renta de hasta 30.000 € en declaración individual (45.000 € en conjunta)"
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual.html
+        excerpt: >-
+          30.000 euros, en tributación individual. 45.000 euros, en tributación conjunta.
+otherRequirements:
+  - "Si estás en paro, debe haber sido durante 183 días o más en el año."
+  - "También pueden aplicarla las personas viudas de 65 años o más."
+documents:
+  - "Contrato de alquiler"
+  - "Justificantes de pago del alquiler"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Cataluña)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      El 10 por 100 de las cantidades satisfechas en el período impositivo en concepto de
+      alquiler de la vivienda habitual
+faq: []

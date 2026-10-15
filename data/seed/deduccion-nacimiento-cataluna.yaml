@@ -1,0 +1,48 @@
+slug: deduccion-nacimiento-adopcion-cataluna
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por nacimiento, adopción o acogimiento (Cataluña)"
+summary: >-
+  Deducción en el tramo autonómico del IRPF por el nacimiento, la adopción o el acogimiento de
+  un hijo en el año: 150 € por progenitor en declaración individual o 300 € en conjunta o
+  familia monoparental.
+level: regional
+region: CT
+category: birth
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Cataluña"
+amount:
+  type: range
+  min: 150
+  max: 300
+  text: >-
+    150 € en la declaración individual de cada progenitor; 300 € en declaración conjunta o en
+    familia monoparental.
+eligibility:
+  all:
+    - field: youngestChildAge
+      op: eq
+      value: 0
+      label: "Haber tenido, adoptado o acogido un hijo este año"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/nacimiento-adopcion-hijo-hija-acogimiento-familiar.html
+        excerpt: >-
+          Por el nacimiento o adopción de un hijo o de una hija o por el acogimiento familiar de
+          personas menores de edad durante el período impositivo
+otherRequirements: []
+documents:
+  - "Libro de familia o certificado de nacimiento / resolución de adopción o acogimiento"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Cataluña)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/nacimiento-adopcion-hijo-hija-acogimiento-familiar.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/nacimiento-adopcion-hijo-hija-acogimiento-familiar.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      150 euros en la declaración individual de cada uno de los progenitores. 300 euros en caso
+      de declaración conjunta de ambos progenitores.
+faq: []

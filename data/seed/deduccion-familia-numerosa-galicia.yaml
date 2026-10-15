@@ -1,0 +1,46 @@
+slug: deduccion-familia-numerosa-galicia
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por familia numerosa (Galicia)"
+summary: >-
+  Deducción en el tramo autonómico del IRPF para familias numerosas: 250 € (400 € en categoría
+  especial) con hasta dos hijos, más 250 € por cada hijo adicional; el doble con discapacidad
+  del 65 % o más.
+level: regional
+region: GA
+category: income
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Galicia"
+amount:
+  type: variable
+  min: 250
+  text: >-
+    250 € con hasta dos hijos (400 € en categoría especial), más 250 € por cada hijo adicional.
+    Se duplica si hay una discapacidad del 65 % o más.
+eligibility:
+  all:
+    - field: isLargeFamily
+      op: eq
+      value: true
+      label: "Tener título de familia numerosa"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/familia-numerosa.html
+        excerpt: >-
+          El contribuyente debe poseer el título de familia numerosa en la fecha de devengo del
+          impuesto
+otherRequirements: []
+documents:
+  - "Título de familia numerosa en vigor"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Galicia)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/familia-numerosa.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/familia-numerosa.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      250 euros , en caso de que se trate de familias de hasta dos hijos/as
+faq: []

@@ -1,0 +1,69 @@
+slug: deduccion-alquiler-jovenes-galicia
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Deducción autonómica por alquiler de vivienda habitual para jóvenes (Galicia)"
+summary: >-
+  Deducción del 10 % del alquiler de tu vivienda habitual (hasta 300 € al año; 20 % y 600 € con
+  dos o más hijos menores) si tienes 35 años o menos.
+level: regional
+region: GA
+category: housing
+kind: permanent
+programType: tax_deduction
+agency: "Agencia Tributaria / Galicia"
+amount:
+  type: range
+  max: 1200
+  text: >-
+    10 % del alquiler, hasta 300 € al año; 20 % y hasta 600 € con dos o más hijos menores. El
+    doble si tienes una discapacidad del 33 % o más.
+eligibility:
+  all:
+    - field: housing
+      op: eq
+      value: "renting"
+      label: "Vivir de alquiler en tu vivienda habitual"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/alquiler-vivienda-habitual.html
+        excerpt: >-
+          El 10 por 100 de las cantidades satisfechas durante el período impositivo en concepto
+          de alquiler de la vivienda habitual.
+    - field: applicantAge
+      op: lte
+      value: 35
+      label: "Tener 35 años o menos"
+      hard: true
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/alquiler-vivienda-habitual.html
+        excerpt: >-
+          Que la edad del contribuyente sea igual o inferior a 35 años en la fecha de devengo
+          del impuesto
+    - field: annualHouseholdIncome
+      op: lte
+      value: 22000
+      label: "Renta de hasta 22.000 €"
+      source:
+        url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/alquiler-vivienda-habitual.html
+        excerpt: >-
+          no supere el importe de 22.000 euros , tanto en tributación individual como en
+          conjunta
+otherRequirements:
+  - "Haber depositado la fianza en el Instituto Gallego de la Vivienda y Suelo (IGVS)."
+  - "El contrato debe ser posterior al 1 de enero de 2003."
+documents:
+  - "Contrato de alquiler"
+  - "Justificante del depósito de la fianza en el IGVS"
+steps:
+  - "Aplícala en tu declaración de la renta (deducciones autonómicas de Galicia)."
+officialUrl: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/alquiler-vivienda-habitual.html
+sources:
+  - url: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/alquiler-vivienda-habitual.html
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      El 10 por 100 de las cantidades satisfechas durante el período impositivo en concepto de
+      alquiler de la vivienda habitual. Límite máximo de la deducción : 300 euros por contrato y
+      año
+faq: []
