@@ -1,5 +1,6 @@
 import { loadCatalog } from "../catalog";
 import { createDb } from "../client";
+import { seedParameters, seedTerritories, linkBenefitToRegistry } from "../registry";
 import { upsertSeedBenefit } from "../repository";
 
 const { benefits, issues } = loadCatalog();
@@ -9,6 +10,8 @@ if (issues.length) {
 }
 
 const db = createDb();
+console.log(`territories: ${await seedTerritories(db)}`);
+console.log(`parameters: ${await seedParameters(db)}`);
 let conflicts = 0;
 for (const benefit of benefits) {
   const outcome = await upsertSeedBenefit(db, benefit);
@@ -18,6 +21,7 @@ for (const benefit of benefits) {
   } else {
     console.log(`${outcome === "inserted" ? "+" : "="} ${benefit.slug}@${benefit.version}`);
   }
+  if (outcome !== "conflict") await linkBenefitToRegistry(db, benefit);
 }
 await db.$client.end();
 process.exit(conflicts ? 1 : 0);

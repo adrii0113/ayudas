@@ -37,3 +37,24 @@ export const constants2026: OfficialConstants = {
   imvAnnualBase: 8803.2,
   pncAnnual: 8803.2,
 };
+
+/** Where each 2026 value comes from (loaded into the parameters registry). */
+export const constantSources2026: Record<
+  keyof Omit<OfficialConstants, "year">,
+  { unit: string; label: string; url?: string }
+> = {
+  ipremMonthly: {
+    unit: "EUR/month",
+    label: "Ley 31/2022 (PGE 2023), prorrogada; Guía PNC IMSERSO 2026",
+  },
+  iprem: { unit: "EUR/year", label: "Ley 31/2022 (PGE 2023), prorrogada; Guía PNC IMSERSO 2026" },
+  iprem14: { unit: "EUR/year", label: "Ley 31/2022 (PGE 2023), prorrogada; Guía PNC IMSERSO 2026" },
+  smiMonthly: { unit: "EUR/month", label: "Real Decreto 126/2026 (BOE 19-02-2026)" },
+  smi: { unit: "EUR/year", label: "Real Decreto 126/2026 (BOE 19-02-2026)" },
+  imvAnnualBase: {
+    unit: "EUR/year",
+    label: "Seguridad Social, Ingreso Mínimo Vital 2026",
+    url: "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/65850d68-8d06-4645-bde7-05374ee42ac7",
+  },
+  pncAnnual: { unit: "EUR/year", label: "Real Decreto-ley 3/2026; Guía PNC IMSERSO 2026" },
+};

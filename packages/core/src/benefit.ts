@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { PROGRAM_TYPES } from "./program";
 import { ruleGroupSchema } from "./rules/schema";
 
 export const BENEFIT_LEVELS = ["state", "regional", "municipal"] as const;
@@ -41,6 +42,8 @@ export const benefitContentSchema = z.object({
   municipality: z.string().optional(),
   category: z.enum(BENEFIT_CATEGORIES),
   kind: z.enum(BENEFIT_KINDS),
+  /** Registry program type; derived from slug/kind when omitted (see deriveProgramType). */
+  programType: z.enum(PROGRAM_TYPES).optional(),
   /** Organisation that manages it, e.g. "Seguridad Social". */
   agency: z.string().optional(),
   amount: amountSchema,

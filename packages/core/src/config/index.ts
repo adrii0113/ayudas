@@ -1,4 +1,4 @@
-import { constants2026 } from "./constants.2026";
+import { constants2026, constantSources2026 } from "./constants.2026";
 import type { OfficialConstants } from "./types";
 
 export * from "./types";
@@ -6,6 +6,14 @@ export * from "./types";
 const BY_YEAR: Record<number, OfficialConstants> = {
   2026: constants2026,
 };
+
+export type ConstantSource = { unit: string; label: string; url?: string };
+
+/** Every year's constants with their sources, for the parameters registry. */
+export const CONSTANTS_WITH_SOURCES: {
+  constants: OfficialConstants;
+  sources: Record<keyof Omit<OfficialConstants, "year">, ConstantSource>;
+}[] = [{ constants: constants2026, sources: constantSources2026 }];
 
 export const LATEST_CONSTANTS_YEAR = Math.max(...Object.keys(BY_YEAR).map(Number));
 

@@ -279,4 +279,6 @@ Prevalecen sobre lo anterior donde haya conflicto. Diseño completo en `docs/sis
 - **Agentes de verificación** comprueban la veracidad contra las fuentes oficiales y dejan
   registro auditable. No deciden la elegibilidad de los usuarios (el principio 1 sigue igual).
 - **Pendiente de decisión**: si las reglas `agent_verified` (sin revisión humana) pueden usarse
-  en el cuestionario. Hasta entonces, el cuestionario solo usa `human_verified` (principio 2).
+  en el cuestionario. Hasta entonces, el cuestionario sigue usando solo fichas `published` del flujo
+  de revisión del panel (principio 2); las 30 fichas actuales constan como `extracted` hasta que el
+  propietario las revise.

@@ -1,6 +1,7 @@
 import { benefitContentSchema, type Benefit, type BenefitContent } from "@tetoca/core";
 import { and, asc, desc, eq, max } from "drizzle-orm";
 import type { Database } from "./client";
+import { linkBenefitToRegistry } from "./registry";
 import { benefits } from "./schema";
 
 type BenefitRow = typeof benefits.$inferSelect;
@@ -121,6 +122,8 @@ export async function publishBenefit(db: Database, id: string, reviewer: string)
       })
       .where(eq(benefits.id, id));
   });
+  const published = await getBenefitById(db, id);
+  if (published) await linkBenefitToRegistry(db, published.benefit);
 }
 
 export async function archiveBenefit(db: Database, id: string): Promise<void> {
