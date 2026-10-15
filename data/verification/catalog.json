@@ -925,6 +925,20 @@
     "findings": [],
     "models": []
   },
+  "ingreso-minimo-de-solidaridad-castilla-la-mancha": {
+    "version": 1,
+    "contentHash": "6e193c03a4f5f953419bc2c74bd39f000c5d87f5b54f288c661a46e62cc44f1f",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "pass"
+    },
+    "findings": [],
+    "models": []
+  },
   "ingreso-minimo-vital": {
     "version": 2,
     "contentHash": "ea61024c56bc1ba49e5eaa194b5ca5deb42a4c0659926016a2fcd663c6974913",
@@ -995,9 +1009,65 @@
     "findings": [],
     "models": []
   },
+  "renta-canaria-de-ciudadania": {
+    "version": 1,
+    "contentHash": "a0151c8bbadcf16c4b61eac3bbf57f3e4398f475c9ba52735aa9e4dbfced5ecf",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "pass"
+    },
+    "findings": [],
+    "models": []
+  },
   "renta-garantizada-ciudadania-castilla-y-leon": {
     "version": 2,
     "contentHash": "f33e5e1d0aafa4fa880b843bf52cead7a357a6c964b0ab3e2f1d38c490aace46",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "pass"
+    },
+    "findings": [],
+    "models": []
+  },
+  "renta-minima-insercion-social-andalucia": {
+    "version": 1,
+    "contentHash": "bf072c5b08debf61336714514031f9f523d4efd306ed5e594cf1622ba8160379",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "pass"
+    },
+    "findings": [],
+    "models": []
+  },
+  "renta-social-basica-cantabria": {
+    "version": 1,
+    "contentHash": "127e669bee0ea6a80813f30e0cb7dea46549448f9e9d83d5c59a192a66b06725",
+    "passed": true,
+    "checkedAt": "2026-10-15",
+    "agents": {
+      "citations": "pass",
+      "links": "pass",
+      "deadlines": "skipped",
+      "parameters": "pass"
+    },
+    "findings": [],
+    "models": []
+  },
+  "salario-social-basico-asturias": {
+    "version": 1,
+    "contentHash": "6a842791322580b1571ec921e1a4a6214320d62ac9f82a242c8cf13ef1e6bef9",
     "passed": true,
     "checkedAt": "2026-10-15",
     "agents": {

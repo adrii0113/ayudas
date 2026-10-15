@@ -1,0 +1,68 @@
+slug: salario-social-basico-asturias
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Salario Social Básico (Asturias)"
+summary: >-
+  Prestación mensual del Principado de Asturias para personas y hogares en riesgo de pobreza o
+  exclusión social por falta de ingresos.
+level: regional
+region: AS
+category: income
+kind: permanent
+programType: cash_benefit
+agency: "Principado de Asturias"
+amount:
+  type: variable
+  text: >-
+    Cantidad mensual que completa los ingresos del hogar hasta el mínimo que fija la comunidad;
+    depende del número de miembros.
+eligibility:
+  all:
+    - field: applicantAge
+      op: gt
+      value: 25
+      label: "Tener más de 25 años"
+      hard: true
+      source:
+        url: https://socialasturias.asturias.es/salario_social_basico
+        excerpt: >-
+          Ser mayor de veinticinco años
+    - field: yearsRegisteredInRegion
+      op: gte
+      value: 2
+      label: "Llevar al menos dos años residiendo en Asturias"
+      source:
+        url: https://socialasturias.asturias.es/salario_social_basico
+        excerpt: >-
+          Residencia efectiva e ininterrumpida por un tiempo no inferior a dos años
+          inmediatamente anterior a la formulación de la solicitud
+    - field: annualHouseholdIncome
+      op: lt
+      value: {"mul": [{"ref": "imvAnnualBase"}, {"min": [2.2, {"add": [0.7, {"mul": [0.3, {"ref": "householdSize"}]}]}]}]}
+      label: "Ingresos del hogar muy bajos (referencia orientativa: renta garantizada del IMV para tu hogar)"
+      hard: true
+      source:
+        url: https://socialasturias.asturias.es/salario_social_basico
+        excerpt: >-
+          Carecer de recursos económicos superiores a los módulos establecidos
+otherRequirements:
+  - "El umbral exacto de ingresos lo fija la normativa autonómica según los miembros del hogar; como referencia orientativa usamos la renta garantizada del Ingreso Mínimo Vital."
+  - "Es subsidiaria: antes hay que pedir las pensiones y prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital."
+  - "Implica acordar un itinerario o proyecto de inclusión con los servicios sociales."
+  - "Hay excepciones a la edad (orfandad, discapacidad, menores o personas dependientes a cargo)."
+  - "La unidad de convivencia debe existir desde al menos seis meses antes."
+documents:
+  - "DNI o NIE de las personas del hogar"
+  - "Certificado de empadronamiento"
+  - "Justificantes de ingresos"
+steps:
+  - "Solicítalo en los servicios sociales de tu ayuntamiento o en la sede electrónica del Principado."
+officialUrl: https://socialasturias.asturias.es/salario_social_basico
+sources:
+  - url: https://socialasturias.asturias.es/salario_social_basico
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      Carecer de recursos económicos superiores a los módulos establecidos
+faq: []

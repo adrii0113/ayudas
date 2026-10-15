@@ -1,0 +1,70 @@
+slug: ingreso-minimo-de-solidaridad-castilla-la-mancha
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Ingreso Mínimo de Solidaridad (Castilla-La Mancha)"
+summary: >-
+  Prestación periódica y temporal de la Junta de Castilla-La Mancha para personas y familias que
+  no tienen recursos suficientes para sus necesidades básicas.
+level: regional
+region: CM
+category: income
+kind: permanent
+programType: cash_benefit
+agency: "Junta de Comunidades de Castilla-La Mancha"
+amount:
+  type: variable
+  text: >-
+    Cantidad mensual que completa los ingresos del hogar hasta el mínimo que fija la comunidad;
+    depende del número de miembros.
+eligibility:
+  all:
+    - field: applicantAge
+      op: gte
+      value: 25
+      label: "Tener 25 años o más"
+      hard: true
+      source:
+        url: https://bienestarsocial.castillalamancha.es/actuaciones/ingreso-minimo-de-solidaridad
+        excerpt: >-
+          Tener una edad comprendida entre 25 y 64 años de edad, ambos inclusive
+    - field: applicantAge
+      op: lte
+      value: 64
+      label: "Tener 64 años o menos"
+      hard: true
+      source:
+        url: https://bienestarsocial.castillalamancha.es/actuaciones/ingreso-minimo-de-solidaridad
+        excerpt: >-
+          Tener una edad comprendida entre 25 y 64 años de edad, ambos inclusive
+    - field: annualHouseholdIncome
+      op: lt
+      value: {"mul": [{"ref": "imvAnnualBase"}, {"min": [2.2, {"add": [0.7, {"mul": [0.3, {"ref": "householdSize"}]}]}]}]}
+      label: "Ingresos del hogar muy bajos (referencia orientativa: renta garantizada del IMV para tu hogar)"
+      hard: true
+      source:
+        url: https://bienestarsocial.castillalamancha.es/actuaciones/ingreso-minimo-de-solidaridad
+        excerpt: >-
+          Carecer de medios económicos equivalentes en su cuantía a la señalada para el Ingreso
+          Mínimo de Solidaridad
+otherRequirements:
+  - "El umbral exacto de ingresos lo fija la normativa autonómica según los miembros del hogar; como referencia orientativa usamos la renta garantizada del Ingreso Mínimo Vital."
+  - "Es subsidiaria: antes hay que pedir las pensiones y prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital."
+  - "Implica acordar un itinerario o proyecto de inclusión con los servicios sociales."
+  - "Hay excepciones a la edad para quienes tienen menores o personas con discapacidad a cargo."
+  - "La unidad familiar debe ser independiente desde al menos un año antes, salvo excepciones."
+documents:
+  - "DNI o NIE de las personas del hogar"
+  - "Certificado de empadronamiento"
+  - "Justificantes de ingresos"
+steps:
+  - "Solicítalo a través de los servicios sociales de atención primaria de tu municipio."
+officialUrl: https://bienestarsocial.castillalamancha.es/actuaciones/ingreso-minimo-de-solidaridad
+sources:
+  - url: https://bienestarsocial.castillalamancha.es/actuaciones/ingreso-minimo-de-solidaridad
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      Carecer de medios económicos equivalentes en su cuantía a la señalada para el Ingreso
+      Mínimo de Solidaridad
+faq: []

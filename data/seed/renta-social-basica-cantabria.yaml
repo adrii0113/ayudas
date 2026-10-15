@@ -1,0 +1,70 @@
+slug: renta-social-basica-cantabria
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Renta Social Básica (Cantabria)"
+summary: >-
+  Prestación mensual del Gobierno de Cantabria para personas en riesgo o situación de exclusión
+  por falta de recursos económicos.
+level: regional
+region: CB
+category: income
+kind: permanent
+programType: cash_benefit
+agency: "Gobierno de Cantabria"
+amount:
+  type: variable
+  text: >-
+    Cantidad mensual que completa los ingresos del hogar hasta el mínimo que fija la comunidad;
+    depende del número de miembros.
+eligibility:
+  all:
+    - field: applicantAge
+      op: gt
+      value: 23
+      label: "Tener más de 23 años"
+      hard: true
+      source:
+        url: https://www.serviciossocialescantabria.org/index.php?page=renta-social-basica
+        excerpt: >-
+          Ser mayor de 23 años y menor de 65
+    - field: applicantAge
+      op: lt
+      value: 65
+      label: "Tener menos de 65 años"
+      hard: true
+      source:
+        url: https://www.serviciossocialescantabria.org/index.php?page=renta-social-basica
+        excerpt: >-
+          Ser mayor de 23 años y menor de 65
+    - field: annualHouseholdIncome
+      op: lt
+      value: {"mul": [{"ref": "imvAnnualBase"}, {"min": [2.2, {"add": [0.7, {"mul": [0.3, {"ref": "householdSize"}]}]}]}]}
+      label: "Ingresos del hogar muy bajos (referencia orientativa: renta garantizada del IMV para tu hogar)"
+      hard: true
+      source:
+        url: https://www.serviciossocialescantabria.org/index.php?page=renta-social-basica
+        excerpt: >-
+          Carecer la unidad perceptora de recursos económicos suficientes para hacer frente a
+          las necesidades básicas
+otherRequirements:
+  - "El umbral exacto de ingresos lo fija la normativa autonómica según los miembros del hogar; como referencia orientativa usamos la renta garantizada del Ingreso Mínimo Vital."
+  - "Es subsidiaria: antes hay que pedir las pensiones y prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital."
+  - "Implica acordar un itinerario o proyecto de inclusión con los servicios sociales."
+  - "Tener residencia legal en España y estar empadronado en Cantabria."
+  - "Hay excepciones a la edad (por ejemplo, con menores o personas dependientes a cargo)."
+documents:
+  - "DNI o NIE de las personas del hogar"
+  - "Certificado de empadronamiento"
+  - "Justificantes de ingresos"
+steps:
+  - "Solicítala en los servicios sociales de atención primaria de tu municipio."
+officialUrl: https://www.serviciossocialescantabria.org/index.php?page=renta-social-basica
+sources:
+  - url: https://www.serviciossocialescantabria.org/index.php?page=renta-social-basica
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      Carecer la unidad perceptora de recursos económicos suficientes para hacer frente a las
+      necesidades básicas
+faq: []

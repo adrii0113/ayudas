@@ -1,0 +1,61 @@
+slug: renta-canaria-de-ciudadania
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Renta Canaria de Ciudadanía"
+summary: >-
+  Prestación del Gobierno de Canarias para familias en situación de vulnerabilidad económica y
+  social, acompañada de apoyos de los servicios sociales.
+level: regional
+region: CN
+category: income
+kind: permanent
+programType: cash_benefit
+agency: "Gobierno de Canarias"
+amount:
+  type: variable
+  text: >-
+    Cantidad mensual que completa los ingresos del hogar hasta el mínimo que fija la comunidad;
+    depende del número de miembros.
+eligibility:
+  all:
+    - field: yearsRegisteredInRegion
+      op: gte
+      value: 1
+      label: "Llevar al menos 12 meses residiendo en Canarias"
+      source:
+        url: https://sede.gobiernodecanarias.org/sede/movil/tramites/7441
+        excerpt: >-
+          Igualmente es necesario tener un tiempo mínimo de 12 meses de residencia efectiva en
+          Canarias, salvo excepciones
+    - field: annualHouseholdIncome
+      op: lt
+      value: {"mul": [{"ref": "imvAnnualBase"}, {"min": [2.2, {"add": [0.7, {"mul": [0.3, {"ref": "householdSize"}]}]}]}]}
+      label: "Ingresos del hogar muy bajos (referencia orientativa: renta garantizada del IMV para tu hogar)"
+      hard: true
+      source:
+        url: https://sede.gobiernodecanarias.org/sede/movil/tramites/7441
+        excerpt: >-
+          dirigida a aquellas familias en situación de vulnerabilidad económica y social que
+          residan en Canarias
+otherRequirements:
+  - "El umbral exacto de ingresos lo fija la normativa autonómica según los miembros del hogar; como referencia orientativa usamos la renta garantizada del Ingreso Mínimo Vital."
+  - "Es subsidiaria: antes hay que pedir las pensiones y prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital."
+  - "Implica acordar un itinerario o proyecto de inclusión con los servicios sociales."
+  - "Hay que haber solicitado antes el Ingreso Mínimo Vital (no hace falta que esté resuelto)."
+  - "Consulta en la ficha oficial los requisitos de edad y sus excepciones."
+documents:
+  - "DNI o NIE de las personas del hogar"
+  - "Certificado de empadronamiento"
+  - "Justificantes de ingresos"
+steps:
+  - "Solicítala en la sede electrónica del Gobierno de Canarias o en los servicios sociales de tu municipio."
+officialUrl: https://sede.gobiernodecanarias.org/sede/movil/tramites/7441
+sources:
+  - url: https://sede.gobiernodecanarias.org/sede/movil/tramites/7441
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      dirigida a aquellas familias en situación de vulnerabilidad económica y social que residan
+      en Canarias
+faq: []

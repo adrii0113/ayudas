@@ -1,0 +1,79 @@
+slug: renta-minima-insercion-social-andalucia
+version: 1
+status: published
+reviewedBy: "claude-code (verificación automática)"
+reviewedAt: "2026-10-15"
+title: "Renta Mínima de Inserción Social (Andalucía)"
+summary: >-
+  Prestación mensual de la Junta de Andalucía para hogares en situación de pobreza o exclusión
+  social, con un plan de inclusión sociolaboral.
+level: regional
+region: AN
+category: income
+kind: permanent
+programType: cash_benefit
+agency: "Junta de Andalucía"
+amount:
+  type: variable
+  text: >-
+    Cantidad mensual que completa los ingresos del hogar hasta el mínimo que fija la comunidad;
+    depende del número de miembros.
+eligibility:
+  all:
+    - field: applicantAge
+      op: gte
+      value: 25
+      label: "Tener 25 años o más"
+      hard: true
+      source:
+        url: https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/Triptico_RMISA_2026.pdf
+        excerpt: >-
+          Solicitante entre 25 y 64 años inclusive
+    - field: applicantAge
+      op: lte
+      value: 64
+      label: "Tener 64 años o menos"
+      hard: true
+      source:
+        url: https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/Triptico_RMISA_2026.pdf
+        excerpt: >-
+          Solicitante entre 25 y 64 años inclusive
+    - field: yearsRegisteredInRegion
+      op: gte
+      value: 1
+      label: "Llevar al menos un año empadronado"
+      source:
+        url: https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/Triptico_RMISA_2026.pdf
+        excerpt: >-
+          Estar la unidad familiar empadronada, con un año de antelación a la fecha de
+          presentación de la solicitud.
+    - field: annualHouseholdIncome
+      op: lt
+      value: {"mul": [{"ref": "imvAnnualBase"}, {"min": [2.2, {"add": [0.7, {"mul": [0.3, {"ref": "householdSize"}]}]}]}]}
+      label: "Ingresos del hogar muy bajos (referencia orientativa: renta garantizada del IMV para tu hogar)"
+      hard: true
+      source:
+        url: https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/Triptico_RMISA_2026.pdf
+        excerpt: >-
+          Recursos mensuales inferiores a la cuantía que les correspondiera de la Renta Mínima
+          de Inserción Social en Andalucía.
+otherRequirements:
+  - "El umbral exacto de ingresos lo fija la normativa autonómica según los miembros del hogar; como referencia orientativa usamos la renta garantizada del Ingreso Mínimo Vital."
+  - "Es subsidiaria: antes hay que pedir las pensiones y prestaciones a las que tengas derecho, incluido el Ingreso Mínimo Vital."
+  - "Implica acordar un itinerario o proyecto de inclusión con los servicios sociales."
+  - "Hay excepciones a la edad (por ejemplo, con menores o personas con discapacidad a cargo)."
+  - "Inscribirse como demandante de empleo en el Servicio Andaluz de Empleo."
+documents:
+  - "DNI o NIE de las personas del hogar"
+  - "Certificado de empadronamiento"
+  - "Justificantes de ingresos"
+steps:
+  - "Solicítala en los servicios sociales comunitarios de tu municipio."
+officialUrl: https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/Triptico_RMISA_2026.pdf
+sources:
+  - url: https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/Triptico_RMISA_2026.pdf
+    retrievedAt: "2026-10-15"
+    excerpt: >-
+      Recursos mensuales inferiores a la cuantía que les correspondiera de la Renta Mínima de
+      Inserción Social en Andalucía.
+faq: []
