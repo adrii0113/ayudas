@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-15",
+ "generatedAt": "2026-10-16",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -680,16 +680,6 @@
     "windowText": "Un mes a contar desde la publicación de la convocatoria en el B.O.N. — Un mes",
     "url": "www.navarra.es",
     "publishedAt": "2026-09-14"
-   },
-   {
-    "bdnsCode": "927085",
-    "title": "Concesión de subvenciones para la realización de proyectos innovadores y experimentales en materia de empleo y emprendimiento en el ámbito de la comunidad foral de navarra",
-    "organism": "SERVICIO NAVARRO DE EMPLEO - NAFAR LANSARE",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "15 días hábiles a contar desde el día siguiente al de la publicación de la convocatoria en el BON — Tras 15 días hábiles desde el día siguiente al de la publicación de la convocatoria en el BON",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/927085",
-    "publishedAt": "2026-08-31"
    }
   ],
   "VC": [
@@ -776,26 +766,6 @@
     "publishedAt": "2026-09-16"
    },
    {
-    "bdnsCode": "927027",
-    "title": "Convocatoria 2026 becas y ayudas a alumnos en acciones formativas no conducentes a certificados profesionales dirigidas a personas desempleadas, según Resolución de 29 de julio de 2026 que las convoca.",
-    "organism": "SERVICIO EXTREMEÑO PÚBLICO DE EMPLEO (SEXPE)",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Día siguiente al de la publicación de la resolución de convocatoria y extracto en el DOE — Un año desde día siguiente publicación resolución de convocatoria y extracto en el DOE",
-    "url": "https://sexpeemplea.juntaex.es/ayudas_becas_y_ayudas",
-    "publishedAt": "2026-08-31"
-   },
-   {
-    "bdnsCode": "927026",
-    "title": "Convocatoria 2026 becas y ayudas a alumnos de acciones formativas conducentes a certificados profesionales dirigidas a personas desempleadas, según Resolución de 29 de julio de 2026 que las convoca.",
-    "organism": "SERVICIO EXTREMEÑO PÚBLICO DE EMPLEO (SEXPE)",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Día siguiente al de la publicación de la resolución de convocatoria y extracto en el DOE — Un año desde día siguiente publicación resolución de convocatoria y extracto en el DOE",
-    "url": "https://sexpeemplea.juntaex.es/ayudas_becas_y_ayudas",
-    "publishedAt": "2026-08-31"
-   },
-   {
     "bdnsCode": "914545",
     "title": "Ayudas 2026-2027 del BONO ALQUILER JOVEN, según Resolución de 17 de junio de 2026 por la que se convocan.",
     "organism": "SECRETARÍA GENERAL DE VIVIENDA, ARQUITECTURA, ACCESIBILIDAD Y REGENERACIÓN URBANA",
@@ -807,16 +777,6 @@
    }
   ],
   "GA": [
-   {
-    "bdnsCode": "923182",
-    "title": "ORDEN de 31 de julio de 2026, por la que se establecen las bases reguladoras de la concesión de ayudas económicas a las familias con personas en situación de dependencia o con discapacidad, a través del programa Respiro Familiar para personas cuidadoras y",
-    "organism": "CONSELLERÍA DE POLÍTICA SOCIAL E IGUALDAD",
-    "opensAt": "2026-08-10",
-    "closesAt": "2026-10-15",
-    "windowText": "10/08/2026 — 15/10/2026",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/923182",
-    "publishedAt": "2026-08-03"
-   },
    {
     "bdnsCode": "922377",
     "title": "ORDEN de 20 de julio de 2026 por la que se establecen las bases reguladoras de las ayudas económicas dirigidas a las personas con esclerosis lateral amiotrófica o de sus fenotipos para el año 2026 y se procede a su convocatoria (código de procedimiento BS",
@@ -856,16 +816,6 @@
     "windowText": null,
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/927442",
     "publishedAt": "2026-09-02"
-   },
-   {
-    "bdnsCode": "913660",
-    "title": "Orden de 20 de mayo de 2026 por la que se convocan plazas de residencia en los centros residenciales docentes de A Coruña, Ourense y Vigo para realizar estudios postobrigatorios no universitarios en el curso 2026/27 (código de procedimiento ED306A)",
-    "organism": "CONSELLERÍA DE EDUCACIÓN, CIENCIA, UNIVERSIDADES E FORMACIÓN PROFESIONAL",
-    "opensAt": "2026-06-20",
-    "closesAt": "2027-06-21",
-    "windowText": null,
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/913660",
-    "publishedAt": "2026-06-17"
    },
    {
     "bdnsCode": "928924",
