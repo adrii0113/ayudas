@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-16",
+ "generatedAt": "2026-10-17",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -432,6 +432,16 @@
     "publishedAt": "2026-09-28"
    },
    {
+    "bdnsCode": "935756",
+    "title": "Orden de 15 de octubre de 2026, de la Consejería de Educación, por la que se convocan ayudas para el alumnado que curse enseñanzas de Bachillerato, de Formación Profesional del sistema educativo y de determinadas enseñanzas impartidas en centros de CyL",
+    "organism": "CONSEJERÍA DE EDUCACIÓN",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Día siguiente a la publicación de extracto de la convocatoria — Veinte días hábiles, a contar desde el día siguiente al de la publicación del extracto en el BOCYL",
+    "url": "https://www.tramitacastillayleon.jcyl.es/web/es/sede-electronica.html",
+    "publishedAt": "2026-10-16"
+   },
+   {
     "bdnsCode": "934426",
     "title": "Acuerdo de 1 de octubre de 2026, de la Junta de Castilla y León por el que se autoriza la concesión directa de una subvención a Aging to the Future para financiar el Plan de Marketing, posicionamiento y visibilidad del IV Congreso Internacional de Economí",
     "organism": "CONSEJERÍA DE ECONOMÍA Y HACIENDA",
@@ -485,16 +495,6 @@
    }
   ],
   "CT": [
-   {
-    "bdnsCode": "923775",
-    "title": "Convocatoria plurianual para la concesión de las prestaciones para el pago del alquiler en la ciudad de Barcelona del año 2026, con cargo a los presupuestos de los años 2026 y 2027",
-    "organism": "CONSORCIO DE LA VIVIENDA DE BARCELONA",
-    "opensAt": "2026-09-07",
-    "closesAt": "2026-10-16",
-    "windowText": null,
-    "url": "https://habitatge.barcelona/cat   i   http://www.bcn.cat/consorcihabitatge/ca/home.html",
-    "publishedAt": "2026-08-06"
-   },
    {
     "bdnsCode": "921364",
     "title": "Convocatoria plurianual de ayudas a la rehabilitación por actuaciones de accesibilidad a la ciudad de Barcelona para el año 2026 con cargo a los presupuestos de los años 2026, 2027 y 2028",
@@ -567,16 +567,6 @@
    }
   ],
   "CE": [
-   {
-    "bdnsCode": "923866",
-    "title": "4ª Convocatoria de ayudas públicas destinadas al Programa de Formación para el Empleo, Medida 1A04 del FSE+21-27 Ceuta",
-    "organism": "PROCESA SOCIEDAD DE DESARROLLO DE CEUTA",
-    "opensAt": null,
-    "closesAt": "2026-10-16",
-    "windowText": "día siguiente a la publicación en el Bocce",
-    "url": "procesa.es",
-    "publishedAt": "2026-08-06"
-   },
    {
     "bdnsCode": "914226",
     "title": "CONVENIO SUBVENCIÓN NOMINATIVA CENTRO DLE MAYOR CRUZ ROJA 2026",
@@ -687,10 +677,10 @@
     "bdnsCode": "930830",
     "title": "Subvenciones para la realización del informe de evaluación del edificio de uso residencial de vivienda en la Comunitat Valenciana (IEEV.CV)",
     "organism": "SECRETARÍA AUTONÓMICA DE VIVIENDA",
-    "opensAt": null,
-    "closesAt": null,
+    "opensAt": "2026-10-06",
+    "closesAt": "2026-12-07",
     "windowText": "DÍA SIGUIENTE AL DE LA PUBLICACIÓN DE LA CONVOCATORIA EN EL DOGV — DOS MESES CONTADOS A PARTIR DEL DÍA SIGUIENTE DE LA PUBLICACIÓN DE LA CONVOCATORIA EN EL DOGV",
-    "url": "https://sede.gva.es/es/",
+    "url": "https://sede.gva.es/es/detall-tramit?id_proc=112181",
     "publishedAt": "2026-09-22"
    },
    {
