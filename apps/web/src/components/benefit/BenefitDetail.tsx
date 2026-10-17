@@ -9,6 +9,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { WindowLabel } from "@/components/WindowLabel";
 import { formatDate } from "@/lib/format";
+import { benefitFaq } from "@/lib/faq";
 import { benefitJsonLd } from "@/lib/structured-data";
 import { BenefitListItem } from "./BenefitListItem";
 
@@ -25,9 +26,11 @@ export function BenefitDetail({ benefit, related }: { benefit: Benefit; related:
   const t = useTranslations();
   const requirements = describeRequirements(effectiveRules(benefit));
   const pendingReview = needsHumanReview(benefit);
+  const tf = useTranslations("faq");
+  const faq = benefitFaq(benefit, (key, values) => tf(key, values));
   return (
     <article className="space-y-10">
-      {benefitJsonLd(benefit).map((data, i) => (
+      {benefitJsonLd(benefit, faq).map((data, i) => (
         <JsonLd key={i} data={data} />
       ))}
       <header className="bleed bleed-band -mt-10 space-y-5 py-10 sm:py-14">
@@ -122,10 +125,10 @@ export function BenefitDetail({ benefit, related }: { benefit: Benefit; related:
         </a>
       </Section>
 
-      {benefit.faq.length ? (
+      {faq.length ? (
         <Section title={t("benefit.faq")}>
           <div className="callout divide-y divide-hairline overflow-hidden">
-            {benefit.faq.map((f) => (
+            {faq.map((f) => (
               <details key={f.question} className="px-5 py-4">
                 <summary className="flex cursor-pointer items-center justify-between gap-3 font-medium">
                   {f.question}
@@ -167,7 +170,10 @@ export function BenefitDetail({ benefit, related }: { benefit: Benefit; related:
           </p>
         ) : benefit.verifiedAt ? (
           <p className="text-sm text-muted">
-            {t("benefit.autoVerified", { date: formatDate(benefit.verifiedAt) })}
+            {t("benefit.autoVerified", { date: formatDate(benefit.verifiedAt) })}{" "}
+            <Link href="/como-comprobamos" className="underline underline-offset-4">
+              {t("benefit.methodologyLink")}
+            </Link>
           </p>
         ) : null}
       </Section>

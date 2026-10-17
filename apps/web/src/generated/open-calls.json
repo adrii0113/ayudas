@@ -1,1043 +1,983 @@
 {
- "generatedAt": "2026-10-15",
- "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
- "byRegion": {
-  "AN": [
-   {
-    "bdnsCode": "935159",
-    "title": "Resolución de 5 de Octubre de 2026 por la que se modifica la convocatoria de 12 de marzo de 2026, de la AAE por la que se convocan incentivos para la concesión de incentivos del PLAN RENOVE VEHÍCULOS ANDALUCÍA",
-    "organism": "AGENCIA ANDALUZA DE LA ENERGÍA",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "9:00 horas del día 7 de octubre  de 2026 — Hasta que se declare su finalización mediante Resolución de la Dirección Gerencia de la Agencia Anda",
-    "url": "www.agenciaandaluzadelaenergia.es",
-    "publishedAt": "2026-10-14"
-   },
-   {
-    "bdnsCode": "920309",
-    "title": "Resolución de la Dirección General de Formación Profesional para el Empleo, por la que se convocan para el año 2026 las subvenciones públicas previstas en la Orden de 13 de septiembre de 2021, por la que se regula el programa de empleo y formación en la C",
-    "organism": "CONSEJERÍA DE EMPLEO, EMPRESA Y TRABAJO AUTÓNOMO",
-    "opensAt": "2026-07-25",
-    "closesAt": null,
-    "windowText": "El día siguiente al de publicación, en el Boletí",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/920309",
-    "publishedAt": "2026-07-20"
-   },
-   {
-    "bdnsCode": "919648",
-    "title": "Resolucion de 16 de julio de 2026, destinadas a la financiación de la oferta formativa de Formación Profesional y Formación en el Trabajo en el sector Naval, dirigida a personas trabajadoras desempleadas en la provincia de Cádiz. Linea 2 FP Grado C presen",
-    "organism": "CONSEJERÍA DE EMPLEO, EMPRESA Y TRABAJO AUTÓNOMO",
-    "opensAt": "2026-07-22",
-    "closesAt": null,
-    "windowText": "el día siguiente al que se publique el extracto en el BOJA — 15 días naturales",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/919648",
-    "publishedAt": "2026-07-16"
-   },
-   {
-    "bdnsCode": "919639",
-    "title": "Resolucion de 16 de julio 2026 destinadas a la financiación de la oferta formativa de Formación Profesional y Formación en el Trabajo en el sector Naval, dirigida a personas trabajadoras desempleadas en la provincia de Cádiz. Linea 1 modalidad presencial",
-    "organism": "CONSEJERÍA DE EMPLEO, EMPRESA Y TRABAJO AUTÓNOMO",
-    "opensAt": "2026-07-22",
-    "closesAt": null,
-    "windowText": "el día siguiente al que se publique el extracto en Boja — 15 ddías naturales",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/919639",
-    "publishedAt": "2026-07-16"
-   }
-  ],
-  "AR": [
-   {
-    "bdnsCode": "926926",
-    "title": "ORDEN Consejera Economía, Competitividad y Empleo, por la que se convoca para el 2026, programa becas y ayudas para personas trabajadoras desempleadas que participen en acciones formativas y formación en empresa u organismo equiparado, aprobadas en 2026",
-    "organism": "INSTITUTO ARAGONÉS DE EMPLEO (INAEM)",
-    "opensAt": null,
-    "closesAt": "2026-12-31",
-    "windowText": "Desde el día siguiente a la publicación en BOA ",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/926926",
-    "publishedAt": "2026-08-28"
-   },
-   {
-    "bdnsCode": "920637",
-    "title": "SOLICITUD PRESTACIÓN ECONÓMICA",
-    "organism": "INSTITUTO ARAGONÉS DE LA MUJER (IAM)",
-    "opensAt": "2026-01-01",
-    "closesAt": "2026-12-31",
-    "windowText": null,
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/920637",
-    "publishedAt": "2026-07-21"
-   }
-  ],
-  "CN": [
-   {
-    "bdnsCode": "927619",
-    "title": "PROGRAMA DE BECAS EN NEGOCIOS INTERNACIONALES",
-    "organism": "CONSEJERÍA DE ECONOMÍA, INDUSTRIA, COMERCIO Y AUTÓNOMOS",
-    "opensAt": "2026-09-18",
-    "closesAt": "2026-10-23",
-    "windowText": "Convocatoria becas en Negocios Internacionales 2026-27 — Veinte(20) días hábiles contados desde la fecha de inicio del plazo de presentación de solicitudes",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/927619",
-    "publishedAt": "2026-09-02"
-   },
-   {
-    "bdnsCode": "935024",
-    "title": "Ayuda Emergencia Social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-02-11",
-    "closesAt": "2026-12-31",
-    "windowText": "Sin plazo de solicitud — Sin plazo de solicitud",
-    "url": "www.gobiernodecanarias.org/dsidj",
-    "publishedAt": "2026-10-13"
-   },
-   {
-    "bdnsCode": "935023",
-    "title": "Ayuda Emergencia Social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-06-19",
-    "closesAt": "2026-12-31",
-    "windowText": "Sin plazo de solicitud — Sin plazo de solicitud",
-    "url": "www.gobiernodecanarias.org/dsidj",
-    "publishedAt": "2026-10-13"
-   },
-   {
-    "bdnsCode": "935010",
-    "title": "SUFRAGAR GASTOS EQUIPAMIENTO",
-    "organism": "PRESIDENCIA DEL GOBIERNO",
-    "opensAt": "2026-01-01",
-    "closesAt": "2026-12-31",
-    "windowText": null,
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/935010",
-    "publishedAt": "2026-10-13"
-   },
-   {
-    "bdnsCode": "935009",
-    "title": "Desarrollo de la salud comunitaria en el noroeste de Gambia",
-    "organism": "PRESIDENCIA DEL GOBIERNO",
-    "opensAt": "2026-01-01",
-    "closesAt": "2026-12-31",
-    "windowText": null,
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/935009",
-    "publishedAt": "2026-10-13"
-   },
-   {
-    "bdnsCode": "932466",
-    "title": "SDF2026TF00067 Ayuda Emergencia Social",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-05-12",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2026TF00067 Ayuda Emergencia Social 2026 — SDF2026TF00067Ayuda Emergencia Social 2026",
-    "url": "www.gobiernodecanarias.org/dsidj",
-    "publishedAt": "2026-09-30"
-   },
-   {
-    "bdnsCode": "930800",
-    "title": "CONVOCATORIA DEL BONO ALQUILER JOVEN PARA FACILITAR EL DISFRUTE DE UNA VIVIENDA O HABITACIÓN EN ALQUILER",
-    "organism": "INSTITUTO CANARIO DE LA VIVIENDA",
-    "opensAt": "2026-01-01",
-    "closesAt": "2026-12-31",
-    "windowText": null,
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930800",
-    "publishedAt": "2026-09-21"
-   },
-   {
-    "bdnsCode": "929315",
-    "title": "SDF2026TF00069 Ayudas de emergencia social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-09-09",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2026TF00069 Ayudas de emergencia social 2026 — SDF2026TF00069 Ayudas de emergencia social 2026",
-    "url": "www.gobiernodecanarias.org.dgijif",
-    "publishedAt": "2026-09-14"
-   },
-   {
-    "bdnsCode": "926974",
-    "title": "SDF2026TF00028 Ayuda de emergencia social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-03-06",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2026TF00028 Ayuda de emergencia social 2026 — SDF2026TF00028 Ayuda de emergencia social 2026",
-    "url": "www.gobiernodecanarias.org.dgijif",
-    "publishedAt": "2026-08-28"
-   },
-   {
-    "bdnsCode": "926206",
-    "title": "SDF2025TF00108 Ayudas de emergencia social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2025-11-24",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2025TF00108 Ayudas de emergencia social 2026 — SDF2025TF00108 Ayudas de emergencia social 2026",
-    "url": "www.gobiernodecanarias.org.dgijif",
-    "publishedAt": "2026-08-24"
-   },
-   {
-    "bdnsCode": "926204",
-    "title": "SDF2025GC00040 Ayudas de emergencia social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-09-25",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2025GC00040 Ayudas de emergencia social 2026 — SDF2025GC00040 Ayudas de emergencia social 2026",
-    "url": "www.gobiernodecanarias.org.dgijif",
-    "publishedAt": "2026-08-24"
-   },
-   {
-    "bdnsCode": "925469",
-    "title": "SDF2026TF00051 Ayudas de emergencia social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-04-13",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2026TF00051 Ayudas de emergencia social 2026 — SDF2026TF00051 Ayudas de emergencia social 2026",
-    "url": "www.gobiernodecanarias.org.dgijif",
-    "publishedAt": "2026-08-18"
-   },
-   {
-    "bdnsCode": "925467",
-    "title": "SDF2026TF00008 Ayudas de emergencia social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-02-06",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2026TF00008 Ayudas de emergencia social 2026 — SDF2026TF00008 Ayudas de emergencia social 2026",
-    "url": "www.gobiernodecanarias.org.dgijif",
-    "publishedAt": "2026-08-18"
-   },
-   {
-    "bdnsCode": "924973",
-    "title": "SDF2026TF00078 Ayudas de emergencia social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-07-14",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2026TF00078 Ayudas de emergencia social 2026 — SDF2026TF00078 Ayudas de emergencia social 2026",
-    "url": "www.gobiernodecanarias.org.dgijif",
-    "publishedAt": "2026-08-13"
-   },
-   {
-    "bdnsCode": "924623",
-    "title": "SDF2026TF00065 Ayuda Emergencia Social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-06-01",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2026TF00065 Ayuda Emergencia Social 2026 — SDF2026TF00065 Ayuda Emergencia Social 2026",
-    "url": "www.gobiernodecanarias.org/dsidj",
-    "publishedAt": "2026-08-11"
-   },
-   {
-    "bdnsCode": "923945",
-    "title": "SDF2026TF00074 Ayudas de emergencia social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-06-19",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2026TF00074 Ayudas de emergencia social 2026 — SDF2026TF00074 Ayudas de emergencia social 2026",
-    "url": "www.gobiernodecanarias.org.dgijif",
-    "publishedAt": "2026-08-06"
-   },
-   {
-    "bdnsCode": "923529",
-    "title": "SDF2026GC00023 Ayudas de emergencia social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-06-21",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2026GC00023 Ayudas de emergencia social 2026 — SDF2026GC00023 Ayudas de emergencia social 2026",
-    "url": "www.gobiernodecanarias.org.dgijif",
-    "publishedAt": "2026-08-04"
-   },
-   {
-    "bdnsCode": "923528",
-    "title": "SDF2026TF00049 Ayudas de emergencia social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-04-15",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2026TF00049 Ayudas de emergencia social 2026 — SDF2026TF00049 Ayudas de emergencia social 2026",
-    "url": "www.gobiernodecanarias.org.dgijif",
-    "publishedAt": "2026-08-04"
-   },
-   {
-    "bdnsCode": "923279",
-    "title": "SDF2026TF00063 Ayuda Emergencia Social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-05-14",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2026TF00063 Ayuda Emergencia Social 2026 — SDF2026TF00063 Ayuda Emergencia Social 2026",
-    "url": "www.gobiernodecanarias.org/dsidj",
-    "publishedAt": "2026-08-03"
-   },
-   {
-    "bdnsCode": "923278",
-    "title": "Ayuda Emergencia Social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-05-07",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2026TF00053 Ayuda Emergencia Social 2026 — SDF2026TF00053 Ayuda Emergencia Social 2026",
-    "url": "www.gobiernodecanarias.org/dsidj",
-    "publishedAt": "2026-08-03"
-   },
-   {
-    "bdnsCode": "923276",
-    "title": "Ayuda Emergencia Social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-07-20",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2026GC00013 Ayuda Emergencia Social 2026 — SDF2026GC00013 Ayuda Emergencia Social 2026",
-    "url": "www.gobiernodecanarias.org/dsidj",
-    "publishedAt": "2026-08-03"
-   },
-   {
-    "bdnsCode": "923275",
-    "title": "Ayuda Emergencia Social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-07-03",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2026GC00024 Ayuda Emergencia Social 2026 — SDF2026GC00024 Ayuda Emergencia Social 2026",
-    "url": "www.gobiernodecanarias.org/dsidj",
-    "publishedAt": "2026-08-03"
-   },
-   {
-    "bdnsCode": "934194",
-    "title": "TRASLADO DE FALLECIDO A SU ISLA DE REFERENCIA O PROCEDENCIA 2026",
-    "organism": "SERVICIO CANARIO DE LA SALUD",
-    "opensAt": "2026-11-01",
-    "closesAt": null,
-    "windowText": "TRASLADO DE FALLECIDO A SU ISLA DE REFERENCIA O PROCEDENCIA 2026 — TRASLADO DE FALLECIDO A SU ISLA DE REFERENCIA O PROCEDENCIA 2026",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/934194",
-    "publishedAt": "2026-10-07"
-   }
-  ],
-  "CB": [
-   {
-    "bdnsCode": "934243",
-    "title": "Subvención Nominativa a la Universidad de Cantabria destinada a la realización de cursos de verano en el 2026.",
-    "organism": "CONSEJERÍA DE INCLUSIÓN SOCIAL, JUVENTUD, FAMILIAS E IGUALDAD",
-    "opensAt": "2026-05-01",
-    "closesAt": "2026-12-31",
-    "windowText": null,
-    "url": "https://www.cantabria.es/web/atencion-a-la-ciudadania/ayudas-y-subvenciones",
-    "publishedAt": "2026-10-08"
-   },
-   {
-    "bdnsCode": "925878",
-    "title": "Subvención Nominativa al Ayuntamiento de Santander destinada a la financiación de los gastos corrientes del Programa denominado “Espaciarte”.",
-    "organism": "CONSEJERÍA DE INCLUSIÓN SOCIAL, JUVENTUD, FAMILIAS E IGUALDAD",
-    "opensAt": "2026-05-01",
-    "closesAt": "2026-12-31",
-    "windowText": null,
-    "url": "https://www.cantabria.es/web/atencion-a-la-ciudadania/ayudas-y-subvenciones",
-    "publishedAt": "2026-08-21"
-   },
-   {
-    "bdnsCode": "922707",
-    "title": "Subvención Nominativa al Colegio Oficial de Psicología de Cantabria. Programa de atención a los adolescentes y su entorno en 2026.",
-    "organism": "CONSEJERÍA DE INCLUSIÓN SOCIAL, JUVENTUD, FAMILIAS E IGUALDAD",
-    "opensAt": "2026-05-01",
-    "closesAt": "2026-12-31",
-    "windowText": null,
-    "url": "https://www.cantabria.es/web/atencion-a-la-ciudadania/ayudas-y-subvenciones",
-    "publishedAt": "2026-07-30"
-   },
-   {
-    "bdnsCode": "922693",
-    "title": "Subvención Nominativa a la Fundación Secretariado Gitano para la realización de un programa denominado Programa de promoción de la igualdad de oportunidades en integración socio-laboral de las mujeres gitanas.",
-    "organism": "CONSEJERÍA DE INCLUSIÓN SOCIAL, JUVENTUD, FAMILIAS E IGUALDAD",
-    "opensAt": "2026-05-01",
-    "closesAt": "2026-12-31",
-    "windowText": null,
-    "url": "https://www.cantabria.es/web/atencion-a-la-ciudadania/ayudas-y-subvenciones",
-    "publishedAt": "2026-07-30"
-   },
-   {
-    "bdnsCode": "915543",
-    "title": "Subvención Nominativa a a la Fundación Universidad Europea del Atlántico para la realización de un programa orientado a combatir la soledad no deseada, tejer redes de valor, prevenir la institucionalización evitable y mejorar el bienestar subjetivo.",
-    "organism": "CONSEJERÍA DE INCLUSIÓN SOCIAL, JUVENTUD, FAMILIAS E IGUALDAD",
-    "opensAt": "2026-05-01",
-    "closesAt": "2026-12-31",
-    "windowText": null,
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/915543",
-    "publishedAt": "2026-06-25"
-   },
-   {
-    "bdnsCode": "915525",
-    "title": "Subvención Nominativa a la Fundación Real  Racing Club para la realización de un programa de intervención social denominado “Memoria Racinguista”.",
-    "organism": "CONSEJERÍA DE INCLUSIÓN SOCIAL, JUVENTUD, FAMILIAS E IGUALDAD",
-    "opensAt": "2026-05-01",
-    "closesAt": "2026-12-31",
-    "windowText": null,
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/915525",
-    "publishedAt": "2026-06-25"
-   },
-   {
-    "bdnsCode": "915393",
-    "title": "SUBVENCIÓN NOMINATIVA Colegio Oficial de Psicología de Cantabria. Prevenir situaciones de aislamiento social y soledad no deseada.",
-    "organism": "CONSEJERÍA DE INCLUSIÓN SOCIAL, JUVENTUD, FAMILIAS E IGUALDAD",
-    "opensAt": "2026-05-01",
-    "closesAt": "2026-12-31",
-    "windowText": null,
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/915393",
-    "publishedAt": "2026-06-25"
-   },
-   {
-    "bdnsCode": "928096",
-    "title": "Orden FOM/10/2026, DE 7 DE SEPTIEMBRE, POR LA QUE SE APRUEBA LA CONVOCATORIA DE UNA BECA DE FORMACIÓN PRÁCTICA PARA TITULADOS UNIVERSITARIOS EN DERECHO.",
-    "organism": "CONSEJERÍA DE FOMENTO, ORDENACIÓN DELTERRITORIO Y MEDIO AMBIENTE",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "a partir del dia siguiente publicacion decreto BOC — un mes despues de la publicación extracto",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/928096",
-    "publishedAt": "2026-09-07"
-   },
-   {
-    "bdnsCode": "927527",
-    "title": "Beca de Formación práctica en la Dirección General de Formación Profesional y Educación Permanente para la realización de estudios y actividades en el área de Informática y comunicaciones",
-    "organism": "CONSEJERÍA DE EDUCACIÓN, FORMACIÓN PROFESIONAL Y UNIVERSIDADES",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Al dia siguiente de la publicación del extracto en el BOC — diez días hábiles desde el día siguiente a la publicación del extracto de la convocatoria en el BOC",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/927527",
-    "publishedAt": "2026-09-02"
-   }
-  ],
-  "CL": [
-   {
-    "bdnsCode": "929595",
-    "title": "Orden de 13 de septiembre de 2026 de la Consejería IEM, por la que se convocan ayudas al alumnado que realice su primera matrícula de primer curso de grado universitario en la Comunidad de Castilla y León, durante curso académico 2026/2027",
-    "organism": "CONSEJERÍA DE INDUSTRIA, UNIVERSIDADES, EMPLEO Y COMERCIO",
-    "opensAt": "2026-09-22",
-    "closesAt": "2026-10-21",
-    "windowText": null,
-    "url": "https://www.tramitacastillayleon.jcyl.es/",
-    "publishedAt": "2026-09-15"
-   },
-   {
-    "bdnsCode": "930412",
-    "title": "Orden de 17 de septiembre de 2026, de la Consejería de Industria, Universidades, Empleo y Comercio, por la que se convocan ayudas al estudio de idiomas para alumnos universitarios, durante el curso académico 2025/2026.",
-    "organism": "CONSEJERÍA DE INDUSTRIA, UNIVERSIDADES, EMPLEO Y COMERCIO",
-    "opensAt": "2026-09-29",
-    "closesAt": "2026-10-27",
-    "windowText": null,
-    "url": "https://www.tramitacastillayleon.jcyl.es/",
-    "publishedAt": "2026-09-18"
-   },
-   {
-    "bdnsCode": "927851",
-    "title": "Orden de 30 de agosto de 2026,de la Consejería de Industria, Universidades, Empleo y Comercio, por la que se convocan subvenciones dirigidas a trabajadores afectados por expedientes temporales de regulación de empleo para recuperación de zonas incendios",
-    "organism": "CONSEJERÍA DE INDUSTRIA, UNIVERSIDADES, EMPLEO Y COMERCIO",
-    "opensAt": "2026-09-10",
-    "closesAt": "2026-11-06",
-    "windowText": null,
-    "url": "https://www.tramitacastillayleon.jcyl.es/",
-    "publishedAt": "2026-09-04"
-   },
-   {
-    "bdnsCode": "932041",
-    "title": "Orden de 28/09/2026 de la Consejería de Movilidad, Transformación Digital e Inteligencia Artificial por la que se convocan subvenciones para facilitar la obtención del permiso de conducción de la clase B a las personas jóvenes de Castilla y León.",
-    "organism": "CONSEJERÍA DE MOVILIDAD, TRANSFORMACIÓN DIGITAL E INTELIGENCIA ARTIFICIAL",
-    "opensAt": "2026-10-01",
-    "closesAt": "2027-01-15",
-    "windowText": null,
-    "url": " https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla100Detalle/1251181050732/Ayuda012/1285684640457/Propuesta",
-    "publishedAt": "2026-09-28"
-   },
-   {
-    "bdnsCode": "934426",
-    "title": "Acuerdo de 1 de octubre de 2026, de la Junta de Castilla y León por el que se autoriza la concesión directa de una subvención a Aging to the Future para financiar el Plan de Marketing, posicionamiento y visibilidad del IV Congreso Internacional de Economí",
-    "organism": "CONSEJERÍA DE ECONOMÍA Y HACIENDA",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Sin plazo de solicitud — Sin plazo de solicitud",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/934426",
-    "publishedAt": "2026-10-08"
-   }
-  ],
-  "CM": [
-   {
-    "bdnsCode": "926667",
-    "title": "Resolución de la DG Humanización y Atención Sociosanitaria: subvenciones destinadas a la atención a personas con enfermedades raras y sus familias 2026",
-    "organism": "DIRECCIÓN GENERAL DE HUMANIZACIÓN Y ATENCIÓN SOCIOSANITARIA",
-    "opensAt": null,
-    "closesAt": "2026-10-31",
-    "windowText": "El día siguiente al de la publicación en el DOCM",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/926667",
-    "publishedAt": "2026-08-27"
-   },
-   {
-    "bdnsCode": "933977",
-    "title": "Actuaciones de rehabilitación y mejora de la eficiencia energética en viviendas y edificios de viviendas de CLM, cofinanciadas FEDER 2021-2027. Convocatoria 2026",
-    "organism": "DIRECCIÓN GENERAL DE VIVIENDA",
-    "opensAt": "2026-10-27",
-    "closesAt": "2026-11-30",
-    "windowText": "Desde 09:00h del día en el que hubiera transcurrido plazo 10 días hábiles desde publicación en DOCM — 30 noviembre 2026",
-    "url": "https://www.jccm.es",
-    "publishedAt": "2026-10-07"
-   },
-   {
-    "bdnsCode": "931563",
-    "title": "Orden 134/2026 de 23 septiembre Consejería de Fomento, bases reguladoras y convocatoria de las subvenciones a la mejora de la accesibilidad en y a viviendas de CLM 26",
-    "organism": "DIRECCIÓN GENERAL DE VIVIENDA",
-    "opensAt": "2026-10-01",
-    "closesAt": "2026-11-30",
-    "windowText": "Desde el día siguiente de la publicación de esta convocatoria. — Hasta el 30 de noviembre 2026",
-    "url": "https://www.jccm.es",
-    "publishedAt": "2026-09-24"
-   },
-   {
-    "bdnsCode": "927475",
-    "title": "CONVOCATORIA DE AYUDAS GARANTÍA JUVENIL- AÑO 2026CONSEJERÍA DE EDUCACIÓN CULTURA Y DEPORTES Y FSE.",
-    "organism": "SECRETARÍA GENERAL DE EDUCACIÓN, CULTURA Y DEPORTES",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Desde el día siguiente a la publicación de la resolución de la convocatoria en el DOCM CLM. — Un mes desde el día siguiente a la publicación de la resolución de la convocatoria en el DOCM CLM.",
-    "url": "www.jccm.es",
-    "publishedAt": "2026-09-02"
-   }
-  ],
-  "CT": [
-   {
-    "bdnsCode": "923775",
-    "title": "Convocatoria plurianual para la concesión de las prestaciones para el pago del alquiler en la ciudad de Barcelona del año 2026, con cargo a los presupuestos de los años 2026 y 2027",
-    "organism": "CONSORCIO DE LA VIVIENDA DE BARCELONA",
-    "opensAt": "2026-09-07",
-    "closesAt": "2026-10-16",
-    "windowText": null,
-    "url": "https://habitatge.barcelona/cat   i   http://www.bcn.cat/consorcihabitatge/ca/home.html",
-    "publishedAt": "2026-08-06"
-   },
-   {
-    "bdnsCode": "921364",
-    "title": "Convocatoria plurianual de ayudas a la rehabilitación por actuaciones de accesibilidad a la ciudad de Barcelona para el año 2026 con cargo a los presupuestos de los años 2026, 2027 y 2028",
-    "organism": "CONSORCIO DE LA VIVIENDA DE BARCELONA",
-    "opensAt": null,
-    "closesAt": "2026-10-30",
-    "windowText": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
-    "url": "https://habitatge.barcelona/ca   i   http://www.bcn.cat/consorcihabitatge/ca/home.html",
-    "publishedAt": "2026-07-24"
-   },
-   {
-    "bdnsCode": "920036",
-    "title": "Procedimiento de las becas Equidad y para la obtención de la acreditación del tramo de renta familiar",
-    "organism": "AGÈNCIA DE GESTIÓ D'AJUTS UNIVERSITARIS I DE RECERCA (AGAUR)",
-    "opensAt": "2026-09-15",
-    "closesAt": "2026-10-30",
-    "windowText": null,
-    "url": "Portal tràmits",
-    "publishedAt": "2026-07-17"
-   },
-   {
-    "bdnsCode": "933847",
-    "title": "Beca que tiene por objetivo abrir un espacio de experimentacion curatorial de personas y colectivos jóvenes, así como favorecer su profesionalizacion.",
-    "organism": "AGÈNCIA CATALANA DE LA JOVENTUT",
-    "opensAt": "2026-10-09",
-    "closesAt": "2026-11-09",
-    "windowText": null,
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/933847",
-    "publishedAt": "2026-10-06"
-   },
-   {
-    "bdnsCode": "921706",
-    "title": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES A LA REHABILITACIÓN Y MEJORA DE LAS VIVIENDAS EN LA CIUDAD DE BARCELONA",
-    "organism": "CONSORCIO DE LA VIVIENDA DE BARCELONA",
-    "opensAt": null,
-    "closesAt": "2026-12-31",
-    "windowText": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
-    "url": "https://habitatge.barcelona/ca   i   http://www.bcn.cat/consorcihabitatge/ca/home.html",
-    "publishedAt": "2026-07-27"
-   },
-   {
-    "bdnsCode": "917685",
-    "title": "Procedimiento para la obtención de una acreditación para las estudiantes víctimas de violencia machista fuera del ámbito de la pareja para la exención total de los precios fijados en el decreto anual de precios públicos en las universidades públicas de Ca",
-    "organism": "AGÈNCIA DE GESTIÓ D'AJUTS UNIVERSITARIS I DE RECERCA (AGAUR)",
-    "opensAt": "2026-07-11",
-    "closesAt": "2027-02-26",
-    "windowText": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/917685",
-    "publishedAt": "2026-07-07"
-   },
-   {
-    "bdnsCode": "934569",
-    "title": "RESOLUCIÓN BECAS FP DUAL CURSO 2026-2027",
-    "organism": "CONSORCI D'EDUCACIÓ DE BARCELONA",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Sense termini de presentació de sol·licitud — Sense termini de presentació de sol·licitud",
-    "url": "edubcn.cat",
-    "publishedAt": "2026-10-09"
-   },
-   {
-    "bdnsCode": "932691",
-    "title": "Convenio de cooperación educativa CCUC Khadija del 15-09-26 al 18-06-27",
-    "organism": "CONSORCI DE SERVEIS UNIVERSITARIS DE CATALUNYA (CSUC)",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Sense termini de presentació de sol·licitud — Sense termini de presentació de sol·licitud",
-    "url": "https://www.csuc.cat/ca/treballa-al-csuc",
-    "publishedAt": "2026-09-30"
-   }
-  ],
-  "CE": [
-   {
-    "bdnsCode": "923866",
-    "title": "4ª Convocatoria de ayudas públicas destinadas al Programa de Formación para el Empleo, Medida 1A04 del FSE+21-27 Ceuta",
-    "organism": "PROCESA SOCIEDAD DE DESARROLLO DE CEUTA",
-    "opensAt": null,
-    "closesAt": "2026-10-16",
-    "windowText": "día siguiente a la publicación en el Bocce",
-    "url": "procesa.es",
-    "publishedAt": "2026-08-06"
-   },
-   {
-    "bdnsCode": "914226",
-    "title": "CONVENIO SUBVENCIÓN NOMINATIVA CENTRO DLE MAYOR CRUZ ROJA 2026",
-    "organism": "CONSEJERÍA DE SANIDAD Y SERVICIOS SOCIALES",
-    "opensAt": "2026-01-01",
-    "closesAt": "2026-12-31",
-    "windowText": null,
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/914226",
-    "publishedAt": "2026-06-19"
-   },
-   {
-    "bdnsCode": "914224",
-    "title": "CONVENIO SUBVENCIÓN NOMINATIVA CRUZ ROJA ATENCIÓN INTEGRAL Y SOLEDAD NO DESEADA DE PERSONAS MAYORES",
-    "organism": "CONSEJERÍA DE SANIDAD Y SERVICIOS SOCIALES",
-    "opensAt": "2026-01-01",
-    "closesAt": "2026-12-31",
-    "windowText": null,
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/914224",
-    "publishedAt": "2026-06-19"
-   }
-  ],
-  "MD": [
-   {
-    "bdnsCode": "934570",
-    "title": "AYUDAS 2026 FAMILIAS CON PACIENTES A CARGO, PATOLOGÍA CRÓNICA COMPLEJA",
-    "organism": "CONSEJERÍA DE FAMILIA, JUVENTUD Y ASUNTOS SOCIALES",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "DESDE EL DÍA SIGUIENTE A LA PUBLICACIÓN DEL ACUERDO DE CG EN BOCM — HASTA EL 31/12/2026",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/934570",
-    "publishedAt": "2026-10-09"
-   }
-  ],
-  "NC": [
-   {
-    "bdnsCode": "920490",
-    "title": "Subvenciones para obras de mejora y/o adecuación interior en viviendas que se incorporen a la Bolsa de Alquiler o que se acojan al programa de “rehabilitación por renta” durante el año 2026",
-    "organism": "DEPARTAMENTO DE VIVIENDA, JUVENTUD Y POLÍTICAS MIGRATORIAS",
-    "opensAt": null,
-    "closesAt": "2026-11-01",
-    "windowText": "día siguiente de la publicación de la convocatoria en el BON —  Cuando se agote el crédito presupuestario, y en todo caso, el 1 de noviembre de 2026.",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/920490",
-    "publishedAt": "2026-07-21"
-   },
-   {
-    "bdnsCode": "917082",
-    "title": "Subvenciones para la fotoprotección, durante el año 2026, de las personas diagnosticadas de lupus.",
-    "organism": "DEPARTAMENTO DE SALUD",
-    "opensAt": null,
-    "closesAt": "2026-11-16",
-    "windowText": "Día siguiente de su publicación en el Boletín Oficial de Navarra — 16 de noviembre de 2026",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/917082",
-    "publishedAt": "2026-07-03"
-   },
-   {
-    "bdnsCode": "930966",
-    "title": "Convocatoria de ayudas individuales para la formación del profesorado en el curso 2026-2027",
-    "organism": "DEPARTAMENTO DE EDUCACION",
-    "opensAt": "2027-09-01",
-    "closesAt": "2027-09-15",
-    "windowText": "1 de septiembre 2027 — 15 de septiembre 2027",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930966",
-    "publishedAt": "2026-09-22"
-   },
-   {
-    "bdnsCode": "932808",
-    "title": "Subvención para proyectos comunitarios de interés social AUZOLAN 2027",
-    "organism": "INSTITUTO NAVARRO DE JUVENTUD",
-    "opensAt": null,
-    "closesAt": "2027-10-31",
-    "windowText": "Desde el día siguiente a la publicación de la convocatoria en el Boletín Oficial de Navarra",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/932808",
-    "publishedAt": "2026-10-01"
-   },
-   {
-    "bdnsCode": "934094",
-    "title": "Beca de formación para personas licenciadas o graduadas en Derecho con destino en la Secretaría General Técnica del Departamento de Salud",
-    "organism": "DEPARTAMENTO DE SALUD",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Desde el día siguiente a la publicación de la convocatoria en Boletín Oficial de Navarra — 15 días naturales a contar desde el día siguiente al de la publicación de la convocatoria en el BON",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/934094",
-    "publishedAt": "2026-10-07"
-   },
-   {
-    "bdnsCode": "934045",
-    "title": "Becas equidad para el acceso a la educación superior de jóvenes procedentes de entornos de bajos ingresos 2026",
-    "organism": "DEPARTAMENTO DE UNIVERSIDAD, INNOVACION Y TRANSFORMACION DIGITAL",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "A partir del día siguiente a la publicación de la convocatoria en en el BON — 15 dias hábiles a partir del día siguiente a la publicación de la convocatoria en el BON",
-    "url": "www.navarra.es",
-    "publishedAt": "2026-10-07"
-   },
-   {
-    "bdnsCode": "929118",
-    "title": "Convocatoria General de Becas del Curso 2026/2027, para el alumnado que curse estudios universitarios",
-    "organism": "DEPARTAMENTO DE UNIVERSIDAD, INNOVACION Y TRANSFORMACION DIGITAL",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Un mes a contar desde la publicación de la convocatoria en el B.O.N. — Un mes",
-    "url": "www.navarra.es",
-    "publishedAt": "2026-09-14"
-   },
-   {
-    "bdnsCode": "927085",
-    "title": "Concesión de subvenciones para la realización de proyectos innovadores y experimentales en materia de empleo y emprendimiento en el ámbito de la comunidad foral de navarra",
-    "organism": "SERVICIO NAVARRO DE EMPLEO - NAFAR LANSARE",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "15 días hábiles a contar desde el día siguiente al de la publicación de la convocatoria en el BON — Tras 15 días hábiles desde el día siguiente al de la publicación de la convocatoria en el BON",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/927085",
-    "publishedAt": "2026-08-31"
-   }
-  ],
-  "VC": [
-   {
-    "bdnsCode": "930830",
-    "title": "Subvenciones para la realización del informe de evaluación del edificio de uso residencial de vivienda en la Comunitat Valenciana (IEEV.CV)",
-    "organism": "SECRETARÍA AUTONÓMICA DE VIVIENDA",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "DÍA SIGUIENTE AL DE LA PUBLICACIÓN DE LA CONVOCATORIA EN EL DOGV — DOS MESES CONTADOS A PARTIR DEL DÍA SIGUIENTE DE LA PUBLICACIÓN DE LA CONVOCATORIA EN EL DOGV",
-    "url": "https://sede.gva.es/es/",
-    "publishedAt": "2026-09-22"
-   },
-   {
-    "bdnsCode": "915844",
-    "title": "Resolución de 26 de junio de 2026 de la Conselleria de Educación, Cultura y Universidades, por la cual se convocan ayudas individuales para el servicio de transporte escolar para el curso 2026-2027 (SEC)",
-    "organism": "SECRETARÍA AUTONÓMICA DE EDUCACIÓN",
-    "opensAt": "2026-07-02",
-    "closesAt": null,
-    "windowText": "Desde el día siguiente a su publicación en el DOGV",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/915844",
-    "publishedAt": "2026-06-26"
-   },
-   {
-    "bdnsCode": "915836",
-    "title": "Resolución de 26 de junio de 2026 de la Conselleria de Educación, Cultura y Universidades, por la cual se convocan ayudas individuales para el servicio de transporte escolar para el curso 2026-2027 (PRIM)",
-    "organism": "SECRETARÍA AUTONÓMICA DE EDUCACIÓN",
-    "opensAt": "2026-07-02",
-    "closesAt": null,
-    "windowText": "Desde el día siguiente a su publicación en el DOGV",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/915836",
-    "publishedAt": "2026-06-26"
-   },
-   {
-    "bdnsCode": "915834",
-    "title": "Resol. 26/06/2026 de la Conselleria de Educación, Cultura y Universidades por la cual se convoca la concesión de ayudas de comedor escolar en los centros docentes no universitarios públicos y privados concertados para el curso escolar 2026-2027 (SEC)",
-    "organism": "SECRETARÍA AUTONÓMICA DE EDUCACIÓN",
-    "opensAt": "2026-07-02",
-    "closesAt": null,
-    "windowText": "Desde el día siguiente a su publicación en el DOGV",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/915834",
-    "publishedAt": "2026-06-26"
-   },
-   {
-    "bdnsCode": "915829",
-    "title": "Resol. 26/06/2026 de la Conselleria de Educación, Cultura y Universidades por la cual se convoca la concesión de ayudas de comedor escolar en los centros docentes no universitarios públicos y privados concertados para el curso escolar 2026-2027 (PRIM)",
-    "organism": "SECRETARÍA AUTONÓMICA DE EDUCACIÓN",
-    "opensAt": "2026-07-02",
-    "closesAt": null,
-    "windowText": "Desde el día siguiente a su publicación en el DOGV",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/915829",
-    "publishedAt": "2026-06-26"
-   }
-  ],
-  "EX": [
-   {
-    "bdnsCode": "934974",
-    "title": "Ayudas curso 2026/2027 para el estudio de ingés en horario extraexcolar, según Resolución de 30 de septiembre de 2026, que las convoca.",
-    "organism": "ENTE PÚBLICO EXTREMEÑO DE SERVICIOS EDUCATIVOS COMPLEMENTARIOS",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "A PARTIR DEL DIA SIGUIENTE A LA PUBLICACIÓN EN DOE DE CONVOCATORIA Y EXTRACTO — 15 DÍAS HÁBILES A PARTIR DEL SIGUIENTE A PUBLICACIÓN EN DOE DE CONVOCATORIA Y EXTRACTO",
-    "url": "https://www.juntaex.es/w/0684524",
-    "publishedAt": "2026-10-13"
-   },
-   {
-    "bdnsCode": "934836",
-    "title": "Subvenciones curso 2026/2027 auxiliares de conversación con destino en centros educativos sostenidos con fondos públicos de la CA de Extremadura, según Resolución de 25 de septiembre de 2026 que convoca",
-    "organism": "SECRETARÍA GENERAL DE EDUCACIÓN",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "desde publicación de convocatoria — 10 días hábiles",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/934836",
-    "publishedAt": "2026-10-13"
-   },
-   {
-    "bdnsCode": "929941",
-    "title": "Subv. 2026 a familias para servicios de cuidados de menores de 3 años como medida de fomento de la conciliación de la vida personal, familiar y laboral, s/ RESOLUCIÓN de 9 de septiembre de 2026, del Secretario General que convoca",
-    "organism": "SECRETARÍA GENERAL DE IGUALDAD Y CONCILIACIÓN",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Al día siguiente de su publicación en DOE — Hasta el 05 de noviembre de 2026",
-    "url": "https://juntaex.es/w/0690524",
-    "publishedAt": "2026-09-16"
-   },
-   {
-    "bdnsCode": "927027",
-    "title": "Convocatoria 2026 becas y ayudas a alumnos en acciones formativas no conducentes a certificados profesionales dirigidas a personas desempleadas, según Resolución de 29 de julio de 2026 que las convoca.",
-    "organism": "SERVICIO EXTREMEÑO PÚBLICO DE EMPLEO (SEXPE)",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Día siguiente al de la publicación de la resolución de convocatoria y extracto en el DOE — Un año desde día siguiente publicación resolución de convocatoria y extracto en el DOE",
-    "url": "https://sexpeemplea.juntaex.es/ayudas_becas_y_ayudas",
-    "publishedAt": "2026-08-31"
-   },
-   {
-    "bdnsCode": "927026",
-    "title": "Convocatoria 2026 becas y ayudas a alumnos de acciones formativas conducentes a certificados profesionales dirigidas a personas desempleadas, según Resolución de 29 de julio de 2026 que las convoca.",
-    "organism": "SERVICIO EXTREMEÑO PÚBLICO DE EMPLEO (SEXPE)",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Día siguiente al de la publicación de la resolución de convocatoria y extracto en el DOE — Un año desde día siguiente publicación resolución de convocatoria y extracto en el DOE",
-    "url": "https://sexpeemplea.juntaex.es/ayudas_becas_y_ayudas",
-    "publishedAt": "2026-08-31"
-   },
-   {
-    "bdnsCode": "914545",
-    "title": "Ayudas 2026-2027 del BONO ALQUILER JOVEN, según Resolución de 17 de junio de 2026 por la que se convocan.",
-    "organism": "SECRETARÍA GENERAL DE VIVIENDA, ARQUITECTURA, ACCESIBILIDAD Y REGENERACIÓN URBANA",
-    "opensAt": "2026-07-15",
-    "closesAt": null,
-    "windowText": "El día de la publicación en DOE del anuncio de terminación",
-    "url": "https://www.juntaex.es/w/6073",
-    "publishedAt": "2026-06-22"
-   }
-  ],
-  "GA": [
-   {
-    "bdnsCode": "923182",
-    "title": "ORDEN de 31 de julio de 2026, por la que se establecen las bases reguladoras de la concesión de ayudas económicas a las familias con personas en situación de dependencia o con discapacidad, a través del programa Respiro Familiar para personas cuidadoras y",
-    "organism": "CONSELLERÍA DE POLÍTICA SOCIAL E IGUALDAD",
-    "opensAt": "2026-08-10",
-    "closesAt": "2026-10-15",
-    "windowText": "10/08/2026 — 15/10/2026",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/923182",
-    "publishedAt": "2026-08-03"
-   },
-   {
-    "bdnsCode": "922377",
-    "title": "ORDEN de 20 de julio de 2026 por la que se establecen las bases reguladoras de las ayudas económicas dirigidas a las personas con esclerosis lateral amiotrófica o de sus fenotipos para el año 2026 y se procede a su convocatoria (código de procedimiento BS",
-    "organism": "CONSELLERÍA DE POLÍTICA SOCIAL E IGUALDAD",
-    "opensAt": "2026-08-07",
-    "closesAt": "2026-11-03",
-    "windowText": "5 DÍAS HABILES TRAS PUBLICAICÓN NO DOG",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/922377",
-    "publishedAt": "2026-07-29"
-   },
-   {
-    "bdnsCode": "925229",
-    "title": "Resolución por la que se establecen las bases reguladoras de las ayudas para la adquisición o autopromoción de viviendas en ayuntamientos de la Comunidad Autónoma de Galicia con población residente igual o inferior a 10.000 habitan",
-    "organism": "INSTITUTO GALLEGO DE LA VIVIENDA Y SUELO (IGVS)",
-    "opensAt": "2026-08-27",
-    "closesAt": "2026-11-16",
-    "windowText": "27/08/2026 — 16/11/2026",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/925229",
-    "publishedAt": "2026-08-17"
-   },
-   {
-    "bdnsCode": "925541",
-    "title": "Convenio de colaboración entre a Consellería de Cultura, Lingua e Xuventude e a Fundación Semana Verde de Galicia para a organización e o desenvolvemento dun Encontro informático no ano 2026",
-    "organism": "CONSELLERÍA DE CULTURA, LENGUA Y JUVENTUD",
-    "opensAt": "2026-01-01",
-    "closesAt": "2026-12-15",
-    "windowText": "01/01/2026",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/925541",
-    "publishedAt": "2026-08-19"
-   },
-   {
-    "bdnsCode": "927442",
-    "title": "Convenio de Colaboración entre a Conselleria de Política Social e Igualdade e Cruz Roja Española en Galicia para a execución do programa sen Teito de apoio a persoas sen fogar ou en situación de vulnerabilidade extrema, no exercicio 2026.",
-    "organism": "CONSELLERÍA DE POLÍTICA SOCIAL E IGUALDAD",
-    "opensAt": "2026-09-01",
-    "closesAt": "2026-12-31",
-    "windowText": null,
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/927442",
-    "publishedAt": "2026-09-02"
-   },
-   {
-    "bdnsCode": "913660",
-    "title": "Orden de 20 de mayo de 2026 por la que se convocan plazas de residencia en los centros residenciales docentes de A Coruña, Ourense y Vigo para realizar estudios postobrigatorios no universitarios en el curso 2026/27 (código de procedimiento ED306A)",
-    "organism": "CONSELLERÍA DE EDUCACIÓN, CIENCIA, UNIVERSIDADES E FORMACIÓN PROFESIONAL",
-    "opensAt": "2026-06-20",
-    "closesAt": "2027-06-21",
-    "windowText": null,
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/913660",
-    "publishedAt": "2026-06-17"
-   },
-   {
-    "bdnsCode": "928924",
-    "title": "Convenio colaboración Consellería de Cultura, Lengua y Juventud de la Xunta de Galicia y el Consorcio para el Desarrollo de Aplicaciones para la Gestión Universitaria para la puesta en marcha en 2026 y 2027 programa integral de formación y mentoring",
-    "organism": "CONSELLERÍA DE CULTURA, LENGUA Y JUVENTUD",
-    "opensAt": "2026-09-10",
-    "closesAt": "2027-09-15",
-    "windowText": null,
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/928924",
-    "publishedAt": "2026-09-11"
-   },
-   {
-    "bdnsCode": "932328",
-    "title": "Resolución de 28 de septiembre de 2026 de la Fundación Pública Galicia Europa por la que se convoca una beca de formación, dirigida a personas con un título universitario, para la realización de prácticas en materia de políticas y programas europeos en el",
-    "organism": "FUNDACIÓN GALICIA EUROPA",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Día seguinte á publicación no DOG — Un mes contado a partir da súa publicación",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/932328",
-    "publishedAt": "2026-09-29"
-   },
-   {
-    "bdnsCode": "914773",
-    "title": "Orde do 22 xuño de 2026 pola que se establecen as bases polas que se rexerá a concesión dunha axuda económica ás familias usuarias dos comedores escolares dos centros docentes sustentados con fondos públicos non xestionados pola Consellería de Educación,",
-    "organism": "CONSELLERÍA DE EDUCACIÓN, CIENCIA, UNIVERSIDADES E FORMACIÓN PROFESIONAL",
-    "opensAt": "2026-06-26",
-    "closesAt": null,
-    "windowText": "8 días do día seguinte ao da sua publicación — Un mes",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/914773",
-    "publishedAt": "2026-06-23"
-   }
-  ],
-  "IB": [
-   {
-    "bdnsCode": "933920",
-    "title": "Resolución del Consejero de Educación y Universidades por la cual se convocan ayudas de promoción de la excelencia académica para estudiantes que hayan finalizado los estudios oficiales de enseñanza artítica superior 24-25",
-    "organism": "DIRECCIÓN GENERAL DE UNIVERSIDADES, INVESTIGACIÓN Y ENSEÑANZAS ARTÍSTICAS SUPERIORES",
-    "opensAt": "2026-10-13",
-    "closesAt": "2026-10-26",
-    "windowText": "13.00 h del 13 d’octubre de 2026 — 13.00 h del 26 d’octubre de 2026",
-    "url": "https://eas.caib.es",
-    "publishedAt": "2026-10-07"
-   },
-   {
-    "bdnsCode": "933919",
-    "title": "Resolución del consejero de Educación y Universidades por la cual se convocan auydas de desplazamiento para alumnos de las Illes Balears que cursen estudios oficiales de ensañanza artítica superior en la Unión europea 2025-2026",
-    "organism": "DIRECCIÓN GENERAL DE UNIVERSIDADES, INVESTIGACIÓN Y ENSEÑANZAS ARTÍSTICAS SUPERIORES",
-    "opensAt": "2026-10-13",
-    "closesAt": "2026-10-26",
-    "windowText": "A les 13.00 h del 13 d’octubre de 2026 — Finalitza a les 13.00 h del 26 d’octubre de 2026",
-    "url": "https://eas.caib.es",
-    "publishedAt": "2026-10-07"
-   }
-  ],
-  "RI": [
-   {
-    "bdnsCode": "922396",
-    "title": "CS PLAN RENOVE ELECTRODOMÉSTICOS BAJO CONSUMO ENERGÉTICO-particulares",
-    "organism": "CONSEJERÍA DE ECONOMÍA, INNOVACIÓN, EMPRESA Y TRABAJO AUTÓNOMO",
-    "opensAt": null,
-    "closesAt": "2026-10-31",
-    "windowText": "El día siguiente de su publicación en el BOR",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/922396",
-    "publishedAt": "2026-07-29"
-   },
-   {
-    "bdnsCode": "923134",
-    "title": "Aux conversación Fulbright 2026/2027",
-    "organism": "CONSEJERÍA DE EDUCACIÓN Y EMPLEO",
-    "opensAt": "2026-09-15",
-    "closesAt": "2027-06-14",
-    "windowText": "15/09/2026 — 14/06/2027",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/923134",
-    "publishedAt": "2026-08-03"
-   },
-   {
-    "bdnsCode": "932784",
-    "title": "Ayudas individualizadas de transporte escolar, curso 2026/2027",
-    "organism": "CONSEJERÍA DE EDUCACIÓN Y EMPLEO",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "a partir del día siguiente a la publicación del extracto en el BOR — diez días hábiles siguientes",
-    "url": "https://web.larioja.org/oficina-electronica/tramite?n=02587",
-    "publishedAt": "2026-10-01"
-   },
-   {
-    "bdnsCode": "928754",
-    "title": "Subv.actuaciones mejora del medio y de infraestructuras en terrenos cinegéticos",
-    "organism": "CONSEJERÍA DE AGRICULTURA, GANADERÍA, MUNDO RURAL Y MEDIO AMBIENTE",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "A partir del día siguiente a la publicación del extracto de la convocatoria en el BOR — 1 mes a partir del día siguiente a la publicación en el BOR",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/928754",
-    "publishedAt": "2026-09-10"
-   },
-   {
-    "bdnsCode": "928746",
-    "title": "Becas de Diseño de Producto 2026 (Ejecución 2027)",
-    "organism": "AGENCIA DE DESARROLLO ECONÓMICO DE LA RIOJA",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Desde la publicación de la convocatoria en el BOR — Sin determinar hasta la publicación de la convocatoria en el BOR",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/928746",
-    "publishedAt": "2026-09-10"
-   },
-   {
-    "bdnsCode": "928691",
-    "title": "Becas Acción Exterior 2026 (Ejecución 2027)",
-    "organism": "AGENCIA DE DESARROLLO ECONÓMICO DE LA RIOJA",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Desde la publicación de la convocatoria en el BOR — Sin determinar hasta la publicación de la convocatoria en el BOR",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/928691",
-    "publishedAt": "2026-09-10"
-   },
-   {
-    "bdnsCode": "928236",
-    "title": "Convenio con Cruz Roja Española.Emergencias y Protección Civil",
-    "organism": "CONSEJERÍA DE SALUD Y POLÍTICAS SOCIALES",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "No tiene — No tiene",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/928236",
-    "publishedAt": "2026-09-08"
-   }
-  ],
-  "ML": [
-   {
-    "bdnsCode": "914322",
-    "title": "ACUERDO CONSEJO DE GOBIERNO, DE 5 DE JUNIO DE 2026, RELATIVO A CONVENIO DE COLABORACIÓN ENTRE LA CONSEJERÍA DE MEDIO AMBIENTE Y NATURALEZA DE LA CAM Y BUCEOMELILLA",
-    "organism": "CONSEJERÍA DE MEDIO AMBIENTE Y NATURALEZA",
-    "opensAt": "2026-06-20",
-    "closesAt": "2026-12-31",
-    "windowText": "AL DÍA SIGUIENTE DE LA PUBLICACIÓN EN EL BOME — TREINTA Y UNO DE DICIEMBRE DE DOS MIL VEINTESEIS ",
-    "url": "https://sede.melilla.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
-    "publishedAt": "2026-06-19"
-   }
-  ],
-  "PV": [],
-  "AS": [
-   {
-    "bdnsCode": "931080",
-    "title": "Ayudas para compensación de gastos extraordinarios de accidentes de tráfico del personal docente y laboral de la Consejería de Educación_2026",
-    "organism": "CONSEJERÍA DE EDUCACIÓN",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Día siguiente a la publicación del extracto — Diez días hábiles desde publicación del extracto",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931080",
-    "publishedAt": "2026-09-22"
-   },
-   {
-    "bdnsCode": "930828",
-    "title": "Convocatoria ordinaria de Ayudas Individualizadas en materia de Transporte Escolar durante el curso escolar 2026/2027",
-    "organism": "CONSEJERÍA DE EDUCACIÓN",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Dia siguiente de la publicacion del extracto — 15 días, desde dia siguiente publicacion extracto",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930828",
-    "publishedAt": "2026-09-22"
-   }
-  ],
-  "MC": [
-   {
-    "bdnsCode": "931889",
-    "title": "SUBVENCIÓN NOMINATIVA A LA RED DE LUCHA CONTRA LA POBREZA Y LA EXCLUSIÓN SOCIAL DE LA REGIÓN DE MURCIA (EAPN-RM)",
-    "organism": "CONSEJERÍA DE POLÍTICA SOCIAL, FAMILIAS E IGUALDAD",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Sin plazo de solicitud — Sin plazo de solicitud",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931889",
-    "publishedAt": "2026-09-28"
-   }
-  ]
- }
+  "generatedAt": "2026-10-17",
+  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
+  "byRegion": {
+    "AN": [
+      {
+        "bdnsCode": "935159",
+        "title": "Resolución de 5 de Octubre de 2026 por la que se modifica la convocatoria de 12 de marzo de 2026, de la AAE por la que se convocan incentivos para la concesión de incentivos del PLAN RENOVE VEHÍCULOS ANDALUCÍA",
+        "organism": "AGENCIA ANDALUZA DE LA ENERGÍA",
+        "opensAt": null,
+        "closesAt": null,
+        "windowText": "9:00 horas del día 7 de octubre  de 2026 — Hasta que se declare su finalización mediante Resolución de la Dirección Gerencia de la Agencia Anda",
+        "url": "www.agenciaandaluzadelaenergia.es",
+        "publishedAt": "2026-10-14"
+      },
+      {
+        "bdnsCode": "920309",
+        "title": "Resolución de la Dirección General de Formación Profesional para el Empleo, por la que se convocan para el año 2026 las subvenciones públicas previstas en la Orden de 13 de septiembre de 2021, por la que se regula el programa de empleo y formación en la C",
+        "organism": "CONSEJERÍA DE EMPLEO, EMPRESA Y TRABAJO AUTÓNOMO",
+        "opensAt": "2026-07-25",
+        "closesAt": null,
+        "windowText": "El día siguiente al de publicación, en el Boletí",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/920309",
+        "publishedAt": "2026-07-20"
+      },
+      {
+        "bdnsCode": "919648",
+        "title": "Resolucion de 16 de julio de 2026, destinadas a la financiación de la oferta formativa de Formación Profesional y Formación en el Trabajo en el sector Naval, dirigida a personas trabajadoras desempleadas en la provincia de Cádiz. Linea 2 FP Grado C presen",
+        "organism": "CONSEJERÍA DE EMPLEO, EMPRESA Y TRABAJO AUTÓNOMO",
+        "opensAt": "2026-07-22",
+        "closesAt": null,
+        "windowText": "el día siguiente al que se publique el extracto en el BOJA — 15 días naturales",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/919648",
+        "publishedAt": "2026-07-16"
+      },
+      {
+        "bdnsCode": "919639",
+        "title": "Resolucion de 16 de julio 2026 destinadas a la financiación de la oferta formativa de Formación Profesional y Formación en el Trabajo en el sector Naval, dirigida a personas trabajadoras desempleadas en la provincia de Cádiz. Linea 1 modalidad presencial",
+        "organism": "CONSEJERÍA DE EMPLEO, EMPRESA Y TRABAJO AUTÓNOMO",
+        "opensAt": "2026-07-22",
+        "closesAt": null,
+        "windowText": "el día siguiente al que se publique el extracto en Boja — 15 ddías naturales",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/919639",
+        "publishedAt": "2026-07-16"
+      }
+    ],
+    "AR": [
+      {
+        "bdnsCode": "926926",
+        "title": "ORDEN Consejera Economía, Competitividad y Empleo, por la que se convoca para el 2026, programa becas y ayudas para personas trabajadoras desempleadas que participen en acciones formativas y formación en empresa u organismo equiparado, aprobadas en 2026",
+        "organism": "INSTITUTO ARAGONÉS DE EMPLEO (INAEM)",
+        "opensAt": null,
+        "closesAt": "2026-12-31",
+        "windowText": "Desde el día siguiente a la publicación en BOA ",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/926926",
+        "publishedAt": "2026-08-28"
+      },
+      {
+        "bdnsCode": "920637",
+        "title": "SOLICITUD PRESTACIÓN ECONÓMICA",
+        "organism": "INSTITUTO ARAGONÉS DE LA MUJER (IAM)",
+        "opensAt": "2026-01-01",
+        "closesAt": "2026-12-31",
+        "windowText": null,
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/920637",
+        "publishedAt": "2026-07-21"
+      }
+    ],
+    "CN": [
+      {
+        "bdnsCode": "927619",
+        "title": "PROGRAMA DE BECAS EN NEGOCIOS INTERNACIONALES",
+        "organism": "CONSEJERÍA DE ECONOMÍA, INDUSTRIA, COMERCIO Y AUTÓNOMOS",
+        "opensAt": "2026-09-18",
+        "closesAt": "2026-10-23",
+        "windowText": "Convocatoria becas en Negocios Internacionales 2026-27 — Veinte(20) días hábiles contados desde la fecha de inicio del plazo de presentación de solicitudes",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/927619",
+        "publishedAt": "2026-09-02"
+      },
+      {
+        "bdnsCode": "935024",
+        "title": "Ayuda Emergencia Social 2026",
+        "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
+        "opensAt": "2026-02-11",
+        "closesAt": "2026-12-31",
+        "windowText": "Sin plazo de solicitud — Sin plazo de solicitud",
+        "url": "www.gobiernodecanarias.org/dsidj",
+        "publishedAt": "2026-10-13"
+      },
+      {
+        "bdnsCode": "935023",
+        "title": "Ayuda Emergencia Social 2026",
+        "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
+        "opensAt": "2026-06-19",
+        "closesAt": "2026-12-31",
+        "windowText": "Sin plazo de solicitud — Sin plazo de solicitud",
+        "url": "www.gobiernodecanarias.org/dsidj",
+        "publishedAt": "2026-10-13"
+      },
+      {
+        "bdnsCode": "935010",
+        "title": "SUFRAGAR GASTOS EQUIPAMIENTO",
+        "organism": "PRESIDENCIA DEL GOBIERNO",
+        "opensAt": "2026-01-01",
+        "closesAt": "2026-12-31",
+        "windowText": null,
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/935010",
+        "publishedAt": "2026-10-13"
+      },
+      {
+        "bdnsCode": "935009",
+        "title": "Desarrollo de la salud comunitaria en el noroeste de Gambia",
+        "organism": "PRESIDENCIA DEL GOBIERNO",
+        "opensAt": "2026-01-01",
+        "closesAt": "2026-12-31",
+        "windowText": null,
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/935009",
+        "publishedAt": "2026-10-13"
+      },
+      {
+        "bdnsCode": "932466",
+        "title": "SDF2026TF00067 Ayuda Emergencia Social",
+        "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
+        "opensAt": "2026-05-12",
+        "closesAt": "2026-12-31",
+        "windowText": "SDF2026TF00067 Ayuda Emergencia Social 2026 — SDF2026TF00067Ayuda Emergencia Social 2026",
+        "url": "www.gobiernodecanarias.org/dsidj",
+        "publishedAt": "2026-09-30"
+      },
+      {
+        "bdnsCode": "930800",
+        "title": "CONVOCATORIA DEL BONO ALQUILER JOVEN PARA FACILITAR EL DISFRUTE DE UNA VIVIENDA O HABITACIÓN EN ALQUILER",
+        "organism": "INSTITUTO CANARIO DE LA VIVIENDA",
+        "opensAt": "2026-01-01",
+        "closesAt": "2026-12-31",
+        "windowText": null,
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930800",
+        "publishedAt": "2026-09-21"
+      },
+      {
+        "bdnsCode": "929315",
+        "title": "SDF2026TF00069 Ayudas de emergencia social 2026",
+        "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
+        "opensAt": "2026-09-09",
+        "closesAt": "2026-12-31",
+        "windowText": "SDF2026TF00069 Ayudas de emergencia social 2026 — SDF2026TF00069 Ayudas de emergencia social 2026",
+        "url": "www.gobiernodecanarias.org.dgijif",
+        "publishedAt": "2026-09-14"
+      },
+      {
+        "bdnsCode": "926974",
+        "title": "SDF2026TF00028 Ayuda de emergencia social 2026",
+        "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
+        "opensAt": "2026-03-06",
+        "closesAt": "2026-12-31",
+        "windowText": "SDF2026TF00028 Ayuda de emergencia social 2026 — SDF2026TF00028 Ayuda de emergencia social 2026",
+        "url": "www.gobiernodecanarias.org.dgijif",
+        "publishedAt": "2026-08-28"
+      },
+      {
+        "bdnsCode": "926206",
+        "title": "SDF2025TF00108 Ayudas de emergencia social 2026",
+        "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
+        "opensAt": "2025-11-24",
+        "closesAt": "2026-12-31",
+        "windowText": "SDF2025TF00108 Ayudas de emergencia social 2026 — SDF2025TF00108 Ayudas de emergencia social 2026",
+        "url": "www.gobiernodecanarias.org.dgijif",
+        "publishedAt": "2026-08-24"
+      },
+      {
+        "bdnsCode": "926204",
+        "title": "SDF2025GC00040 Ayudas de emergencia social 2026",
+        "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
+        "opensAt": "2026-09-25",
+        "closesAt": "2026-12-31",
+        "windowText": "SDF2025GC00040 Ayudas de emergencia social 2026 — SDF2025GC00040 Ayudas de emergencia social 2026",
+        "url": "www.gobiernodecanarias.org.dgijif",
+        "publishedAt": "2026-08-24"
+      },
+      {
+        "bdnsCode": "925469",
+        "title": "SDF2026TF00051 Ayudas de emergencia social 2026",
+        "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
+        "opensAt": "2026-04-13",
+        "closesAt": "2026-12-31",
+        "windowText": "SDF2026TF00051 Ayudas de emergencia social 2026 — SDF2026TF00051 Ayudas de emergencia social 2026",
+        "url": "www.gobiernodecanarias.org.dgijif",
+        "publishedAt": "2026-08-18"
+      },
+      {
+        "bdnsCode": "925467",
+        "title": "SDF2026TF00008 Ayudas de emergencia social 2026",
+        "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
+        "opensAt": "2026-02-06",
+        "closesAt": "2026-12-31",
+        "windowText": "SDF2026TF00008 Ayudas de emergencia social 2026 — SDF2026TF00008 Ayudas de emergencia social 2026",
+        "url": "www.gobiernodecanarias.org.dgijif",
+        "publishedAt": "2026-08-18"
+      },
+      {
+        "bdnsCode": "924973",
+        "title": "SDF2026TF00078 Ayudas de emergencia social 2026",
+        "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
+        "opensAt": "2026-07-14",
+        "closesAt": "2026-12-31",
+        "windowText": "SDF2026TF00078 Ayudas de emergencia social 2026 — SDF2026TF00078 Ayudas de emergencia social 2026",
+        "url": "www.gobiernodecanarias.org.dgijif",
+        "publishedAt": "2026-08-13"
+      },
+      {
+        "bdnsCode": "924623",
+        "title": "SDF2026TF00065 Ayuda Emergencia Social 2026",
+        "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
+        "opensAt": "2026-06-01",
+        "closesAt": "2026-12-31",
+        "windowText": "SDF2026TF00065 Ayuda Emergencia Social 2026 — SDF2026TF00065 Ayuda Emergencia Social 2026",
+        "url": "www.gobiernodecanarias.org/dsidj",
+        "publishedAt": "2026-08-11"
+      },
+      {
+        "bdnsCode": "923945",
+        "title": "SDF2026TF00074 Ayudas de emergencia social 2026",
+        "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
+        "opensAt": "2026-06-19",
+        "closesAt": "2026-12-31",
+        "windowText": "SDF2026TF00074 Ayudas de emergencia social 2026 — SDF2026TF00074 Ayudas de emergencia social 2026",
+        "url": "www.gobiernodecanarias.org.dgijif",
+        "publishedAt": "2026-08-06"
+      },
+      {
+        "bdnsCode": "923529",
+        "title": "SDF2026GC00023 Ayudas de emergencia social 2026",
+        "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
+        "opensAt": "2026-06-21",
+        "closesAt": "2026-12-31",
+        "windowText": "SDF2026GC00023 Ayudas de emergencia social 2026 — SDF2026GC00023 Ayudas de emergencia social 2026",
+        "url": "www.gobiernodecanarias.org.dgijif",
+        "publishedAt": "2026-08-04"
+      },
+      {
+        "bdnsCode": "923528",
+        "title": "SDF2026TF00049 Ayudas de emergencia social 2026",
+        "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
+        "opensAt": "2026-04-15",
+        "closesAt": "2026-12-31",
+        "windowText": "SDF2026TF00049 Ayudas de emergencia social 2026 — SDF2026TF00049 Ayudas de emergencia social 2026",
+        "url": "www.gobiernodecanarias.org.dgijif",
+        "publishedAt": "2026-08-04"
+      },
+      {
+        "bdnsCode": "923279",
+        "title": "SDF2026TF00063 Ayuda Emergencia Social 2026",
+        "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
+        "opensAt": "2026-05-14",
+        "closesAt": "2026-12-31",
+        "windowText": "SDF2026TF00063 Ayuda Emergencia Social 2026 — SDF2026TF00063 Ayuda Emergencia Social 2026",
+        "url": "www.gobiernodecanarias.org/dsidj",
+        "publishedAt": "2026-08-03"
+      },
+      {
+        "bdnsCode": "923278",
+        "title": "Ayuda Emergencia Social 2026",
+        "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
+        "opensAt": "2026-05-07",
+        "closesAt": "2026-12-31",
+        "windowText": "SDF2026TF00053 Ayuda Emergencia Social 2026 — SDF2026TF00053 Ayuda Emergencia Social 2026",
+        "url": "www.gobiernodecanarias.org/dsidj",
+        "publishedAt": "2026-08-03"
+      },
+      {
+        "bdnsCode": "923276",
+        "title": "Ayuda Emergencia Social 2026",
+        "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
+        "opensAt": "2026-07-20",
+        "closesAt": "2026-12-31",
+        "windowText": "SDF2026GC00013 Ayuda Emergencia Social 2026 — SDF2026GC00013 Ayuda Emergencia Social 2026",
+        "url": "www.gobiernodecanarias.org/dsidj",
+        "publishedAt": "2026-08-03"
+      },
+      {
+        "bdnsCode": "923275",
+        "title": "Ayuda Emergencia Social 2026",
+        "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
+        "opensAt": "2026-07-03",
+        "closesAt": "2026-12-31",
+        "windowText": "SDF2026GC00024 Ayuda Emergencia Social 2026 — SDF2026GC00024 Ayuda Emergencia Social 2026",
+        "url": "www.gobiernodecanarias.org/dsidj",
+        "publishedAt": "2026-08-03"
+      },
+      {
+        "bdnsCode": "934194",
+        "title": "TRASLADO DE FALLECIDO A SU ISLA DE REFERENCIA O PROCEDENCIA 2026",
+        "organism": "SERVICIO CANARIO DE LA SALUD",
+        "opensAt": "2026-11-01",
+        "closesAt": null,
+        "windowText": "TRASLADO DE FALLECIDO A SU ISLA DE REFERENCIA O PROCEDENCIA 2026 — TRASLADO DE FALLECIDO A SU ISLA DE REFERENCIA O PROCEDENCIA 2026",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/934194",
+        "publishedAt": "2026-10-07"
+      }
+    ],
+    "CB": [
+      {
+        "bdnsCode": "934243",
+        "title": "Subvención Nominativa a la Universidad de Cantabria destinada a la realización de cursos de verano en el 2026.",
+        "organism": "CONSEJERÍA DE INCLUSIÓN SOCIAL, JUVENTUD, FAMILIAS E IGUALDAD",
+        "opensAt": "2026-05-01",
+        "closesAt": "2026-12-31",
+        "windowText": null,
+        "url": "https://www.cantabria.es/web/atencion-a-la-ciudadania/ayudas-y-subvenciones",
+        "publishedAt": "2026-10-08"
+      },
+      {
+        "bdnsCode": "925878",
+        "title": "Subvención Nominativa al Ayuntamiento de Santander destinada a la financiación de los gastos corrientes del Programa denominado “Espaciarte”.",
+        "organism": "CONSEJERÍA DE INCLUSIÓN SOCIAL, JUVENTUD, FAMILIAS E IGUALDAD",
+        "opensAt": "2026-05-01",
+        "closesAt": "2026-12-31",
+        "windowText": null,
+        "url": "https://www.cantabria.es/web/atencion-a-la-ciudadania/ayudas-y-subvenciones",
+        "publishedAt": "2026-08-21"
+      },
+      {
+        "bdnsCode": "922707",
+        "title": "Subvención Nominativa al Colegio Oficial de Psicología de Cantabria. Programa de atención a los adolescentes y su entorno en 2026.",
+        "organism": "CONSEJERÍA DE INCLUSIÓN SOCIAL, JUVENTUD, FAMILIAS E IGUALDAD",
+        "opensAt": "2026-05-01",
+        "closesAt": "2026-12-31",
+        "windowText": null,
+        "url": "https://www.cantabria.es/web/atencion-a-la-ciudadania/ayudas-y-subvenciones",
+        "publishedAt": "2026-07-30"
+      },
+      {
+        "bdnsCode": "922693",
+        "title": "Subvención Nominativa a la Fundación Secretariado Gitano para la realización de un programa denominado Programa de promoción de la igualdad de oportunidades en integración socio-laboral de las mujeres gitanas.",
+        "organism": "CONSEJERÍA DE INCLUSIÓN SOCIAL, JUVENTUD, FAMILIAS E IGUALDAD",
+        "opensAt": "2026-05-01",
+        "closesAt": "2026-12-31",
+        "windowText": null,
+        "url": "https://www.cantabria.es/web/atencion-a-la-ciudadania/ayudas-y-subvenciones",
+        "publishedAt": "2026-07-30"
+      },
+      {
+        "bdnsCode": "915543",
+        "title": "Subvención Nominativa a a la Fundación Universidad Europea del Atlántico para la realización de un programa orientado a combatir la soledad no deseada, tejer redes de valor, prevenir la institucionalización evitable y mejorar el bienestar subjetivo.",
+        "organism": "CONSEJERÍA DE INCLUSIÓN SOCIAL, JUVENTUD, FAMILIAS E IGUALDAD",
+        "opensAt": "2026-05-01",
+        "closesAt": "2026-12-31",
+        "windowText": null,
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/915543",
+        "publishedAt": "2026-06-25"
+      },
+      {
+        "bdnsCode": "915525",
+        "title": "Subvención Nominativa a la Fundación Real  Racing Club para la realización de un programa de intervención social denominado “Memoria Racinguista”.",
+        "organism": "CONSEJERÍA DE INCLUSIÓN SOCIAL, JUVENTUD, FAMILIAS E IGUALDAD",
+        "opensAt": "2026-05-01",
+        "closesAt": "2026-12-31",
+        "windowText": null,
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/915525",
+        "publishedAt": "2026-06-25"
+      },
+      {
+        "bdnsCode": "915393",
+        "title": "SUBVENCIÓN NOMINATIVA Colegio Oficial de Psicología de Cantabria. Prevenir situaciones de aislamiento social y soledad no deseada.",
+        "organism": "CONSEJERÍA DE INCLUSIÓN SOCIAL, JUVENTUD, FAMILIAS E IGUALDAD",
+        "opensAt": "2026-05-01",
+        "closesAt": "2026-12-31",
+        "windowText": null,
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/915393",
+        "publishedAt": "2026-06-25"
+      },
+      {
+        "bdnsCode": "928096",
+        "title": "Orden FOM/10/2026, DE 7 DE SEPTIEMBRE, POR LA QUE SE APRUEBA LA CONVOCATORIA DE UNA BECA DE FORMACIÓN PRÁCTICA PARA TITULADOS UNIVERSITARIOS EN DERECHO.",
+        "organism": "CONSEJERÍA DE FOMENTO, ORDENACIÓN DELTERRITORIO Y MEDIO AMBIENTE",
+        "opensAt": null,
+        "closesAt": null,
+        "windowText": "a partir del dia siguiente publicacion decreto BOC — un mes despues de la publicación extracto",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/928096",
+        "publishedAt": "2026-09-07"
+      },
+      {
+        "bdnsCode": "927527",
+        "title": "Beca de Formación práctica en la Dirección General de Formación Profesional y Educación Permanente para la realización de estudios y actividades en el área de Informática y comunicaciones",
+        "organism": "CONSEJERÍA DE EDUCACIÓN, FORMACIÓN PROFESIONAL Y UNIVERSIDADES",
+        "opensAt": null,
+        "closesAt": null,
+        "windowText": "Al dia siguiente de la publicación del extracto en el BOC — diez días hábiles desde el día siguiente a la publicación del extracto de la convocatoria en el BOC",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/927527",
+        "publishedAt": "2026-09-02"
+      }
+    ],
+    "CL": [
+      {
+        "bdnsCode": "929595",
+        "title": "Orden de 13 de septiembre de 2026 de la Consejería IEM, por la que se convocan ayudas al alumnado que realice su primera matrícula de primer curso de grado universitario en la Comunidad de Castilla y León, durante curso académico 2026/2027",
+        "organism": "CONSEJERÍA DE INDUSTRIA, UNIVERSIDADES, EMPLEO Y COMERCIO",
+        "opensAt": "2026-09-22",
+        "closesAt": "2026-10-21",
+        "windowText": null,
+        "url": "https://www.tramitacastillayleon.jcyl.es/",
+        "publishedAt": "2026-09-15"
+      },
+      {
+        "bdnsCode": "930412",
+        "title": "Orden de 17 de septiembre de 2026, de la Consejería de Industria, Universidades, Empleo y Comercio, por la que se convocan ayudas al estudio de idiomas para alumnos universitarios, durante el curso académico 2025/2026.",
+        "organism": "CONSEJERÍA DE INDUSTRIA, UNIVERSIDADES, EMPLEO Y COMERCIO",
+        "opensAt": "2026-09-29",
+        "closesAt": "2026-10-27",
+        "windowText": null,
+        "url": "https://www.tramitacastillayleon.jcyl.es/",
+        "publishedAt": "2026-09-18"
+      },
+      {
+        "bdnsCode": "927851",
+        "title": "Orden de 30 de agosto de 2026,de la Consejería de Industria, Universidades, Empleo y Comercio, por la que se convocan subvenciones dirigidas a trabajadores afectados por expedientes temporales de regulación de empleo para recuperación de zonas incendios",
+        "organism": "CONSEJERÍA DE INDUSTRIA, UNIVERSIDADES, EMPLEO Y COMERCIO",
+        "opensAt": "2026-09-10",
+        "closesAt": "2026-11-06",
+        "windowText": null,
+        "url": "https://www.tramitacastillayleon.jcyl.es/",
+        "publishedAt": "2026-09-04"
+      },
+      {
+        "bdnsCode": "932041",
+        "title": "Orden de 28/09/2026 de la Consejería de Movilidad, Transformación Digital e Inteligencia Artificial por la que se convocan subvenciones para facilitar la obtención del permiso de conducción de la clase B a las personas jóvenes de Castilla y León.",
+        "organism": "CONSEJERÍA DE MOVILIDAD, TRANSFORMACIÓN DIGITAL E INTELIGENCIA ARTIFICIAL",
+        "opensAt": "2026-10-01",
+        "closesAt": "2027-01-15",
+        "windowText": null,
+        "url": " https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla100Detalle/1251181050732/Ayuda012/1285684640457/Propuesta",
+        "publishedAt": "2026-09-28"
+      },
+      {
+        "bdnsCode": "935756",
+        "title": "Orden de 15 de octubre de 2026, de la Consejería de Educación, por la que se convocan ayudas para el alumnado que curse enseñanzas de Bachillerato, de Formación Profesional del sistema educativo y de determinadas enseñanzas impartidas en centros de CyL",
+        "organism": "CONSEJERÍA DE EDUCACIÓN",
+        "opensAt": null,
+        "closesAt": null,
+        "windowText": "Día siguiente a la publicación de extracto de la convocatoria — Veinte días hábiles, a contar desde el día siguiente al de la publicación del extracto en el BOCYL",
+        "url": "https://www.tramitacastillayleon.jcyl.es/web/es/sede-electronica.html",
+        "publishedAt": "2026-10-16"
+      },
+      {
+        "bdnsCode": "934426",
+        "title": "Acuerdo de 1 de octubre de 2026, de la Junta de Castilla y León por el que se autoriza la concesión directa de una subvención a Aging to the Future para financiar el Plan de Marketing, posicionamiento y visibilidad del IV Congreso Internacional de Economí",
+        "organism": "CONSEJERÍA DE ECONOMÍA Y HACIENDA",
+        "opensAt": null,
+        "closesAt": null,
+        "windowText": "Sin plazo de solicitud — Sin plazo de solicitud",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/934426",
+        "publishedAt": "2026-10-08"
+      }
+    ],
+    "CM": [
+      {
+        "bdnsCode": "926667",
+        "title": "Resolución de la DG Humanización y Atención Sociosanitaria: subvenciones destinadas a la atención a personas con enfermedades raras y sus familias 2026",
+        "organism": "DIRECCIÓN GENERAL DE HUMANIZACIÓN Y ATENCIÓN SOCIOSANITARIA",
+        "opensAt": null,
+        "closesAt": "2026-10-31",
+        "windowText": "El día siguiente al de la publicación en el DOCM",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/926667",
+        "publishedAt": "2026-08-27"
+      },
+      {
+        "bdnsCode": "933977",
+        "title": "Actuaciones de rehabilitación y mejora de la eficiencia energética en viviendas y edificios de viviendas de CLM, cofinanciadas FEDER 2021-2027. Convocatoria 2026",
+        "organism": "DIRECCIÓN GENERAL DE VIVIENDA",
+        "opensAt": "2026-10-27",
+        "closesAt": "2026-11-30",
+        "windowText": "Desde 09:00h del día en el que hubiera transcurrido plazo 10 días hábiles desde publicación en DOCM — 30 noviembre 2026",
+        "url": "https://www.jccm.es",
+        "publishedAt": "2026-10-07"
+      },
+      {
+        "bdnsCode": "931563",
+        "title": "Orden 134/2026 de 23 septiembre Consejería de Fomento, bases reguladoras y convocatoria de las subvenciones a la mejora de la accesibilidad en y a viviendas de CLM 26",
+        "organism": "DIRECCIÓN GENERAL DE VIVIENDA",
+        "opensAt": "2026-10-01",
+        "closesAt": "2026-11-30",
+        "windowText": "Desde el día siguiente de la publicación de esta convocatoria. — Hasta el 30 de noviembre 2026",
+        "url": "https://www.jccm.es",
+        "publishedAt": "2026-09-24"
+      },
+      {
+        "bdnsCode": "927475",
+        "title": "CONVOCATORIA DE AYUDAS GARANTÍA JUVENIL- AÑO 2026CONSEJERÍA DE EDUCACIÓN CULTURA Y DEPORTES Y FSE.",
+        "organism": "SECRETARÍA GENERAL DE EDUCACIÓN, CULTURA Y DEPORTES",
+        "opensAt": null,
+        "closesAt": null,
+        "windowText": "Desde el día siguiente a la publicación de la resolución de la convocatoria en el DOCM CLM. — Un mes desde el día siguiente a la publicación de la resolución de la convocatoria en el DOCM CLM.",
+        "url": "www.jccm.es",
+        "publishedAt": "2026-09-02"
+      }
+    ],
+    "CT": [
+      {
+        "bdnsCode": "921364",
+        "title": "Convocatoria plurianual de ayudas a la rehabilitación por actuaciones de accesibilidad a la ciudad de Barcelona para el año 2026 con cargo a los presupuestos de los años 2026, 2027 y 2028",
+        "organism": "CONSORCIO DE LA VIVIENDA DE BARCELONA",
+        "opensAt": null,
+        "closesAt": "2026-10-30",
+        "windowText": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
+        "url": "https://habitatge.barcelona/ca   i   http://www.bcn.cat/consorcihabitatge/ca/home.html",
+        "publishedAt": "2026-07-24"
+      },
+      {
+        "bdnsCode": "920036",
+        "title": "Procedimiento de las becas Equidad y para la obtención de la acreditación del tramo de renta familiar",
+        "organism": "AGÈNCIA DE GESTIÓ D'AJUTS UNIVERSITARIS I DE RECERCA (AGAUR)",
+        "opensAt": "2026-09-15",
+        "closesAt": "2026-10-30",
+        "windowText": null,
+        "url": "Portal tràmits",
+        "publishedAt": "2026-07-17"
+      },
+      {
+        "bdnsCode": "933847",
+        "title": "Beca que tiene por objetivo abrir un espacio de experimentacion curatorial de personas y colectivos jóvenes, así como favorecer su profesionalizacion.",
+        "organism": "AGÈNCIA CATALANA DE LA JOVENTUT",
+        "opensAt": "2026-10-09",
+        "closesAt": "2026-11-09",
+        "windowText": null,
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/933847",
+        "publishedAt": "2026-10-06"
+      },
+      {
+        "bdnsCode": "921706",
+        "title": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES A LA REHABILITACIÓN Y MEJORA DE LAS VIVIENDAS EN LA CIUDAD DE BARCELONA",
+        "organism": "CONSORCIO DE LA VIVIENDA DE BARCELONA",
+        "opensAt": null,
+        "closesAt": "2026-12-31",
+        "windowText": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
+        "url": "https://habitatge.barcelona/ca   i   http://www.bcn.cat/consorcihabitatge/ca/home.html",
+        "publishedAt": "2026-07-27"
+      },
+      {
+        "bdnsCode": "917685",
+        "title": "Procedimiento para la obtención de una acreditación para las estudiantes víctimas de violencia machista fuera del ámbito de la pareja para la exención total de los precios fijados en el decreto anual de precios públicos en las universidades públicas de Ca",
+        "organism": "AGÈNCIA DE GESTIÓ D'AJUTS UNIVERSITARIS I DE RECERCA (AGAUR)",
+        "opensAt": "2026-07-11",
+        "closesAt": "2027-02-26",
+        "windowText": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/917685",
+        "publishedAt": "2026-07-07"
+      },
+      {
+        "bdnsCode": "934569",
+        "title": "RESOLUCIÓN BECAS FP DUAL CURSO 2026-2027",
+        "organism": "CONSORCI D'EDUCACIÓ DE BARCELONA",
+        "opensAt": null,
+        "closesAt": null,
+        "windowText": "Sense termini de presentació de sol·licitud — Sense termini de presentació de sol·licitud",
+        "url": "edubcn.cat",
+        "publishedAt": "2026-10-09"
+      },
+      {
+        "bdnsCode": "932691",
+        "title": "Convenio de cooperación educativa CCUC Khadija del 15-09-26 al 18-06-27",
+        "organism": "CONSORCI DE SERVEIS UNIVERSITARIS DE CATALUNYA (CSUC)",
+        "opensAt": null,
+        "closesAt": null,
+        "windowText": "Sense termini de presentació de sol·licitud — Sense termini de presentació de sol·licitud",
+        "url": "https://www.csuc.cat/ca/treballa-al-csuc",
+        "publishedAt": "2026-09-30"
+      }
+    ],
+    "CE": [
+      {
+        "bdnsCode": "914226",
+        "title": "CONVENIO SUBVENCIÓN NOMINATIVA CENTRO DLE MAYOR CRUZ ROJA 2026",
+        "organism": "CONSEJERÍA DE SANIDAD Y SERVICIOS SOCIALES",
+        "opensAt": "2026-01-01",
+        "closesAt": "2026-12-31",
+        "windowText": null,
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/914226",
+        "publishedAt": "2026-06-19"
+      },
+      {
+        "bdnsCode": "914224",
+        "title": "CONVENIO SUBVENCIÓN NOMINATIVA CRUZ ROJA ATENCIÓN INTEGRAL Y SOLEDAD NO DESEADA DE PERSONAS MAYORES",
+        "organism": "CONSEJERÍA DE SANIDAD Y SERVICIOS SOCIALES",
+        "opensAt": "2026-01-01",
+        "closesAt": "2026-12-31",
+        "windowText": null,
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/914224",
+        "publishedAt": "2026-06-19"
+      }
+    ],
+    "MD": [
+      {
+        "bdnsCode": "934570",
+        "title": "AYUDAS 2026 FAMILIAS CON PACIENTES A CARGO, PATOLOGÍA CRÓNICA COMPLEJA",
+        "organism": "CONSEJERÍA DE FAMILIA, JUVENTUD Y ASUNTOS SOCIALES",
+        "opensAt": null,
+        "closesAt": null,
+        "windowText": "DESDE EL DÍA SIGUIENTE A LA PUBLICACIÓN DEL ACUERDO DE CG EN BOCM — HASTA EL 31/12/2026",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/934570",
+        "publishedAt": "2026-10-09"
+      }
+    ],
+    "NC": [
+      {
+        "bdnsCode": "920490",
+        "title": "Subvenciones para obras de mejora y/o adecuación interior en viviendas que se incorporen a la Bolsa de Alquiler o que se acojan al programa de “rehabilitación por renta” durante el año 2026",
+        "organism": "DEPARTAMENTO DE VIVIENDA, JUVENTUD Y POLÍTICAS MIGRATORIAS",
+        "opensAt": null,
+        "closesAt": "2026-11-01",
+        "windowText": "día siguiente de la publicación de la convocatoria en el BON —  Cuando se agote el crédito presupuestario, y en todo caso, el 1 de noviembre de 2026.",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/920490",
+        "publishedAt": "2026-07-21"
+      },
+      {
+        "bdnsCode": "917082",
+        "title": "Subvenciones para la fotoprotección, durante el año 2026, de las personas diagnosticadas de lupus.",
+        "organism": "DEPARTAMENTO DE SALUD",
+        "opensAt": null,
+        "closesAt": "2026-11-16",
+        "windowText": "Día siguiente de su publicación en el Boletín Oficial de Navarra — 16 de noviembre de 2026",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/917082",
+        "publishedAt": "2026-07-03"
+      },
+      {
+        "bdnsCode": "930966",
+        "title": "Convocatoria de ayudas individuales para la formación del profesorado en el curso 2026-2027",
+        "organism": "DEPARTAMENTO DE EDUCACION",
+        "opensAt": "2027-09-01",
+        "closesAt": "2027-09-15",
+        "windowText": "1 de septiembre 2027 — 15 de septiembre 2027",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930966",
+        "publishedAt": "2026-09-22"
+      },
+      {
+        "bdnsCode": "932808",
+        "title": "Subvención para proyectos comunitarios de interés social AUZOLAN 2027",
+        "organism": "INSTITUTO NAVARRO DE JUVENTUD",
+        "opensAt": null,
+        "closesAt": "2027-10-31",
+        "windowText": "Desde el día siguiente a la publicación de la convocatoria en el Boletín Oficial de Navarra",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/932808",
+        "publishedAt": "2026-10-01"
+      },
+      {
+        "bdnsCode": "934094",
+        "title": "Beca de formación para personas licenciadas o graduadas en Derecho con destino en la Secretaría General Técnica del Departamento de Salud",
+        "organism": "DEPARTAMENTO DE SALUD",
+        "opensAt": null,
+        "closesAt": null,
+        "windowText": "Desde el día siguiente a la publicación de la convocatoria en Boletín Oficial de Navarra — 15 días naturales a contar desde el día siguiente al de la publicación de la convocatoria en el BON",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/934094",
+        "publishedAt": "2026-10-07"
+      },
+      {
+        "bdnsCode": "934045",
+        "title": "Becas equidad para el acceso a la educación superior de jóvenes procedentes de entornos de bajos ingresos 2026",
+        "organism": "DEPARTAMENTO DE UNIVERSIDAD, INNOVACION Y TRANSFORMACION DIGITAL",
+        "opensAt": null,
+        "closesAt": null,
+        "windowText": "A partir del día siguiente a la publicación de la convocatoria en en el BON — 15 dias hábiles a partir del día siguiente a la publicación de la convocatoria en el BON",
+        "url": "www.navarra.es",
+        "publishedAt": "2026-10-07"
+      },
+      {
+        "bdnsCode": "929118",
+        "title": "Convocatoria General de Becas del Curso 2026/2027, para el alumnado que curse estudios universitarios",
+        "organism": "DEPARTAMENTO DE UNIVERSIDAD, INNOVACION Y TRANSFORMACION DIGITAL",
+        "opensAt": null,
+        "closesAt": null,
+        "windowText": "Un mes a contar desde la publicación de la convocatoria en el B.O.N. — Un mes",
+        "url": "www.navarra.es",
+        "publishedAt": "2026-09-14"
+      }
+    ],
+    "VC": [
+      {
+        "bdnsCode": "930830",
+        "title": "Subvenciones para la realización del informe de evaluación del edificio de uso residencial de vivienda en la Comunitat Valenciana (IEEV.CV)",
+        "organism": "SECRETARÍA AUTONÓMICA DE VIVIENDA",
+        "opensAt": "2026-10-06",
+        "closesAt": "2026-12-07",
+        "windowText": "DÍA SIGUIENTE AL DE LA PUBLICACIÓN DE LA CONVOCATORIA EN EL DOGV — DOS MESES CONTADOS A PARTIR DEL DÍA SIGUIENTE DE LA PUBLICACIÓN DE LA CONVOCATORIA EN EL DOGV",
+        "url": "https://sede.gva.es/es/detall-tramit?id_proc=112181",
+        "publishedAt": "2026-09-22"
+      },
+      {
+        "bdnsCode": "915844",
+        "title": "Resolución de 26 de junio de 2026 de la Conselleria de Educación, Cultura y Universidades, por la cual se convocan ayudas individuales para el servicio de transporte escolar para el curso 2026-2027 (SEC)",
+        "organism": "SECRETARÍA AUTONÓMICA DE EDUCACIÓN",
+        "opensAt": "2026-07-02",
+        "closesAt": null,
+        "windowText": "Desde el día siguiente a su publicación en el DOGV",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/915844",
+        "publishedAt": "2026-06-26"
+      },
+      {
+        "bdnsCode": "915836",
+        "title": "Resolución de 26 de junio de 2026 de la Conselleria de Educación, Cultura y Universidades, por la cual se convocan ayudas individuales para el servicio de transporte escolar para el curso 2026-2027 (PRIM)",
+        "organism": "SECRETARÍA AUTONÓMICA DE EDUCACIÓN",
+        "opensAt": "2026-07-02",
+        "closesAt": null,
+        "windowText": "Desde el día siguiente a su publicación en el DOGV",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/915836",
+        "publishedAt": "2026-06-26"
+      },
+      {
+        "bdnsCode": "915834",
+        "title": "Resol. 26/06/2026 de la Conselleria de Educación, Cultura y Universidades por la cual se convoca la concesión de ayudas de comedor escolar en los centros docentes no universitarios públicos y privados concertados para el curso escolar 2026-2027 (SEC)",
+        "organism": "SECRETARÍA AUTONÓMICA DE EDUCACIÓN",
+        "opensAt": "2026-07-02",
+        "closesAt": null,
+        "windowText": "Desde el día siguiente a su publicación en el DOGV",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/915834",
+        "publishedAt": "2026-06-26"
+      },
+      {
+        "bdnsCode": "915829",
+        "title": "Resol. 26/06/2026 de la Conselleria de Educación, Cultura y Universidades por la cual se convoca la concesión de ayudas de comedor escolar en los centros docentes no universitarios públicos y privados concertados para el curso escolar 2026-2027 (PRIM)",
+        "organism": "SECRETARÍA AUTONÓMICA DE EDUCACIÓN",
+        "opensAt": "2026-07-02",
+        "closesAt": null,
+        "windowText": "Desde el día siguiente a su publicación en el DOGV",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/915829",
+        "publishedAt": "2026-06-26"
+      }
+    ],
+    "EX": [
+      {
+        "bdnsCode": "934974",
+        "title": "Ayudas curso 2026/2027 para el estudio de ingés en horario extraexcolar, según Resolución de 30 de septiembre de 2026, que las convoca.",
+        "organism": "ENTE PÚBLICO EXTREMEÑO DE SERVICIOS EDUCATIVOS COMPLEMENTARIOS",
+        "opensAt": null,
+        "closesAt": null,
+        "windowText": "A PARTIR DEL DIA SIGUIENTE A LA PUBLICACIÓN EN DOE DE CONVOCATORIA Y EXTRACTO — 15 DÍAS HÁBILES A PARTIR DEL SIGUIENTE A PUBLICACIÓN EN DOE DE CONVOCATORIA Y EXTRACTO",
+        "url": "https://www.juntaex.es/w/0684524",
+        "publishedAt": "2026-10-13"
+      },
+      {
+        "bdnsCode": "934836",
+        "title": "Subvenciones curso 2026/2027 auxiliares de conversación con destino en centros educativos sostenidos con fondos públicos de la CA de Extremadura, según Resolución de 25 de septiembre de 2026 que convoca",
+        "organism": "SECRETARÍA GENERAL DE EDUCACIÓN",
+        "opensAt": null,
+        "closesAt": null,
+        "windowText": "desde publicación de convocatoria — 10 días hábiles",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/934836",
+        "publishedAt": "2026-10-13"
+      },
+      {
+        "bdnsCode": "929941",
+        "title": "Subv. 2026 a familias para servicios de cuidados de menores de 3 años como medida de fomento de la conciliación de la vida personal, familiar y laboral, s/ RESOLUCIÓN de 9 de septiembre de 2026, del Secretario General que convoca",
+        "organism": "SECRETARÍA GENERAL DE IGUALDAD Y CONCILIACIÓN",
+        "opensAt": null,
+        "closesAt": null,
+        "windowText": "Al día siguiente de su publicación en DOE — Hasta el 05 de noviembre de 2026",
+        "url": "https://juntaex.es/w/0690524",
+        "publishedAt": "2026-09-16"
+      },
+      {
+        "bdnsCode": "914545",
+        "title": "Ayudas 2026-2027 del BONO ALQUILER JOVEN, según Resolución de 17 de junio de 2026 por la que se convocan.",
+        "organism": "SECRETARÍA GENERAL DE VIVIENDA, ARQUITECTURA, ACCESIBILIDAD Y REGENERACIÓN URBANA",
+        "opensAt": "2026-07-15",
+        "closesAt": null,
+        "windowText": "El día de la publicación en DOE del anuncio de terminación",
+        "url": "https://www.juntaex.es/w/6073",
+        "publishedAt": "2026-06-22"
+      }
+    ],
+    "GA": [
+      {
+        "bdnsCode": "922377",
+        "title": "ORDEN de 20 de julio de 2026 por la que se establecen las bases reguladoras de las ayudas económicas dirigidas a las personas con esclerosis lateral amiotrófica o de sus fenotipos para el año 2026 y se procede a su convocatoria (código de procedimiento BS",
+        "organism": "CONSELLERÍA DE POLÍTICA SOCIAL E IGUALDAD",
+        "opensAt": "2026-08-07",
+        "closesAt": "2026-11-03",
+        "windowText": "5 DÍAS HABILES TRAS PUBLICAICÓN NO DOG",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/922377",
+        "publishedAt": "2026-07-29"
+      },
+      {
+        "bdnsCode": "925229",
+        "title": "Resolución por la que se establecen las bases reguladoras de las ayudas para la adquisición o autopromoción de viviendas en ayuntamientos de la Comunidad Autónoma de Galicia con población residente igual o inferior a 10.000 habitan",
+        "organism": "INSTITUTO GALLEGO DE LA VIVIENDA Y SUELO (IGVS)",
+        "opensAt": "2026-08-27",
+        "closesAt": "2026-11-16",
+        "windowText": "27/08/2026 — 16/11/2026",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/925229",
+        "publishedAt": "2026-08-17"
+      },
+      {
+        "bdnsCode": "925541",
+        "title": "Convenio de colaboración entre a Consellería de Cultura, Lingua e Xuventude e a Fundación Semana Verde de Galicia para a organización e o desenvolvemento dun Encontro informático no ano 2026",
+        "organism": "CONSELLERÍA DE CULTURA, LENGUA Y JUVENTUD",
+        "opensAt": "2026-01-01",
+        "closesAt": "2026-12-15",
+        "windowText": "01/01/2026",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/925541",
+        "publishedAt": "2026-08-19"
+      },
+      {
+        "bdnsCode": "927442",
+        "title": "Convenio de Colaboración entre a Conselleria de Política Social e Igualdade e Cruz Roja Española en Galicia para a execución do programa sen Teito de apoio a persoas sen fogar ou en situación de vulnerabilidade extrema, no exercicio 2026.",
+        "organism": "CONSELLERÍA DE POLÍTICA SOCIAL E IGUALDAD",
+        "opensAt": "2026-09-01",
+        "closesAt": "2026-12-31",
+        "windowText": null,
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/927442",
+        "publishedAt": "2026-09-02"
+      },
+      {
+        "bdnsCode": "928924",
+        "title": "Convenio colaboración Consellería de Cultura, Lengua y Juventud de la Xunta de Galicia y el Consorcio para el Desarrollo de Aplicaciones para la Gestión Universitaria para la puesta en marcha en 2026 y 2027 programa integral de formación y mentoring",
+        "organism": "CONSELLERÍA DE CULTURA, LENGUA Y JUVENTUD",
+        "opensAt": "2026-09-10",
+        "closesAt": "2027-09-15",
+        "windowText": null,
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/928924",
+        "publishedAt": "2026-09-11"
+      },
+      {
+        "bdnsCode": "932328",
+        "title": "Resolución de 28 de septiembre de 2026 de la Fundación Pública Galicia Europa por la que se convoca una beca de formación, dirigida a personas con un título universitario, para la realización de prácticas en materia de políticas y programas europeos en el",
+        "organism": "FUNDACIÓN GALICIA EUROPA",
+        "opensAt": null,
+        "closesAt": null,
+        "windowText": "Día seguinte á publicación no DOG — Un mes contado a partir da súa publicación",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/932328",
+        "publishedAt": "2026-09-29"
+      },
+      {
+        "bdnsCode": "914773",
+        "title": "Orde do 22 xuño de 2026 pola que se establecen as bases polas que se rexerá a concesión dunha axuda económica ás familias usuarias dos comedores escolares dos centros docentes sustentados con fondos públicos non xestionados pola Consellería de Educación,",
+        "organism": "CONSELLERÍA DE EDUCACIÓN, CIENCIA, UNIVERSIDADES E FORMACIÓN PROFESIONAL",
+        "opensAt": "2026-06-26",
+        "closesAt": null,
+        "windowText": "8 días do día seguinte ao da sua publicación — Un mes",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/914773",
+        "publishedAt": "2026-06-23"
+      }
+    ],
+    "IB": [
+      {
+        "bdnsCode": "933920",
+        "title": "Resolución del Consejero de Educación y Universidades por la cual se convocan ayudas de promoción de la excelencia académica para estudiantes que hayan finalizado los estudios oficiales de enseñanza artítica superior 24-25",
+        "organism": "DIRECCIÓN GENERAL DE UNIVERSIDADES, INVESTIGACIÓN Y ENSEÑANZAS ARTÍSTICAS SUPERIORES",
+        "opensAt": "2026-10-13",
+        "closesAt": "2026-10-26",
+        "windowText": "13.00 h del 13 d’octubre de 2026 — 13.00 h del 26 d’octubre de 2026",
+        "url": "https://eas.caib.es",
+        "publishedAt": "2026-10-07"
+      },
+      {
+        "bdnsCode": "933919",
+        "title": "Resolución del consejero de Educación y Universidades por la cual se convocan auydas de desplazamiento para alumnos de las Illes Balears que cursen estudios oficiales de ensañanza artítica superior en la Unión europea 2025-2026",
+        "organism": "DIRECCIÓN GENERAL DE UNIVERSIDADES, INVESTIGACIÓN Y ENSEÑANZAS ARTÍSTICAS SUPERIORES",
+        "opensAt": "2026-10-13",
+        "closesAt": "2026-10-26",
+        "windowText": "A les 13.00 h del 13 d’octubre de 2026 — Finalitza a les 13.00 h del 26 d’octubre de 2026",
+        "url": "https://eas.caib.es",
+        "publishedAt": "2026-10-07"
+      }
+    ],
+    "RI": [
+      {
+        "bdnsCode": "922396",
+        "title": "CS PLAN RENOVE ELECTRODOMÉSTICOS BAJO CONSUMO ENERGÉTICO-particulares",
+        "organism": "CONSEJERÍA DE ECONOMÍA, INNOVACIÓN, EMPRESA Y TRABAJO AUTÓNOMO",
+        "opensAt": null,
+        "closesAt": "2026-10-31",
+        "windowText": "El día siguiente de su publicación en el BOR",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/922396",
+        "publishedAt": "2026-07-29"
+      },
+      {
+        "bdnsCode": "923134",
+        "title": "Aux conversación Fulbright 2026/2027",
+        "organism": "CONSEJERÍA DE EDUCACIÓN Y EMPLEO",
+        "opensAt": "2026-09-15",
+        "closesAt": "2027-06-14",
+        "windowText": "15/09/2026 — 14/06/2027",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/923134",
+        "publishedAt": "2026-08-03"
+      },
+      {
+        "bdnsCode": "932784",
+        "title": "Ayudas individualizadas de transporte escolar, curso 2026/2027",
+        "organism": "CONSEJERÍA DE EDUCACIÓN Y EMPLEO",
+        "opensAt": null,
+        "closesAt": null,
+        "windowText": "a partir del día siguiente a la publicación del extracto en el BOR — diez días hábiles siguientes",
+        "url": "https://web.larioja.org/oficina-electronica/tramite?n=02587",
+        "publishedAt": "2026-10-01"
+      },
+      {
+        "bdnsCode": "928754",
+        "title": "Subv.actuaciones mejora del medio y de infraestructuras en terrenos cinegéticos",
+        "organism": "CONSEJERÍA DE AGRICULTURA, GANADERÍA, MUNDO RURAL Y MEDIO AMBIENTE",
+        "opensAt": null,
+        "closesAt": null,
+        "windowText": "A partir del día siguiente a la publicación del extracto de la convocatoria en el BOR — 1 mes a partir del día siguiente a la publicación en el BOR",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/928754",
+        "publishedAt": "2026-09-10"
+      },
+      {
+        "bdnsCode": "928746",
+        "title": "Becas de Diseño de Producto 2026 (Ejecución 2027)",
+        "organism": "AGENCIA DE DESARROLLO ECONÓMICO DE LA RIOJA",
+        "opensAt": null,
+        "closesAt": null,
+        "windowText": "Desde la publicación de la convocatoria en el BOR — Sin determinar hasta la publicación de la convocatoria en el BOR",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/928746",
+        "publishedAt": "2026-09-10"
+      },
+      {
+        "bdnsCode": "928691",
+        "title": "Becas Acción Exterior 2026 (Ejecución 2027)",
+        "organism": "AGENCIA DE DESARROLLO ECONÓMICO DE LA RIOJA",
+        "opensAt": null,
+        "closesAt": null,
+        "windowText": "Desde la publicación de la convocatoria en el BOR — Sin determinar hasta la publicación de la convocatoria en el BOR",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/928691",
+        "publishedAt": "2026-09-10"
+      },
+      {
+        "bdnsCode": "928236",
+        "title": "Convenio con Cruz Roja Española.Emergencias y Protección Civil",
+        "organism": "CONSEJERÍA DE SALUD Y POLÍTICAS SOCIALES",
+        "opensAt": null,
+        "closesAt": null,
+        "windowText": "No tiene — No tiene",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/928236",
+        "publishedAt": "2026-09-08"
+      }
+    ],
+    "ML": [
+      {
+        "bdnsCode": "914322",
+        "title": "ACUERDO CONSEJO DE GOBIERNO, DE 5 DE JUNIO DE 2026, RELATIVO A CONVENIO DE COLABORACIÓN ENTRE LA CONSEJERÍA DE MEDIO AMBIENTE Y NATURALEZA DE LA CAM Y BUCEOMELILLA",
+        "organism": "CONSEJERÍA DE MEDIO AMBIENTE Y NATURALEZA",
+        "opensAt": "2026-06-20",
+        "closesAt": "2026-12-31",
+        "windowText": "AL DÍA SIGUIENTE DE LA PUBLICACIÓN EN EL BOME — TREINTA Y UNO DE DICIEMBRE DE DOS MIL VEINTESEIS ",
+        "url": "https://sede.melilla.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+        "publishedAt": "2026-06-19"
+      }
+    ],
+    "PV": [],
+    "AS": [
+      {
+        "bdnsCode": "931080",
+        "title": "Ayudas para compensación de gastos extraordinarios de accidentes de tráfico del personal docente y laboral de la Consejería de Educación_2026",
+        "organism": "CONSEJERÍA DE EDUCACIÓN",
+        "opensAt": null,
+        "closesAt": null,
+        "windowText": "Día siguiente a la publicación del extracto — Diez días hábiles desde publicación del extracto",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931080",
+        "publishedAt": "2026-09-22"
+      },
+      {
+        "bdnsCode": "930828",
+        "title": "Convocatoria ordinaria de Ayudas Individualizadas en materia de Transporte Escolar durante el curso escolar 2026/2027",
+        "organism": "CONSEJERÍA DE EDUCACIÓN",
+        "opensAt": null,
+        "closesAt": null,
+        "windowText": "Dia siguiente de la publicacion del extracto — 15 días, desde dia siguiente publicacion extracto",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930828",
+        "publishedAt": "2026-09-22"
+      }
+    ],
+    "MC": [
+      {
+        "bdnsCode": "931889",
+        "title": "SUBVENCIÓN NOMINATIVA A LA RED DE LUCHA CONTRA LA POBREZA Y LA EXCLUSIÓN SOCIAL DE LA REGIÓN DE MURCIA (EAPN-RM)",
+        "organism": "CONSEJERÍA DE POLÍTICA SOCIAL, FAMILIAS E IGUALDAD",
+        "opensAt": null,
+        "closesAt": null,
+        "windowText": "Sin plazo de solicitud — Sin plazo de solicitud",
+        "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931889",
+        "publishedAt": "2026-09-28"
+      }
+    ]
+  }
 }

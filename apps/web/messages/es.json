@@ -22,7 +22,8 @@
     "tagline": "Hecho para familias. Con fuentes oficiales.",
     "exploreTitle": "Explora",
     "legalTitle": "Legal",
-    "startTitle": "¿Te toca algo?"
+    "startTitle": "¿Te toca algo?",
+    "methodology": "Cómo comprobamos los datos"
   },
   "disclaimer": {
     "title": "Información orientativa",
@@ -250,7 +251,8 @@
     "eyebrow": "Ficha de la ayuda",
     "autoVerified": "Requisitos comprobados automáticamente contra la fuente oficial el {date}. Esta ficha no ha sido revisada por una persona.",
     "humanReviewed": "Revisada por el equipo el {date}.",
-    "autoVerifiedBadge": "Comprobada automáticamente"
+    "autoVerifiedBadge": "Comprobada automáticamente",
+    "methodologyLink": "Cómo lo comprobamos"
   },
   "window": {
     "permanent": "Se puede pedir todo el año",
@@ -258,7 +260,8 @@
     "openNoEnd": "Plazo abierto",
     "upcoming": "Abre el {date}",
     "closed": "Plazo cerrado (cerró el {date})",
-    "unknown": "Consulta el plazo en la fuente oficial"
+    "unknown": "Consulta el plazo en la fuente oficial",
+    "taxReturn": "Se aplica en la declaración de la renta"
   },
   "levels": {
     "state": "Estatal",
@@ -380,5 +383,52 @@
     "deleteButton": "Borrar mis datos",
     "deleted": "Hemos borrado tus datos. No recibirás más emails.",
     "deleteFail": "El enlace no es válido o tus datos ya se habían borrado."
+  },
+  "faq": {
+    "who": "¿Quién puede pedir la ayuda «{title}»?",
+    "whoAnswer": "Estos son los requisitos principales: {requirements}. Consulta siempre las bases oficiales.",
+    "amount": "¿Cuánto se cobra?",
+    "when": "¿Cuándo se puede pedir?",
+    "whenPermanent": "Se puede pedir en cualquier momento del año.",
+    "whenDates": "Desde el {opens} hasta el {closes}.",
+    "whenUntil": "Hasta el {closes}.",
+    "how": "¿Cómo se pide?",
+    "check": "¿Cómo sé si me corresponde?",
+    "checkAnswer": "Responde el cuestionario gratuito de Ayudario: en unos minutos te decimos si cumples los requisitos de esta y otras ayudas, sin registro y sin guardar tus datos."
+  },
+  "region": {
+    "eyebrow": "Ayudas por comunidad",
+    "title": "Ayudas en {region} {year}",
+    "metaTitle": "Ayudas en {region} {year}: requisitos, cuantías y cómo pedirlas",
+    "lead": "Las ayudas públicas para personas y familias que viven en {region}: las de la comunidad, las estatales y las convocatorias abiertas ahora mismo.",
+    "minimumIncome": "Renta mínima",
+    "deductions": "Deducciones autonómicas del IRPF",
+    "deductionsLead": "Se aplican en tu declaración de la renta si cumples los requisitos.",
+    "other": "Otras ayudas de {region}",
+    "state": "Ayudas estatales",
+    "stateLead": "Se pueden pedir desde cualquier comunidad autónoma.",
+    "checkTitle": "¿Cuáles te corresponden a ti?",
+    "checkBody": "Responde unas preguntas y te decimos, con tu situación, qué ayudas cumples y cuáles casi.",
+    "allRegions": "Ayudas por comunidad autónoma",
+    "allRegionsLead": "Elige tu comunidad para ver sus ayudas, deducciones y convocatorias abiertas."
+  },
+  "methodology": {
+    "title": "Cómo comprobamos los datos",
+    "metaDescription": "Cómo Ayudario recopila, comprueba y actualiza la información de las ayudas públicas: fuentes oficiales, citas literales y verificación automática diaria.",
+    "intro": "Ayudario no es una web oficial. Recopilamos información de fuentes públicas y la comprobamos de forma automática para que sea lo más fiable posible. Aun así, es orientativa: consulta siempre las bases oficiales antes de solicitar una ayuda.",
+    "sourcesTitle": "De dónde salen los datos",
+    "sources": "Usamos solo fuentes oficiales: el BOE y los boletines autonómicos, la Agencia Tributaria (Manual práctico de Renta y sus deducciones autonómicas), la Seguridad Social, el SEPE, el IMSERSO, las webs de las comunidades autónomas y la Base de Datos Nacional de Subvenciones (BDNS).",
+    "rulesTitle": "Requisitos con cita literal",
+    "rules": "Cada requisito que usamos para decirte si una ayuda te corresponde va acompañado de la frase exacta del documento oficial de la que sale. Si la frase no aparece literalmente en la fuente, la ayuda no se publica.",
+    "checksTitle": "Comprobación automática diaria",
+    "checks": "Cada día volvemos a descargar las fuentes oficiales y comprobamos que las citas siguen ahí, que los enlaces funcionan y que los plazos no han vencido. Si algo falla, la ayuda deja de mostrarse hasta que se corrige. En cada ficha indicamos la fecha de la última comprobación.",
+    "humanTitle": "Revisión humana",
+    "human": "Las fichas comprobadas automáticamente no han sido revisadas por una persona, y así lo indicamos en cada una.",
+    "unverifiedTitle": "Convocatorias «sin verificar»",
+    "unverified": "Las convocatorias abiertas que mostramos por comunidad vienen directamente de la BDNS. No revisamos sus requisitos: solo te enlazamos a la convocatoria oficial para que la consultes.",
+    "eligibilityTitle": "Quién decide si te corresponde",
+    "eligibility": "El resultado lo calcula un conjunto de reglas fijas y comprobables a partir de tus respuestas, en tu propio navegador. Ninguna inteligencia artificial decide si cumples los requisitos, y tus respuestas no se envían a ningún servidor.",
+    "errorsTitle": "Si encuentras un error",
+    "errors": "Las ayudas cambian a menudo. Si ves un dato desactualizado o incorrecto, escríbenos a la dirección de contacto del aviso legal y lo revisaremos."
   }
 }

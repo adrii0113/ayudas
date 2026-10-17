@@ -4,6 +4,7 @@ import Link from "next/link";
 import { SectionBand } from "@/components/SectionBand";
 import { getTranslations } from "next-intl/server";
 import { BenefitListItem } from "@/components/benefit/BenefitListItem";
+import { RegionLinks } from "@/components/RegionLinks";
 import { getPublishedBenefits } from "@/lib/catalog";
 import { CATEGORY_SLUGS } from "@/lib/categories";
 
@@ -24,6 +25,7 @@ export default async function BenefitsIndexPage() {
           <p className="max-w-2xl text-lg text-muted">{t("index.lead")}</p>
         </SectionBand>
       </header>
+      <RegionLinks />
       {BENEFIT_CATEGORIES.map((category) => {
         const items = benefits.filter((b) => b.category === category);
         if (!items.length) return null;

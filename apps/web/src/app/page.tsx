@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import { buttonVariants } from "@/components/ui/button";
+import { RegionLinks } from "@/components/RegionLinks";
 import { SectionBand } from "@/components/SectionBand";
 import { getPublishedBenefits } from "@/lib/catalog";
 
@@ -63,6 +64,8 @@ export default async function HomePage() {
           ))}
         </ol>
       </section>
+
+      <RegionLinks />
 
       <section aria-labelledby="privacy">
         <SectionBand id="privacy" eyebrow={t("privacyEyebrow")} title={t("privacyTitle")} />

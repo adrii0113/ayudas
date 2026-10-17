@@ -2,7 +2,10 @@ import { getRegion, type Benefit } from "@tetoca/core";
 import { siteUrl } from "./site";
 
 /** schema.org GovernmentService (+ FAQPage) for a benefit page. */
-export function benefitJsonLd(benefit: Benefit): Record<string, unknown>[] {
+export function benefitJsonLd(
+  benefit: Benefit,
+  faqItems: { question: string; answer: string }[] = benefit.faq,
+): Record<string, unknown>[] {
   const area =
     benefit.level === "state"
       ? "España"
@@ -19,11 +22,11 @@ export function benefitJsonLd(benefit: Benefit): Record<string, unknown>[] {
       ? { provider: { "@type": "GovernmentOrganization", name: benefit.agency } }
       : {}),
   };
-  if (!benefit.faq.length) return [service];
+  if (!faqItems.length) return [service];
   const faq = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: benefit.faq.map((f) => ({
+    mainEntity: faqItems.map((f) => ({
       "@type": "Question",
       name: f.question,
       acceptedAnswer: { "@type": "Answer", text: f.answer },

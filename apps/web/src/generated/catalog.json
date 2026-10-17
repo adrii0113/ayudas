@@ -32,11 +32,7 @@
       "Si el hijo es mayor de 18 años, la discapacidad debe ser del 65 % o más.",
       "Las asignaciones por hijos con discapacidad no tienen límite de ingresos."
     ],
-    "documents": [
-      "DNI o NIE",
-      "Libro de familia",
-      "Certificado de discapacidad del hijo"
-    ],
+    "documents": ["DNI o NIE", "Libro de familia", "Certificado de discapacidad del hijo"],
     "steps": [
       "Solicítala en la sede electrónica de la Seguridad Social (\"Prestaciones familiares\")."
     ],
@@ -58,7 +54,7 @@
     "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "becas-formacion-desempleados-castilla-y-leon",
@@ -94,9 +90,7 @@
       "Participar en una acción formativa del ECYL para personas desempleadas.",
       "Estar inscrito como demandante de empleo el día en que empiezas el curso."
     ],
-    "documents": [
-      "Solicitud (Anexo I de la convocatoria)"
-    ],
+    "documents": ["Solicitud (Anexo I de la convocatoria)"],
     "steps": [
       "Infórmate en tu oficina de empleo sobre los cursos.",
       "Al terminar el curso, presenta la solicitud en los 10 días siguientes en la sede electrónica de la Junta."
@@ -115,7 +109,7 @@
     "version": 1,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "bono-nacimiento-castilla-y-leon",
@@ -192,7 +186,7 @@
     "version": 1,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "bono-social-electrico",
@@ -384,7 +378,7 @@
     "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "bono-social-termico",
@@ -572,7 +566,7 @@
     "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "complemento-ayuda-infancia",
@@ -671,7 +665,7 @@
     "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-alquiler-vivienda-habitual-andalucia",
@@ -753,13 +747,8 @@
       "También pueden aplicarla las víctimas de violencia doméstica o de terrorismo.",
       "Tienes que identificar al arrendador con su NIF en la declaración."
     ],
-    "documents": [
-      "Contrato de alquiler",
-      "Justificantes de pago del alquiler"
-    ],
-    "steps": [
-      "Aplícala en tu declaración de la renta (deducciones autonómicas de Andalucía)."
-    ],
+    "documents": ["Contrato de alquiler", "Justificantes de pago del alquiler"],
+    "steps": ["Aplícala en tu declaración de la renta (deducciones autonómicas de Andalucía)."],
     "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/cantidades-invertidas-alquiler-vivienda-habitual.html",
     "sources": [
       {
@@ -774,7 +763,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-alquiler-vivienda-habitual-asturias",
@@ -819,10 +808,7 @@
     "otherRequirements": [
       "El límite de renta se refiere a la suma de las bases imponibles general y del ahorro."
     ],
-    "documents": [
-      "Contrato de alquiler",
-      "Justificantes de pago del alquiler"
-    ],
+    "documents": ["Contrato de alquiler", "Justificantes de pago del alquiler"],
     "steps": [
       "Aplícala en tu declaración de la renta (deducciones autonómicas de Principado de Asturias)."
     ],
@@ -840,7 +826,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-alquiler-vivienda-habitual-illes-balears",
@@ -912,13 +898,8 @@
       "Las personas mayores de 65 años no pueden ejercer actividad laboral o profesional.",
       "Para familias numerosas o monoparentales con dos o más hijos, los límites de renta son mayores."
     ],
-    "documents": [
-      "Contrato de alquiler",
-      "Justificantes de pago del alquiler"
-    ],
-    "steps": [
-      "Aplícala en tu declaración de la renta (deducciones autonómicas de Illes Balears)."
-    ],
+    "documents": ["Contrato de alquiler", "Justificantes de pago del alquiler"],
+    "steps": ["Aplícala en tu declaración de la renta (deducciones autonómicas de Illes Balears)."],
     "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/arrendamiento-vivienda-habitual.html",
     "sources": [
       {
@@ -933,7 +914,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-alquiler-vivienda-habitual-canarias",
@@ -992,16 +973,9 @@
         }
       ]
     },
-    "otherRequirements": [
-      "El contrato debe ser de tu vivienda habitual y durar al menos un año."
-    ],
-    "documents": [
-      "Contrato de alquiler",
-      "Justificantes de pago del alquiler"
-    ],
-    "steps": [
-      "Aplícala en tu declaración de la renta (deducciones autonómicas de Canarias)."
-    ],
+    "otherRequirements": ["El contrato debe ser de tu vivienda habitual y durar al menos un año."],
+    "documents": ["Contrato de alquiler", "Justificantes de pago del alquiler"],
+    "steps": ["Aplícala en tu declaración de la renta (deducciones autonómicas de Canarias)."],
     "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/alquiler-vivienda-habitual.html",
     "sources": [
       {
@@ -1016,7 +990,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-alquiler-vivienda-habitual-cantabria",
@@ -1104,13 +1078,8 @@
     "otherRequirements": [
       "El pago del alquiler debe hacerse por medios bancarios, no en efectivo."
     ],
-    "documents": [
-      "Contrato de alquiler",
-      "Justificantes bancarios del pago del alquiler"
-    ],
-    "steps": [
-      "Aplícala en tu declaración de la renta (deducciones autonómicas de Cantabria)."
-    ],
+    "documents": ["Contrato de alquiler", "Justificantes bancarios del pago del alquiler"],
+    "steps": ["Aplícala en tu declaración de la renta (deducciones autonómicas de Cantabria)."],
     "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/arrendamiento-vivienda-habitual-jovenes-mayores-discapacidad.html",
     "sources": [
       {
@@ -1125,7 +1094,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-alquiler-jovenes-castilla-la-mancha",
@@ -1178,13 +1147,8 @@
         }
       ]
     },
-    "otherRequirements": [
-      "Tienes que indicar el NIF del arrendador en la declaración."
-    ],
-    "documents": [
-      "Contrato de alquiler",
-      "Justificantes de pago del alquiler"
-    ],
+    "otherRequirements": ["Tienes que indicar el NIF del arrendador en la declaración."],
+    "documents": ["Contrato de alquiler", "Justificantes de pago del alquiler"],
     "steps": [
       "Aplícala en tu declaración de la renta (deducciones autonómicas de Castilla-La Mancha)."
     ],
@@ -1202,7 +1166,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-alquiler-vivienda-habitual-cataluna",
@@ -1304,13 +1268,8 @@
       "Si estás en paro, debe haber sido durante 183 días o más en el año.",
       "También pueden aplicarla las personas viudas de 65 años o más."
     ],
-    "documents": [
-      "Contrato de alquiler",
-      "Justificantes de pago del alquiler"
-    ],
-    "steps": [
-      "Aplícala en tu declaración de la renta (deducciones autonómicas de Cataluña)."
-    ],
+    "documents": ["Contrato de alquiler", "Justificantes de pago del alquiler"],
+    "steps": ["Aplícala en tu declaración de la renta (deducciones autonómicas de Cataluña)."],
     "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual.html",
     "sources": [
       {
@@ -1325,7 +1284,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-alquiler-vivienda-habitual-extremadura",
@@ -1406,13 +1365,8 @@
     "otherRequirements": [
       "También pueden aplicarla progenitores separados o sin vínculo matrimonial con dos hijos, en los términos de la ficha oficial."
     ],
-    "documents": [
-      "Contrato de alquiler",
-      "Justificantes de pago del alquiler"
-    ],
-    "steps": [
-      "Aplícala en tu declaración de la renta (deducciones autonómicas de Extremadura)."
-    ],
+    "documents": ["Contrato de alquiler", "Justificantes de pago del alquiler"],
+    "steps": ["Aplícala en tu declaración de la renta (deducciones autonómicas de Extremadura)."],
     "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-extremadura/arrendamiento-vivienda-habitual.html",
     "sources": [
       {
@@ -1427,7 +1381,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-alquiler-jovenes-galicia",
@@ -1484,13 +1438,8 @@
       "Haber depositado la fianza en el Instituto Gallego de la Vivienda y Suelo (IGVS).",
       "El contrato debe ser posterior al 1 de enero de 2003."
     ],
-    "documents": [
-      "Contrato de alquiler",
-      "Justificante del depósito de la fianza en el IGVS"
-    ],
-    "steps": [
-      "Aplícala en tu declaración de la renta (deducciones autonómicas de Galicia)."
-    ],
+    "documents": ["Contrato de alquiler", "Justificante del depósito de la fianza en el IGVS"],
+    "steps": ["Aplícala en tu declaración de la renta (deducciones autonómicas de Galicia)."],
     "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/alquiler-vivienda-habitual.html",
     "sources": [
       {
@@ -1505,7 +1454,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-alquiler-jovenes-castilla-y-leon",
@@ -1560,10 +1509,7 @@
       "El 25 % se aplica en municipios de hasta 10.000 habitantes (o 3.000 si están a menos de 30 km de la capital de provincia).",
       "Si recibes ayudas públicas al alquiler, la deducción no puede superar lo que pagas menos esas ayudas."
     ],
-    "documents": [
-      "Contrato de alquiler",
-      "Justificantes de pago del alquiler"
-    ],
+    "documents": ["Contrato de alquiler", "Justificantes de pago del alquiler"],
     "steps": [
       "Aplícala en tu declaración de la renta (deducciones autonómicas de Castilla y León), indicando el NIF del arrendador."
     ],
@@ -1581,7 +1527,7 @@
     "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-alquiler-jovenes-la-rioja",
@@ -1634,16 +1580,9 @@
         }
       ]
     },
-    "otherRequirements": [
-      "La base liquidable del ahorro no puede superar 1.800 €."
-    ],
-    "documents": [
-      "Contrato de alquiler",
-      "Justificantes de pago del alquiler"
-    ],
-    "steps": [
-      "Aplícala en tu declaración de la renta (deducciones autonómicas de La Rioja)."
-    ],
+    "otherRequirements": ["La base liquidable del ahorro no puede superar 1.800 €."],
+    "documents": ["Contrato de alquiler", "Justificantes de pago del alquiler"],
+    "steps": ["Aplícala en tu declaración de la renta (deducciones autonómicas de La Rioja)."],
     "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-rioja/arrendamiento-vivienda-habitual-menores-36-anos.html",
     "sources": [
       {
@@ -1658,7 +1597,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-alquiler-vivienda-habitual-madrid",
@@ -1715,10 +1654,7 @@
       "La renta de toda la unidad familiar no puede superar 61.860 €.",
       "Hay requisitos adicionales sobre el contrato y la fianza: consulta la ficha oficial."
     ],
-    "documents": [
-      "Contrato de alquiler",
-      "Justificantes de pago del alquiler"
-    ],
+    "documents": ["Contrato de alquiler", "Justificantes de pago del alquiler"],
     "steps": [
       "Aplícala en tu declaración de la renta (deducciones autonómicas de Comunidad de Madrid)."
     ],
@@ -1736,7 +1672,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-alquiler-vivienda-habitual-region-de-murcia",
@@ -1818,10 +1754,7 @@
       "El pago del alquiler debe hacerse por medios bancarios, no en efectivo.",
       "No puedes tener derecho en el mismo año a deducciones por inversión en vivienda."
     ],
-    "documents": [
-      "Contrato de alquiler",
-      "Justificantes bancarios del pago del alquiler"
-    ],
+    "documents": ["Contrato de alquiler", "Justificantes bancarios del pago del alquiler"],
     "steps": [
       "Aplícala en tu declaración de la renta (deducciones autonómicas de Región de Murcia)."
     ],
@@ -1839,7 +1772,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-ascendiente-discapacidad",
@@ -1874,9 +1807,7 @@
       "El ascendiente debe tener una discapacidad reconocida y darte derecho al mínimo por ascendientes (en general, convivir contigo y tener rentas bajas).",
       "Estar de alta en la Seguridad Social o mutualidad, o cobrar prestaciones por desempleo o pensiones."
     ],
-    "documents": [
-      "Certificado de discapacidad del ascendiente"
-    ],
+    "documents": ["Certificado de discapacidad del ascendiente"],
     "steps": [
       "Pide el abono anticipado con el modelo 143 o aplícala en la declaración de la renta."
     ],
@@ -1894,7 +1825,7 @@
     "version": 1,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-ascendiente-dos-hijos",
@@ -1941,10 +1872,7 @@
       "Estar de alta en la Seguridad Social o mutualidad, o cobrar prestaciones por desempleo o pensiones.",
       "Si tienes tres o más hijos, mira la deducción por familia numerosa."
     ],
-    "documents": [
-      "DNI o NIE",
-      "Libro de familia"
-    ],
+    "documents": ["DNI o NIE", "Libro de familia"],
     "steps": [
       "Pide el abono anticipado con el modelo 143 o aplícala en la declaración de la renta."
     ],
@@ -1962,7 +1890,7 @@
     "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-cuidado-hijos-menores-castilla-y-leon",
@@ -1994,10 +1922,7 @@
         {
           "field": "employmentStatus",
           "op": "in",
-          "value": [
-            "employed",
-            "self_employed"
-          ],
+          "value": ["employed", "self_employed"],
           "label": "Trabajar y estar dado de alta en la Seguridad Social (ambos progenitores)",
           "source": {
             "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/cuidado-hijos-menores.html",
@@ -2042,7 +1967,7 @@
     "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-descendiente-discapacidad",
@@ -2077,10 +2002,7 @@
       "Estar de alta en la Seguridad Social o mutualidad, o cobrar prestaciones por desempleo o pensiones.",
       "Tener derecho al mínimo por descendientes por ese hijo."
     ],
-    "documents": [
-      "Certificado de discapacidad",
-      "DNI o NIE"
-    ],
+    "documents": ["Certificado de discapacidad", "DNI o NIE"],
     "steps": [
       "Pide el abono anticipado con el modelo 143 o aplícala en la declaración de la renta."
     ],
@@ -2098,7 +2020,7 @@
     "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-contribuyentes-discapacidad-castilla-y-leon",
@@ -2173,9 +2095,7 @@
       "El límite de renta se refiere a la base imponible menos el mínimo personal y familiar de la declaración.",
       "No ser usuario de residencias públicas o concertadas de Castilla y León."
     ],
-    "documents": [
-      "Certificado de discapacidad"
-    ],
+    "documents": ["Certificado de discapacidad"],
     "steps": [
       "Aplícala en tu declaración de la renta (deducciones autonómicas de Castilla y León)."
     ],
@@ -2193,7 +2113,7 @@
     "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-familia-numerosa-andalucia",
@@ -2240,12 +2160,8 @@
       "El límite de renta se refiere a la suma de las bases imponibles general y del ahorro de la declaración.",
       "Si varias personas tienen derecho y declaran por separado, se reparte a partes iguales."
     ],
-    "documents": [
-      "Título de familia numerosa en vigor"
-    ],
-    "steps": [
-      "Aplícala en tu declaración de la renta (deducciones autonómicas de Andalucía)."
-    ],
+    "documents": ["Título de familia numerosa en vigor"],
+    "steps": ["Aplícala en tu declaración de la renta (deducciones autonómicas de Andalucía)."],
     "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/familia-numerosa.html",
     "sources": [
       {
@@ -2260,7 +2176,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-familia-numerosa-asturias",
@@ -2296,9 +2212,7 @@
     "otherRequirements": [
       "Se equiparan a familia numerosa general las familias con uno o dos progenitores y dos hijos, con renta de hasta 35.000 € (individual) o 45.000 € (conjunta)."
     ],
-    "documents": [
-      "Título de familia numerosa en vigor"
-    ],
+    "documents": ["Título de familia numerosa en vigor"],
     "steps": [
       "Aplícala en tu declaración de la renta (deducciones autonómicas de Principado de Asturias)."
     ],
@@ -2316,7 +2230,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-familia-numerosa-canarias",
@@ -2350,12 +2264,8 @@
       ]
     },
     "otherRequirements": [],
-    "documents": [
-      "Título de familia numerosa en vigor"
-    ],
-    "steps": [
-      "Aplícala en tu declaración de la renta (deducciones autonómicas de Canarias)."
-    ],
+    "documents": ["Título de familia numerosa en vigor"],
+    "steps": ["Aplícala en tu declaración de la renta (deducciones autonómicas de Canarias)."],
     "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/familia-numerosa.html",
     "sources": [
       {
@@ -2370,7 +2280,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-familia-numerosa-castilla-la-mancha",
@@ -2414,9 +2324,7 @@
       ]
     },
     "otherRequirements": [],
-    "documents": [
-      "Título de familia numerosa en vigor"
-    ],
+    "documents": ["Título de familia numerosa en vigor"],
     "steps": [
       "Aplícala en tu declaración de la renta (deducciones autonómicas de Castilla-La Mancha)."
     ],
@@ -2434,7 +2342,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-familia-numerosa-monoparental-comunitat-valenciana",
@@ -2496,9 +2404,7 @@
       "La condición de familia monoparental se reconoce con el título expedido por la Generalitat.",
       "En categoría especial los límites de renta suben a 35.000 € (individual) y 58.000 € (conjunta)."
     ],
-    "documents": [
-      "Título de familia numerosa o monoparental en vigor"
-    ],
+    "documents": ["Título de familia numerosa o monoparental en vigor"],
     "steps": [
       "Aplícala en tu declaración de la renta (deducciones autonómicas de Comunitat Valenciana)."
     ],
@@ -2516,7 +2422,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-familia-numerosa-castilla-y-leon",
@@ -2552,9 +2458,7 @@
       "Es compatible con la deducción estatal por familia numerosa.",
       "Si varios miembros declaran por separado, se reparte entre ellos."
     ],
-    "documents": [
-      "Título de familia numerosa de Castilla y León en vigor a 31 de diciembre"
-    ],
+    "documents": ["Título de familia numerosa de Castilla y León en vigor a 31 de diciembre"],
     "steps": [
       "Aplícala en tu declaración de la renta (deducciones autonómicas de Castilla y León)."
     ],
@@ -2572,7 +2476,7 @@
     "version": 1,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-familia-numerosa-galicia",
@@ -2605,12 +2509,8 @@
       ]
     },
     "otherRequirements": [],
-    "documents": [
-      "Título de familia numerosa en vigor"
-    ],
-    "steps": [
-      "Aplícala en tu declaración de la renta (deducciones autonómicas de Galicia)."
-    ],
+    "documents": ["Título de familia numerosa en vigor"],
+    "steps": ["Aplícala en tu declaración de la renta (deducciones autonómicas de Galicia)."],
     "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/familia-numerosa.html",
     "sources": [
       {
@@ -2625,7 +2525,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-familia-numerosa",
@@ -2659,10 +2559,7 @@
     "otherRequirements": [
       "Estar de alta en la Seguridad Social o mutualidad, o cobrar prestaciones por desempleo o pensiones."
     ],
-    "documents": [
-      "Título de familia numerosa",
-      "DNI o NIE"
-    ],
+    "documents": ["Título de familia numerosa", "DNI o NIE"],
     "steps": [
       "Pide el abono anticipado (100 €/mes en categoría general) con el modelo 143 en la sede de la Agencia Tributaria, o aplícala en la declaración de la renta."
     ],
@@ -2685,7 +2582,7 @@
     "version": 1,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-maternidad",
@@ -2716,11 +2613,7 @@
         {
           "field": "employmentStatus",
           "op": "in",
-          "value": [
-            "employed",
-            "self_employed",
-            "unemployed"
-          ],
+          "value": ["employed", "self_employed", "unemployed"],
           "label": "Estar de alta en la Seguridad Social o cobrar una prestación por desempleo",
           "source": {
             "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deduccion-maternidad-incremento-adicional-gastos-custodia/deduccion-maternidad/beneficiarios-hijos-que-derecho-aplicacion-deduccion.html",
@@ -2734,10 +2627,7 @@
       "Si estás en paro, debes cobrar prestación o subsidio por desempleo en el momento del nacimiento; estar solo inscrita no basta.",
       "Si te das de alta después del nacimiento, necesitas al menos 30 días cotizados."
     ],
-    "documents": [
-      "DNI o NIE",
-      "Datos del hijo (fecha de nacimiento, NIF si lo tiene)"
-    ],
+    "documents": ["DNI o NIE", "Datos del hijo (fecha de nacimiento, NIF si lo tiene)"],
     "steps": [
       "Pide el abono anticipado (100 €/mes) en la sede de la Agencia Tributaria con el modelo 140, o aplícala en tu próxima declaración de la renta.",
       "Para el incremento por guardería, la escuela infantil debe presentar el modelo 233; tú lo aplicas en la renta."
@@ -2761,7 +2651,7 @@
     "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-nacimiento-adopcion-andalucia",
@@ -2801,9 +2691,7 @@
     "documents": [
       "Libro de familia o certificado de nacimiento / resolución de adopción o acogimiento"
     ],
-    "steps": [
-      "Aplícala en tu declaración de la renta (deducciones autonómicas de Andalucía)."
-    ],
+    "steps": ["Aplícala en tu declaración de la renta (deducciones autonómicas de Andalucía)."],
     "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/nacimiento-adopcion-acogimiento.html",
     "sources": [
       {
@@ -2818,7 +2706,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-nacimiento-tercer-hijo-aragon",
@@ -2866,12 +2754,8 @@
       "Solo se aplica en la declaración del año del nacimiento o la adopción.",
       "Corresponde a quien conviva con el hijo a 31 de diciembre."
     ],
-    "documents": [
-      "Libro de familia o certificado de nacimiento / resolución de adopción"
-    ],
-    "steps": [
-      "Aplícala en tu declaración de la renta (deducciones autonómicas de Aragón)."
-    ],
+    "documents": ["Libro de familia o certificado de nacimiento / resolución de adopción"],
+    "steps": ["Aplícala en tu declaración de la renta (deducciones autonómicas de Aragón)."],
     "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-aragon/nacimiento-adopcion-tercer-hijo-sucesivos.html",
     "sources": [
       {
@@ -2886,7 +2770,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-nacimiento-illes-balears",
@@ -2942,12 +2826,8 @@
     "otherRequirements": [
       "Para familias numerosas o monoparentales con dos o más hijos, el límite de renta sube a 63.360 € (individual) y 101.376 € (conjunta)."
     ],
-    "documents": [
-      "Libro de familia o certificado de nacimiento"
-    ],
-    "steps": [
-      "Aplícala en tu declaración de la renta (deducciones autonómicas de Illes Balears)."
-    ],
+    "documents": ["Libro de familia o certificado de nacimiento"],
+    "steps": ["Aplícala en tu declaración de la renta (deducciones autonómicas de Illes Balears)."],
     "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/nacimiento.html",
     "sources": [
       {
@@ -2962,7 +2842,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-nacimiento-adopcion-canarias",
@@ -3009,12 +2889,8 @@
       "Si ambos progenitores tienen derecho y declaran por separado, se reparte a partes iguales.",
       "Es compatible con la deducción autonómica por familia numerosa."
     ],
-    "documents": [
-      "Libro de familia o certificado de nacimiento / resolución de adopción"
-    ],
-    "steps": [
-      "Aplícala en tu declaración de la renta (deducciones autonómicas de Canarias)."
-    ],
+    "documents": ["Libro de familia o certificado de nacimiento / resolución de adopción"],
+    "steps": ["Aplícala en tu declaración de la renta (deducciones autonómicas de Canarias)."],
     "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/nacimiento-adopcion-hijos.html",
     "sources": [
       {
@@ -3029,7 +2905,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-nacimiento-adopcion-cantabria",
@@ -3065,12 +2941,8 @@
       "Solo para nacimientos o adopciones desde el 1 de enero de 2024.",
       "Si declaráis por separado, se reparte a partes iguales entre los progenitores."
     ],
-    "documents": [
-      "Libro de familia o certificado de nacimiento / resolución de adopción"
-    ],
-    "steps": [
-      "Aplícala en tu declaración de la renta (deducciones autonómicas de Cantabria)."
-    ],
+    "documents": ["Libro de familia o certificado de nacimiento / resolución de adopción"],
+    "steps": ["Aplícala en tu declaración de la renta (deducciones autonómicas de Cantabria)."],
     "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/nacimiento-adopcion-hijos.html",
     "sources": [
       {
@@ -3085,7 +2957,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-nacimiento-adopcion-castilla-la-mancha",
@@ -3129,9 +3001,7 @@
       ]
     },
     "otherRequirements": [],
-    "documents": [
-      "Libro de familia o certificado de nacimiento / resolución de adopción"
-    ],
+    "documents": ["Libro de familia o certificado de nacimiento / resolución de adopción"],
     "steps": [
       "Aplícala en tu declaración de la renta (deducciones autonómicas de Castilla-La Mancha)."
     ],
@@ -3149,7 +3019,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-nacimiento-adopcion-cataluna",
@@ -3186,9 +3056,7 @@
     "documents": [
       "Libro de familia o certificado de nacimiento / resolución de adopción o acogimiento"
     ],
-    "steps": [
-      "Aplícala en tu declaración de la renta (deducciones autonómicas de Cataluña)."
-    ],
+    "steps": ["Aplícala en tu declaración de la renta (deducciones autonómicas de Cataluña)."],
     "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/nacimiento-adopcion-hijo-hija-acogimiento-familiar.html",
     "sources": [
       {
@@ -3203,7 +3071,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-nacimiento-adopcion-comunitat-valenciana",
@@ -3266,7 +3134,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-nacimiento-adopcion-castilla-y-leon",
@@ -3303,9 +3171,7 @@
       "Si ambos progenitores tienen derecho y declaran por separado, se reparte a partes iguales.",
       "Se aplica en la declaración de la renta del año del nacimiento."
     ],
-    "documents": [
-      "Libro de familia o certificado de nacimiento / resolución de adopción"
-    ],
+    "documents": ["Libro de familia o certificado de nacimiento / resolución de adopción"],
     "steps": [
       "Aplícala en tu declaración de la renta (anexo de deducciones autonómicas de Castilla y León)."
     ],
@@ -3328,7 +3194,7 @@
     "version": 1,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-nacimiento-adopcion-galicia",
@@ -3362,12 +3228,8 @@
       ]
     },
     "otherRequirements": [],
-    "documents": [
-      "Libro de familia o certificado de nacimiento / resolución de adopción"
-    ],
-    "steps": [
-      "Aplícala en tu declaración de la renta (deducciones autonómicas de Galicia)."
-    ],
+    "documents": ["Libro de familia o certificado de nacimiento / resolución de adopción"],
+    "steps": ["Aplícala en tu declaración de la renta (deducciones autonómicas de Galicia)."],
     "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/nacimiento-adopcion-hijos.html",
     "sources": [
       {
@@ -3382,7 +3244,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-nacimiento-adopcion-la-rioja",
@@ -3416,12 +3278,8 @@
       ]
     },
     "otherRequirements": [],
-    "documents": [
-      "Libro de familia o certificado de nacimiento / resolución de adopción"
-    ],
-    "steps": [
-      "Aplícala en tu declaración de la renta (deducciones autonómicas de La Rioja)."
-    ],
+    "documents": ["Libro de familia o certificado de nacimiento / resolución de adopción"],
+    "steps": ["Aplícala en tu declaración de la renta (deducciones autonómicas de La Rioja)."],
     "officialUrl": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-rioja/nacimiento-adopcion-hijos.html",
     "sources": [
       {
@@ -3436,7 +3294,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-nacimiento-adopcion-madrid",
@@ -3482,9 +3340,7 @@
       "Solo pueden aplicarla los padres que convivan con los hijos.",
       "La unidad familiar también tiene un límite de renta conjunto (consúltalo en la ficha oficial)."
     ],
-    "documents": [
-      "Libro de familia o certificado de nacimiento / resolución de adopción"
-    ],
+    "documents": ["Libro de familia o certificado de nacimiento / resolución de adopción"],
     "steps": [
       "Aplícala en tu declaración de la renta (deducciones autonómicas de Comunidad de Madrid)."
     ],
@@ -3502,7 +3358,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "deduccion-nacimiento-adopcion-region-de-murcia",
@@ -3546,9 +3402,7 @@
       ]
     },
     "otherRequirements": [],
-    "documents": [
-      "Libro de familia o certificado de nacimiento / resolución de adopción"
-    ],
+    "documents": ["Libro de familia o certificado de nacimiento / resolución de adopción"],
     "steps": [
       "Aplícala en tu declaración de la renta (deducciones autonómicas de Región de Murcia)."
     ],
@@ -3566,7 +3420,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "reconocimiento-dependencia-castilla-y-leon",
@@ -3624,7 +3478,7 @@
     "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "ingreso-minimo-de-solidaridad-castilla-la-mancha",
@@ -3730,7 +3584,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "ingreso-minimo-vital",
@@ -3941,7 +3795,7 @@
     "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "ayudas-primera-matricula-universitaria-castilla-y-leon",
@@ -4035,7 +3889,7 @@
     "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "ayudas-permiso-conducir-jovenes-castilla-y-leon",
@@ -4125,7 +3979,7 @@
     "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "pension-no-contributiva-invalidez",
@@ -4244,7 +4098,7 @@
     "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "pension-no-contributiva-jubilacion",
@@ -4342,7 +4196,7 @@
     "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "prestacion-nacimiento-cuidado-menor",
@@ -4372,10 +4226,7 @@
         {
           "field": "employmentStatus",
           "op": "in",
-          "value": [
-            "employed",
-            "self_employed"
-          ],
+          "value": ["employed", "self_employed"],
           "label": "Trabajar y estar de alta en la Seguridad Social (por cuenta ajena o propia)",
           "source": {
             "url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/6b96a085-4dc0-47af-b2cb-97e00716791e",
@@ -4418,7 +4269,7 @@
     "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "renta-canaria-de-ciudadania",
@@ -4512,7 +4363,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "renta-ciudadania-la-rioja",
@@ -4617,7 +4468,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "renta-garantizada-ciudadania-cataluna",
@@ -4705,9 +4556,7 @@
       "Certificado de empadronamiento",
       "Justificantes de ingresos"
     ],
-    "steps": [
-      "Solicítala en el portal de trámites de la Generalitat (tramits.gencat.cat)."
-    ],
+    "steps": ["Solicítala en el portal de trámites de la Generalitat (tramits.gencat.cat)."],
     "officialUrl": "https://tramits.gencat.cat/es/tramits/tramits-temes/rgc-i-complement-activables",
     "sources": [
       {
@@ -4722,7 +4571,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "renta-garantizada-ciudadania-castilla-y-leon",
@@ -4825,7 +4674,7 @@
     "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "renta-extremena-garantizada",
@@ -4913,9 +4762,7 @@
       "Certificado de empadronamiento",
       "Justificantes de ingresos"
     ],
-    "steps": [
-      "Solicítala en los servicios sociales de atención social básica de tu municipio."
-    ],
+    "steps": ["Solicítala en los servicios sociales de atención social básica de tu municipio."],
     "officialUrl": "https://www.juntaex.es/w/5369",
     "sources": [
       {
@@ -4930,7 +4777,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "renta-garantizada-navarra",
@@ -5035,7 +4882,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "renta-minima-insercion-social-andalucia",
@@ -5134,9 +4981,7 @@
       "Certificado de empadronamiento",
       "Justificantes de ingresos"
     ],
-    "steps": [
-      "Solicítala en los servicios sociales comunitarios de tu municipio."
-    ],
+    "steps": ["Solicítala en los servicios sociales comunitarios de tu municipio."],
     "officialUrl": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/Triptico_RMISA_2026.pdf",
     "sources": [
       {
@@ -5151,7 +4996,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "renta-social-basica-cantabria",
@@ -5240,9 +5085,7 @@
       "Certificado de empadronamiento",
       "Justificantes de ingresos"
     ],
-    "steps": [
-      "Solicítala en los servicios sociales de atención primaria de tu municipio."
-    ],
+    "steps": ["Solicítala en los servicios sociales de atención primaria de tu municipio."],
     "officialUrl": "https://www.serviciossocialescantabria.org/index.php?page=renta-social-basica",
     "sources": [
       {
@@ -5257,7 +5100,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "renta-social-garantizada-illes-balears",
@@ -5351,7 +5194,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "renta-garantia-ingresos-pais-vasco",
@@ -5439,9 +5282,7 @@
       "Certificado de empadronamiento",
       "Justificantes de ingresos"
     ],
-    "steps": [
-      "Solicítala en Lanbide (Servicio Vasco de Empleo), en línea o en tu oficina."
-    ],
+    "steps": ["Solicítala en Lanbide (Servicio Vasco de Empleo), en línea o en tu oficina."],
     "officialUrl": "https://www.euskadi.eus/ayuda_subvencion/2016/renta-de-garantia-de-ingresos-rgi/web01-tramite/es/",
     "sources": [
       {
@@ -5456,7 +5297,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "renta-inclusion-social-galicia-risga",
@@ -5555,9 +5396,7 @@
       "Certificado de empadronamiento",
       "Justificantes de ingresos"
     ],
-    "steps": [
-      "Solicítala a través de los servicios sociales comunitarios de tu ayuntamiento."
-    ],
+    "steps": ["Solicítala a través de los servicios sociales comunitarios de tu ayuntamiento."],
     "officialUrl": "https://politicasocial.xunta.gal/es/areas/inclusion-social/ayudas-y-prestaciones/renta-de-inclusion-social-de-galicia-risga",
     "sources": [
       {
@@ -5572,7 +5411,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "salario-social-basico-asturias",
@@ -5677,7 +5516,7 @@
     "version": 1,
     "reviewedBy": "claude-code (verificación automática)",
     "reviewedAt": "2026-10-15",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   },
   {
     "slug": "subsidio-por-desempleo",
@@ -5737,6 +5576,6 @@
     "version": 2,
     "reviewedBy": "claude-code (requiere revisión humana)",
     "reviewedAt": "2026-10-14",
-    "verifiedAt": "2026-10-15"
+    "verifiedAt": "2026-10-17"
   }
 ]

@@ -8,10 +8,12 @@ export const revalidate = 3600;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const benefits = await getPublishedBenefits();
-  const staticPages = ["", "/ayudas", "/cuestionario", "/alertas"].map((p) => ({
-    url: siteUrl(p),
-    changeFrequency: "weekly" as const,
-  }));
+  const staticPages = ["", "/ayudas", "/cuestionario", "/alertas", "/como-comprobamos"].map(
+    (p) => ({
+      url: siteUrl(p),
+      changeFrequency: "weekly" as const,
+    }),
+  );
   const categories = BENEFIT_CATEGORIES.flatMap((c) => [
     { url: siteUrl(`/ayudas/${CATEGORY_SLUGS[c]}`), changeFrequency: "weekly" as const },
     ...Object.values(REGION_SLUGS).map((r) => ({
@@ -19,10 +21,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly" as const,
     })),
   ]);
+  const regions = Object.values(REGION_SLUGS).map((r) => ({
+    url: siteUrl(`/ayudas-en/${r}`),
+    changeFrequency: "daily" as const,
+  }));
   const pages = benefits.map((b) => ({
     url: siteUrl(`/ayudas/${b.slug}`),
-    lastModified: b.reviewedAt,
+    lastModified: b.verifiedAt ?? b.reviewedAt,
     changeFrequency: "weekly" as const,
   }));
-  return [...staticPages, ...categories, ...pages];
+  return [...staticPages, ...regions, ...categories, ...pages];
 }

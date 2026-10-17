@@ -15,6 +15,11 @@ export async function generateMetadata(): Promise<Metadata> {
     title: { default: t("title"), template: `%s · ${t("siteName")}` },
     description: t("description"),
     openGraph: { siteName: t("siteName"), locale: "es_ES", type: "website" },
+    twitter: { card: "summary_large_image" },
+    // Google Search Console ownership (set once the domain is live).
+    ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+      ? { verification: { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION } }
+      : {}),
   };
 }
 

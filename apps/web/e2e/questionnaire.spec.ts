@@ -93,7 +93,14 @@ test("results without answers invite to start", async ({ page }) => {
   await expect(page.getByText("Todavía no has respondido el cuestionario.")).toBeVisible();
 });
 
-for (const path of ["/", "/cuestionario", "/ayudas", "/ayudas/bono-social-electrico"]) {
+for (const path of [
+  "/",
+  "/cuestionario",
+  "/ayudas",
+  "/ayudas/bono-social-electrico",
+  "/ayudas-en/andalucia",
+  "/como-comprobamos",
+]) {
   test(`no WCAG A/AA violations on ${path}`, async ({ page }) => {
     await page.goto(path);
     await page.waitForLoadState("networkidle");
@@ -162,4 +169,18 @@ test("results list open calls of the user's community as unverified", async ({ p
   await expect(
     page.getByText("Deducción autonómica por alquiler de vivienda habitual (Andalucía)"),
   ).toBeVisible();
+});
+
+test("each community has a hub with its own aid and the state aid", async ({ page }) => {
+  await page.goto("/ayudas-en/galicia");
+  await expect(page.getByRole("heading", { level: 1, name: /Ayudas en Galicia/ })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Renta mínima" })).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: "Deducciones autonómicas del IRPF" }),
+  ).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Ayudas estatales" })).toBeVisible();
+  await expect(page.getByText("Ingreso Mínimo Vital").first()).toBeVisible();
+  await page.goto("/");
+  await page.getByRole("link", { name: "Galicia", exact: true }).click();
+  await expect(page).toHaveURL(/\/ayudas-en\/galicia/);
 });

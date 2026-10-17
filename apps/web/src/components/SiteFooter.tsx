@@ -29,6 +29,11 @@ export function SiteFooter() {
                   {t("nav.alerts")}
                 </Link>
               </li>
+              <li>
+                <Link href="/como-comprobamos" className={linkClass}>
+                  {t("footer.methodology")}
+                </Link>
+              </li>
             </ul>
           </div>
           <nav aria-label={t("footer.legalTitle")} className="space-y-3">
