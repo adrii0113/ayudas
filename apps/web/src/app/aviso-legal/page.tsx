@@ -14,7 +14,7 @@ export default function LegalNoticePage() {
       </p>
       <h2>Naturaleza de la información</h2>
       <p>
-        TeToca no es una web oficial ni pertenece a ninguna Administración pública. No tramita
+        Ayudario no es una web oficial ni pertenece a ninguna Administración pública. No tramita
         solicitudes ni concede ayudas. La información se elabora a partir de las bases y páginas
         oficiales que se citan en cada ficha, y es <strong>orientativa</strong>: no sustituye a las
         bases oficiales ni garantiza la concesión de ninguna ayuda.

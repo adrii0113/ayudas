@@ -1,4 +1,4 @@
-# Proyecto: Plataforma de matching de ayudas públicas para ciudadanos (nombre provisional: "TeToca")
+# Proyecto: Plataforma de matching de ayudas públicas para ciudadanos ("Ayudario")
 
 > Documento de contexto para Claude Code. Léelo entero antes de escribir código.
 > Idioma del producto: español (preparado para añadir catalán/inglés más adelante).
@@ -256,7 +256,7 @@ En cada hito: tests en verde, `tsc` sin errores y un README actualizado.
 
 ## 13. Preguntas abiertas (decidir con el propietario)
 
-- Nombre definitivo y dominio.
+- ~~Nombre definitivo y dominio~~ → **Ayudario** (decidido el 17/10/2026; dominio en compra).
 - ¿Castilla y León o Cataluña como primera comunidad? (por defecto CL).
 - ¿Ofrecer resultados en tramos de ingresos en vez de cifra exacta para reducir fricción?
 - Frecuencia de revisión del catálogo manual (propuesta: trimestral + al inicio de cada año por cambios de IPREM/presupuestos).

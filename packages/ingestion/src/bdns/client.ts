@@ -53,7 +53,7 @@ export class BdnsClient {
     this.fetchFn = options.fetch ?? fetch;
     this.minIntervalMs = options.minIntervalMs ?? 1000;
     this.retries = options.retries ?? 2;
-    this.userAgent = options.userAgent ?? "TeToca/0.1 (ayudas para ciudadanos; ingesta diaria)";
+    this.userAgent = options.userAgent ?? "Ayudario/0.1 (ayudas para ciudadanos; ingesta diaria)";
     this.sleep = options.sleep ?? ((ms) => new Promise((r) => setTimeout(r, ms)));
   }
 

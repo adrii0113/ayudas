@@ -1,7 +1,7 @@
 {
   "meta": {
-    "siteName": "TeToca",
-    "title": "TeToca · Descubre qué ayudas públicas te corresponden",
+    "siteName": "Ayudario",
+    "title": "Ayudario · Descubre qué ayudas públicas te corresponden",
     "description": "Responde unas preguntas y descubre qué ayudas públicas te corresponden en tu comunidad autónoma y en toda España: natalidad, vivienda, ingresos, deducciones del IRPF y más. Gratis y sin registro."
   },
   "nav": {
@@ -15,7 +15,7 @@
     "legal": "Aviso legal",
     "privacy": "Privacidad",
     "cookies": "Cookies",
-    "note": "TeToca no es una web oficial ni tramita ayudas. Toda la información es orientativa: consulta siempre las bases oficiales.",
+    "note": "Ayudario no es una web oficial ni tramita ayudas. Toda la información es orientativa: consulta siempre las bases oficiales.",
     "wordmarkStart": "Ayudas",
     "wordmarkAccent": "que te",
     "wordmarkEnd": "tocan",
@@ -363,7 +363,7 @@
     "needProfile": "Para saber qué ayudas encajan contigo, primero responde el cuestionario.",
     "startQuestionnaire": "Responder el cuestionario",
     "email": "Tu email",
-    "consent": "Acepto que TeToca guarde mi email y mis respuestas, cifrados, para enviarme alertas de ayudas. Puedo borrarlos cuando quiera.",
+    "consent": "Acepto que Ayudario guarde mi email y mis respuestas, cifrados, para enviarme alertas de ayudas. Puedo borrarlos cuando quiera.",
     "privacyLink": "Política de privacidad",
     "submit": "Activar alertas",
     "sent": "Te hemos enviado un email. Abre el enlace para confirmar tus alertas.",

@@ -1,4 +1,4 @@
-# TeToca
+# Ayudario
 
 Web que responde a una pregunta: **«Con mi situación, ¿qué ayudas públicas me corresponden y qué
 tengo que hacer para pedirlas?»**. MVP para familias y hogares de Castilla y León (ayudas

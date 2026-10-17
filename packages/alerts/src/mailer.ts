@@ -18,7 +18,7 @@ export class ResendMailer implements Mailer {
   private readonly resend: Resend;
   constructor(
     apiKey = process.env.RESEND_API_KEY,
-    private readonly from = process.env.EMAIL_FROM ?? "TeToca <alertas@example.org>",
+    private readonly from = process.env.EMAIL_FROM ?? "Ayudario <alertas@example.org>",
   ) {
     if (!apiKey) throw new Error("RESEND_API_KEY is not set");
     this.resend = new Resend(apiKey);

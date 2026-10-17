@@ -6,7 +6,7 @@ const escape = (s: string) =>
 
 function layout(body: string, deleteUrl?: string): string {
   const footer = deleteUrl
-    ? `<p style="color:#4b5563;font-size:13px">Recibes este email porque activaste las alertas de TeToca. <a href="${escape(deleteUrl)}">Darme de baja y borrar mis datos</a>.</p>`
+    ? `<p style="color:#4b5563;font-size:13px">Recibes este email porque activaste las alertas de Ayudario. <a href="${escape(deleteUrl)}">Darme de baja y borrar mis datos</a>.</p>`
     : "";
   return `<!doctype html><html lang="es"><body style="font-family:system-ui,sans-serif;color:#1c2430;max-width:560px;margin:auto;padding:16px">${body}<p style="color:#4b5563;font-size:13px">Información orientativa: consulta siempre las bases oficiales.</p>${footer}</body></html>`;
 }
@@ -15,7 +15,7 @@ export function confirmationEmail(to: string, confirmUrl: string): Email {
   return {
     to,
     subject: "Confirma tus alertas de ayudas",
-    text: `Hola:\n\nPara activar las alertas de ayudas de TeToca, confirma tu email en este enlace:\n${confirmUrl}\n\nSi no lo has pedido tú, ignora este mensaje: no guardaremos nada más.`,
+    text: `Hola:\n\nPara activar las alertas de ayudas de Ayudario, confirma tu email en este enlace:\n${confirmUrl}\n\nSi no lo has pedido tú, ignora este mensaje: no guardaremos nada más.`,
     html: layout(
       `<h1 style="font-size:20px">Confirma tus alertas</h1><p>Para activar las alertas de ayudas, confirma tu email:</p><p><a href="${escape(confirmUrl)}" style="background:#08664b;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none">Confirmar mis alertas</a></p><p>Si no lo has pedido tú, ignora este mensaje.</p>`,
     ),

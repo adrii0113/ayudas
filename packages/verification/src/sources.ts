@@ -8,7 +8,7 @@ export async function fetchSourceText(
   fetchFn: typeof fetch = fetch,
 ): Promise<FetchedSource | undefined> {
   const res = await fetchFn(url, {
-    headers: { "User-Agent": "TeToca/0.1 (verificación de fuentes oficiales)" },
+    headers: { "User-Agent": "Ayudario/0.1 (verificación de fuentes oficiales)" },
     signal: AbortSignal.timeout(30_000),
   });
   if (!res.ok) return undefined;

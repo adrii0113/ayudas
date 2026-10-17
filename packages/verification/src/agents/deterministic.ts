@@ -167,7 +167,7 @@ export const linksAgent: VerificationAgent = {
         const res = await fetchFn(url, {
           method: "GET",
           redirect: "follow",
-          headers: { "User-Agent": "TeToca/0.1 (verificación de enlaces oficiales)" },
+          headers: { "User-Agent": "Ayudario/0.1 (verificación de enlaces oficiales)" },
           signal: AbortSignal.timeout(20_000),
         });
         if (res.status === 404 || res.status === 410) {
