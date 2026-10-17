@@ -18,7 +18,7 @@ import { AnthropicProvider } from "@tetoca/llm";
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
 import { parseArgs } from "node:util";
-import { checkBenefit } from "../gate";
+import { checkBenefit, withGrace } from "../gate";
 
 const { values } = parseArgs({
   options: {
@@ -49,7 +49,7 @@ async function worker() {
   while (next < targets.length) {
     const benefit = targets[next++]!;
     const result = await checkBenefit(benefit, { llm }, today);
-    report[benefit.slug] = {
+    const attempt = {
       version: benefit.version,
       contentHash: catalogContentHash(benefit),
       passed: result.passed,
@@ -64,8 +64,12 @@ async function worker() {
       })),
       models: result.models,
     };
-    const mark = result.passed ? "✓" : "✗";
-    console.log(`${mark} ${benefit.slug}`);
+    report[benefit.slug] = withGrace(report[benefit.slug], attempt, today);
+    const kept = !result.passed && report[benefit.slug]!.passed;
+    const mark = result.passed ? "✓" : kept ? "~" : "✗";
+    console.log(
+      `${mark} ${benefit.slug}${kept ? " (sources unreadable; previous pass kept)" : ""}`,
+    );
     if (!result.passed) {
       for (const f of result.findings) console.log(`    ${f.agent}: ${f.message}`);
     }

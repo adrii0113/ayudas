@@ -18,6 +18,7 @@ import {
   findQuote,
   deadlinesAgent,
   decide,
+  withGrace,
   linksAgent,
   verifyRevision,
   type RevisionSubject,
@@ -352,5 +353,51 @@ describe("verifyRevision", () => {
     expect(report.results["quote-check"]?.verdict).toBe("skipped");
     expect(report.decision.trustLevel).toBe("extracted");
     expect(await getProgramBySlug(db, "bono-test")).toMatchObject({ trustLevel: "extracted" });
+  });
+});
+
+describe("grace period for unreadable sources", () => {
+  type Attempt = {
+    passed: boolean;
+    contentHash: string;
+    checkedAt: string;
+    agents: Record<string, string>;
+  };
+  const prev: Attempt = {
+    passed: true,
+    contentHash: "h",
+    checkedAt: "2026-10-15",
+    agents: { citations: "pass", links: "pass" },
+  };
+  const unreadable: Attempt = {
+    passed: false,
+    contentHash: "h",
+    checkedAt: "2026-10-17",
+    agents: { citations: "uncertain", links: "uncertain" },
+  };
+
+  it("keeps a recent pass when only the sources could not be read", () => {
+    const kept = withGrace(prev, unreadable, "2026-10-17");
+    expect(kept.passed).toBe(true);
+    expect(kept.checkedAt).toBe("2026-10-15");
+    expect(kept).toMatchObject({ lastFailedAttempt: { checkedAt: "2026-10-17" } });
+  });
+
+  it("does not hide real failures or old passes", () => {
+    expect(
+      withGrace(prev, { ...unreadable, agents: { citations: "pass", links: "fail" } }, "2026-10-17")
+        .passed,
+    ).toBe(false);
+    expect(
+      withGrace(
+        prev,
+        { ...unreadable, agents: { citations: "pass", deadlines: "fail" } },
+        "2026-10-17",
+      ).passed,
+    ).toBe(false);
+    expect(withGrace(prev, { ...unreadable, contentHash: "other" }, "2026-10-17").passed).toBe(
+      false,
+    );
+    expect(withGrace(prev, unreadable, "2026-11-15").passed).toBe(false);
   });
 });

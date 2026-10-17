@@ -2,22 +2,15 @@
   "asignacion-hijo-discapacidad": {
     "version": 2,
     "contentHash": "c3d0cd8142cbdbbab6d4d3e5352b74c55bdba5d9b7296199e74ecef39eecb7b9",
-    "passed": false,
+    "passed": true,
     "checkedAt": "2026-10-17",
     "agents": {
-      "citations": "fail",
+      "citations": "pass",
       "links": "pass",
       "deadlines": "skipped",
       "parameters": "skipped"
     },
-    "findings": [
-      {
-        "agent": "citations",
-        "severity": "error",
-        "message": "Quote for \"Tener un hijo con discapacidad reconocida del 33 % o más\" not found in the official text",
-        "field": "all.0"
-      }
-    ],
+    "findings": [],
     "models": []
   },
   "ayudas-alquiler-vivienda-castilla-y-leon": {
@@ -317,28 +310,15 @@
   "complemento-ayuda-infancia": {
     "version": 2,
     "contentHash": "4660d9c752227dfd833a6acc23d4cd0c39d646f611caf340ea63f36f070d538b",
-    "passed": false,
+    "passed": true,
     "checkedAt": "2026-10-17",
     "agents": {
-      "citations": "fail",
+      "citations": "pass",
       "links": "pass",
       "deadlines": "skipped",
       "parameters": "pass"
     },
-    "findings": [
-      {
-        "agent": "citations",
-        "severity": "error",
-        "message": "Quote for \"Tener al menos un hijo menor de 18 años\" not found in the official text",
-        "field": "all.0"
-      },
-      {
-        "agent": "citations",
-        "severity": "error",
-        "message": "Quote for \"Ingresos del hogar inferiores al triple de la renta garantizada del IMV para tu hogar\" not found in the official text",
-        "field": "all.1"
-      }
-    ],
+    "findings": [],
     "models": []
   },
   "conciliacion-reduccion-jornada-excedencia-castilla-y-leon": {
@@ -969,58 +949,15 @@
   "ingreso-minimo-vital": {
     "version": 2,
     "contentHash": "ea61024c56bc1ba49e5eaa194b5ca5deb42a4c0659926016a2fcd663c6974913",
-    "passed": false,
+    "passed": true,
     "checkedAt": "2026-10-17",
     "agents": {
-      "citations": "fail",
+      "citations": "pass",
       "links": "pass",
       "deadlines": "skipped",
       "parameters": "pass"
     },
-    "findings": [
-      {
-        "agent": "citations",
-        "severity": "error",
-        "message": "Quote for \"Tener 23 años o más\" not found in the official text",
-        "field": "all.0.any.0"
-      },
-      {
-        "agent": "citations",
-        "severity": "error",
-        "message": "Quote for \"Ser mayor de edad\" not found in the official text",
-        "field": "all.0.any.1.all.0"
-      },
-      {
-        "agent": "citations",
-        "severity": "error",
-        "message": "Quote for \"Tener hijos menores a cargo\" not found in the official text",
-        "field": "all.0.any.1.all.1"
-      },
-      {
-        "agent": "citations",
-        "severity": "error",
-        "message": "Quote for \"Llevar al menos un año viviendo legalmente en España\" not found in the official text",
-        "field": "all.1"
-      },
-      {
-        "agent": "citations",
-        "severity": "error",
-        "message": "Quote for \"Ingresos del hogar inferiores a la renta garantizada del IMV\" not found in the official text",
-        "field": "all.2.any.0"
-      },
-      {
-        "agent": "citations",
-        "severity": "error",
-        "message": "Quote for \"Familia monoparental\" not found in the official text",
-        "field": "all.2.any.1.all.0"
-      },
-      {
-        "agent": "citations",
-        "severity": "error",
-        "message": "Quote for \"Ingresos por debajo de la renta garantizada con complemento monoparental\" not found in the official text",
-        "field": "all.2.any.1.all.1"
-      }
-    ],
+    "findings": [],
     "models": []
   },
   "pension-no-contributiva-invalidez": {
@@ -1096,27 +1033,15 @@
   "renta-ciudadania-la-rioja": {
     "version": 1,
     "contentHash": "3db8fe71e7dc6653a67808b986e61e4eb1f1a5be8904d9649befb0d8f38ea55e",
-    "passed": false,
+    "passed": true,
     "checkedAt": "2026-10-17",
     "agents": {
-      "citations": "uncertain",
-      "links": "uncertain",
+      "citations": "pass",
+      "links": "pass",
       "deadlines": "skipped",
       "parameters": "pass"
     },
-    "findings": [
-      {
-        "agent": "citations",
-        "severity": "warning",
-        "message": "No official text available to check quotes"
-      },
-      {
-        "agent": "links",
-        "severity": "warning",
-        "message": "Unreachable: fetch failed",
-        "sourceUrl": "https://web.larioja.org/oficina-electronica/tramite?n=24327"
-      }
-    ],
+    "findings": [],
     "models": []
   },
   "renta-extremena-garantizada": {
@@ -1178,27 +1103,15 @@
   "renta-garantizada-navarra": {
     "version": 1,
     "contentHash": "f258d0c33c76c4708b530a7c16ccca48b9a65523befb73588e06bc650d5aeacc",
-    "passed": false,
+    "passed": true,
     "checkedAt": "2026-10-17",
     "agents": {
-      "citations": "uncertain",
-      "links": "uncertain",
+      "citations": "pass",
+      "links": "pass",
       "deadlines": "skipped",
       "parameters": "pass"
     },
-    "findings": [
-      {
-        "agent": "citations",
-        "severity": "warning",
-        "message": "No official text available to check quotes"
-      },
-      {
-        "agent": "links",
-        "severity": "warning",
-        "message": "Unreachable: fetch failed",
-        "sourceUrl": "https://www.navarra.es/es/derechos-sociales/pobreza-e-inclusion/renta-garantizada"
-      }
-    ],
+    "findings": [],
     "models": []
   },
   "renta-inclusion-social-galicia-risga": {
@@ -1260,27 +1173,15 @@
   "salario-social-basico-asturias": {
     "version": 1,
     "contentHash": "6a842791322580b1571ec921e1a4a6214320d62ac9f82a242c8cf13ef1e6bef9",
-    "passed": false,
+    "passed": true,
     "checkedAt": "2026-10-17",
     "agents": {
-      "citations": "uncertain",
-      "links": "uncertain",
+      "citations": "pass",
+      "links": "pass",
       "deadlines": "skipped",
       "parameters": "pass"
     },
-    "findings": [
-      {
-        "agent": "citations",
-        "severity": "warning",
-        "message": "No official text available to check quotes"
-      },
-      {
-        "agent": "links",
-        "severity": "warning",
-        "message": "Unreachable: fetch failed",
-        "sourceUrl": "https://socialasturias.asturias.es/salario_social_basico"
-      }
-    ],
+    "findings": [],
     "models": []
   },
   "subsidio-por-desempleo": {

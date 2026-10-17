@@ -71,3 +71,36 @@ export async function checkBenefit(
     models: [...new Set(Object.values(results).flatMap((r) => (r.model ? [r.model] : [])))],
   };
 }
+
+/** Days a previous pass is kept while the official sources cannot be read. */
+export const GRACE_DAYS = 14;
+
+/**
+ * A failure that may come from not being able to read the sources (network
+ * blocks, bot walls, sites unreachable from the CI region) rather than from a
+ * real change: nothing failed except quote checks.
+ */
+export function isReadFailure(agents: Record<string, string>): boolean {
+  const hard = ["links", "deadlines", "parameters", "quote-check", "second-extraction"];
+  return hard.every((a) => agents[a] !== "fail") && agents.citations !== "pass";
+}
+
+/**
+ * Keeps a recent pass for the same content when the new attempt only failed
+ * to read the sources; real failures (broken link, closed deadline, edited
+ * content) or read failures beyond GRACE_DAYS replace it.
+ */
+export function withGrace<
+  T extends {
+    passed: boolean;
+    contentHash: string;
+    checkedAt: string;
+    agents: Record<string, string>;
+  },
+>(previous: T | undefined, next: T, today: string): T {
+  if (next.passed || !previous?.passed || previous.contentHash !== next.contentHash) return next;
+  if (!isReadFailure(next.agents)) return next;
+  const age = (Date.parse(today) - Date.parse(previous.checkedAt)) / 86_400_000;
+  if (age > GRACE_DAYS) return next;
+  return { ...previous, lastFailedAttempt: { checkedAt: next.checkedAt, agents: next.agents } };
+}

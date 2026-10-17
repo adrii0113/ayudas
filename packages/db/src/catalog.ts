@@ -92,6 +92,8 @@ export type CatalogVerification = {
     sourceUrl?: string;
   }[];
   models: string[];
+  /** Latest failed attempt kept under the grace period (sources unreadable). */
+  lastFailedAttempt?: { checkedAt: string; agents: Record<string, string> };
 };
 
 export type VerificationReport = Record<string, CatalogVerification>;
