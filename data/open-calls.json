@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-17",
+ "generatedAt": "2026-10-18",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -378,16 +378,6 @@
     "windowText": "a partir del dia siguiente publicacion decreto BOC — un mes despues de la publicación extracto",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/928096",
     "publishedAt": "2026-09-07"
-   },
-   {
-    "bdnsCode": "927527",
-    "title": "Beca de Formación práctica en la Dirección General de Formación Profesional y Educación Permanente para la realización de estudios y actividades en el área de Informática y comunicaciones",
-    "organism": "CONSEJERÍA DE EDUCACIÓN, FORMACIÓN PROFESIONAL Y UNIVERSIDADES",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Al dia siguiente de la publicación del extracto en el BOC — diez días hábiles desde el día siguiente a la publicación del extracto de la convocatoria en el BOC",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/927527",
-    "publishedAt": "2026-09-02"
    }
   ],
   "CL": [
@@ -482,16 +472,6 @@
     "windowText": "Desde el día siguiente de la publicación de esta convocatoria. — Hasta el 30 de noviembre 2026",
     "url": "https://www.jccm.es",
     "publishedAt": "2026-09-24"
-   },
-   {
-    "bdnsCode": "927475",
-    "title": "CONVOCATORIA DE AYUDAS GARANTÍA JUVENIL- AÑO 2026CONSEJERÍA DE EDUCACIÓN CULTURA Y DEPORTES Y FSE.",
-    "organism": "SECRETARÍA GENERAL DE EDUCACIÓN, CULTURA Y DEPORTES",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Desde el día siguiente a la publicación de la resolución de la convocatoria en el DOCM CLM. — Un mes desde el día siguiente a la publicación de la resolución de la convocatoria en el DOCM CLM.",
-    "url": "www.jccm.es",
-    "publishedAt": "2026-09-02"
    }
   ],
   "CT": [
@@ -566,28 +546,7 @@
     "publishedAt": "2026-09-30"
    }
   ],
-  "CE": [
-   {
-    "bdnsCode": "914226",
-    "title": "CONVENIO SUBVENCIÓN NOMINATIVA CENTRO DLE MAYOR CRUZ ROJA 2026",
-    "organism": "CONSEJERÍA DE SANIDAD Y SERVICIOS SOCIALES",
-    "opensAt": "2026-01-01",
-    "closesAt": "2026-12-31",
-    "windowText": null,
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/914226",
-    "publishedAt": "2026-06-19"
-   },
-   {
-    "bdnsCode": "914224",
-    "title": "CONVENIO SUBVENCIÓN NOMINATIVA CRUZ ROJA ATENCIÓN INTEGRAL Y SOLEDAD NO DESEADA DE PERSONAS MAYORES",
-    "organism": "CONSEJERÍA DE SANIDAD Y SERVICIOS SOCIALES",
-    "opensAt": "2026-01-01",
-    "closesAt": "2026-12-31",
-    "windowText": null,
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/914224",
-    "publishedAt": "2026-06-19"
-   }
-  ],
+  "CE": [],
   "MD": [
    {
     "bdnsCode": "934570",
@@ -932,18 +891,7 @@
     "publishedAt": "2026-09-08"
    }
   ],
-  "ML": [
-   {
-    "bdnsCode": "914322",
-    "title": "ACUERDO CONSEJO DE GOBIERNO, DE 5 DE JUNIO DE 2026, RELATIVO A CONVENIO DE COLABORACIÓN ENTRE LA CONSEJERÍA DE MEDIO AMBIENTE Y NATURALEZA DE LA CAM Y BUCEOMELILLA",
-    "organism": "CONSEJERÍA DE MEDIO AMBIENTE Y NATURALEZA",
-    "opensAt": "2026-06-20",
-    "closesAt": "2026-12-31",
-    "windowText": "AL DÍA SIGUIENTE DE LA PUBLICACIÓN EN EL BOME — TREINTA Y UNO DE DICIEMBRE DE DOS MIL VEINTESEIS ",
-    "url": "https://sede.melilla.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
-    "publishedAt": "2026-06-19"
-   }
-  ],
+  "ML": [],
   "PV": [],
   "AS": [
    {
