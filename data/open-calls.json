@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-19",
+ "generatedAt": "2026-10-20",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -64,6 +64,16 @@
     "windowText": null,
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/920637",
     "publishedAt": "2026-07-21"
+   },
+   {
+    "bdnsCode": "936172",
+    "title": "AYUDA ART 27 LO 1/2004 IAM_2026_AYU27ZA11",
+    "organism": "INSTITUTO ARAGONÉS DE LA MUJER (IAM)",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": null,
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936172",
+    "publishedAt": "2026-10-19"
    }
   ],
   "CN": [
@@ -76,6 +86,16 @@
     "windowText": "Convocatoria becas en Negocios Internacionales 2026-27 — Veinte(20) días hábiles contados desde la fecha de inicio del plazo de presentación de solicitudes",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/927619",
     "publishedAt": "2026-09-02"
+   },
+   {
+    "bdnsCode": "936305",
+    "title": "Ayuda Emergencia Social 2026",
+    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
+    "opensAt": "2026-07-28",
+    "closesAt": "2026-12-31",
+    "windowText": "Sin plazo de solicitud — Sin plazo de solicitud",
+    "url": "www.gobiernodecanarias.org/dsidj",
+    "publishedAt": "2026-10-19"
    },
    {
     "bdnsCode": "935024",
@@ -264,26 +284,6 @@
     "opensAt": "2026-05-07",
     "closesAt": "2026-12-31",
     "windowText": "SDF2026TF00053 Ayuda Emergencia Social 2026 — SDF2026TF00053 Ayuda Emergencia Social 2026",
-    "url": "www.gobiernodecanarias.org/dsidj",
-    "publishedAt": "2026-08-03"
-   },
-   {
-    "bdnsCode": "923276",
-    "title": "Ayuda Emergencia Social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-07-20",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2026GC00013 Ayuda Emergencia Social 2026 — SDF2026GC00013 Ayuda Emergencia Social 2026",
-    "url": "www.gobiernodecanarias.org/dsidj",
-    "publishedAt": "2026-08-03"
-   },
-   {
-    "bdnsCode": "923275",
-    "title": "Ayuda Emergencia Social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-07-03",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2026GC00024 Ayuda Emergencia Social 2026 — SDF2026GC00024 Ayuda Emergencia Social 2026",
     "url": "www.gobiernodecanarias.org/dsidj",
     "publishedAt": "2026-08-03"
    },
@@ -526,6 +526,16 @@
     "publishedAt": "2026-07-07"
    },
    {
+    "bdnsCode": "936187",
+    "title": "Ayudas para promover la formación y la acreditación de terceras lenguas para los estudiantes matriculados en estudios de grado en una universidad catalana el curso 2025-2026 (Parla 3)",
+    "organism": "AGÈNCIA DE GESTIÓ D'AJUTS UNIVERSITARIS I DE RECERCA (AGAUR)",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial — 1 Mesos",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936187",
+    "publishedAt": "2026-10-19"
+   },
+   {
     "bdnsCode": "934569",
     "title": "RESOLUCIÓN BECAS FP DUAL CURSO 2026-2027",
     "organism": "CONSORCI D'EDUCACIÓ DE BARCELONA",
@@ -641,6 +651,26 @@
     "windowText": "DÍA SIGUIENTE AL DE LA PUBLICACIÓN DE LA CONVOCATORIA EN EL DOGV — DOS MESES CONTADOS A PARTIR DEL DÍA SIGUIENTE DE LA PUBLICACIÓN DE LA CONVOCATORIA EN EL DOGV",
     "url": "https://sede.gva.es/es/detall-tramit?id_proc=112181",
     "publishedAt": "2026-09-22"
+   },
+   {
+    "bdnsCode": "935567",
+    "title": "RESOLUCIÓN de Vicepr. Primera y Conselleria de Vivienda, Empleo, Juventud e Igualdad que apruebam bases reguladoras de subvenciones para  limpieza y reparación  fachadas dañadas DANA 2024 y convocar subvenc 2026",
+    "organism": "SECRETARÍA AUTONÓMICA DE VIVIENDA",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Desde el día  siguiente de la publicación de la convocatoria — A los dos meses de su publicación.",
+    "url": "https://sede.gva.es/es/detall-tramit?id_proc=G112523",
+    "publishedAt": "2026-10-15"
+   },
+   {
+    "bdnsCode": "935530",
+    "title": "RESOLUCIÓN de  Vicep. Primera y Conselleria de Vivienda, Empleo, Juventud e Igualdad de aprobación de bases reguladoras de subvenc. para la reparación o sustitución de ascensores dañados a consecuencia de la DANA 2024 y su convocatoria 2026.",
+    "organism": "SECRETARÍA AUTONÓMICA DE VIVIENDA",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Desde el día siguiente al de la publicación de la convocatoría. — A los dos meses de su publicación.",
+    "url": "https://sede.gva.es/es/detall-tramit?id_proc=G112625",
+    "publishedAt": "2026-10-15"
    },
    {
     "bdnsCode": "915844",
