@@ -1,8 +1,28 @@
 {
- "generatedAt": "2026-10-20",
+ "generatedAt": "2026-10-21",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
+   {
+    "bdnsCode": "936469",
+    "title": "RESOLUCION DGFAL DESEMPLEADOS Y OCUPADOS SILICOSIS EN ANDALUCÍA LINEA 2",
+    "organism": "CONSEJERÍA DE EMPLEO, EMPRESA Y TRABAJO AUTÓNOMO",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Dia siguiente publicacion BOJA — 10 DÍAS NATURALES",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936469",
+    "publishedAt": "2026-10-20"
+   },
+   {
+    "bdnsCode": "936465",
+    "title": "RESOLUCIÓN DGFAL DESEMPLEADOS Y OCUPADOS SILICOSIS EN ANDALUCÍA LINEA 1",
+    "organism": "CONSEJERÍA DE EMPLEO, EMPRESA Y TRABAJO AUTÓNOMO",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Dia siguiente publicacion BOJA — 10 días naturales",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936465",
+    "publishedAt": "2026-10-20"
+   },
    {
     "bdnsCode": "935159",
     "title": "Resolución de 5 de Octubre de 2026 por la que se modifica la convocatoria de 12 de marzo de 2026, de la AAE por la que se convocan incentivos para la concesión de incentivos del PLAN RENOVE VEHÍCULOS ANDALUCÍA",
@@ -12,16 +32,6 @@
     "windowText": "9:00 horas del día 7 de octubre  de 2026 — Hasta que se declare su finalización mediante Resolución de la Dirección Gerencia de la Agencia Anda",
     "url": "www.agenciaandaluzadelaenergia.es",
     "publishedAt": "2026-10-14"
-   },
-   {
-    "bdnsCode": "920309",
-    "title": "Resolución de la Dirección General de Formación Profesional para el Empleo, por la que se convocan para el año 2026 las subvenciones públicas previstas en la Orden de 13 de septiembre de 2021, por la que se regula el programa de empleo y formación en la C",
-    "organism": "CONSEJERÍA DE EMPLEO, EMPRESA Y TRABAJO AUTÓNOMO",
-    "opensAt": "2026-07-25",
-    "closesAt": null,
-    "windowText": "El día siguiente al de publicación, en el Boletí",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/920309",
-    "publishedAt": "2026-07-20"
    },
    {
     "bdnsCode": "919648",
@@ -64,6 +74,16 @@
     "windowText": null,
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/920637",
     "publishedAt": "2026-07-21"
+   },
+   {
+    "bdnsCode": "936556",
+    "title": "AYUDA ART 27 L.O. 1/2004  IAM_2026_AYU27ZA14",
+    "organism": "INSTITUTO ARAGONÉS DE LA MUJER (IAM)",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": null,
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936556",
+    "publishedAt": "2026-10-20"
    },
    {
     "bdnsCode": "936172",
@@ -382,16 +402,6 @@
   ],
   "CL": [
    {
-    "bdnsCode": "929595",
-    "title": "Orden de 13 de septiembre de 2026 de la Consejería IEM, por la que se convocan ayudas al alumnado que realice su primera matrícula de primer curso de grado universitario en la Comunidad de Castilla y León, durante curso académico 2026/2027",
-    "organism": "CONSEJERÍA DE INDUSTRIA, UNIVERSIDADES, EMPLEO Y COMERCIO",
-    "opensAt": "2026-09-22",
-    "closesAt": "2026-10-21",
-    "windowText": null,
-    "url": "https://www.tramitacastillayleon.jcyl.es/",
-    "publishedAt": "2026-09-15"
-   },
-   {
     "bdnsCode": "930412",
     "title": "Orden de 17 de septiembre de 2026, de la Consejería de Industria, Universidades, Empleo y Comercio, por la que se convocan ayudas al estudio de idiomas para alumnos universitarios, durante el curso académico 2025/2026.",
     "organism": "CONSEJERÍA DE INDUSTRIA, UNIVERSIDADES, EMPLEO Y COMERCIO",
@@ -400,6 +410,16 @@
     "windowText": null,
     "url": "https://www.tramitacastillayleon.jcyl.es/",
     "publishedAt": "2026-09-18"
+   },
+   {
+    "bdnsCode": "929595",
+    "title": "Orden de 13 de septiembre de 2026 de la Consejería IEM, por la que se convocan ayudas al alumnado que realice su primera matrícula de primer curso de grado universitario en la Comunidad de Castilla y León, durante curso académico 2026/2027",
+    "organism": "CONSEJERÍA DE INDUSTRIA, UNIVERSIDADES, EMPLEO Y COMERCIO",
+    "opensAt": "2026-09-22",
+    "closesAt": "2026-11-05",
+    "windowText": null,
+    "url": "https://www.tramitacastillayleon.jcyl.es/",
+    "publishedAt": "2026-09-15"
    },
    {
     "bdnsCode": "927851",
@@ -412,6 +432,16 @@
     "publishedAt": "2026-09-04"
    },
    {
+    "bdnsCode": "935756",
+    "title": "Orden de 15 de octubre de 2026, de la Consejería de Educación, por la que se convocan ayudas para el alumnado que curse enseñanzas de Bachillerato, de Formación Profesional del sistema educativo y de determinadas enseñanzas impartidas en centros de CyL",
+    "organism": "CONSEJERÍA DE EDUCACIÓN",
+    "opensAt": "2026-10-21",
+    "closesAt": "2026-11-18",
+    "windowText": null,
+    "url": "https://www.tramitacastillayleon.jcyl.es/web/es/sede-electronica.html",
+    "publishedAt": "2026-10-16"
+   },
+   {
     "bdnsCode": "932041",
     "title": "Orden de 28/09/2026 de la Consejería de Movilidad, Transformación Digital e Inteligencia Artificial por la que se convocan subvenciones para facilitar la obtención del permiso de conducción de la clase B a las personas jóvenes de Castilla y León.",
     "organism": "CONSEJERÍA DE MOVILIDAD, TRANSFORMACIÓN DIGITAL E INTELIGENCIA ARTIFICIAL",
@@ -420,16 +450,6 @@
     "windowText": null,
     "url": " https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla100Detalle/1251181050732/Ayuda012/1285684640457/Propuesta",
     "publishedAt": "2026-09-28"
-   },
-   {
-    "bdnsCode": "935756",
-    "title": "Orden de 15 de octubre de 2026, de la Consejería de Educación, por la que se convocan ayudas para el alumnado que curse enseñanzas de Bachillerato, de Formación Profesional del sistema educativo y de determinadas enseñanzas impartidas en centros de CyL",
-    "organism": "CONSEJERÍA DE EDUCACIÓN",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Día siguiente a la publicación de extracto de la convocatoria — Veinte días hábiles, a contar desde el día siguiente al de la publicación del extracto en el BOCYL",
-    "url": "https://www.tramitacastillayleon.jcyl.es/web/es/sede-electronica.html",
-    "publishedAt": "2026-10-16"
    },
    {
     "bdnsCode": "934426",
@@ -743,16 +763,6 @@
     "windowText": "Al día siguiente de su publicación en DOE — Hasta el 05 de noviembre de 2026",
     "url": "https://juntaex.es/w/0690524",
     "publishedAt": "2026-09-16"
-   },
-   {
-    "bdnsCode": "914545",
-    "title": "Ayudas 2026-2027 del BONO ALQUILER JOVEN, según Resolución de 17 de junio de 2026 por la que se convocan.",
-    "organism": "SECRETARÍA GENERAL DE VIVIENDA, ARQUITECTURA, ACCESIBILIDAD Y REGENERACIÓN URBANA",
-    "opensAt": "2026-07-15",
-    "closesAt": null,
-    "windowText": "El día de la publicación en DOE del anuncio de terminación",
-    "url": "https://www.juntaex.es/w/6073",
-    "publishedAt": "2026-06-22"
    }
   ],
   "GA": [
