@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-21",
+ "generatedAt": "2026-10-22",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -499,7 +499,7 @@
     "bdnsCode": "921364",
     "title": "Convocatoria plurianual de ayudas a la rehabilitación por actuaciones de accesibilidad a la ciudad de Barcelona para el año 2026 con cargo a los presupuestos de los años 2026, 2027 y 2028",
     "organism": "CONSORCIO DE LA VIVIENDA DE BARCELONA",
-    "opensAt": null,
+    "opensAt": "2026-10-22",
     "closesAt": "2026-10-30",
     "windowText": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
     "url": "https://habitatge.barcelona/ca   i   http://www.bcn.cat/consorcihabitatge/ca/home.html",
@@ -529,7 +529,7 @@
     "bdnsCode": "921706",
     "title": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES A LA REHABILITACIÓN Y MEJORA DE LAS VIVIENDAS EN LA CIUDAD DE BARCELONA",
     "organism": "CONSORCIO DE LA VIVIENDA DE BARCELONA",
-    "opensAt": null,
+    "opensAt": "2026-10-22",
     "closesAt": "2026-12-31",
     "windowText": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
     "url": "https://habitatge.barcelona/ca   i   http://www.bcn.cat/consorcihabitatge/ca/home.html",
@@ -544,6 +544,16 @@
     "windowText": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/917685",
     "publishedAt": "2026-07-07"
+   },
+   {
+    "bdnsCode": "936968",
+    "title": "Convocatoria de ayudas a la movilidad internacional del estudiantado con reconocimiento académico y a la movilidad del estudiantado en el marco del Programa de Mejora e Innovación en la Formación de docentes de las universidades catalanas (MOBINT - MIF)",
+    "organism": "AGÈNCIA DE GESTIÓ D'AJUTS UNIVERSITARIS I DE RECERCA (AGAUR)",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial — 1 Mesos",
+    "url": "Portal de tràmits",
+    "publishedAt": "2026-10-21"
    },
    {
     "bdnsCode": "936187",
@@ -576,7 +586,18 @@
     "publishedAt": "2026-09-30"
    }
   ],
-  "CE": [],
+  "CE": [
+   {
+    "bdnsCode": "936506",
+    "title": "CONVOCATORIA EN REGIMEN DE CONCURRENCIA COMPETITIVA DE AYUDAS PARA ESTUDIOS UNIVERSITARIOS Y OTROS DURANTE EL CURSO 2026/2027",
+    "organism": "CONSEJERÍA DE EDUCACIÓN, CULTURA Y JUVENTUD",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "día siguiente publicación de la convocatoria en BOCCE — 15 días hábiles a partir de la publicación del extracto en BOCCE",
+    "url": "www.ceuta.es",
+    "publishedAt": "2026-10-20"
+   }
+  ],
   "MD": [
    {
     "bdnsCode": "934570",
@@ -825,16 +846,6 @@
     "windowText": "Día seguinte á publicación no DOG — Un mes contado a partir da súa publicación",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/932328",
     "publishedAt": "2026-09-29"
-   },
-   {
-    "bdnsCode": "914773",
-    "title": "Orde do 22 xuño de 2026 pola que se establecen as bases polas que se rexerá a concesión dunha axuda económica ás familias usuarias dos comedores escolares dos centros docentes sustentados con fondos públicos non xestionados pola Consellería de Educación,",
-    "organism": "CONSELLERÍA DE EDUCACIÓN, CIENCIA, UNIVERSIDADES E FORMACIÓN PROFESIONAL",
-    "opensAt": "2026-06-26",
-    "closesAt": null,
-    "windowText": "8 días do día seguinte ao da sua publicación — Un mes",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/914773",
-    "publishedAt": "2026-06-23"
    }
   ],
   "IB": [
@@ -879,6 +890,16 @@
     "windowText": "15/09/2026 — 14/06/2027",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/923134",
     "publishedAt": "2026-08-03"
+   },
+   {
+    "bdnsCode": "936755",
+    "title": "Convenio Erasmus Rural 2026",
+    "organism": "CONSEJERÍA DE POLÍTICA LOCAL, INFRAESTRUCTURAS Y LUCHA CONTRA LA DESPOBLACIÓN",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "No tiene — No tiene",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936755",
+    "publishedAt": "2026-10-21"
    },
    {
     "bdnsCode": "932784",
@@ -931,7 +952,18 @@
     "publishedAt": "2026-09-08"
    }
   ],
-  "ML": [],
+  "ML": [
+   {
+    "bdnsCode": "936866",
+    "title": "concesión de becas por asistencia a programas PISEL / talleres terapéuticos/prelaborales propios o concertados dirigidos a personas con trastorno mental/personas en riesgo de exclusión u otros sujetos\nAGOSTO-OCTUBRE 2026",
+    "organism": "CONSEJERÍA DE POLÍTICAS SOCIALES Y SALUD PÚBLICA",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "SIN PLAZO DE SOLICITUD — SIN PLAZO DE SOLICITUD",
+    "url": "WWW.MELILLA.ES",
+    "publishedAt": "2026-10-21"
+   }
+  ],
   "PV": [],
   "AS": [
    {
