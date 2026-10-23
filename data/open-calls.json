@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-22",
+ "generatedAt": "2026-10-23",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -388,16 +388,6 @@
     "windowText": null,
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/915393",
     "publishedAt": "2026-06-25"
-   },
-   {
-    "bdnsCode": "928096",
-    "title": "Orden FOM/10/2026, DE 7 DE SEPTIEMBRE, POR LA QUE SE APRUEBA LA CONVOCATORIA DE UNA BECA DE FORMACIÓN PRÁCTICA PARA TITULADOS UNIVERSITARIOS EN DERECHO.",
-    "organism": "CONSEJERÍA DE FOMENTO, ORDENACIÓN DELTERRITORIO Y MEDIO AMBIENTE",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "a partir del dia siguiente publicacion decreto BOC — un mes despues de la publicación extracto",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/928096",
-    "publishedAt": "2026-09-07"
    }
   ],
   "CL": [
@@ -692,6 +682,16 @@
     "windowText": "DÍA SIGUIENTE AL DE LA PUBLICACIÓN DE LA CONVOCATORIA EN EL DOGV — DOS MESES CONTADOS A PARTIR DEL DÍA SIGUIENTE DE LA PUBLICACIÓN DE LA CONVOCATORIA EN EL DOGV",
     "url": "https://sede.gva.es/es/detall-tramit?id_proc=112181",
     "publishedAt": "2026-09-22"
+   },
+   {
+    "bdnsCode": "937126",
+    "title": "RESOL.DE LA SECRETARÍA AUTONÓMICA DE EDUCACIÓN POR LA QUE SE REGULA Y SE CONCEDE UNA SUBV. DIRECTA A LA ASOC. JUAN PABLO II-GITANOS Y MARGINADOS PARA FINANCIAR PARCIALMENTE EL COSTE DEL SERV. COMP. DE TRANSP. ESCOLAR PARA EL EJ. 2026",
+    "organism": "SECRETARÍA AUTONÓMICA DE EDUCACIÓN",
+    "opensAt": "2026-01-01",
+    "closesAt": null,
+    "windowText": null,
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/937126",
+    "publishedAt": "2026-10-22"
    },
    {
     "bdnsCode": "935567",
