@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-23",
+ "generatedAt": "2026-10-24",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -98,14 +98,14 @@
   ],
   "CN": [
    {
-    "bdnsCode": "927619",
-    "title": "PROGRAMA DE BECAS EN NEGOCIOS INTERNACIONALES",
-    "organism": "CONSEJERÍA DE ECONOMÍA, INDUSTRIA, COMERCIO Y AUTÓNOMOS",
-    "opensAt": "2026-09-18",
-    "closesAt": "2026-10-23",
-    "windowText": "Convocatoria becas en Negocios Internacionales 2026-27 — Veinte(20) días hábiles contados desde la fecha de inicio del plazo de presentación de solicitudes",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/927619",
-    "publishedAt": "2026-09-02"
+    "bdnsCode": "937605",
+    "title": "FUNCIONAMIENTO DE LA ENTIDAD Y DESARROLLO DE SUS FINES ESTATUTARIOS",
+    "organism": "PRESIDENCIA DEL GOBIERNO",
+    "opensAt": "2026-01-01",
+    "closesAt": "2026-12-31",
+    "windowText": null,
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/937605",
+    "publishedAt": "2026-10-23"
    },
    {
     "bdnsCode": "936305",
@@ -298,16 +298,6 @@
     "publishedAt": "2026-08-03"
    },
    {
-    "bdnsCode": "923278",
-    "title": "Ayuda Emergencia Social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-05-07",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2026TF00053 Ayuda Emergencia Social 2026 — SDF2026TF00053 Ayuda Emergencia Social 2026",
-    "url": "www.gobiernodecanarias.org/dsidj",
-    "publishedAt": "2026-08-03"
-   },
-   {
     "bdnsCode": "934194",
     "title": "TRASLADO DE FALLECIDO A SU ISLA DE REFERENCIA O PROCEDENCIA 2026",
     "organism": "SERVICIO CANARIO DE LA SALUD",
@@ -358,36 +348,6 @@
     "windowText": null,
     "url": "https://www.cantabria.es/web/atencion-a-la-ciudadania/ayudas-y-subvenciones",
     "publishedAt": "2026-07-30"
-   },
-   {
-    "bdnsCode": "915543",
-    "title": "Subvención Nominativa a a la Fundación Universidad Europea del Atlántico para la realización de un programa orientado a combatir la soledad no deseada, tejer redes de valor, prevenir la institucionalización evitable y mejorar el bienestar subjetivo.",
-    "organism": "CONSEJERÍA DE INCLUSIÓN SOCIAL, JUVENTUD, FAMILIAS E IGUALDAD",
-    "opensAt": "2026-05-01",
-    "closesAt": "2026-12-31",
-    "windowText": null,
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/915543",
-    "publishedAt": "2026-06-25"
-   },
-   {
-    "bdnsCode": "915525",
-    "title": "Subvención Nominativa a la Fundación Real  Racing Club para la realización de un programa de intervención social denominado “Memoria Racinguista”.",
-    "organism": "CONSEJERÍA DE INCLUSIÓN SOCIAL, JUVENTUD, FAMILIAS E IGUALDAD",
-    "opensAt": "2026-05-01",
-    "closesAt": "2026-12-31",
-    "windowText": null,
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/915525",
-    "publishedAt": "2026-06-25"
-   },
-   {
-    "bdnsCode": "915393",
-    "title": "SUBVENCIÓN NOMINATIVA Colegio Oficial de Psicología de Cantabria. Prevenir situaciones de aislamiento social y soledad no deseada.",
-    "organism": "CONSEJERÍA DE INCLUSIÓN SOCIAL, JUVENTUD, FAMILIAS E IGUALDAD",
-    "opensAt": "2026-05-01",
-    "closesAt": "2026-12-31",
-    "windowText": null,
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/915393",
-    "publishedAt": "2026-06-25"
    }
   ],
   "CL": [
@@ -549,7 +509,7 @@
     "bdnsCode": "936187",
     "title": "Ayudas para promover la formación y la acreditación de terceras lenguas para los estudiantes matriculados en estudios de grado en una universidad catalana el curso 2025-2026 (Parla 3)",
     "organism": "AGÈNCIA DE GESTIÓ D'AJUTS UNIVERSITARIS I DE RECERCA (AGAUR)",
-    "opensAt": null,
+    "opensAt": "2026-10-24",
     "closesAt": null,
     "windowText": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial — 1 Mesos",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936187",
@@ -756,6 +716,66 @@
   ],
   "EX": [
    {
+    "bdnsCode": "937487",
+    "title": "Ayudas 2026 para la participación en actividades de formación del profesorado, s/Decreto 171/2026 de 6 de octubre por la que se establecen las bases reguladoras de las ayudas y se aprueba la convocatoria para el año 2026",
+    "organism": "DIRECCIÓN GENERAL DE INNOVACIÓN E INCLUSIÓN EDUCATIVA",
+    "opensAt": null,
+    "closesAt": "2026-10-31",
+    "windowText": "A partir del día siguiente a la publicación de la convocatoria y su extracto en el DOE",
+    "url": " https://www.juntaex.es/w/0703324",
+    "publishedAt": "2026-10-23"
+   },
+   {
+    "bdnsCode": "937530",
+    "title": "Ayudas curso 2026/2027. Linea B. APOYO EDUCATIVO DOMICILIARIO, destinadas al alumnado con necesidades específicas de apoyo educativo, según Resolución de convocatoria de 16 de octubre de 2026.",
+    "organism": "ENTE PÚBLICO EXTREMEÑO DE SERVICIOS EDUCATIVOS COMPLEMENTARIOS",
+    "opensAt": null,
+    "closesAt": "2027-05-24",
+    "windowText": "DÍA SIGUIENTE A LA PUBLICACIÓN DE LA CONVOCATORIA EN DOE",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/937530",
+    "publishedAt": "2026-10-23"
+   },
+   {
+    "bdnsCode": "937531",
+    "title": "Ayudas curso 2026/2027. Linea C. PSICOTERAPIA, destinadas al alumnado con necesidades específicas de apoyo educativo, según Resolución de convocatoria de 16 de octubre de 2026.",
+    "organism": "ENTE PÚBLICO EXTREMEÑO DE SERVICIOS EDUCATIVOS COMPLEMENTARIOS",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "DÍA SIGUIENTE A LA PUBLICACIÓN DE LA CONVOCATORIA EN DOE — 15 días hábiles contados a partir del siguiente al de la publicación de la convocatoria en el DOE",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/937531",
+    "publishedAt": "2026-10-23"
+   },
+   {
+    "bdnsCode": "937529",
+    "title": "Ayudas curso 2026/2027. Linea A. Logopedia, destinadas al alumnado con necesidades específicas de apoyo educativo, según Resolución de 16 de octubre de 2026.",
+    "organism": "ENTE PÚBLICO EXTREMEÑO DE SERVICIOS EDUCATIVOS COMPLEMENTARIOS",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "DÍA SIGUIENTE A LA PUBLICACIÓN DE LA CONVOCATORIA EN DOE — 15 días hábiles contados a partir del día siguiente al de la publicación de la convocatoria en DOE",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/937529",
+    "publishedAt": "2026-10-23"
+   },
+   {
+    "bdnsCode": "937509",
+    "title": "Ayudas Curso 26/27 Linea C. Transporte Diario, al alumnado enseñanzas postobligatorias no universitarias centros públicos Extremadura, según Resolución de 1 de octubre de 2026",
+    "organism": "ENTE PÚBLICO EXTREMEÑO DE SERVICIOS EDUCATIVOS COMPLEMENTARIOS",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "AL DIA SIGUIENTE DESDE LA PUBLICACION CONVOCATORIA EN EL DOE — 15 DIAS HÁBILES CONTADOS A PARTIR DEL SIGUIENTE AL DE LA PUBLICACIÓN EN EL DOE",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/937509",
+    "publishedAt": "2026-10-23"
+   },
+   {
+    "bdnsCode": "937508",
+    "title": "Ayudas Curso 26/27 Linea B. Transporte fin de semana, al alumnado enseñanzas postobligatorias no universitarias centros públicos Extremadura, según Resolución de 1 de octubre de 2026.",
+    "organism": "ENTE PÚBLICO EXTREMEÑO DE SERVICIOS EDUCATIVOS COMPLEMENTARIOS",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "AL DIA SIGUIENTE DE LA PUBLICACIÓN CONVOCATORIA EN DOE — 15 DIAS HÁBILES CONTADOS A PARTIR DEL SIGUIENTE AL DE LA PUBLICACIÓN EN EL DOE",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/937508",
+    "publishedAt": "2026-10-23"
+   },
+   {
     "bdnsCode": "934974",
     "title": "Ayudas curso 2026/2027 para el estudio de ingés en horario extraexcolar, según Resolución de 30 de septiembre de 2026, que las convoca.",
     "organism": "ENTE PÚBLICO EXTREMEÑO DE SERVICIOS EDUCATIVOS COMPLEMENTARIOS",
@@ -902,6 +922,16 @@
     "publishedAt": "2026-10-21"
    },
    {
+    "bdnsCode": "936255",
+    "title": "BECAS COMPLEMENTARIAS ESTUDIOS UNIVERSITARIOS FUERA DE LA C.A.R. CURSO 2026/2027",
+    "organism": "CONSEJERÍA DE EDUCACIÓN Y EMPLEO",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "El día siguiente a su publicación en el BOR — A los veinte días hábiles desde el día siguiente de su publicación en BOR",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936255",
+    "publishedAt": "2026-10-19"
+   },
+   {
     "bdnsCode": "932784",
     "title": "Ayudas individualizadas de transporte escolar, curso 2026/2027",
     "organism": "CONSEJERÍA DE EDUCACIÓN Y EMPLEO",
@@ -940,16 +970,6 @@
     "windowText": "Desde la publicación de la convocatoria en el BOR — Sin determinar hasta la publicación de la convocatoria en el BOR",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/928691",
     "publishedAt": "2026-09-10"
-   },
-   {
-    "bdnsCode": "928236",
-    "title": "Convenio con Cruz Roja Española.Emergencias y Protección Civil",
-    "organism": "CONSEJERÍA DE SALUD Y POLÍTICAS SOCIALES",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "No tiene — No tiene",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/928236",
-    "publishedAt": "2026-09-08"
    }
   ],
   "ML": [
