@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-24",
+ "generatedAt": "2026-10-25",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -672,46 +672,6 @@
     "windowText": "Desde el día siguiente al de la publicación de la convocatoría. — A los dos meses de su publicación.",
     "url": "https://sede.gva.es/es/detall-tramit?id_proc=G112625",
     "publishedAt": "2026-10-15"
-   },
-   {
-    "bdnsCode": "915844",
-    "title": "Resolución de 26 de junio de 2026 de la Conselleria de Educación, Cultura y Universidades, por la cual se convocan ayudas individuales para el servicio de transporte escolar para el curso 2026-2027 (SEC)",
-    "organism": "SECRETARÍA AUTONÓMICA DE EDUCACIÓN",
-    "opensAt": "2026-07-02",
-    "closesAt": null,
-    "windowText": "Desde el día siguiente a su publicación en el DOGV",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/915844",
-    "publishedAt": "2026-06-26"
-   },
-   {
-    "bdnsCode": "915836",
-    "title": "Resolución de 26 de junio de 2026 de la Conselleria de Educación, Cultura y Universidades, por la cual se convocan ayudas individuales para el servicio de transporte escolar para el curso 2026-2027 (PRIM)",
-    "organism": "SECRETARÍA AUTONÓMICA DE EDUCACIÓN",
-    "opensAt": "2026-07-02",
-    "closesAt": null,
-    "windowText": "Desde el día siguiente a su publicación en el DOGV",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/915836",
-    "publishedAt": "2026-06-26"
-   },
-   {
-    "bdnsCode": "915834",
-    "title": "Resol. 26/06/2026 de la Conselleria de Educación, Cultura y Universidades por la cual se convoca la concesión de ayudas de comedor escolar en los centros docentes no universitarios públicos y privados concertados para el curso escolar 2026-2027 (SEC)",
-    "organism": "SECRETARÍA AUTONÓMICA DE EDUCACIÓN",
-    "opensAt": "2026-07-02",
-    "closesAt": null,
-    "windowText": "Desde el día siguiente a su publicación en el DOGV",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/915834",
-    "publishedAt": "2026-06-26"
-   },
-   {
-    "bdnsCode": "915829",
-    "title": "Resol. 26/06/2026 de la Conselleria de Educación, Cultura y Universidades por la cual se convoca la concesión de ayudas de comedor escolar en los centros docentes no universitarios públicos y privados concertados para el curso escolar 2026-2027 (PRIM)",
-    "organism": "SECRETARÍA AUTONÓMICA DE EDUCACIÓN",
-    "opensAt": "2026-07-02",
-    "closesAt": null,
-    "windowText": "Desde el día siguiente a su publicación en el DOGV",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/915829",
-    "publishedAt": "2026-06-26"
    }
   ],
   "EX": [
