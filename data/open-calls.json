@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-25",
+ "generatedAt": "2026-10-27",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -7,8 +7,8 @@
     "bdnsCode": "936469",
     "title": "RESOLUCION DGFAL DESEMPLEADOS Y OCUPADOS SILICOSIS EN ANDALUCÍA LINEA 2",
     "organism": "CONSEJERÍA DE EMPLEO, EMPRESA Y TRABAJO AUTÓNOMO",
-    "opensAt": null,
-    "closesAt": null,
+    "opensAt": "2026-10-27",
+    "closesAt": "2026-11-05",
     "windowText": "Dia siguiente publicacion BOJA — 10 DÍAS NATURALES",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936469",
     "publishedAt": "2026-10-20"
@@ -17,8 +17,8 @@
     "bdnsCode": "936465",
     "title": "RESOLUCIÓN DGFAL DESEMPLEADOS Y OCUPADOS SILICOSIS EN ANDALUCÍA LINEA 1",
     "organism": "CONSEJERÍA DE EMPLEO, EMPRESA Y TRABAJO AUTÓNOMO",
-    "opensAt": null,
-    "closesAt": null,
+    "opensAt": "2026-10-27",
+    "closesAt": "2026-11-05",
     "windowText": "Dia siguiente publicacion BOJA — 10 días naturales",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936465",
     "publishedAt": "2026-10-20"
@@ -644,6 +644,16 @@
     "publishedAt": "2026-09-22"
    },
    {
+    "bdnsCode": "937988",
+    "title": "Resolución de la Conselleria de Educación, Cultura y Universidades, por la que se convocan, para el curso 2026-2027, las ayudas complementarias a las becas para la actividad de movilidad de estudiantes por estudios del programa ERASMUS+.",
+    "organism": "SECRETARÍA AUTONÓMICA DE UNIVERSIDADES",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Al dia siguiente de la publicación en el DOGV — 15 días hábiles a contar desde el día siguiente a su publicación en el DOGV.",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/937988",
+    "publishedAt": "2026-10-26"
+   },
+   {
     "bdnsCode": "937126",
     "title": "RESOL.DE LA SECRETARÍA AUTONÓMICA DE EDUCACIÓN POR LA QUE SE REGULA Y SE CONCEDE UNA SUBV. DIRECTA A LA ASOC. JUAN PABLO II-GITANOS Y MARGINADOS PARA FINANCIAR PARCIALMENTE EL COSTE DEL SERV. COMP. DE TRANSP. ESCOLAR PARA EL EJ. 2026",
     "organism": "SECRETARÍA AUTONÓMICA DE EDUCACIÓN",
@@ -818,6 +828,16 @@
     "publishedAt": "2026-09-11"
    },
    {
+    "bdnsCode": "937925",
+    "title": "Bases y convocatoria de subvenciones para acciones formativas del Sistema de formación profesional",
+    "organism": "CONSELLERÍA DE EMPLEO, COMERCIO Y EMIGRACIÓN",
+    "opensAt": "2026-11-01",
+    "closesAt": "2027-10-31",
+    "windowText": "Desde la entrada en vigor de la orden",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/937925",
+    "publishedAt": "2026-10-26"
+   },
+   {
     "bdnsCode": "932328",
     "title": "Resolución de 28 de septiembre de 2026 de la Fundación Pública Galicia Europa por la que se convoca una beca de formación, dirigida a personas con un título universitario, para la realización de prácticas en materia de políticas y programas europeos en el",
     "organism": "FUNDACIÓN GALICIA EUROPA",
@@ -828,28 +848,7 @@
     "publishedAt": "2026-09-29"
    }
   ],
-  "IB": [
-   {
-    "bdnsCode": "933920",
-    "title": "Resolución del Consejero de Educación y Universidades por la cual se convocan ayudas de promoción de la excelencia académica para estudiantes que hayan finalizado los estudios oficiales de enseñanza artítica superior 24-25",
-    "organism": "DIRECCIÓN GENERAL DE UNIVERSIDADES, INVESTIGACIÓN Y ENSEÑANZAS ARTÍSTICAS SUPERIORES",
-    "opensAt": "2026-10-13",
-    "closesAt": "2026-10-26",
-    "windowText": "13.00 h del 13 d’octubre de 2026 — 13.00 h del 26 d’octubre de 2026",
-    "url": "https://eas.caib.es",
-    "publishedAt": "2026-10-07"
-   },
-   {
-    "bdnsCode": "933919",
-    "title": "Resolución del consejero de Educación y Universidades por la cual se convocan auydas de desplazamiento para alumnos de las Illes Balears que cursen estudios oficiales de ensañanza artítica superior en la Unión europea 2025-2026",
-    "organism": "DIRECCIÓN GENERAL DE UNIVERSIDADES, INVESTIGACIÓN Y ENSEÑANZAS ARTÍSTICAS SUPERIORES",
-    "opensAt": "2026-10-13",
-    "closesAt": "2026-10-26",
-    "windowText": "A les 13.00 h del 13 d’octubre de 2026 — Finalitza a les 13.00 h del 26 d’octubre de 2026",
-    "url": "https://eas.caib.es",
-    "publishedAt": "2026-10-07"
-   }
-  ],
+  "IB": [],
   "RI": [
    {
     "bdnsCode": "922396",
@@ -900,36 +899,6 @@
     "windowText": "a partir del día siguiente a la publicación del extracto en el BOR — diez días hábiles siguientes",
     "url": "https://web.larioja.org/oficina-electronica/tramite?n=02587",
     "publishedAt": "2026-10-01"
-   },
-   {
-    "bdnsCode": "928754",
-    "title": "Subv.actuaciones mejora del medio y de infraestructuras en terrenos cinegéticos",
-    "organism": "CONSEJERÍA DE AGRICULTURA, GANADERÍA, MUNDO RURAL Y MEDIO AMBIENTE",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "A partir del día siguiente a la publicación del extracto de la convocatoria en el BOR — 1 mes a partir del día siguiente a la publicación en el BOR",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/928754",
-    "publishedAt": "2026-09-10"
-   },
-   {
-    "bdnsCode": "928746",
-    "title": "Becas de Diseño de Producto 2026 (Ejecución 2027)",
-    "organism": "AGENCIA DE DESARROLLO ECONÓMICO DE LA RIOJA",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Desde la publicación de la convocatoria en el BOR — Sin determinar hasta la publicación de la convocatoria en el BOR",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/928746",
-    "publishedAt": "2026-09-10"
-   },
-   {
-    "bdnsCode": "928691",
-    "title": "Becas Acción Exterior 2026 (Ejecución 2027)",
-    "organism": "AGENCIA DE DESARROLLO ECONÓMICO DE LA RIOJA",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Desde la publicación de la convocatoria en el BOR — Sin determinar hasta la publicación de la convocatoria en el BOR",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/928691",
-    "publishedAt": "2026-09-10"
    }
   ],
   "ML": [
