@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-27",
+ "generatedAt": "2026-10-28",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -94,6 +94,16 @@
     "windowText": null,
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936172",
     "publishedAt": "2026-10-19"
+   },
+   {
+    "bdnsCode": "934273",
+    "title": "convocatoria para 2026 de ayudas individuales a las personas afectadas por esclerosis lateral amiotrófica (ELA) en fase avanzada que están ingresados en centro residencial.",
+    "organism": "SERVICIOS CENTRALES IASS",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "DIA SIGUIENTE PUBLICACION BOA — 15 DIAS DESPUES DE SU PUBLICACION EN BOA",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/934273",
+    "publishedAt": "2026-10-08"
    }
   ],
   "CN": [
@@ -352,16 +362,6 @@
   ],
   "CL": [
    {
-    "bdnsCode": "930412",
-    "title": "Orden de 17 de septiembre de 2026, de la Consejería de Industria, Universidades, Empleo y Comercio, por la que se convocan ayudas al estudio de idiomas para alumnos universitarios, durante el curso académico 2025/2026.",
-    "organism": "CONSEJERÍA DE INDUSTRIA, UNIVERSIDADES, EMPLEO Y COMERCIO",
-    "opensAt": "2026-09-29",
-    "closesAt": "2026-10-27",
-    "windowText": null,
-    "url": "https://www.tramitacastillayleon.jcyl.es/",
-    "publishedAt": "2026-09-18"
-   },
-   {
     "bdnsCode": "929595",
     "title": "Orden de 13 de septiembre de 2026 de la Consejería IEM, por la que se convocan ayudas al alumnado que realice su primera matrícula de primer curso de grado universitario en la Comunidad de Castilla y León, durante curso académico 2026/2027",
     "organism": "CONSEJERÍA DE INDUSTRIA, UNIVERSIDADES, EMPLEO Y COMERCIO",
@@ -442,6 +442,16 @@
     "windowText": "Desde el día siguiente de la publicación de esta convocatoria. — Hasta el 30 de noviembre 2026",
     "url": "https://www.jccm.es",
     "publishedAt": "2026-09-24"
+   },
+   {
+    "bdnsCode": "938248",
+    "title": "Resolución por la que se aprueba la convocatoria pública de concesión de subvenciones para la realización de acciones de formación profesional en el ámbito laboral, dirigidas a personas trabajadoras ocupadas (Modalidad I), para la anualidad 2026",
+    "organism": "DIRECCIÓN GENERAL FORMACIÓN PROFESIONAL EN EL ÁMBITO LABORAL",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Desde el día siguiente al de la publicación de la resolución y de su extracto en el DOCM. — Diez días a contar desde el día siguiente al de la publicación de la resolución y extracto en DOCM",
+    "url": "www.jccm.es",
+    "publishedAt": "2026-10-27"
    }
   ],
   "CT": [
@@ -499,7 +509,7 @@
     "bdnsCode": "936968",
     "title": "Convocatoria de ayudas a la movilidad internacional del estudiantado con reconocimiento académico y a la movilidad del estudiantado en el marco del Programa de Mejora e Innovación en la Formación de docentes de las universidades catalanas (MOBINT - MIF)",
     "organism": "AGÈNCIA DE GESTIÓ D'AJUTS UNIVERSITARIS I DE RECERCA (AGAUR)",
-    "opensAt": null,
+    "opensAt": "2026-10-28",
     "closesAt": null,
     "windowText": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial — 1 Mesos",
     "url": "Portal de tràmits",
@@ -915,6 +925,16 @@
   ],
   "PV": [],
   "AS": [
+   {
+    "bdnsCode": "938318",
+    "title": "Bases y convocatoria concesión subvenciones para financiación de prestaciones bucodentales para prsonas mayores en el Principado de Asturias de 27 de octubre de 2026",
+    "organism": "CONSEJERÍA DE DERECHOS SOCIALES Y BIENESTAR",
+    "opensAt": "2026-11-03",
+    "closesAt": "2026-11-24",
+    "windowText": null,
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/938318",
+    "publishedAt": "2026-10-27"
+   },
    {
     "bdnsCode": "931080",
     "title": "Ayudas para compensación de gastos extraordinarios de accidentes de tráfico del personal docente y laboral de la Consejería de Educación_2026",
