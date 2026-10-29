@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-28",
+ "generatedAt": "2026-10-29",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -74,6 +74,16 @@
     "windowText": null,
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/920637",
     "publishedAt": "2026-07-21"
+   },
+   {
+    "bdnsCode": "938500",
+    "title": "Orden, de fecha de firma electrónica, de la Consejera de Educación, Ciencia y Universidades, por la que se adjudican ayudas a personas becarias auxiliares de conversación con destino en centros educativos de la Comunidad Autónoma de Aragón, seleccionados",
+    "organism": "DIRECCIÓN GENERAL DE POLÍTICA EDUCATIVA, ORDENACIÓN ACADÉMICA Y EDUCACIÓN PERMANENTE",
+    "opensAt": "2026-11-01",
+    "closesAt": "2027-05-31",
+    "windowText": null,
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/938500",
+    "publishedAt": "2026-10-28"
    },
    {
     "bdnsCode": "936556",
@@ -392,6 +402,16 @@
     "publishedAt": "2026-10-16"
    },
    {
+    "bdnsCode": "938400",
+    "title": "Orden de 23 de octubre de 2026, de la Consejería de Educación, por la que se convocan ayudas al estudio para el alumnado que curse enseñanzas artísticas superiores en la Comunidad de Castilla y  León en el curso académico 2026-2027",
+    "organism": "CONSEJERÍA DE EDUCACIÓN",
+    "opensAt": "2026-11-03",
+    "closesAt": "2026-11-30",
+    "windowText": null,
+    "url": "https://www.tramitacastillayleon.jcyl.es/",
+    "publishedAt": "2026-10-28"
+   },
+   {
     "bdnsCode": "932041",
     "title": "Orden de 28/09/2026 de la Consejería de Movilidad, Transformación Digital e Inteligencia Artificial por la que se convocan subvenciones para facilitar la obtención del permiso de conducción de la clase B a las personas jóvenes de Castilla y León.",
     "organism": "CONSEJERÍA DE MOVILIDAD, TRANSFORMACIÓN DIGITAL E INTELIGENCIA ARTIFICIAL",
@@ -643,6 +663,16 @@
    }
   ],
   "VC": [
+   {
+    "bdnsCode": "938453",
+    "title": "RESOLUCIÓN de 1 de octubre de 2026, por la que se establecen las bases reguladoras para la concesión de subvenciones para la compra de vivienda en municipios o núcleos de población de hasta 10.000 habitantes en la Comunitat Valenciana para la emancipación",
+    "organism": "SECRETARÍA AUTONÓMICA DE VIVIENDA",
+    "opensAt": "2026-10-22",
+    "closesAt": "2026-11-04",
+    "windowText": "A partir del día siguiente a la publicación en el DOGV — 10 dias habiles",
+    "url": "https://sede.gva.es/es/",
+    "publishedAt": "2026-10-28"
+   },
    {
     "bdnsCode": "930830",
     "title": "Subvenciones para la realización del informe de evaluación del edificio de uso residencial de vivienda en la Comunitat Valenciana (IEEV.CV)",
