@@ -3,7 +3,7 @@
     "version": 2,
     "contentHash": "c3d0cd8142cbdbbab6d4d3e5352b74c55bdba5d9b7296199e74ecef39eecb7b9",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -181,7 +181,7 @@
     "version": 2,
     "contentHash": "cff32a1b08b72537bea0bd8f18fbbcd9d907e0a352e974d1b2555eb971238048",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -195,7 +195,7 @@
     "version": 2,
     "contentHash": "2cdf254a71d027539fe104e30abaf0935aa88cdac7d22c95bcec569fd3e0dd35",
     "passed": false,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -216,7 +216,7 @@
     "version": 1,
     "contentHash": "374edbb2822e035805e7aa810bfc92e37f7ff6fcce4a79524e81e25f76667851",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -269,7 +269,7 @@
     "version": 1,
     "contentHash": "d347bb6276fe1fbc12522ec624e2737122867170d01f99362ea5be1f546c33ab",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -283,7 +283,7 @@
     "version": 2,
     "contentHash": "7719217864bd531523b64ebb1c4acbbac7f88d3f8a2805d70d3656953254b2ce",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -297,7 +297,7 @@
     "version": 2,
     "contentHash": "37868922dca525876c67db016bdb7638db9029322811a7b9170da5be56373ef5",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -311,7 +311,7 @@
     "version": 2,
     "contentHash": "4660d9c752227dfd833a6acc23d4cd0c39d646f611caf340ea63f36f070d538b",
     "passed": true,
-    "checkedAt": "2026-10-28",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -319,16 +319,7 @@
       "parameters": "pass"
     },
     "findings": [],
-    "models": [],
-    "lastFailedAttempt": {
-      "checkedAt": "2026-10-29",
-      "agents": {
-        "citations": "fail",
-        "links": "pass",
-        "deadlines": "skipped",
-        "parameters": "pass"
-      }
-    }
+    "models": []
   },
   "conciliacion-reduccion-jornada-excedencia-castilla-y-leon": {
     "version": 1,
@@ -385,7 +376,7 @@
     "version": 1,
     "contentHash": "645809bc06f5d2d2e812af665ef6ae20ca4f34265aa6b2d457b6db07d87a91ca",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -399,7 +390,7 @@
     "version": 2,
     "contentHash": "8ca3a5bb0cdcdfcb3935215f563f4891a4c36b75ae05b893f5c61acfa8a92f40",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -413,7 +404,7 @@
     "version": 1,
     "contentHash": "b9eef08853ac75013a20527d4a2647526d4ca4ebabaa4be594ed00a8c3032aeb",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -427,7 +418,7 @@
     "version": 1,
     "contentHash": "45570a469c01f1e14ee7749cddc22e815a8ea57dac3a888376dd109e21cae2dc",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -441,7 +432,7 @@
     "version": 1,
     "contentHash": "43e928e0fae6694494c48e160e8250ddd0ad83870aecc9f690e6df97cd14ae44",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -455,7 +446,7 @@
     "version": 1,
     "contentHash": "893bd69c29703de64e460bf2e465f1fe7434a1545d44cc23e5ed81cc909a06d2",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -469,7 +460,7 @@
     "version": 1,
     "contentHash": "8c5875d0a14e2a87853d9f8dee155064c8dee65c01bb02063636cb47b061e224",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -483,7 +474,7 @@
     "version": 1,
     "contentHash": "ff2ccfe57039175d2677b09a8cf50881b51fa007e3bf505abde47cac1ff4ed52",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -497,7 +488,7 @@
     "version": 1,
     "contentHash": "bc5a93655bd399222edfdf04b833fd02a9835b82f0cb659e04fa1558f54a2396",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -511,7 +502,7 @@
     "version": 1,
     "contentHash": "0ca45fda146beae21afbd781cb970dead1424265ab80706e5b39c79b21a5b181",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -525,7 +516,7 @@
     "version": 1,
     "contentHash": "2ab6255b39e7d8b1a625074988920799ded4079d226bb70aadd635c63b71564c",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -539,7 +530,7 @@
     "version": 1,
     "contentHash": "456df6defadf99773ecdae3c538526a83721f3df19962cb11e5924370d76ec66",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -553,7 +544,7 @@
     "version": 1,
     "contentHash": "4ff68229e6fc55fdadf77b25dfbd2a84c10470c7fb7ee416dd4f55f15f394215",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -567,7 +558,7 @@
     "version": 1,
     "contentHash": "265727d621276657e1cb16b0adb9395eceddde7586723f6967f6c7d10c59595f",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -581,7 +572,7 @@
     "version": 2,
     "contentHash": "b574b81f972b96fd3aa44fd94061b72ac5cb52ba16d3765ac59b55aff9877146",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -595,7 +586,7 @@
     "version": 2,
     "contentHash": "3be7b1341517c59e604b202948280d104170e37a5b283ead4b254fe46f028411",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -609,7 +600,7 @@
     "version": 2,
     "contentHash": "b035c90027dcbce28cd759a7c1e8aa116d297755373509fc2135f4e97e8d8966",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -623,7 +614,7 @@
     "version": 2,
     "contentHash": "66989d116620c5e7f8e8bd8f224563b840b7ab20b8d5d0a24bcae2cb927805aa",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -637,7 +628,7 @@
     "version": 1,
     "contentHash": "7728864d4ac90b05c790fe6d922ea1f9fbc2dfa114b7e5f7cce29217440ff7e6",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -651,7 +642,7 @@
     "version": 1,
     "contentHash": "3d23386a203f222df1401a33a1054f39256326b8d78c8f104cc1f185f3c84c42",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -665,7 +656,7 @@
     "version": 1,
     "contentHash": "86dece2aa34bd8939cb430ba02735fe4a078fbc280edd22539a7a80977038c73",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -679,7 +670,7 @@
     "version": 1,
     "contentHash": "8551e1fdd4fb67c71342282d423a2dd4f85f9787c668f14f48de1e3a78fcde0d",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -693,7 +684,7 @@
     "version": 1,
     "contentHash": "4d5ae1214aaf31f27cc4b93df9d5f19d96f863ba229eb4ed8b6e732a0812380a",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -707,7 +698,7 @@
     "version": 1,
     "contentHash": "3537b7ae65f8418f14579054b8dc19310d78132c4f5ae972278df555b910f674",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -721,7 +712,7 @@
     "version": 1,
     "contentHash": "2bd512694ed336b0b23c7ca700abbf3eef591da86b46a67fd668fff94975d87d",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -735,7 +726,7 @@
     "version": 1,
     "contentHash": "fdfb5821aec040c23369ece9001c435ee9d2116a7605bc1af553f9d4416976b5",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -749,7 +740,7 @@
     "version": 2,
     "contentHash": "e1013260e696064a9cce598b7ae2a88d7592b5bafc51a906dfaa866d12209ee9",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -763,7 +754,7 @@
     "version": 1,
     "contentHash": "2084488e8c47d0a4ce87fa8bc64c48ace6d55dc06cd89d166981be7eddfde5eb",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -777,7 +768,7 @@
     "version": 1,
     "contentHash": "8871a1ebf8eda5a5287301730c3916edcba338da97d185a8a9124464e1ecd198",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -791,7 +782,7 @@
     "version": 1,
     "contentHash": "aefd0bd115d80d8f689b5687094cda8d1a34c911a43410fb237409ce21ee38fc",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -805,7 +796,7 @@
     "version": 1,
     "contentHash": "bddbb3e1b0af362605b79826b2fe4f07b4c4e1dba8b27464ec6b09eb05a0ff79",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -819,7 +810,7 @@
     "version": 1,
     "contentHash": "f8aaaad9f2ce2f385bb7307ab6de8948bf41f6e4e641dc9da9d244efbe8da607",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -833,7 +824,7 @@
     "version": 1,
     "contentHash": "4b74920f9db827a12a5868a5a1442ca0781256865f1f9f3b9796cbebee1fb009",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -847,7 +838,7 @@
     "version": 1,
     "contentHash": "9b4cab7482fc67dfed94c9915279e020c07ca14257d5cdbb3bce7af41b08f507",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -861,7 +852,7 @@
     "version": 1,
     "contentHash": "1d014521154ae231a5e7ab348f5cd61c60cc8bb90c2f21fde5ea8c9d3cdb0c14",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -875,7 +866,7 @@
     "version": 1,
     "contentHash": "117454256f8e01c3f2ecf9e9dee70fcf8beed2071ff9861958d31550b494c096",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -889,7 +880,7 @@
     "version": 1,
     "contentHash": "bba0056a7b70942369a2d43a20b87ef58f59e5949f9ef4d60cc6b351ba75fd8f",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -903,7 +894,7 @@
     "version": 1,
     "contentHash": "11d958b21e66dbacce99ef75d6d85a1725e72d7f3af48dade7fa8b11e21f3eb4",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -917,7 +908,7 @@
     "version": 1,
     "contentHash": "b0cd7cf9ace2d6939ce9561df9910d134cd94807e9553efc19c8d0b2f3ebc08e",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -931,7 +922,7 @@
     "version": 1,
     "contentHash": "8c0e8dff6a2d983fc4811bb3073c8c04b52f78d027fcc59557df934d9b797997",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -945,7 +936,7 @@
     "version": 1,
     "contentHash": "6e193c03a4f5f953419bc2c74bd39f000c5d87f5b54f288c661a46e62cc44f1f",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -959,7 +950,7 @@
     "version": 2,
     "contentHash": "ea61024c56bc1ba49e5eaa194b5ca5deb42a4c0659926016a2fcd663c6974913",
     "passed": true,
-    "checkedAt": "2026-10-28",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -967,22 +958,13 @@
       "parameters": "pass"
     },
     "findings": [],
-    "models": [],
-    "lastFailedAttempt": {
-      "checkedAt": "2026-10-29",
-      "agents": {
-        "citations": "fail",
-        "links": "pass",
-        "deadlines": "skipped",
-        "parameters": "pass"
-      }
-    }
+    "models": []
   },
   "pension-no-contributiva-invalidez": {
     "version": 2,
     "contentHash": "fa4a5f2df1dbbb2b5f96b63dda81b5088bc1a52fd3e4ef288c387f763da31ed0",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -996,7 +978,7 @@
     "version": 2,
     "contentHash": "01405e68920ba9eb0ac96c5874eae62e855a05be665e973101909a3552a0cc23",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -1010,7 +992,7 @@
     "version": 2,
     "contentHash": "7f7c260d92f253bfdd6be580b53dca0a9a5fcfb253126f2f5eec99d6cb8eef3a",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -1024,7 +1006,7 @@
     "version": 2,
     "contentHash": "e1b9270f18d294125430f6739a6e10a1bdf541b71386dee25bf3f9cc23c64758",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -1038,7 +1020,7 @@
     "version": 1,
     "contentHash": "a0151c8bbadcf16c4b61eac3bbf57f3e4398f475c9ba52735aa9e4dbfced5ecf",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -1062,7 +1044,7 @@
     "findings": [],
     "models": [],
     "lastFailedAttempt": {
-      "checkedAt": "2026-10-29",
+      "checkedAt": "2026-10-30",
       "agents": {
         "citations": "uncertain",
         "links": "uncertain",
@@ -1075,7 +1057,7 @@
     "version": 1,
     "contentHash": "4de030a6c119a69b87610799d9b86d5f9844a8b38a45d8ebdf201a7f77b258e1",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -1089,7 +1071,7 @@
     "version": 1,
     "contentHash": "d8284c65d2b46250e09f8ff00a102acf48e33ad67204ab83ea556b69e67e0a1c",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -1103,7 +1085,7 @@
     "version": 2,
     "contentHash": "f33e5e1d0aafa4fa880b843bf52cead7a357a6c964b0ab3e2f1d38c490aace46",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -1117,7 +1099,7 @@
     "version": 1,
     "contentHash": "ae174d642334245e576de5c7d58776176a97faeab1d660820d71ce877bdc2dba",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -1141,7 +1123,7 @@
     "findings": [],
     "models": [],
     "lastFailedAttempt": {
-      "checkedAt": "2026-10-29",
+      "checkedAt": "2026-10-30",
       "agents": {
         "citations": "uncertain",
         "links": "uncertain",
@@ -1154,7 +1136,7 @@
     "version": 1,
     "contentHash": "fdf6738fcf41920a44d9784d8225f693d75e987ba62351e7531960db3a8589ed",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -1168,7 +1150,7 @@
     "version": 1,
     "contentHash": "bf072c5b08debf61336714514031f9f523d4efd306ed5e594cf1622ba8160379",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -1182,7 +1164,7 @@
     "version": 1,
     "contentHash": "127e669bee0ea6a80813f30e0cb7dea46549448f9e9d83d5c59a192a66b06725",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -1196,7 +1178,7 @@
     "version": 1,
     "contentHash": "ce1f018e321f81f5a55de094bda08f0b5dca5c244e472c231db59b8cbf8e41b6",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
@@ -1220,7 +1202,7 @@
     "findings": [],
     "models": [],
     "lastFailedAttempt": {
-      "checkedAt": "2026-10-29",
+      "checkedAt": "2026-10-30",
       "agents": {
         "citations": "uncertain",
         "links": "uncertain",
@@ -1233,7 +1215,7 @@
     "version": 2,
     "contentHash": "57a267994073106b54a606959e78cee4e3de615662c829d2fb78adf4a7c40ad7",
     "passed": true,
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-30",
     "agents": {
       "citations": "pass",
       "links": "pass",
