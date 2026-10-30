@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-29",
+ "generatedAt": "2026-10-30",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -55,6 +55,16 @@
    }
   ],
   "AR": [
+   {
+    "bdnsCode": "938813",
+    "title": "AYUDA ART 27 IAM_2025_AYU27HU3",
+    "organism": "INSTITUTO ARAGONÉS DE LA MUJER (IAM)",
+    "opensAt": "2026-01-01",
+    "closesAt": "2026-12-31",
+    "windowText": null,
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/938813",
+    "publishedAt": "2026-10-29"
+   },
    {
     "bdnsCode": "926926",
     "title": "ORDEN Consejera Economía, Competitividad y Empleo, por la que se convoca para el 2026, programa becas y ayudas para personas trabajadoras desempleadas que participen en acciones formativas y formación en empresa u organismo equiparado, aprobadas en 2026",
@@ -308,14 +318,14 @@
     "publishedAt": "2026-08-04"
    },
    {
-    "bdnsCode": "923279",
-    "title": "SDF2026TF00063 Ayuda Emergencia Social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-05-14",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2026TF00063 Ayuda Emergencia Social 2026 — SDF2026TF00063 Ayuda Emergencia Social 2026",
-    "url": "www.gobiernodecanarias.org/dsidj",
-    "publishedAt": "2026-08-03"
+    "bdnsCode": "938898",
+    "title": "BECAS Itinerarios Formativos de Capacitación +21 2026",
+    "organism": "CONSEJERÍA DE EDUCACIÓN, FORMACIÓN PROFESIONAL, ACTIVIDAD FÍSICA Y DEPORTES",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "El día siguiente a la publicación en el B.O.C. — Diez días hábiles contados desde el día siguiente a la publicación en B.O.C.",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/938898",
+    "publishedAt": "2026-10-29"
    },
    {
     "bdnsCode": "934194",
@@ -402,16 +412,6 @@
     "publishedAt": "2026-10-16"
    },
    {
-    "bdnsCode": "938400",
-    "title": "Orden de 23 de octubre de 2026, de la Consejería de Educación, por la que se convocan ayudas al estudio para el alumnado que curse enseñanzas artísticas superiores en la Comunidad de Castilla y  León en el curso académico 2026-2027",
-    "organism": "CONSEJERÍA DE EDUCACIÓN",
-    "opensAt": "2026-11-03",
-    "closesAt": "2026-11-30",
-    "windowText": null,
-    "url": "https://www.tramitacastillayleon.jcyl.es/",
-    "publishedAt": "2026-10-28"
-   },
-   {
     "bdnsCode": "932041",
     "title": "Orden de 28/09/2026 de la Consejería de Movilidad, Transformación Digital e Inteligencia Artificial por la que se convocan subvenciones para facilitar la obtención del permiso de conducción de la clase B a las personas jóvenes de Castilla y León.",
     "organism": "CONSEJERÍA DE MOVILIDAD, TRANSFORMACIÓN DIGITAL E INTELIGENCIA ARTIFICIAL",
@@ -420,6 +420,16 @@
     "windowText": null,
     "url": " https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla100Detalle/1251181050732/Ayuda012/1285684640457/Propuesta",
     "publishedAt": "2026-09-28"
+   },
+   {
+    "bdnsCode": "938400",
+    "title": "Orden de 23 de octubre de 2026, de la Consejería de Educación, por la que se convocan ayudas al estudio para el alumnado que curse enseñanzas artísticas superiores en la Comunidad de Castilla y  León en el curso académico 2026-2027",
+    "organism": "CONSEJERÍA DE EDUCACIÓN",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Dia siguiente a la publicación del Extracto en el BOCYL. — Veinte días hábiles, a contar desde el día siguiente al de la publicación del extracto en el BOCYL",
+    "url": "https://www.tramitacastillayleon.jcyl.es/",
+    "publishedAt": "2026-10-28"
    },
    {
     "bdnsCode": "934426",
@@ -444,6 +454,16 @@
     "publishedAt": "2026-08-27"
    },
    {
+    "bdnsCode": "938248",
+    "title": "Resolución por la que se aprueba la convocatoria pública de concesión de subvenciones para la realización de acciones de formación profesional en el ámbito laboral, dirigidas a personas trabajadoras ocupadas (Modalidad I), para la anualidad 2026",
+    "organism": "DIRECCIÓN GENERAL FORMACIÓN PROFESIONAL EN EL ÁMBITO LABORAL",
+    "opensAt": "2026-10-30",
+    "closesAt": "2026-11-13",
+    "windowText": "Desde el día siguiente al de la publicación de la resolución y de su extracto en el DOCM. — Diez días a contar desde el día siguiente al de la publicación de la resolución y extracto en DOCM",
+    "url": "www.jccm.es",
+    "publishedAt": "2026-10-27"
+   },
+   {
     "bdnsCode": "933977",
     "title": "Actuaciones de rehabilitación y mejora de la eficiencia energética en viviendas y edificios de viviendas de CLM, cofinanciadas FEDER 2021-2027. Convocatoria 2026",
     "organism": "DIRECCIÓN GENERAL DE VIVIENDA",
@@ -462,16 +482,6 @@
     "windowText": "Desde el día siguiente de la publicación de esta convocatoria. — Hasta el 30 de noviembre 2026",
     "url": "https://www.jccm.es",
     "publishedAt": "2026-09-24"
-   },
-   {
-    "bdnsCode": "938248",
-    "title": "Resolución por la que se aprueba la convocatoria pública de concesión de subvenciones para la realización de acciones de formación profesional en el ámbito laboral, dirigidas a personas trabajadoras ocupadas (Modalidad I), para la anualidad 2026",
-    "organism": "DIRECCIÓN GENERAL FORMACIÓN PROFESIONAL EN EL ÁMBITO LABORAL",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Desde el día siguiente al de la publicación de la resolución y de su extracto en el DOCM. — Diez días a contar desde el día siguiente al de la publicación de la resolución y extracto en DOCM",
-    "url": "www.jccm.es",
-    "publishedAt": "2026-10-27"
    }
   ],
   "CT": [
@@ -524,6 +534,16 @@
     "windowText": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/917685",
     "publishedAt": "2026-07-07"
+   },
+   {
+    "bdnsCode": "938809",
+    "title": "Ayudas para estudiantes matriculados en una universidad catalana que tengan concedida una beca general para estudios postobligatorios o una beca Equidad para promover la formación y la acreditación de terceres lenguas (Parla 3) del curso 2026-2027",
+    "organism": "AGÈNCIA DE GESTIÓ D'AJUTS UNIVERSITARIS I DE RECERCA (AGAUR)",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial — 1 Mesos",
+    "url": "Tràmits Gencat",
+    "publishedAt": "2026-10-29"
    },
    {
     "bdnsCode": "936968",
@@ -625,7 +645,7 @@
     "bdnsCode": "932808",
     "title": "Subvención para proyectos comunitarios de interés social AUZOLAN 2027",
     "organism": "INSTITUTO NAVARRO DE JUVENTUD",
-    "opensAt": null,
+    "opensAt": "2026-10-30",
     "closesAt": "2027-10-31",
     "windowText": "Desde el día siguiente a la publicación de la convocatoria en el Boletín Oficial de Navarra",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/932808",
@@ -650,16 +670,6 @@
     "windowText": "A partir del día siguiente a la publicación de la convocatoria en en el BON — 15 dias hábiles a partir del día siguiente a la publicación de la convocatoria en el BON",
     "url": "www.navarra.es",
     "publishedAt": "2026-10-07"
-   },
-   {
-    "bdnsCode": "929118",
-    "title": "Convocatoria General de Becas del Curso 2026/2027, para el alumnado que curse estudios universitarios",
-    "organism": "DEPARTAMENTO DE UNIVERSIDAD, INNOVACION Y TRANSFORMACION DIGITAL",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Un mes a contar desde la publicación de la convocatoria en el B.O.N. — Un mes",
-    "url": "www.navarra.es",
-    "publishedAt": "2026-09-14"
    }
   ],
   "VC": [
@@ -682,6 +692,16 @@
     "windowText": "DÍA SIGUIENTE AL DE LA PUBLICACIÓN DE LA CONVOCATORIA EN EL DOGV — DOS MESES CONTADOS A PARTIR DEL DÍA SIGUIENTE DE LA PUBLICACIÓN DE LA CONVOCATORIA EN EL DOGV",
     "url": "https://sede.gva.es/es/detall-tramit?id_proc=112181",
     "publishedAt": "2026-09-22"
+   },
+   {
+    "bdnsCode": "938636",
+    "title": "S1485 - PROGRAMA TERMALISMO VALENCIANO - 2027",
+    "organism": "SECRETARÍA AUTONÓMICA DE  FAMILIA Y SERVICIOS SOCIALES",
+    "opensAt": "2027-01-01",
+    "closesAt": "2027-06-30",
+    "windowText": "Desde el día siguiente al de la publicación del extracto de la convocatoria en el DOGV — 6 meses a contar desde el día siguiente al de la publicación del extracto en el DOGV",
+    "url": "www.gva.es",
+    "publishedAt": "2026-10-29"
    },
    {
     "bdnsCode": "937988",
