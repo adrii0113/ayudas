@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-30",
+ "generatedAt": "2026-10-31",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -22,6 +22,16 @@
     "windowText": "Dia siguiente publicacion BOJA — 10 días naturales",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936465",
     "publishedAt": "2026-10-20"
+   },
+   {
+    "bdnsCode": "938972",
+    "title": "PRÁCTICAS PROFESIONALES NO LABORALES",
+    "organism": "CONSEJERÍA DE EMPLEO, EMPRESA Y TRABAJO AUTÓNOMO",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "se iniciará el día siguiente al de publicación — 13 de noviembre de 2026, inclusive",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/938972",
+    "publishedAt": "2026-10-30"
    },
    {
     "bdnsCode": "935159",
@@ -55,6 +65,16 @@
    }
   ],
   "AR": [
+   {
+    "bdnsCode": "939008",
+    "title": "AYUDA ART 27 IAM_2026_AYU27TE3",
+    "organism": "INSTITUTO ARAGONÉS DE LA MUJER (IAM)",
+    "opensAt": "2026-01-01",
+    "closesAt": "2026-12-31",
+    "windowText": null,
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/939008",
+    "publishedAt": "2026-10-30"
+   },
    {
     "bdnsCode": "938813",
     "title": "AYUDA ART 27 IAM_2025_AYU27HU3",
@@ -121,7 +141,7 @@
     "organism": "SERVICIOS CENTRALES IASS",
     "opensAt": null,
     "closesAt": null,
-    "windowText": "DIA SIGUIENTE PUBLICACION BOA — 15 DIAS DESPUES DE SU PUBLICACION EN BOA",
+    "windowText": "31/10/2026 — 10 DIAS HÁBILES DESDE EL DÍA SIGUIENTE A SU PUBLICACION EN BOA",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/934273",
     "publishedAt": "2026-10-08"
    }
@@ -412,6 +432,16 @@
     "publishedAt": "2026-10-16"
    },
    {
+    "bdnsCode": "938400",
+    "title": "Orden de 23 de octubre de 2026, de la Consejería de Educación, por la que se convocan ayudas al estudio para el alumnado que curse enseñanzas artísticas superiores en la Comunidad de Castilla y  León en el curso académico 2026-2027",
+    "organism": "CONSEJERÍA DE EDUCACIÓN",
+    "opensAt": "2026-10-31",
+    "closesAt": "2026-11-30",
+    "windowText": null,
+    "url": "https://www.tramitacastillayleon.jcyl.es/",
+    "publishedAt": "2026-10-28"
+   },
+   {
     "bdnsCode": "932041",
     "title": "Orden de 28/09/2026 de la Consejería de Movilidad, Transformación Digital e Inteligencia Artificial por la que se convocan subvenciones para facilitar la obtención del permiso de conducción de la clase B a las personas jóvenes de Castilla y León.",
     "organism": "CONSEJERÍA DE MOVILIDAD, TRANSFORMACIÓN DIGITAL E INTELIGENCIA ARTIFICIAL",
@@ -420,16 +450,6 @@
     "windowText": null,
     "url": " https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla100Detalle/1251181050732/Ayuda012/1285684640457/Propuesta",
     "publishedAt": "2026-09-28"
-   },
-   {
-    "bdnsCode": "938400",
-    "title": "Orden de 23 de octubre de 2026, de la Consejería de Educación, por la que se convocan ayudas al estudio para el alumnado que curse enseñanzas artísticas superiores en la Comunidad de Castilla y  León en el curso académico 2026-2027",
-    "organism": "CONSEJERÍA DE EDUCACIÓN",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Dia siguiente a la publicación del Extracto en el BOCYL. — Veinte días hábiles, a contar desde el día siguiente al de la publicación del extracto en el BOCYL",
-    "url": "https://www.tramitacastillayleon.jcyl.es/",
-    "publishedAt": "2026-10-28"
    },
    {
     "bdnsCode": "934426",
@@ -485,26 +505,6 @@
    }
   ],
   "CT": [
-   {
-    "bdnsCode": "921364",
-    "title": "Convocatoria plurianual de ayudas a la rehabilitación por actuaciones de accesibilidad a la ciudad de Barcelona para el año 2026 con cargo a los presupuestos de los años 2026, 2027 y 2028",
-    "organism": "CONSORCIO DE LA VIVIENDA DE BARCELONA",
-    "opensAt": "2026-10-22",
-    "closesAt": "2026-10-30",
-    "windowText": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
-    "url": "https://habitatge.barcelona/ca   i   http://www.bcn.cat/consorcihabitatge/ca/home.html",
-    "publishedAt": "2026-07-24"
-   },
-   {
-    "bdnsCode": "920036",
-    "title": "Procedimiento de las becas Equidad y para la obtención de la acreditación del tramo de renta familiar",
-    "organism": "AGÈNCIA DE GESTIÓ D'AJUTS UNIVERSITARIS I DE RECERCA (AGAUR)",
-    "opensAt": "2026-09-15",
-    "closesAt": "2026-10-30",
-    "windowText": null,
-    "url": "Portal tràmits",
-    "publishedAt": "2026-07-17"
-   },
    {
     "bdnsCode": "933847",
     "title": "Beca que tiene por objetivo abrir un espacio de experimentacion curatorial de personas y colectivos jóvenes, así como favorecer su profesionalizacion.",
@@ -652,6 +652,16 @@
     "publishedAt": "2026-10-01"
    },
    {
+    "bdnsCode": "939142",
+    "title": "Ayudas económicas para familias con menores en edad escolar (entre los 3 y 21 años) con necesidades educativas especiales dirigidas a paliar los gastos derivados de las actividades durante las vacaciones escolares de Navidad de 26 y Semana Santa/verano 27",
+    "organism": "DEPARTAMENTO DE EDUCACION",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "A partir de la fecha de publicación — Base sexta. - Plazos de presentación de solicitudes.",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/939142",
+    "publishedAt": "2026-10-30"
+   },
+   {
     "bdnsCode": "934094",
     "title": "Beca de formación para personas licenciadas o graduadas en Derecho con destino en la Secretaría General Técnica del Departamento de Salud",
     "organism": "DEPARTAMENTO DE SALUD",
@@ -749,9 +759,9 @@
     "bdnsCode": "937487",
     "title": "Ayudas 2026 para la participación en actividades de formación del profesorado, s/Decreto 171/2026 de 6 de octubre por la que se establecen las bases reguladoras de las ayudas y se aprueba la convocatoria para el año 2026",
     "organism": "DIRECCIÓN GENERAL DE INNOVACIÓN E INCLUSIÓN EDUCATIVA",
-    "opensAt": null,
-    "closesAt": "2026-10-31",
-    "windowText": "A partir del día siguiente a la publicación de la convocatoria y su extracto en el DOE",
+    "opensAt": "2026-10-28",
+    "closesAt": "2026-11-05",
+    "windowText": null,
     "url": " https://www.juntaex.es/w/0703324",
     "publishedAt": "2026-10-23"
    },
@@ -856,6 +866,16 @@
     "windowText": "27/08/2026 — 16/11/2026",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/925229",
     "publishedAt": "2026-08-17"
+   },
+   {
+    "bdnsCode": "939151",
+    "title": "Orden de 22 de octubre de 2026 por la que se establecen las bases reguladoras y se convocan ayudas de movilidad para el alumnado de ciclos formativos de grado básico y grado medio de c. educa. públicos Erasmus+ 2025-1-ES01-KA121-VET-000332915  curso 26-27",
+    "organism": "CONSELLERÍA DE EDUCACIÓN, CIENCIA, UNIVERSIDADES E FORMACIÓN PROFESIONAL",
+    "opensAt": "2026-11-03",
+    "closesAt": "2026-12-03",
+    "windowText": "Día seguinte ao da publicación desta convocatoria no Diario Oficial de Galicia — 1 mes",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/939151",
+    "publishedAt": "2026-10-30"
    },
    {
     "bdnsCode": "925541",
