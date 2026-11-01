@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-31",
+ "generatedAt": "2026-11-01",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -464,16 +464,6 @@
   ],
   "CM": [
    {
-    "bdnsCode": "926667",
-    "title": "Resolución de la DG Humanización y Atención Sociosanitaria: subvenciones destinadas a la atención a personas con enfermedades raras y sus familias 2026",
-    "organism": "DIRECCIÓN GENERAL DE HUMANIZACIÓN Y ATENCIÓN SOCIOSANITARIA",
-    "opensAt": null,
-    "closesAt": "2026-10-31",
-    "windowText": "El día siguiente al de la publicación en el DOCM",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/926667",
-    "publishedAt": "2026-08-27"
-   },
-   {
     "bdnsCode": "938248",
     "title": "Resolución por la que se aprueba la convocatoria pública de concesión de subvenciones para la realización de acciones de formación profesional en el ámbito laboral, dirigidas a personas trabajadoras ocupadas (Modalidad I), para la anualidad 2026",
     "organism": "DIRECCIÓN GENERAL FORMACIÓN PROFESIONAL EN EL ÁMBITO LABORAL",
@@ -620,16 +610,6 @@
     "windowText": "día siguiente de la publicación de la convocatoria en el BON —  Cuando se agote el crédito presupuestario, y en todo caso, el 1 de noviembre de 2026.",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/920490",
     "publishedAt": "2026-07-21"
-   },
-   {
-    "bdnsCode": "917082",
-    "title": "Subvenciones para la fotoprotección, durante el año 2026, de las personas diagnosticadas de lupus.",
-    "organism": "DEPARTAMENTO DE SALUD",
-    "opensAt": null,
-    "closesAt": "2026-11-16",
-    "windowText": "Día siguiente de su publicación en el Boletín Oficial de Navarra — 16 de noviembre de 2026",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/917082",
-    "publishedAt": "2026-07-03"
    },
    {
     "bdnsCode": "930966",
@@ -834,16 +814,6 @@
     "windowText": "desde publicación de convocatoria — 10 días hábiles",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/934836",
     "publishedAt": "2026-10-13"
-   },
-   {
-    "bdnsCode": "929941",
-    "title": "Subv. 2026 a familias para servicios de cuidados de menores de 3 años como medida de fomento de la conciliación de la vida personal, familiar y laboral, s/ RESOLUCIÓN de 9 de septiembre de 2026, del Secretario General que convoca",
-    "organism": "SECRETARÍA GENERAL DE IGUALDAD Y CONCILIACIÓN",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Al día siguiente de su publicación en DOE — Hasta el 05 de noviembre de 2026",
-    "url": "https://juntaex.es/w/0690524",
-    "publishedAt": "2026-09-16"
    }
   ],
   "GA": [
@@ -930,16 +900,6 @@
   ],
   "IB": [],
   "RI": [
-   {
-    "bdnsCode": "922396",
-    "title": "CS PLAN RENOVE ELECTRODOMÉSTICOS BAJO CONSUMO ENERGÉTICO-particulares",
-    "organism": "CONSEJERÍA DE ECONOMÍA, INNOVACIÓN, EMPRESA Y TRABAJO AUTÓNOMO",
-    "opensAt": null,
-    "closesAt": "2026-10-31",
-    "windowText": "El día siguiente de su publicación en el BOR",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/922396",
-    "publishedAt": "2026-07-29"
-   },
    {
     "bdnsCode": "923134",
     "title": "Aux conversación Fulbright 2026/2027",
