@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-02",
+ "generatedAt": "2026-11-03",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -516,14 +516,34 @@
     "publishedAt": "2026-07-27"
    },
    {
-    "bdnsCode": "917685",
-    "title": "Procedimiento para la obtención de una acreditación para las estudiantes víctimas de violencia machista fuera del ámbito de la pareja para la exención total de los precios fijados en el decreto anual de precios públicos en las universidades públicas de Ca",
-    "organism": "AGÈNCIA DE GESTIÓ D'AJUTS UNIVERSITARIS I DE RECERCA (AGAUR)",
-    "opensAt": "2026-07-11",
-    "closesAt": "2027-02-26",
-    "windowText": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/917685",
-    "publishedAt": "2026-07-07"
+    "bdnsCode": "939309",
+    "title": "Subvenciones destinadas a la formación de maquinistas",
+    "organism": "DEPARTAMENT DE TERRITORI, HABITATGE I TRANSICIÓ ECOLÒGICA",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial — 01 Mesos",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/939309",
+    "publishedAt": "2026-11-02"
+   },
+   {
+    "bdnsCode": "939286",
+    "title": "Gastos de sepelio, traslado o repatriación del cuerpo al país de orígen de las mujeres víctimas mortales de violencia machista",
+    "organism": "DEPARTAMENT D'IGUALTAT I FEMINISME",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Sense termini de presentació de sol·licitud — Sense termini de presentació de sol·licitud",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/939286",
+    "publishedAt": "2026-11-02"
+   },
+   {
+    "bdnsCode": "939285",
+    "title": "Prestaciones de Violencia Machista indemnizaciones económicas Ley 5/2008",
+    "organism": "DEPARTAMENT D'IGUALTAT I FEMINISME",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Sense termini de presentació de sol·licitud — Sense termini de presentació de sol·licitud",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/939285",
+    "publishedAt": "2026-11-02"
    },
    {
     "bdnsCode": "938809",
