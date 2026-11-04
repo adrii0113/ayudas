@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-03",
+ "generatedAt": "2026-11-04",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -328,16 +328,6 @@
     "publishedAt": "2026-08-04"
    },
    {
-    "bdnsCode": "923528",
-    "title": "SDF2026TF00049 Ayudas de emergencia social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-04-15",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2026TF00049 Ayudas de emergencia social 2026 — SDF2026TF00049 Ayudas de emergencia social 2026",
-    "url": "www.gobiernodecanarias.org.dgijif",
-    "publishedAt": "2026-08-04"
-   },
-   {
     "bdnsCode": "938898",
     "title": "BECAS Itinerarios Formativos de Capacitación +21 2026",
     "organism": "CONSEJERÍA DE EDUCACIÓN, FORMACIÓN PROFESIONAL, ACTIVIDAD FÍSICA Y DEPORTES",
@@ -442,6 +432,16 @@
     "publishedAt": "2026-10-28"
    },
    {
+    "bdnsCode": "937579",
+    "title": "Orden de 29 de octubre de 2026, de la Consejería de Industria, Universidades, Empleo y Comercio, por la que se convocan ayudas al estudio al alumnado que curse estudios universitarios en la comunidad de Castilla y León durante el curso académico 2026-2027",
+    "organism": "CONSEJERÍA DE INDUSTRIA, UNIVERSIDADES, EMPLEO Y COMERCIO",
+    "opensAt": "2026-11-06",
+    "closesAt": "2026-12-03",
+    "windowText": null,
+    "url": "https://www.tramitacastillayleon.jcyl.es/",
+    "publishedAt": "2026-10-23"
+   },
+   {
     "bdnsCode": "932041",
     "title": "Orden de 28/09/2026 de la Consejería de Movilidad, Transformación Digital e Inteligencia Artificial por la que se convocan subvenciones para facilitar la obtención del permiso de conducción de la clase B a las personas jóvenes de Castilla y León.",
     "organism": "CONSEJERÍA DE MOVILIDAD, TRANSFORMACIÓN DIGITAL E INTELIGENCIA ARTIFICIAL",
@@ -506,6 +506,16 @@
     "publishedAt": "2026-10-06"
    },
    {
+    "bdnsCode": "939377",
+    "title": "Reembolso prestación de orfandad 2026",
+    "organism": "DEPARTAMENT DE DRETS SOCIALS I INCLUSIÓ",
+    "opensAt": "2026-01-01",
+    "closesAt": "2026-12-31",
+    "windowText": null,
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/939377",
+    "publishedAt": "2026-11-03"
+   },
+   {
     "bdnsCode": "921706",
     "title": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES A LA REHABILITACIÓN Y MEJORA DE LAS VIVIENDAS EN LA CIUDAD DE BARCELONA",
     "organism": "CONSORCIO DE LA VIVIENDA DE BARCELONA",
@@ -549,7 +559,7 @@
     "bdnsCode": "938809",
     "title": "Ayudas para estudiantes matriculados en una universidad catalana que tengan concedida una beca general para estudios postobligatorios o una beca Equidad para promover la formación y la acreditación de terceres lenguas (Parla 3) del curso 2026-2027",
     "organism": "AGÈNCIA DE GESTIÓ D'AJUTS UNIVERSITARIS I DE RECERCA (AGAUR)",
-    "opensAt": null,
+    "opensAt": "2026-11-04",
     "closesAt": null,
     "windowText": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial — 1 Mesos",
     "url": "Tràmits Gencat",
@@ -598,6 +608,16 @@
   ],
   "CE": [
    {
+    "bdnsCode": "939380",
+    "title": "CONVOCATORIA DE AYUDAS PARA LA DISMINUCIÓN DE LA BRECHA DIGITAL EN LA CIUDAD AUTÓNOMA DE CEUTA",
+    "organism": "CONSEJERÍA DE SANIDAD Y SERVICIOS SOCIALES",
+    "opensAt": "2026-11-07",
+    "closesAt": "2026-11-16",
+    "windowText": "DIA SIGUIENTE PUBLICACION BOCCE — 10 DIAS NATURALES",
+    "url": "REGISTRO CIUDAD AUTONOMA DE CEUTA",
+    "publishedAt": "2026-11-03"
+   },
+   {
     "bdnsCode": "936506",
     "title": "CONVOCATORIA EN REGIMEN DE CONCURRENCIA COMPETITIVA DE AYUDAS PARA ESTUDIOS UNIVERSITARIOS Y OTROS DURANTE EL CURSO 2026/2027",
     "organism": "CONSEJERÍA DE EDUCACIÓN, CULTURA Y JUVENTUD",
@@ -630,6 +650,16 @@
     "windowText": "1 de septiembre 2027 — 15 de septiembre 2027",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930966",
     "publishedAt": "2026-09-22"
+   },
+   {
+    "bdnsCode": "939356",
+    "title": "Convocatoria de ayudas a cursos de monitor/a y director/a de tiempo libre 2027",
+    "organism": "INSTITUTO NAVARRO DE JUVENTUD",
+    "opensAt": null,
+    "closesAt": "2027-09-30",
+    "windowText": "Desde el día siguiente a la publicación en el BON — Hasta el 30 de septiembre del 2027",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/939356",
+    "publishedAt": "2026-11-03"
    },
    {
     "bdnsCode": "932808",
@@ -827,16 +857,6 @@
    }
   ],
   "GA": [
-   {
-    "bdnsCode": "922377",
-    "title": "ORDEN de 20 de julio de 2026 por la que se establecen las bases reguladoras de las ayudas económicas dirigidas a las personas con esclerosis lateral amiotrófica o de sus fenotipos para el año 2026 y se procede a su convocatoria (código de procedimiento BS",
-    "organism": "CONSELLERÍA DE POLÍTICA SOCIAL E IGUALDAD",
-    "opensAt": "2026-08-07",
-    "closesAt": "2026-11-03",
-    "windowText": "5 DÍAS HABILES TRAS PUBLICAICÓN NO DOG",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/922377",
-    "publishedAt": "2026-07-29"
-   },
    {
     "bdnsCode": "925229",
     "title": "Resolución por la que se establecen las bases reguladoras de las ayudas para la adquisición o autopromoción de viviendas en ayuntamientos de la Comunidad Autónoma de Galicia con población residente igual o inferior a 10.000 habitan",
