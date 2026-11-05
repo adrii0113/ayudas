@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-04",
+ "generatedAt": "2026-11-05",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -316,16 +316,6 @@
     "windowText": "SDF2026TF00074 Ayudas de emergencia social 2026 — SDF2026TF00074 Ayudas de emergencia social 2026",
     "url": "www.gobiernodecanarias.org.dgijif",
     "publishedAt": "2026-08-06"
-   },
-   {
-    "bdnsCode": "923529",
-    "title": "SDF2026GC00023 Ayudas de emergencia social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-06-21",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2026GC00023 Ayudas de emergencia social 2026 — SDF2026GC00023 Ayudas de emergencia social 2026",
-    "url": "www.gobiernodecanarias.org.dgijif",
-    "publishedAt": "2026-08-04"
    },
    {
     "bdnsCode": "938898",
@@ -672,6 +662,26 @@
     "publishedAt": "2026-10-01"
    },
    {
+    "bdnsCode": "939658",
+    "title": "Complemento de beca de matrícula establecido en la DA 4ª del  RD 163-2025",
+    "organism": "DEPARTAMENTO DE UNIVERSIDAD, INNOVACION Y TRANSFORMACION DIGITAL",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "no tiene — no tiene",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/939658",
+    "publishedAt": "2026-11-04"
+   },
+   {
+    "bdnsCode": "939647",
+    "title": "Beca de formación para personas con titulación universitaria de Grado en Derecho con destino en la SGT del Departamento de Vivienda, Juventud y Políticas Migratorias",
+    "organism": "DEPARTAMENTO DE VIVIENDA, JUVENTUD Y POLÍTICAS MIGRATORIAS",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "A partir del siguiente al de la publicación en el Boletín Oficial de Navarra. — 15 días hábiles a partir del siguiente al de la publicación en el Boletín Oficial de Navarra.",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/939647",
+    "publishedAt": "2026-11-04"
+   },
+   {
     "bdnsCode": "939142",
     "title": "Ayudas económicas para familias con menores en edad escolar (entre los 3 y 21 años) con necesidades educativas especiales dirigidas a paliar los gastos derivados de las actividades durante las vacaciones escolares de Navidad de 26 y Semana Santa/verano 27",
     "organism": "DEPARTAMENTO DE EDUCACION",
@@ -703,16 +713,6 @@
    }
   ],
   "VC": [
-   {
-    "bdnsCode": "938453",
-    "title": "RESOLUCIÓN de 1 de octubre de 2026, por la que se establecen las bases reguladoras para la concesión de subvenciones para la compra de vivienda en municipios o núcleos de población de hasta 10.000 habitantes en la Comunitat Valenciana para la emancipación",
-    "organism": "SECRETARÍA AUTONÓMICA DE VIVIENDA",
-    "opensAt": "2026-10-22",
-    "closesAt": "2026-11-04",
-    "windowText": "A partir del día siguiente a la publicación en el DOGV — 10 dias habiles",
-    "url": "https://sede.gva.es/es/",
-    "publishedAt": "2026-10-28"
-   },
    {
     "bdnsCode": "930830",
     "title": "Subvenciones para la realización del informe de evaluación del edificio de uso residencial de vivienda en la Comunitat Valenciana (IEEV.CV)",
