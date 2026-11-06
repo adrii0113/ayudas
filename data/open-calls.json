@@ -1,35 +1,15 @@
 {
- "generatedAt": "2026-11-05",
+ "generatedAt": "2026-11-06",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
    {
-    "bdnsCode": "936469",
-    "title": "RESOLUCION DGFAL DESEMPLEADOS Y OCUPADOS SILICOSIS EN ANDALUCÍA LINEA 2",
-    "organism": "CONSEJERÍA DE EMPLEO, EMPRESA Y TRABAJO AUTÓNOMO",
-    "opensAt": "2026-10-27",
-    "closesAt": "2026-11-05",
-    "windowText": "Dia siguiente publicacion BOJA — 10 DÍAS NATURALES",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936469",
-    "publishedAt": "2026-10-20"
-   },
-   {
-    "bdnsCode": "936465",
-    "title": "RESOLUCIÓN DGFAL DESEMPLEADOS Y OCUPADOS SILICOSIS EN ANDALUCÍA LINEA 1",
-    "organism": "CONSEJERÍA DE EMPLEO, EMPRESA Y TRABAJO AUTÓNOMO",
-    "opensAt": "2026-10-27",
-    "closesAt": "2026-11-05",
-    "windowText": "Dia siguiente publicacion BOJA — 10 días naturales",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936465",
-    "publishedAt": "2026-10-20"
-   },
-   {
     "bdnsCode": "938972",
     "title": "PRÁCTICAS PROFESIONALES NO LABORALES",
     "organism": "CONSEJERÍA DE EMPLEO, EMPRESA Y TRABAJO AUTÓNOMO",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "se iniciará el día siguiente al de publicación — 13 de noviembre de 2026, inclusive",
+    "opensAt": "2026-11-06",
+    "closesAt": "2026-11-19",
+    "windowText": "se iniciará el día siguiente al de publicación — 19 de noviembre de 2026, inclusive",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/938972",
     "publishedAt": "2026-10-30"
    },
@@ -382,16 +362,6 @@
   ],
   "CL": [
    {
-    "bdnsCode": "929595",
-    "title": "Orden de 13 de septiembre de 2026 de la Consejería IEM, por la que se convocan ayudas al alumnado que realice su primera matrícula de primer curso de grado universitario en la Comunidad de Castilla y León, durante curso académico 2026/2027",
-    "organism": "CONSEJERÍA DE INDUSTRIA, UNIVERSIDADES, EMPLEO Y COMERCIO",
-    "opensAt": "2026-09-22",
-    "closesAt": "2026-11-05",
-    "windowText": null,
-    "url": "https://www.tramitacastillayleon.jcyl.es/",
-    "publishedAt": "2026-09-15"
-   },
-   {
     "bdnsCode": "927851",
     "title": "Orden de 30 de agosto de 2026,de la Consejería de Industria, Universidades, Empleo y Comercio, por la que se convocan subvenciones dirigidas a trabajadores afectados por expedientes temporales de regulación de empleo para recuperación de zonas incendios",
     "organism": "CONSEJERÍA DE INDUSTRIA, UNIVERSIDADES, EMPLEO Y COMERCIO",
@@ -519,7 +489,7 @@
     "bdnsCode": "939309",
     "title": "Subvenciones destinadas a la formación de maquinistas",
     "organism": "DEPARTAMENT DE TERRITORI, HABITATGE I TRANSICIÓ ECOLÒGICA",
-    "opensAt": null,
+    "opensAt": "2026-11-06",
     "closesAt": null,
     "windowText": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial — 01 Mesos",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/939309",
@@ -631,6 +601,16 @@
    }
   ],
   "NC": [
+   {
+    "bdnsCode": "940117",
+    "title": "Transferencia a localidades menores de 1.500 hab. para comensales no transportados en comedores escolares autorizados",
+    "organism": "DEPARTAMENTO DE EDUCACION",
+    "opensAt": "2026-08-31",
+    "closesAt": "2027-06-30",
+    "windowText": null,
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/940117",
+    "publishedAt": "2026-11-05"
+   },
    {
     "bdnsCode": "930966",
     "title": "Convocatoria de ayudas individuales para la formación del profesorado en el curso 2026-2027",
@@ -776,16 +756,6 @@
   ],
   "EX": [
    {
-    "bdnsCode": "937487",
-    "title": "Ayudas 2026 para la participación en actividades de formación del profesorado, s/Decreto 171/2026 de 6 de octubre por la que se establecen las bases reguladoras de las ayudas y se aprueba la convocatoria para el año 2026",
-    "organism": "DIRECCIÓN GENERAL DE INNOVACIÓN E INCLUSIÓN EDUCATIVA",
-    "opensAt": "2026-10-28",
-    "closesAt": "2026-11-05",
-    "windowText": null,
-    "url": " https://www.juntaex.es/w/0703324",
-    "publishedAt": "2026-10-23"
-   },
-   {
     "bdnsCode": "937530",
     "title": "Ayudas curso 2026/2027. Linea B. APOYO EDUCATIVO DOMICILIARIO, destinadas al alumnado con necesidades específicas de apoyo educativo, según Resolución de convocatoria de 16 de octubre de 2026.",
     "organism": "ENTE PÚBLICO EXTREMEÑO DE SERVICIOS EDUCATIVOS COMPLEMENTARIOS",
@@ -928,7 +898,18 @@
     "publishedAt": "2026-09-29"
    }
   ],
-  "IB": [],
+  "IB": [
+   {
+    "bdnsCode": "940179",
+    "title": "Resolución del Consejero de Educación y Universidades por la cual se convocan ayudas para financiar actividades del programa \"Viu la cultura\" para el curso 2026-2027",
+    "organism": "DIRECCIÓN GENERAL DE INNOVACIÓN Y COMUNIDAD EDUCATIVA",
+    "opensAt": "2027-05-03",
+    "closesAt": "2027-06-18",
+    "windowText": null,
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/940179",
+    "publishedAt": "2026-11-05"
+   }
+  ],
   "RI": [
    {
     "bdnsCode": "923134",
