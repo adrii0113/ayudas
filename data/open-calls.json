@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-06",
+ "generatedAt": "2026-11-07",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -45,6 +45,26 @@
    }
   ],
   "AR": [
+   {
+    "bdnsCode": "940478",
+    "title": "AYUDA ART 27 L.O.1/2004 IAM_2026_AYU27ZA16",
+    "organism": "INSTITUTO ARAGONÉS DE LA MUJER (IAM)",
+    "opensAt": "2026-07-23",
+    "closesAt": "2026-12-31",
+    "windowText": null,
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/940478",
+    "publishedAt": "2026-11-06"
+   },
+   {
+    "bdnsCode": "940474",
+    "title": "AYUDA ART 27 LEY 1/2004 IAM_2026_AYU27ZA19",
+    "organism": "INSTITUTO ARAGONÉS DE LA MUJER (IAM)",
+    "opensAt": "2026-09-09",
+    "closesAt": "2026-12-31",
+    "windowText": null,
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/940474",
+    "publishedAt": "2026-11-06"
+   },
    {
     "bdnsCode": "939008",
     "title": "AYUDA ART 27 IAM_2026_AYU27TE3",
@@ -361,16 +381,6 @@
    }
   ],
   "CL": [
-   {
-    "bdnsCode": "927851",
-    "title": "Orden de 30 de agosto de 2026,de la Consejería de Industria, Universidades, Empleo y Comercio, por la que se convocan subvenciones dirigidas a trabajadores afectados por expedientes temporales de regulación de empleo para recuperación de zonas incendios",
-    "organism": "CONSEJERÍA DE INDUSTRIA, UNIVERSIDADES, EMPLEO Y COMERCIO",
-    "opensAt": "2026-09-10",
-    "closesAt": "2026-11-06",
-    "windowText": null,
-    "url": "https://www.tramitacastillayleon.jcyl.es/",
-    "publishedAt": "2026-09-04"
-   },
    {
     "bdnsCode": "935756",
     "title": "Orden de 15 de octubre de 2026, de la Consejería de Educación, por la que se convocan ayudas para el alumnado que curse enseñanzas de Bachillerato, de Formación Profesional del sistema educativo y de determinadas enseñanzas impartidas en centros de CyL",
@@ -977,24 +987,14 @@
     "publishedAt": "2026-10-27"
    },
    {
-    "bdnsCode": "931080",
-    "title": "Ayudas para compensación de gastos extraordinarios de accidentes de tráfico del personal docente y laboral de la Consejería de Educación_2026",
-    "organism": "CONSEJERÍA DE EDUCACIÓN",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Día siguiente a la publicación del extracto — Diez días hábiles desde publicación del extracto",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931080",
-    "publishedAt": "2026-09-22"
-   },
-   {
-    "bdnsCode": "930828",
-    "title": "Convocatoria ordinaria de Ayudas Individualizadas en materia de Transporte Escolar durante el curso escolar 2026/2027",
-    "organism": "CONSEJERÍA DE EDUCACIÓN",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Dia siguiente de la publicacion del extracto — 15 días, desde dia siguiente publicacion extracto",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930828",
-    "publishedAt": "2026-09-22"
+    "bdnsCode": "940580",
+    "title": "CONCESIÓN DIRECTA ALUMNOS ESCUELAS TALLER",
+    "organism": "SERVICIO PÚBLICO DE EMPLEO DEL PRINCIPADO DE ASTURIAS",
+    "opensAt": "2026-04-01",
+    "closesAt": "2026-12-31",
+    "windowText": null,
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/940580",
+    "publishedAt": "2026-11-06"
    }
   ],
   "MC": [
