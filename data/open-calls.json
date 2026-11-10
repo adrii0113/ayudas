@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-09",
+ "generatedAt": "2026-11-10",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -466,16 +466,6 @@
   ],
   "CT": [
    {
-    "bdnsCode": "933847",
-    "title": "Beca que tiene por objetivo abrir un espacio de experimentacion curatorial de personas y colectivos jóvenes, así como favorecer su profesionalizacion.",
-    "organism": "AGÈNCIA CATALANA DE LA JOVENTUT",
-    "opensAt": "2026-10-09",
-    "closesAt": "2026-11-09",
-    "windowText": null,
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/933847",
-    "publishedAt": "2026-10-06"
-   },
-   {
     "bdnsCode": "939377",
     "title": "Reembolso prestación de orfandad 2026",
     "organism": "DEPARTAMENT DE DRETS SOCIALS I INCLUSIÓ",
@@ -494,6 +484,16 @@
     "windowText": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
     "url": "https://habitatge.barcelona/ca   i   http://www.bcn.cat/consorcihabitatge/ca/home.html",
     "publishedAt": "2026-07-27"
+   },
+   {
+    "bdnsCode": "940897",
+    "title": "Convenio práctiques académicas ques externes amb la Fundació Universitat Autònoma de Barcelona",
+    "organism": "CONSORCI D'EDUCACIÓ DE BARCELONA",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Sense termini de presentació de sol·licitud — Sense termini de presentació de sol·licitud",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/940897",
+    "publishedAt": "2026-11-09"
    },
    {
     "bdnsCode": "939309",
@@ -714,6 +714,16 @@
     "publishedAt": "2026-09-22"
    },
    {
+    "bdnsCode": "940740",
+    "title": "RESOLUCIÓN, de la Conselleria de Servicios Sociales, Familia e Infancia por la que se convocan, de manera anticipada, cinco becas para la realización de prácticas profesionales en la Dirección General de Dependencia y de las Personas Mayores",
+    "organism": "SECRETARÍA AUTONÓMICA DE  FAMILIA Y SERVICIOS SOCIALES",
+    "opensAt": "2027-01-01",
+    "closesAt": "2027-06-30",
+    "windowText": "15 días hábiles — 15 días hábiles",
+    "url": "www.gva.es",
+    "publishedAt": "2026-11-09"
+   },
+   {
     "bdnsCode": "938636",
     "title": "S1485 - PROGRAMA TERMALISMO VALENCIANO - 2027",
     "organism": "SECRETARÍA AUTONÓMICA DE  FAMILIA Y SERVICIOS SOCIALES",
@@ -774,6 +784,16 @@
     "windowText": "DÍA SIGUIENTE A LA PUBLICACIÓN DE LA CONVOCATORIA EN DOE",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/937530",
     "publishedAt": "2026-10-23"
+   },
+   {
+    "bdnsCode": "940860",
+    "title": "Ayudas curso 2026/2027 individualizadas de transporte y/o comedor escolar, según Resolución de 28 de octubre de 2026",
+    "organism": "ENTE PÚBLICO EXTREMEÑO DE SERVICIOS EDUCATIVOS COMPLEMENTARIOS",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Desde el día siguiente al de la publicación de la convocatoria en D.O.E. — Quince días hábiles contados desde el día siguiente al de la publicación convocat. en DOE",
+    "url": "https://www.juntaex.es/w/0702624",
+    "publishedAt": "2026-11-09"
    },
    {
     "bdnsCode": "937531",
@@ -918,6 +938,16 @@
     "windowText": null,
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/940179",
     "publishedAt": "2026-11-05"
+   },
+   {
+    "bdnsCode": "940987",
+    "title": "Complemento autonòmico Bono Social Térmico 2024",
+    "organism": "DIRECCIÓN GENERAL DE PLANIFICACIÓN Y SERVICIOS SOCIALES",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": null,
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/940987",
+    "publishedAt": "2026-11-10"
    }
   ],
   "RI": [
@@ -995,9 +1025,29 @@
     "windowText": null,
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/940580",
     "publishedAt": "2026-11-06"
+   },
+   {
+    "bdnsCode": "940952",
+    "title": "Ayudas a profesionales para la estancia y asistencia actividades formativas de larga duración 2026",
+    "organism": "CONSEJERÍA DE SALUD",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Día sig publicación extracto convocatoria BOPA — 15 días desde sig publicación extracto en BOPA",
+    "url": "https://miprincipado.asturias.es/?_gl=1*l1mdq6*_ga*Njc1MjA0MzY0LjE3NzY3NTEzODQ.*_ga_8Q7S1Y26SQ*czE3OTQyMjE0NDgkbzQ0JGcwJHQxNzk0MjIxNDQ4JGo2MCRsMCRoMA..",
+    "publishedAt": "2026-11-09"
    }
   ],
   "MC": [
+   {
+    "bdnsCode": "940856",
+    "title": "RESOLUCIÓN DE LA DIRECCIÓN GERENCIAL DEL IMAS, POR LA QUE SE CONVOCAN SUBVENCIONES DESTINADAS A PERSONAS CON ESCLEROSIS LATERAL AMIOTRÓFICA (ELA) U OTRAS ENFERMEDADES O PROCESOS DE ALTA COMPLEJIDAD Y CURSO IRREVERSIBLE EN LA REGIÓN DE MURCIA. 2026",
+    "organism": "INSTITUTO MURCIANO DE ACCIÓN SOCIAL (I.M.A.S.)",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Al día siguiente de su publicación en el BORM — 18/11/2026",
+    "url": "https://sede.carm.es/web/pagina?IDCONTENIDO=4463&IDTIPO=240&RASTRO=c$m40288",
+    "publishedAt": "2026-11-09"
+   },
    {
     "bdnsCode": "931889",
     "title": "SUBVENCIÓN NOMINATIVA A LA RED DE LUCHA CONTRA LA POBREZA Y LA EXCLUSIÓN SOCIAL DE LA REGIÓN DE MURCIA (EAPN-RM)",
