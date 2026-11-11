@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-10",
+ "generatedAt": "2026-11-11",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -308,14 +308,14 @@
     "publishedAt": "2026-08-11"
    },
    {
-    "bdnsCode": "923945",
-    "title": "SDF2026TF00074 Ayudas de emergencia social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-06-19",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2026TF00074 Ayudas de emergencia social 2026 — SDF2026TF00074 Ayudas de emergencia social 2026",
-    "url": "www.gobiernodecanarias.org.dgijif",
-    "publishedAt": "2026-08-06"
+    "bdnsCode": "941250",
+    "title": "Subvenciones a empresas y organismos equiparados  del sector privado que hayan participado en la formación profesional del alumnado  de ciclos formativos de Grados D y E de Formación profesional, CURSO 2025/2026",
+    "organism": "CONSEJERÍA DE EDUCACIÓN, FORMACIÓN PROFESIONAL, ACTIVIDAD FÍSICA Y DEPORTES",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Al día siguiente de publicación del extracto — A los 20 días siguientes desde el día de publicación del extracto",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/941250",
+    "publishedAt": "2026-11-10"
    },
    {
     "bdnsCode": "938898",
