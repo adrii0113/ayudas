@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-12",
+ "generatedAt": "2026-11-13",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -734,6 +734,16 @@
     "publishedAt": "2026-10-29"
    },
    {
+    "bdnsCode": "941608",
+    "title": "Resolución de 11 de noviembre de 2026 de la Conselleria de Educación, Cultura y Universidades, por la que se convocan subvenciones al transporte universitario en la Comunitat Valenciana para el curso académico 2025-2026.",
+    "organism": "SECRETARÍA AUTONÓMICA DE UNIVERSIDADES",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Día siguiente a su publicación en el DOGV — 10 días hábiles a contar desde el día siguiente al de su publicación en el DOGV.",
+    "url": "http://www.gva.es/es/inicio/procedimientos?id_proc=274",
+    "publishedAt": "2026-11-12"
+   },
+   {
     "bdnsCode": "937988",
     "title": "Resolución de la Conselleria de Educación, Cultura y Universidades, por la que se convocan, para el curso 2026-2027, las ayudas complementarias a las becas para la actividad de movilidad de estudiantes por estudios del programa ERASMUS+.",
     "organism": "SECRETARÍA AUTONÓMICA DE UNIVERSIDADES",
@@ -1047,16 +1057,6 @@
     "windowText": "Al día siguiente de su publicación en el BORM — 18/11/2026",
     "url": "https://sede.carm.es/web/pagina?IDCONTENIDO=4463&IDTIPO=240&RASTRO=c$m40288",
     "publishedAt": "2026-11-09"
-   },
-   {
-    "bdnsCode": "931889",
-    "title": "SUBVENCIÓN NOMINATIVA A LA RED DE LUCHA CONTRA LA POBREZA Y LA EXCLUSIÓN SOCIAL DE LA REGIÓN DE MURCIA (EAPN-RM)",
-    "organism": "CONSEJERÍA DE POLÍTICA SOCIAL, FAMILIAS E IGUALDAD",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Sin plazo de solicitud — Sin plazo de solicitud",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931889",
-    "publishedAt": "2026-09-28"
    }
   ]
  }
