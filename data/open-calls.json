@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-13",
+ "generatedAt": "2026-11-14",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -22,26 +22,6 @@
     "windowText": "9:00 horas del día 7 de octubre  de 2026 — Hasta que se declare su finalización mediante Resolución de la Dirección Gerencia de la Agencia Anda",
     "url": "www.agenciaandaluzadelaenergia.es",
     "publishedAt": "2026-10-14"
-   },
-   {
-    "bdnsCode": "919648",
-    "title": "Resolucion de 16 de julio de 2026, destinadas a la financiación de la oferta formativa de Formación Profesional y Formación en el Trabajo en el sector Naval, dirigida a personas trabajadoras desempleadas en la provincia de Cádiz. Linea 2 FP Grado C presen",
-    "organism": "CONSEJERÍA DE EMPLEO, EMPRESA Y TRABAJO AUTÓNOMO",
-    "opensAt": "2026-07-22",
-    "closesAt": null,
-    "windowText": "el día siguiente al que se publique el extracto en el BOJA — 15 días naturales",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/919648",
-    "publishedAt": "2026-07-16"
-   },
-   {
-    "bdnsCode": "919639",
-    "title": "Resolucion de 16 de julio 2026 destinadas a la financiación de la oferta formativa de Formación Profesional y Formación en el Trabajo en el sector Naval, dirigida a personas trabajadoras desempleadas en la provincia de Cádiz. Linea 1 modalidad presencial",
-    "organism": "CONSEJERÍA DE EMPLEO, EMPRESA Y TRABAJO AUTÓNOMO",
-    "opensAt": "2026-07-22",
-    "closesAt": null,
-    "windowText": "el día siguiente al que se publique el extracto en Boja — 15 ddías naturales",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/919639",
-    "publishedAt": "2026-07-16"
    }
   ],
   "AR": [
@@ -104,6 +84,16 @@
     "windowText": null,
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/920637",
     "publishedAt": "2026-07-21"
+   },
+   {
+    "bdnsCode": "942100",
+    "title": "Orden, de fecha de firma electrónica, de la Consejera de Educación, Ciencia y Universidades, por la que se adjudican ayudas a personas becarias auxiliares de conversación con destino en centros educativos de la Comunidad Autónoma de Aragón",
+    "organism": "DIRECCIÓN GENERAL DE POLÍTICA EDUCATIVA, ORDENACIÓN ACADÉMICA Y EDUCACIÓN PERMANENTE",
+    "opensAt": "2026-11-16",
+    "closesAt": "2027-05-31",
+    "windowText": null,
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/942100",
+    "publishedAt": "2026-11-13"
    },
    {
     "bdnsCode": "938500",
@@ -434,16 +424,6 @@
   ],
   "CM": [
    {
-    "bdnsCode": "938248",
-    "title": "Resolución por la que se aprueba la convocatoria pública de concesión de subvenciones para la realización de acciones de formación profesional en el ámbito laboral, dirigidas a personas trabajadoras ocupadas (Modalidad I), para la anualidad 2026",
-    "organism": "DIRECCIÓN GENERAL FORMACIÓN PROFESIONAL EN EL ÁMBITO LABORAL",
-    "opensAt": "2026-10-30",
-    "closesAt": "2026-11-13",
-    "windowText": "Desde el día siguiente al de la publicación de la resolución y de su extracto en el DOCM. — Diez días a contar desde el día siguiente al de la publicación de la resolución y extracto en DOCM",
-    "url": "www.jccm.es",
-    "publishedAt": "2026-10-27"
-   },
-   {
     "bdnsCode": "933977",
     "title": "Actuaciones de rehabilitación y mejora de la eficiencia energética en viviendas y edificios de viviendas de CLM, cofinanciadas FEDER 2021-2027. Convocatoria 2026",
     "organism": "DIRECCIÓN GENERAL DE VIVIENDA",
@@ -599,6 +579,26 @@
    }
   ],
   "MD": [
+   {
+    "bdnsCode": "942093",
+    "title": "AYUDAS TRANSP. PÚBLICO TRABAJ. DESEMP.- ANTICIPADA 2027",
+    "organism": "CONSEJERÍA ECONOMÍA, HACIENDA Y EMPLEO",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "DESDE LA INCORPORACIÓN DEL ALUMNO A LA ACCIÓN FORMATIVA — 5 DÍAS HÁBILES DESDE EL INICIO",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/942093",
+    "publishedAt": "2026-11-13"
+   },
+   {
+    "bdnsCode": "942090",
+    "title": "CONCESIÓN DIRECTA AYUDAS CONCILIACIÓN TRABAJ. DESEMPLEADOS-ANTICIPADA 2027",
+    "organism": "CONSEJERÍA ECONOMÍA, HACIENDA Y EMPLEO",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "AL DÍA SIGUIENTE AL DE LA FINALIZACIÓN DE LA FORMACIÓN — 20 DÍAS HÁBILES DESDE EL INICIO",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/942090",
+    "publishedAt": "2026-11-13"
+   },
    {
     "bdnsCode": "934570",
     "title": "AYUDAS 2026 FAMILIAS CON PACIENTES A CARGO, PATOLOGÍA CRÓNICA COMPLEJA",
@@ -881,7 +881,7 @@
     "bdnsCode": "939151",
     "title": "Orden de 22 de octubre de 2026 por la que se establecen las bases reguladoras y se convocan ayudas de movilidad para el alumnado de ciclos formativos de grado básico y grado medio de c. educa. públicos Erasmus+ 2025-1-ES01-KA121-VET-000332915  curso 26-27",
     "organism": "CONSELLERÍA DE EDUCACIÓN, CIENCIA, UNIVERSIDADES E FORMACIÓN PROFESIONAL",
-    "opensAt": "2026-11-03",
+    "opensAt": "2026-11-04",
     "closesAt": "2026-12-03",
     "windowText": "Día seguinte ao da publicación desta convocatoria no Diario Oficial de Galicia — 1 mes",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/939151",
@@ -908,6 +908,16 @@
     "publishedAt": "2026-09-02"
    },
    {
+    "bdnsCode": "941930",
+    "title": "GRATUIDADE ATENCIÓN EDUCATIVA",
+    "organism": "CONSELLERÍA DE POLÍTICA SOCIAL E IGUALDAD",
+    "opensAt": "2026-09-01",
+    "closesAt": "2027-07-31",
+    "windowText": null,
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/941930",
+    "publishedAt": "2026-11-13"
+   },
+   {
     "bdnsCode": "928924",
     "title": "Convenio colaboración Consellería de Cultura, Lengua y Juventud de la Xunta de Galicia y el Consorcio para el Desarrollo de Aplicaciones para la Gestión Universitaria para la puesta en marcha en 2026 y 2027 programa integral de formación y mentoring",
     "organism": "CONSELLERÍA DE CULTURA, LENGUA Y JUVENTUD",
@@ -926,16 +936,6 @@
     "windowText": "Desde la entrada en vigor de la orden",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/937925",
     "publishedAt": "2026-10-26"
-   },
-   {
-    "bdnsCode": "932328",
-    "title": "Resolución de 28 de septiembre de 2026 de la Fundación Pública Galicia Europa por la que se convoca una beca de formación, dirigida a personas con un título universitario, para la realización de prácticas en materia de políticas y programas europeos en el",
-    "organism": "FUNDACIÓN GALICIA EUROPA",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Día seguinte á publicación no DOG — Un mes contado a partir da súa publicación",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/932328",
-    "publishedAt": "2026-09-29"
    }
   ],
   "IB": [
