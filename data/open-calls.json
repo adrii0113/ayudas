@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-14",
+ "generatedAt": "2026-11-15",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -544,16 +544,6 @@
     "windowText": "Sense termini de presentació de sol·licitud — Sense termini de presentació de sol·licitud",
     "url": "edubcn.cat",
     "publishedAt": "2026-10-09"
-   },
-   {
-    "bdnsCode": "932691",
-    "title": "Convenio de cooperación educativa CCUC Khadija del 15-09-26 al 18-06-27",
-    "organism": "CONSORCI DE SERVEIS UNIVERSITARIS DE CATALUNYA (CSUC)",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Sense termini de presentació de sol·licitud — Sense termini de presentació de sol·licitud",
-    "url": "https://www.csuc.cat/ca/treballa-al-csuc",
-    "publishedAt": "2026-09-30"
    }
   ],
   "CE": [
