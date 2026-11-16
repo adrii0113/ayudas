@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-15",
+ "generatedAt": "2026-11-16",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -980,16 +980,6 @@
     "windowText": "El día siguiente a su publicación en el BOR — A los veinte días hábiles desde el día siguiente de su publicación en BOR",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936255",
     "publishedAt": "2026-10-19"
-   },
-   {
-    "bdnsCode": "932784",
-    "title": "Ayudas individualizadas de transporte escolar, curso 2026/2027",
-    "organism": "CONSEJERÍA DE EDUCACIÓN Y EMPLEO",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "a partir del día siguiente a la publicación del extracto en el BOR — diez días hábiles siguientes",
-    "url": "https://web.larioja.org/oficina-electronica/tramite?n=02587",
-    "publishedAt": "2026-10-01"
    }
   ],
   "ML": [
