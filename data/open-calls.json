@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-16",
+ "generatedAt": "2026-11-17",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -466,6 +466,56 @@
     "publishedAt": "2026-07-27"
    },
    {
+    "bdnsCode": "942289",
+    "title": "Convenio Jaquim Montserrat del 22-09-26 al 14-01-2027",
+    "organism": "CONSORCI DE SERVEIS UNIVERSITARIS DE CATALUNYA (CSUC)",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Sense termini de presentació de sol·licitud — Sense termini de presentació de sol·licitud",
+    "url": "https://www.csuc.cat/ca/treballa-al-csuc",
+    "publishedAt": "2026-11-16"
+   },
+   {
+    "bdnsCode": "942287",
+    "title": "Convenio CCUC Ingrid Asensio del 2-11-26 al 10-09-27",
+    "organism": "CONSORCI DE SERVEIS UNIVERSITARIS DE CATALUNYA (CSUC)",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Sense termini de presentació de sol·licitud — Sense termini de presentació de sol·licitud",
+    "url": "https://www.csuc.cat/ca/treballa-al-csuc",
+    "publishedAt": "2026-11-16"
+   },
+   {
+    "bdnsCode": "942285",
+    "title": "Convenio OiS David Jaquin del 6-11-26 al 22-03-27",
+    "organism": "CONSORCI DE SERVEIS UNIVERSITARIS DE CATALUNYA (CSUC)",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Sense termini de presentació de sol·licitud — Sense termini de presentació de sol·licitud",
+    "url": "https://www.csuc.cat/ca/treballa-al-csuc",
+    "publishedAt": "2026-11-16"
+   },
+   {
+    "bdnsCode": "942283",
+    "title": "Convenioo Roger Font del 9-11-26 al 24-04-27",
+    "organism": "CONSORCI DE SERVEIS UNIVERSITARIS DE CATALUNYA (CSUC)",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Sense termini de presentació de sol·licitud — Sense termini de presentació de sol·licitud",
+    "url": "https://www.csuc.cat/ca/treballa-al-csuc",
+    "publishedAt": "2026-11-16"
+   },
+   {
+    "bdnsCode": "942279",
+    "title": "Convenio AiP Alen Danielyan del 9-11-26 al 05-05-27",
+    "organism": "CONSORCI DE SERVEIS UNIVERSITARIS DE CATALUNYA (CSUC)",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Sense termini de presentació de sol·licitud — Sense termini de presentació de sol·licitud",
+    "url": " https://www.csuc.cat/ca/treballa-al-csuc",
+    "publishedAt": "2026-11-16"
+   },
+   {
     "bdnsCode": "940897",
     "title": "Convenio práctiques académicas ques externes amb la Fundació Universitat Autònoma de Barcelona",
     "organism": "CONSORCI D'EDUCACIÓ DE BARCELONA",
@@ -547,16 +597,6 @@
    }
   ],
   "CE": [
-   {
-    "bdnsCode": "939380",
-    "title": "CONVOCATORIA DE AYUDAS PARA LA DISMINUCIÓN DE LA BRECHA DIGITAL EN LA CIUDAD AUTÓNOMA DE CEUTA",
-    "organism": "CONSEJERÍA DE SANIDAD Y SERVICIOS SOCIALES",
-    "opensAt": "2026-11-07",
-    "closesAt": "2026-11-16",
-    "windowText": "DIA SIGUIENTE PUBLICACION BOCCE — 10 DIAS NATURALES",
-    "url": "REGISTRO CIUDAD AUTONOMA DE CEUTA",
-    "publishedAt": "2026-11-03"
-   },
    {
     "bdnsCode": "936506",
     "title": "CONVOCATORIA EN REGIMEN DE CONCURRENCIA COMPETITIVA DE AYUDAS PARA ESTUDIOS UNIVERSITARIOS Y OTROS DURANTE EL CURSO 2026/2027",
@@ -640,6 +680,16 @@
     "windowText": "Desde el día siguiente a la publicación de la convocatoria en el Boletín Oficial de Navarra",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/932808",
     "publishedAt": "2026-10-01"
+   },
+   {
+    "bdnsCode": "942252",
+    "title": "convocatoria de dos becas de formación para personas graduadas en Derecho con destino en la Secretaría General Técnica del Departamento de Derechos Sociales, Economía Social y Empleo.",
+    "organism": "AGENCIA NAVARRA DE AUTONOMÍA Y DESARROLLO DE LAS PERSONAS",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "pte — pte",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/942252",
+    "publishedAt": "2026-11-16"
    },
    {
     "bdnsCode": "939658",
@@ -857,16 +907,6 @@
    }
   ],
   "GA": [
-   {
-    "bdnsCode": "925229",
-    "title": "Resolución por la que se establecen las bases reguladoras de las ayudas para la adquisición o autopromoción de viviendas en ayuntamientos de la Comunidad Autónoma de Galicia con población residente igual o inferior a 10.000 habitan",
-    "organism": "INSTITUTO GALLEGO DE LA VIVIENDA Y SUELO (IGVS)",
-    "opensAt": "2026-08-27",
-    "closesAt": "2026-11-16",
-    "windowText": "27/08/2026 — 16/11/2026",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/925229",
-    "publishedAt": "2026-08-17"
-   },
    {
     "bdnsCode": "939151",
     "title": "Orden de 22 de octubre de 2026 por la que se establecen las bases reguladoras y se convocan ayudas de movilidad para el alumnado de ciclos formativos de grado básico y grado medio de c. educa. públicos Erasmus+ 2025-1-ES01-KA121-VET-000332915  curso 26-27",
