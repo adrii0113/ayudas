@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-17",
+ "generatedAt": "2026-11-18",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -12,6 +12,16 @@
     "windowText": "se iniciará el día siguiente al de publicación — 19 de noviembre de 2026, inclusive",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/938972",
     "publishedAt": "2026-10-30"
+   },
+   {
+    "bdnsCode": "942485",
+    "title": "Resolución de 16 de noviembre de 2026,Convocatoria Becas de formación en el área de documentación del Instituto Andaluz de la Mujer, para el año 2027",
+    "organism": "INSTITUTO ANDALUZ DE LA MUJER",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "El día siguiente al de la publicación en boja — 10 días, a partir del día siguiente al de la publicación en boja",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/942485",
+    "publishedAt": "2026-11-17"
    },
    {
     "bdnsCode": "935159",
@@ -442,6 +452,16 @@
     "windowText": "Desde el día siguiente de la publicación de esta convocatoria. — Hasta el 30 de noviembre 2026",
     "url": "https://www.jccm.es",
     "publishedAt": "2026-09-24"
+   },
+   {
+    "bdnsCode": "942650",
+    "title": "AUXILIARES DE CONVERSACIÓN CURSO 2026/2027",
+    "organism": "SECRETARÍA GENERAL DE EDUCACIÓN, CULTURA Y DEPORTES",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "No tiene — No tiene",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/942650",
+    "publishedAt": "2026-11-17"
    }
   ],
   "CT": [
@@ -464,6 +484,26 @@
     "windowText": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
     "url": "https://habitatge.barcelona/ca   i   http://www.bcn.cat/consorcihabitatge/ca/home.html",
     "publishedAt": "2026-07-27"
+   },
+   {
+    "bdnsCode": "942798",
+    "title": "Convenio FIN Lluna Meliz del 23-10-26 al 26-07-27",
+    "organism": "CONSORCI DE SERVEIS UNIVERSITARIS DE CATALUNYA (CSUC)",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Sense termini de presentació de sol·licitud — Sense termini de presentació de sol·licitud",
+    "url": "https://www.csuc.cat/ca/treballa-al-csuc",
+    "publishedAt": "2026-11-17"
+   },
+   {
+    "bdnsCode": "942698",
+    "title": "Difusión nuevas aportaciones científicas ciencias",
+    "organism": "DEPARTAMENT DE SALUT",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Sense termini de presentació de sol·licitud — Sense termini de presentació de sol·licitud",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/942698",
+    "publishedAt": "2026-11-17"
    },
    {
     "bdnsCode": "942289",
@@ -1047,6 +1087,16 @@
     "publishedAt": "2026-10-27"
    },
    {
+    "bdnsCode": "940952",
+    "title": "Ayudas a profesionales para la estancia y asistencia actividades formativas de larga duración 2026",
+    "organism": "CONSEJERÍA DE SALUD",
+    "opensAt": "2026-11-18",
+    "closesAt": "2026-12-09",
+    "windowText": "Día sig publicación extracto convocatoria BOPA — 15 días desde sig publicación extracto en BOPA",
+    "url": "https://miprincipado.asturias.es/bopa/2026/11/17/2026-09348.pdf",
+    "publishedAt": "2026-11-09"
+   },
+   {
     "bdnsCode": "940580",
     "title": "CONCESIÓN DIRECTA ALUMNOS ESCUELAS TALLER",
     "organism": "SERVICIO PÚBLICO DE EMPLEO DEL PRINCIPADO DE ASTURIAS",
@@ -1055,16 +1105,6 @@
     "windowText": null,
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/940580",
     "publishedAt": "2026-11-06"
-   },
-   {
-    "bdnsCode": "940952",
-    "title": "Ayudas a profesionales para la estancia y asistencia actividades formativas de larga duración 2026",
-    "organism": "CONSEJERÍA DE SALUD",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Día sig publicación extracto convocatoria BOPA — 15 días desde sig publicación extracto en BOPA",
-    "url": "https://miprincipado.asturias.es/?_gl=1*l1mdq6*_ga*Njc1MjA0MzY0LjE3NzY3NTEzODQ.*_ga_8Q7S1Y26SQ*czE3OTQyMjE0NDgkbzQ0JGcwJHQxNzk0MjIxNDQ4JGo2MCRsMCRoMA..",
-    "publishedAt": "2026-11-09"
    }
   ],
   "MC": [
