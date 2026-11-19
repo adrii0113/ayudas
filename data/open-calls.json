@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18",
+ "generatedAt": "2026-11-19",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -86,16 +86,6 @@
     "publishedAt": "2026-08-28"
    },
    {
-    "bdnsCode": "920637",
-    "title": "SOLICITUD PRESTACIÓN ECONÓMICA",
-    "organism": "INSTITUTO ARAGONÉS DE LA MUJER (IAM)",
-    "opensAt": "2026-01-01",
-    "closesAt": "2026-12-31",
-    "windowText": null,
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/920637",
-    "publishedAt": "2026-07-21"
-   },
-   {
     "bdnsCode": "942100",
     "title": "Orden, de fecha de firma electrónica, de la Consejera de Educación, Ciencia y Universidades, por la que se adjudican ayudas a personas becarias auxiliares de conversación con destino en centros educativos de la Comunidad Autónoma de Aragón",
     "organism": "DIRECCIÓN GENERAL DE POLÍTICA EDUCATIVA, ORDENACIÓN ACADÉMICA Y EDUCACIÓN PERMANENTE",
@@ -147,6 +137,16 @@
    }
   ],
   "CN": [
+   {
+    "bdnsCode": "943112",
+    "title": "CONVOCATORIA  MEDIANTE TRAMITACIÓN ANTICIPADA PARA EL EJERCICIO 2027 CINCO BECAS DESTINADAS A LA FORMACIÓN EN ASUNTOS EUROPEOS",
+    "organism": "CONSEJERÍA DE HACIENDA Y RELACIONES CON LA UNIÓN EUROPEA",
+    "opensAt": null,
+    "closesAt": "2026-12-18",
+    "windowText": "Desde las 00:00 h del siguiente día hábil al de la publicación extracto convocatoriaen el BOC — hasta las 23:59 horas del día 18 de diciembre de 2026 (hora de Canarias)",
+    "url": "Sí",
+    "publishedAt": "2026-11-18"
+   },
    {
     "bdnsCode": "937605",
     "title": "FUNCIONAMIENTO DE LA ENTIDAD Y DESARROLLO DE SUS FINES ESTATUTARIOS",
@@ -298,16 +298,6 @@
     "publishedAt": "2026-08-13"
    },
    {
-    "bdnsCode": "924623",
-    "title": "SDF2026TF00065 Ayuda Emergencia Social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-06-01",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2026TF00065 Ayuda Emergencia Social 2026 — SDF2026TF00065 Ayuda Emergencia Social 2026",
-    "url": "www.gobiernodecanarias.org/dsidj",
-    "publishedAt": "2026-08-11"
-   },
-   {
     "bdnsCode": "941250",
     "title": "Subvenciones a empresas y organismos equiparados  del sector privado que hayan participado en la formación profesional del alumnado  de ciclos formativos de Grados D y E de Formación profesional, CURSO 2025/2026",
     "organism": "CONSEJERÍA DE EDUCACIÓN, FORMACIÓN PROFESIONAL, ACTIVIDAD FÍSICA Y DEPORTES",
@@ -381,16 +371,6 @@
    }
   ],
   "CL": [
-   {
-    "bdnsCode": "935756",
-    "title": "Orden de 15 de octubre de 2026, de la Consejería de Educación, por la que se convocan ayudas para el alumnado que curse enseñanzas de Bachillerato, de Formación Profesional del sistema educativo y de determinadas enseñanzas impartidas en centros de CyL",
-    "organism": "CONSEJERÍA DE EDUCACIÓN",
-    "opensAt": "2026-10-21",
-    "closesAt": "2026-11-18",
-    "windowText": null,
-    "url": "https://www.tramitacastillayleon.jcyl.es/web/es/sede-electronica.html",
-    "publishedAt": "2026-10-16"
-   },
    {
     "bdnsCode": "938400",
     "title": "Orden de 23 de octubre de 2026, de la Consejería de Educación, por la que se convocan ayudas al estudio para el alumnado que curse enseñanzas artísticas superiores en la Comunidad de Castilla y  León en el curso académico 2026-2027",
@@ -1042,6 +1022,16 @@
     "publishedAt": "2026-08-03"
    },
    {
+    "bdnsCode": "942912",
+    "title": "Ayuda extraordinaria perceptores PNC jub e invalidez",
+    "organism": "CONSEJERÍA DE SALUD Y POLÍTICAS SOCIALES",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "NO TIENE — NO TIENE",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/942912",
+    "publishedAt": "2026-11-18"
+   },
+   {
     "bdnsCode": "936755",
     "title": "Convenio Erasmus Rural 2026",
     "organism": "CONSEJERÍA DE POLÍTICA LOCAL, INFRAESTRUCTURAS Y LUCHA CONTRA LA DESPOBLACIÓN",
@@ -1091,7 +1081,7 @@
     "title": "Ayudas a profesionales para la estancia y asistencia actividades formativas de larga duración 2026",
     "organism": "CONSEJERÍA DE SALUD",
     "opensAt": "2026-11-18",
-    "closesAt": "2026-12-09",
+    "closesAt": "2026-12-10",
     "windowText": "Día sig publicación extracto convocatoria BOPA — 15 días desde sig publicación extracto en BOPA",
     "url": "https://miprincipado.asturias.es/bopa/2026/11/17/2026-09348.pdf",
     "publishedAt": "2026-11-09"
