@@ -1,18 +1,8 @@
 {
- "generatedAt": "2026-11-19",
+ "generatedAt": "2026-11-20",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
-   {
-    "bdnsCode": "938972",
-    "title": "PRÁCTICAS PROFESIONALES NO LABORALES",
-    "organism": "CONSEJERÍA DE EMPLEO, EMPRESA Y TRABAJO AUTÓNOMO",
-    "opensAt": "2026-11-06",
-    "closesAt": "2026-11-19",
-    "windowText": "se iniciará el día siguiente al de publicación — 19 de noviembre de 2026, inclusive",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/938972",
-    "publishedAt": "2026-10-30"
-   },
    {
     "bdnsCode": "942485",
     "title": "Resolución de 16 de noviembre de 2026,Convocatoria Becas de formación en el área de documentación del Instituto Andaluz de la Mujer, para el año 2027",
@@ -434,6 +424,16 @@
     "publishedAt": "2026-09-24"
    },
    {
+    "bdnsCode": "943193",
+    "title": "Resolución de 18/11/2026 por la que se convocan para 2026, ayudas al arrendamiento de viviendas dirigidas a mujeres víctimas de violencia de género en CLM",
+    "organism": "DIRECCIÓN GENERAL DE VIVIENDA",
+    "opensAt": null,
+    "closesAt": "2026-12-15",
+    "windowText": "Desde el día siguiente a la publicación de la presente convcocatoria — Hasta el 15 de diciembre de 2026",
+    "url": "https://www.jccm.es",
+    "publishedAt": "2026-11-19"
+   },
+   {
     "bdnsCode": "942650",
     "title": "AUXILIARES DE CONVERSACIÓN CURSO 2026/2027",
     "organism": "SECRETARÍA GENERAL DE EDUCACIÓN, CULTURA Y DEPORTES",
@@ -702,6 +702,16 @@
     "publishedAt": "2026-10-01"
    },
    {
+    "bdnsCode": "943368",
+    "title": "Becas de formación para personas graduadas en Derecho con destino en la SGT del Departamento de Derechos Sociales",
+    "organism": "DEPARTAMENTO DE DERECHOS SOCIALES, ECONOMIA SOCIAL Y EMPLEO",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Pendiente — Pendiente",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/943368",
+    "publishedAt": "2026-11-19"
+   },
+   {
     "bdnsCode": "942252",
     "title": "convocatoria de dos becas de formación para personas graduadas en Derecho con destino en la Secretaría General Técnica del Departamento de Derechos Sociales, Economía Social y Empleo.",
     "organism": "AGENCIA NAVARRA DE AUTONOMÍA Y DESARROLLO DE LAS PERSONAS",
@@ -792,6 +802,16 @@
     "windowText": "Desde el día siguiente al de la publicación del extracto de la convocatoria en el DOGV — 6 meses a contar desde el día siguiente al de la publicación del extracto en el DOGV",
     "url": "www.gva.es",
     "publishedAt": "2026-10-29"
+   },
+   {
+    "bdnsCode": "943333",
+    "title": "RESOLUCIÓN Conselleria Educación, C.U. por la que se aprueban las bases reguladoras curso 2025-2026 subvenciones destinadas a la compensación estudiantado de SUV y sus centros adscritos, de la parte no financiada con cargo a los PGE de las becas del MEFPD",
+    "organism": "SECRETARÍA AUTONÓMICA DE UNIVERSIDADES",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Día siguiente a su publicación en el DOGV — 10 días hábiles contados a partir del día siguiente de su publicación en el DOGV",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/943333",
+    "publishedAt": "2026-11-19"
    },
    {
     "bdnsCode": "941608",
