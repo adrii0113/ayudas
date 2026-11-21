@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-20",
+ "generatedAt": "2026-11-21",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -784,6 +784,16 @@
     "publishedAt": "2026-09-22"
    },
    {
+    "bdnsCode": "943787",
+    "title": "BASES Y CONVOCATORIA REHABILITACIÓN DE VIVIENDAS VACÍAS PARA ALQUILER SOCIAL 2026 (RHVV26)",
+    "organism": "SECRETARÍA AUTONÓMICA DE VIVIENDA",
+    "opensAt": "2026-11-16",
+    "closesAt": "2027-02-16",
+    "windowText": "16/11/2026 — 16/02/2027",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/943787",
+    "publishedAt": "2026-11-20"
+   },
+   {
     "bdnsCode": "940740",
     "title": "RESOLUCIÓN, de la Conselleria de Servicios Sociales, Familia e Infancia por la que se convocan, de manera anticipada, cinco becas para la realización de prácticas profesionales en la Dirección General de Dependencia y de las Personas Mayores",
     "organism": "SECRETARÍA AUTONÓMICA DE  FAMILIA Y SERVICIOS SOCIALES",
@@ -1042,6 +1052,26 @@
     "publishedAt": "2026-08-03"
    },
    {
+    "bdnsCode": "943750",
+    "title": "Ayudas gratuidad total comedor curso 2026/2027",
+    "organism": "CONSEJERÍA DE EDUCACIÓN Y EMPLEO",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "inicio del curso escolar — final del curso escolar",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/943750",
+    "publishedAt": "2026-11-20"
+   },
+   {
+    "bdnsCode": "943749",
+    "title": "Ayudas gratuidad total comedor curso 2026/2027",
+    "organism": "CONSEJERÍA DE EDUCACIÓN Y EMPLEO",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "inicio del curso escolar — final del curso escolar",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/943749",
+    "publishedAt": "2026-11-20"
+   },
+   {
     "bdnsCode": "942912",
     "title": "Ayuda extraordinaria perceptores PNC jub e invalidez",
     "organism": "CONSEJERÍA DE SALUD Y POLÍTICAS SOCIALES",
@@ -1050,6 +1080,16 @@
     "windowText": "NO TIENE — NO TIENE",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/942912",
     "publishedAt": "2026-11-18"
+   },
+   {
+    "bdnsCode": "942752",
+    "title": "BECAS PARTICIPANTES PROYECTOS EXPERIENCIALES DE EMPLEO Y FORMACIÓN C.A.R.",
+    "organism": "CONSEJERÍA DE EDUCACIÓN Y EMPLEO",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Desde el día en que el alumno inicie su participación en la etapa formativa — Un mes desde el día en que el alumno inicie su participación en la etapa formativa",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/942752",
+    "publishedAt": "2026-11-17"
    },
    {
     "bdnsCode": "936755",
