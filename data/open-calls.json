@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-21",
+ "generatedAt": "2026-11-23",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -114,16 +114,6 @@
     "windowText": null,
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936172",
     "publishedAt": "2026-10-19"
-   },
-   {
-    "bdnsCode": "934273",
-    "title": "convocatoria para 2026 de ayudas individuales a las personas afectadas por esclerosis lateral amiotrófica (ELA) en fase avanzada que están ingresados en centro residencial.",
-    "organism": "SERVICIOS CENTRALES IASS",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "31/10/2026 — 10 DIAS HÁBILES DESDE EL DÍA SIGUIENTE A SU PUBLICACION EN BOA",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/934273",
-    "publishedAt": "2026-10-08"
    }
   ],
   "CN": [
@@ -390,16 +380,6 @@
     "windowText": null,
     "url": " https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla100Detalle/1251181050732/Ayuda012/1285684640457/Propuesta",
     "publishedAt": "2026-09-28"
-   },
-   {
-    "bdnsCode": "934426",
-    "title": "Acuerdo de 1 de octubre de 2026, de la Junta de Castilla y León por el que se autoriza la concesión directa de una subvención a Aging to the Future para financiar el Plan de Marketing, posicionamiento y visibilidad del IV Congreso Internacional de Economí",
-    "organism": "CONSEJERÍA DE ECONOMÍA Y HACIENDA",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Sin plazo de solicitud — Sin plazo de solicitud",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/934426",
-    "publishedAt": "2026-10-08"
    }
   ],
   "CM": [
@@ -750,26 +730,6 @@
     "windowText": "A partir de la fecha de publicación — Base sexta. - Plazos de presentación de solicitudes.",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/939142",
     "publishedAt": "2026-10-30"
-   },
-   {
-    "bdnsCode": "934094",
-    "title": "Beca de formación para personas licenciadas o graduadas en Derecho con destino en la Secretaría General Técnica del Departamento de Salud",
-    "organism": "DEPARTAMENTO DE SALUD",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Desde el día siguiente a la publicación de la convocatoria en Boletín Oficial de Navarra — 15 días naturales a contar desde el día siguiente al de la publicación de la convocatoria en el BON",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/934094",
-    "publishedAt": "2026-10-07"
-   },
-   {
-    "bdnsCode": "934045",
-    "title": "Becas equidad para el acceso a la educación superior de jóvenes procedentes de entornos de bajos ingresos 2026",
-    "organism": "DEPARTAMENTO DE UNIVERSIDAD, INNOVACION Y TRANSFORMACION DIGITAL",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "A partir del día siguiente a la publicación de la convocatoria en en el BON — 15 dias hábiles a partir del día siguiente a la publicación de la convocatoria en el BON",
-    "url": "www.navarra.es",
-    "publishedAt": "2026-10-07"
    }
   ],
   "VC": [
