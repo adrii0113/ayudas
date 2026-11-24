@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-23",
+ "generatedAt": "2026-11-24",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -248,36 +248,6 @@
     "publishedAt": "2026-08-24"
    },
    {
-    "bdnsCode": "925469",
-    "title": "SDF2026TF00051 Ayudas de emergencia social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-04-13",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2026TF00051 Ayudas de emergencia social 2026 — SDF2026TF00051 Ayudas de emergencia social 2026",
-    "url": "www.gobiernodecanarias.org.dgijif",
-    "publishedAt": "2026-08-18"
-   },
-   {
-    "bdnsCode": "925467",
-    "title": "SDF2026TF00008 Ayudas de emergencia social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-02-06",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2026TF00008 Ayudas de emergencia social 2026 — SDF2026TF00008 Ayudas de emergencia social 2026",
-    "url": "www.gobiernodecanarias.org.dgijif",
-    "publishedAt": "2026-08-18"
-   },
-   {
-    "bdnsCode": "924973",
-    "title": "SDF2026TF00078 Ayudas de emergencia social 2026",
-    "organism": "CONSEJERÍA DE BIENESTAR SOCIAL, IGUALDAD, JUVENTUD, INFANCIA Y FAMILIAS",
-    "opensAt": "2026-07-14",
-    "closesAt": "2026-12-31",
-    "windowText": "SDF2026TF00078 Ayudas de emergencia social 2026 — SDF2026TF00078 Ayudas de emergencia social 2026",
-    "url": "www.gobiernodecanarias.org.dgijif",
-    "publishedAt": "2026-08-13"
-   },
-   {
     "bdnsCode": "941250",
     "title": "Subvenciones a empresas y organismos equiparados  del sector privado que hayan participado en la formación profesional del alumnado  de ciclos formativos de Grados D y E de Formación profesional, CURSO 2025/2026",
     "organism": "CONSEJERÍA DE EDUCACIÓN, FORMACIÓN PROFESIONAL, ACTIVIDAD FÍSICA Y DEPORTES",
@@ -436,16 +406,6 @@
     "publishedAt": "2026-11-03"
    },
    {
-    "bdnsCode": "921706",
-    "title": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES A LA REHABILITACIÓN Y MEJORA DE LAS VIVIENDAS EN LA CIUDAD DE BARCELONA",
-    "organism": "CONSORCIO DE LA VIVIENDA DE BARCELONA",
-    "opensAt": "2026-10-22",
-    "closesAt": "2026-12-31",
-    "windowText": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
-    "url": "https://habitatge.barcelona/ca   i   http://www.bcn.cat/consorcihabitatge/ca/home.html",
-    "publishedAt": "2026-07-27"
-   },
-   {
     "bdnsCode": "942798",
     "title": "Convenio FIN Lluna Meliz del 23-10-26 al 26-07-27",
     "organism": "CONSORCI DE SERVEIS UNIVERSITARIS DE CATALUNYA (CSUC)",
@@ -584,16 +544,6 @@
     "windowText": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial — 1 Mesos",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936187",
     "publishedAt": "2026-10-19"
-   },
-   {
-    "bdnsCode": "934569",
-    "title": "RESOLUCIÓN BECAS FP DUAL CURSO 2026-2027",
-    "organism": "CONSORCI D'EDUCACIÓ DE BARCELONA",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "Sense termini de presentació de sol·licitud — Sense termini de presentació de sol·licitud",
-    "url": "edubcn.cat",
-    "publishedAt": "2026-10-09"
    }
   ],
   "CE": [
@@ -628,16 +578,6 @@
     "windowText": "AL DÍA SIGUIENTE AL DE LA FINALIZACIÓN DE LA FORMACIÓN — 20 DÍAS HÁBILES DESDE EL INICIO",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/942090",
     "publishedAt": "2026-11-13"
-   },
-   {
-    "bdnsCode": "934570",
-    "title": "AYUDAS 2026 FAMILIAS CON PACIENTES A CARGO, PATOLOGÍA CRÓNICA COMPLEJA",
-    "organism": "CONSEJERÍA DE FAMILIA, JUVENTUD Y ASUNTOS SOCIALES",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "DESDE EL DÍA SIGUIENTE A LA PUBLICACIÓN DEL ACUERDO DE CG EN BOCM — HASTA EL 31/12/2026",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/934570",
-    "publishedAt": "2026-10-09"
    }
   ],
   "NC": [
