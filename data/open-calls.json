@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26",
+ "generatedAt": "2026-11-27",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -25,6 +25,16 @@
    }
   ],
   "AR": [
+   {
+    "bdnsCode": "945014",
+    "title": "AYUDAS ART 27 L.O. 1/2004  IAM_2026_AYU27HU3",
+    "organism": "INSTITUTO ARAGONÉS DE LA MUJER (IAM)",
+    "opensAt": "2026-08-24",
+    "closesAt": "2026-12-31",
+    "windowText": null,
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/945014",
+    "publishedAt": "2026-11-26"
+   },
    {
     "bdnsCode": "940478",
     "title": "AYUDA ART 27 L.O.1/2004 IAM_2026_AYU27ZA16",
@@ -396,6 +406,16 @@
   ],
   "CT": [
    {
+    "bdnsCode": "945034",
+    "title": "El objetivo de la ayuda Carnet Jove de Còmic es fomentar y promover el acceso profesional de los jóvenes dibujantes y guionistas de viñetas.",
+    "organism": "AGÈNCIA CATALANA DE LA JOVENTUT",
+    "opensAt": null,
+    "closesAt": "2026-12-29",
+    "windowText": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial — 25 d'octubre de 2021",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/945034",
+    "publishedAt": "2026-11-26"
+   },
+   {
     "bdnsCode": "939377",
     "title": "Reembolso prestación de orfandad 2026",
     "organism": "DEPARTAMENT DE DRETS SOCIALS I INCLUSIÓ",
@@ -590,6 +610,16 @@
     "windowText": null,
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/940117",
     "publishedAt": "2026-11-05"
+   },
+   {
+    "bdnsCode": "944995",
+    "title": "Convocatoria para la concesión de las ayudas individuales al profesorado de enseñanza no universitaria de la Comunidad Foral de Navarra para el aprendizaje o perfeccionamiento del euskera",
+    "organism": "DEPARTAMENTO DE EDUCACION",
+    "opensAt": "2027-09-01",
+    "closesAt": "2027-09-15",
+    "windowText": "1 de septiembre de 2027 — 15 de septiembre de 2027",
+    "url": "www.navarra.es",
+    "publishedAt": "2026-11-26"
    },
    {
     "bdnsCode": "930966",
