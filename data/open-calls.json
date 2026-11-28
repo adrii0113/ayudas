@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27",
+ "generatedAt": "2026-11-28",
  "source": "Base de Datos Nacional de Subvenciones (BDNS), infosubvenciones.es",
  "byRegion": {
   "AN": [
@@ -84,6 +84,16 @@
     "windowText": "Desde el día siguiente a la publicación en BOA ",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/926926",
     "publishedAt": "2026-08-28"
+   },
+   {
+    "bdnsCode": "945389",
+    "title": "Ayudas a personas becarias auxiliares de conversación con destino en centros educativos de la Comunidad Autónoma de Aragón, seleccionados por el Ministerio de Educación, Formación Profesional y Deportes del 1 de diciembre de 2026 al 31 de mayo de 2027.",
+    "organism": "DIRECCIÓN GENERAL DE POLÍTICA EDUCATIVA, ORDENACIÓN ACADÉMICA Y EDUCACIÓN PERMANENTE",
+    "opensAt": "2026-12-01",
+    "closesAt": "2027-05-31",
+    "windowText": null,
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/945389",
+    "publishedAt": "2026-11-27"
    },
    {
     "bdnsCode": "942100",
@@ -308,26 +318,6 @@
     "windowText": null,
     "url": "https://www.cantabria.es/web/atencion-a-la-ciudadania/ayudas-y-subvenciones",
     "publishedAt": "2026-08-21"
-   },
-   {
-    "bdnsCode": "922707",
-    "title": "Subvención Nominativa al Colegio Oficial de Psicología de Cantabria. Programa de atención a los adolescentes y su entorno en 2026.",
-    "organism": "CONSEJERÍA DE INCLUSIÓN SOCIAL, JUVENTUD, FAMILIAS E IGUALDAD",
-    "opensAt": "2026-05-01",
-    "closesAt": "2026-12-31",
-    "windowText": null,
-    "url": "https://www.cantabria.es/web/atencion-a-la-ciudadania/ayudas-y-subvenciones",
-    "publishedAt": "2026-07-30"
-   },
-   {
-    "bdnsCode": "922693",
-    "title": "Subvención Nominativa a la Fundación Secretariado Gitano para la realización de un programa denominado Programa de promoción de la igualdad de oportunidades en integración socio-laboral de las mujeres gitanas.",
-    "organism": "CONSEJERÍA DE INCLUSIÓN SOCIAL, JUVENTUD, FAMILIAS E IGUALDAD",
-    "opensAt": "2026-05-01",
-    "closesAt": "2026-12-31",
-    "windowText": null,
-    "url": "https://www.cantabria.es/web/atencion-a-la-ciudadania/ayudas-y-subvenciones",
-    "publishedAt": "2026-07-30"
    }
   ],
   "CL": [
@@ -392,6 +382,16 @@
     "windowText": "Desde el día siguiente a la publicación de la presente convcocatoria — Hasta el 15 de diciembre de 2026",
     "url": "https://www.jccm.es",
     "publishedAt": "2026-11-19"
+   },
+   {
+    "bdnsCode": "945336",
+    "title": "SUBV. DEPORTISTAS ÉLITE 2026",
+    "organism": "VICECONSEJERÍA DE CULTURA Y DEPORTES",
+    "opensAt": null,
+    "closesAt": null,
+    "windowText": "Día siguiente al de la publicación de esta convocatoria en el Diario Oficial de Castilla-La Mancha. — Quince días hábiles contados desde el día siguiente al de la publicación de la convocatoria en DOCM",
+    "url": "www.jccm.es",
+    "publishedAt": "2026-11-27"
    },
    {
     "bdnsCode": "942650",
@@ -579,6 +579,16 @@
    }
   ],
   "MD": [
+   {
+    "bdnsCode": "945387",
+    "title": "AYUDAS ECONÓMICAS DE PAGO ÚNICO POR NACIMIENTO O ADOPCIÓN MÚLTIPLE (2027)",
+    "organism": "CONSEJERÍA DE FAMILIA, JUVENTUD Y ASUNTOS SOCIALES",
+    "opensAt": "2027-01-01",
+    "closesAt": null,
+    "windowText": "DESDE EL NACIMIENTO O LA ADOPCIÓN — EN LOS 60 DÍAS NATURALES SIGUIENTES AL INICIO DEL PLAZO",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/945387",
+    "publishedAt": "2026-11-27"
+   },
    {
     "bdnsCode": "942093",
     "title": "AYUDAS TRANSP. PÚBLICO TRABAJ. DESEMP.- ANTICIPADA 2027",
@@ -864,26 +874,6 @@
     "windowText": "AL DIA SIGUIENTE DE LA PUBLICACIÓN CONVOCATORIA EN DOE — 15 DIAS HÁBILES CONTADOS A PARTIR DEL SIGUIENTE AL DE LA PUBLICACIÓN EN EL DOE",
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/937508",
     "publishedAt": "2026-10-23"
-   },
-   {
-    "bdnsCode": "934974",
-    "title": "Ayudas curso 2026/2027 para el estudio de ingés en horario extraexcolar, según Resolución de 30 de septiembre de 2026, que las convoca.",
-    "organism": "ENTE PÚBLICO EXTREMEÑO DE SERVICIOS EDUCATIVOS COMPLEMENTARIOS",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "A PARTIR DEL DIA SIGUIENTE A LA PUBLICACIÓN EN DOE DE CONVOCATORIA Y EXTRACTO — 15 DÍAS HÁBILES A PARTIR DEL SIGUIENTE A PUBLICACIÓN EN DOE DE CONVOCATORIA Y EXTRACTO",
-    "url": "https://www.juntaex.es/w/0684524",
-    "publishedAt": "2026-10-13"
-   },
-   {
-    "bdnsCode": "934836",
-    "title": "Subvenciones curso 2026/2027 auxiliares de conversación con destino en centros educativos sostenidos con fondos públicos de la CA de Extremadura, según Resolución de 25 de septiembre de 2026 que convoca",
-    "organism": "SECRETARÍA GENERAL DE EDUCACIÓN",
-    "opensAt": null,
-    "closesAt": null,
-    "windowText": "desde publicación de convocatoria — 10 días hábiles",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/934836",
-    "publishedAt": "2026-10-13"
    }
   ],
   "GA": [
@@ -916,6 +906,16 @@
     "windowText": null,
     "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/927442",
     "publishedAt": "2026-09-02"
+   },
+   {
+    "bdnsCode": "945290",
+    "title": "Subvención para obtención do permiso de conducir clases A2 e B",
+    "organism": "CONSELLERÍA DE CULTURA, LENGUA Y JUVENTUD",
+    "opensAt": "2026-12-15",
+    "closesAt": "2027-03-15",
+    "windowText": "15 de decembro de 2026",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/945290",
+    "publishedAt": "2026-11-27"
    },
    {
     "bdnsCode": "941930",
